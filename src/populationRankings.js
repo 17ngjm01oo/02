@@ -1,0 +1,52 @@
+export const populationRankings = [
+  {
+    seriesId: "population",
+    directory: "population",
+    label: "Population",
+    countryPageKind: "population",
+    section: "Demographics",
+  },
+  {
+    seriesId: "populationGrowth",
+    directory: "population-growth",
+    label: "Population Growth",
+    countryPageKind: "population-growth",
+    section: "Demographics",
+  },
+  {
+    seriesId: "populationDensity",
+    directory: "population-density",
+    label: "Population Density",
+    countryPageKind: "population-density",
+    section: "Demographics",
+  },
+  {
+    seriesId: "lifeExpectancy",
+    directory: "life-expectancy",
+    label: "Life Expectancy",
+    countryPageKind: "life-expectancy",
+    section: "Demographics",
+  },
+  {
+    seriesId: "fertilityRate",
+    directory: "fertility-rate",
+    label: "Fertility Rate",
+    countryPageKind: "fertility-rate",
+    section: "Demographics",
+  },
+  {
+    seriesId: "immigrants",
+    directory: "immigrants",
+    label: "Immigrants",
+    countryPageKind: "immigrants",
+    section: "Migration",
+  },
+  {
+    seriesId: "immigrantsPercentPopulation",
+    directory: "immigrants-percent-population",
+    label: "Immigrants (% of Population)",
+    countryPageKind: "immigrants",
+    countryPageLabel: "Immigrants",
+    section: "Migration",
+  },
+];

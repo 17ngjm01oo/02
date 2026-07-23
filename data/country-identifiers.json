@@ -1,0 +1,4180 @@
+{
+  "schemaVersion": 1,
+  "description": "Central source identifier table keyed by the site country code. Display names, slugs, regions, and navigation categories remain in src/countries.js.",
+  "countries": {
+    "G001": {
+      "iso3": null,
+      "iso2": null,
+      "m49": "900",
+      "sourceIds": {
+        "unWpp": "900",
+        "unMigrantStock": "900",
+        "worldBankWdi": "WLD",
+        "worldBankAgeComposition": "WLD",
+        "unctadTrade": "0000",
+        "unctadServicesTrade": "0000",
+        "unComtradeReporter": "0000",
+        "unComtradeIsoFallback": "WLD",
+        "worldMapTopojson": "0000",
+        "oecdRevenue": "G001",
+        "sipriMilitarySpending": "World",
+        "unNationalAccounts": "World",
+        "undpHdi": "ZZK.WORLD"
+      }
+    },
+    "USA": {
+      "iso3": "USA",
+      "iso2": "US",
+      "m49": "840",
+      "sourceIds": {
+        "unMigrantStock": "840",
+        "worldBankWdi": "USA",
+        "worldBankAgeComposition": "USA",
+        "unctadTrade": "840",
+        "unctadServicesTrade": "840",
+        "unComtradeReporter": "840",
+        "unComtradeIsoFallback": "USA",
+        "worldMapTopojson": "840",
+        "oecdRevenue": "USA",
+        "sipriMilitarySpending": "United States of America",
+        "unNationalAccounts": "United States"
+      }
+    },
+    "JPN": {
+      "iso3": "JPN",
+      "iso2": "JP",
+      "m49": "392",
+      "sourceIds": {
+        "unMigrantStock": "392",
+        "worldBankWdi": "JPN",
+        "worldBankAgeComposition": "JPN",
+        "unctadTrade": "392",
+        "unctadServicesTrade": "392",
+        "unComtradeReporter": "392",
+        "unComtradeIsoFallback": "JPN",
+        "worldMapTopojson": "392",
+        "oecdRevenue": "JPN",
+        "sipriMilitarySpending": "Japan",
+        "unNationalAccounts": "Japan"
+      }
+    },
+    "CHN": {
+      "iso3": "CHN",
+      "iso2": "CN",
+      "m49": "156",
+      "sourceIds": {
+        "unMigrantStock": "156",
+        "worldBankWdi": "CHN",
+        "worldBankAgeComposition": "CHN",
+        "unctadTrade": "156",
+        "unctadServicesTrade": "156",
+        "unComtradeReporter": "156",
+        "unComtradeIsoFallback": "CHN",
+        "worldMapTopojson": "156",
+        "oecdRevenue": "CHN",
+        "sipriMilitarySpending": "China",
+        "unNationalAccounts": "China (mainland)"
+      }
+    },
+    "TWN": {
+      "iso3": "TWN",
+      "iso2": "TW",
+      "m49": "158",
+      "sourceIds": {
+        "unMigrantStock": "158",
+        "unctadTrade": "158",
+        "unctadServicesTrade": "158",
+        "unComtradeReporter": "158",
+        "worldMapTopojson": "158",
+        "oecdRevenue": "TWN",
+        "sipriMilitarySpending": "Taiwan",
+        "unNationalAccounts": "Taiwan"
+      }
+    },
+    "HKG": {
+      "iso3": "HKG",
+      "iso2": "HK",
+      "m49": "344",
+      "sourceIds": {
+        "unMigrantStock": "344",
+        "worldBankWdi": "HKG",
+        "worldBankAgeComposition": "HKG",
+        "unctadTrade": "344",
+        "unctadServicesTrade": "344",
+        "unComtradeReporter": "344",
+        "unComtradeIsoFallback": "HKG",
+        "worldMapTopojson": "344",
+        "oecdRevenue": "HKG",
+        "sipriMilitarySpending": "Hong Kong",
+        "unNationalAccounts": "China, Hong Kong SAR"
+      }
+    },
+    "MAC": {
+      "iso3": "MAC",
+      "iso2": "MO",
+      "m49": "446",
+      "sourceIds": {
+        "unMigrantStock": "446",
+        "worldBankWdi": "MAC",
+        "worldBankAgeComposition": "MAC",
+        "unctadTrade": "446",
+        "unctadServicesTrade": "446",
+        "unComtradeReporter": "446",
+        "unComtradeIsoFallback": "MAC",
+        "worldMapTopojson": "446",
+        "oecdRevenue": "MAC",
+        "sipriMilitarySpending": "Macao",
+        "unNationalAccounts": "China, Macao Special Administrative Region"
+      }
+    },
+    "DEU": {
+      "iso3": "DEU",
+      "iso2": "DE",
+      "m49": "276",
+      "sourceIds": {
+        "unMigrantStock": "276",
+        "worldBankWdi": "DEU",
+        "worldBankAgeComposition": "DEU",
+        "unctadTrade": "276",
+        "unctadServicesTrade": "276",
+        "unComtradeReporter": "276",
+        "unComtradeIsoFallback": "DEU",
+        "worldMapTopojson": "276",
+        "oecdRevenue": "DEU",
+        "sipriMilitarySpending": "Germany",
+        "unNationalAccounts": "Germany"
+      }
+    },
+    "FRA": {
+      "iso3": "FRA",
+      "iso2": "FR",
+      "m49": "250",
+      "sourceIds": {
+        "unMigrantStock": "250",
+        "worldBankWdi": "FRA",
+        "worldBankAgeComposition": "FRA",
+        "unctadTrade": "250",
+        "unctadServicesTrade": "250",
+        "unComtradeReporter": "250",
+        "unComtradeIsoFallback": "FRA",
+        "worldMapTopojson": "250",
+        "oecdRevenue": "FRA",
+        "sipriMilitarySpending": "France",
+        "unNationalAccounts": "France"
+      }
+    },
+    "GBR": {
+      "iso3": "GBR",
+      "iso2": "GB",
+      "m49": "826",
+      "sourceIds": {
+        "unMigrantStock": "826",
+        "worldBankWdi": "GBR",
+        "worldBankAgeComposition": "GBR",
+        "unctadTrade": "826",
+        "unctadServicesTrade": "826",
+        "unComtradeReporter": "826",
+        "unComtradeIsoFallback": "GBR",
+        "worldMapTopojson": "826",
+        "oecdRevenue": "GBR",
+        "sipriMilitarySpending": "United Kingdom",
+        "unNationalAccounts": "United Kingdom of Great Britain and Northern Ireland"
+      }
+    },
+    "ITA": {
+      "iso3": "ITA",
+      "iso2": "IT",
+      "m49": "380",
+      "sourceIds": {
+        "unMigrantStock": "380",
+        "worldBankWdi": "ITA",
+        "worldBankAgeComposition": "ITA",
+        "unctadTrade": "380",
+        "unctadServicesTrade": "380",
+        "unComtradeReporter": "380",
+        "unComtradeIsoFallback": "ITA",
+        "worldMapTopojson": "380",
+        "oecdRevenue": "ITA",
+        "sipriMilitarySpending": "Italy",
+        "unNationalAccounts": "Italy"
+      }
+    },
+    "CAN": {
+      "iso3": "CAN",
+      "iso2": "CA",
+      "m49": "124",
+      "sourceIds": {
+        "unMigrantStock": "124",
+        "worldBankWdi": "CAN",
+        "worldBankAgeComposition": "CAN",
+        "unctadTrade": "124",
+        "unctadServicesTrade": "124",
+        "unComtradeReporter": "124",
+        "unComtradeIsoFallback": "CAN",
+        "worldMapTopojson": "124",
+        "oecdRevenue": "CAN",
+        "sipriMilitarySpending": "Canada",
+        "unNationalAccounts": "Canada"
+      }
+    },
+    "AUS": {
+      "iso3": "AUS",
+      "iso2": "AU",
+      "m49": "36",
+      "sourceIds": {
+        "unMigrantStock": "36",
+        "worldBankWdi": "AUS",
+        "worldBankAgeComposition": "AUS",
+        "unctadTrade": "036",
+        "unctadServicesTrade": "036",
+        "unComtradeReporter": "036",
+        "unComtradeIsoFallback": "AUS",
+        "worldMapTopojson": "036",
+        "oecdRevenue": "AUS",
+        "sipriMilitarySpending": "Australia",
+        "unNationalAccounts": "Australia"
+      }
+    },
+    "NZL": {
+      "iso3": "NZL",
+      "iso2": "NZ",
+      "m49": "554",
+      "sourceIds": {
+        "unMigrantStock": "554",
+        "worldBankWdi": "NZL",
+        "worldBankAgeComposition": "NZL",
+        "unctadTrade": "554",
+        "unctadServicesTrade": "554",
+        "unComtradeReporter": "554",
+        "unComtradeIsoFallback": "NZL",
+        "worldMapTopojson": "554",
+        "oecdRevenue": "NZL",
+        "sipriMilitarySpending": "New Zealand",
+        "unNationalAccounts": "New Zealand"
+      }
+    },
+    "ASM": {
+      "iso3": "ASM",
+      "iso2": "AS",
+      "m49": "16",
+      "sourceIds": {
+        "unMigrantStock": "16",
+        "worldBankWdi": "ASM",
+        "worldBankAgeComposition": "ASM",
+        "unctadTrade": "016",
+        "unctadServicesTrade": "016",
+        "unComtradeReporter": "016",
+        "unComtradeIsoFallback": "ASM",
+        "worldMapTopojson": "016",
+        "oecdRevenue": "ASM",
+        "sipriMilitarySpending": "American Samoa",
+        "unNationalAccounts": "American Samoa"
+      }
+    },
+    "COK": {
+      "iso3": "COK",
+      "iso2": "CK",
+      "m49": "184",
+      "sourceIds": {
+        "unMigrantStock": "184",
+        "unctadTrade": "184",
+        "unctadServicesTrade": "184",
+        "unComtradeReporter": "184",
+        "worldMapTopojson": "184",
+        "oecdRevenue": "COK",
+        "sipriMilitarySpending": "Cook Islands",
+        "unNationalAccounts": "Cook Islands"
+      }
+    },
+    "FJI": {
+      "iso3": "FJI",
+      "iso2": "FJ",
+      "m49": "242",
+      "sourceIds": {
+        "unMigrantStock": "242",
+        "worldBankWdi": "FJI",
+        "worldBankAgeComposition": "FJI",
+        "unctadTrade": "242",
+        "unctadServicesTrade": "242",
+        "unComtradeReporter": "242",
+        "unComtradeIsoFallback": "FJI",
+        "worldMapTopojson": "242",
+        "oecdRevenue": "FJI",
+        "sipriMilitarySpending": "Fiji",
+        "unNationalAccounts": "Fiji"
+      }
+    },
+    "GUM": {
+      "iso3": "GUM",
+      "iso2": "GU",
+      "m49": "316",
+      "sourceIds": {
+        "unMigrantStock": "316",
+        "worldBankWdi": "GUM",
+        "worldBankAgeComposition": "GUM",
+        "unctadTrade": "316",
+        "unctadServicesTrade": "316",
+        "unComtradeReporter": "316",
+        "unComtradeIsoFallback": "GUM",
+        "worldMapTopojson": "316",
+        "oecdRevenue": "GUM",
+        "sipriMilitarySpending": "Guam",
+        "unNationalAccounts": "Guam"
+      }
+    },
+    "MNP": {
+      "iso3": "MNP",
+      "iso2": "MP",
+      "m49": "580",
+      "sourceIds": {
+        "unMigrantStock": "580",
+        "worldBankWdi": "MNP",
+        "worldBankAgeComposition": "MNP",
+        "unctadTrade": "580",
+        "unctadServicesTrade": "580",
+        "unComtradeReporter": "580",
+        "unComtradeIsoFallback": "MNP",
+        "worldMapTopojson": "580",
+        "oecdRevenue": "MNP",
+        "sipriMilitarySpending": "Northern Mariana Islands",
+        "unNationalAccounts": "Northern Mariana Islands"
+      }
+    },
+    "NCL": {
+      "iso3": "NCL",
+      "iso2": "NC",
+      "m49": "540",
+      "sourceIds": {
+        "unMigrantStock": "540",
+        "worldBankWdi": "NCL",
+        "worldBankAgeComposition": "NCL",
+        "unctadTrade": "540",
+        "unctadServicesTrade": "540",
+        "unComtradeReporter": "540",
+        "unComtradeIsoFallback": "NCL",
+        "worldMapTopojson": "540",
+        "oecdRevenue": "NCL",
+        "sipriMilitarySpending": "New Caledonia",
+        "unNationalAccounts": "New Caledonia"
+      }
+    },
+    "NIU": {
+      "iso3": "NIU",
+      "iso2": "NU",
+      "m49": "570",
+      "sourceIds": {
+        "unMigrantStock": "570",
+        "unctadTrade": "570",
+        "unctadServicesTrade": "570",
+        "unComtradeReporter": "570",
+        "worldMapTopojson": "570",
+        "oecdRevenue": "NIU",
+        "sipriMilitarySpending": "Niue",
+        "unNationalAccounts": "Niue"
+      }
+    },
+    "PCN": {
+      "iso3": "PCN",
+      "iso2": "PN",
+      "m49": null,
+      "sourceIds": {
+        "oecdRevenue": "PCN",
+        "sipriMilitarySpending": "Pitcairn",
+        "unNationalAccounts": "Pitcairn"
+      }
+    },
+    "PNG": {
+      "iso3": "PNG",
+      "iso2": "PG",
+      "m49": "598",
+      "sourceIds": {
+        "unMigrantStock": "598",
+        "worldBankWdi": "PNG",
+        "worldBankAgeComposition": "PNG",
+        "unctadTrade": "598",
+        "unctadServicesTrade": "598",
+        "unComtradeReporter": "598",
+        "unComtradeIsoFallback": "PNG",
+        "worldMapTopojson": "598",
+        "oecdRevenue": "PNG",
+        "sipriMilitarySpending": "Papua New Guinea",
+        "unNationalAccounts": "Papua New Guinea"
+      }
+    },
+    "PYF": {
+      "iso3": "PYF",
+      "iso2": "PF",
+      "m49": "258",
+      "sourceIds": {
+        "unMigrantStock": "258",
+        "worldBankWdi": "PYF",
+        "worldBankAgeComposition": "PYF",
+        "unctadTrade": "258",
+        "unctadServicesTrade": "258",
+        "unComtradeReporter": "258",
+        "unComtradeIsoFallback": "PYF",
+        "worldMapTopojson": "258",
+        "oecdRevenue": "PYF",
+        "sipriMilitarySpending": "French Polynesia",
+        "unNationalAccounts": "French Polynesia"
+      }
+    },
+    "SLB": {
+      "iso3": "SLB",
+      "iso2": "SB",
+      "m49": "90",
+      "sourceIds": {
+        "unMigrantStock": "90",
+        "worldBankWdi": "SLB",
+        "worldBankAgeComposition": "SLB",
+        "unctadTrade": "090",
+        "unctadServicesTrade": "090",
+        "unComtradeReporter": "090",
+        "unComtradeIsoFallback": "SLB",
+        "worldMapTopojson": "090",
+        "oecdRevenue": "SLB",
+        "sipriMilitarySpending": "Solomon Islands",
+        "unNationalAccounts": "Solomon Islands"
+      }
+    },
+    "TKL": {
+      "iso3": "TKL",
+      "iso2": "TK",
+      "m49": "772",
+      "sourceIds": {
+        "unMigrantStock": "772",
+        "unctadTrade": "772",
+        "unctadServicesTrade": "772",
+        "unComtradeReporter": "772",
+        "worldMapTopojson": "772",
+        "oecdRevenue": "TKL",
+        "sipriMilitarySpending": "Tokelau",
+        "unNationalAccounts": "Tokelau"
+      }
+    },
+    "VUT": {
+      "iso3": "VUT",
+      "iso2": "VU",
+      "m49": "548",
+      "sourceIds": {
+        "unMigrantStock": "548",
+        "worldBankWdi": "VUT",
+        "worldBankAgeComposition": "VUT",
+        "unctadTrade": "548",
+        "unctadServicesTrade": "548",
+        "unComtradeReporter": "548",
+        "unComtradeIsoFallback": "VUT",
+        "worldMapTopojson": "548",
+        "oecdRevenue": "VUT",
+        "sipriMilitarySpending": "Vanuatu",
+        "unNationalAccounts": "Vanuatu"
+      }
+    },
+    "FSM": {
+      "iso3": "FSM",
+      "iso2": "FM",
+      "m49": "583",
+      "sourceIds": {
+        "unMigrantStock": "583",
+        "worldBankWdi": "FSM",
+        "worldBankAgeComposition": "FSM",
+        "unctadTrade": "583",
+        "unctadServicesTrade": "583",
+        "unComtradeReporter": "583",
+        "unComtradeIsoFallback": "FSM",
+        "worldMapTopojson": "583",
+        "oecdRevenue": "FSM",
+        "sipriMilitarySpending": "Federated States of Micronesia",
+        "unNationalAccounts": "Micronesia (Federated States of)"
+      }
+    },
+    "KIR": {
+      "iso3": "KIR",
+      "iso2": "KI",
+      "m49": "296",
+      "sourceIds": {
+        "unMigrantStock": "296",
+        "worldBankWdi": "KIR",
+        "worldBankAgeComposition": "KIR",
+        "unctadTrade": "296",
+        "unctadServicesTrade": "296",
+        "unComtradeReporter": "296",
+        "unComtradeIsoFallback": "KIR",
+        "worldMapTopojson": "296",
+        "oecdRevenue": "KIR",
+        "sipriMilitarySpending": "Kiribati",
+        "unNationalAccounts": "Kiribati"
+      }
+    },
+    "MHL": {
+      "iso3": "MHL",
+      "iso2": "MH",
+      "m49": "584",
+      "sourceIds": {
+        "unMigrantStock": "584",
+        "worldBankWdi": "MHL",
+        "worldBankAgeComposition": "MHL",
+        "unctadTrade": "584",
+        "unctadServicesTrade": "584",
+        "unComtradeReporter": "584",
+        "unComtradeIsoFallback": "MHL",
+        "worldMapTopojson": "584",
+        "oecdRevenue": "MHL",
+        "sipriMilitarySpending": "Marshall Islands",
+        "unNationalAccounts": "Marshall Islands"
+      }
+    },
+    "NRU": {
+      "iso3": "NRU",
+      "iso2": "NR",
+      "m49": "520",
+      "sourceIds": {
+        "unMigrantStock": "520",
+        "worldBankWdi": "NRU",
+        "worldBankAgeComposition": "NRU",
+        "unctadTrade": "520",
+        "unctadServicesTrade": "520",
+        "unComtradeReporter": "520",
+        "unComtradeIsoFallback": "NRU",
+        "worldMapTopojson": "520",
+        "oecdRevenue": "NRU",
+        "sipriMilitarySpending": "Nauru",
+        "unNationalAccounts": "Nauru"
+      }
+    },
+    "PLW": {
+      "iso3": "PLW",
+      "iso2": "PW",
+      "m49": "585",
+      "sourceIds": {
+        "unMigrantStock": "585",
+        "worldBankWdi": "PLW",
+        "worldBankAgeComposition": "PLW",
+        "unctadTrade": "585",
+        "unctadServicesTrade": "585",
+        "unComtradeReporter": "585",
+        "unComtradeIsoFallback": "PLW",
+        "worldMapTopojson": "585",
+        "oecdRevenue": "PLW",
+        "sipriMilitarySpending": "Palau",
+        "unNationalAccounts": "Palau"
+      }
+    },
+    "WSM": {
+      "iso3": "WSM",
+      "iso2": "WS",
+      "m49": "882",
+      "sourceIds": {
+        "unMigrantStock": "882",
+        "worldBankWdi": "WSM",
+        "worldBankAgeComposition": "WSM",
+        "unctadTrade": "882",
+        "unctadServicesTrade": "882",
+        "unComtradeReporter": "882",
+        "unComtradeIsoFallback": "WSM",
+        "worldMapTopojson": "882",
+        "oecdRevenue": "WSM",
+        "sipriMilitarySpending": "Samoa",
+        "unNationalAccounts": "Samoa"
+      }
+    },
+    "TON": {
+      "iso3": "TON",
+      "iso2": "TO",
+      "m49": "776",
+      "sourceIds": {
+        "unMigrantStock": "776",
+        "worldBankWdi": "TON",
+        "worldBankAgeComposition": "TON",
+        "unctadTrade": "776",
+        "unctadServicesTrade": "776",
+        "unComtradeReporter": "776",
+        "unComtradeIsoFallback": "TON",
+        "worldMapTopojson": "776",
+        "oecdRevenue": "TON",
+        "sipriMilitarySpending": "Tonga",
+        "unNationalAccounts": "Tonga"
+      }
+    },
+    "TUV": {
+      "iso3": "TUV",
+      "iso2": "TV",
+      "m49": "798",
+      "sourceIds": {
+        "unMigrantStock": "798",
+        "worldBankWdi": "TUV",
+        "worldBankAgeComposition": "TUV",
+        "unctadTrade": "798",
+        "unctadServicesTrade": "798",
+        "unComtradeReporter": "798",
+        "unComtradeIsoFallback": "TUV",
+        "worldMapTopojson": "798",
+        "oecdRevenue": "TUV",
+        "sipriMilitarySpending": "Tuvalu",
+        "unNationalAccounts": "Tuvalu"
+      }
+    },
+    "WLF": {
+      "iso3": "WLF",
+      "iso2": "WF",
+      "m49": "876",
+      "sourceIds": {
+        "unMigrantStock": "876",
+        "unctadTrade": "876",
+        "unctadServicesTrade": "876",
+        "unComtradeReporter": "876",
+        "worldMapTopojson": "876",
+        "oecdRevenue": "WLF",
+        "sipriMilitarySpending": "Wallis and Futuna",
+        "unNationalAccounts": "Wallis and Futuna"
+      }
+    },
+    "KOR": {
+      "iso3": "KOR",
+      "iso2": "KR",
+      "m49": "410",
+      "sourceIds": {
+        "unMigrantStock": "410",
+        "worldBankWdi": "KOR",
+        "worldBankAgeComposition": "KOR",
+        "unctadTrade": "410",
+        "unctadServicesTrade": "410",
+        "unComtradeReporter": "410",
+        "unComtradeIsoFallback": "KOR",
+        "worldMapTopojson": "410",
+        "oecdRevenue": "KOR",
+        "sipriMilitarySpending": "Korea, South",
+        "unNationalAccounts": "Republic of Korea"
+      }
+    },
+    "PRK": {
+      "iso3": "PRK",
+      "iso2": "KP",
+      "m49": "408",
+      "sourceIds": {
+        "unMigrantStock": "408",
+        "worldBankWdi": "PRK",
+        "worldBankAgeComposition": "PRK",
+        "unctadTrade": "408",
+        "unctadServicesTrade": "408",
+        "unComtradeReporter": "408",
+        "unComtradeIsoFallback": "PRK",
+        "worldMapTopojson": "408",
+        "oecdRevenue": "PRK",
+        "sipriMilitarySpending": "Korea, North",
+        "unNationalAccounts": "Democratic People's Republic of Korea"
+      }
+    },
+    "IDN": {
+      "iso3": "IDN",
+      "iso2": "ID",
+      "m49": "360",
+      "sourceIds": {
+        "unMigrantStock": "360",
+        "worldBankWdi": "IDN",
+        "worldBankAgeComposition": "IDN",
+        "unctadTrade": "360",
+        "unctadServicesTrade": "360",
+        "unComtradeReporter": "360",
+        "unComtradeIsoFallback": "IDN",
+        "worldMapTopojson": "360",
+        "oecdRevenue": "IDN",
+        "sipriMilitarySpending": "Indonesia",
+        "unNationalAccounts": "Indonesia"
+      }
+    },
+    "TUR": {
+      "iso3": "TUR",
+      "iso2": "TR",
+      "m49": "792",
+      "sourceIds": {
+        "unMigrantStock": "792",
+        "worldBankWdi": "TUR",
+        "worldBankAgeComposition": "TUR",
+        "unctadTrade": "792",
+        "unctadServicesTrade": "792",
+        "unComtradeReporter": "792",
+        "unComtradeIsoFallback": "TUR",
+        "worldMapTopojson": "792",
+        "oecdRevenue": "TUR",
+        "sipriMilitarySpending": "Türkiye",
+        "unNationalAccounts": "Türkiye"
+      }
+    },
+    "IND": {
+      "iso3": "IND",
+      "iso2": "IN",
+      "m49": "356",
+      "sourceIds": {
+        "unMigrantStock": "356",
+        "worldBankWdi": "IND",
+        "worldBankAgeComposition": "IND",
+        "unctadTrade": "356",
+        "unctadServicesTrade": "356",
+        "unComtradeReporter": "356",
+        "unComtradeIsoFallback": "IND",
+        "worldMapTopojson": "356",
+        "oecdRevenue": "IND",
+        "sipriMilitarySpending": "India",
+        "unNationalAccounts": "India"
+      }
+    },
+    "LKA": {
+      "iso3": "LKA",
+      "iso2": "LK",
+      "m49": "144",
+      "sourceIds": {
+        "unMigrantStock": "144",
+        "worldBankWdi": "LKA",
+        "worldBankAgeComposition": "LKA",
+        "unctadTrade": "144",
+        "unctadServicesTrade": "144",
+        "unComtradeReporter": "144",
+        "unComtradeIsoFallback": "LKA",
+        "worldMapTopojson": "144",
+        "oecdRevenue": "LKA",
+        "sipriMilitarySpending": "Sri Lanka",
+        "unNationalAccounts": "Sri Lanka"
+      }
+    },
+    "MDV": {
+      "iso3": "MDV",
+      "iso2": "MV",
+      "m49": "462",
+      "sourceIds": {
+        "unMigrantStock": "462",
+        "worldBankWdi": "MDV",
+        "worldBankAgeComposition": "MDV",
+        "unctadTrade": "462",
+        "unctadServicesTrade": "462",
+        "unComtradeReporter": "462",
+        "unComtradeIsoFallback": "MDV",
+        "worldMapTopojson": "462",
+        "oecdRevenue": "MDV",
+        "sipriMilitarySpending": "Maldives",
+        "unNationalAccounts": "Maldives"
+      }
+    },
+    "BGD": {
+      "iso3": "BGD",
+      "iso2": "BD",
+      "m49": "50",
+      "sourceIds": {
+        "unMigrantStock": "50",
+        "worldBankWdi": "BGD",
+        "worldBankAgeComposition": "BGD",
+        "unctadTrade": "050",
+        "unctadServicesTrade": "050",
+        "unComtradeReporter": "050",
+        "unComtradeIsoFallback": "BGD",
+        "worldMapTopojson": "050",
+        "oecdRevenue": "BGD",
+        "sipriMilitarySpending": "Bangladesh",
+        "unNationalAccounts": "Bangladesh"
+      }
+    },
+    "BTN": {
+      "iso3": "BTN",
+      "iso2": "BT",
+      "m49": "64",
+      "sourceIds": {
+        "unMigrantStock": "64",
+        "worldBankWdi": "BTN",
+        "worldBankAgeComposition": "BTN",
+        "unctadTrade": "064",
+        "unctadServicesTrade": "064",
+        "unComtradeReporter": "064",
+        "unComtradeIsoFallback": "BTN",
+        "worldMapTopojson": "064",
+        "oecdRevenue": "BTN",
+        "sipriMilitarySpending": "Bhutan",
+        "unNationalAccounts": "Bhutan"
+      }
+    },
+    "NPL": {
+      "iso3": "NPL",
+      "iso2": "NP",
+      "m49": "524",
+      "sourceIds": {
+        "unMigrantStock": "524",
+        "worldBankWdi": "NPL",
+        "worldBankAgeComposition": "NPL",
+        "unctadTrade": "524",
+        "unctadServicesTrade": "524",
+        "unComtradeReporter": "524",
+        "unComtradeIsoFallback": "NPL",
+        "worldMapTopojson": "524",
+        "oecdRevenue": "NPL",
+        "sipriMilitarySpending": "Nepal",
+        "unNationalAccounts": "Nepal"
+      }
+    },
+    "PAK": {
+      "iso3": "PAK",
+      "iso2": "PK",
+      "m49": "586",
+      "sourceIds": {
+        "unMigrantStock": "586",
+        "worldBankWdi": "PAK",
+        "worldBankAgeComposition": "PAK",
+        "unctadTrade": "586",
+        "unctadServicesTrade": "586",
+        "unComtradeReporter": "586",
+        "unComtradeIsoFallback": "PAK",
+        "worldMapTopojson": "586",
+        "oecdRevenue": "PAK",
+        "sipriMilitarySpending": "Pakistan",
+        "unNationalAccounts": "Pakistan"
+      }
+    },
+    "AFG": {
+      "iso3": "AFG",
+      "iso2": "AF",
+      "m49": "4",
+      "sourceIds": {
+        "unMigrantStock": "4",
+        "worldBankWdi": "AFG",
+        "worldBankAgeComposition": "AFG",
+        "unctadTrade": "004",
+        "unctadServicesTrade": "004",
+        "unComtradeReporter": "004",
+        "unComtradeIsoFallback": "AFG",
+        "worldMapTopojson": "004",
+        "oecdRevenue": "AFG",
+        "sipriMilitarySpending": "Afghanistan",
+        "unNationalAccounts": "Afghanistan"
+      }
+    },
+    "TJK": {
+      "iso3": "TJK",
+      "iso2": "TJ",
+      "m49": "762",
+      "sourceIds": {
+        "unMigrantStock": "762",
+        "worldBankWdi": "TJK",
+        "worldBankAgeComposition": "TJK",
+        "unctadTrade": "762",
+        "unctadServicesTrade": "762",
+        "unComtradeReporter": "762",
+        "unComtradeIsoFallback": "TJK",
+        "worldMapTopojson": "762",
+        "oecdRevenue": "TJK",
+        "sipriMilitarySpending": "Tajikistan",
+        "unNationalAccounts": "Tajikistan"
+      }
+    },
+    "KGZ": {
+      "iso3": "KGZ",
+      "iso2": "KG",
+      "m49": "417",
+      "sourceIds": {
+        "unMigrantStock": "417",
+        "worldBankWdi": "KGZ",
+        "worldBankAgeComposition": "KGZ",
+        "unctadTrade": "417",
+        "unctadServicesTrade": "417",
+        "unComtradeReporter": "417",
+        "unComtradeIsoFallback": "KGZ",
+        "worldMapTopojson": "417",
+        "oecdRevenue": "KGZ",
+        "sipriMilitarySpending": "Kyrgyz Republic",
+        "unNationalAccounts": "Kyrgyzstan"
+      }
+    },
+    "TKM": {
+      "iso3": "TKM",
+      "iso2": "TM",
+      "m49": "795",
+      "sourceIds": {
+        "unMigrantStock": "795",
+        "worldBankWdi": "TKM",
+        "worldBankAgeComposition": "TKM",
+        "unctadTrade": "795",
+        "unctadServicesTrade": "795",
+        "unComtradeReporter": "795",
+        "unComtradeIsoFallback": "TKM",
+        "worldMapTopojson": "795",
+        "oecdRevenue": "TKM",
+        "sipriMilitarySpending": "Turkmenistan",
+        "unNationalAccounts": "Turkmenistan"
+      }
+    },
+    "UZB": {
+      "iso3": "UZB",
+      "iso2": "UZ",
+      "m49": "860",
+      "sourceIds": {
+        "unMigrantStock": "860",
+        "worldBankWdi": "UZB",
+        "worldBankAgeComposition": "UZB",
+        "unctadTrade": "860",
+        "unctadServicesTrade": "860",
+        "unComtradeReporter": "860",
+        "unComtradeIsoFallback": "UZB",
+        "worldMapTopojson": "860",
+        "oecdRevenue": "UZB",
+        "sipriMilitarySpending": "Uzbekistan",
+        "unNationalAccounts": "Uzbekistan"
+      }
+    },
+    "KAZ": {
+      "iso3": "KAZ",
+      "iso2": "KZ",
+      "m49": "398",
+      "sourceIds": {
+        "unMigrantStock": "398",
+        "worldBankWdi": "KAZ",
+        "worldBankAgeComposition": "KAZ",
+        "unctadTrade": "398",
+        "unctadServicesTrade": "398",
+        "unComtradeReporter": "398",
+        "unComtradeIsoFallback": "KAZ",
+        "worldMapTopojson": "398",
+        "oecdRevenue": "KAZ",
+        "sipriMilitarySpending": "Kazakhstan",
+        "unNationalAccounts": "Kazakhstan"
+      }
+    },
+    "MNG": {
+      "iso3": "MNG",
+      "iso2": "MN",
+      "m49": "496",
+      "sourceIds": {
+        "unMigrantStock": "496",
+        "worldBankWdi": "MNG",
+        "worldBankAgeComposition": "MNG",
+        "unctadTrade": "496",
+        "unctadServicesTrade": "496",
+        "unComtradeReporter": "496",
+        "unComtradeIsoFallback": "MNG",
+        "worldMapTopojson": "496",
+        "oecdRevenue": "MNG",
+        "sipriMilitarySpending": "Mongolia",
+        "unNationalAccounts": "Mongolia"
+      }
+    },
+    "AZE": {
+      "iso3": "AZE",
+      "iso2": "AZ",
+      "m49": "31",
+      "sourceIds": {
+        "unMigrantStock": "31",
+        "worldBankWdi": "AZE",
+        "worldBankAgeComposition": "AZE",
+        "unctadTrade": "031",
+        "unctadServicesTrade": "031",
+        "unComtradeReporter": "031",
+        "unComtradeIsoFallback": "AZE",
+        "worldMapTopojson": "031",
+        "oecdRevenue": "AZE",
+        "sipriMilitarySpending": "Azerbaijan",
+        "unNationalAccounts": "Azerbaijan"
+      }
+    },
+    "GEO": {
+      "iso3": "GEO",
+      "iso2": "GE",
+      "m49": "268",
+      "sourceIds": {
+        "unMigrantStock": "268",
+        "worldBankWdi": "GEO",
+        "worldBankAgeComposition": "GEO",
+        "unctadTrade": "268",
+        "unctadServicesTrade": "268",
+        "unComtradeReporter": "268",
+        "unComtradeIsoFallback": "GEO",
+        "worldMapTopojson": "268",
+        "oecdRevenue": "GEO",
+        "sipriMilitarySpending": "Georgia",
+        "unNationalAccounts": "Georgia"
+      }
+    },
+    "ARM": {
+      "iso3": "ARM",
+      "iso2": "AM",
+      "m49": "51",
+      "sourceIds": {
+        "unMigrantStock": "51",
+        "worldBankWdi": "ARM",
+        "worldBankAgeComposition": "ARM",
+        "unctadTrade": "051",
+        "unctadServicesTrade": "051",
+        "unComtradeReporter": "051",
+        "unComtradeIsoFallback": "ARM",
+        "worldMapTopojson": "051",
+        "oecdRevenue": "ARM",
+        "sipriMilitarySpending": "Armenia",
+        "unNationalAccounts": "Armenia"
+      }
+    },
+    "SAU": {
+      "iso3": "SAU",
+      "iso2": "SA",
+      "m49": "682",
+      "sourceIds": {
+        "unMigrantStock": "682",
+        "worldBankWdi": "SAU",
+        "worldBankAgeComposition": "SAU",
+        "unctadTrade": "682",
+        "unctadServicesTrade": "682",
+        "unComtradeReporter": "682",
+        "unComtradeIsoFallback": "SAU",
+        "worldMapTopojson": "682",
+        "oecdRevenue": "SAU",
+        "sipriMilitarySpending": "Saudi Arabia",
+        "unNationalAccounts": "Saudi Arabia"
+      }
+    },
+    "IRN": {
+      "iso3": "IRN",
+      "iso2": "IR",
+      "m49": "364",
+      "sourceIds": {
+        "unMigrantStock": "364",
+        "worldBankWdi": "IRN",
+        "worldBankAgeComposition": "IRN",
+        "unctadTrade": "364",
+        "unctadServicesTrade": "364",
+        "unComtradeReporter": "364",
+        "unComtradeIsoFallback": "IRN",
+        "worldMapTopojson": "364",
+        "oecdRevenue": "IRN",
+        "sipriMilitarySpending": "Iran",
+        "unNationalAccounts": "Iran, Islamic Republic of"
+      }
+    },
+    "IRQ": {
+      "iso3": "IRQ",
+      "iso2": "IQ",
+      "m49": "368",
+      "sourceIds": {
+        "unMigrantStock": "368",
+        "worldBankWdi": "IRQ",
+        "worldBankAgeComposition": "IRQ",
+        "unctadTrade": "368",
+        "unctadServicesTrade": "368",
+        "unComtradeReporter": "368",
+        "unComtradeIsoFallback": "IRQ",
+        "worldMapTopojson": "368",
+        "oecdRevenue": "IRQ",
+        "sipriMilitarySpending": "Iraq",
+        "unNationalAccounts": "Iraq"
+      }
+    },
+    "SYR": {
+      "iso3": "SYR",
+      "iso2": "SY",
+      "m49": "760",
+      "sourceIds": {
+        "unMigrantStock": "760",
+        "worldBankWdi": "SYR",
+        "worldBankAgeComposition": "SYR",
+        "unctadTrade": "760",
+        "unctadServicesTrade": "760",
+        "unComtradeReporter": "760",
+        "unComtradeIsoFallback": "SYR",
+        "worldMapTopojson": "760",
+        "oecdRevenue": "SYR",
+        "sipriMilitarySpending": "Syria",
+        "unNationalAccounts": "Syrian Arab Republic"
+      }
+    },
+    "LBN": {
+      "iso3": "LBN",
+      "iso2": "LB",
+      "m49": "422",
+      "sourceIds": {
+        "unMigrantStock": "422",
+        "worldBankWdi": "LBN",
+        "worldBankAgeComposition": "LBN",
+        "unctadTrade": "422",
+        "unctadServicesTrade": "422",
+        "unComtradeReporter": "422",
+        "unComtradeIsoFallback": "LBN",
+        "worldMapTopojson": "422",
+        "oecdRevenue": "LBN",
+        "sipriMilitarySpending": "Lebanon",
+        "unNationalAccounts": "Lebanon"
+      }
+    },
+    "JOR": {
+      "iso3": "JOR",
+      "iso2": "JO",
+      "m49": "400",
+      "sourceIds": {
+        "unMigrantStock": "400",
+        "worldBankWdi": "JOR",
+        "worldBankAgeComposition": "JOR",
+        "unctadTrade": "400",
+        "unctadServicesTrade": "400",
+        "unComtradeReporter": "400",
+        "unComtradeIsoFallback": "JOR",
+        "worldMapTopojson": "400",
+        "oecdRevenue": "JOR",
+        "sipriMilitarySpending": "Jordan",
+        "unNationalAccounts": "Jordan"
+      }
+    },
+    "KWT": {
+      "iso3": "KWT",
+      "iso2": "KW",
+      "m49": "414",
+      "sourceIds": {
+        "unMigrantStock": "414",
+        "worldBankWdi": "KWT",
+        "worldBankAgeComposition": "KWT",
+        "unctadTrade": "414",
+        "unctadServicesTrade": "414",
+        "unComtradeReporter": "414",
+        "unComtradeIsoFallback": "KWT",
+        "worldMapTopojson": "414",
+        "oecdRevenue": "KWT",
+        "sipriMilitarySpending": "Kuwait",
+        "unNationalAccounts": "Kuwait"
+      }
+    },
+    "BHR": {
+      "iso3": "BHR",
+      "iso2": "BH",
+      "m49": "48",
+      "sourceIds": {
+        "unMigrantStock": "48",
+        "worldBankWdi": "BHR",
+        "worldBankAgeComposition": "BHR",
+        "unctadTrade": "048",
+        "unctadServicesTrade": "048",
+        "unComtradeReporter": "048",
+        "unComtradeIsoFallback": "BHR",
+        "worldMapTopojson": "048",
+        "oecdRevenue": "BHR",
+        "sipriMilitarySpending": "Bahrain",
+        "unNationalAccounts": "Bahrain"
+      }
+    },
+    "QAT": {
+      "iso3": "QAT",
+      "iso2": "QA",
+      "m49": "634",
+      "sourceIds": {
+        "unMigrantStock": "634",
+        "worldBankWdi": "QAT",
+        "worldBankAgeComposition": "QAT",
+        "unctadTrade": "634",
+        "unctadServicesTrade": "634",
+        "unComtradeReporter": "634",
+        "unComtradeIsoFallback": "QAT",
+        "worldMapTopojson": "634",
+        "oecdRevenue": "QAT",
+        "sipriMilitarySpending": "Qatar",
+        "unNationalAccounts": "Qatar"
+      }
+    },
+    "ARE": {
+      "iso3": "ARE",
+      "iso2": "AE",
+      "m49": "784",
+      "sourceIds": {
+        "unMigrantStock": "784",
+        "worldBankWdi": "ARE",
+        "worldBankAgeComposition": "ARE",
+        "unctadTrade": "784",
+        "unctadServicesTrade": "784",
+        "unComtradeReporter": "784",
+        "unComtradeIsoFallback": "ARE",
+        "worldMapTopojson": "784",
+        "oecdRevenue": "ARE",
+        "sipriMilitarySpending": "United Arab Emirates",
+        "unNationalAccounts": "United Arab Emirates"
+      }
+    },
+    "OMN": {
+      "iso3": "OMN",
+      "iso2": "OM",
+      "m49": "512",
+      "sourceIds": {
+        "unMigrantStock": "512",
+        "worldBankWdi": "OMN",
+        "worldBankAgeComposition": "OMN",
+        "unctadTrade": "512",
+        "unctadServicesTrade": "512",
+        "unComtradeReporter": "512",
+        "unComtradeIsoFallback": "OMN",
+        "worldMapTopojson": "512",
+        "oecdRevenue": "OMN",
+        "sipriMilitarySpending": "Oman",
+        "unNationalAccounts": "Oman"
+      }
+    },
+    "YEM": {
+      "iso3": "YEM",
+      "iso2": "YE",
+      "m49": "887",
+      "sourceIds": {
+        "unMigrantStock": "887",
+        "worldBankWdi": "YEM",
+        "worldBankAgeComposition": "YEM",
+        "unctadTrade": "887",
+        "unctadServicesTrade": "887",
+        "unComtradeReporter": "887",
+        "unComtradeIsoFallback": "YEM",
+        "worldMapTopojson": "887",
+        "oecdRevenue": "YEM",
+        "sipriMilitarySpending": "Yemen",
+        "unNationalAccounts": "Yemen"
+      }
+    },
+    "ARG": {
+      "iso3": "ARG",
+      "iso2": "AR",
+      "m49": "32",
+      "sourceIds": {
+        "unMigrantStock": "32",
+        "worldBankWdi": "ARG",
+        "worldBankAgeComposition": "ARG",
+        "unctadTrade": "032",
+        "unctadServicesTrade": "032",
+        "unComtradeReporter": "032",
+        "unComtradeIsoFallback": "ARG",
+        "worldMapTopojson": "032",
+        "oecdRevenue": "ARG",
+        "sipriMilitarySpending": "Argentina",
+        "unNationalAccounts": "Argentina"
+      }
+    },
+    "BRA": {
+      "iso3": "BRA",
+      "iso2": "BR",
+      "m49": "76",
+      "sourceIds": {
+        "unMigrantStock": "76",
+        "worldBankWdi": "BRA",
+        "worldBankAgeComposition": "BRA",
+        "unctadTrade": "076",
+        "unctadServicesTrade": "076",
+        "unComtradeReporter": "076",
+        "unComtradeIsoFallback": "BRA",
+        "worldMapTopojson": "076",
+        "oecdRevenue": "BRA",
+        "sipriMilitarySpending": "Brazil",
+        "unNationalAccounts": "Brazil"
+      }
+    },
+    "MEX": {
+      "iso3": "MEX",
+      "iso2": "MX",
+      "m49": "484",
+      "sourceIds": {
+        "unMigrantStock": "484",
+        "worldBankWdi": "MEX",
+        "worldBankAgeComposition": "MEX",
+        "unctadTrade": "484",
+        "unctadServicesTrade": "484",
+        "unComtradeReporter": "484",
+        "unComtradeIsoFallback": "MEX",
+        "worldMapTopojson": "484",
+        "oecdRevenue": "MEX",
+        "sipriMilitarySpending": "Mexico",
+        "unNationalAccounts": "Mexico"
+      }
+    },
+    "ABW": {
+      "iso3": "ABW",
+      "iso2": "AW",
+      "m49": "533",
+      "sourceIds": {
+        "unMigrantStock": "533",
+        "worldBankWdi": "ABW",
+        "worldBankAgeComposition": "ABW",
+        "unctadTrade": "533",
+        "unctadServicesTrade": "533",
+        "unComtradeReporter": "533",
+        "unComtradeIsoFallback": "ABW",
+        "worldMapTopojson": "533",
+        "oecdRevenue": "ABW",
+        "sipriMilitarySpending": "Aruba",
+        "unNationalAccounts": "Aruba"
+      }
+    },
+    "AIA": {
+      "iso3": "AIA",
+      "iso2": "AI",
+      "m49": "660",
+      "sourceIds": {
+        "unMigrantStock": "660",
+        "unctadTrade": "660",
+        "unctadServicesTrade": "660",
+        "unComtradeReporter": "660",
+        "worldMapTopojson": "660",
+        "oecdRevenue": "AIA",
+        "sipriMilitarySpending": "Anguilla",
+        "unNationalAccounts": "Anguilla"
+      }
+    },
+    "BMU": {
+      "iso3": "BMU",
+      "iso2": "BM",
+      "m49": "60",
+      "sourceIds": {
+        "unMigrantStock": "60",
+        "worldBankWdi": "BMU",
+        "worldBankAgeComposition": "BMU",
+        "unctadTrade": "060",
+        "unctadServicesTrade": "060",
+        "unComtradeReporter": "060",
+        "unComtradeIsoFallback": "BMU",
+        "worldMapTopojson": "060",
+        "oecdRevenue": "BMU",
+        "sipriMilitarySpending": "Bermuda",
+        "unNationalAccounts": "Bermuda"
+      }
+    },
+    "GTM": {
+      "iso3": "GTM",
+      "iso2": "GT",
+      "m49": "320",
+      "sourceIds": {
+        "unMigrantStock": "320",
+        "worldBankWdi": "GTM",
+        "worldBankAgeComposition": "GTM",
+        "unctadTrade": "320",
+        "unctadServicesTrade": "320",
+        "unComtradeReporter": "320",
+        "unComtradeIsoFallback": "GTM",
+        "worldMapTopojson": "320",
+        "oecdRevenue": "GTM",
+        "sipriMilitarySpending": "Guatemala",
+        "unNationalAccounts": "Guatemala"
+      }
+    },
+    "BLZ": {
+      "iso3": "BLZ",
+      "iso2": "BZ",
+      "m49": "84",
+      "sourceIds": {
+        "unMigrantStock": "84",
+        "worldBankWdi": "BLZ",
+        "worldBankAgeComposition": "BLZ",
+        "unctadTrade": "084",
+        "unctadServicesTrade": "084",
+        "unComtradeReporter": "084",
+        "unComtradeIsoFallback": "BLZ",
+        "worldMapTopojson": "084",
+        "oecdRevenue": "BLZ",
+        "sipriMilitarySpending": "Belize",
+        "unNationalAccounts": "Belize"
+      }
+    },
+    "SLV": {
+      "iso3": "SLV",
+      "iso2": "SV",
+      "m49": "222",
+      "sourceIds": {
+        "unMigrantStock": "222",
+        "worldBankWdi": "SLV",
+        "worldBankAgeComposition": "SLV",
+        "unctadTrade": "222",
+        "unctadServicesTrade": "222",
+        "unComtradeReporter": "222",
+        "unComtradeIsoFallback": "SLV",
+        "worldMapTopojson": "222",
+        "oecdRevenue": "SLV",
+        "sipriMilitarySpending": "El Salvador",
+        "unNationalAccounts": "El Salvador"
+      }
+    },
+    "HND": {
+      "iso3": "HND",
+      "iso2": "HN",
+      "m49": "340",
+      "sourceIds": {
+        "unMigrantStock": "340",
+        "worldBankWdi": "HND",
+        "worldBankAgeComposition": "HND",
+        "unctadTrade": "340",
+        "unctadServicesTrade": "340",
+        "unComtradeReporter": "340",
+        "unComtradeIsoFallback": "HND",
+        "worldMapTopojson": "340",
+        "oecdRevenue": "HND",
+        "sipriMilitarySpending": "Honduras",
+        "unNationalAccounts": "Honduras"
+      }
+    },
+    "NIC": {
+      "iso3": "NIC",
+      "iso2": "NI",
+      "m49": "558",
+      "sourceIds": {
+        "unMigrantStock": "558",
+        "worldBankWdi": "NIC",
+        "worldBankAgeComposition": "NIC",
+        "unctadTrade": "558",
+        "unctadServicesTrade": "558",
+        "unComtradeReporter": "558",
+        "unComtradeIsoFallback": "NIC",
+        "worldMapTopojson": "558",
+        "oecdRevenue": "NIC",
+        "sipriMilitarySpending": "Nicaragua",
+        "unNationalAccounts": "Nicaragua"
+      }
+    },
+    "PAN": {
+      "iso3": "PAN",
+      "iso2": "PA",
+      "m49": "591",
+      "sourceIds": {
+        "unMigrantStock": "591",
+        "worldBankWdi": "PAN",
+        "worldBankAgeComposition": "PAN",
+        "unctadTrade": "591",
+        "unctadServicesTrade": "591",
+        "unComtradeReporter": "591",
+        "unComtradeIsoFallback": "PAN",
+        "worldMapTopojson": "591",
+        "oecdRevenue": "PAN",
+        "sipriMilitarySpending": "Panama",
+        "unNationalAccounts": "Panama"
+      }
+    },
+    "BHS": {
+      "iso3": "BHS",
+      "iso2": "BS",
+      "m49": "44",
+      "sourceIds": {
+        "unMigrantStock": "44",
+        "worldBankWdi": "BHS",
+        "worldBankAgeComposition": "BHS",
+        "unctadTrade": "044",
+        "unctadServicesTrade": "044",
+        "unComtradeReporter": "044",
+        "unComtradeIsoFallback": "BHS",
+        "worldMapTopojson": "044",
+        "oecdRevenue": "BHS",
+        "sipriMilitarySpending": "Bahamas",
+        "unNationalAccounts": "Bahamas"
+      }
+    },
+    "CUB": {
+      "iso3": "CUB",
+      "iso2": "CU",
+      "m49": "192",
+      "sourceIds": {
+        "unMigrantStock": "192",
+        "worldBankWdi": "CUB",
+        "worldBankAgeComposition": "CUB",
+        "unctadTrade": "192",
+        "unctadServicesTrade": "192",
+        "unComtradeReporter": "192",
+        "unComtradeIsoFallback": "CUB",
+        "worldMapTopojson": "192",
+        "oecdRevenue": "CUB",
+        "sipriMilitarySpending": "Cuba",
+        "unNationalAccounts": "Cuba"
+      }
+    },
+    "JAM": {
+      "iso3": "JAM",
+      "iso2": "JM",
+      "m49": "388",
+      "sourceIds": {
+        "unMigrantStock": "388",
+        "worldBankWdi": "JAM",
+        "worldBankAgeComposition": "JAM",
+        "unctadTrade": "388",
+        "unctadServicesTrade": "388",
+        "unComtradeReporter": "388",
+        "unComtradeIsoFallback": "JAM",
+        "worldMapTopojson": "388",
+        "oecdRevenue": "JAM",
+        "sipriMilitarySpending": "Jamaica",
+        "unNationalAccounts": "Jamaica"
+      }
+    },
+    "HTI": {
+      "iso3": "HTI",
+      "iso2": "HT",
+      "m49": "332",
+      "sourceIds": {
+        "unMigrantStock": "332",
+        "worldBankWdi": "HTI",
+        "worldBankAgeComposition": "HTI",
+        "unctadTrade": "332",
+        "unctadServicesTrade": "332",
+        "unComtradeReporter": "332",
+        "unComtradeIsoFallback": "HTI",
+        "worldMapTopojson": "332",
+        "oecdRevenue": "HTI",
+        "sipriMilitarySpending": "Haiti",
+        "unNationalAccounts": "Haiti"
+      }
+    },
+    "DOM": {
+      "iso3": "DOM",
+      "iso2": "DO",
+      "m49": "214",
+      "sourceIds": {
+        "unMigrantStock": "214",
+        "worldBankWdi": "DOM",
+        "worldBankAgeComposition": "DOM",
+        "unctadTrade": "214",
+        "unctadServicesTrade": "214",
+        "unComtradeReporter": "214",
+        "unComtradeIsoFallback": "DOM",
+        "worldMapTopojson": "214",
+        "oecdRevenue": "DOM",
+        "sipriMilitarySpending": "Dominican Republic",
+        "unNationalAccounts": "Dominican Republic"
+      }
+    },
+    "ATG": {
+      "iso3": "ATG",
+      "iso2": "AG",
+      "m49": "28",
+      "sourceIds": {
+        "unMigrantStock": "28",
+        "worldBankWdi": "ATG",
+        "worldBankAgeComposition": "ATG",
+        "unctadTrade": "028",
+        "unctadServicesTrade": "028",
+        "unComtradeReporter": "028",
+        "unComtradeIsoFallback": "ATG",
+        "worldMapTopojson": "028",
+        "oecdRevenue": "ATG",
+        "sipriMilitarySpending": "Antigua and Barbuda",
+        "unNationalAccounts": "Antigua and Barbuda"
+      }
+    },
+    "KNA": {
+      "iso3": "KNA",
+      "iso2": "KN",
+      "m49": "659",
+      "sourceIds": {
+        "unMigrantStock": "659",
+        "worldBankWdi": "KNA",
+        "worldBankAgeComposition": "KNA",
+        "unctadTrade": "659",
+        "unctadServicesTrade": "659",
+        "unComtradeReporter": "659",
+        "unComtradeIsoFallback": "KNA",
+        "worldMapTopojson": "659",
+        "oecdRevenue": "KNA",
+        "sipriMilitarySpending": "Saint Kitts and Nevis",
+        "unNationalAccounts": "Saint Kitts and Nevis"
+      }
+    },
+    "DMA": {
+      "iso3": "DMA",
+      "iso2": "DM",
+      "m49": "212",
+      "sourceIds": {
+        "unMigrantStock": "212",
+        "worldBankWdi": "DMA",
+        "worldBankAgeComposition": "DMA",
+        "unctadTrade": "212",
+        "unctadServicesTrade": "212",
+        "unComtradeReporter": "212",
+        "unComtradeIsoFallback": "DMA",
+        "worldMapTopojson": "212",
+        "oecdRevenue": "DMA",
+        "sipriMilitarySpending": "Dominica",
+        "unNationalAccounts": "Dominica"
+      }
+    },
+    "LCA": {
+      "iso3": "LCA",
+      "iso2": "LC",
+      "m49": "662",
+      "sourceIds": {
+        "unMigrantStock": "662",
+        "worldBankWdi": "LCA",
+        "worldBankAgeComposition": "LCA",
+        "unctadTrade": "662",
+        "unctadServicesTrade": "662",
+        "unComtradeReporter": "662",
+        "unComtradeIsoFallback": "LCA",
+        "worldMapTopojson": "662",
+        "oecdRevenue": "LCA",
+        "sipriMilitarySpending": "Saint Lucia",
+        "unNationalAccounts": "Saint Lucia"
+      }
+    },
+    "BRB": {
+      "iso3": "BRB",
+      "iso2": "BB",
+      "m49": "52",
+      "sourceIds": {
+        "unMigrantStock": "52",
+        "worldBankWdi": "BRB",
+        "worldBankAgeComposition": "BRB",
+        "unctadTrade": "052",
+        "unctadServicesTrade": "052",
+        "unComtradeReporter": "052",
+        "unComtradeIsoFallback": "BRB",
+        "worldMapTopojson": "052",
+        "oecdRevenue": "BRB",
+        "sipriMilitarySpending": "Barbados",
+        "unNationalAccounts": "Barbados"
+      }
+    },
+    "VCT": {
+      "iso3": "VCT",
+      "iso2": "VC",
+      "m49": "670",
+      "sourceIds": {
+        "unMigrantStock": "670",
+        "worldBankWdi": "VCT",
+        "worldBankAgeComposition": "VCT",
+        "unctadTrade": "670",
+        "unctadServicesTrade": "670",
+        "unComtradeReporter": "670",
+        "unComtradeIsoFallback": "VCT",
+        "worldMapTopojson": "670",
+        "oecdRevenue": "VCT",
+        "sipriMilitarySpending": "Saint Vincent and the Grenadines",
+        "unNationalAccounts": "Saint Vincent and the Grenadines"
+      }
+    },
+    "GRD": {
+      "iso3": "GRD",
+      "iso2": "GD",
+      "m49": "308",
+      "sourceIds": {
+        "unMigrantStock": "308",
+        "worldBankWdi": "GRD",
+        "worldBankAgeComposition": "GRD",
+        "unctadTrade": "308",
+        "unctadServicesTrade": "308",
+        "unComtradeReporter": "308",
+        "unComtradeIsoFallback": "GRD",
+        "worldMapTopojson": "308",
+        "oecdRevenue": "GRD",
+        "sipriMilitarySpending": "Grenada",
+        "unNationalAccounts": "Grenada"
+      }
+    },
+    "TTO": {
+      "iso3": "TTO",
+      "iso2": "TT",
+      "m49": "780",
+      "sourceIds": {
+        "unMigrantStock": "780",
+        "worldBankWdi": "TTO",
+        "worldBankAgeComposition": "TTO",
+        "unctadTrade": "780",
+        "unctadServicesTrade": "780",
+        "unComtradeReporter": "780",
+        "unComtradeIsoFallback": "TTO",
+        "worldMapTopojson": "780",
+        "oecdRevenue": "TTO",
+        "sipriMilitarySpending": "Trinidad and Tobago",
+        "unNationalAccounts": "Trinidad and Tobago"
+      }
+    },
+    "CYM": {
+      "iso3": "CYM",
+      "iso2": "KY",
+      "m49": "136",
+      "sourceIds": {
+        "unMigrantStock": "136",
+        "worldBankWdi": "CYM",
+        "worldBankAgeComposition": "CYM",
+        "unctadTrade": "136",
+        "unctadServicesTrade": "136",
+        "unComtradeReporter": "136",
+        "unComtradeIsoFallback": "CYM",
+        "worldMapTopojson": "136",
+        "oecdRevenue": "CYM",
+        "sipriMilitarySpending": "Cayman Islands",
+        "unNationalAccounts": "Cayman Islands"
+      }
+    },
+    "CUW": {
+      "iso3": "CUW",
+      "iso2": "CW",
+      "m49": "531",
+      "sourceIds": {
+        "unMigrantStock": "531",
+        "worldBankWdi": "CUW",
+        "worldBankAgeComposition": "CUW",
+        "unctadTrade": "531",
+        "unctadServicesTrade": "531",
+        "unComtradeReporter": "531",
+        "unComtradeIsoFallback": "CUW",
+        "worldMapTopojson": "531",
+        "oecdRevenue": "CUW",
+        "sipriMilitarySpending": "Curaçao",
+        "unNationalAccounts": "Curaçao"
+      }
+    },
+    "GLP": {
+      "iso3": "GLP",
+      "iso2": "GP",
+      "m49": "312",
+      "sourceIds": {
+        "unMigrantStock": "312",
+        "unctadTrade": "312",
+        "unctadServicesTrade": "312",
+        "unComtradeReporter": "312",
+        "worldMapTopojson": "312",
+        "oecdRevenue": "GLP",
+        "sipriMilitarySpending": "Guadeloupe",
+        "unNationalAccounts": "Guadeloupe"
+      }
+    },
+    "GRL": {
+      "iso3": "GRL",
+      "iso2": "GL",
+      "m49": "304",
+      "sourceIds": {
+        "unMigrantStock": "304",
+        "worldBankWdi": "GRL",
+        "worldBankAgeComposition": "GRL",
+        "unctadTrade": "304",
+        "unctadServicesTrade": "304",
+        "unComtradeReporter": "304",
+        "unComtradeIsoFallback": "GRL",
+        "worldMapTopojson": "304",
+        "oecdRevenue": "GRL",
+        "sipriMilitarySpending": "Greenland",
+        "unNationalAccounts": "Greenland"
+      }
+    },
+    "MAF": {
+      "iso3": "MAF",
+      "iso2": "MF",
+      "m49": "663",
+      "sourceIds": {
+        "unMigrantStock": "663",
+        "worldBankWdi": "MAF",
+        "worldBankAgeComposition": "MAF",
+        "unComtradeIsoFallback": "MAF",
+        "oecdRevenue": "MAF",
+        "sipriMilitarySpending": "Saint Martin",
+        "unNationalAccounts": "Saint Martin"
+      }
+    },
+    "MSR": {
+      "iso3": "MSR",
+      "iso2": "MS",
+      "m49": "500",
+      "sourceIds": {
+        "unMigrantStock": "500",
+        "unctadTrade": "500",
+        "unctadServicesTrade": "500",
+        "unComtradeReporter": "500",
+        "worldMapTopojson": "500",
+        "oecdRevenue": "MSR",
+        "sipriMilitarySpending": "Montserrat",
+        "unNationalAccounts": "Montserrat"
+      }
+    },
+    "MTQ": {
+      "iso3": "MTQ",
+      "iso2": "MQ",
+      "m49": "474",
+      "sourceIds": {
+        "unMigrantStock": "474",
+        "unctadTrade": "474",
+        "unctadServicesTrade": "474",
+        "unComtradeReporter": "474",
+        "worldMapTopojson": "474",
+        "oecdRevenue": "MTQ",
+        "sipriMilitarySpending": "Martinique",
+        "unNationalAccounts": "Martinique"
+      }
+    },
+    "PRI": {
+      "iso3": "PRI",
+      "iso2": "PR",
+      "m49": "630",
+      "sourceIds": {
+        "unMigrantStock": "630",
+        "worldBankWdi": "PRI",
+        "worldBankAgeComposition": "PRI",
+        "unComtradeIsoFallback": "PRI",
+        "oecdRevenue": "PRI",
+        "sipriMilitarySpending": "Puerto Rico",
+        "unNationalAccounts": "Puerto Rico"
+      }
+    },
+    "SPM": {
+      "iso3": "SPM",
+      "iso2": "PM",
+      "m49": "666",
+      "sourceIds": {
+        "unMigrantStock": "666",
+        "unctadTrade": "666",
+        "unctadServicesTrade": "666",
+        "unComtradeReporter": "666",
+        "worldMapTopojson": "666",
+        "oecdRevenue": "SPM",
+        "sipriMilitarySpending": "Saint Pierre and Miquelon",
+        "unNationalAccounts": "Saint Pierre and Miquelon"
+      }
+    },
+    "SXM": {
+      "iso3": "SXM",
+      "iso2": "SX",
+      "m49": "534",
+      "sourceIds": {
+        "unMigrantStock": "534",
+        "worldBankWdi": "SXM",
+        "worldBankAgeComposition": "SXM",
+        "unctadTrade": "534",
+        "unctadServicesTrade": "534",
+        "unComtradeReporter": "534",
+        "unComtradeIsoFallback": "SXM",
+        "worldMapTopojson": "534",
+        "oecdRevenue": "SXM",
+        "sipriMilitarySpending": "Sint Maarten",
+        "unNationalAccounts": "Sint Maarten (Dutch part)"
+      }
+    },
+    "TCA": {
+      "iso3": "TCA",
+      "iso2": "TC",
+      "m49": "796",
+      "sourceIds": {
+        "unMigrantStock": "796",
+        "worldBankWdi": "TCA",
+        "worldBankAgeComposition": "TCA",
+        "unctadTrade": "796",
+        "unctadServicesTrade": "796",
+        "unComtradeReporter": "796",
+        "unComtradeIsoFallback": "TCA",
+        "worldMapTopojson": "796",
+        "oecdRevenue": "TCA",
+        "sipriMilitarySpending": "Turks and Caicos Islands",
+        "unNationalAccounts": "Turks and Caicos Islands"
+      }
+    },
+    "VGB": {
+      "iso3": "VGB",
+      "iso2": "VG",
+      "m49": "92",
+      "sourceIds": {
+        "unMigrantStock": "92",
+        "worldBankWdi": "VGB",
+        "worldBankAgeComposition": "VGB",
+        "unctadTrade": "092",
+        "unctadServicesTrade": "092",
+        "unComtradeReporter": "092",
+        "unComtradeIsoFallback": "VGB",
+        "worldMapTopojson": "092",
+        "oecdRevenue": "VGB",
+        "sipriMilitarySpending": "British Virgin Islands",
+        "unNationalAccounts": "British Virgin Islands"
+      }
+    },
+    "VIR": {
+      "iso3": "VIR",
+      "iso2": "VI",
+      "m49": "850",
+      "sourceIds": {
+        "unMigrantStock": "850",
+        "worldBankWdi": "VIR",
+        "worldBankAgeComposition": "VIR",
+        "unComtradeIsoFallback": "VIR",
+        "oecdRevenue": "VIR",
+        "sipriMilitarySpending": "U.S. Virgin Islands",
+        "unNationalAccounts": "U.S. Virgin Islands"
+      }
+    },
+    "VEN": {
+      "iso3": "VEN",
+      "iso2": "VE",
+      "m49": "862",
+      "sourceIds": {
+        "unMigrantStock": "862",
+        "worldBankWdi": "VEN",
+        "worldBankAgeComposition": "VEN",
+        "unctadTrade": "862",
+        "unctadServicesTrade": "862",
+        "unComtradeReporter": "862",
+        "unComtradeIsoFallback": "VEN",
+        "worldMapTopojson": "862",
+        "oecdRevenue": "VEN",
+        "sipriMilitarySpending": "Venezuela",
+        "unNationalAccounts": "Venezuela (Bolivarian Republic of)"
+      }
+    },
+    "FLK": {
+      "iso3": "FLK",
+      "iso2": "FK",
+      "m49": "238",
+      "sourceIds": {
+        "unMigrantStock": "238",
+        "unctadTrade": "238",
+        "unctadServicesTrade": "238",
+        "unComtradeReporter": "238",
+        "worldMapTopojson": "238",
+        "oecdRevenue": "FLK",
+        "sipriMilitarySpending": "Falkland Islands",
+        "unNationalAccounts": "Falkland Islands"
+      }
+    },
+    "GUF": {
+      "iso3": "GUF",
+      "iso2": "GF",
+      "m49": "254",
+      "sourceIds": {
+        "unMigrantStock": "254",
+        "unctadTrade": "254",
+        "unctadServicesTrade": "254",
+        "unComtradeReporter": "254",
+        "worldMapTopojson": "254",
+        "oecdRevenue": "GUF",
+        "sipriMilitarySpending": "French Guiana",
+        "unNationalAccounts": "French Guiana"
+      }
+    },
+    "GUY": {
+      "iso3": "GUY",
+      "iso2": "GY",
+      "m49": "328",
+      "sourceIds": {
+        "unMigrantStock": "328",
+        "worldBankWdi": "GUY",
+        "worldBankAgeComposition": "GUY",
+        "unctadTrade": "328",
+        "unctadServicesTrade": "328",
+        "unComtradeReporter": "328",
+        "unComtradeIsoFallback": "GUY",
+        "worldMapTopojson": "328",
+        "oecdRevenue": "GUY",
+        "sipriMilitarySpending": "Guyana",
+        "unNationalAccounts": "Guyana"
+      }
+    },
+    "SUR": {
+      "iso3": "SUR",
+      "iso2": "SR",
+      "m49": "740",
+      "sourceIds": {
+        "unMigrantStock": "740",
+        "worldBankWdi": "SUR",
+        "worldBankAgeComposition": "SUR",
+        "unctadTrade": "740",
+        "unctadServicesTrade": "740",
+        "unComtradeReporter": "740",
+        "unComtradeIsoFallback": "SUR",
+        "worldMapTopojson": "740",
+        "oecdRevenue": "SUR",
+        "sipriMilitarySpending": "Suriname",
+        "unNationalAccounts": "Suriname"
+      }
+    },
+    "ECU": {
+      "iso3": "ECU",
+      "iso2": "EC",
+      "m49": "218",
+      "sourceIds": {
+        "unMigrantStock": "218",
+        "worldBankWdi": "ECU",
+        "worldBankAgeComposition": "ECU",
+        "unctadTrade": "218",
+        "unctadServicesTrade": "218",
+        "unComtradeReporter": "218",
+        "unComtradeIsoFallback": "ECU",
+        "worldMapTopojson": "218",
+        "oecdRevenue": "ECU",
+        "sipriMilitarySpending": "Ecuador",
+        "unNationalAccounts": "Ecuador"
+      }
+    },
+    "BOL": {
+      "iso3": "BOL",
+      "iso2": "BO",
+      "m49": "68",
+      "sourceIds": {
+        "unMigrantStock": "68",
+        "worldBankWdi": "BOL",
+        "worldBankAgeComposition": "BOL",
+        "unctadTrade": "068",
+        "unctadServicesTrade": "068",
+        "unComtradeReporter": "068",
+        "unComtradeIsoFallback": "BOL",
+        "worldMapTopojson": "068",
+        "oecdRevenue": "BOL",
+        "sipriMilitarySpending": "Bolivia",
+        "unNationalAccounts": "Bolivia (Plurinational State of)"
+      }
+    },
+    "PRY": {
+      "iso3": "PRY",
+      "iso2": "PY",
+      "m49": "600",
+      "sourceIds": {
+        "unMigrantStock": "600",
+        "worldBankWdi": "PRY",
+        "worldBankAgeComposition": "PRY",
+        "unctadTrade": "600",
+        "unctadServicesTrade": "600",
+        "unComtradeReporter": "600",
+        "unComtradeIsoFallback": "PRY",
+        "worldMapTopojson": "600",
+        "oecdRevenue": "PRY",
+        "sipriMilitarySpending": "Paraguay",
+        "unNationalAccounts": "Paraguay"
+      }
+    },
+    "URY": {
+      "iso3": "URY",
+      "iso2": "UY",
+      "m49": "858",
+      "sourceIds": {
+        "unMigrantStock": "858",
+        "worldBankWdi": "URY",
+        "worldBankAgeComposition": "URY",
+        "unctadTrade": "858",
+        "unctadServicesTrade": "858",
+        "unComtradeReporter": "858",
+        "unComtradeIsoFallback": "URY",
+        "worldMapTopojson": "858",
+        "oecdRevenue": "URY",
+        "sipriMilitarySpending": "Uruguay",
+        "unNationalAccounts": "Uruguay"
+      }
+    },
+    "PER": {
+      "iso3": "PER",
+      "iso2": "PE",
+      "m49": "604",
+      "sourceIds": {
+        "unMigrantStock": "604",
+        "worldBankWdi": "PER",
+        "worldBankAgeComposition": "PER",
+        "unctadTrade": "604",
+        "unctadServicesTrade": "604",
+        "unComtradeReporter": "604",
+        "unComtradeIsoFallback": "PER",
+        "worldMapTopojson": "604",
+        "oecdRevenue": "PER",
+        "sipriMilitarySpending": "Peru",
+        "unNationalAccounts": "Peru"
+      }
+    },
+    "RUS": {
+      "iso3": "RUS",
+      "iso2": "RU",
+      "m49": "643",
+      "sourceIds": {
+        "unMigrantStock": "643",
+        "worldBankWdi": "RUS",
+        "worldBankAgeComposition": "RUS",
+        "unctadTrade": "643",
+        "unctadServicesTrade": "643",
+        "unComtradeReporter": "643",
+        "unComtradeIsoFallback": "RUS",
+        "worldMapTopojson": "643",
+        "oecdRevenue": "RUS",
+        "sipriMilitarySpending": "Russia",
+        "unNationalAccounts": "Russian Federation"
+      }
+    },
+    "ZAF": {
+      "iso3": "ZAF",
+      "iso2": "ZA",
+      "m49": "710",
+      "sourceIds": {
+        "unMigrantStock": "710",
+        "worldBankWdi": "ZAF",
+        "worldBankAgeComposition": "ZAF",
+        "unctadTrade": "710",
+        "unctadServicesTrade": "710",
+        "unComtradeReporter": "710",
+        "unComtradeIsoFallback": "ZAF",
+        "worldMapTopojson": "710",
+        "oecdRevenue": "ZAF",
+        "sipriMilitarySpending": "South Africa",
+        "unNationalAccounts": "South Africa"
+      }
+    },
+    "CHL": {
+      "iso3": "CHL",
+      "iso2": "CL",
+      "m49": "152",
+      "sourceIds": {
+        "unMigrantStock": "152",
+        "worldBankWdi": "CHL",
+        "worldBankAgeComposition": "CHL",
+        "unctadTrade": "152",
+        "unctadServicesTrade": "152",
+        "unComtradeReporter": "152",
+        "unComtradeIsoFallback": "CHL",
+        "worldMapTopojson": "152",
+        "oecdRevenue": "CHL",
+        "sipriMilitarySpending": "Chile",
+        "unNationalAccounts": "Chile"
+      }
+    },
+    "COL": {
+      "iso3": "COL",
+      "iso2": "CO",
+      "m49": "170",
+      "sourceIds": {
+        "unMigrantStock": "170",
+        "worldBankWdi": "COL",
+        "worldBankAgeComposition": "COL",
+        "unctadTrade": "170",
+        "unctadServicesTrade": "170",
+        "unComtradeReporter": "170",
+        "unComtradeIsoFallback": "COL",
+        "worldMapTopojson": "170",
+        "oecdRevenue": "COL",
+        "sipriMilitarySpending": "Colombia",
+        "unNationalAccounts": "Colombia"
+      }
+    },
+    "CRI": {
+      "iso3": "CRI",
+      "iso2": "CR",
+      "m49": "188",
+      "sourceIds": {
+        "unMigrantStock": "188",
+        "worldBankWdi": "CRI",
+        "worldBankAgeComposition": "CRI",
+        "unctadTrade": "188",
+        "unctadServicesTrade": "188",
+        "unComtradeReporter": "188",
+        "unComtradeIsoFallback": "CRI",
+        "worldMapTopojson": "188",
+        "oecdRevenue": "CRI",
+        "sipriMilitarySpending": "Costa Rica",
+        "unNationalAccounts": "Costa Rica"
+      }
+    },
+    "NOR": {
+      "iso3": "NOR",
+      "iso2": "NO",
+      "m49": "578",
+      "sourceIds": {
+        "unMigrantStock": "578",
+        "worldBankWdi": "NOR",
+        "worldBankAgeComposition": "NOR",
+        "unctadTrade": "578",
+        "unctadServicesTrade": "578",
+        "unComtradeReporter": "578",
+        "unComtradeIsoFallback": "NOR",
+        "worldMapTopojson": "578",
+        "oecdRevenue": "NOR",
+        "sipriMilitarySpending": "Norway",
+        "unNationalAccounts": "Norway"
+      }
+    },
+    "ISL": {
+      "iso3": "ISL",
+      "iso2": "IS",
+      "m49": "352",
+      "sourceIds": {
+        "unMigrantStock": "352",
+        "worldBankWdi": "ISL",
+        "worldBankAgeComposition": "ISL",
+        "unctadTrade": "352",
+        "unctadServicesTrade": "352",
+        "unComtradeReporter": "352",
+        "unComtradeIsoFallback": "ISL",
+        "worldMapTopojson": "352",
+        "oecdRevenue": "ISL",
+        "sipriMilitarySpending": "Iceland",
+        "unNationalAccounts": "Iceland"
+      }
+    },
+    "CHE": {
+      "iso3": "CHE",
+      "iso2": "CH",
+      "m49": "756",
+      "sourceIds": {
+        "unMigrantStock": "756",
+        "worldBankWdi": "CHE",
+        "worldBankAgeComposition": "CHE",
+        "unctadTrade": "756",
+        "unctadServicesTrade": "756",
+        "unComtradeReporter": "756",
+        "unComtradeIsoFallback": "CHE",
+        "worldMapTopojson": "756",
+        "oecdRevenue": "CHE",
+        "sipriMilitarySpending": "Switzerland",
+        "unNationalAccounts": "Switzerland"
+      }
+    },
+    "ISR": {
+      "iso3": "ISR",
+      "iso2": "IL",
+      "m49": "376",
+      "sourceIds": {
+        "unMigrantStock": "376",
+        "worldBankWdi": "ISR",
+        "worldBankAgeComposition": "ISR",
+        "unctadTrade": "376",
+        "unctadServicesTrade": "376",
+        "unComtradeReporter": "376",
+        "unComtradeIsoFallback": "ISR",
+        "worldMapTopojson": "376",
+        "oecdRevenue": "ISR",
+        "sipriMilitarySpending": "Israel",
+        "unNationalAccounts": "Israel"
+      }
+    },
+    "FRO": {
+      "iso3": "FRO",
+      "iso2": "FO",
+      "m49": "234",
+      "sourceIds": {
+        "unMigrantStock": "234",
+        "worldBankWdi": "FRO",
+        "worldBankAgeComposition": "FRO",
+        "unctadTrade": "234",
+        "unctadServicesTrade": "234",
+        "unComtradeReporter": "234",
+        "unComtradeIsoFallback": "FRO",
+        "worldMapTopojson": "234",
+        "oecdRevenue": "FRO",
+        "sipriMilitarySpending": "Faroe Islands",
+        "unNationalAccounts": "Faroe Islands"
+      }
+    },
+    "GIB": {
+      "iso3": "GIB",
+      "iso2": "GI",
+      "m49": "292",
+      "sourceIds": {
+        "unMigrantStock": "292",
+        "worldBankWdi": "GIB",
+        "worldBankAgeComposition": "GIB",
+        "unctadTrade": "292",
+        "unctadServicesTrade": "292",
+        "unComtradeReporter": "292",
+        "unComtradeIsoFallback": "GIB",
+        "worldMapTopojson": "292",
+        "oecdRevenue": "GIB",
+        "sipriMilitarySpending": "Gibraltar",
+        "unNationalAccounts": "Gibraltar"
+      }
+    },
+    "IMN": {
+      "iso3": "IMN",
+      "iso2": "IM",
+      "m49": "833",
+      "sourceIds": {
+        "unMigrantStock": "833",
+        "worldBankWdi": "IMN",
+        "worldBankAgeComposition": "IMN",
+        "unComtradeIsoFallback": "IMN",
+        "oecdRevenue": "IMN",
+        "sipriMilitarySpending": "Isle of Man",
+        "unNationalAccounts": "Isle of Man"
+      }
+    },
+    "LIE": {
+      "iso3": "LIE",
+      "iso2": "LI",
+      "m49": "438",
+      "sourceIds": {
+        "unMigrantStock": "438",
+        "worldBankWdi": "LIE",
+        "worldBankAgeComposition": "LIE",
+        "unComtradeIsoFallback": "LIE",
+        "oecdRevenue": "LIE",
+        "sipriMilitarySpending": "Liechtenstein",
+        "unNationalAccounts": "Liechtenstein"
+      }
+    },
+    "VAT": {
+      "iso3": "VAT",
+      "iso2": "VA",
+      "m49": "336",
+      "sourceIds": {
+        "unMigrantStock": "336",
+        "oecdRevenue": "VAT",
+        "sipriMilitarySpending": "Vatican City",
+        "unNationalAccounts": "Vatican City"
+      }
+    },
+    "SMR": {
+      "iso3": "SMR",
+      "iso2": "SM",
+      "m49": "674",
+      "sourceIds": {
+        "unMigrantStock": "674",
+        "worldBankWdi": "SMR",
+        "worldBankAgeComposition": "SMR",
+        "unComtradeIsoFallback": "SMR",
+        "oecdRevenue": "SMR",
+        "sipriMilitarySpending": "San Marino",
+        "unNationalAccounts": "San Marino"
+      }
+    },
+    "AND": {
+      "iso3": "AND",
+      "iso2": "AD",
+      "m49": "20",
+      "sourceIds": {
+        "unMigrantStock": "20",
+        "worldBankWdi": "AND",
+        "worldBankAgeComposition": "AND",
+        "unctadTrade": "020",
+        "unctadServicesTrade": "020",
+        "unComtradeReporter": "020",
+        "unComtradeIsoFallback": "AND",
+        "worldMapTopojson": "020",
+        "oecdRevenue": "AND",
+        "sipriMilitarySpending": "Andorra",
+        "unNationalAccounts": "Andorra"
+      }
+    },
+    "MCO": {
+      "iso3": "MCO",
+      "iso2": "MC",
+      "m49": "492",
+      "sourceIds": {
+        "unMigrantStock": "492",
+        "worldBankWdi": "MCO",
+        "worldBankAgeComposition": "MCO",
+        "unComtradeIsoFallback": "MCO",
+        "oecdRevenue": "MCO",
+        "sipriMilitarySpending": "Monaco",
+        "unNationalAccounts": "Monaco"
+      }
+    },
+    "BLR": {
+      "iso3": "BLR",
+      "iso2": "BY",
+      "m49": "112",
+      "sourceIds": {
+        "unMigrantStock": "112",
+        "worldBankWdi": "BLR",
+        "worldBankAgeComposition": "BLR",
+        "unctadTrade": "112",
+        "unctadServicesTrade": "112",
+        "unComtradeReporter": "112",
+        "unComtradeIsoFallback": "BLR",
+        "worldMapTopojson": "112",
+        "oecdRevenue": "BLR",
+        "sipriMilitarySpending": "Belarus",
+        "unNationalAccounts": "Belarus"
+      }
+    },
+    "BIH": {
+      "iso3": "BIH",
+      "iso2": "BA",
+      "m49": "70",
+      "sourceIds": {
+        "unMigrantStock": "70",
+        "worldBankWdi": "BIH",
+        "worldBankAgeComposition": "BIH",
+        "unctadTrade": "070",
+        "unctadServicesTrade": "070",
+        "unComtradeReporter": "070",
+        "unComtradeIsoFallback": "BIH",
+        "worldMapTopojson": "070",
+        "oecdRevenue": "BIH",
+        "sipriMilitarySpending": "Bosnia and Herzegovina",
+        "unNationalAccounts": "Bosnia and Herzegovina"
+      }
+    },
+    "SRB": {
+      "iso3": "SRB",
+      "iso2": "RS",
+      "m49": "688",
+      "sourceIds": {
+        "unMigrantStock": "688",
+        "worldBankWdi": "SRB",
+        "worldBankAgeComposition": "SRB",
+        "unctadTrade": "688",
+        "unctadServicesTrade": "688",
+        "unComtradeReporter": "688",
+        "unComtradeIsoFallback": "SRB",
+        "worldMapTopojson": "688",
+        "oecdRevenue": "SRB",
+        "sipriMilitarySpending": "Serbia",
+        "unNationalAccounts": "Serbia"
+      }
+    },
+    "MNE": {
+      "iso3": "MNE",
+      "iso2": "ME",
+      "m49": "499",
+      "sourceIds": {
+        "unMigrantStock": "499",
+        "worldBankWdi": "MNE",
+        "worldBankAgeComposition": "MNE",
+        "unctadTrade": "499",
+        "unctadServicesTrade": "499",
+        "unComtradeReporter": "499",
+        "unComtradeIsoFallback": "MNE",
+        "worldMapTopojson": "499",
+        "oecdRevenue": "MNE",
+        "sipriMilitarySpending": "Montenegro",
+        "unNationalAccounts": "Montenegro"
+      }
+    },
+    "KOS": {
+      "iso3": "KOS",
+      "iso2": "XK",
+      "m49": null,
+      "sourceIds": {
+        "unWpp": "XKX",
+        "worldBankWdi": "XKX",
+        "worldBankAgeComposition": "XKX",
+        "unComtradeIsoFallback": "XKX",
+        "oecdRevenue": "KOS",
+        "sipriMilitarySpending": "Kosovo",
+        "unNationalAccounts": "Kosovo"
+      }
+    },
+    "MKD": {
+      "iso3": "MKD",
+      "iso2": "MK",
+      "m49": "807",
+      "sourceIds": {
+        "unMigrantStock": "807",
+        "worldBankWdi": "MKD",
+        "worldBankAgeComposition": "MKD",
+        "unctadTrade": "807",
+        "unctadServicesTrade": "807",
+        "unComtradeReporter": "807",
+        "unComtradeIsoFallback": "MKD",
+        "worldMapTopojson": "807",
+        "oecdRevenue": "MKD",
+        "sipriMilitarySpending": "North Macedonia",
+        "unNationalAccounts": "Republic of North Macedonia"
+      }
+    },
+    "ALB": {
+      "iso3": "ALB",
+      "iso2": "AL",
+      "m49": "8",
+      "sourceIds": {
+        "unMigrantStock": "8",
+        "worldBankWdi": "ALB",
+        "worldBankAgeComposition": "ALB",
+        "unctadTrade": "008",
+        "unctadServicesTrade": "008",
+        "unComtradeReporter": "008",
+        "unComtradeIsoFallback": "ALB",
+        "worldMapTopojson": "008",
+        "oecdRevenue": "ALB",
+        "sipriMilitarySpending": "Albania",
+        "unNationalAccounts": "Albania"
+      }
+    },
+    "MDA": {
+      "iso3": "MDA",
+      "iso2": "MD",
+      "m49": "498",
+      "sourceIds": {
+        "unMigrantStock": "498",
+        "worldBankWdi": "MDA",
+        "worldBankAgeComposition": "MDA",
+        "unctadTrade": "498",
+        "unctadServicesTrade": "498",
+        "unComtradeReporter": "498",
+        "unComtradeIsoFallback": "MDA",
+        "worldMapTopojson": "498",
+        "oecdRevenue": "MDA",
+        "sipriMilitarySpending": "Moldova",
+        "unNationalAccounts": "Republic of Moldova"
+      }
+    },
+    "UKR": {
+      "iso3": "UKR",
+      "iso2": "UA",
+      "m49": "804",
+      "sourceIds": {
+        "unMigrantStock": "804",
+        "worldBankWdi": "UKR",
+        "worldBankAgeComposition": "UKR",
+        "unctadTrade": "804",
+        "unctadServicesTrade": "804",
+        "unComtradeReporter": "804",
+        "unComtradeIsoFallback": "UKR",
+        "worldMapTopojson": "804",
+        "oecdRevenue": "UKR",
+        "sipriMilitarySpending": "Ukraine",
+        "unNationalAccounts": "Ukraine"
+      }
+    },
+    "AUT": {
+      "iso3": "AUT",
+      "iso2": "AT",
+      "m49": "40",
+      "sourceIds": {
+        "unMigrantStock": "40",
+        "worldBankWdi": "AUT",
+        "worldBankAgeComposition": "AUT",
+        "unctadTrade": "040",
+        "unctadServicesTrade": "040",
+        "unComtradeReporter": "040",
+        "unComtradeIsoFallback": "AUT",
+        "worldMapTopojson": "040",
+        "oecdRevenue": "AUT",
+        "sipriMilitarySpending": "Austria",
+        "unNationalAccounts": "Austria"
+      }
+    },
+    "BEL": {
+      "iso3": "BEL",
+      "iso2": "BE",
+      "m49": "56",
+      "sourceIds": {
+        "unMigrantStock": "56",
+        "worldBankWdi": "BEL",
+        "worldBankAgeComposition": "BEL",
+        "unctadTrade": "056",
+        "unctadServicesTrade": "056",
+        "unComtradeReporter": "056",
+        "unComtradeIsoFallback": "BEL",
+        "worldMapTopojson": "056",
+        "oecdRevenue": "BEL",
+        "sipriMilitarySpending": "Belgium",
+        "unNationalAccounts": "Belgium"
+      }
+    },
+    "BGR": {
+      "iso3": "BGR",
+      "iso2": "BG",
+      "m49": "100",
+      "sourceIds": {
+        "unMigrantStock": "100",
+        "worldBankWdi": "BGR",
+        "worldBankAgeComposition": "BGR",
+        "unctadTrade": "100",
+        "unctadServicesTrade": "100",
+        "unComtradeReporter": "100",
+        "unComtradeIsoFallback": "BGR",
+        "worldMapTopojson": "100",
+        "oecdRevenue": "BGR",
+        "sipriMilitarySpending": "Bulgaria",
+        "unNationalAccounts": "Bulgaria"
+      }
+    },
+    "HRV": {
+      "iso3": "HRV",
+      "iso2": "HR",
+      "m49": "191",
+      "sourceIds": {
+        "unMigrantStock": "191",
+        "worldBankWdi": "HRV",
+        "worldBankAgeComposition": "HRV",
+        "unctadTrade": "191",
+        "unctadServicesTrade": "191",
+        "unComtradeReporter": "191",
+        "unComtradeIsoFallback": "HRV",
+        "worldMapTopojson": "191",
+        "oecdRevenue": "HRV",
+        "sipriMilitarySpending": "Croatia",
+        "unNationalAccounts": "Croatia"
+      }
+    },
+    "CYP": {
+      "iso3": "CYP",
+      "iso2": "CY",
+      "m49": "196",
+      "sourceIds": {
+        "unMigrantStock": "196",
+        "worldBankWdi": "CYP",
+        "worldBankAgeComposition": "CYP",
+        "unctadTrade": "196",
+        "unctadServicesTrade": "196",
+        "unComtradeReporter": "196",
+        "unComtradeIsoFallback": "CYP",
+        "worldMapTopojson": "196",
+        "oecdRevenue": "CYP",
+        "sipriMilitarySpending": "Cyprus",
+        "unNationalAccounts": "Cyprus"
+      }
+    },
+    "CZE": {
+      "iso3": "CZE",
+      "iso2": "CZ",
+      "m49": "203",
+      "sourceIds": {
+        "unMigrantStock": "203",
+        "worldBankWdi": "CZE",
+        "worldBankAgeComposition": "CZE",
+        "unctadTrade": "203",
+        "unctadServicesTrade": "203",
+        "unComtradeReporter": "203",
+        "unComtradeIsoFallback": "CZE",
+        "worldMapTopojson": "203",
+        "oecdRevenue": "CZE",
+        "sipriMilitarySpending": "Czechia",
+        "unNationalAccounts": "Czechia"
+      }
+    },
+    "DNK": {
+      "iso3": "DNK",
+      "iso2": "DK",
+      "m49": "208",
+      "sourceIds": {
+        "unMigrantStock": "208",
+        "worldBankWdi": "DNK",
+        "worldBankAgeComposition": "DNK",
+        "unctadTrade": "208",
+        "unctadServicesTrade": "208",
+        "unComtradeReporter": "208",
+        "unComtradeIsoFallback": "DNK",
+        "worldMapTopojson": "208",
+        "oecdRevenue": "DNK",
+        "sipriMilitarySpending": "Denmark",
+        "unNationalAccounts": "Denmark"
+      }
+    },
+    "EST": {
+      "iso3": "EST",
+      "iso2": "EE",
+      "m49": "233",
+      "sourceIds": {
+        "unMigrantStock": "233",
+        "worldBankWdi": "EST",
+        "worldBankAgeComposition": "EST",
+        "unctadTrade": "233",
+        "unctadServicesTrade": "233",
+        "unComtradeReporter": "233",
+        "unComtradeIsoFallback": "EST",
+        "worldMapTopojson": "233",
+        "oecdRevenue": "EST",
+        "sipriMilitarySpending": "Estonia",
+        "unNationalAccounts": "Estonia"
+      }
+    },
+    "FIN": {
+      "iso3": "FIN",
+      "iso2": "FI",
+      "m49": "246",
+      "sourceIds": {
+        "unMigrantStock": "246",
+        "worldBankWdi": "FIN",
+        "worldBankAgeComposition": "FIN",
+        "unctadTrade": "246",
+        "unctadServicesTrade": "246",
+        "unComtradeReporter": "246",
+        "unComtradeIsoFallback": "FIN",
+        "worldMapTopojson": "246",
+        "oecdRevenue": "FIN",
+        "sipriMilitarySpending": "Finland",
+        "unNationalAccounts": "Finland"
+      }
+    },
+    "GRC": {
+      "iso3": "GRC",
+      "iso2": "GR",
+      "m49": "300",
+      "sourceIds": {
+        "unMigrantStock": "300",
+        "worldBankWdi": "GRC",
+        "worldBankAgeComposition": "GRC",
+        "unctadTrade": "300",
+        "unctadServicesTrade": "300",
+        "unComtradeReporter": "300",
+        "unComtradeIsoFallback": "GRC",
+        "worldMapTopojson": "300",
+        "oecdRevenue": "GRC",
+        "sipriMilitarySpending": "Greece",
+        "unNationalAccounts": "Greece"
+      }
+    },
+    "HUN": {
+      "iso3": "HUN",
+      "iso2": "HU",
+      "m49": "348",
+      "sourceIds": {
+        "unMigrantStock": "348",
+        "worldBankWdi": "HUN",
+        "worldBankAgeComposition": "HUN",
+        "unctadTrade": "348",
+        "unctadServicesTrade": "348",
+        "unComtradeReporter": "348",
+        "unComtradeIsoFallback": "HUN",
+        "worldMapTopojson": "348",
+        "oecdRevenue": "HUN",
+        "sipriMilitarySpending": "Hungary",
+        "unNationalAccounts": "Hungary"
+      }
+    },
+    "IRL": {
+      "iso3": "IRL",
+      "iso2": "IE",
+      "m49": "372",
+      "sourceIds": {
+        "unMigrantStock": "372",
+        "worldBankWdi": "IRL",
+        "worldBankAgeComposition": "IRL",
+        "unctadTrade": "372",
+        "unctadServicesTrade": "372",
+        "unComtradeReporter": "372",
+        "unComtradeIsoFallback": "IRL",
+        "worldMapTopojson": "372",
+        "oecdRevenue": "IRL",
+        "sipriMilitarySpending": "Ireland",
+        "unNationalAccounts": "Ireland"
+      }
+    },
+    "LVA": {
+      "iso3": "LVA",
+      "iso2": "LV",
+      "m49": "428",
+      "sourceIds": {
+        "unMigrantStock": "428",
+        "worldBankWdi": "LVA",
+        "worldBankAgeComposition": "LVA",
+        "unctadTrade": "428",
+        "unctadServicesTrade": "428",
+        "unComtradeReporter": "428",
+        "unComtradeIsoFallback": "LVA",
+        "worldMapTopojson": "428",
+        "oecdRevenue": "LVA",
+        "sipriMilitarySpending": "Latvia",
+        "unNationalAccounts": "Latvia"
+      }
+    },
+    "LTU": {
+      "iso3": "LTU",
+      "iso2": "LT",
+      "m49": "440",
+      "sourceIds": {
+        "unMigrantStock": "440",
+        "worldBankWdi": "LTU",
+        "worldBankAgeComposition": "LTU",
+        "unctadTrade": "440",
+        "unctadServicesTrade": "440",
+        "unComtradeReporter": "440",
+        "unComtradeIsoFallback": "LTU",
+        "worldMapTopojson": "440",
+        "oecdRevenue": "LTU",
+        "sipriMilitarySpending": "Lithuania",
+        "unNationalAccounts": "Lithuania"
+      }
+    },
+    "LUX": {
+      "iso3": "LUX",
+      "iso2": "LU",
+      "m49": "442",
+      "sourceIds": {
+        "unMigrantStock": "442",
+        "worldBankWdi": "LUX",
+        "worldBankAgeComposition": "LUX",
+        "unctadTrade": "442",
+        "unctadServicesTrade": "442",
+        "unComtradeReporter": "442",
+        "unComtradeIsoFallback": "LUX",
+        "worldMapTopojson": "442",
+        "oecdRevenue": "LUX",
+        "sipriMilitarySpending": "Luxembourg",
+        "unNationalAccounts": "Luxembourg"
+      }
+    },
+    "MLT": {
+      "iso3": "MLT",
+      "iso2": "MT",
+      "m49": "470",
+      "sourceIds": {
+        "unMigrantStock": "470",
+        "worldBankWdi": "MLT",
+        "worldBankAgeComposition": "MLT",
+        "unctadTrade": "470",
+        "unctadServicesTrade": "470",
+        "unComtradeReporter": "470",
+        "unComtradeIsoFallback": "MLT",
+        "worldMapTopojson": "470",
+        "oecdRevenue": "MLT",
+        "sipriMilitarySpending": "Malta",
+        "unNationalAccounts": "Malta"
+      }
+    },
+    "NLD": {
+      "iso3": "NLD",
+      "iso2": "NL",
+      "m49": "528",
+      "sourceIds": {
+        "unMigrantStock": "528",
+        "worldBankWdi": "NLD",
+        "worldBankAgeComposition": "NLD",
+        "unctadTrade": "528",
+        "unctadServicesTrade": "528",
+        "unComtradeReporter": "528",
+        "unComtradeIsoFallback": "NLD",
+        "worldMapTopojson": "528",
+        "oecdRevenue": "NLD",
+        "sipriMilitarySpending": "Netherlands",
+        "unNationalAccounts": "Netherlands"
+      }
+    },
+    "POL": {
+      "iso3": "POL",
+      "iso2": "PL",
+      "m49": "616",
+      "sourceIds": {
+        "unMigrantStock": "616",
+        "worldBankWdi": "POL",
+        "worldBankAgeComposition": "POL",
+        "unctadTrade": "616",
+        "unctadServicesTrade": "616",
+        "unComtradeReporter": "616",
+        "unComtradeIsoFallback": "POL",
+        "worldMapTopojson": "616",
+        "oecdRevenue": "POL",
+        "sipriMilitarySpending": "Poland",
+        "unNationalAccounts": "Poland"
+      }
+    },
+    "PRT": {
+      "iso3": "PRT",
+      "iso2": "PT",
+      "m49": "620",
+      "sourceIds": {
+        "unMigrantStock": "620",
+        "worldBankWdi": "PRT",
+        "worldBankAgeComposition": "PRT",
+        "unctadTrade": "620",
+        "unctadServicesTrade": "620",
+        "unComtradeReporter": "620",
+        "unComtradeIsoFallback": "PRT",
+        "worldMapTopojson": "620",
+        "oecdRevenue": "PRT",
+        "sipriMilitarySpending": "Portugal",
+        "unNationalAccounts": "Portugal"
+      }
+    },
+    "ROU": {
+      "iso3": "ROU",
+      "iso2": "RO",
+      "m49": "642",
+      "sourceIds": {
+        "unMigrantStock": "642",
+        "worldBankWdi": "ROU",
+        "worldBankAgeComposition": "ROU",
+        "unctadTrade": "642",
+        "unctadServicesTrade": "642",
+        "unComtradeReporter": "642",
+        "unComtradeIsoFallback": "ROU",
+        "worldMapTopojson": "642",
+        "oecdRevenue": "ROU",
+        "sipriMilitarySpending": "Romania",
+        "unNationalAccounts": "Romania"
+      }
+    },
+    "SVK": {
+      "iso3": "SVK",
+      "iso2": "SK",
+      "m49": "703",
+      "sourceIds": {
+        "unMigrantStock": "703",
+        "worldBankWdi": "SVK",
+        "worldBankAgeComposition": "SVK",
+        "unctadTrade": "703",
+        "unctadServicesTrade": "703",
+        "unComtradeReporter": "703",
+        "unComtradeIsoFallback": "SVK",
+        "worldMapTopojson": "703",
+        "oecdRevenue": "SVK",
+        "sipriMilitarySpending": "Slovakia",
+        "unNationalAccounts": "Slovakia"
+      }
+    },
+    "SVN": {
+      "iso3": "SVN",
+      "iso2": "SI",
+      "m49": "705",
+      "sourceIds": {
+        "unMigrantStock": "705",
+        "worldBankWdi": "SVN",
+        "worldBankAgeComposition": "SVN",
+        "unctadTrade": "705",
+        "unctadServicesTrade": "705",
+        "unComtradeReporter": "705",
+        "unComtradeIsoFallback": "SVN",
+        "worldMapTopojson": "705",
+        "oecdRevenue": "SVN",
+        "sipriMilitarySpending": "Slovenia",
+        "unNationalAccounts": "Slovenia"
+      }
+    },
+    "ESP": {
+      "iso3": "ESP",
+      "iso2": "ES",
+      "m49": "724",
+      "sourceIds": {
+        "unMigrantStock": "724",
+        "worldBankWdi": "ESP",
+        "worldBankAgeComposition": "ESP",
+        "unctadTrade": "724",
+        "unctadServicesTrade": "724",
+        "unComtradeReporter": "724",
+        "unComtradeIsoFallback": "ESP",
+        "worldMapTopojson": "724",
+        "oecdRevenue": "ESP",
+        "sipriMilitarySpending": "Spain",
+        "unNationalAccounts": "Spain"
+      }
+    },
+    "SWE": {
+      "iso3": "SWE",
+      "iso2": "SE",
+      "m49": "752",
+      "sourceIds": {
+        "unMigrantStock": "752",
+        "worldBankWdi": "SWE",
+        "worldBankAgeComposition": "SWE",
+        "unctadTrade": "752",
+        "unctadServicesTrade": "752",
+        "unComtradeReporter": "752",
+        "unComtradeIsoFallback": "SWE",
+        "worldMapTopojson": "752",
+        "oecdRevenue": "SWE",
+        "sipriMilitarySpending": "Sweden",
+        "unNationalAccounts": "Sweden"
+      }
+    },
+    "BRN": {
+      "iso3": "BRN",
+      "iso2": "BN",
+      "m49": "96",
+      "sourceIds": {
+        "unMigrantStock": "96",
+        "worldBankWdi": "BRN",
+        "worldBankAgeComposition": "BRN",
+        "unctadTrade": "096",
+        "unctadServicesTrade": "096",
+        "unComtradeReporter": "096",
+        "unComtradeIsoFallback": "BRN",
+        "worldMapTopojson": "096",
+        "oecdRevenue": "BRN",
+        "sipriMilitarySpending": "Brunei",
+        "unNationalAccounts": "Brunei Darussalam"
+      }
+    },
+    "KHM": {
+      "iso3": "KHM",
+      "iso2": "KH",
+      "m49": "116",
+      "sourceIds": {
+        "unMigrantStock": "116",
+        "worldBankWdi": "KHM",
+        "worldBankAgeComposition": "KHM",
+        "unctadTrade": "116",
+        "unctadServicesTrade": "116",
+        "unComtradeReporter": "116",
+        "unComtradeIsoFallback": "KHM",
+        "worldMapTopojson": "116",
+        "oecdRevenue": "KHM",
+        "sipriMilitarySpending": "Cambodia",
+        "unNationalAccounts": "Cambodia"
+      }
+    },
+    "LAO": {
+      "iso3": "LAO",
+      "iso2": "LA",
+      "m49": "418",
+      "sourceIds": {
+        "unMigrantStock": "418",
+        "worldBankWdi": "LAO",
+        "worldBankAgeComposition": "LAO",
+        "unctadTrade": "418",
+        "unctadServicesTrade": "418",
+        "unComtradeReporter": "418",
+        "unComtradeIsoFallback": "LAO",
+        "worldMapTopojson": "418",
+        "oecdRevenue": "LAO",
+        "sipriMilitarySpending": "Laos",
+        "unNationalAccounts": "Lao People's Democratic Republic"
+      }
+    },
+    "MYS": {
+      "iso3": "MYS",
+      "iso2": "MY",
+      "m49": "458",
+      "sourceIds": {
+        "unMigrantStock": "458",
+        "worldBankWdi": "MYS",
+        "worldBankAgeComposition": "MYS",
+        "unctadTrade": "458",
+        "unctadServicesTrade": "458",
+        "unComtradeReporter": "458",
+        "unComtradeIsoFallback": "MYS",
+        "worldMapTopojson": "458",
+        "oecdRevenue": "MYS",
+        "sipriMilitarySpending": "Malaysia",
+        "unNationalAccounts": "Malaysia"
+      }
+    },
+    "MMR": {
+      "iso3": "MMR",
+      "iso2": "MM",
+      "m49": "104",
+      "sourceIds": {
+        "unMigrantStock": "104",
+        "worldBankWdi": "MMR",
+        "worldBankAgeComposition": "MMR",
+        "unctadTrade": "104",
+        "unctadServicesTrade": "104",
+        "unComtradeReporter": "104",
+        "unComtradeIsoFallback": "MMR",
+        "worldMapTopojson": "104",
+        "oecdRevenue": "MMR",
+        "sipriMilitarySpending": "Myanmar",
+        "unNationalAccounts": "Myanmar"
+      }
+    },
+    "PHL": {
+      "iso3": "PHL",
+      "iso2": "PH",
+      "m49": "608",
+      "sourceIds": {
+        "unMigrantStock": "608",
+        "worldBankWdi": "PHL",
+        "worldBankAgeComposition": "PHL",
+        "unctadTrade": "608",
+        "unctadServicesTrade": "608",
+        "unComtradeReporter": "608",
+        "unComtradeIsoFallback": "PHL",
+        "worldMapTopojson": "608",
+        "oecdRevenue": "PHL",
+        "sipriMilitarySpending": "Philippines",
+        "unNationalAccounts": "Philippines"
+      }
+    },
+    "SGP": {
+      "iso3": "SGP",
+      "iso2": "SG",
+      "m49": "702",
+      "sourceIds": {
+        "unMigrantStock": "702",
+        "worldBankWdi": "SGP",
+        "worldBankAgeComposition": "SGP",
+        "unctadTrade": "702",
+        "unctadServicesTrade": "702",
+        "unComtradeReporter": "702",
+        "unComtradeIsoFallback": "SGP",
+        "worldMapTopojson": "702",
+        "oecdRevenue": "SGP",
+        "sipriMilitarySpending": "Singapore",
+        "unNationalAccounts": "Singapore"
+      }
+    },
+    "THA": {
+      "iso3": "THA",
+      "iso2": "TH",
+      "m49": "764",
+      "sourceIds": {
+        "unMigrantStock": "764",
+        "worldBankWdi": "THA",
+        "worldBankAgeComposition": "THA",
+        "unctadTrade": "764",
+        "unctadServicesTrade": "764",
+        "unComtradeReporter": "764",
+        "unComtradeIsoFallback": "THA",
+        "worldMapTopojson": "764",
+        "oecdRevenue": "THA",
+        "sipriMilitarySpending": "Thailand",
+        "unNationalAccounts": "Thailand"
+      }
+    },
+    "TLS": {
+      "iso3": "TLS",
+      "iso2": "TL",
+      "m49": "626",
+      "sourceIds": {
+        "unMigrantStock": "626",
+        "worldBankWdi": "TLS",
+        "worldBankAgeComposition": "TLS",
+        "unctadTrade": "626",
+        "unctadServicesTrade": "626",
+        "unComtradeReporter": "626",
+        "unComtradeIsoFallback": "TLS",
+        "worldMapTopojson": "626",
+        "oecdRevenue": "TLS",
+        "sipriMilitarySpending": "Timor Leste",
+        "unNationalAccounts": "Timor-Leste"
+      }
+    },
+    "VNM": {
+      "iso3": "VNM",
+      "iso2": "VN",
+      "m49": "704",
+      "sourceIds": {
+        "unMigrantStock": "704",
+        "worldBankWdi": "VNM",
+        "worldBankAgeComposition": "VNM",
+        "unctadTrade": "704",
+        "unctadServicesTrade": "704",
+        "unComtradeReporter": "704",
+        "unComtradeIsoFallback": "VNM",
+        "worldMapTopojson": "704",
+        "oecdRevenue": "VNM",
+        "sipriMilitarySpending": "Viet Nam",
+        "unNationalAccounts": "Viet Nam"
+      }
+    },
+    "WBG": {
+      "iso3": "WBG",
+      "iso2": "PS",
+      "m49": "275",
+      "sourceIds": {
+        "unWpp": "PSE",
+        "unMigrantStock": "275",
+        "worldBankWdi": "PSE",
+        "worldBankAgeComposition": "PSE",
+        "unctadTrade": "275",
+        "unctadServicesTrade": "275",
+        "unComtradeReporter": "275",
+        "unComtradeIsoFallback": "PSE",
+        "worldMapTopojson": "275",
+        "oecdRevenue": "WBG",
+        "sipriMilitarySpending": "Palestine",
+        "unNationalAccounts": "State of Palestine",
+        "undpHdi": "PSE"
+      }
+    },
+    "DZA": {
+      "iso3": "DZA",
+      "iso2": "DZ",
+      "m49": "12",
+      "sourceIds": {
+        "unMigrantStock": "12",
+        "worldBankWdi": "DZA",
+        "worldBankAgeComposition": "DZA",
+        "unctadTrade": "012",
+        "unctadServicesTrade": "012",
+        "unComtradeReporter": "012",
+        "unComtradeIsoFallback": "DZA",
+        "worldMapTopojson": "012",
+        "oecdRevenue": "DZA",
+        "sipriMilitarySpending": "Algeria",
+        "unNationalAccounts": "Algeria"
+      }
+    },
+    "AGO": {
+      "iso3": "AGO",
+      "iso2": "AO",
+      "m49": "24",
+      "sourceIds": {
+        "unMigrantStock": "24",
+        "worldBankWdi": "AGO",
+        "worldBankAgeComposition": "AGO",
+        "unctadTrade": "024",
+        "unctadServicesTrade": "024",
+        "unComtradeReporter": "024",
+        "unComtradeIsoFallback": "AGO",
+        "worldMapTopojson": "024",
+        "oecdRevenue": "AGO",
+        "sipriMilitarySpending": "Angola",
+        "unNationalAccounts": "Angola"
+      }
+    },
+    "BEN": {
+      "iso3": "BEN",
+      "iso2": "BJ",
+      "m49": "204",
+      "sourceIds": {
+        "unMigrantStock": "204",
+        "worldBankWdi": "BEN",
+        "worldBankAgeComposition": "BEN",
+        "unctadTrade": "204",
+        "unctadServicesTrade": "204",
+        "unComtradeReporter": "204",
+        "unComtradeIsoFallback": "BEN",
+        "worldMapTopojson": "204",
+        "oecdRevenue": "BEN",
+        "sipriMilitarySpending": "Benin",
+        "unNationalAccounts": "Benin"
+      }
+    },
+    "BWA": {
+      "iso3": "BWA",
+      "iso2": "BW",
+      "m49": "72",
+      "sourceIds": {
+        "unMigrantStock": "72",
+        "worldBankWdi": "BWA",
+        "worldBankAgeComposition": "BWA",
+        "unctadTrade": "072",
+        "unctadServicesTrade": "072",
+        "unComtradeReporter": "072",
+        "unComtradeIsoFallback": "BWA",
+        "worldMapTopojson": "072",
+        "oecdRevenue": "BWA",
+        "sipriMilitarySpending": "Botswana",
+        "unNationalAccounts": "Botswana"
+      }
+    },
+    "BFA": {
+      "iso3": "BFA",
+      "iso2": "BF",
+      "m49": "854",
+      "sourceIds": {
+        "unMigrantStock": "854",
+        "worldBankWdi": "BFA",
+        "worldBankAgeComposition": "BFA",
+        "unctadTrade": "854",
+        "unctadServicesTrade": "854",
+        "unComtradeReporter": "854",
+        "unComtradeIsoFallback": "BFA",
+        "worldMapTopojson": "854",
+        "oecdRevenue": "BFA",
+        "sipriMilitarySpending": "Burkina Faso",
+        "unNationalAccounts": "Burkina Faso"
+      }
+    },
+    "BDI": {
+      "iso3": "BDI",
+      "iso2": "BI",
+      "m49": "108",
+      "sourceIds": {
+        "unMigrantStock": "108",
+        "worldBankWdi": "BDI",
+        "worldBankAgeComposition": "BDI",
+        "unctadTrade": "108",
+        "unctadServicesTrade": "108",
+        "unComtradeReporter": "108",
+        "unComtradeIsoFallback": "BDI",
+        "worldMapTopojson": "108",
+        "oecdRevenue": "BDI",
+        "sipriMilitarySpending": "Burundi",
+        "unNationalAccounts": "Burundi"
+      }
+    },
+    "CPV": {
+      "iso3": "CPV",
+      "iso2": "CV",
+      "m49": "132",
+      "sourceIds": {
+        "unMigrantStock": "132",
+        "worldBankWdi": "CPV",
+        "worldBankAgeComposition": "CPV",
+        "unctadTrade": "132",
+        "unctadServicesTrade": "132",
+        "unComtradeReporter": "132",
+        "unComtradeIsoFallback": "CPV",
+        "worldMapTopojson": "132",
+        "oecdRevenue": "CPV",
+        "sipriMilitarySpending": "Cape Verde",
+        "unNationalAccounts": "Cabo Verde"
+      }
+    },
+    "CMR": {
+      "iso3": "CMR",
+      "iso2": "CM",
+      "m49": "120",
+      "sourceIds": {
+        "unMigrantStock": "120",
+        "worldBankWdi": "CMR",
+        "worldBankAgeComposition": "CMR",
+        "unctadTrade": "120",
+        "unctadServicesTrade": "120",
+        "unComtradeReporter": "120",
+        "unComtradeIsoFallback": "CMR",
+        "worldMapTopojson": "120",
+        "oecdRevenue": "CMR",
+        "sipriMilitarySpending": "Cameroon",
+        "unNationalAccounts": "Cameroon"
+      }
+    },
+    "CAF": {
+      "iso3": "CAF",
+      "iso2": "CF",
+      "m49": "140",
+      "sourceIds": {
+        "unMigrantStock": "140",
+        "worldBankWdi": "CAF",
+        "worldBankAgeComposition": "CAF",
+        "unctadTrade": "140",
+        "unctadServicesTrade": "140",
+        "unComtradeReporter": "140",
+        "unComtradeIsoFallback": "CAF",
+        "worldMapTopojson": "140",
+        "oecdRevenue": "CAF",
+        "sipriMilitarySpending": "Central African Republic",
+        "unNationalAccounts": "Central African Republic"
+      }
+    },
+    "TCD": {
+      "iso3": "TCD",
+      "iso2": "TD",
+      "m49": "148",
+      "sourceIds": {
+        "unMigrantStock": "148",
+        "worldBankWdi": "TCD",
+        "worldBankAgeComposition": "TCD",
+        "unctadTrade": "148",
+        "unctadServicesTrade": "148",
+        "unComtradeReporter": "148",
+        "unComtradeIsoFallback": "TCD",
+        "worldMapTopojson": "148",
+        "oecdRevenue": "TCD",
+        "sipriMilitarySpending": "Chad",
+        "unNationalAccounts": "Chad"
+      }
+    },
+    "COM": {
+      "iso3": "COM",
+      "iso2": "KM",
+      "m49": "174",
+      "sourceIds": {
+        "unMigrantStock": "174",
+        "worldBankWdi": "COM",
+        "worldBankAgeComposition": "COM",
+        "unctadTrade": "174",
+        "unctadServicesTrade": "174",
+        "unComtradeReporter": "174",
+        "unComtradeIsoFallback": "COM",
+        "worldMapTopojson": "174",
+        "oecdRevenue": "COM",
+        "sipriMilitarySpending": "Comoros",
+        "unNationalAccounts": "Comoros"
+      }
+    },
+    "COG": {
+      "iso3": "COG",
+      "iso2": "CG",
+      "m49": "178",
+      "sourceIds": {
+        "unMigrantStock": "178",
+        "worldBankWdi": "COG",
+        "worldBankAgeComposition": "COG",
+        "unctadTrade": "178",
+        "unctadServicesTrade": "178",
+        "unComtradeReporter": "178",
+        "unComtradeIsoFallback": "COG",
+        "worldMapTopojson": "178",
+        "oecdRevenue": "COG",
+        "sipriMilitarySpending": "Congo, Republic",
+        "unNationalAccounts": "Congo"
+      }
+    },
+    "COD": {
+      "iso3": "COD",
+      "iso2": "CD",
+      "m49": "180",
+      "sourceIds": {
+        "unMigrantStock": "180",
+        "worldBankWdi": "COD",
+        "worldBankAgeComposition": "COD",
+        "unctadTrade": "180",
+        "unctadServicesTrade": "180",
+        "unComtradeReporter": "180",
+        "unComtradeIsoFallback": "COD",
+        "worldMapTopojson": "180",
+        "oecdRevenue": "COD",
+        "sipriMilitarySpending": "Congo, DR",
+        "unNationalAccounts": "Democratic Republic of the Congo"
+      }
+    },
+    "CIV": {
+      "iso3": "CIV",
+      "iso2": "CI",
+      "m49": "384",
+      "sourceIds": {
+        "unMigrantStock": "384",
+        "worldBankWdi": "CIV",
+        "worldBankAgeComposition": "CIV",
+        "unctadTrade": "384",
+        "unctadServicesTrade": "384",
+        "unComtradeReporter": "384",
+        "unComtradeIsoFallback": "CIV",
+        "worldMapTopojson": "384",
+        "oecdRevenue": "CIV",
+        "sipriMilitarySpending": "Cote d'Ivoire",
+        "unNationalAccounts": "Côte d'Ivoire"
+      }
+    },
+    "DJI": {
+      "iso3": "DJI",
+      "iso2": "DJ",
+      "m49": "262",
+      "sourceIds": {
+        "unMigrantStock": "262",
+        "worldBankWdi": "DJI",
+        "worldBankAgeComposition": "DJI",
+        "unctadTrade": "262",
+        "unctadServicesTrade": "262",
+        "unComtradeReporter": "262",
+        "unComtradeIsoFallback": "DJI",
+        "worldMapTopojson": "262",
+        "oecdRevenue": "DJI",
+        "sipriMilitarySpending": "Djibouti",
+        "unNationalAccounts": "Djibouti"
+      }
+    },
+    "EGY": {
+      "iso3": "EGY",
+      "iso2": "EG",
+      "m49": "818",
+      "sourceIds": {
+        "unMigrantStock": "818",
+        "worldBankWdi": "EGY",
+        "worldBankAgeComposition": "EGY",
+        "unctadTrade": "818",
+        "unctadServicesTrade": "818",
+        "unComtradeReporter": "818",
+        "unComtradeIsoFallback": "EGY",
+        "worldMapTopojson": "818",
+        "oecdRevenue": "EGY",
+        "sipriMilitarySpending": "Egypt",
+        "unNationalAccounts": "Egypt"
+      }
+    },
+    "GNQ": {
+      "iso3": "GNQ",
+      "iso2": "GQ",
+      "m49": "226",
+      "sourceIds": {
+        "unMigrantStock": "226",
+        "worldBankWdi": "GNQ",
+        "worldBankAgeComposition": "GNQ",
+        "unctadTrade": "226",
+        "unctadServicesTrade": "226",
+        "unComtradeReporter": "226",
+        "unComtradeIsoFallback": "GNQ",
+        "worldMapTopojson": "226",
+        "oecdRevenue": "GNQ",
+        "sipriMilitarySpending": "Equatorial Guinea",
+        "unNationalAccounts": "Equatorial Guinea"
+      }
+    },
+    "ERI": {
+      "iso3": "ERI",
+      "iso2": "ER",
+      "m49": "232",
+      "sourceIds": {
+        "unMigrantStock": "232",
+        "worldBankWdi": "ERI",
+        "worldBankAgeComposition": "ERI",
+        "unctadTrade": "232",
+        "unctadServicesTrade": "232",
+        "unComtradeReporter": "232",
+        "unComtradeIsoFallback": "ERI",
+        "worldMapTopojson": "232",
+        "oecdRevenue": "ERI",
+        "sipriMilitarySpending": "Eritrea",
+        "unNationalAccounts": "Eritrea"
+      }
+    },
+    "SWZ": {
+      "iso3": "SWZ",
+      "iso2": "SZ",
+      "m49": "748",
+      "sourceIds": {
+        "unMigrantStock": "748",
+        "worldBankWdi": "SWZ",
+        "worldBankAgeComposition": "SWZ",
+        "unctadTrade": "748",
+        "unctadServicesTrade": "748",
+        "unComtradeReporter": "748",
+        "unComtradeIsoFallback": "SWZ",
+        "worldMapTopojson": "748",
+        "oecdRevenue": "SWZ",
+        "sipriMilitarySpending": "Eswatini",
+        "unNationalAccounts": "Kingdom of Eswatini"
+      }
+    },
+    "ETH": {
+      "iso3": "ETH",
+      "iso2": "ET",
+      "m49": "231",
+      "sourceIds": {
+        "unMigrantStock": "231",
+        "worldBankWdi": "ETH",
+        "worldBankAgeComposition": "ETH",
+        "unctadTrade": "231",
+        "unctadServicesTrade": "231",
+        "unComtradeReporter": "231",
+        "unComtradeIsoFallback": "ETH",
+        "worldMapTopojson": "231",
+        "oecdRevenue": "ETH",
+        "sipriMilitarySpending": "Ethiopia",
+        "unNationalAccounts": "Ethiopia"
+      }
+    },
+    "GAB": {
+      "iso3": "GAB",
+      "iso2": "GA",
+      "m49": "266",
+      "sourceIds": {
+        "unMigrantStock": "266",
+        "worldBankWdi": "GAB",
+        "worldBankAgeComposition": "GAB",
+        "unctadTrade": "266",
+        "unctadServicesTrade": "266",
+        "unComtradeReporter": "266",
+        "unComtradeIsoFallback": "GAB",
+        "worldMapTopojson": "266",
+        "oecdRevenue": "GAB",
+        "sipriMilitarySpending": "Gabon",
+        "unNationalAccounts": "Gabon"
+      }
+    },
+    "GMB": {
+      "iso3": "GMB",
+      "iso2": "GM",
+      "m49": "270",
+      "sourceIds": {
+        "unMigrantStock": "270",
+        "worldBankWdi": "GMB",
+        "worldBankAgeComposition": "GMB",
+        "unctadTrade": "270",
+        "unctadServicesTrade": "270",
+        "unComtradeReporter": "270",
+        "unComtradeIsoFallback": "GMB",
+        "worldMapTopojson": "270",
+        "oecdRevenue": "GMB",
+        "sipriMilitarySpending": "Gambia, The",
+        "unNationalAccounts": "Gambia"
+      }
+    },
+    "GHA": {
+      "iso3": "GHA",
+      "iso2": "GH",
+      "m49": "288",
+      "sourceIds": {
+        "unMigrantStock": "288",
+        "worldBankWdi": "GHA",
+        "worldBankAgeComposition": "GHA",
+        "unctadTrade": "288",
+        "unctadServicesTrade": "288",
+        "unComtradeReporter": "288",
+        "unComtradeIsoFallback": "GHA",
+        "worldMapTopojson": "288",
+        "oecdRevenue": "GHA",
+        "sipriMilitarySpending": "Ghana",
+        "unNationalAccounts": "Ghana"
+      }
+    },
+    "GIN": {
+      "iso3": "GIN",
+      "iso2": "GN",
+      "m49": "324",
+      "sourceIds": {
+        "unMigrantStock": "324",
+        "worldBankWdi": "GIN",
+        "worldBankAgeComposition": "GIN",
+        "unctadTrade": "324",
+        "unctadServicesTrade": "324",
+        "unComtradeReporter": "324",
+        "unComtradeIsoFallback": "GIN",
+        "worldMapTopojson": "324",
+        "oecdRevenue": "GIN",
+        "sipriMilitarySpending": "Guinea",
+        "unNationalAccounts": "Guinea"
+      }
+    },
+    "GNB": {
+      "iso3": "GNB",
+      "iso2": "GW",
+      "m49": "624",
+      "sourceIds": {
+        "unMigrantStock": "624",
+        "worldBankWdi": "GNB",
+        "worldBankAgeComposition": "GNB",
+        "unctadTrade": "624",
+        "unctadServicesTrade": "624",
+        "unComtradeReporter": "624",
+        "unComtradeIsoFallback": "GNB",
+        "worldMapTopojson": "624",
+        "oecdRevenue": "GNB",
+        "sipriMilitarySpending": "Guinea-Bissau",
+        "unNationalAccounts": "Guinea-Bissau"
+      }
+    },
+    "KEN": {
+      "iso3": "KEN",
+      "iso2": "KE",
+      "m49": "404",
+      "sourceIds": {
+        "unMigrantStock": "404",
+        "worldBankWdi": "KEN",
+        "worldBankAgeComposition": "KEN",
+        "unctadTrade": "404",
+        "unctadServicesTrade": "404",
+        "unComtradeReporter": "404",
+        "unComtradeIsoFallback": "KEN",
+        "worldMapTopojson": "404",
+        "oecdRevenue": "KEN",
+        "sipriMilitarySpending": "Kenya",
+        "unNationalAccounts": "Kenya"
+      }
+    },
+    "LSO": {
+      "iso3": "LSO",
+      "iso2": "LS",
+      "m49": "426",
+      "sourceIds": {
+        "unMigrantStock": "426",
+        "worldBankWdi": "LSO",
+        "worldBankAgeComposition": "LSO",
+        "unctadTrade": "426",
+        "unctadServicesTrade": "426",
+        "unComtradeReporter": "426",
+        "unComtradeIsoFallback": "LSO",
+        "worldMapTopojson": "426",
+        "oecdRevenue": "LSO",
+        "sipriMilitarySpending": "Lesotho",
+        "unNationalAccounts": "Lesotho"
+      }
+    },
+    "LBR": {
+      "iso3": "LBR",
+      "iso2": "LR",
+      "m49": "430",
+      "sourceIds": {
+        "unMigrantStock": "430",
+        "worldBankWdi": "LBR",
+        "worldBankAgeComposition": "LBR",
+        "unctadTrade": "430",
+        "unctadServicesTrade": "430",
+        "unComtradeReporter": "430",
+        "unComtradeIsoFallback": "LBR",
+        "worldMapTopojson": "430",
+        "oecdRevenue": "LBR",
+        "sipriMilitarySpending": "Liberia",
+        "unNationalAccounts": "Liberia"
+      }
+    },
+    "LBY": {
+      "iso3": "LBY",
+      "iso2": "LY",
+      "m49": "434",
+      "sourceIds": {
+        "unMigrantStock": "434",
+        "worldBankWdi": "LBY",
+        "worldBankAgeComposition": "LBY",
+        "unctadTrade": "434",
+        "unctadServicesTrade": "434",
+        "unComtradeReporter": "434",
+        "unComtradeIsoFallback": "LBY",
+        "worldMapTopojson": "434",
+        "oecdRevenue": "LBY",
+        "sipriMilitarySpending": "Libya",
+        "unNationalAccounts": "Libya"
+      }
+    },
+    "MDG": {
+      "iso3": "MDG",
+      "iso2": "MG",
+      "m49": "450",
+      "sourceIds": {
+        "unMigrantStock": "450",
+        "worldBankWdi": "MDG",
+        "worldBankAgeComposition": "MDG",
+        "unctadTrade": "450",
+        "unctadServicesTrade": "450",
+        "unComtradeReporter": "450",
+        "unComtradeIsoFallback": "MDG",
+        "worldMapTopojson": "450",
+        "oecdRevenue": "MDG",
+        "sipriMilitarySpending": "Madagascar",
+        "unNationalAccounts": "Madagascar"
+      }
+    },
+    "MWI": {
+      "iso3": "MWI",
+      "iso2": "MW",
+      "m49": "454",
+      "sourceIds": {
+        "unMigrantStock": "454",
+        "worldBankWdi": "MWI",
+        "worldBankAgeComposition": "MWI",
+        "unctadTrade": "454",
+        "unctadServicesTrade": "454",
+        "unComtradeReporter": "454",
+        "unComtradeIsoFallback": "MWI",
+        "worldMapTopojson": "454",
+        "oecdRevenue": "MWI",
+        "sipriMilitarySpending": "Malawi",
+        "unNationalAccounts": "Malawi"
+      }
+    },
+    "MYT": {
+      "iso3": "MYT",
+      "iso2": "YT",
+      "m49": "175",
+      "sourceIds": {
+        "unMigrantStock": "175",
+        "oecdRevenue": "MYT",
+        "sipriMilitarySpending": "Mayotte",
+        "unNationalAccounts": "Mayotte"
+      }
+    },
+    "MLI": {
+      "iso3": "MLI",
+      "iso2": "ML",
+      "m49": "466",
+      "sourceIds": {
+        "unMigrantStock": "466",
+        "worldBankWdi": "MLI",
+        "worldBankAgeComposition": "MLI",
+        "unctadTrade": "466",
+        "unctadServicesTrade": "466",
+        "unComtradeReporter": "466",
+        "unComtradeIsoFallback": "MLI",
+        "worldMapTopojson": "466",
+        "oecdRevenue": "MLI",
+        "sipriMilitarySpending": "Mali",
+        "unNationalAccounts": "Mali"
+      }
+    },
+    "MRT": {
+      "iso3": "MRT",
+      "iso2": "MR",
+      "m49": "478",
+      "sourceIds": {
+        "unMigrantStock": "478",
+        "worldBankWdi": "MRT",
+        "worldBankAgeComposition": "MRT",
+        "unctadTrade": "478",
+        "unctadServicesTrade": "478",
+        "unComtradeReporter": "478",
+        "unComtradeIsoFallback": "MRT",
+        "worldMapTopojson": "478",
+        "oecdRevenue": "MRT",
+        "sipriMilitarySpending": "Mauritania",
+        "unNationalAccounts": "Mauritania"
+      }
+    },
+    "MUS": {
+      "iso3": "MUS",
+      "iso2": "MU",
+      "m49": "480",
+      "sourceIds": {
+        "unMigrantStock": "480",
+        "worldBankWdi": "MUS",
+        "worldBankAgeComposition": "MUS",
+        "unctadTrade": "480",
+        "unctadServicesTrade": "480",
+        "unComtradeReporter": "480",
+        "unComtradeIsoFallback": "MUS",
+        "worldMapTopojson": "480",
+        "oecdRevenue": "MUS",
+        "sipriMilitarySpending": "Mauritius",
+        "unNationalAccounts": "Mauritius"
+      }
+    },
+    "MAR": {
+      "iso3": "MAR",
+      "iso2": "MA",
+      "m49": "504",
+      "sourceIds": {
+        "unMigrantStock": "504",
+        "worldBankWdi": "MAR",
+        "worldBankAgeComposition": "MAR",
+        "unctadTrade": "504",
+        "unctadServicesTrade": "504",
+        "unComtradeReporter": "504",
+        "unComtradeIsoFallback": "MAR",
+        "worldMapTopojson": "504",
+        "oecdRevenue": "MAR",
+        "sipriMilitarySpending": "Morocco",
+        "unNationalAccounts": "Morocco"
+      }
+    },
+    "MOZ": {
+      "iso3": "MOZ",
+      "iso2": "MZ",
+      "m49": "508",
+      "sourceIds": {
+        "unMigrantStock": "508",
+        "worldBankWdi": "MOZ",
+        "worldBankAgeComposition": "MOZ",
+        "unctadTrade": "508",
+        "unctadServicesTrade": "508",
+        "unComtradeReporter": "508",
+        "unComtradeIsoFallback": "MOZ",
+        "worldMapTopojson": "508",
+        "oecdRevenue": "MOZ",
+        "sipriMilitarySpending": "Mozambique",
+        "unNationalAccounts": "Mozambique"
+      }
+    },
+    "NAM": {
+      "iso3": "NAM",
+      "iso2": "NA",
+      "m49": "516",
+      "sourceIds": {
+        "unMigrantStock": "516",
+        "worldBankWdi": "NAM",
+        "worldBankAgeComposition": "NAM",
+        "unctadTrade": "516",
+        "unctadServicesTrade": "516",
+        "unComtradeReporter": "516",
+        "unComtradeIsoFallback": "NAM",
+        "worldMapTopojson": "516",
+        "oecdRevenue": "NAM",
+        "sipriMilitarySpending": "Namibia",
+        "unNationalAccounts": "Namibia"
+      }
+    },
+    "NER": {
+      "iso3": "NER",
+      "iso2": "NE",
+      "m49": "562",
+      "sourceIds": {
+        "unMigrantStock": "562",
+        "worldBankWdi": "NER",
+        "worldBankAgeComposition": "NER",
+        "unctadTrade": "562",
+        "unctadServicesTrade": "562",
+        "unComtradeReporter": "562",
+        "unComtradeIsoFallback": "NER",
+        "worldMapTopojson": "562",
+        "oecdRevenue": "NER",
+        "sipriMilitarySpending": "Niger",
+        "unNationalAccounts": "Niger"
+      }
+    },
+    "NGA": {
+      "iso3": "NGA",
+      "iso2": "NG",
+      "m49": "566",
+      "sourceIds": {
+        "unMigrantStock": "566",
+        "worldBankWdi": "NGA",
+        "worldBankAgeComposition": "NGA",
+        "unctadTrade": "566",
+        "unctadServicesTrade": "566",
+        "unComtradeReporter": "566",
+        "unComtradeIsoFallback": "NGA",
+        "worldMapTopojson": "566",
+        "oecdRevenue": "NGA",
+        "sipriMilitarySpending": "Nigeria",
+        "unNationalAccounts": "Nigeria"
+      }
+    },
+    "RWA": {
+      "iso3": "RWA",
+      "iso2": "RW",
+      "m49": "646",
+      "sourceIds": {
+        "unMigrantStock": "646",
+        "worldBankWdi": "RWA",
+        "worldBankAgeComposition": "RWA",
+        "unctadTrade": "646",
+        "unctadServicesTrade": "646",
+        "unComtradeReporter": "646",
+        "unComtradeIsoFallback": "RWA",
+        "worldMapTopojson": "646",
+        "oecdRevenue": "RWA",
+        "sipriMilitarySpending": "Rwanda",
+        "unNationalAccounts": "Rwanda"
+      }
+    },
+    "REU": {
+      "iso3": "REU",
+      "iso2": "RE",
+      "m49": "638",
+      "sourceIds": {
+        "unMigrantStock": "638",
+        "unctadTrade": "638",
+        "unctadServicesTrade": "638",
+        "unComtradeReporter": "638",
+        "worldMapTopojson": "638",
+        "oecdRevenue": "REU",
+        "sipriMilitarySpending": "Réunion",
+        "unNationalAccounts": "Réunion"
+      }
+    },
+    "SHN": {
+      "iso3": "SHN",
+      "iso2": "SH",
+      "m49": "654",
+      "sourceIds": {
+        "unMigrantStock": "654",
+        "unctadTrade": "654",
+        "unctadServicesTrade": "654",
+        "unComtradeReporter": "654",
+        "worldMapTopojson": "654",
+        "oecdRevenue": "SHN",
+        "sipriMilitarySpending": "Saint Helena",
+        "unNationalAccounts": "Saint Helena"
+      }
+    },
+    "STP": {
+      "iso3": "STP",
+      "iso2": "ST",
+      "m49": "678",
+      "sourceIds": {
+        "unMigrantStock": "678",
+        "worldBankWdi": "STP",
+        "worldBankAgeComposition": "STP",
+        "unctadTrade": "678",
+        "unctadServicesTrade": "678",
+        "unComtradeReporter": "678",
+        "unComtradeIsoFallback": "STP",
+        "worldMapTopojson": "678",
+        "oecdRevenue": "STP",
+        "sipriMilitarySpending": "São Tomé and Príncipe",
+        "unNationalAccounts": "Sao Tome and Principe"
+      }
+    },
+    "SEN": {
+      "iso3": "SEN",
+      "iso2": "SN",
+      "m49": "686",
+      "sourceIds": {
+        "unMigrantStock": "686",
+        "worldBankWdi": "SEN",
+        "worldBankAgeComposition": "SEN",
+        "unctadTrade": "686",
+        "unctadServicesTrade": "686",
+        "unComtradeReporter": "686",
+        "unComtradeIsoFallback": "SEN",
+        "worldMapTopojson": "686",
+        "oecdRevenue": "SEN",
+        "sipriMilitarySpending": "Senegal",
+        "unNationalAccounts": "Senegal"
+      }
+    },
+    "SYC": {
+      "iso3": "SYC",
+      "iso2": "SC",
+      "m49": "690",
+      "sourceIds": {
+        "unMigrantStock": "690",
+        "worldBankWdi": "SYC",
+        "worldBankAgeComposition": "SYC",
+        "unctadTrade": "690",
+        "unctadServicesTrade": "690",
+        "unComtradeReporter": "690",
+        "unComtradeIsoFallback": "SYC",
+        "worldMapTopojson": "690",
+        "oecdRevenue": "SYC",
+        "sipriMilitarySpending": "Seychelles",
+        "unNationalAccounts": "Seychelles"
+      }
+    },
+    "SLE": {
+      "iso3": "SLE",
+      "iso2": "SL",
+      "m49": "694",
+      "sourceIds": {
+        "unMigrantStock": "694",
+        "worldBankWdi": "SLE",
+        "worldBankAgeComposition": "SLE",
+        "unctadTrade": "694",
+        "unctadServicesTrade": "694",
+        "unComtradeReporter": "694",
+        "unComtradeIsoFallback": "SLE",
+        "worldMapTopojson": "694",
+        "oecdRevenue": "SLE",
+        "sipriMilitarySpending": "Sierra Leone",
+        "unNationalAccounts": "Sierra Leone"
+      }
+    },
+    "SOM": {
+      "iso3": "SOM",
+      "iso2": "SO",
+      "m49": "706",
+      "sourceIds": {
+        "unMigrantStock": "706",
+        "worldBankWdi": "SOM",
+        "worldBankAgeComposition": "SOM",
+        "unctadTrade": "706",
+        "unctadServicesTrade": "706",
+        "unComtradeReporter": "706",
+        "unComtradeIsoFallback": "SOM",
+        "worldMapTopojson": "706",
+        "oecdRevenue": "SOM",
+        "sipriMilitarySpending": "Somalia",
+        "unNationalAccounts": "Somalia"
+      }
+    },
+    "SSD": {
+      "iso3": "SSD",
+      "iso2": "SS",
+      "m49": "728",
+      "sourceIds": {
+        "unMigrantStock": "728",
+        "worldBankWdi": "SSD",
+        "worldBankAgeComposition": "SSD",
+        "unctadTrade": "728",
+        "unctadServicesTrade": "728",
+        "unComtradeReporter": "728",
+        "unComtradeIsoFallback": "SSD",
+        "worldMapTopojson": "728",
+        "oecdRevenue": "SSD",
+        "sipriMilitarySpending": "South Sudan",
+        "unNationalAccounts": "South Sudan"
+      }
+    },
+    "SDN": {
+      "iso3": "SDN",
+      "iso2": "SD",
+      "m49": "729",
+      "sourceIds": {
+        "unMigrantStock": "729",
+        "worldBankWdi": "SDN",
+        "worldBankAgeComposition": "SDN",
+        "unctadTrade": "729",
+        "unctadServicesTrade": "729",
+        "unComtradeReporter": "729",
+        "unComtradeIsoFallback": "SDN",
+        "worldMapTopojson": "729",
+        "oecdRevenue": "SDN",
+        "sipriMilitarySpending": "Sudan",
+        "unNationalAccounts": "Sudan"
+      }
+    },
+    "TZA": {
+      "iso3": "TZA",
+      "iso2": "TZ",
+      "m49": "834",
+      "sourceIds": {
+        "unMigrantStock": "834",
+        "worldBankWdi": "TZA",
+        "worldBankAgeComposition": "TZA",
+        "unctadTrade": "834",
+        "unctadServicesTrade": "834",
+        "unComtradeReporter": "834",
+        "unComtradeIsoFallback": "TZA",
+        "worldMapTopojson": "834",
+        "oecdRevenue": "TZA",
+        "sipriMilitarySpending": "Tanzania",
+        "unNationalAccounts": "Tanzania"
+      }
+    },
+    "TGO": {
+      "iso3": "TGO",
+      "iso2": "TG",
+      "m49": "768",
+      "sourceIds": {
+        "unMigrantStock": "768",
+        "worldBankWdi": "TGO",
+        "worldBankAgeComposition": "TGO",
+        "unctadTrade": "768",
+        "unctadServicesTrade": "768",
+        "unComtradeReporter": "768",
+        "unComtradeIsoFallback": "TGO",
+        "worldMapTopojson": "768",
+        "oecdRevenue": "TGO",
+        "sipriMilitarySpending": "Togo",
+        "unNationalAccounts": "Togo"
+      }
+    },
+    "TUN": {
+      "iso3": "TUN",
+      "iso2": "TN",
+      "m49": "788",
+      "sourceIds": {
+        "unMigrantStock": "788",
+        "worldBankWdi": "TUN",
+        "worldBankAgeComposition": "TUN",
+        "unctadTrade": "788",
+        "unctadServicesTrade": "788",
+        "unComtradeReporter": "788",
+        "unComtradeIsoFallback": "TUN",
+        "worldMapTopojson": "788",
+        "oecdRevenue": "TUN",
+        "sipriMilitarySpending": "Tunisia",
+        "unNationalAccounts": "Tunisia"
+      }
+    },
+    "UGA": {
+      "iso3": "UGA",
+      "iso2": "UG",
+      "m49": "800",
+      "sourceIds": {
+        "unMigrantStock": "800",
+        "worldBankWdi": "UGA",
+        "worldBankAgeComposition": "UGA",
+        "unctadTrade": "800",
+        "unctadServicesTrade": "800",
+        "unComtradeReporter": "800",
+        "unComtradeIsoFallback": "UGA",
+        "worldMapTopojson": "800",
+        "oecdRevenue": "UGA",
+        "sipriMilitarySpending": "Uganda",
+        "unNationalAccounts": "Uganda"
+      }
+    },
+    "ZMB": {
+      "iso3": "ZMB",
+      "iso2": "ZM",
+      "m49": "894",
+      "sourceIds": {
+        "unMigrantStock": "894",
+        "worldBankWdi": "ZMB",
+        "worldBankAgeComposition": "ZMB",
+        "unctadTrade": "894",
+        "unctadServicesTrade": "894",
+        "unComtradeReporter": "894",
+        "unComtradeIsoFallback": "ZMB",
+        "worldMapTopojson": "894",
+        "oecdRevenue": "ZMB",
+        "sipriMilitarySpending": "Zambia",
+        "unNationalAccounts": "Zambia"
+      }
+    },
+    "ZWE": {
+      "iso3": "ZWE",
+      "iso2": "ZW",
+      "m49": "716",
+      "sourceIds": {
+        "unMigrantStock": "716",
+        "worldBankWdi": "ZWE",
+        "worldBankAgeComposition": "ZWE",
+        "unctadTrade": "716",
+        "unctadServicesTrade": "716",
+        "unComtradeReporter": "716",
+        "unComtradeIsoFallback": "ZWE",
+        "worldMapTopojson": "716",
+        "oecdRevenue": "ZWE",
+        "sipriMilitarySpending": "Zimbabwe",
+        "unNationalAccounts": "Zimbabwe"
+      }
+    }
+  },
+  "sourceStrategies": {
+    "unWpp": {
+      "default": "siteCode",
+      "description": "Use the site country code unless sourceIds.unWpp overrides it."
+    },
+    "unMigrantStock": {
+      "default": "explicit",
+      "description": "UN DESA International Migrant Stock uses M49 location codes; sourceIds.unMigrantStock is required for matched countries."
+    },
+    "worldBankWdi": {
+      "default": "siteCodeThenName",
+      "description": "World Bank WDI update scripts try sourceIds.worldBankWdi, then the site country code, then the display name."
+    },
+    "worldBankAgeComposition": {
+      "default": "explicit",
+      "description": "World Bank age-composition script uses sourceIds.worldBankAgeComposition."
+    },
+    "unctadTrade": {
+      "default": "explicit",
+      "description": "UNCTAD trade script uses sourceIds.unctadTrade."
+    },
+    "unctadServicesTrade": {
+      "default": "explicit",
+      "description": "UNCTAD services trade script uses sourceIds.unctadServicesTrade."
+    },
+    "unComtradeReporter": {
+      "default": "explicit",
+      "description": "UN Comtrade reporter IDs use sourceIds.unComtradeReporter."
+    },
+    "unComtradeIsoFallback": {
+      "default": "explicit",
+      "description": "UN Comtrade ISO fallback IDs use sourceIds.unComtradeIsoFallback."
+    },
+    "worldMapTopojson": {
+      "default": "nameFallback",
+      "description": "The world map first uses sourceIds.worldMapTopojson, then falls back to normalized names."
+    },
+    "oecdRevenue": {
+      "default": "explicit",
+      "description": "OECD revenue composition script uses sourceIds.oecdRevenue."
+    },
+    "sipriMilitarySpending": {
+      "default": "explicit",
+      "description": "SIPRI military spending script uses sourceIds.sipriMilitarySpending."
+    },
+    "unNationalAccounts": {
+      "default": "explicit",
+      "description": "UN National Accounts scripts use sourceIds.unNationalAccounts."
+    },
+    "undpHdi": {
+      "default": "siteCode",
+      "description": "UNDP HDI uses the site country code unless sourceIds.undpHdi overrides it."
+    }
+  }
+}

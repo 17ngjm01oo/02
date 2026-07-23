@@ -1,0 +1,327 @@
+{
+  "categories": [
+    {
+      "id": "economy",
+      "label": "Economy",
+      "overviewSeriesIds": [
+        "gdp",
+        "gdpPerCapita",
+        "gdpGrowth",
+        "unemploymentRate"
+      ],
+      "subcategories": [
+        {
+          "id": "gdp",
+          "label": "GDP",
+          "indicators": [
+            {
+              "seriesId": "gdp",
+              "directory": "gdp"
+            },
+            {
+              "seriesId": "ppp",
+              "directory": "ppp-gdp"
+            },
+            {
+              "seriesId": "gni",
+              "directory": "gni"
+            }
+          ]
+        },
+        {
+          "id": "gdp-per-capita",
+          "label": "GDP per Capita",
+          "indicators": [
+            {
+              "seriesId": "gdpPerCapita",
+              "directory": "gdp-per-capita"
+            },
+            {
+              "seriesId": "pppPerCapita",
+              "directory": "ppp-gdp-per-capita"
+            },
+            {
+              "seriesId": "gniPerCapita",
+              "directory": "gni-per-capita"
+            }
+          ]
+        },
+        {
+          "id": "economic-growth",
+          "label": "Economic Growth",
+          "indicators": [
+            {
+              "seriesId": "gdpGrowth",
+              "directory": "gdp-growth"
+            }
+          ]
+        },
+        {
+          "id": "prices-and-inflation",
+          "label": "Prices and Inflation",
+          "indicators": [
+            {
+              "seriesId": "inflationRate",
+              "directory": "inflation-rate"
+            }
+          ]
+        },
+        {
+          "id": "labor-market",
+          "label": "Labor Market",
+          "indicators": [
+            {
+              "seriesId": "unemploymentRate",
+              "directory": "unemployment-rate"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "population",
+      "label": "Population",
+      "overviewSeriesIds": [
+        "population",
+        "populationGrowth",
+        "fertilityRate"
+      ],
+      "subcategories": [
+        {
+          "id": "demographics",
+          "label": "Demographics",
+          "indicators": [
+            {
+              "seriesId": "population",
+              "directory": "population"
+            },
+            {
+              "seriesId": "populationGrowth",
+              "directory": "population-growth"
+            },
+            {
+              "seriesId": "populationDensity",
+              "directory": "population-density"
+            },
+            {
+              "seriesId": "lifeExpectancy",
+              "directory": "life-expectancy"
+            },
+            {
+              "seriesId": "fertilityRate",
+              "directory": "fertility-rate"
+            }
+          ]
+        },
+        {
+          "id": "migration",
+          "label": "Migration",
+          "indicators": [
+            {
+              "seriesId": "immigrants",
+              "directory": "immigrants"
+            },
+            {
+              "seriesId": "immigrantsPercentPopulation",
+              "directory": "immigrants-percent-population"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trade",
+      "label": "Trade",
+      "overviewSeriesIds": [
+        "tradeBalance",
+        "exports",
+        "imports"
+      ],
+      "subcategories": [
+        {
+          "id": "trade-balance",
+          "label": "Trade Balance",
+          "indicators": [
+            {
+              "seriesId": "tradeBalance",
+              "directory": "trade-balance"
+            },
+            {
+              "seriesId": "exports",
+              "directory": "exports"
+            },
+            {
+              "seriesId": "imports",
+              "directory": "imports"
+            }
+          ]
+        },
+        {
+          "id": "services-trade-balance",
+          "label": "Services Trade Balance",
+          "indicators": [
+            {
+              "seriesId": "servicesTradeBalance",
+              "directory": "services-trade-balance"
+            },
+            {
+              "seriesId": "servicesExports",
+              "directory": "services-exports"
+            },
+            {
+              "seriesId": "servicesImports",
+              "directory": "services-imports"
+            }
+          ]
+        },
+        {
+          "id": "current-account",
+          "label": "Current Account",
+          "indicators": [
+            {
+              "seriesId": "currentAccountBalance",
+              "directory": "current-account-balance"
+            },
+            {
+              "seriesId": "currentAccountBalancePercentGdp",
+              "directory": "current-account-balance-percent-gdp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "government-finance",
+      "label": "Government Finance",
+      "overviewSeriesIds": [
+        "governmentGrossDebt",
+        "fiscalBalance"
+      ],
+      "subcategories": [
+        {
+          "id": "government-debt",
+          "label": "Government Debt",
+          "indicators": [
+            {
+              "seriesId": "governmentGrossDebt",
+              "directory": "government-gross-debt"
+            },
+            {
+              "seriesId": "governmentNetDebt",
+              "directory": "government-net-debt"
+            }
+          ]
+        },
+        {
+          "id": "fiscal-balance",
+          "label": "Fiscal Balance",
+          "indicators": [
+            {
+              "seriesId": "fiscalBalance",
+              "directory": "fiscal-balance"
+            },
+            {
+              "seriesId": "primaryFiscalBalance",
+              "directory": "primary-fiscal-balance"
+            }
+          ]
+        },
+        {
+          "id": "revenue-and-spending",
+          "label": "Revenue and Spending",
+          "indicators": [
+            {
+              "seriesId": "governmentRevenue",
+              "directory": "government-revenue"
+            },
+            {
+              "seriesId": "governmentSpending",
+              "directory": "government-spending"
+            }
+          ]
+        },
+        {
+          "id": "international-reserves",
+          "label": "International Reserves",
+          "indicators": [
+            {
+              "seriesId": "totalReservesIncludingGold",
+              "directory": "total-reserves"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "society",
+      "label": "Society",
+      "overviewSeriesIds": [
+        "hdi"
+      ],
+      "subcategories": [
+        {
+          "id": "living-standards",
+          "label": "Living Standards",
+          "indicators": [
+            {
+              "seriesId": "hdi",
+              "directory": "hdi"
+            }
+          ]
+        },
+        {
+          "id": "defense",
+          "label": "Defense",
+          "indicators": [
+            {
+              "seriesId": "militarySpending",
+              "directory": "military-spending"
+            },
+            {
+              "seriesId": "militarySpendingPercentGdp",
+              "directory": "military-spending-percent-gdp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "environment",
+      "label": "Environment",
+      "overviewSeriesIds": [
+        "co2EmissionsPerCapita",
+        "area"
+      ],
+      "subcategories": [
+        {
+          "id": "environment",
+          "label": "Environment",
+          "indicators": [
+            {
+              "seriesId": "co2Emissions",
+              "directory": "co2-emissions"
+            },
+            {
+              "seriesId": "co2EmissionsPerCapita",
+              "directory": "co2-emissions-per-capita"
+            }
+          ]
+        },
+        {
+          "id": "geography",
+          "label": "Geography",
+          "indicators": [
+            {
+              "seriesId": "area",
+              "directory": "area"
+            },
+            {
+              "seriesId": "forestAreaPercentOfLandArea",
+              "directory": "forest-area"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1261 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="国一覧" />
+    <title>国一覧</title>
+    <link rel="canonical" href="https://geostarna.com/ja/countries/" />
+    <link rel="alternate" hreflang="en" href="https://geostarna.com/countries/" />
+    <link rel="alternate" hreflang="ja" href="https://geostarna.com/ja/countries/" />
+    <link rel="alternate" hreflang="x-default" href="https://geostarna.com/countries/" />
+    <meta name="theme-color" content="#f4f6f8" data-theme-color />
+    <script>(function(){try{var key="geostarna-theme-preference";var preference=localStorage.getItem(key);if(preference!=="dark"&&preference!=="system"&&preference!=="light"){preference="light"}var theme=preference==="dark"||(preference==="system"&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";var root=document.documentElement;root.dataset.theme=theme;root.dataset.themePreference=preference;var meta=document.querySelector("meta[data-theme-color]");if(meta){meta.content=theme==="dark"?"#000000":"#f4f6f8"}}catch(_){}})();</script>
+    <link rel="stylesheet" href="../../styles.css" />
+    <script type="module" src="../../src/theme.js"></script>
+    <script type="module" src="../../src/siteMenu.js"></script>
+    <script type="module" src="../../src/countryHubPage.js"></script>
+  </head>
+  <body data-root-href="../../" data-locale="ja" data-page-kind="country-hub" data-country-hub-preferred-codes="{&quot;en&quot;:[&quot;USA&quot;,&quot;GBR&quot;,&quot;CAN&quot;,&quot;AUS&quot;,&quot;IND&quot;,&quot;SGP&quot;,&quot;NZL&quot;,&quot;IRL&quot;],&quot;ja&quot;:[&quot;JPN&quot;]}">
+    <main class="page-shell">
+      <header class="site-brand">
+        <a class="site-brand-link" href="../../ja/">
+          <span class="site-brand-mark" aria-hidden="true"></span>
+          <span class="site-brand-name">Geostarna</span>
+        </a>
+      </header>
+      <section class="site-nav-card" aria-label="サイトナビゲーション">
+        <nav class="site-nav-primary" aria-label="サイトナビゲーション">
+          <a class="site-nav-link" data-ui-text-action href="../../ja/countries/" aria-current="page">国一覧</a>
+          <span class="site-nav-separator" aria-hidden="true">|</span>
+          <a class="site-nav-link" data-ui-text-action href="../../ja/rankings/countries/">ランキング</a>
+          <span class="site-nav-separator" aria-hidden="true">|</span>
+          <a class="site-nav-link" data-ui-text-action href="../../ja/data/countries/">データ一覧</a>
+        </nav>
+        <details class="site-menu">
+          <summary class="site-menu-toggle" aria-label="メニュー">
+            <span class="site-menu-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="site-menu-panel" role="group" aria-label="メニュー" aria-busy="true" data-site-menu-panel data-page-path="countries/" data-current-section="countries"></div>
+        </details>
+      </section>
+
+      <section class="hub-section" aria-label="国一覧">
+        <div class="country-hub-map-content">
+          <div class="world-map" id="worldMap" role="region" aria-label="世界地図" aria-live="polite">
+            <p class="world-map-loading">読み込み中...</p>
+          </div>
+
+          <p class="world-map-instruction">地図から国・地域を選択できます。</p>
+        </div>
+
+        <div class="country-hub-panel">
+          <div class="search-input-wrap">
+            <input
+              id="countrySearchInput"
+              class="country-search-input"
+              type="search"
+              autocomplete="off"
+              aria-controls="countrySearchResults"
+              role="combobox"
+              aria-autocomplete="list"
+              aria-expanded="false"
+              placeholder="国または地域を検索"
+            />
+            <div class="country-results" id="countrySearchResults" role="listbox" aria-label="国検索結果" hidden></div>
+          </div>
+          <p class="filter-label">絞り込み:</p>
+          <div class="filter-panel-row">
+            <details class="category-panel" aria-labelledby="region-heading">
+              <summary class="category-heading" id="region-heading">地域</summary>
+            </details>
+            <details class="category-panel" aria-labelledby="category-heading">
+              <summary class="category-heading" id="category-heading">カテゴリ</summary>
+            </details>
+            <div class="country-hub-controls" id="countryHubControls"></div>
+          </div>
+          <div class="category-list filter-option-list" id="regionList" hidden></div>
+          <div class="category-list filter-option-list" id="categoryList" hidden></div>
+          <p class="entity-count" id="countryHubCount">表示中: 233（国: 199、地域等: 34）</p>
+          <table class="country-hub-table" aria-label="国・地域一覧">
+            <tbody id="countryTableBody">
+              <tr class="country-table-row" data-country-code="JPN">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-jp" src="../../public/flags/jp.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/japan/">日本</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="ISL">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-is" src="../../public/flags/is.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/iceland/">アイスランド</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="IRL">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ie" src="../../public/flags/ie.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/ireland/">アイルランド</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="AZE">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-az" src="../../public/flags/az.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/azerbaijan/">アゼルバイジャン</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="AFG">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-af" src="../../public/flags/af.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/afghanistan/">アフガニスタン</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="USA">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-us" src="../../public/flags/us.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/united-states/">アメリカ合衆国</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="ASM">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-as" src="../../public/flags/as.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/american-samoa/">アメリカ領サモア</a></td>
+                <td><span class="country-hub-table-region">オセアニア</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="VIR">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-vi" src="../../public/flags/vi.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/us-virgin-islands/">アメリカ領ヴァージン諸島</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="ARE">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ae" src="../../public/flags/ae.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/united-arab-emirates/">アラブ首長国連邦</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="DZA">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-dz" src="../../public/flags/dz.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/algeria/">アルジェリア</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="ARG">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ar" src="../../public/flags/ar.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/argentina/">アルゼンチン</a></td>
+                <td><span class="country-hub-table-region">南アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="ABW">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-aw" src="../../public/flags/aw.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/aruba/">アルバ</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="ALB">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-al" src="../../public/flags/al.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/albania/">アルバニア</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="ARM">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-am" src="../../public/flags/am.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/armenia/">アルメニア</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="AIA">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ai" src="../../public/flags/ai.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/anguilla/">アンギラ</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="AGO">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ao" src="../../public/flags/ao.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/angola/">アンゴラ</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="ATG">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ag" src="../../public/flags/ag.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/antigua-and-barbuda/">アンティグア・バーブーダ</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="AND">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ad" src="../../public/flags/ad.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/andorra/">アンドラ</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="YEM">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ye" src="../../public/flags/ye.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/yemen/">イエメン</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="GBR">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-gb" src="../../public/flags/gb.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/united-kingdom/">イギリス</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="VGB">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-vg" src="../../public/flags/vg.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/british-virgin-islands/">イギリス領ヴァージン諸島</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="ISR">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-il" src="../../public/flags/il.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/israel/">イスラエル</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="ITA">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-it" src="../../public/flags/it.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/italy/">イタリア</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="IRQ">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-iq" src="../../public/flags/iq.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/iraq/">イラク</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="IRN">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ir" src="../../public/flags/ir.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/iran/">イラン</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="IND">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-in" src="../../public/flags/in.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/india/">インド</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="IDN">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-id" src="../../public/flags/id.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/indonesia/">インドネシア</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="WLF">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-wf" src="../../public/flags/wf.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/wallis-and-futuna/">ウォリス・フツナ</a></td>
+                <td><span class="country-hub-table-region">オセアニア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="UGA">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ug" src="../../public/flags/ug.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/uganda/">ウガンダ</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="UKR">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ua" src="../../public/flags/ua.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/ukraine/">ウクライナ</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="UZB">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-uz" src="../../public/flags/uz.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/uzbekistan/">ウズベキスタン</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="URY">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-uy" src="../../public/flags/uy.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/uruguay/">ウルグアイ</a></td>
+                <td><span class="country-hub-table-region">南アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="ECU">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ec" src="../../public/flags/ec.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/ecuador/">エクアドル</a></td>
+                <td><span class="country-hub-table-region">南アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="EGY">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-eg" src="../../public/flags/eg.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/egypt/">エジプト</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="EST">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ee" src="../../public/flags/ee.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/estonia/">エストニア</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="SWZ">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-sz" src="../../public/flags/sz.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/eswatini/">エスワティニ</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="ETH">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-et" src="../../public/flags/et.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/ethiopia/">エチオピア</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="ERI">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-er" src="../../public/flags/er.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/eritrea/">エリトリア</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="SLV">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-sv" src="../../public/flags/sv.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/el-salvador/">エルサルバドル</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="OMN">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-om" src="../../public/flags/om.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/oman/">オマーン</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="NLD">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-nl" src="../../public/flags/nl.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/netherlands/">オランダ</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="AUS">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-au" src="../../public/flags/au.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/australia/">オーストラリア</a></td>
+                <td><span class="country-hub-table-region">オセアニア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="AUT">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-at" src="../../public/flags/at.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/austria/">オーストリア</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="KAZ">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-kz" src="../../public/flags/kz.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/kazakhstan/">カザフスタン</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="QAT">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-qa" src="../../public/flags/qa.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/qatar/">カタール</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="CAN">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ca" src="../../public/flags/ca.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/canada/">カナダ</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="CMR">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-cm" src="../../public/flags/cm.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/cameroon/">カメルーン</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="KHM">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-kh" src="../../public/flags/kh.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/cambodia/">カンボジア</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="CPV">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-cv" src="../../public/flags/cv.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/cabo-verde/">カーボベルデ</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="GUY">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-gy" src="../../public/flags/gy.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/guyana/">ガイアナ</a></td>
+                <td><span class="country-hub-table-region">南アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="GAB">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ga" src="../../public/flags/ga.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/gabon/">ガボン</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="GMB">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-gm" src="../../public/flags/gm.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/gambia/">ガンビア</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="GHA">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-gh" src="../../public/flags/gh.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/ghana/">ガーナ</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="CYP">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-cy" src="../../public/flags/cy.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/cyprus/">キプロス</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="CUW">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-cw" src="../../public/flags/cw.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/curacao/">キュラソー</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="CUB">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-cu" src="../../public/flags/cu.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/cuba/">キューバ</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="KIR">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ki" src="../../public/flags/ki.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/kiribati/">キリバス</a></td>
+                <td><span class="country-hub-table-region">オセアニア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="KGZ">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-kg" src="../../public/flags/kg.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/kyrgyzstan/">キルギス</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="GIN">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-gn" src="../../public/flags/gn.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/guinea/">ギニア</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="GNB">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-gw" src="../../public/flags/gw.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/guinea-bissau/">ギニアビサウ</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="GRC">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-gr" src="../../public/flags/gr.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/greece/">ギリシャ</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="KWT">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-kw" src="../../public/flags/kw.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/kuwait/">クウェート</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="COK">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ck" src="../../public/flags/ck.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/cook-islands/">クック諸島</a></td>
+                <td><span class="country-hub-table-region">オセアニア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="HRV">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-hr" src="../../public/flags/hr.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/croatia/">クロアチア</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="GTM">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-gt" src="../../public/flags/gt.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/guatemala/">グアテマラ</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="GLP">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-gp" src="../../public/flags/gp.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/guadeloupe/">グアドループ</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="GUM">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-gu" src="../../public/flags/gu.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/guam/">グアム</a></td>
+                <td><span class="country-hub-table-region">オセアニア</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="GRL">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-gl" src="../../public/flags/gl.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/greenland/">グリーンランド</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="GRD">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-gd" src="../../public/flags/gd.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/grenada/">グレナダ</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="CYM">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ky" src="../../public/flags/ky.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/cayman-islands/">ケイマン諸島</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="KEN">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ke" src="../../public/flags/ke.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/kenya/">ケニア</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="CRI">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-cr" src="../../public/flags/cr.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/costa-rica/">コスタリカ</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="KOS">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-xk" src="../../public/flags/xk.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/kosovo/">コソボ</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="COM">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-km" src="../../public/flags/km.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/comoros/">コモロ</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="COL">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-co" src="../../public/flags/co.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/colombia/">コロンビア</a></td>
+                <td><span class="country-hub-table-region">南アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="COG">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-cg" src="../../public/flags/cg.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/republic-of-the-congo/">コンゴ共和国</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="COD">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-cd" src="../../public/flags/cd.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/dr-congo/">コンゴ民主共和国</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="CIV">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ci" src="../../public/flags/ci.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/cote-divoire/">コートジボワール</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="SAU">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-sa" src="../../public/flags/sa.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/saudi-arabia/">サウジアラビア</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="WSM">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ws" src="../../public/flags/ws.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/samoa/">サモア</a></td>
+                <td><span class="country-hub-table-region">オセアニア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="STP">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-st" src="../../public/flags/st.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/sao-tome-and-principe/">サントメ・プリンシペ</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="SPM">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-pm" src="../../public/flags/pm.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/saint-pierre-and-miquelon/">サンピエール島・ミクロン島</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="SMR">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-sm" src="../../public/flags/sm.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/san-marino/">サンマリノ</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="MAF">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-mf" src="../../public/flags/mf.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/saint-martin/">サン・マルタン</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="ZMB">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-zm" src="../../public/flags/zm.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/zambia/">ザンビア</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="SLE">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-sl" src="../../public/flags/sl.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/sierra-leone/">シエラレオネ</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="SYR">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-sy" src="../../public/flags/sy.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/syria/">シリア</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="SGP">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-sg" src="../../public/flags/sg.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/singapore/">シンガポール</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="SXM">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-sx" src="../../public/flags/sx.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/sint-maarten/">シント・マールテン</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="DJI">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-dj" src="../../public/flags/dj.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/djibouti/">ジブチ</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="GIB">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-gi" src="../../public/flags/gi.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/gibraltar/">ジブラルタル</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="JAM">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-jm" src="../../public/flags/jm.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/jamaica/">ジャマイカ</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="GEO">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ge" src="../../public/flags/ge.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/georgia/">ジョージア</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="ZWE">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-zw" src="../../public/flags/zw.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/zimbabwe/">ジンバブエ</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="CHE">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ch" src="../../public/flags/ch.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/switzerland/">スイス</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="SWE">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-se" src="../../public/flags/se.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/sweden/">スウェーデン</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="ESP">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-es" src="../../public/flags/es.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/spain/">スペイン</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="SUR">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-sr" src="../../public/flags/sr.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/suriname/">スリナム</a></td>
+                <td><span class="country-hub-table-region">南アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="LKA">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-lk" src="../../public/flags/lk.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/sri-lanka/">スリランカ</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="SVK">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-sk" src="../../public/flags/sk.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/slovakia/">スロバキア</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="SVN">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-si" src="../../public/flags/si.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/slovenia/">スロベニア</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="SDN">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-sd" src="../../public/flags/sd.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/sudan/">スーダン</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="SEN">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-sn" src="../../public/flags/sn.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/senegal/">セネガル</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="SRB">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-rs" src="../../public/flags/rs.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/serbia/">セルビア</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="KNA">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-kn" src="../../public/flags/kn.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/saint-kitts-and-nevis/">セントクリストファー・ネービス</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="VCT">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-vc" src="../../public/flags/vc.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/saint-vincent-and-the-grenadines/">セントビンセント・グレナディーン</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="SHN">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-sh" src="../../public/flags/sh.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/saint-helena/">セントヘレナ</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="LCA">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-lc" src="../../public/flags/lc.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/saint-lucia/">セントルシア</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="SYC">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-sc" src="../../public/flags/sc.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/seychelles/">セーシェル</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="SOM">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-so" src="../../public/flags/so.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/somalia/">ソマリア</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="SLB">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-sb" src="../../public/flags/sb.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/solomon-islands/">ソロモン諸島</a></td>
+                <td><span class="country-hub-table-region">オセアニア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="THA">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-th" src="../../public/flags/th.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/thailand/">タイ</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="TJK">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-tj" src="../../public/flags/tj.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/tajikistan/">タジキスタン</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="TZA">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-tz" src="../../public/flags/tz.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/tanzania/">タンザニア</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="TCA">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-tc" src="../../public/flags/tc.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/turks-and-caicos-islands/">タークス・カイコス諸島</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="CZE">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-cz" src="../../public/flags/cz.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/czechia/">チェコ</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="TCD">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-td" src="../../public/flags/td.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/chad/">チャド</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="TUN">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-tn" src="../../public/flags/tn.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/tunisia/">チュニジア</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="CHL">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-cl" src="../../public/flags/cl.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/chile/">チリ</a></td>
+                <td><span class="country-hub-table-region">南アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="TUV">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-tv" src="../../public/flags/tv.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/tuvalu/">ツバル</a></td>
+                <td><span class="country-hub-table-region">オセアニア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="DNK">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-dk" src="../../public/flags/dk.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/denmark/">デンマーク</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="TKL">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-tk" src="../../public/flags/tk.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/tokelau/">トケラウ</a></td>
+                <td><span class="country-hub-table-region">オセアニア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="TTO">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-tt" src="../../public/flags/tt.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/trinidad-and-tobago/">トリニダード・トバゴ</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="TKM">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-tm" src="../../public/flags/tm.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/turkmenistan/">トルクメニスタン</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="TUR">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-tr" src="../../public/flags/tr.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/turkiye/">トルコ</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="TON">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-to" src="../../public/flags/to.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/tonga/">トンガ</a></td>
+                <td><span class="country-hub-table-region">オセアニア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="TGO">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-tg" src="../../public/flags/tg.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/togo/">トーゴ</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="DEU">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-de" src="../../public/flags/de.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/germany/">ドイツ</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="DOM">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-do" src="../../public/flags/do.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/dominican-republic/">ドミニカ共和国</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="DMA">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-dm" src="../../public/flags/dm.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/dominica/">ドミニカ国</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="NGA">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ng" src="../../public/flags/ng.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/nigeria/">ナイジェリア</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="NRU">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-nr" src="../../public/flags/nr.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/nauru/">ナウル</a></td>
+                <td><span class="country-hub-table-region">オセアニア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="NAM">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-na" src="../../public/flags/na.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/namibia/">ナミビア</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="NIU">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-nu" src="../../public/flags/nu.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/niue/">ニウエ</a></td>
+                <td><span class="country-hub-table-region">オセアニア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="NIC">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ni" src="../../public/flags/ni.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/nicaragua/">ニカラグア</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="NER">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ne" src="../../public/flags/ne.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/niger/">ニジェール</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="NCL">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-nc" src="../../public/flags/nc.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/new-caledonia/">ニューカレドニア</a></td>
+                <td><span class="country-hub-table-region">オセアニア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="NZL">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-nz" src="../../public/flags/nz.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/new-zealand/">ニュージーランド</a></td>
+                <td><span class="country-hub-table-region">オセアニア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="NPL">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-np" src="../../public/flags/np.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/nepal/">ネパール</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="NOR">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-no" src="../../public/flags/no.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/norway/">ノルウェー</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="HTI">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ht" src="../../public/flags/ht.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/haiti/">ハイチ</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="HUN">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-hu" src="../../public/flags/hu.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/hungary/">ハンガリー</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="VAT">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-va" src="../../public/flags/va.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/vatican-city/">バチカン市国</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="VUT">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-vu" src="../../public/flags/vu.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/vanuatu/">バヌアツ</a></td>
+                <td><span class="country-hub-table-region">オセアニア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="BHS">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-bs" src="../../public/flags/bs.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/bahamas/">バハマ</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="BMU">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-bm" src="../../public/flags/bm.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/bermuda/">バミューダ</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="BRB">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-bb" src="../../public/flags/bb.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/barbados/">バルバドス</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="BGD">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-bd" src="../../public/flags/bd.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/bangladesh/">バングラデシュ</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="BHR">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-bh" src="../../public/flags/bh.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/bahrain/">バーレーン</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="PAK">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-pk" src="../../public/flags/pk.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/pakistan/">パキスタン</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="PAN">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-pa" src="../../public/flags/pa.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/panama/">パナマ</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="PNG">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-pg" src="../../public/flags/pg.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/papua-new-guinea/">パプアニューギニア</a></td>
+                <td><span class="country-hub-table-region">オセアニア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="PLW">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-pw" src="../../public/flags/pw.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/palau/">パラオ</a></td>
+                <td><span class="country-hub-table-region">オセアニア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="PRY">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-py" src="../../public/flags/py.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/paraguay/">パラグアイ</a></td>
+                <td><span class="country-hub-table-region">南アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="WBG">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ps" src="../../public/flags/ps.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/palestine/">パレスチナ</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="PCN">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-pn" src="../../public/flags/pn.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/pitcairn/">ピトケアン諸島</a></td>
+                <td><span class="country-hub-table-region">オセアニア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="FJI">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-fj" src="../../public/flags/fj.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/fiji/">フィジー</a></td>
+                <td><span class="country-hub-table-region">オセアニア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="PHL">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ph" src="../../public/flags/ph.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/philippines/">フィリピン</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="FIN">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-fi" src="../../public/flags/fi.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/finland/">フィンランド</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="FRO">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-fo" src="../../public/flags/fo.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/faroe-islands/">フェロー諸島</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="FLK">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-fk" src="../../public/flags/fk.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/falkland-islands/">フォークランド諸島</a></td>
+                <td><span class="country-hub-table-region">南アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="FRA">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-fr" src="../../public/flags/fr.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/france/">フランス</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="GUF">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-gf" src="../../public/flags/gf.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/french-guiana/">フランス領ギアナ</a></td>
+                <td><span class="country-hub-table-region">南アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="PYF">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-pf" src="../../public/flags/pf.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/french-polynesia/">フランス領ポリネシア</a></td>
+                <td><span class="country-hub-table-region">オセアニア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="BRA">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-br" src="../../public/flags/br.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/brazil/">ブラジル</a></td>
+                <td><span class="country-hub-table-region">南アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="BGR">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-bg" src="../../public/flags/bg.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/bulgaria/">ブルガリア</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="BFA">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-bf" src="../../public/flags/bf.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/burkina-faso/">ブルキナファソ</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="BRN">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-bn" src="../../public/flags/bn.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/brunei/">ブルネイ</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="BDI">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-bi" src="../../public/flags/bi.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/burundi/">ブルンジ</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="BTN">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-bt" src="../../public/flags/bt.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/bhutan/">ブータン</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="PRI">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-pr" src="../../public/flags/pr.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/puerto-rico/">プエルトリコ</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="VNM">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-vn" src="../../public/flags/vn.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/vietnam/">ベトナム</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="BEN">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-bj" src="../../public/flags/bj.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/benin/">ベナン</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="VEN">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ve" src="../../public/flags/ve.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/venezuela/">ベネズエラ</a></td>
+                <td><span class="country-hub-table-region">南アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="BLR">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-by" src="../../public/flags/by.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/belarus/">ベラルーシ</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="BLZ">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-bz" src="../../public/flags/bz.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/belize/">ベリーズ</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="BEL">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-be" src="../../public/flags/be.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/belgium/">ベルギー</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="PER">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-pe" src="../../public/flags/pe.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/peru/">ペルー</a></td>
+                <td><span class="country-hub-table-region">南アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="HND">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-hn" src="../../public/flags/hn.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/honduras/">ホンジュラス</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="BIH">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ba" src="../../public/flags/ba.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/bosnia-and-herzegovina/">ボスニア・ヘルツェゴビナ</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="BWA">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-bw" src="../../public/flags/bw.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/botswana/">ボツワナ</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="BOL">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-bo" src="../../public/flags/bo.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/bolivia/">ボリビア</a></td>
+                <td><span class="country-hub-table-region">南アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="PRT">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-pt" src="../../public/flags/pt.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/portugal/">ポルトガル</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="POL">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-pl" src="../../public/flags/pl.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/poland/">ポーランド</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="MAC">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-mo" src="../../public/flags/mo.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/macao/">マカオ</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="MDG">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-mg" src="../../public/flags/mg.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/madagascar/">マダガスカル</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="MYT">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-yt" src="../../public/flags/yt.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/mayotte/">マヨット</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="MWI">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-mw" src="../../public/flags/mw.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/malawi/">マラウイ</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="MLI">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ml" src="../../public/flags/ml.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/mali/">マリ</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="MLT">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-mt" src="../../public/flags/mt.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/malta/">マルタ</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="MTQ">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-mq" src="../../public/flags/mq.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/martinique/">マルティニーク</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="MYS">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-my" src="../../public/flags/my.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/malaysia/">マレーシア</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="IMN">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-im" src="../../public/flags/im.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/isle-of-man/">マン島</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="MHL">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-mh" src="../../public/flags/mh.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/marshall-islands/">マーシャル諸島</a></td>
+                <td><span class="country-hub-table-region">オセアニア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="FSM">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-fm" src="../../public/flags/fm.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/federated-states-of-micronesia/">ミクロネシア連邦</a></td>
+                <td><span class="country-hub-table-region">オセアニア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="MMR">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-mm" src="../../public/flags/mm.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/myanmar/">ミャンマー</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="MEX">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-mx" src="../../public/flags/mx.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/mexico/">メキシコ</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="MOZ">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-mz" src="../../public/flags/mz.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/mozambique/">モザンビーク</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="MCO">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-mc" src="../../public/flags/mc.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/monaco/">モナコ</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="MDV">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-mv" src="../../public/flags/mv.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/maldives/">モルディブ</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="MDA">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-md" src="../../public/flags/md.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/moldova/">モルドバ</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="MAR">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ma" src="../../public/flags/ma.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/morocco/">モロッコ</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="MNG">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-mn" src="../../public/flags/mn.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/mongolia/">モンゴル</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="MNE">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-me" src="../../public/flags/me.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/montenegro/">モンテネグロ</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="MSR">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ms" src="../../public/flags/ms.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/montserrat/">モントセラト</a></td>
+                <td><span class="country-hub-table-region">北アメリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="MUS">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-mu" src="../../public/flags/mu.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/mauritius/">モーリシャス</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="MRT">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-mr" src="../../public/flags/mr.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/mauritania/">モーリタニア</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="JOR">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-jo" src="../../public/flags/jo.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/jordan/">ヨルダン</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="LAO">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-la" src="../../public/flags/la.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/laos/">ラオス</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="LVA">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-lv" src="../../public/flags/lv.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/latvia/">ラトビア</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="LTU">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-lt" src="../../public/flags/lt.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/lithuania/">リトアニア</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="LIE">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-li" src="../../public/flags/li.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/liechtenstein/">リヒテンシュタイン</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="LBY">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ly" src="../../public/flags/ly.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/libya/">リビア</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="LBR">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-lr" src="../../public/flags/lr.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/liberia/">リベリア</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="LUX">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-lu" src="../../public/flags/lu.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/luxembourg/">ルクセンブルク</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="RWA">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-rw" src="../../public/flags/rw.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/rwanda/">ルワンダ</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="ROU">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ro" src="../../public/flags/ro.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/romania/">ルーマニア</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="LSO">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ls" src="../../public/flags/ls.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/lesotho/">レソト</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="LBN">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-lb" src="../../public/flags/lb.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/lebanon/">レバノン</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="REU">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-re" src="../../public/flags/re.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/reunion/">レユニオン</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="RUS">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ru" src="../../public/flags/ru.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/russia/">ロシア</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="CHN">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-cn" src="../../public/flags/cn.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/china/">中国</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="CAF">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-cf" src="../../public/flags/cf.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/central-african-republic/">中央アフリカ共和国</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="MKD">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-mk" src="../../public/flags/mk.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/north-macedonia/">北マケドニア</a></td>
+                <td><span class="country-hub-table-region">ヨーロッパ</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="MNP">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-mp" src="../../public/flags/mp.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/northern-mariana-islands/">北マリアナ諸島</a></td>
+                <td><span class="country-hub-table-region">オセアニア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="PRK">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-kp" src="../../public/flags/kp.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/north-korea/">北朝鮮</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="ZAF">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-za" src="../../public/flags/za.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/south-africa/">南アフリカ</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="SSD">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ss" src="../../public/flags/ss.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/south-sudan/">南スーダン</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="TWN">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-tw" src="../../public/flags/tw.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/taiwan/">台湾</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="TLS">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-tl" src="../../public/flags/tl.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/timor-leste/">東ティモール</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="GNQ">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-gq" src="../../public/flags/gq.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/equatorial-guinea/">赤道ギニア</a></td>
+                <td><span class="country-hub-table-region">アフリカ</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="KOR">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-kr" src="../../public/flags/kr.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/south-korea/">韓国</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr>
+              <tr class="country-table-row is-territory" data-country-code="HKG">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-hk" src="../../public/flags/hk.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../../ja/countries/hong-kong/">香港</a></td>
+                <td><span class="country-hub-table-region">アジア</span></td>
+              </tr></tbody>
+          </table>
+          <p class="territory-note">黄色の背景は地域等を示します。</p>
+        </div>
+      </section>
+      <footer class="site-footer-card" aria-label="サイト情報">
+        <nav class="site-footer-nav" aria-label="サイト情報リンク">
+          <a class="site-footer-link" data-ui-text-action href="../../ja/about/">概要と出典</a>
+          <span class="site-footer-separator" aria-hidden="true">|</span>
+          <a class="site-footer-link" data-ui-text-action href="../../ja/disclaimer-privacy-policy/">免責事項・プライバシーポリシー</a>
+        </nav>
+      </footer>
+      <p class="site-version">© 2026 Geostarna</p>
+    </main>
+  </body>
+</html>

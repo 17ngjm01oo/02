@@ -1,0 +1,16 @@
+{
+  "items": [
+    { "id": "home", "labelKey": "home", "fallbackLabel": "Home", "path": "" },
+    { "id": "countries", "labelKey": "countries", "fallbackLabel": "Countries", "path": "countries/" },
+    { "id": "rankings", "labelKey": "rankings", "fallbackLabel": "Rankings", "path": "rankings/countries/" },
+    { "id": "data", "labelKey": "data", "fallbackLabel": "Data", "path": "data/countries/" },
+    { "id": "contact", "labelKey": "contact", "fallbackLabel": "Contact", "path": "contact/" }
+  ],
+  "primaryItemIds": ["countries", "rankings", "data"],
+  "menuSections": [
+    { "kind": "links", "itemIds": ["home", "countries", "rankings", "data"] },
+    { "kind": "theme", "labelKey": "appearance", "fallbackLabel": "Appearance" },
+    { "kind": "language", "labelKey": "languages", "fallbackLabel": "Language" },
+    { "kind": "links", "itemIds": ["contact"] }
+  ]
+}
