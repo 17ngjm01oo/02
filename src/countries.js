@@ -20,7 +20,6 @@ export const countryRegions = [
 
 // Search-only aliases live in countrySearchAliases.js.
 export const countries = [
-  { code: "G001", name: "World", slug: "world", officialName: "", capitals: [], region: "", categories: [], includeInRankings: false },
   { code: "USA", name: "United States", englishDefiniteArticle: true, slug: "united-states", officialName: "United States of America", capitals: ["Washington D.C."], region: "North America", categories: ["G20", "G7", "NATO", "OECD"] },
   { code: "JPN", name: "Japan", slug: "japan", officialName: "Japan", capitals: ["Tokyo"], region: "Asia", categories: ["G20", "G7", "OECD"] },
   { code: "CHN", name: "China", slug: "china", officialName: "People's Republic of China", capitals: ["Beijing"], region: "Asia", categories: ["G20", "BRICS"] },

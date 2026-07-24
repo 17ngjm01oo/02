@@ -98,8 +98,9 @@
           <div class="category-list filter-option-list" id="rankingCategoryList" hidden></div>
         </div>
 
-        <header class="ranking-card-header">
-          <p id="rankingCount" class="ranking-count" aria-live="polite">表示中: 210（国: 195、地域等: 15）</p>
+        <div class="ranking-results">
+          <header class="ranking-card-header">
+            <p id="rankingCount" class="ranking-count" aria-live="polite">表示中: 210（国: 195、地域等: 15）</p>
 
           <div class="ranking-controls">
           <details class="ui-dropdown ranking-filter" data-ranking-control="sort">
@@ -171,11 +172,11 @@
           </details>
           <button class="territory-toggle" type="button" data-ranking-control="territories" aria-pressed="true" aria-label="rankingの地域等を非表示にする">地域等</button>
           </div>
-        </header>
+          </header>
 
-        <div class="ranking-table-wrap">
-          <table class="ranking-table">
-            <tbody id="rankingTableBody">
+          <div class="ranking-table-wrap">
+            <table class="ranking-table">
+              <tbody id="rankingTableBody">
               <tr>
                 <td>1</td>
                 <td class="ranking-flag"><img class="flag-image flag-image-us" src="../../../../public/flags/us.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></td>
@@ -1646,7 +1647,8 @@
                 <td><a class="ranking-value" data-ui-text-action href="../../../../ja/countries/tuvalu/gni/" aria-label="Open ツバル GNI page"><span>7,631万</span></a></td>
                 <td><div class="ranking-value-bar" data-value-sign="positive" aria-hidden="true"><span style="width: 0.000263214%"></span></div></td>
               </tr></tbody>
-          </table>
+            </table>
+          </div>
         </div>
 
         <footer class="shared-notes ranking-notes" aria-label="ランキング注釈">
@@ -1657,14 +1659,14 @@
       <section class="related-content-card related-country-rankings-card" aria-labelledby="related-country-rankings-title">
         <h2 id="related-country-rankings-title">関連ランキング</h2>
         <div class="related-content-card-list has-footer-link">
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/gdp/world/">GDP</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/gdp-per-capita/world/">1人あたりGDP</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/ppp-gdp/world/">購買力平価GDP</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/ppp-gdp-per-capita/world/">1人あたり購買力平価GDP</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/gni-per-capita/world/">1人あたりGNI</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/gdp-growth/world/">経済成長率</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/inflation-rate/world/">インフレ率</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/unemployment-rate/world/">失業率</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/gdp/">GDP</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/gdp-per-capita/">1人あたりGDP</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/ppp-gdp/">購買力平価GDP</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/ppp-gdp-per-capita/">1人あたり購買力平価GDP</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/gni-per-capita/">1人あたりGNI</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/gdp-growth/">経済成長率</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/inflation-rate/">インフレ率</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/unemployment-rate/">失業率</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../ja/rankings/countries/">すべてのランキングを見る</a>
       </section>

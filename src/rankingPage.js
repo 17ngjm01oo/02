@@ -111,7 +111,7 @@ async function initializeRankingCountrySearch(config) {
   const searchInput = document.querySelector("#rankingCountrySearchInput");
 
   initializeCountrySelector({
-    countryPool: countries.filter((country) => country.slug && country.code !== "G001"),
+    countryPool: countries.filter((country) => country.slug),
     placeholderKey: "ui.countrySearchPlaceholder",
     placeholder: "Search countries or territories",
     getCountryHref(country) {
@@ -298,7 +298,6 @@ function buildRankingRows(data, config, selectedYear) {
   }
 
   return countries
-    .filter((country) => country.includeInRankings !== false)
     .map((country) => {
       const value = normalizeNumericValue(valuesByCountry[country.code]);
 

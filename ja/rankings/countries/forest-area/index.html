@@ -98,8 +98,9 @@
           <div class="category-list filter-option-list" id="rankingCategoryList" hidden></div>
         </div>
 
-        <header class="ranking-card-header">
-          <p id="rankingCount" class="ranking-count" aria-live="polite">表示中: 213（国: 194、地域等: 19）</p>
+        <div class="ranking-results">
+          <header class="ranking-card-header">
+            <p id="rankingCount" class="ranking-count" aria-live="polite">表示中: 213（国: 194、地域等: 19）</p>
 
           <div class="ranking-controls">
           <details class="ui-dropdown ranking-filter" data-ranking-control="sort">
@@ -150,11 +151,11 @@
           </details>
           <button class="territory-toggle" type="button" data-ranking-control="territories" aria-pressed="true" aria-label="rankingの地域等を非表示にする">地域等</button>
           </div>
-        </header>
+          </header>
 
-        <div class="ranking-table-wrap">
-          <table class="ranking-table">
-            <tbody id="rankingTableBody">
+          <div class="ranking-table-wrap">
+            <table class="ranking-table">
+              <tbody id="rankingTableBody">
               <tr>
                 <td>1</td>
                 <td class="ranking-flag"><img class="flag-image flag-image-sr" src="../../../../public/flags/sr.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></td>
@@ -1646,7 +1647,8 @@
                 <td><a class="ranking-value" data-ui-text-action href="../../../../ja/countries/monaco/forest-area/" aria-label="Open モナコ Forest Area page"><span>0%</span></a></td>
                 <td><div class="ranking-value-bar" data-value-sign="positive" aria-hidden="true"><span style="width: 0%"></span></div></td>
               </tr></tbody>
-          </table>
+            </table>
+          </div>
         </div>
 
         <footer class="shared-notes ranking-notes" aria-label="ランキング注釈">
@@ -1657,9 +1659,9 @@
       <section class="related-content-card related-country-rankings-card" aria-labelledby="related-country-rankings-title">
         <h2 id="related-country-rankings-title">関連ランキング</h2>
         <div class="related-content-card-list has-footer-link">
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/co2-emissions/world/">CO2排出量</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/co2-emissions-per-capita/world/">1人あたりCO2排出量</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/area/world/">面積（km²）</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/co2-emissions/">CO2排出量</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/co2-emissions-per-capita/">1人あたりCO2排出量</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/area/">面積（km²）</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../ja/rankings/countries/">すべてのランキングを見る</a>
       </section>

@@ -1,6 +1,7 @@
 import { seriesConfigs } from "./config.js";
 import { scrollToCountryIndicatorHash } from "./countryIndicatorAnchors.js";
 import { countries } from "./countries.js";
+import { getCountriesWithCountryPageData } from "./countryPageSearchAvailability.js";
 import {
   filterCountries,
   formatCountryMetaText,
@@ -54,13 +55,13 @@ async function initializePage() {
     throw new Error(`Invalid country indicator page definition: ${pageKind}`);
   }
 
-  initializeCountrySelector({
-    selectedCountry,
-    placeholderKey: "ui.searchAnotherCountryPlaceholder",
-    placeholder: "Search another country or territory",
-    onSelect(country) {
-      navigateToCountry(country);
-    },
+  const countrySearchPoolPromise = getCountriesWithCountryPageData({
+    rootHref,
+    pageKind,
+    countryPool: countries,
+  }).catch((error) => {
+    console.warn(`[${pageLogPrefix}] Falling back to the full country search list.`, error);
+    return countries;
   });
 
   const countrySeriesConfigs = pageSeriesConfigs.map((seriesConfig) =>
@@ -73,6 +74,16 @@ async function initializePage() {
   initializeIndicatorInfoTooltips();
   initializeCompareSearches(visibleSeriesConfigs);
   initializeComparisonTableLayoutListener();
+
+  initializeCountrySelector({
+    selectedCountry,
+    countryPool: await countrySearchPoolPromise,
+    placeholderKey: "ui.searchAnotherCountryPlaceholder",
+    placeholder: "Search another country or territory",
+    onSelect(country) {
+      navigateToCountry(country);
+    },
+  });
 
   await Promise.all(visibleSeriesConfigs.map((seriesConfig) => loadAndRenderSeries(seriesConfig)));
   scrollToCountryIndicatorHash();

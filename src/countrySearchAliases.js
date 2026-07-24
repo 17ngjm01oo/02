@@ -213,10 +213,6 @@ export const countrySearchAliases = {
   FSM: {
     ja: ["みくろねしあれんぽう"],
   },
-  G001: {
-    en: ["Earth", "Global", "Worldwide"],
-    ja: ["せかい"],
-  },
   GAB: {
     ja: ["がぼん"],
   },

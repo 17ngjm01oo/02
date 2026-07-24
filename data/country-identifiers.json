@@ -2,26 +2,6 @@
   "schemaVersion": 1,
   "description": "Central source identifier table keyed by the site country code. Display names, slugs, regions, and navigation categories remain in src/countries.js.",
   "countries": {
-    "G001": {
-      "iso3": null,
-      "iso2": null,
-      "m49": "900",
-      "sourceIds": {
-        "unWpp": "900",
-        "unMigrantStock": "900",
-        "worldBankWdi": "WLD",
-        "worldBankAgeComposition": "WLD",
-        "unctadTrade": "0000",
-        "unctadServicesTrade": "0000",
-        "unComtradeReporter": "0000",
-        "unComtradeIsoFallback": "WLD",
-        "worldMapTopojson": "0000",
-        "oecdRevenue": "G001",
-        "sipriMilitarySpending": "World",
-        "unNationalAccounts": "World",
-        "undpHdi": "ZZK.WORLD"
-      }
-    },
     "USA": {
       "iso3": "USA",
       "iso2": "US",

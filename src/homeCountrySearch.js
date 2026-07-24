@@ -15,7 +15,7 @@ export function initializeHomeCountrySearch() {
       import("./countries.js"),
       import("./countrySelector.js"),
     ]).then(([{ countries }, { initializeCountrySelector }]) => {
-      const countryPool = countries.filter((country) => country.slug && country.code !== "G001");
+      const countryPool = countries.filter((country) => country.slug);
       const selector = initializeCountrySelector({
         countryPool,
         placeholderKey: "ui.countrySearchPlaceholder",

@@ -98,8 +98,9 @@
           <div class="category-list filter-option-list" id="rankingCategoryList" hidden></div>
         </div>
 
-        <header class="ranking-card-header">
-          <p id="rankingCount" class="ranking-count" aria-live="polite">表示中: 45（国: 43、地域等: 2）</p>
+        <div class="ranking-results">
+          <header class="ranking-card-header">
+            <p id="rankingCount" class="ranking-count" aria-live="polite">表示中: 45（国: 43、地域等: 2）</p>
 
           <div class="ranking-controls">
           <details class="ui-dropdown ranking-filter" data-ranking-control="sort">
@@ -136,11 +137,11 @@
           </details>
           <button class="territory-toggle" type="button" data-ranking-control="territories" aria-pressed="true" aria-label="rankingの地域等を非表示にする">地域等</button>
           </div>
-        </header>
+          </header>
 
-        <div class="ranking-table-wrap">
-          <table class="ranking-table">
-            <tbody id="rankingTableBody">
+          <div class="ranking-table-wrap">
+            <table class="ranking-table">
+              <tbody id="rankingTableBody">
               <tr>
                 <td>1</td>
                 <td class="ranking-flag"><img class="flag-image flag-image-in" src="../../../../../public/flags/in.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></td>
@@ -456,7 +457,8 @@
                 <td><a class="ranking-value" data-ui-text-action href="../../../../../ja/countries/china/services-trade/" aria-label="Open 中国 Services Trade Balance page"><span>-1,647億</span></a></td>
                 <td><div class="ranking-value-bar" data-value-sign="negative" aria-hidden="true"><span style="width: 100%"></span></div></td>
               </tr></tbody>
-          </table>
+            </table>
+          </div>
         </div>
 
         <footer class="shared-notes ranking-notes" aria-label="ランキング注釈">

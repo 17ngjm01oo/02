@@ -98,8 +98,9 @@
           <div class="category-list filter-option-list" id="rankingCategoryList" hidden></div>
         </div>
 
-        <header class="ranking-card-header">
-          <p id="rankingCount" class="ranking-count" aria-live="polite">表示中: 232（国: 199、地域等: 33）</p>
+        <div class="ranking-results">
+          <header class="ranking-card-header">
+            <p id="rankingCount" class="ranking-count" aria-live="polite">表示中: 232（国: 199、地域等: 33）</p>
 
           <div class="ranking-controls">
           <details class="ui-dropdown ranking-filter" data-ranking-control="sort">
@@ -193,11 +194,11 @@
           </details>
           <button class="territory-toggle" type="button" data-ranking-control="territories" aria-pressed="true" aria-label="rankingの地域等を非表示にする">地域等</button>
           </div>
-        </header>
+          </header>
 
-        <div class="ranking-table-wrap">
-          <table class="ranking-table">
-            <tbody id="rankingTableBody">
+          <div class="ranking-table-wrap">
+            <table class="ranking-table">
+              <tbody id="rankingTableBody">
               <tr>
                 <td>1</td>
                 <td class="ranking-flag"><img class="flag-image flag-image-mc" src="../../../../public/flags/mc.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></td>
@@ -1822,7 +1823,8 @@
                 <td><a class="ranking-value" data-ui-text-action href="../../../../ja/countries/greenland/population-density/" aria-label="Open グリーンランド Population Density page"><span>0.1</span></a></td>
                 <td><div class="ranking-value-bar" data-value-sign="positive" aria-hidden="true"><span style="width: 0.000530089%"></span></div></td>
               </tr></tbody>
-          </table>
+            </table>
+          </div>
         </div>
 
         <footer class="shared-notes ranking-notes" aria-label="ランキング注釈">
@@ -1834,12 +1836,12 @@
       <section class="related-content-card related-country-rankings-card" aria-labelledby="related-country-rankings-title">
         <h2 id="related-country-rankings-title">関連ランキング</h2>
         <div class="related-content-card-list has-footer-link">
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/population/world/">人口</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/population-growth/world/">人口増加率</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/life-expectancy/world/">平均寿命</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/fertility-rate/world/">合計特殊出生率</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/immigrants/world/">移民数</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/immigrants-percent-population/world/">移民数（人口比）</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/population/">人口</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/population-growth/">人口増加率</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/life-expectancy/">平均寿命</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/fertility-rate/">合計特殊出生率</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/immigrants/">移民数</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/immigrants-percent-population/">移民数（人口比）</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../ja/rankings/countries/">すべてのランキングを見る</a>
       </section>

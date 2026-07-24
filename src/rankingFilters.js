@@ -1,6 +1,7 @@
 import { countryCategories, countryRegions } from "./countries.js";
 import { initializeFilterPanels } from "./filterPanels.js";
 import { translate, translateCategoryLabel, translateRegionLabel } from "./localization.js";
+import { getRankingScopeHref } from "./rankingPaths.js";
 
 const worldScope = { type: "world", id: "WORLD", label: "World", slug: "world" };
 
@@ -57,7 +58,7 @@ export function initializeRankingFilters() {
 function createScopeLink({ scope, rankingBaseHref }) {
   const link = document.createElement("a");
   link.className = "navigation-control";
-  link.href = `${rankingBaseHref}${scope.slug}/`;
+  link.href = getRankingScopeHref(rankingBaseHref, scope);
   link.dataset.rankingScopeType = scope.type;
   link.dataset.rankingScopeId = scope.id;
   link.setAttribute("aria-pressed", "false");

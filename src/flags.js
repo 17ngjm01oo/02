@@ -267,10 +267,6 @@ export function createFlagImage(countryCode, { className = "", rootHref, alt = "
 }
 
 function getFlagId(countryCode) {
-  if (countryCode === "G001") {
-    return "world";
-  }
-
   return countryCodeToIso2[countryCode]?.toLowerCase() ?? "";
 }
 

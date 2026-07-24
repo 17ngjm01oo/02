@@ -207,7 +207,6 @@ export const translations = {
       "South America": "南アメリカ"
     },
     "countries": {
-      "G001": "世界",
       "USA": "アメリカ合衆国",
       "JPN": "日本",
       "CHN": "中国",

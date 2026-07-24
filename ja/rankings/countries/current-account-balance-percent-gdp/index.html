@@ -98,8 +98,9 @@
           <div class="category-list filter-option-list" id="rankingCategoryList" hidden></div>
         </div>
 
-        <header class="ranking-card-header">
-          <p id="rankingCount" class="ranking-count" aria-live="polite">表示中: 190（国: 187、地域等: 3）</p>
+        <div class="ranking-results">
+          <header class="ranking-card-header">
+            <p id="rankingCount" class="ranking-count" aria-live="polite">表示中: 190（国: 187、地域等: 3）</p>
 
           <div class="ranking-controls">
           <details class="ui-dropdown ranking-filter" data-ranking-control="sort">
@@ -163,11 +164,11 @@
           </details>
           <button class="territory-toggle" type="button" data-ranking-control="territories" aria-pressed="true" aria-label="rankingの地域等を非表示にする">地域等</button>
           </div>
-        </header>
+          </header>
 
-        <div class="ranking-table-wrap">
-          <table class="ranking-table">
-            <tbody id="rankingTableBody">
+          <div class="ranking-table-wrap">
+            <table class="ranking-table">
+              <tbody id="rankingTableBody">
               <tr class="is-territory">
                 <td>1</td>
                 <td class="ranking-flag"><img class="flag-image flag-image-mo" src="../../../../public/flags/mo.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></td>
@@ -1498,7 +1499,8 @@
                 <td><a class="ranking-value" data-ui-text-action href="../../../../ja/countries/suriname/current-account-balance/" aria-label="Open スリナム Current Account Balance (% of GDP) page"><span>-44.8%</span></a></td>
                 <td><div class="ranking-value-bar" data-value-sign="negative" aria-hidden="true"><span style="width: 100%"></span></div></td>
               </tr></tbody>
-          </table>
+            </table>
+          </div>
         </div>
 
         <footer class="shared-notes ranking-notes" aria-label="ランキング注釈">
@@ -1510,13 +1512,13 @@
       <section class="related-content-card related-country-rankings-card" aria-labelledby="related-country-rankings-title">
         <h2 id="related-country-rankings-title">関連ランキング</h2>
         <div class="related-content-card-list has-footer-link">
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/trade-balance/world/">貿易収支</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/exports/world/">輸出額</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/imports/world/">輸入額</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/services-trade-balance/world/">サービス収支</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/services-exports/world/">サービス輸出額</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/services-imports/world/">サービス輸入額</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/current-account-balance/world/">経常収支</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/trade-balance/">貿易収支</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/exports/">輸出額</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/imports/">輸入額</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/services-trade-balance/">サービス収支</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/services-exports/">サービス輸出額</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/services-imports/">サービス輸入額</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/rankings/countries/current-account-balance/">経常収支</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../ja/rankings/countries/">すべてのランキングを見る</a>
       </section>

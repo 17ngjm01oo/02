@@ -18,8 +18,7 @@ import "./rankingTopNav.js";
 
 const rootHref = document.body.dataset.rootHref ?? "../";
 const localizedRootHref = getLocalizedRootHref(rootHref);
-const profileCountries = countries.filter((country) => country.slug);
-const hubCountries = profileCountries.filter((country) => country.code !== "G001");
+const hubCountries = countries.filter((country) => country.slug);
 const countElement = document.querySelector("#countryHubCount");
 const tableBody = document.querySelector("#countryTableBody");
 const regionList = document.querySelector("#regionList");

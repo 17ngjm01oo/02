@@ -98,8 +98,9 @@
           <div class="category-list filter-option-list" id="rankingCategoryList" hidden></div>
         </div>
 
-        <header class="ranking-card-header">
-          <p id="rankingCount" class="ranking-count" aria-live="polite">表示中: 28（国: 27、地域等: 1）</p>
+        <div class="ranking-results">
+          <header class="ranking-card-header">
+            <p id="rankingCount" class="ranking-count" aria-live="polite">表示中: 28（国: 27、地域等: 1）</p>
 
           <div class="ranking-controls">
           <details class="ui-dropdown ranking-filter" data-ranking-control="sort">
@@ -150,11 +151,11 @@
           </details>
           <button class="territory-toggle" type="button" data-ranking-control="territories" aria-pressed="true" aria-label="rankingの地域等を非表示にする">地域等</button>
           </div>
-        </header>
+          </header>
 
-        <div class="ranking-table-wrap">
-          <table class="ranking-table">
-            <tbody id="rankingTableBody">
+          <div class="ranking-table-wrap">
+            <table class="ranking-table">
+              <tbody id="rankingTableBody">
               <tr>
                 <td>1</td>
                 <td class="ranking-flag"><img class="flag-image flag-image-fi" src="../../../../../public/flags/fi.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></td>
@@ -351,7 +352,8 @@
                 <td><a class="ranking-value" data-ui-text-action href="../../../../../ja/countries/malta/forest-area/" aria-label="Open マルタ Forest Area page"><span>1.4%</span></a></td>
                 <td><div class="ranking-value-bar" data-value-sign="positive" aria-hidden="true"><span style="width: 1.94985%"></span></div></td>
               </tr></tbody>
-          </table>
+            </table>
+          </div>
         </div>
 
         <footer class="shared-notes ranking-notes" aria-label="ランキング注釈">

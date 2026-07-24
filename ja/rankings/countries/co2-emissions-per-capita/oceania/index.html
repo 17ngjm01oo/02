@@ -98,8 +98,9 @@
           <div class="category-list filter-option-list" id="rankingCategoryList" hidden></div>
         </div>
 
-        <header class="ranking-card-header">
-          <p id="rankingCount" class="ranking-count" aria-live="polite">表示中: 19（国: 14、地域等: 5）</p>
+        <div class="ranking-results">
+          <header class="ranking-card-header">
+            <p id="rankingCount" class="ranking-count" aria-live="polite">表示中: 19（国: 14、地域等: 5）</p>
 
           <div class="ranking-controls">
           <details class="ui-dropdown ranking-filter" data-ranking-control="sort">
@@ -171,11 +172,11 @@
           </details>
           <button class="territory-toggle" type="button" data-ranking-control="territories" aria-pressed="true" aria-label="rankingの地域等を非表示にする">地域等</button>
           </div>
-        </header>
+          </header>
 
-        <div class="ranking-table-wrap">
-          <table class="ranking-table">
-            <tbody id="rankingTableBody">
+          <div class="ranking-table-wrap">
+            <table class="ranking-table">
+              <tbody id="rankingTableBody">
               <tr>
                 <td>1</td>
                 <td class="ranking-flag"><img class="flag-image flag-image-pw" src="../../../../../public/flags/pw.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></td>
@@ -309,7 +310,8 @@
                 <td><a class="ranking-value" data-ui-text-action href="../../../../../ja/countries/tuvalu/co2-emissions/" aria-label="Open ツバル CO2 Emissions per Capita page"><span>0 t</span></a></td>
                 <td><div class="ranking-value-bar" data-value-sign="positive" aria-hidden="true"><span style="width: 0%"></span></div></td>
               </tr></tbody>
-          </table>
+            </table>
+          </div>
         </div>
 
         <footer class="shared-notes ranking-notes" aria-label="ランキング注釈">
