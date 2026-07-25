@@ -10,7 +10,8 @@
   --border: #d9e0e7;
   --accent: #176b87;
   --accent-soft: rgba(125, 202, 240, 0.28);
-  --brand-mark-blue: #5A91C9;
+  --breadcrumb-interaction: #58abc9;
+  --brand-mark-blue: #82bdf0;
   --error: #9f2f2f;
   --error-bg: #fff0f0;
   --territory-bg: #fffced;
@@ -171,8 +172,9 @@ body {
 }
 
 .site-brand {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  align-items: start;
   justify-self: start;
   min-width: 0;
   margin-bottom: 4px;
@@ -181,6 +183,9 @@ body {
 
 .site-brand-link {
   display: inline-flex;
+  grid-column: 1;
+  grid-row: 1 / -1;
+  align-self: center;
   align-items: center;
   gap: 6px;
   color: var(--text);
@@ -210,6 +215,8 @@ body {
 }
 
 .home-site-brand-tagline {
+  grid-column: 2;
+  align-self: center;
   min-width: 0;
   margin-left: 10px;
   padding-left: 10px;
@@ -218,6 +225,57 @@ body {
   font-size: 0.84rem;
   font-weight: 600;
   line-height: 1.35;
+}
+
+.breadcrumb-nav {
+  min-width: 0;
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 650;
+  line-height: 1.45;
+}
+
+.site-brand .breadcrumb-nav {
+  grid-column: 2;
+  min-width: 0;
+  margin: 0 0 0 10px;
+  padding-left: 10px;
+  border-left: 1px solid var(--border);
+}
+
+.breadcrumb-list {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumb-item {
+  display: inline;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  margin: 0 6px;
+  color: var(--border-strong);
+  content: "›";
+}
+
+.breadcrumb-link {
+  color: var(--muted);
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.breadcrumb-link:hover,
+.breadcrumb-link:focus-visible,
+.breadcrumb-link:active {
+  color: var(--breadcrumb-interaction);
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
+.breadcrumb-current {
+  overflow-wrap: anywhere;
 }
 
 .hub-section,
@@ -3323,6 +3381,10 @@ body[data-page-kind="country-hub"] .country-hub-panel > .entity-count {
   }
 
   html[lang="en"] .home-site-brand-tagline {
+    display: none;
+  }
+
+  .site-brand .breadcrumb-nav {
     display: none;
   }
 
