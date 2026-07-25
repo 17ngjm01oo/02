@@ -1,19 +1,6 @@
 import { translations } from "./translations.js";
-
-export const defaultLocale = "en";
-export const localeConfigs = {
-  en: {
-    pathPrefix: "",
-    switchLabel: "EN",
-    displayName: "English",
-  },
-  ja: {
-    pathPrefix: "ja/",
-    switchLabel: "JA",
-    displayName: "日本語",
-  },
-};
-export const supportedLocales = Object.keys(localeConfigs);
+export { defaultLocale, localeConfigs, supportedLocales } from "./locales.js";
+import { defaultLocale, localeConfigs, supportedLocales } from "./locales.js";
 
 export function getPageLocale() {
   return document.body.dataset.locale || defaultLocale;

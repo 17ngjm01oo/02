@@ -1,0 +1,21 @@
+{
+  "default_locale": "en",
+  "locales": {
+    "en": {
+      "path_prefix": "",
+      "html_lang": "en",
+      "switch_label": "EN",
+      "display_name": "English",
+      "title_brand": "Geostarna",
+      "title_separator": " | "
+    },
+    "ja": {
+      "path_prefix": "ja/",
+      "html_lang": "ja",
+      "switch_label": "JA",
+      "display_name": "日本語",
+      "title_brand": "ジオスターナ",
+      "title_separator": "｜"
+    }
+  }
+}

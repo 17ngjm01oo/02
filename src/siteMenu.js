@@ -145,15 +145,15 @@ function populateMenus(config) {
 
 function createThemeMenu(section) {
   const details = document.createElement("details");
-  details.className = "site-menu-language site-menu-theme";
+  details.className = "site-menu-disclosure site-menu-theme";
   const label = translate(`ui.${section.labelKey}`, section.fallbackLabel);
   const summary = document.createElement("summary");
-  summary.className = "site-menu-language-toggle";
+  summary.className = "site-menu-disclosure-toggle";
   summary.dataset.uiTextAction = "";
   summary.textContent = label;
 
   const options = document.createElement("div");
-  options.className = "site-menu-language-options";
+  options.className = "site-menu-options";
   options.setAttribute("role", "group");
   options.setAttribute("aria-label", label);
   const preference = getThemePreference();
@@ -162,13 +162,14 @@ function createThemeMenu(section) {
     .forEach(([value, labelKey, fallback]) => {
       const option = document.createElement("button");
       option.type = "button";
-      option.className = "site-menu-link site-menu-language-option site-menu-theme-option";
+      option.className = "site-menu-link site-menu-option";
+      option.dataset.siteMenuThemeOption = "";
       option.dataset.uiTextAction = "";
       option.textContent = translate(`ui.${labelKey}`, fallback);
       option.setAttribute("aria-pressed", String(value === preference));
       option.addEventListener("click", () => {
         setThemePreference(value);
-        options.querySelectorAll(".site-menu-theme-option").forEach((candidate) => {
+        options.querySelectorAll("[data-site-menu-theme-option]").forEach((candidate) => {
           candidate.setAttribute("aria-pressed", String(candidate === option));
         });
       });
@@ -194,22 +195,22 @@ function createMenuLink(item, { rootHref, currentLocale, currentSection }) {
 
 function createLanguageMenu(section, { rootHref, currentLocale, pagePath }) {
   const details = document.createElement("details");
-  details.className = "site-menu-language";
+  details.className = "site-menu-disclosure";
 
   const label = translate(`ui.${section.labelKey}`, section.fallbackLabel);
   const summary = document.createElement("summary");
-  summary.className = "site-menu-language-toggle";
+  summary.className = "site-menu-disclosure-toggle";
   summary.dataset.uiTextAction = "";
   summary.textContent = label;
 
   const options = document.createElement("div");
-  options.className = "site-menu-language-options";
+  options.className = "site-menu-options";
   options.setAttribute("role", "group");
   options.setAttribute("aria-label", label);
 
   supportedLocales.forEach((locale) => {
     const link = document.createElement("a");
-    link.className = "site-menu-link site-menu-language-option";
+    link.className = "site-menu-link site-menu-option";
     link.dataset.uiTextAction = "";
     link.href = getLocalizedHref(pagePath, rootHref, locale);
     link.textContent = getLocaleDisplayName(locale);
