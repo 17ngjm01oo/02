@@ -3,7 +3,7 @@ import { isCompactViewport } from "./responsive.js";
 
 const chartInstances = new Map();
 const chartRenderRequests = new Map();
-const chartJsUrl = "https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js";
+const chartJsUrl = new URL("./vendor/chart.umd.min.js", import.meta.url).href;
 let chartJsLoadPromise = null;
 
 export function loadChartJs() {

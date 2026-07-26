@@ -25,6 +25,7 @@
     <meta name="apple-mobile-web-app-title" content="Geostarna" />
     <meta name="theme-color" content="#f4f6f8" data-theme-color />
     <script>(function(){try{var key="geostarna-theme-preference";var preference=localStorage.getItem(key);if(preference!=="dark"&&preference!=="system"&&preference!=="light"){preference="light"}var theme=preference==="dark"||(preference==="system"&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";var root=document.documentElement;root.dataset.theme=theme;root.dataset.themePreference=preference;var meta=document.querySelector("meta[data-theme-color]");if(meta){meta.content=theme==="dark"?"#000000":"#f4f6f8"}}catch(_){}})();</script>
+    <link rel="preload" href="../../../../src/vendor/chart.umd.min.js" as="script" />
     <link rel="stylesheet" href="../../../../styles.css" />
     <script type="module" src="../../../../src/theme.js"></script>
     <script type="module" src="../../../../src/siteMenu.js"></script>
@@ -116,9 +117,9 @@
               </div>
             </header>
 
-            <div class="chart-card" id="servicesTradeBalanceChartCard">
+            <div class="chart-card is-loading" id="servicesTradeBalanceChartCard" aria-busy="true">
               <canvas id="servicesTradeBalanceChart" aria-label="サービス収支折れ線グラフ" role="img"></canvas>
-              <div class="chart-overlay" id="servicesTradeBalanceOverlay" aria-hidden="true" hidden></div>
+              <div class="chart-overlay" id="servicesTradeBalanceOverlay" aria-hidden="true"><span class="overlay-message">読み込み中...</span></div>
             </div>
 
             <details class="data-table-toggle" id="servicesTradeBalanceTableToggle">
@@ -152,9 +153,9 @@
               </div>
             </header>
 
-            <div class="chart-card" id="servicesExportsChartCard">
+            <div class="chart-card is-loading" id="servicesExportsChartCard" aria-busy="true">
               <canvas id="servicesExportsChart" aria-label="サービス輸出額折れ線グラフ" role="img"></canvas>
-              <div class="chart-overlay" id="servicesExportsOverlay" aria-hidden="true" hidden></div>
+              <div class="chart-overlay" id="servicesExportsOverlay" aria-hidden="true"><span class="overlay-message">読み込み中...</span></div>
             </div>
 
             <details class="data-table-toggle" id="servicesExportsTableToggle">
@@ -188,9 +189,9 @@
               </div>
             </header>
 
-            <div class="chart-card" id="servicesImportsChartCard">
+            <div class="chart-card is-loading" id="servicesImportsChartCard" aria-busy="true">
               <canvas id="servicesImportsChart" aria-label="サービス輸入額折れ線グラフ" role="img"></canvas>
-              <div class="chart-overlay" id="servicesImportsOverlay" aria-hidden="true" hidden></div>
+              <div class="chart-overlay" id="servicesImportsOverlay" aria-hidden="true"><span class="overlay-message">読み込み中...</span></div>
             </div>
 
             <details class="data-table-toggle" id="servicesImportsTableToggle">

@@ -25,6 +25,7 @@
     <meta name="apple-mobile-web-app-title" content="Geostarna" />
     <meta name="theme-color" content="#f4f6f8" data-theme-color />
     <script>(function(){try{var key="geostarna-theme-preference";var preference=localStorage.getItem(key);if(preference!=="dark"&&preference!=="system"&&preference!=="light"){preference="light"}var theme=preference==="dark"||(preference==="system"&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";var root=document.documentElement;root.dataset.theme=theme;root.dataset.themePreference=preference;var meta=document.querySelector("meta[data-theme-color]");if(meta){meta.content=theme==="dark"?"#000000":"#f4f6f8"}}catch(_){}})();</script>
+    <link rel="preload" href="../../../src/vendor/chart.umd.min.js" as="script" />
     <link rel="stylesheet" href="../../../styles.css" />
     <script type="module" src="../../../src/theme.js"></script>
     <script type="module" src="../../../src/siteMenu.js"></script>
@@ -116,9 +117,9 @@
               </div>
             </header>
 
-            <div class="chart-card" id="totalReservesIncludingGoldChartCard">
+            <div class="chart-card is-loading" id="totalReservesIncludingGoldChartCard" aria-busy="true">
               <canvas id="totalReservesIncludingGoldChart" aria-label="Total reserves including gold line chart" role="img"></canvas>
-              <div class="chart-overlay" id="totalReservesIncludingGoldOverlay" aria-hidden="true" hidden></div>
+              <div class="chart-overlay" id="totalReservesIncludingGoldOverlay" aria-hidden="true"><span class="overlay-message">Loading...</span></div>
             </div>
 
             <details class="data-table-toggle" id="totalReservesIncludingGoldTableToggle">

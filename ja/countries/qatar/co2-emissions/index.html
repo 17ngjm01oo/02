@@ -25,6 +25,7 @@
     <meta name="apple-mobile-web-app-title" content="Geostarna" />
     <meta name="theme-color" content="#f4f6f8" data-theme-color />
     <script>(function(){try{var key="geostarna-theme-preference";var preference=localStorage.getItem(key);if(preference!=="dark"&&preference!=="system"&&preference!=="light"){preference="light"}var theme=preference==="dark"||(preference==="system"&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";var root=document.documentElement;root.dataset.theme=theme;root.dataset.themePreference=preference;var meta=document.querySelector("meta[data-theme-color]");if(meta){meta.content=theme==="dark"?"#000000":"#f4f6f8"}}catch(_){}})();</script>
+    <link rel="preload" href="../../../../src/vendor/chart.umd.min.js" as="script" />
     <link rel="stylesheet" href="../../../../styles.css" />
     <script type="module" src="../../../../src/theme.js"></script>
     <script type="module" src="../../../../src/siteMenu.js"></script>
@@ -116,9 +117,9 @@
               </div>
             </header>
 
-            <div class="chart-card" id="co2EmissionsChartCard">
+            <div class="chart-card is-loading" id="co2EmissionsChartCard" aria-busy="true">
               <canvas id="co2EmissionsChart" aria-label="CO2排出量折れ線グラフ" role="img"></canvas>
-              <div class="chart-overlay" id="co2EmissionsOverlay" aria-hidden="true" hidden></div>
+              <div class="chart-overlay" id="co2EmissionsOverlay" aria-hidden="true"><span class="overlay-message">読み込み中...</span></div>
             </div>
 
             <details class="data-table-toggle" id="co2EmissionsTableToggle">
@@ -152,9 +153,9 @@
               </div>
             </header>
 
-            <div class="chart-card" id="co2EmissionsPerCapitaChartCard">
+            <div class="chart-card is-loading" id="co2EmissionsPerCapitaChartCard" aria-busy="true">
               <canvas id="co2EmissionsPerCapitaChart" aria-label="1人あたりCO2排出量折れ線グラフ" role="img"></canvas>
-              <div class="chart-overlay" id="co2EmissionsPerCapitaOverlay" aria-hidden="true" hidden></div>
+              <div class="chart-overlay" id="co2EmissionsPerCapitaOverlay" aria-hidden="true"><span class="overlay-message">読み込み中...</span></div>
             </div>
 
             <details class="data-table-toggle" id="co2EmissionsPerCapitaTableToggle">

@@ -109,15 +109,28 @@
           </div>
           <p class="filter-label">Filter by:</p>
           <div class="filter-panel-row">
-            <details class="category-panel" aria-labelledby="ranking-region-heading">
+            <details class="category-panel" id="ranking-region-panel" aria-labelledby="ranking-region-heading">
               <summary class="category-heading" id="ranking-region-heading">Regions</summary>
             </details>
-            <details class="category-panel" aria-labelledby="ranking-category-heading">
+            <details class="category-panel" id="ranking-category-panel" aria-labelledby="ranking-category-heading">
               <summary class="category-heading" id="ranking-category-heading">Categories</summary>
             </details>
           </div>
-          <div class="category-list filter-option-list" id="rankingRegionList" hidden></div>
-          <div class="category-list filter-option-list" id="rankingCategoryList" hidden></div>
+          <div class="category-list filter-option-list" id="rankingRegionList"><a class="navigation-control" href="../" data-ranking-scope-type="world" data-ranking-scope-id="WORLD" aria-pressed="false">World</a>
+            <a class="navigation-control" href="../asia/" data-ranking-scope-type="region" data-ranking-scope-id="Asia" aria-pressed="true">Asia</a>
+            <a class="navigation-control" href="../europe/" data-ranking-scope-type="region" data-ranking-scope-id="Europe" aria-pressed="false">Europe</a>
+            <a class="navigation-control" href="../oceania/" data-ranking-scope-type="region" data-ranking-scope-id="Oceania" aria-pressed="false">Oceania</a>
+            <a class="navigation-control" href="../africa/" data-ranking-scope-type="region" data-ranking-scope-id="Africa" aria-pressed="false">Africa</a>
+            <a class="navigation-control" href="../north-america/" data-ranking-scope-type="region" data-ranking-scope-id="North America" aria-pressed="false">North America</a>
+            <a class="navigation-control" href="../south-america/" data-ranking-scope-type="region" data-ranking-scope-id="South America" aria-pressed="false">South America</a></div>
+          <div class="category-list filter-option-list" id="rankingCategoryList"><a class="navigation-control" href="../oecd/" data-ranking-scope-type="category" data-ranking-scope-id="OECD" aria-pressed="false">OECD</a>
+            <a class="navigation-control" href="../eu/" data-ranking-scope-type="category" data-ranking-scope-id="EU" aria-pressed="false">EU</a>
+            <a class="navigation-control" href="../asean/" data-ranking-scope-type="category" data-ranking-scope-id="ASEAN" aria-pressed="false">ASEAN</a>
+            <a class="navigation-control" href="../g20/" data-ranking-scope-type="category" data-ranking-scope-id="G20" aria-pressed="false">G20</a>
+            <a class="navigation-control" href="../g7/" data-ranking-scope-type="category" data-ranking-scope-id="G7" aria-pressed="false">G7</a>
+            <a class="navigation-control" href="../brics/" data-ranking-scope-type="category" data-ranking-scope-id="BRICS" aria-pressed="false">BRICS</a>
+            <a class="navigation-control" href="../nato/" data-ranking-scope-type="category" data-ranking-scope-id="NATO" aria-pressed="false">NATO</a>
+            <a class="navigation-control" href="../eurozone/" data-ranking-scope-type="category" data-ranking-scope-id="Eurozone" aria-pressed="false">Eurozone</a></div>
         </div>
 
         <div class="ranking-results">

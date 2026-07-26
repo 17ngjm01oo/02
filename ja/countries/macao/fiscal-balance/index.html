@@ -25,6 +25,7 @@
     <meta name="apple-mobile-web-app-title" content="Geostarna" />
     <meta name="theme-color" content="#f4f6f8" data-theme-color />
     <script>(function(){try{var key="geostarna-theme-preference";var preference=localStorage.getItem(key);if(preference!=="dark"&&preference!=="system"&&preference!=="light"){preference="light"}var theme=preference==="dark"||(preference==="system"&&window.matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light";var root=document.documentElement;root.dataset.theme=theme;root.dataset.themePreference=preference;var meta=document.querySelector("meta[data-theme-color]");if(meta){meta.content=theme==="dark"?"#000000":"#f4f6f8"}}catch(_){}})();</script>
+    <link rel="preload" href="../../../../src/vendor/chart.umd.min.js" as="script" />
     <link rel="stylesheet" href="../../../../styles.css" />
     <script type="module" src="../../../../src/theme.js"></script>
     <script type="module" src="../../../../src/siteMenu.js"></script>
@@ -116,9 +117,9 @@
               </div>
             </header>
 
-            <div class="chart-card" id="fiscalBalanceChartCard">
+            <div class="chart-card is-loading" id="fiscalBalanceChartCard" aria-busy="true">
               <canvas id="fiscalBalanceChart" aria-label="財政収支折れ線グラフ" role="img"></canvas>
-              <div class="chart-overlay" id="fiscalBalanceOverlay" aria-hidden="true" hidden></div>
+              <div class="chart-overlay" id="fiscalBalanceOverlay" aria-hidden="true"><span class="overlay-message">読み込み中...</span></div>
             </div>
 
             <details class="data-table-toggle" id="fiscalBalanceTableToggle">
@@ -134,9 +135,9 @@
               </div>
             </header>
 
-            <div class="chart-card" id="fiscalBalanceNationalChartCard">
+            <div class="chart-card is-loading" id="fiscalBalanceNationalChartCard" aria-busy="true">
               <canvas id="fiscalBalanceNationalChart" aria-label="財政収支（自国通貨）折れ線グラフ" role="img"></canvas>
-              <div class="chart-overlay" id="fiscalBalanceNationalOverlay" aria-hidden="true" hidden></div>
+              <div class="chart-overlay" id="fiscalBalanceNationalOverlay" aria-hidden="true"><span class="overlay-message">読み込み中...</span></div>
             </div>
 
             <details class="data-table-toggle" id="fiscalBalanceNationalTableToggle">
@@ -169,9 +170,9 @@
               </div>
             </header>
 
-            <div class="chart-card" id="primaryFiscalBalanceChartCard">
+            <div class="chart-card is-loading" id="primaryFiscalBalanceChartCard" aria-busy="true">
               <canvas id="primaryFiscalBalanceChart" aria-label="基礎的財政収支折れ線グラフ" role="img"></canvas>
-              <div class="chart-overlay" id="primaryFiscalBalanceOverlay" aria-hidden="true" hidden></div>
+              <div class="chart-overlay" id="primaryFiscalBalanceOverlay" aria-hidden="true"><span class="overlay-message">読み込み中...</span></div>
             </div>
 
             <details class="data-table-toggle" id="primaryFiscalBalanceTableToggle">
@@ -187,9 +188,9 @@
               </div>
             </header>
 
-            <div class="chart-card" id="primaryFiscalBalanceNationalChartCard">
+            <div class="chart-card is-loading" id="primaryFiscalBalanceNationalChartCard" aria-busy="true">
               <canvas id="primaryFiscalBalanceNationalChart" aria-label="基礎的財政収支（自国通貨）折れ線グラフ" role="img"></canvas>
-              <div class="chart-overlay" id="primaryFiscalBalanceNationalOverlay" aria-hidden="true" hidden></div>
+              <div class="chart-overlay" id="primaryFiscalBalanceNationalOverlay" aria-hidden="true"><span class="overlay-message">読み込み中...</span></div>
             </div>
 
             <details class="data-table-toggle" id="primaryFiscalBalanceNationalTableToggle">

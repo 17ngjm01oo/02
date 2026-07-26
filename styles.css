@@ -2575,6 +2575,15 @@ body[data-page-kind="country-hub"] .country-hub-panel > .search-input-wrap {
   padding: 0;
 }
 
+.ranking-filter-panel > .filter-option-list {
+  display: none;
+}
+
+.ranking-filter-panel:has(#ranking-region-panel[open]) > #rankingRegionList,
+.ranking-filter-panel:has(#ranking-category-panel[open]) > #rankingCategoryList {
+  display: flex;
+}
+
 .filter-option-list[hidden] {
   display: none;
 }

@@ -75,6 +75,9 @@ async function initializePage() {
   initializeCompareSearches(visibleSeriesConfigs);
   initializeComparisonTableLayoutListener();
 
+  // Start the chart library request while the country selector and data requests initialize.
+  const chartJsPromise = loadChartJs();
+
   initializeCountrySelector({
     selectedCountry,
     countryPool: await countrySearchPoolPromise,
@@ -85,7 +88,7 @@ async function initializePage() {
     },
   });
 
-  await Promise.all(visibleSeriesConfigs.map((seriesConfig) => loadAndRenderSeries(seriesConfig)));
+  await Promise.all(visibleSeriesConfigs.map((seriesConfig) => loadAndRenderSeries(seriesConfig, chartJsPromise)));
   scrollToCountryIndicatorHash();
 }
 
@@ -100,7 +103,7 @@ function buildCountrySeriesConfig(seriesConfig, country) {
 
   return {
     ...seriesConfig,
-    staticDataPath: getCountryPageStaticDataPath(seriesConfig),
+    staticDataPath: getCountryPageStaticDataPath(seriesConfig, country.code),
     countryCode: country.code,
     countryName: translateCountryName(country),
     chartTitle: getSeriesChartTitle(seriesConfig, currencyCode),
@@ -108,12 +111,13 @@ function buildCountrySeriesConfig(seriesConfig, country) {
   };
 }
 
-function getCountryPageStaticDataPath(seriesConfig) {
-  if (!seriesConfig.staticDataPath) {
-    throw new Error(`staticDataPath is required for ${seriesConfig.id}.`);
+function getCountryPageStaticDataPath(seriesConfig, targetCountryCode) {
+  if (!seriesConfig.countryDataPath) {
+    throw new Error(`countryDataPath is required for ${seriesConfig.id}.`);
   }
 
-  return `${rootHref}${seriesConfig.staticDataPath.replace(/^\.\//, "")}`;
+  const path = seriesConfig.countryDataPath.replace("{countryCode}", targetCountryCode);
+  return `${rootHref}${path.replace(/^\.\//, "")}`;
 }
 
 function getSeriesChartTitle(seriesConfig, currencyCode) {
@@ -243,7 +247,7 @@ function initializeComparisonTableLayoutListener() {
   }
 }
 
-async function loadAndRenderSeries(seriesConfig) {
+async function loadAndRenderSeries(seriesConfig, chartJsPromise) {
   const chartCard = document.querySelector(`#${seriesConfig.chartCardId}`);
   const overlayElement = document.querySelector(`#${seriesConfig.overlayId}`);
   const canvas = document.querySelector(`#${seriesConfig.canvasId}`);
@@ -260,7 +264,10 @@ async function loadAndRenderSeries(seriesConfig) {
     const requestUrls = buildStaticDataRequestUrls(seriesConfig);
     console.info(`[${pageLogPrefix}] ${seriesConfig.indicatorCode} static data file:`, requestUrls.appUrl);
 
-    const { data, url } = await fetchStaticData(seriesConfig);
+    const [{ data, url }] = await Promise.all([
+      fetchStaticData(seriesConfig),
+      chartJsPromise,
+    ]);
     updateSeriesSourceOverrideNotes(data, seriesConfig);
     const points = transformSeriesData(data, seriesConfig);
     const state = seriesRuntimeState.get(seriesConfig.id);
@@ -1013,6 +1020,7 @@ function showChartOverlay({ chartCard, overlayElement, message, state }) {
     chartCard.classList.toggle("is-loading", state === "loading");
     chartCard.classList.toggle("is-error", state === "error");
     chartCard.classList.toggle("is-no-data", state === "no-data");
+    chartCard.setAttribute("aria-busy", String(state === "loading"));
   }
 
   if (!overlayElement) {
@@ -1032,6 +1040,7 @@ function showChartOverlay({ chartCard, overlayElement, message, state }) {
 function hideChartOverlay(chartCard, overlayElement) {
   if (chartCard) {
     chartCard.classList.remove("is-loading", "is-error", "is-no-data");
+    chartCard.setAttribute("aria-busy", "false");
   }
 
   if (!overlayElement) {
