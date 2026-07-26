@@ -1,7 +1,10 @@
 import { seriesConfigs } from "./config.js";
 import { scrollToCountryIndicatorHash } from "./countryIndicatorAnchors.js";
 import { countries } from "./countries.js";
-import { getCountriesWithCountryPageData } from "./countryPageSearchAvailability.js";
+import {
+  getCountriesWithCountryPageData,
+  getCountryCodesBySeriesData,
+} from "./countryPageSearchAvailability.js";
 import {
   filterCountries,
   formatCountryMetaText,
@@ -13,7 +16,6 @@ import { createFlagImage } from "./flags.js";
 import { getIndicatorDisplayText, renderIndicatorLabel } from "./indicatorLabels.js";
 import { initializeIndicatorInfoTooltips } from "./indicatorInfoUi.js";
 import { buildStaticDataRequestUrls, fetchStaticData } from "./staticData.js";
-import { hasSeriesDataInRange } from "./seriesData.js";
 import { transformSeriesData } from "./transform.js";
 import { clearLineChart, loadChartJs, renderLineChart } from "./chart.js";
 import { formatCompactDisplayValue, getDisplayScale } from "./displayFormat.js";
@@ -73,6 +75,7 @@ async function initializePage() {
   updateSeriesHeadings(visibleSeriesConfigs);
   initializeIndicatorInfoTooltips();
   initializeCompareSearches(visibleSeriesConfigs);
+  initializeCompareCountryAvailability(visibleSeriesConfigs);
   initializeComparisonTableLayoutListener();
 
   // Start the chart library request while the country selector and data requests initialize.
@@ -170,12 +173,12 @@ function initializeCompareSearches(countrySeriesConfigs) {
       seriesRuntimeState.set(seriesConfig.id, {
         baseConfig: pageSeriesConfigs.find((pageSeriesConfig) => pageSeriesConfig.id === seriesConfig.id),
         mainConfig: seriesConfig,
-        seriesData: null,
         mainPoints: [],
         comparisonCountry: null,
         comparisonRequestId: 0,
         comparisonMatches: [],
         comparisonPoints: [],
+        comparableCountryCodes: null,
         comparisonSearchKeyboard: null,
         hasMainData: false,
       });
@@ -218,6 +221,29 @@ function initializeCompareSearches(countrySeriesConfigs) {
       });
 
       updateCompareAvailability(seriesConfig.id);
+    });
+}
+
+function initializeCompareCountryAvailability(countrySeriesConfigs) {
+  const seriesIds = countrySeriesConfigs.map((seriesConfig) => seriesConfig.id);
+
+  getCountryCodesBySeriesData({ rootHref, seriesIds })
+    .then((countryCodesBySeries) => {
+      countrySeriesConfigs.forEach((seriesConfig) => {
+        const state = seriesRuntimeState.get(seriesConfig.id);
+        if (!state) {
+          return;
+        }
+
+        state.comparableCountryCodes = countryCodesBySeries.get(seriesConfig.id) ?? null;
+        updateCompareAvailability(seriesConfig.id);
+      });
+    })
+    .catch((error) => {
+      console.error(`[${pageLogPrefix}] Failed to load comparison availability.`, {
+        seriesIds,
+        error,
+      });
     });
 }
 
@@ -276,7 +302,6 @@ async function loadAndRenderSeries(seriesConfig, chartJsPromise) {
       clearLineChart(canvas);
       renderNoDataTable(seriesConfig);
       if (state) {
-        state.seriesData = null;
         state.mainPoints = [];
         state.hasMainData = false;
         updateCompareAvailability(seriesConfig.id);
@@ -299,7 +324,6 @@ async function loadAndRenderSeries(seriesConfig, chartJsPromise) {
       config: seriesConfig,
     });
     if (state) {
-      state.seriesData = data;
       state.mainPoints = points;
       state.hasMainData = true;
       updateCompareAvailability(seriesConfig.id);
@@ -311,7 +335,6 @@ async function loadAndRenderSeries(seriesConfig, chartJsPromise) {
     renderNoDataTable(seriesConfig);
     const state = seriesRuntimeState.get(seriesConfig.id);
     if (state) {
-      state.seriesData = null;
       state.mainPoints = [];
       state.hasMainData = false;
       updateCompareAvailability(seriesConfig.id);
@@ -396,11 +419,7 @@ function renderCompareResults(seriesId, query) {
 }
 
 function canCompareCountry(state, country) {
-  if (!state?.seriesData || !state.baseConfig) {
-    return false;
-  }
-
-  return hasSeriesDataInRange(state.seriesData, buildCountrySeriesConfig(state.baseConfig, country));
+  return state?.comparableCountryCodes?.has(country.code) ?? false;
 }
 
 function syncHighlightedCompareCountry(seriesId, highlightedIndex = -1) {
@@ -463,12 +482,13 @@ function selectComparisonCountry(seriesId, country) {
 async function loadComparisonSeries(seriesId, requestId) {
   const state = seriesRuntimeState.get(seriesId);
 
-  if (!state?.comparisonCountry || !state.baseConfig || !state.mainConfig || !state.seriesData) {
+  if (!state?.comparisonCountry || !state.baseConfig || !state.mainConfig || !state.hasMainData) {
     return;
   }
 
   const comparisonConfig = buildCountrySeriesConfig(state.baseConfig, state.comparisonCountry);
-  const comparisonPoints = transformSeriesData(state.seriesData, comparisonConfig);
+  const { data } = await fetchStaticData(comparisonConfig);
+  const comparisonPoints = transformSeriesData(data, comparisonConfig);
 
   if (requestId !== state.comparisonRequestId) {
     return;
@@ -551,8 +571,8 @@ function updateCompareAvailability(seriesId) {
     return;
   }
 
-  input.disabled = !state.hasMainData;
-  input.placeholder = state.hasMainData
+  input.disabled = !state.hasMainData || !state.comparableCountryCodes;
+  input.placeholder = state.hasMainData && state.comparableCountryCodes
     ? translate("ui.compareWith", "Compare with...")
     : "";
 }
