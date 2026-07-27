@@ -59,6 +59,13 @@ function validateNavigationConfig(config) {
       || typeof section.labelKey !== "string" || typeof section.fallbackLabel !== "string") {
       throw new Error("Navigation configuration contains an unsupported menu section.");
     }
+    if (section.kind === "language"
+      && (!Array.isArray(section.localeOrder)
+        || section.localeOrder.length !== supportedLocales.length
+        || new Set(section.localeOrder).size !== supportedLocales.length
+        || section.localeOrder.some((locale) => !supportedLocales.includes(locale)))) {
+      throw new Error("Navigation language order must contain every supported locale exactly once.");
+    }
   });
 
   return { ...config, itemsById };
@@ -208,7 +215,7 @@ function createLanguageMenu(section, { rootHref, currentLocale, pagePath }) {
   options.setAttribute("role", "group");
   options.setAttribute("aria-label", label);
 
-  supportedLocales.forEach((locale) => {
+  section.localeOrder.forEach((locale) => {
     const link = document.createElement("a");
     link.className = "site-menu-link site-menu-option";
     link.dataset.uiTextAction = "";

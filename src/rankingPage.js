@@ -12,6 +12,9 @@ import { initializeRankingYear } from "./rankingYear.js";
 import { initializeIndicatorInfoTooltips } from "./indicatorInfoUi.js";
 import {
   getLocalizedRootHref,
+  getPageLocale,
+  localeConfigs,
+  formatCountryDisplayName,
   translate,
   translateContentLabel,
   translateCountryName,
@@ -53,6 +56,7 @@ function getRankingConfigFromPage() {
 export function initializeRankingPage(config) {
   initializeLazyRankingCountrySearch(config);
   initializeIndicatorInfoTooltips();
+  const pageTitle = document.querySelector("#ranking-title");
 
   const state = {
     allRankingRows: [],
@@ -63,9 +67,10 @@ export function initializeRankingPage(config) {
     rankingManifestUrl: null,
     rankingManifest: null,
     rankingDataByYear: new Map(),
+    documentTitleSuffix: getDocumentTitleSuffix(document.title, pageTitle?.textContent),
     elements: {
       count: document.querySelector("#rankingCount"),
-      pageTitle: document.querySelector("#ranking-title"),
+      pageTitle,
       tableBody: document.querySelector("#rankingTableBody"),
       worldShareValue: null,
     },
@@ -346,7 +351,13 @@ function updateRankingPageTitle(state, scope) {
     state.elements.pageTitle.textContent = title;
   }
 
-  document.title = title;
+  document.title = `${title}${state.documentTitleSuffix}`;
+}
+
+function getDocumentTitleSuffix(documentTitle, pageTitle) {
+  const title = String(documentTitle ?? "");
+  const pageTitleText = String(pageTitle ?? "");
+  return title.startsWith(pageTitleText) ? title.slice(pageTitleText.length) : "";
 }
 
 function getRankingPageTitle(state, scope) {
@@ -354,11 +365,18 @@ function getRankingPageTitle(state, scope) {
   const yearSegment = state.selectedYear
     ? translate("ui.rankingYearSegment", ", {year}", { year: formatRankingYear(state.selectedYear) })
     : "";
-  return translate("ui.rankingPageTitle", "{indicator} Rankings by Country: {scope}{year}", {
+  const templateKey = scope?.type === "world" ? "world" : "scoped";
+  const template = localeConfigs[getPageLocale()]?.rankingTitleTemplates?.[templateKey]
+    ?? "{indicator} Rankings by Country: {scope}{year_segment}";
+  return formatRankingTitleTemplate(template, {
     indicator: state.rankingIndicatorLabel,
     scope: scopeLabel,
-    year: yearSegment,
+    year_segment: yearSegment,
   });
+}
+
+function formatRankingTitleTemplate(template, values) {
+  return String(template).replaceAll(/\{(\w+)\}/g, (_, key) => values[key] ?? "");
 }
 
 function formatRankingYear(year) {
@@ -416,7 +434,8 @@ function renderRankingTable(config, state, rankingRows) {
     const countryLink = document.createElement("a");
     countryLink.dataset.uiTextAction = "";
     countryLink.href = `${localizedRootHref}countries/${country.slug}/`;
-    countryLink.setAttribute("aria-label", `Open ${translateCountryName(country)} country page`);
+    const accessibleCountryName = formatCountryDisplayName(country, { form: "definite" });
+    countryLink.setAttribute("aria-label", `Open ${accessibleCountryName} country page`);
 
     const countryLinkText = document.createElement("span");
     countryLinkText.textContent = translateCountryName(country);
@@ -427,7 +446,7 @@ function renderRankingTable(config, state, rankingRows) {
     appendRankingValueCells(valueCell, barCell, {
       href: pagePathSegment ? `${localizedRootHref}countries/${country.slug}/${pagePathSegment}/` : "",
       text: formatCompactDisplayValue(country.value, displayScale),
-      ariaLabel: `Open ${translateCountryName(country)} ${config.linkAriaMetric} page`,
+      ariaLabel: `Open ${accessibleCountryName} ${config.linkAriaMetric} page`,
       value: country.value,
       valueBarScale,
     });
@@ -579,7 +598,7 @@ function formatRankingPercent(value) {
     return "—";
   }
 
-  return `${new Intl.NumberFormat("en-US", {
+  return `${new Intl.NumberFormat(localeConfigs[getPageLocale()]?.numberLocale ?? "en-US", {
     maximumFractionDigits: 1,
   }).format(value)}%`;
 }

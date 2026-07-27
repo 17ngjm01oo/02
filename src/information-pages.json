@@ -1,0 +1,707 @@
+{
+  "contact": {
+    "path": "contact/index.html",
+    "title": {
+      "en": "Contact",
+      "ja": "お問い合わせ",
+      "es": "Contacto"
+    },
+    "description": {
+      "en": "Contact Geostarna for questions, data corrections, technical issues, or other inquiries.",
+      "ja": "データの訂正、技術的な問題、その他のお問い合わせ先です。",
+      "es": "Contacta con Geostarna para realizar consultas, comunicar correcciones de datos o problemas técnicos."
+    },
+    "intro": {
+      "en": [
+        "For questions, data corrections, technical issues, or other inquiries, please contact:"
+      ],
+      "ja": [
+        "データの訂正、技術的な問題、その他のお問い合わせは、以下のメールアドレスまでご連絡ください。"
+      ],
+      "es": [
+        "Para consultas, correcciones de datos, problemas técnicos u otros asuntos, ponte en contacto con:"
+      ]
+    },
+    "email": "contact@geostarna.com",
+    "contactSectionLabel": {
+      "en": "Contact information",
+      "ja": "お問い合わせ先",
+      "es": "Información de contacto"
+    },
+    "contentClass": {
+      "en": "information-content",
+      "ja": "information-content",
+      "es": "information-content"
+    },
+    "sections": {
+      "en": [],
+      "ja": [],
+      "es": []
+    }
+  },
+  "about": {
+    "path": "about/index.html",
+    "title": {
+      "en": "About & Sources",
+      "ja": "概要と出典",
+      "es": "Acerca del sitio y fuentes"
+    },
+    "description": {
+      "en": "About this website, its country data, ranking methodology, source coverage, and primary statistical sources.",
+      "ja": "このウェブサイトの概要、国別データ、ランキングの考え方、対象範囲、主要な統計出典について説明します。",
+      "es": "Información sobre este sitio web, sus datos por país, la metodología de las clasificaciones, la cobertura y las principales fuentes estadísticas."
+    },
+    "contentClass": {
+      "en": "information-content",
+      "ja": "information-content",
+      "es": "information-content"
+    },
+    "sections": {
+      "en": [
+        [
+          "About",
+          [
+            "This website provides country-level data, rankings, and comparisons across major international indicators, making global statistics easier to search, compare, and explore."
+          ]
+        ],
+        [
+          "Linking to This Website",
+          [
+            "Links to any page are welcome without prior permission. When sharing data or charts, please link to the relevant page so readers can verify the source and latest values."
+          ]
+        ],
+        [
+          "Estimates and Projections",
+          [
+            "Some data may include estimates or projections depending on the source, location, and year. See the original source for methodology details."
+          ]
+        ],
+        [
+          "Regional Classification",
+          [
+            "Regional groupings follow the UN M49 standard. For browsing purposes, Central America and the Caribbean are included under North America."
+          ]
+        ],
+        [
+          "Country and Territory Coverage",
+          [
+            "Coverage is based on the UN M49 “countries or areas” standard. Entries are displayed as countries or territories for navigation purposes only and do not imply any position on sovereignty or political status."
+          ]
+        ],
+        [
+          "Flag Icons",
+          [
+            "Flag icons are used for identification. Territories may be shown with an administering country’s flag or a local flag, depending on official status and common usage. Their use does not imply any position on sovereignty, recognition, or political status."
+          ]
+        ],
+        [
+          "Rounding of Figures",
+          [
+            "Figures may be rounded for readability. Rankings may use underlying source data rather than the displayed rounded values."
+          ]
+        ],
+        [
+          "Euro Area Local Currency Data",
+          [
+            "For countries that adopted the euro, pre-adoption local-currency data may be shown in euros using official fixed conversion rates. See the IMF World Economic Outlook FAQ for details."
+          ]
+        ]
+      ],
+      "ja": [
+        [
+          "このウェブサイトについて",
+          [
+            "本ウェブサイトは、主要な国際指標に関する国別データ、ランキング、および比較を提供し、世界の統計をより簡単に検索、比較、閲覧できるようにすることを目的としています。"
+          ]
+        ],
+        [
+          "本ウェブサイトへのリンク",
+          [
+            "本ウェブサイト内の各ページへのリンクは、事前の許可なく自由に掲載できます。データやグラフを共有する際は、読者が出典および最新値を確認できるよう、該当ページへのリンクを掲載してください。"
+          ]
+        ],
+        [
+          "推計値および予測値",
+          [
+            "一部のデータには、情報源、国・地域、および年によって、推計値または予測値が含まれる場合があります。算出方法の詳細については、元の情報源をご確認ください。"
+          ]
+        ],
+        [
+          "地域区分",
+          [
+            "地域区分は、国連のM49基準に基づいています。閲覧上の便宜のため、中央アメリカおよびカリブ海地域は北アメリカに含めています。"
+          ]
+        ],
+        [
+          "国および地域の掲載範囲",
+          [
+            "掲載範囲は、国連M49の「国または地域」基準に基づいています。本ウェブサイトでは、閲覧上の便宜のため、各項目を国または地域として表示しています。この区分は、主権または政治的地位に関するいかなる立場も示すものではありません。"
+          ]
+        ],
+        [
+          "国旗アイコン",
+          [
+            "国旗アイコンは、国や地域を識別しやすくするために使用しています。地域によっては、公式な地位および一般的な現地での使用状況に応じて、施政国の国旗または地域独自の旗を表示する場合があります。これらの使用は、主権、承認、または政治的地位に関するいかなる立場も示すものではありません。"
+          ]
+        ],
+        [
+          "数値の丸め",
+          [
+            "表示される数値は、読みやすさのために丸められている場合があります。ランキングは、画面上に表示された丸め後の値ではなく、元のデータに基づいて算出される場合があります。"
+          ]
+        ],
+        [
+          "ユーロ導入国の現地通貨データ",
+          [
+            "ユーロを導入した国については、導入前の現地通貨建てデータを、公式の固定換算レートを用いてユーロ換算して表示する場合があります。詳細については、IMF World Economic Outlook FAQをご確認ください。"
+          ]
+        ]
+      ],
+      "es": [
+        [
+          "Acerca del sitio",
+          [
+            "Este sitio web ofrece datos, clasificaciones y comparaciones por país sobre los principales indicadores internacionales, para facilitar la búsqueda, comparación y consulta de estadísticas mundiales."
+          ]
+        ],
+        [
+          "Enlaces a este sitio web",
+          [
+            "Se permite enlazar cualquier página sin autorización previa. Al compartir datos o gráficos, incluye un enlace a la página correspondiente para que los lectores puedan comprobar la fuente y los valores más recientes."
+          ]
+        ],
+        [
+          "Estimaciones y proyecciones",
+          [
+            "Algunos datos pueden incluir estimaciones o proyecciones según la fuente, el lugar y el año. Consulta la fuente original para conocer los detalles metodológicos."
+          ]
+        ],
+        [
+          "Clasificación regional",
+          [
+            "Las agrupaciones regionales siguen la norma M49 de las Naciones Unidas. Para facilitar la navegación, Centroamérica y el Caribe se incluyen en América del Norte."
+          ]
+        ],
+        [
+          "Cobertura de países y territorios",
+          [
+            "La cobertura se basa en la norma «países o áreas» M49 de las Naciones Unidas. Las entradas se muestran como países o territorios únicamente con fines de navegación y no implican posición alguna sobre soberanía o estatus político."
+          ]
+        ],
+        [
+          "Iconos de banderas",
+          [
+            "Los iconos de banderas se utilizan con fines de identificación. Los territorios pueden mostrarse con la bandera del país administrador o con una bandera local, según su estatus oficial y el uso habitual. Su uso no implica posición alguna sobre soberanía, reconocimiento o estatus político."
+          ]
+        ],
+        [
+          "Redondeo de cifras",
+          [
+            "Las cifras pueden redondearse para facilitar su lectura. Las clasificaciones pueden utilizar los datos originales de la fuente en lugar de los valores redondeados que se muestran."
+          ]
+        ],
+        [
+          "Datos en moneda local de la zona del euro",
+          [
+            "Para los países que adoptaron el euro, los datos en moneda local anteriores a la adopción pueden mostrarse en euros mediante los tipos de conversión oficiales fijos. Consulta las preguntas frecuentes de Perspectivas de la economía mundial del FMI para obtener más información."
+          ]
+        ]
+      ]
+    },
+    "sourceList": {
+      "en": {
+        "heading": "Sources",
+        "intro": "This website uses public international databases and official statistical sources, including:"
+      },
+      "ja": {
+        "heading": "出典",
+        "intro": "本ウェブサイトでは、国際機関が公開するデータベースおよび公的な統計情報源を使用しています。主な出典は以下のとおりです。"
+      },
+      "es": {
+        "heading": "Fuentes",
+        "intro": "Este sitio web utiliza bases de datos internacionales públicas y fuentes estadísticas oficiales, entre ellas:"
+      }
+    }
+  },
+  "disclaimer-privacy-policy": {
+    "path": "disclaimer-privacy-policy/index.html",
+    "title": {
+      "en": "Disclaimer & Privacy Policy",
+      "ja": "免責事項・プライバシーポリシー",
+      "es": "Aviso legal y política de privacidad"
+    },
+    "description": {
+      "en": "Disclaimer, data limitations, privacy policy, cookies, analytics, advertising, third-party links, and contact information for this website.",
+      "ja": "このウェブサイトの免責事項、データの制約、プライバシーポリシー、Cookie、アクセス解析、広告、外部リンクについて説明します。",
+      "es": "Aviso legal, limitaciones de los datos, política de privacidad, cookies, analítica, publicidad, enlaces de terceros e información de contacto de este sitio web."
+    },
+    "lastUpdated": {
+      "en": "Last updated: July 20, 2026",
+      "ja": "最終更新日：2026年7月20日",
+      "es": "Última actualización: 20 de julio de 2026"
+    },
+    "contentClass": {
+      "en": "information-content",
+      "ja": "information-content",
+      "es": "information-content"
+    },
+    "sections": {
+      "en": [
+        [
+          "Disclaimer",
+          [
+            "The information provided on this website is for general informational purposes only.",
+            "We use reliable sources and aim to keep the information accurate and up to date. However, statistical data may include estimates, revisions, missing values, or differences in methodology.",
+            "Data may be revised without notice and may differ from other sources or later releases. We do not guarantee that the information is complete, current, accurate, or suitable for any particular purpose.",
+            "Nothing on this website constitutes professional advice. Verify important information independently and consult a qualified professional when necessary.",
+            "To the fullest extent permitted by law, we are not liable for any loss or damage arising from the use of or reliance on this website."
+          ]
+        ],
+        [
+          "Data Sources",
+          [
+            "Data may not be directly comparable across sources due to differences in methodology, definitions, coverage, revisions, or update timing. Third-party data and materials remain subject to their providers’ rights and terms. Users should review the original source, metadata, definitions, and release notes before making decisions based on the data."
+          ]
+        ],
+        [
+          "External Links",
+          [
+            "This website may link to third-party websites. We are not responsible for their content or privacy practices, and linking does not imply endorsement."
+          ]
+        ],
+        [
+          "Information We Collect",
+          [
+            "We may automatically collect limited technical and usage information, such as IP address, approximate location, browser and device information, referral source, pages visited, and website interactions. We may also collect information you provide when contacting us. Please do not submit sensitive personal information."
+          ]
+        ],
+        [
+          "How We Use Information",
+          [
+            "We use collected information to operate and improve the website, analyze usage, respond to inquiries, maintain security, prevent abuse, support advertising, and comply with legal obligations. Information provided when contacting us will be used to respond to your inquiry and for related purposes."
+          ]
+        ],
+        [
+          "Legal Bases for Processing",
+          [
+            "Where required by applicable law, we process personal information based on consent, legitimate interests, or legal obligations. You may withdraw consent at any time without affecting the lawfulness of prior processing."
+          ]
+        ],
+        [
+          "Cookies and Similar Technologies",
+          [
+            "We and third-party service providers, including Google, may use cookies and similar technologies to operate the website, analyze usage, maintain security, and support advertising. These providers may use cookies, web beacons, IP addresses, or other identifiers in connection with their services. Where required by law, non-essential technologies are used only after consent, which may be managed or withdrawn through the website’s privacy or cookie settings."
+          ]
+        ],
+        [
+          "Managing Cookie and Privacy Choices",
+          [
+            "You can manage or withdraw consent for non-essential cookies and similar technologies through the website’s cookie or privacy settings. You may also block or delete cookies through your browser, although browser settings may not control all third-party technologies and may affect certain website functions."
+          ]
+        ],
+        [
+          "Advertising",
+          [
+            "This website may display advertisements through third-party providers, including Google AdSense. These providers may use cookies, similar technologies, and information about visits to this and other websites to deliver, personalize, measure, and secure advertisements. You can manage advertising consent and personalization through the website’s cookie or privacy settings and, where available, the provider’s advertising settings. Depending on your choices and location, advertisements may be personalized, non-personalized, or limited."
+          ]
+        ],
+        [
+          "Analytics",
+          [
+            "This website may use analytics services, including Google Analytics, to understand website usage and improve performance. These services may process information such as pages visited, approximate location, device and browser details, referral source, and website interactions. Where required by law, analytics technologies are used only after consent."
+          ]
+        ],
+        [
+          "Google Services and Data Use",
+          [
+            "For more information about how Google collects and processes information through Google AdSense, Google Analytics, and other services, and about available privacy and advertising controls, please review the following resources:",
+            {
+              "items": [
+                {
+                  "label": "How Google uses information from sites or apps that use our services",
+                  "href": "https://policies.google.com/technologies/partner-sites?hl=en"
+                },
+                {
+                  "label": "Google Privacy Policy",
+                  "href": "https://policies.google.com/privacy?hl=en"
+                },
+                {
+                  "label": "My Ad Center",
+                  "href": "https://myadcenter.google.com/"
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "Hosting, Security, and Technical Services",
+          [
+            "We may use hosting, security, form-processing, and other technical service providers to operate the website. These providers may process technical information or submitted data as necessary to provide their services."
+          ]
+        ],
+        [
+          "How We Share Information",
+          [
+            "We may share information with service providers, advisers, authorities, or other parties as necessary to operate and protect the website, provide advertising and analytics, or comply with law. We do not sell personal information for money, although some laws may treat certain advertising-related disclosures as “sale,” “sharing,” or “targeted advertising,” for which applicable opt-out choices will be provided."
+          ]
+        ],
+        [
+          "International Data Transfers",
+          [
+            "We and our service providers may process information in countries with different data protection laws, using appropriate legal safeguards where required."
+          ]
+        ],
+        [
+          "Data Retention",
+          [
+            "We retain personal information only for as long as reasonably necessary for operational, security, legal, and dispute-resolution purposes. Retention periods may vary by data type and service, including the settings and policies of analytics, advertising, and other providers, after which information may be deleted, aggregated, or anonymized."
+          ]
+        ],
+        [
+          "Data Security",
+          [
+            "We use reasonable technical and organizational measures to protect information, but cannot guarantee its absolute security."
+          ]
+        ],
+        [
+          "Your Privacy Rights",
+          [
+            "Depending on your location and applicable law, you may have rights to access, correct, delete, restrict, object to, or request portability of your personal information, withdraw consent, and opt out of certain advertising, sale, or sharing. You will not be unlawfully discriminated against for exercising applicable privacy rights. Where applicable, you may also have the right to lodge a complaint with a competent data protection authority."
+          ]
+        ],
+        [
+          "Children’s Privacy",
+          [
+            "This website is intended for a general audience and is not directed to children. We do not knowingly collect personal information from children below the applicable legal age. If we become aware that such information has been collected, we will take appropriate steps."
+          ]
+        ],
+        [
+          "Changes to This Policy",
+          [
+            "We may update this policy from time to time. Any changes will be posted on this page with an updated “Last updated” date, and additional notice or consent will be provided where required by law."
+          ]
+        ],
+        [
+          "Website Operator and Contact",
+          [
+            "This website is operated under the name Geostarna.",
+            {
+              "template": "For general inquiries, please use our {contactLink}.",
+              "links": {
+                "contactLink": {
+                  "path": "contact/index.html",
+                  "label": "contact page"
+                }
+              }
+            },
+            "To exercise any applicable privacy rights, please clearly indicate that your request concerns privacy or personal data. We may need to verify your identity before processing certain requests."
+          ]
+        ]
+      ],
+      "ja": [
+        [
+          "免責事項",
+          [
+            "本ウェブサイトで提供する情報は、一般的な情報提供のみを目的としています。",
+            "当サイトでは、信頼できる情報源を使用し、正確かつ最新の情報を提供するよう努めています。ただし、統計データには、推計値、改定値、欠損値、または算出方法の違いが含まれる場合があります。",
+            "データは予告なく改定されることがあり、他の情報源または後日公表されるデータと異なる場合があります。当サイトは、情報の完全性、最新性、正確性、または特定の目的への適合性を保証しません。",
+            "本ウェブサイトの情報は、専門的な助言を構成するものではありません。重要な情報については、ご自身で確認し、必要に応じて適切な資格を有する専門家にご相談ください。",
+            "適用法で認められる最大限の範囲において、当サイトは、本ウェブサイトの利用またはその情報への依拠によって生じた損失または損害について責任を負いません。"
+          ]
+        ],
+        [
+          "データソース",
+          [
+            "データは、算出方法、定義、対象範囲、改定、または更新時期の違いにより、情報源間で直接比較できない場合があります。第三者が提供するデータおよび資料には、引き続き各提供者の権利および利用条件が適用されます。データに基づいて判断を行う前に、元の情報源、メタデータ、定義、公表時の注記および関連資料をご確認ください。"
+          ]
+        ],
+        [
+          "外部リンク",
+          [
+            "本ウェブサイトには、第三者のウェブサイトへのリンクが含まれる場合があります。当サイトは、それらのウェブサイトの内容またはプライバシー上の取り扱いについて責任を負いません。また、リンクの掲載は、当該ウェブサイトを推奨または承認することを意味しません。"
+          ]
+        ],
+        [
+          "収集する情報",
+          [
+            "当サイトは、IPアドレス、おおよその位置情報、ブラウザおよび端末に関する情報、参照元、閲覧したページ、ウェブサイト上での操作など、限定的な技術情報および利用情報を自動的に収集する場合があります。また、お問い合わせの際に利用者から提供される情報を収集する場合があります。機微な個人情報は送信しないでください。"
+          ]
+        ],
+        [
+          "情報の利用目的",
+          [
+            "当サイトは、収集した情報を、ウェブサイトの運営および改善、利用状況の分析、お問い合わせへの対応、セキュリティの維持、不正利用の防止、広告配信の支援、ならびに法的義務の履行のために使用します。お問い合わせの際に提供された情報は、お問い合わせへの対応およびこれに付随する目的に使用します。"
+          ]
+        ],
+        [
+          "処理の法的根拠",
+          [
+            "適用法により法的根拠が必要とされる場合、当サイトは、同意、正当な利益、または法的義務に基づいて個人情報を処理します。利用者は、いつでも同意を撤回できます。同意の撤回は、撤回前に行われた処理の適法性に影響を与えません。"
+          ]
+        ],
+        [
+          "Cookieおよび類似技術",
+          [
+            "当サイトおよびGoogleを含む第三者サービス提供者は、ウェブサイトの運営、利用状況の分析、セキュリティの維持、および広告配信のために、Cookieおよび類似技術を使用する場合があります。これらのサービス提供者は、そのサービスに関連して、Cookie、ウェブビーコン、IPアドレス、またはその他の識別子を使用する場合があります。適用法で求められる場合、必須ではない技術は、利用者の同意を得た後にのみ使用されます。同意は、本ウェブサイトのプライバシー設定またはCookie設定から管理または撤回できます。"
+          ]
+        ],
+        [
+          "Cookieおよびプライバシー設定の管理",
+          [
+            "利用者は、本ウェブサイトのCookie設定またはプライバシー設定を通じて、必須ではないCookieおよび類似技術への同意を管理または撤回できます。また、ブラウザの設定を通じてCookieをブロックまたは削除することもできます。ただし、ブラウザの設定では一部の第三者技術を制御できない場合があり、ウェブサイトの一部機能に影響することがあります。"
+          ]
+        ],
+        [
+          "広告",
+          [
+            "本ウェブサイトは、Google AdSenseを含む第三者の広告サービスを通じて広告を表示する場合があります。これらのサービス提供者は、広告の配信、パーソナライズ、測定、および安全性の確保のために、Cookie、類似技術、ならびに本ウェブサイトおよび他のウェブサイトへの訪問に関する情報を使用する場合があります。利用者は、本ウェブサイトのCookie設定またはプライバシー設定、および利用可能な場合は各サービス提供者の広告設定を通じて、広告に関する同意およびパーソナライズを管理できます。利用者の選択および所在地に応じて、パーソナライズ広告、非パーソナライズ広告、または制限付き広告が表示される場合があります。"
+          ]
+        ],
+        [
+          "アクセス解析",
+          [
+            "本ウェブサイトは、ウェブサイトの利用状況を把握し、パフォーマンスを改善するために、Google Analyticsを含むアクセス解析サービスを使用する場合があります。これらのサービスでは、閲覧したページ、おおよその位置情報、端末およびブラウザに関する情報、参照元、ならびにウェブサイト上での操作などの情報が処理される場合があります。適用法で求められる場合、アクセス解析技術は利用者の同意を得た後にのみ使用されます。"
+          ]
+        ],
+        [
+          "Googleサービスによるデータ利用",
+          [
+            "Google AdSense、Google Analytics、その他のGoogleサービスを通じてGoogleが情報を収集および処理する方法、ならびに利用可能なプライバシー設定および広告設定については、以下の情報をご確認ください。",
+            {
+              "items": [
+                {
+                  "label": "Google のサービスを使用するサイトやアプリから収集した情報の Google による使用",
+                  "href": "https://policies.google.com/technologies/partner-sites?hl=ja"
+                },
+                {
+                  "label": "Googleプライバシーポリシー",
+                  "href": "https://policies.google.com/privacy?hl=ja"
+                },
+                {
+                  "label": "マイ アド センター",
+                  "href": "https://myadcenter.google.com/"
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "ホスティング、セキュリティおよび技術サービス",
+          [
+            "当サイトは、ウェブサイトを運営するために、ホスティング、セキュリティ、フォーム処理、その他の技術サービスを提供する事業者を利用する場合があります。これらの事業者は、そのサービスの提供に必要な範囲で、技術情報または利用者が送信したデータを処理する場合があります。"
+          ]
+        ],
+        [
+          "情報の共有",
+          [
+            "当サイトは、ウェブサイトの運営および保護、広告およびアクセス解析の提供、または法令遵守のために必要な範囲で、サービス提供者、専門アドバイザー、公的機関、その他の関係者と情報を共有する場合があります。当サイトは、個人情報を金銭の対価として販売しません。ただし、一部の法令では、広告に関連する一定の情報提供が「販売」「共有」または「ターゲティング広告」とみなされる場合があります。その場合、利用者は、法令に基づいてオプトアウトできる場合があります。"
+          ]
+        ],
+        [
+          "国際的なデータ移転",
+          [
+            "当サイトおよび当サイトが利用するサービス提供者は、利用者の所在地とは異なるデータ保護法が適用される国で情報を処理する場合があります。必要な場合は、適切な法的保護措置を講じます。"
+          ]
+        ],
+        [
+          "データの保存期間",
+          [
+            "当サイトは、運営、セキュリティ、法令遵守、および紛争解決のために合理的に必要な期間に限り、個人情報を保存します。保存期間は、データの種類および利用するサービスによって異なる場合があり、アクセス解析、広告、その他のサービス提供者の設定およびポリシーにも左右されます。保存期間の経過後、情報は削除、集計、または匿名化される場合があります。"
+          ]
+        ],
+        [
+          "データセキュリティ",
+          [
+            "当サイトは、情報を保護するために合理的な技術的および組織的措置を講じます。ただし、情報の絶対的な安全性を保証することはできません。"
+          ]
+        ],
+        [
+          "利用者のプライバシーに関する権利",
+          [
+            "利用者の所在地および適用法に応じて、利用者は、ご自身の個人情報について、開示、訂正、削除、処理の制限、処理への異議申立て、データポータビリティ、同意の撤回、ならびに特定の広告、販売または共有からのオプトアウトを請求または行使できる場合があります。利用者が適用されるプライバシー権を行使したことを理由として、違法な差別的取扱いを受けることはありません。また、適用される場合、所管のデータ保護監督機関に苦情を申し立てることができます。"
+          ]
+        ],
+        [
+          "子どものプライバシー",
+          [
+            "本ウェブサイトは一般利用者を対象としており、子どもを対象としたものではありません。当サイトは、適用法で定められた年齢に満たない子どもの個人情報を、認識しながら収集することはありません。そのような情報を収集したことが判明した場合は、適切な措置を講じます。"
+          ]
+        ],
+        [
+          "本ポリシーの変更",
+          [
+            "当サイトは、本ポリシーを随時変更する場合があります。変更内容は、更新後の「最終更新日」とともに本ページに掲載します。適用法で求められる場合は、追加の通知または同意取得を行います。"
+          ]
+        ],
+        [
+          "運営者およびお問い合わせ",
+          [
+            "本ウェブサイトは、Geostarnaの名称で運営されています。",
+            {
+              "template": "一般的なお問い合わせについては、{contactLink}をご利用ください。",
+              "links": {
+                "contactLink": {
+                  "path": "contact/index.html",
+                  "label": "お問い合わせページ"
+                }
+              }
+            },
+            "適用されるプライバシー権を行使する場合は、お問い合わせ内容がプライバシーまたは個人情報に関するものであることを明記してください。特定の請求を処理する前に、本人確認をお願いする場合があります。"
+          ]
+        ]
+      ],
+      "es": [
+        [
+          "Aviso legal",
+          [
+            "La información ofrecida en este sitio web tiene únicamente fines informativos generales.",
+            "Utilizamos fuentes fiables y procuramos mantener la información exacta y actualizada. No obstante, los datos estadísticos pueden incluir estimaciones, revisiones, valores ausentes o diferencias metodológicas.",
+            "Los datos pueden revisarse sin previo aviso y diferir de otras fuentes o publicaciones posteriores. No garantizamos que la información sea completa, actual, exacta o adecuada para un fin concreto.",
+            "Nada de lo publicado en este sitio web constituye asesoramiento profesional. Verifica de forma independiente la información importante y consulta a un profesional cualificado cuando sea necesario.",
+            "En la máxima medida permitida por la ley, no asumimos responsabilidad por pérdidas o daños derivados del uso de este sitio web o de la confianza depositada en él."
+          ]
+        ],
+        [
+          "Fuentes de datos",
+          [
+            "Los datos pueden no ser directamente comparables entre fuentes debido a diferencias de metodología, definiciones, cobertura, revisiones o fechas de actualización. Los datos y materiales de terceros siguen sujetos a los derechos y condiciones de sus proveedores. Antes de tomar decisiones basadas en los datos, consulta la fuente original, los metadatos, las definiciones y las notas de publicación."
+          ]
+        ],
+        [
+          "Enlaces externos",
+          [
+            "Este sitio web puede contener enlaces a sitios de terceros. No somos responsables de su contenido ni de sus prácticas de privacidad, y la inclusión de un enlace no implica aprobación."
+          ]
+        ],
+        [
+          "Información que recopilamos",
+          [
+            "Podemos recopilar automáticamente información técnica y de uso limitada, como la dirección IP, la ubicación aproximada, información del navegador y el dispositivo, la fuente de referencia, las páginas visitadas y las interacciones con el sitio. También podemos recopilar la información que facilites al contactarnos. No envíes información personal sensible."
+          ]
+        ],
+        [
+          "Cómo utilizamos la información",
+          [
+            "Utilizamos la información recopilada para operar y mejorar el sitio web, analizar su uso, responder consultas, mantener la seguridad, prevenir abusos, facilitar la publicidad y cumplir obligaciones legales. La información proporcionada al contactarnos se utilizará para responder a tu consulta y para fines relacionados."
+          ]
+        ],
+        [
+          "Bases jurídicas del tratamiento",
+          [
+            "Cuando la legislación aplicable lo exija, tratamos la información personal sobre la base del consentimiento, intereses legítimos u obligaciones legales. Puedes retirar tu consentimiento en cualquier momento sin que ello afecte a la licitud del tratamiento anterior."
+          ]
+        ],
+        [
+          "Cookies y tecnologías similares",
+          [
+            "Nosotros y proveedores externos, incluido Google, podemos utilizar cookies y tecnologías similares para operar el sitio web, analizar su uso, mantener la seguridad y facilitar la publicidad. Estos proveedores pueden utilizar cookies, balizas web, direcciones IP u otros identificadores en relación con sus servicios. Cuando lo exija la ley, las tecnologías no esenciales solo se utilizarán después de obtener el consentimiento, que podrá administrarse o retirarse mediante la configuración de privacidad o cookies del sitio web."
+          ]
+        ],
+        [
+          "Gestión de las preferencias de cookies y privacidad",
+          [
+            "Puedes administrar o retirar tu consentimiento para las cookies no esenciales y tecnologías similares mediante la configuración de cookies o privacidad del sitio web. También puedes bloquear o eliminar cookies desde el navegador, aunque su configuración puede no controlar todas las tecnologías de terceros y puede afectar a determinadas funciones del sitio."
+          ]
+        ],
+        [
+          "Publicidad",
+          [
+            "Este sitio web puede mostrar anuncios de proveedores externos, incluido Google AdSense. Estos proveedores pueden utilizar cookies, tecnologías similares e información sobre visitas a este y otros sitios para ofrecer, personalizar, medir y proteger anuncios. Puedes administrar el consentimiento y la personalización publicitaria mediante la configuración de cookies o privacidad del sitio y, cuando esté disponible, la configuración publicitaria del proveedor. Según tus elecciones y ubicación, los anuncios pueden ser personalizados, no personalizados o limitados."
+          ]
+        ],
+        [
+          "Analítica",
+          [
+            "Este sitio web puede utilizar servicios de analítica, incluido Google Analytics, para comprender su uso y mejorar el rendimiento. Estos servicios pueden tratar información como las páginas visitadas, la ubicación aproximada, los datos del dispositivo y navegador, la fuente de referencia y las interacciones con el sitio. Cuando lo exija la ley, las tecnologías de analítica solo se utilizarán después de obtener el consentimiento."
+          ]
+        ],
+        [
+          "Servicios de Google y uso de datos",
+          [
+            "Para obtener más información sobre cómo Google recopila y trata información mediante Google AdSense, Google Analytics y otros servicios, así como sobre los controles de privacidad y publicidad disponibles, consulta los siguientes recursos:",
+            {
+              "items": [
+                {
+                  "label": "Cómo utiliza Google la información de sitios o aplicaciones que usan sus servicios",
+                  "href": "https://policies.google.com/technologies/partner-sites?hl=es"
+                },
+                {
+                  "label": "Política de Privacidad de Google",
+                  "href": "https://policies.google.com/privacy?hl=es"
+                },
+                {
+                  "label": "Mi centro de anuncios",
+                  "href": "https://myadcenter.google.com/"
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "Alojamiento, seguridad y servicios técnicos",
+          [
+            "Podemos utilizar proveedores de alojamiento, seguridad, procesamiento de formularios y otros servicios técnicos para operar el sitio web. Estos proveedores pueden tratar información técnica o datos enviados cuando sea necesario para prestar sus servicios."
+          ]
+        ],
+        [
+          "Cómo compartimos la información",
+          [
+            "Podemos compartir información con proveedores de servicios, asesores, autoridades u otras partes cuando sea necesario para operar y proteger el sitio web, ofrecer publicidad y analítica o cumplir la ley. No vendemos información personal a cambio de dinero, aunque algunas leyes pueden considerar ciertas comunicaciones relacionadas con la publicidad como «venta», «intercambio» o «publicidad dirigida»; en esos casos se ofrecerán las opciones de exclusión aplicables."
+          ]
+        ],
+        [
+          "Transferencias internacionales de datos",
+          [
+            "Nosotros y nuestros proveedores de servicios podemos tratar información en países con leyes de protección de datos diferentes, utilizando las garantías jurídicas adecuadas cuando sea necesario."
+          ]
+        ],
+        [
+          "Conservación de datos",
+          [
+            "Conservamos la información personal solo durante el tiempo razonablemente necesario para fines operativos, de seguridad, jurídicos y de resolución de disputas. Los periodos de conservación pueden variar según el tipo de datos y el servicio, incluidas las configuraciones y políticas de los proveedores de analítica, publicidad y otros servicios. Después, la información puede eliminarse, agregarse o anonimizarse."
+          ]
+        ],
+        [
+          "Seguridad de los datos",
+          [
+            "Aplicamos medidas técnicas y organizativas razonables para proteger la información, pero no podemos garantizar su seguridad absoluta."
+          ]
+        ],
+        [
+          "Tus derechos de privacidad",
+          [
+            "Según tu ubicación y la legislación aplicable, puedes tener derecho a acceder, rectificar, eliminar o limitar el tratamiento de tu información personal, oponerte a él, solicitar su portabilidad, retirar el consentimiento y rechazar determinados usos publicitarios, ventas o intercambios. No sufrirás discriminación ilícita por ejercer los derechos de privacidad aplicables. Cuando corresponda, también puedes presentar una reclamación ante una autoridad competente de protección de datos."
+          ]
+        ],
+        [
+          "Privacidad de los menores",
+          [
+            "Este sitio web está destinado al público general y no se dirige a menores. No recopilamos deliberadamente información personal de menores de la edad legal aplicable. Si tenemos conocimiento de que se ha recopilado dicha información, tomaremos las medidas oportunas."
+          ]
+        ],
+        [
+          "Cambios en esta política",
+          [
+            "Podemos actualizar esta política periódicamente. Los cambios se publicarán en esta página con una nueva fecha de «Última actualización» y, cuando la ley lo exija, se facilitará un aviso adicional o se solicitará consentimiento."
+          ]
+        ],
+        [
+          "Operador del sitio web y contacto",
+          [
+            "Este sitio web opera bajo el nombre Geostarna.",
+            {
+              "template": "Para consultas generales, utiliza nuestra {contactLink}.",
+              "links": {
+                "contactLink": {
+                  "path": "contact/index.html",
+                  "label": "página de contacto"
+                }
+              }
+            },
+            "Para ejercer cualquier derecho de privacidad aplicable, indica claramente que tu solicitud se refiere a privacidad o datos personales. Es posible que debamos verificar tu identidad antes de tramitar determinadas solicitudes."
+          ]
+        ]
+      ]
+    }
+  }
+}

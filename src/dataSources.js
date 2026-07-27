@@ -14,6 +14,7 @@ export const dataSources = {
     shortLabel: {
       en: "IMF WEO",
       ja: "IMF WEO",
+      es: "FMI WEO",
     },
     staticDataPath: "./data/weo/current-prices.json",
     countryDataPath: "./data/weo/country-series/current-prices/{countryCode}.json",
@@ -29,6 +30,7 @@ export const dataSources = {
     shortLabel: {
       en: "UNCTAD",
       ja: "UNCTAD",
+      es: "UNCTAD",
     },
     staticDataPath: "./data/unctad/trade.json",
     countryDataPath: "./data/unctad/country-series/trade/{countryCode}.json",
@@ -44,6 +46,7 @@ export const dataSources = {
     shortLabel: {
       en: "UNCTAD",
       ja: "UNCTAD",
+      es: "UNCTAD",
     },
     staticDataPath: "./data/unctad/services-trade.json",
     countryDataPath: "./data/unctad/country-series/services-trade/{countryCode}.json",
@@ -59,6 +62,7 @@ export const dataSources = {
     shortLabel: {
       en: "WB",
       ja: "世銀",
+      es: "BM",
     },
     staticDataPath: "./data/world-bank/total-reserves.json",
     countryDataPath: "./data/world-bank/country-series/total-reserves/{countryCode}.json",
@@ -76,6 +80,7 @@ export const dataSources = {
     shortLabel: {
       en: "UNWPP",
       ja: "UNWPP",
+      es: "UNWPP",
     },
     staticDataPath: "./data/un-wpp/population.json",
     countryDataPath: "./data/un-wpp/country-series/population/{countryCode}.json",
@@ -92,6 +97,7 @@ export const dataSources = {
     shortLabel: {
       en: "UN DESA",
       ja: "UN DESA",
+      es: "ONU DAES",
     },
     staticDataPath: "./data/un-migrant-stock/immigrants.json",
     countryDataPath: "./data/un-migrant-stock/country-series/immigrants/{countryCode}.json",
@@ -107,6 +113,7 @@ export const dataSources = {
     shortLabel: {
       en: "WB",
       ja: "世銀",
+      es: "BM",
     },
     staticDataPath: "./data/world-bank/environment.json",
     countryDataPath: "./data/world-bank/country-series/environment/{countryCode}.json",
@@ -123,6 +130,7 @@ export const dataSources = {
     shortLabel: {
       en: "UNdata",
       ja: "UNdata",
+      es: "UNdata",
     },
     staticDataPath: "./data/un-national-accounts/gni.json",
     countryDataPath: "./data/un-national-accounts/country-series/gni/{countryCode}.json",
@@ -138,6 +146,7 @@ export const dataSources = {
     shortLabel: {
       en: "CIA",
       ja: "CIA",
+      es: "CIA",
     },
     staticDataPath: "./data/cia/area.json",
     rankingStaticDataPath: "../data/cia/rankings/area/manifest.json",
@@ -152,6 +161,7 @@ export const dataSources = {
     shortLabel: {
       en: "SIPRI",
       ja: "SIPRI",
+      es: "SIPRI",
     },
     staticDataPath: "./data/sipri/military-spending.json",
     countryDataPath: "./data/sipri/country-series/military-spending/{countryCode}.json",
@@ -167,6 +177,7 @@ export const dataSources = {
     shortLabel: {
       en: "UNDP",
       ja: "UNDP",
+      es: "PNUD",
     },
     staticDataPath: "./data/undp/hdi.json",
     countryDataPath: "./data/undp/country-series/hdi/{countryCode}.json",
@@ -182,6 +193,7 @@ export const dataSources = {
     shortLabel: {
       en: "UNdata",
       ja: "UNdata",
+      es: "UNdata",
     },
     sourceUrl: "https://data.un.org/Explorer.aspx?d=SNAAMA",
     aboutOnly: true,
@@ -192,6 +204,7 @@ export const dataSources = {
     shortLabel: {
       en: "UN Comtrade",
       ja: "UN Comtrade",
+      es: "UN Comtrade",
     },
     sourceUrl: "https://comtrade.un.org/",
     aboutOnly: true,
@@ -202,6 +215,7 @@ export const dataSources = {
     shortLabel: {
       en: "OECD",
       ja: "OECD",
+      es: "OCDE",
     },
     sourceUrl: "https://data-explorer.oecd.org/",
     aboutOnly: true,

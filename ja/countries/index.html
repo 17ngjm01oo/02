@@ -8,6 +8,7 @@
     <link rel="canonical" href="https://geostarna.com/ja/countries/" />
     <link rel="alternate" hreflang="en" href="https://geostarna.com/countries/" />
     <link rel="alternate" hreflang="ja" href="https://geostarna.com/ja/countries/" />
+    <link rel="alternate" hreflang="es" href="https://geostarna.com/es/countries/" />
     <link rel="alternate" hreflang="x-default" href="https://geostarna.com/countries/" />
     <meta property="og:title" content="国一覧｜ジオスターナ" />
     <meta property="og:description" content="国・地域のプロフィール、主要データ、指標、地図、世界順位を検索・閲覧できます。" />
@@ -30,7 +31,7 @@
     <script type="module" src="../../src/siteMenu.js"></script>
     <script type="module" src="../../src/countryHubPage.js"></script>
   </head>
-  <body data-root-href="../../" data-locale="ja" data-page-kind="country-hub" data-country-hub-preferred-codes="{&quot;en&quot;:[&quot;USA&quot;,&quot;GBR&quot;,&quot;CAN&quot;,&quot;AUS&quot;,&quot;IND&quot;,&quot;SGP&quot;,&quot;NZL&quot;,&quot;IRL&quot;],&quot;ja&quot;:[&quot;JPN&quot;]}">
+  <body data-root-href="../../" data-locale="ja" data-page-kind="country-hub" data-country-hub-preferred-codes="{&quot;en&quot;:[&quot;USA&quot;,&quot;GBR&quot;,&quot;CAN&quot;,&quot;AUS&quot;,&quot;IND&quot;,&quot;PHL&quot;,&quot;ZAF&quot;,&quot;IRL&quot;,&quot;NZL&quot;,&quot;SGP&quot;,&quot;NGA&quot;],&quot;ja&quot;:[&quot;JPN&quot;],&quot;es&quot;:[&quot;MEX&quot;,&quot;ESP&quot;,&quot;COL&quot;,&quot;ARG&quot;,&quot;USA&quot;,&quot;PER&quot;,&quot;VEN&quot;,&quot;CHL&quot;,&quot;ECU&quot;,&quot;GTM&quot;,&quot;DOM&quot;,&quot;CUB&quot;,&quot;CRI&quot;,&quot;PAN&quot;,&quot;URY&quot;,&quot;HND&quot;,&quot;BOL&quot;,&quot;PRY&quot;,&quot;NIC&quot;,&quot;SLV&quot;]}">
     <main class="page-shell">
       <header class="site-brand">
         <a class="site-brand-link" href="../../ja/">
@@ -85,15 +86,17 @@
             />
             <div class="country-results" id="countrySearchResults" role="listbox" aria-label="国検索結果" hidden></div>
           </div>
-          <p class="filter-label">絞り込み:</p>
-          <div class="filter-panel-row">
-            <details class="category-panel" aria-labelledby="region-heading">
-              <summary class="category-heading" id="region-heading">地域</summary>
-            </details>
-            <details class="category-panel" aria-labelledby="category-heading">
-              <summary class="category-heading" id="category-heading">カテゴリ</summary>
-            </details>
-            <div class="country-hub-controls" id="countryHubControls"></div>
+          <div class="country-filter-bar">
+            <p class="filter-label">絞り込み:</p>
+            <div class="filter-panel-row">
+              <details class="category-panel" aria-labelledby="region-heading">
+                <summary class="category-heading" id="region-heading">地域</summary>
+              </details>
+              <details class="category-panel" aria-labelledby="category-heading">
+                <summary class="category-heading" id="category-heading">カテゴリ</summary>
+              </details>
+              <div class="country-hub-controls" id="countryHubControls"></div>
+            </div>
           </div>
           <div class="category-list filter-option-list" id="regionList" hidden></div>
           <div class="category-list filter-option-list" id="categoryList" hidden></div>

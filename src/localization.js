@@ -66,7 +66,11 @@ export function translateOfficialCountryName(country) {
 }
 
 export function translateCategoryLabel(label) {
-  return getLocaleDictionary().categories?.[label] ?? label;
+  const dictionary = getLocaleDictionary();
+  return dictionary.categories?.[label]
+    ?? dictionary.indicators?.[label]
+    ?? dictionary.exactText?.[label]
+    ?? label;
 }
 
 export function translateRegionLabel(label) {
@@ -88,15 +92,15 @@ export function translateCountryName(countryOrCode, fallback = "") {
 }
 
 export function formatCountryDisplayName(countryOrCode, options = {}) {
-  const { article = "none", articleCase = "lower", fallback = "" } = options;
+  const { form = "default", fallback = "" } = options;
   const countryName = translateCountryName(countryOrCode, fallback);
-  const usesDefiniteArticle = typeof countryOrCode === "object" && countryOrCode?.englishDefiniteArticle === true;
-  if (getPageLocale() !== "en" || article !== "definite" || !usesDefiniteArticle) {
-    return countryName;
+  const code = typeof countryOrCode === "string" ? countryOrCode : countryOrCode?.code;
+  const config = localeConfigs[getPageLocale()];
+  const namedForm = config?.countryNameForms?.[code]?.[form];
+  if (namedForm) {
+    return namedForm;
   }
-
-  const articleText = articleCase === "title" ? "The" : "the";
-  return `${articleText} ${countryName}`;
+  return `${config?.countryNameFormPrefixes?.[form] ?? ""}${countryName}`;
 }
 
 export function getCountryNameSearchLabels(countryOrCode, fallback = "") {

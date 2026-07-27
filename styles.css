@@ -242,6 +242,7 @@ body {
 
 .site-brand .breadcrumb-nav {
   grid-column: 2;
+  align-self: center;
   min-width: 0;
   margin: 0 0 0 10px;
   padding-left: 10px;
@@ -515,6 +516,8 @@ button.site-menu-option {
 }
 
 .site-footer-card {
+  container-name: site-footer;
+  container-type: inline-size;
   padding: var(--site-nav-card-padding);
 }
 
@@ -543,6 +546,44 @@ button.site-menu-option {
   font-size: 0.96rem;
   font-weight: 600;
   line-height: 1.35;
+}
+
+@container site-footer (max-width: 26rem) {
+  body[data-locale="es"] .site-footer-nav {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  body[data-locale="es"] .site-footer-separator {
+    display: block;
+    align-self: stretch;
+    height: 1px;
+    margin-block: 2px;
+    background: var(--border);
+    color: transparent;
+    font-size: 0;
+    line-height: 0;
+  }
+}
+
+@container site-footer (max-width: 17rem) {
+  .site-footer-nav {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .site-footer-separator {
+    display: block;
+    align-self: stretch;
+    height: 1px;
+    margin-block: 2px;
+    background: var(--border);
+    color: transparent;
+    font-size: 0;
+    line-height: 0;
+  }
 }
 
 .site-version {
@@ -1856,19 +1897,28 @@ body[data-country-overview-category] .country-data-header h1 {
 }
 
 .country-overview-table .country-overview-value {
-  width: 27%;
+  width: 28%;
   vertical-align: middle;
   white-space: nowrap;
 }
 
 .country-overview-table .country-overview-rank {
-  width: 17%;
+  width: 16%;
+  padding-left: 5px;
+  padding-right: 11px;
+  text-align: center;
   vertical-align: middle;
   white-space: nowrap;
 }
 
+.country-profile-indicator-section .country-overview-table .country-overview-rank {
+  padding-left: 5px;
+  padding-right: 11px;
+}
+
 .country-overview-table .country-overview-year {
   width: 10%;
+  text-align: center;
   vertical-align: middle;
   white-space: nowrap;
 }
@@ -2447,6 +2497,32 @@ body[data-page-kind="country-hub"] .country-hub-panel > .search-input-wrap {
   margin-bottom: -4px;
 }
 
+.country-filter-bar {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  min-width: 0;
+  container-type: inline-size;
+}
+
+.country-filter-bar > .filter-label {
+  flex: 0 0 auto;
+  align-self: center;
+  white-space: nowrap;
+}
+
+.country-filter-bar > .filter-panel-row {
+  flex: 0 0 auto;
+  flex-wrap: nowrap;
+}
+
+@container (max-width: 18rem) {
+  .country-filter-bar > .filter-panel-row {
+    flex-wrap: wrap;
+  }
+}
+
 .filter-panel-row {
   display: flex;
   flex-wrap: wrap;
@@ -2939,7 +3015,7 @@ body[data-country-code] .subtitle {
 }
 
 .data-table-comparison .data-table-comparison-year-column {
-  width: 18%;
+  width: 15%;
 }
 
 .data-table-comparison {
@@ -2948,23 +3024,23 @@ body[data-country-code] .subtitle {
 }
 
 .data-table-comparison .data-table-comparison-value-column {
-  width: 29%;
+  width: 30%;
 }
 
 .data-table-comparison .data-table-comparison-percentage-column {
-  width: 24%;
+  width: 25%;
 }
 
 .data-table-comparison-two-column .data-table-comparison-year-column {
-  width: 9%;
+  width: 7.5%;
 }
 
 .data-table-comparison-two-column .data-table-comparison-value-column {
-  width: 14.5%;
+  width: 15%;
 }
 
 .data-table-comparison-two-column .data-table-comparison-percentage-column {
-  width: 12%;
+  width: 12.5%;
 }
 
 .data-table-comparison th {
@@ -3255,6 +3331,7 @@ body[data-page-kind="country-hub"] .country-hub-panel > .entity-count {
   overflow: hidden;
   border-collapse: separate;
   border-spacing: 0;
+  table-layout: auto;
 }
 
 .ranking-table td,
@@ -3320,8 +3397,9 @@ body[data-page-kind="country-hub"] .country-hub-panel > .entity-count {
 }
 
 .country-hub-table td:nth-child(3) {
-  width: 144px;
+  width: 1%;
   text-align: left;
+  white-space: nowrap;
 }
 
 .ranking-value {
@@ -3663,11 +3741,11 @@ body[data-page-kind="country-hub"] .country-hub-panel > .entity-count {
   }
 
   .country-overview-table .country-overview-value {
-    width: 24%;
+    width: 25%;
   }
 
   .country-overview-table .country-overview-rank {
-    width: 24%;
+    width: 23%;
   }
 
   .country-overview-table .country-overview-year {
@@ -3746,10 +3824,6 @@ body[data-page-kind="country-hub"] .country-hub-panel > .entity-count {
   .ranking-table td,
   .country-hub-table td {
     padding: 3px 5px;
-  }
-
-  .country-hub-table td:nth-child(3) {
-    width: 112px;
   }
 
   .ranking-table td:nth-child(1),

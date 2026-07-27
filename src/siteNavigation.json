@@ -10,7 +10,7 @@
   "menuSections": [
     { "kind": "links", "itemIds": ["home", "countries", "rankings", "data"] },
     { "kind": "theme", "labelKey": "appearance", "fallbackLabel": "Appearance" },
-    { "kind": "language", "labelKey": "languages", "fallbackLabel": "Language" },
+    { "kind": "language", "labelKey": "languages", "fallbackLabel": "Language", "localeOrder": ["en", "es", "ja"] },
     { "kind": "links", "itemIds": ["contact"] }
   ]
 }

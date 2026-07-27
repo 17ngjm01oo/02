@@ -1,4 +1,4 @@
-import { getPageLocale } from "./localization.js";
+import { getPageLocale, localeConfigs } from "./localization.js";
 
 const basicMagnitudeModes = {
   gdpMagnitude: "billions",
@@ -65,8 +65,8 @@ export function getSingleValueDisplayScale(value, config) {
   return getDisplayScale([{ value }], config);
 }
 
-const rawMagnitudeStepsByLocale = {
-  en: {
+const rawMagnitudeStepsByFormat = {
+  western: {
     compactFromMillions: [
       { threshold: 1000000000000000, valueScale: 0.000000000000001, compactUnit: "Q", fixedFractionDigits: 2 },
       { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: "T", fixedFractionDigits: 2 },
@@ -80,7 +80,7 @@ const rawMagnitudeStepsByLocale = {
       { threshold: 1000000, valueScale: 0.000001, compactUnit: "M" },
     ],
   },
-  ja: {
+  japanese: {
     compactFromMillions: [
       { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: "兆", fixedFractionDigits: 2 },
       { threshold: 100000000, valueScale: 0.00000001, compactUnit: "億" },
@@ -90,6 +90,20 @@ const rawMagnitudeStepsByLocale = {
       { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: "兆", fixedFractionDigits: 2 },
       { threshold: 100000000, valueScale: 0.00000001, compactUnit: "億" },
       { threshold: 10000, valueScale: 0.0001, compactUnit: "万" },
+    ],
+  },
+  spanish: {
+    compactFromMillions: [
+      { threshold: 1000000000000000, valueScale: 0.000000000000001, compactUnit: " mil bill.", fixedFractionDigits: 2 },
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " bill.", fixedFractionDigits: 2 },
+      { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " mil M" },
+      { threshold: Number.NEGATIVE_INFINITY, valueScale: 0.000001, compactUnit: " M" },
+    ],
+    compactFromUnits: [
+      { threshold: 1000000000000000, valueScale: 0.000000000000001, compactUnit: " mil bill.", fixedFractionDigits: 2 },
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " bill.", fixedFractionDigits: 2 },
+      { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " mil M" },
+      { threshold: 1000000, valueScale: 0.000001, compactUnit: " M" },
     ],
   },
 };
@@ -116,7 +130,11 @@ const magnitudeInputs = {
 function getMagnitudeInput(inputKey) {
   const locale = getNumberFormatLocale();
   const input = magnitudeInputs[inputKey];
-  const steps = rawMagnitudeStepsByLocale[locale]?.[input.stepsKey] ?? rawMagnitudeStepsByLocale.en[input.stepsKey];
+  const magnitudeFormat = localeConfigs[getPageLocale()]?.magnitudeFormat;
+  const steps = rawMagnitudeStepsByFormat[magnitudeFormat]?.[input.stepsKey];
+  if (!steps) {
+    throw new Error(`Unsupported magnitude format for locale: ${getPageLocale()}`);
+  }
 
   return {
     ...input,
@@ -185,11 +203,11 @@ function getMagnitudeFractionDigits(maxDisplayValue) {
 }
 
 function getNumberFormatLocale() {
-  return getPageLocale() === "ja" ? "ja" : "en";
+  return localeConfigs[getPageLocale()]?.numberLocale ?? "en-US";
 }
 
 function formatNumber(value, maximumFractionDigits = 1, locale = getNumberFormatLocale()) {
-  return new Intl.NumberFormat(locale === "ja" ? "ja-JP" : "en-US", {
+  return new Intl.NumberFormat(locale, {
     maximumFractionDigits,
   }).format(value);
 }

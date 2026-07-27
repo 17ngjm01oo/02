@@ -9,6 +9,11 @@
         "gdpGrowth",
         "unemploymentRate"
       ],
+      "countryProfile": {
+        "sourceFile": "economyRankings.js",
+        "export": "economyProfileRankings",
+        "staticBlock": "gvaByIndustry"
+      },
       "subcategories": [
         {
           "id": "gdp",
@@ -86,6 +91,11 @@
         "populationGrowth",
         "fertilityRate"
       ],
+      "countryProfile": {
+        "sourceFile": "populationRankings.js",
+        "export": "populationRankings",
+        "staticBlock": "ageComposition"
+      },
       "subcategories": [
         {
           "id": "demographics",
@@ -137,6 +147,11 @@
         "exports",
         "imports"
       ],
+      "countryProfile": {
+        "sourceFile": "tradeRankings.js",
+        "export": "tradeRankings",
+        "staticBlock": "tradeCommodityComposition"
+      },
       "subcategories": [
         {
           "id": "trade-balance",
@@ -197,6 +212,11 @@
         "governmentGrossDebt",
         "fiscalBalance"
       ],
+      "countryProfile": {
+        "sourceFile": "financeRankings.js",
+        "export": "financeProfileRankings",
+        "staticBlock": "taxRevenueComposition"
+      },
       "subcategories": [
         {
           "id": "government-debt",
@@ -258,6 +278,10 @@
       "overviewSeriesIds": [
         "hdi"
       ],
+      "countryProfile": {
+        "sourceFile": "societyRankings.js",
+        "export": "societyProfileRankings"
+      },
       "subcategories": [
         {
           "id": "living-standards",
@@ -292,6 +316,10 @@
         "co2EmissionsPerCapita",
         "area"
       ],
+      "countryProfile": {
+        "sourceFile": "environmentRankings.js",
+        "export": "environmentRankings"
+      },
       "subcategories": [
         {
           "id": "environment",

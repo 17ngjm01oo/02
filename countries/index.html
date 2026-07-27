@@ -8,6 +8,7 @@
     <link rel="canonical" href="https://geostarna.com/countries/" />
     <link rel="alternate" hreflang="en" href="https://geostarna.com/countries/" />
     <link rel="alternate" hreflang="ja" href="https://geostarna.com/ja/countries/" />
+    <link rel="alternate" hreflang="es" href="https://geostarna.com/es/countries/" />
     <link rel="alternate" hreflang="x-default" href="https://geostarna.com/countries/" />
     <meta property="og:title" content="Countries | Geostarna" />
     <meta property="og:description" content="Browse country and territory profiles with key data, indicators, maps, and global rankings." />
@@ -30,7 +31,7 @@
     <script type="module" src="../src/siteMenu.js"></script>
     <script type="module" src="../src/countryHubPage.js"></script>
   </head>
-  <body data-root-href="../" data-page-kind="country-hub" data-country-hub-preferred-codes="{&quot;en&quot;:[&quot;USA&quot;,&quot;GBR&quot;,&quot;CAN&quot;,&quot;AUS&quot;,&quot;IND&quot;,&quot;SGP&quot;,&quot;NZL&quot;,&quot;IRL&quot;],&quot;ja&quot;:[&quot;JPN&quot;]}">
+  <body data-root-href="../" data-page-kind="country-hub" data-country-hub-preferred-codes="{&quot;en&quot;:[&quot;USA&quot;,&quot;GBR&quot;,&quot;CAN&quot;,&quot;AUS&quot;,&quot;IND&quot;,&quot;PHL&quot;,&quot;ZAF&quot;,&quot;IRL&quot;,&quot;NZL&quot;,&quot;SGP&quot;,&quot;NGA&quot;],&quot;ja&quot;:[&quot;JPN&quot;],&quot;es&quot;:[&quot;MEX&quot;,&quot;ESP&quot;,&quot;COL&quot;,&quot;ARG&quot;,&quot;USA&quot;,&quot;PER&quot;,&quot;VEN&quot;,&quot;CHL&quot;,&quot;ECU&quot;,&quot;GTM&quot;,&quot;DOM&quot;,&quot;CUB&quot;,&quot;CRI&quot;,&quot;PAN&quot;,&quot;URY&quot;,&quot;HND&quot;,&quot;BOL&quot;,&quot;PRY&quot;,&quot;NIC&quot;,&quot;SLV&quot;]}">
     <main class="page-shell">
       <header class="site-brand">
         <a class="site-brand-link" href="../">
@@ -85,15 +86,17 @@
             />
             <div class="country-results" id="countrySearchResults" role="listbox" aria-label="Country search results" hidden></div>
           </div>
-          <p class="filter-label">Filter by:</p>
-          <div class="filter-panel-row">
-            <details class="category-panel" aria-labelledby="region-heading">
-              <summary class="category-heading" id="region-heading">Regions</summary>
-            </details>
-            <details class="category-panel" aria-labelledby="category-heading">
-              <summary class="category-heading" id="category-heading">Categories</summary>
-            </details>
-            <div class="country-hub-controls" id="countryHubControls"></div>
+          <div class="country-filter-bar">
+            <p class="filter-label">Filter by:</p>
+            <div class="filter-panel-row">
+              <details class="category-panel" aria-labelledby="region-heading">
+                <summary class="category-heading" id="region-heading">Regions</summary>
+              </details>
+              <details class="category-panel" aria-labelledby="category-heading">
+                <summary class="category-heading" id="category-heading">Categories</summary>
+              </details>
+              <div class="country-hub-controls" id="countryHubControls"></div>
+            </div>
           </div>
           <div class="category-list filter-option-list" id="regionList" hidden></div>
           <div class="category-list filter-option-list" id="categoryList" hidden></div>
@@ -125,20 +128,35 @@
                 <td><a class="country-hub-table-name" data-ui-text-action href="../countries/india/">India</a></td>
                 <td><span class="country-hub-table-region">Asia</span></td>
               </tr>
-              <tr class="country-table-row" data-country-code="SGP">
-                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-sg" src="../public/flags/sg.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
-                <td><a class="country-hub-table-name" data-ui-text-action href="../countries/singapore/">Singapore</a></td>
+              <tr class="country-table-row" data-country-code="PHL">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ph" src="../public/flags/ph.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../countries/philippines/">Philippines</a></td>
                 <td><span class="country-hub-table-region">Asia</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="ZAF">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-za" src="../public/flags/za.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../countries/south-africa/">South Africa</a></td>
+                <td><span class="country-hub-table-region">Africa</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="IRL">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ie" src="../public/flags/ie.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../countries/ireland/">Ireland</a></td>
+                <td><span class="country-hub-table-region">Europe</span></td>
               </tr>
               <tr class="country-table-row" data-country-code="NZL">
                 <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-nz" src="../public/flags/nz.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
                 <td><a class="country-hub-table-name" data-ui-text-action href="../countries/new-zealand/">New Zealand</a></td>
                 <td><span class="country-hub-table-region">Oceania</span></td>
               </tr>
-              <tr class="country-table-row" data-country-code="IRL">
-                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ie" src="../public/flags/ie.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
-                <td><a class="country-hub-table-name" data-ui-text-action href="../countries/ireland/">Ireland</a></td>
-                <td><span class="country-hub-table-region">Europe</span></td>
+              <tr class="country-table-row" data-country-code="SGP">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-sg" src="../public/flags/sg.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../countries/singapore/">Singapore</a></td>
+                <td><span class="country-hub-table-region">Asia</span></td>
+              </tr>
+              <tr class="country-table-row" data-country-code="NGA">
+                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ng" src="../public/flags/ng.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
+                <td><a class="country-hub-table-name" data-ui-text-action href="../countries/nigeria/">Nigeria</a></td>
+                <td><span class="country-hub-table-region">Africa</span></td>
               </tr>
               <tr class="country-table-row" data-country-code="AFG">
                 <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-af" src="../public/flags/af.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
@@ -855,11 +873,6 @@
                 <td><a class="country-hub-table-name" data-ui-text-action href="../countries/niger/">Niger</a></td>
                 <td><span class="country-hub-table-region">Africa</span></td>
               </tr>
-              <tr class="country-table-row" data-country-code="NGA">
-                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ng" src="../public/flags/ng.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
-                <td><a class="country-hub-table-name" data-ui-text-action href="../countries/nigeria/">Nigeria</a></td>
-                <td><span class="country-hub-table-region">Africa</span></td>
-              </tr>
               <tr class="country-table-row" data-country-code="NIU">
                 <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-nu" src="../public/flags/nu.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
                 <td><a class="country-hub-table-name" data-ui-text-action href="../countries/niue/">Niue</a></td>
@@ -924,11 +937,6 @@
                 <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-pe" src="../public/flags/pe.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
                 <td><a class="country-hub-table-name" data-ui-text-action href="../countries/peru/">Peru</a></td>
                 <td><span class="country-hub-table-region">South America</span></td>
-              </tr>
-              <tr class="country-table-row" data-country-code="PHL">
-                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-ph" src="../public/flags/ph.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
-                <td><a class="country-hub-table-name" data-ui-text-action href="../countries/philippines/">Philippines</a></td>
-                <td><span class="country-hub-table-region">Asia</span></td>
               </tr>
               <tr class="country-table-row is-territory" data-country-code="PCN">
                 <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-pn" src="../public/flags/pn.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
@@ -1068,11 +1076,6 @@
               <tr class="country-table-row" data-country-code="SOM">
                 <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-so" src="../public/flags/so.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
                 <td><a class="country-hub-table-name" data-ui-text-action href="../countries/somalia/">Somalia</a></td>
-                <td><span class="country-hub-table-region">Africa</span></td>
-              </tr>
-              <tr class="country-table-row" data-country-code="ZAF">
-                <td><span class="ranking-flag country-hub-table-flag"><img class="flag-image flag-image-za" src="../public/flags/za.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /></span></td>
-                <td><a class="country-hub-table-name" data-ui-text-action href="../countries/south-africa/">South Africa</a></td>
                 <td><span class="country-hub-table-region">Africa</span></td>
               </tr>
               <tr class="country-table-row" data-country-code="KOR">

@@ -23,6 +23,8 @@ import { comparisonTableTwoColumnQuery } from "./responsive.js";
 import {
   getLocalizedRootHref,
   getPageLocale,
+  localeConfigs,
+  formatCountryDisplayName,
   translate,
   translateCountryName,
   translateExactText,
@@ -592,14 +594,17 @@ function updateCompareSelectionUi(seriesId, errorMessage = "") {
     selected.append(createCompareSelectionText(errorMessage));
   } else if (state.comparisonCountry) {
     selected.append(createCompareSelectionText(translate("ui.comparingWith", "Comparing with {country}", {
-      country: translateCountryName(state.comparisonCountry),
+      country: formatCountryDisplayName(state.comparisonCountry, { form: "definite" }),
     })));
   } else {
     return;
   }
 
   if (state.comparisonCountry) {
-    selected.append(createCompareClearButton(seriesId, translateCountryName(state.comparisonCountry)));
+    selected.append(createCompareClearButton(
+      seriesId,
+      formatCountryDisplayName(state.comparisonCountry, { form: "definite" }),
+    ));
   }
 }
 
@@ -827,7 +832,7 @@ function renderComparisonColumnGroup(groupCount) {
 }
 
 function getComparisonYearLabel() {
-  return getPageLocale() === "ja" ? "年" : "Year";
+  return translate("ui.yearLabel", "Year");
 }
 
 function appendComparisonHeaderCells(row, comparisonCountry) {
@@ -1005,7 +1010,7 @@ function formatComparisonPercentage(percentage) {
     return "-";
   }
 
-  const formatter = new Intl.NumberFormat(getPageLocale() === "ja" ? "ja-JP" : "en-US", {
+  const formatter = new Intl.NumberFormat(localeConfigs[getPageLocale()]?.numberLocale ?? "en-US", {
     maximumFractionDigits: Math.abs(percentage) >= 10_000_000 ? 0 : 1,
   });
 
