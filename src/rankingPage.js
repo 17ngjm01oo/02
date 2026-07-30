@@ -16,7 +16,6 @@ import {
   localeConfigs,
   formatCountryDisplayName,
   translate,
-  translateContentLabel,
   translateCountryName,
   translateIndicatorLabel,
   translateScopeLabel,
@@ -40,8 +39,7 @@ function getRankingConfigFromPage() {
       logName: dataset.rankingDirectory ?? "ranking",
       indicatorCode: dataset.rankingIndicatorCode,
       staticDataPath: dataset.rankingStaticDataPath,
-      rankingTitleBase: dataset.rankingTitleBase ?? "",
-      linkAriaMetric: dataset.rankingLinkAriaMetric ?? "",
+      rankingIndicatorLabel: dataset.rankingIndicatorLabel ?? "",
       countryPageKind: dataset.rankingCountryPageKind ?? "",
       hasCountryIndicatorPage: dataset.rankingHasCountryIndicatorPage !== "false",
       showWorldShare: dataset.rankingShowWorldShare === "true",
@@ -361,26 +359,26 @@ function getDocumentTitleSuffix(documentTitle, pageTitle) {
 }
 
 function getRankingPageTitle(state, scope) {
-  const scopeLabel = translateScopeLabel(scope);
-  const yearSegment = state.selectedYear
-    ? translate("ui.rankingYearSegment", ", {year}", { year: formatRankingYear(state.selectedYear) })
-    : "";
-  const templateKey = scope?.type === "world" ? "world" : "scoped";
-  const template = localeConfigs[getPageLocale()]?.rankingTitleTemplates?.[templateKey]
-    ?? "{indicator} Rankings by Country: {scope}{year_segment}";
+  const localeConfig = localeConfigs[getPageLocale()] ?? {};
+  const scopeLabel = scope?.type === "region"
+    ? localeConfig.rankingTitleRegionForms?.[scope.label] ?? translateScopeLabel(scope)
+    : translateScopeLabel(scope);
+  const templateKey = ["world", "region", "category"].includes(scope?.type)
+    ? scope.type
+    : "category";
+  const template = localeConfig.rankingTitleTemplates?.[templateKey]
+    ?? (templateKey === "world"
+      ? "{indicator} by Country ({year})"
+      : "{indicator} by Country — {scope} ({year})");
   return formatRankingTitleTemplate(template, {
     indicator: state.rankingIndicatorLabel,
     scope: scopeLabel,
-    year_segment: yearSegment,
+    year: state.selectedYear ?? "",
   });
 }
 
 function formatRankingTitleTemplate(template, values) {
   return String(template).replaceAll(/\{(\w+)\}/g, (_, key) => values[key] ?? "");
-}
-
-function formatRankingYear(year) {
-  return translate("ui.rankingYear", "{year}", { year });
 }
 
 function filterRankingRows(rankingRows, scope, showTerritories) {
@@ -435,7 +433,10 @@ function renderRankingTable(config, state, rankingRows) {
     countryLink.dataset.uiTextAction = "";
     countryLink.href = `${localizedRootHref}countries/${country.slug}/`;
     const accessibleCountryName = formatCountryDisplayName(country, { form: "definite" });
-    countryLink.setAttribute("aria-label", `Open ${accessibleCountryName} country page`);
+    const countryAriaLabel = translate("ui.openCountryPageAria", "Open {country} country page", {
+      country: accessibleCountryName,
+    });
+    countryLink.setAttribute("aria-label", countryAriaLabel);
 
     const countryLinkText = document.createElement("span");
     countryLinkText.textContent = translateCountryName(country);
@@ -446,7 +447,10 @@ function renderRankingTable(config, state, rankingRows) {
     appendRankingValueCells(valueCell, barCell, {
       href: pagePathSegment ? `${localizedRootHref}countries/${country.slug}/${pagePathSegment}/` : "",
       text: formatCompactDisplayValue(country.value, displayScale),
-      ariaLabel: `Open ${accessibleCountryName} ${config.linkAriaMetric} page`,
+      ariaLabel: translate("ui.openCountryIndicatorPageAria", "Open {country} {indicator} page", {
+        country: accessibleCountryName,
+        indicator: translateIndicatorLabel(config.rankingIndicatorLabel),
+      }),
       value: country.value,
       valueBarScale,
     });
@@ -510,15 +514,7 @@ function showRankingSummaryLoading(state) {
 }
 
 function getRankingIndicatorLabel(config) {
-  let indicator = config.rankingTitleBase ?? "";
-  for (const suffix of [" Rankings", " Ranking"]) {
-    if (indicator.endsWith(suffix)) {
-      indicator = indicator.slice(0, -suffix.length);
-      break;
-    }
-  }
-
-  return translateIndicatorLabel(indicator);
+  return translateIndicatorLabel(config.rankingIndicatorLabel ?? "");
 }
 
 function getValueBarScale(rankingRows) {

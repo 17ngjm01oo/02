@@ -52,9 +52,11 @@ export const localeConfigs = {
       }
     },
     "countryNameFormPrefixes": {},
+    "rankingTitleRegionForms": {},
     "rankingTitleTemplates": {
-      "world": "{indicator} Rankings by Country: {scope}{year_segment}",
-      "scoped": "{indicator} Rankings by Country: {scope}{year_segment}"
+      "world": "{indicator} by Country ({year})",
+      "region": "{indicator} by Country in {scope} ({year})",
+      "category": "{indicator} by Country — {scope} ({year})"
     }
   },
   "ja": {
@@ -65,9 +67,11 @@ export const localeConfigs = {
     "magnitudeFormat": "japanese",
     "countryNameForms": {},
     "countryNameFormPrefixes": {},
+    "rankingTitleRegionForms": {},
     "rankingTitleTemplates": {
-      "world": "{scope}の{indicator}ランキング{year_segment}",
-      "scoped": "{scope}の{indicator}ランキング{year_segment}"
+      "world": "{scope}の{indicator}ランキング：{year}年",
+      "region": "{scope}の{indicator}ランキング：{year}年",
+      "category": "{scope}の{indicator}ランキング：{year}年"
     }
   },
   "es": {
@@ -144,9 +148,178 @@ export const localeConfigs = {
     "countryNameFormPrefixes": {
       "after_de": "de "
     },
+    "rankingTitleRegionForms": {},
     "rankingTitleTemplates": {
-      "world": "{indicator}: ranking mundial por países{year_segment}",
-      "scoped": "{indicator}: ranking por países — {scope}{year_segment}"
+      "world": "{indicator} por país ({year})",
+      "region": "{indicator} por país en {scope} ({year})",
+      "category": "{indicator} por país — {scope} ({year})"
+    }
+  },
+  "fr": {
+    "pathPrefix": "fr/",
+    "switchLabel": "FR",
+    "displayName": "Français",
+    "numberLocale": "fr-FR",
+    "magnitudeFormat": "french",
+    "countryNameForms": {},
+    "countryNameFormPrefixes": {},
+    "rankingTitleRegionForms": {},
+    "rankingTitleTemplates": {
+      "world": "{indicator} par pays ({year})",
+      "region": "{indicator} par pays en {scope} ({year})",
+      "category": "{indicator} par pays — {scope} ({year})"
+    }
+  },
+  "pt": {
+    "pathPrefix": "pt/",
+    "switchLabel": "PT",
+    "displayName": "Português",
+    "numberLocale": "pt-BR",
+    "magnitudeFormat": "brazilian_portuguese",
+    "countryNameForms": {},
+    "countryNameFormPrefixes": {},
+    "rankingTitleRegionForms": {
+      "Asia": "na Ásia",
+      "Europe": "na Europa",
+      "Oceania": "na Oceania",
+      "Africa": "na África",
+      "North America": "na América do Norte",
+      "South America": "na América do Sul"
+    },
+    "rankingTitleTemplates": {
+      "world": "{indicator} por país ({year})",
+      "region": "{indicator} por país {scope} ({year})",
+      "category": "{indicator} por país — {scope} ({year})"
+    }
+  },
+  "de": {
+    "pathPrefix": "de/",
+    "switchLabel": "DE",
+    "displayName": "Deutsch",
+    "numberLocale": "de-DE",
+    "magnitudeFormat": "german",
+    "countryNameForms": {},
+    "countryNameFormPrefixes": {},
+    "rankingTitleRegionForms": {},
+    "rankingTitleTemplates": {
+      "world": "{indicator} nach Ländern ({year})",
+      "region": "{indicator} nach Ländern in {scope} ({year})",
+      "category": "{indicator} nach Ländern — {scope} ({year})"
+    }
+  },
+  "it": {
+    "pathPrefix": "it/",
+    "switchLabel": "IT",
+    "displayName": "Italiano",
+    "numberLocale": "it-IT",
+    "magnitudeFormat": "italian",
+    "countryNameForms": {
+      "USA": {
+        "after_de": "negli Stati Uniti"
+      },
+      "GBR": {
+        "after_de": "nel Regno Unito"
+      },
+      "NLD": {
+        "after_de": "nei Paesi Bassi"
+      },
+      "PHL": {
+        "after_de": "nelle Filippine"
+      },
+      "MDV": {
+        "after_de": "alle Maldive"
+      },
+      "BHS": {
+        "after_de": "alle Bahamas"
+      },
+      "ARE": {
+        "after_de": "negli Emirati Arabi Uniti"
+      },
+      "DOM": {
+        "after_de": "nella Repubblica Dominicana"
+      },
+      "CAF": {
+        "after_de": "nella Repubblica Centrafricana"
+      },
+      "COD": {
+        "after_de": "nella Repubblica Democratica del Congo"
+      },
+      "COG": {
+        "after_de": "nella Repubblica del Congo"
+      },
+      "SLB": {
+        "after_de": "nelle Isole Salomone"
+      },
+      "MHL": {
+        "after_de": "nelle Isole Marshall"
+      },
+      "FSM": {
+        "after_de": "negli Stati Federati di Micronesia"
+      },
+      "COK": {
+        "after_de": "nelle Isole Cook"
+      }
+    },
+    "countryNameFormPrefixes": {
+      "after_de": "in "
+    },
+    "rankingTitleRegionForms": {},
+    "rankingTitleTemplates": {
+      "world": "{indicator} per paese ({year})",
+      "region": "{indicator} per paese in {scope} ({year})",
+      "category": "{indicator} per paese — {scope} ({year})"
+    }
+  },
+  "ko": {
+    "pathPrefix": "ko/",
+    "switchLabel": "KO",
+    "displayName": "한국어",
+    "numberLocale": "ko-KR",
+    "magnitudeFormat": "korean",
+    "countryNameForms": {},
+    "countryNameFormPrefixes": {},
+    "rankingTitleRegionForms": {},
+    "rankingTitleTemplates": {
+      "world": "국가별 {indicator} 순위 ({year}년)",
+      "region": "{scope} 국가별 {indicator} 순위 ({year}년)",
+      "category": "{scope} 국가별 {indicator} 순위 ({year}년)"
+    }
+  },
+  "tr": {
+    "pathPrefix": "tr/",
+    "switchLabel": "TR",
+    "displayName": "Türkçe",
+    "numberLocale": "tr-TR",
+    "magnitudeFormat": "turkish",
+    "countryNameForms": {},
+    "countryNameFormPrefixes": {},
+    "rankingTitleRegionForms": {
+      "Asia": "Asya’da",
+      "Europe": "Avrupa’da",
+      "Oceania": "Okyanusya’da",
+      "Africa": "Afrika’da",
+      "North America": "Kuzey Amerika’da",
+      "South America": "Güney Amerika’da"
+    },
+    "rankingTitleTemplates": {
+      "world": "Ülkelere Göre {indicator} ({year})",
+      "region": "{scope} Ülkelere Göre {indicator} ({year})",
+      "category": "Ülkelere Göre {indicator} — {scope} ({year})"
+    }
+  },
+  "id": {
+    "pathPrefix": "id/",
+    "switchLabel": "ID",
+    "displayName": "Bahasa Indonesia",
+    "numberLocale": "id-ID",
+    "magnitudeFormat": "indonesian",
+    "countryNameForms": {},
+    "countryNameFormPrefixes": {},
+    "rankingTitleRegionForms": {},
+    "rankingTitleTemplates": {
+      "world": "{indicator} berdasarkan negara ({year})",
+      "region": "{indicator} berdasarkan negara di {scope} ({year})",
+      "category": "{indicator} berdasarkan negara — {scope} ({year})"
     }
   }
 };

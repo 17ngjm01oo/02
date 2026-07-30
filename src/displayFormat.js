@@ -106,6 +106,94 @@ const rawMagnitudeStepsByFormat = {
       { threshold: 1000000, valueScale: 0.000001, compactUnit: " M" },
     ],
   },
+  french: {
+    compactFromMillions: [
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " Bn", fixedFractionDigits: 2 },
+      { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " Md" },
+      { threshold: Number.NEGATIVE_INFINITY, valueScale: 0.000001, compactUnit: " M" },
+    ],
+    compactFromUnits: [
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " Bn", fixedFractionDigits: 2 },
+      { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " Md" },
+      { threshold: 1000000, valueScale: 0.000001, compactUnit: " M" },
+    ],
+  },
+  brazilian_portuguese: {
+    compactFromMillions: [
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " tri", fixedFractionDigits: 2 },
+      { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " bi" },
+      { threshold: Number.NEGATIVE_INFINITY, valueScale: 0.000001, compactUnit: " mi" },
+    ],
+    compactFromUnits: [
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " tri", fixedFractionDigits: 2 },
+      { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " bi" },
+      { threshold: 1000000, valueScale: 0.000001, compactUnit: " mi" },
+    ],
+  },
+  german: {
+    compactFromMillions: [
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " Bio.", fixedFractionDigits: 2 },
+      { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " Mrd." },
+      { threshold: Number.NEGATIVE_INFINITY, valueScale: 0.000001, compactUnit: " Mio." },
+    ],
+    compactFromUnits: [
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " Bio.", fixedFractionDigits: 2 },
+      { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " Mrd." },
+      { threshold: 1000000, valueScale: 0.000001, compactUnit: " Mio." },
+    ],
+  },
+  italian: {
+    compactFromMillions: [
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " mila mld", fixedFractionDigits: 2 },
+      { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " mld" },
+      { threshold: Number.NEGATIVE_INFINITY, valueScale: 0.000001, compactUnit: " mln" },
+    ],
+    compactFromUnits: [
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " mila mld", fixedFractionDigits: 2 },
+      { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " mld" },
+      { threshold: 1000000, valueScale: 0.000001, compactUnit: " mln" },
+    ],
+  },
+  korean: {
+    compactFromMillions: [
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: "조", fixedFractionDigits: 2 },
+      { threshold: 100000000, valueScale: 0.00000001, compactUnit: "억" },
+      { threshold: Number.NEGATIVE_INFINITY, valueScale: 0.0001, compactUnit: "만" },
+    ],
+    compactFromUnits: [
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: "조", fixedFractionDigits: 2 },
+      { threshold: 100000000, valueScale: 0.00000001, compactUnit: "억" },
+      { threshold: 10000, valueScale: 0.0001, compactUnit: "만" },
+    ],
+  },
+  turkish: {
+    compactFromMillions: [
+      { threshold: 1000000000000000, valueScale: 0.000000000000001, compactUnit: " katrilyon", fixedFractionDigits: 2 },
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " trilyon", fixedFractionDigits: 2 },
+      { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " milyar" },
+      { threshold: Number.NEGATIVE_INFINITY, valueScale: 0.000001, compactUnit: " milyon" },
+    ],
+    compactFromUnits: [
+      { threshold: 1000000000000000, valueScale: 0.000000000000001, compactUnit: " katrilyon", fixedFractionDigits: 2 },
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " trilyon", fixedFractionDigits: 2 },
+      { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " milyar" },
+      { threshold: 1000000, valueScale: 0.000001, compactUnit: " milyon" },
+    ],
+  },
+  indonesian: {
+    compactFromMillions: [
+      { threshold: 1000000000000000, valueScale: 0.000000000000001, compactUnit: " kuadriliun", fixedFractionDigits: 2 },
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " triliun", fixedFractionDigits: 2 },
+      { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " miliar" },
+      { threshold: Number.NEGATIVE_INFINITY, valueScale: 0.000001, compactUnit: " juta" },
+    ],
+    compactFromUnits: [
+      { threshold: 1000000000000000, valueScale: 0.000000000000001, compactUnit: " kuadriliun", fixedFractionDigits: 2 },
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " triliun", fixedFractionDigits: 2 },
+      { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " miliar" },
+      { threshold: 1000000, valueScale: 0.000001, compactUnit: " juta" },
+    ],
+  },
 };
 
 const magnitudeInputs = {

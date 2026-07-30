@@ -10,6 +10,7 @@ export function createUiDropdown({
   options,
   initialValue,
   onChange,
+  hideSelectedOption = false,
   outsideClickIgnoreSelector = "",
 }) {
   const control = document.createElement("details");
@@ -18,12 +19,16 @@ export function createUiDropdown({
   const toggle = document.createElement("summary");
   toggle.className = `ui-dropdown-toggle${toggleClassName ? ` ${toggleClassName}` : ""}`;
   toggle.textContent = toggleText(initialValue);
-  toggle.setAttribute("aria-label", toggleAriaLabel);
+  if (toggleAriaLabel) {
+    toggle.setAttribute("aria-label", toggleAriaLabel);
+  }
 
   const menu = document.createElement("div");
   menu.className = `ui-dropdown-menu${menuClassName ? ` ${menuClassName}` : ""}`;
-  menu.setAttribute("role", "group");
-  menu.setAttribute("aria-label", menuAriaLabel);
+  if (menuAriaLabel) {
+    menu.setAttribute("role", "group");
+    menu.setAttribute("aria-label", menuAriaLabel);
+  }
 
   options.forEach((option) => {
     const button = document.createElement("button");
@@ -32,7 +37,6 @@ export function createUiDropdown({
     if (optionDatasetName) {
       button.dataset[optionDatasetName] = option.value;
     }
-    button.setAttribute("aria-pressed", String(option.value === initialValue));
     button.textContent = option.label;
 
     menu.append(button);
@@ -42,7 +46,9 @@ export function createUiDropdown({
   initializeUiDropdown(control, {
     optionDatasetName,
     toggleText,
+    initialValue,
     onChange,
+    hideSelectedOption,
     outsideClickIgnoreSelector,
   });
 
@@ -54,6 +60,8 @@ export function hydrateUiDropdown(control, {
   toggleText,
   onChange,
   options,
+  initialValue,
+  hideSelectedOption = false,
   outsideClickIgnoreSelector = "",
 }) {
   const selector = optionDatasetName ? `[data-${datasetNameToAttribute(optionDatasetName)}]` : ".ui-dropdown-option";
@@ -67,7 +75,9 @@ export function hydrateUiDropdown(control, {
   initializeUiDropdown(control, {
     optionDatasetName,
     toggleText,
+    initialValue,
     onChange,
+    hideSelectedOption,
     outsideClickIgnoreSelector,
   });
 
@@ -77,7 +87,9 @@ export function hydrateUiDropdown(control, {
 function initializeUiDropdown(control, {
   optionDatasetName,
   toggleText,
+  initialValue,
   onChange,
+  hideSelectedOption,
   outsideClickIgnoreSelector,
 }) {
   const toggle = control.querySelector("summary");
@@ -87,17 +99,32 @@ function initializeUiDropdown(control, {
   }
 
   const selector = optionDatasetName ? `[data-${datasetNameToAttribute(optionDatasetName)}]` : ".ui-dropdown-option";
-  menu.querySelectorAll(selector).forEach((button) => {
+  const optionButtons = [...menu.querySelectorAll(selector)];
+  updateOptions(initialValue);
+
+  optionButtons.forEach((button) => {
     button.addEventListener("click", () => {
-      menu.querySelectorAll(selector).forEach((optionButton) => {
-        optionButton.setAttribute("aria-pressed", String(optionButton === button));
-      });
       const value = optionDatasetName ? button.dataset[optionDatasetName] : button.value;
       toggle.textContent = toggleText(value);
       control.open = false;
+      toggle.focus();
+      updateOptions(value);
       onChange?.(value);
     });
   });
+
+  function updateOptions(selectedValue) {
+    optionButtons.forEach((optionButton) => {
+      const optionValue = optionDatasetName ? optionButton.dataset[optionDatasetName] : optionButton.value;
+      if (hideSelectedOption) {
+        optionButton.hidden = optionValue === String(selectedValue);
+        optionButton.removeAttribute("aria-pressed");
+      } else {
+        optionButton.hidden = false;
+        optionButton.setAttribute("aria-pressed", String(optionValue === String(selectedValue)));
+      }
+    });
+  }
 
   document.addEventListener("click", (event) => {
     const ignoredTarget = outsideClickIgnoreSelector && event.target.closest(outsideClickIgnoreSelector);

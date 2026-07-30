@@ -165,14 +165,14 @@ function createThemeMenu(section) {
   options.setAttribute("aria-label", label);
   const preference = getThemePreference();
 
-  [["light", "themeLight", "Light"], ["dark", "themeDark", "Dark"], ["system", "themeSystem", "System"]]
-    .forEach(([value, labelKey, fallback]) => {
+  [["light", "ui.themeLight", "Light"], ["dark", "ui.themeDark", "Dark"], ["system", "ui.themeSystem", "System"]]
+    .forEach(([value, translationKey, fallback]) => {
       const option = document.createElement("button");
       option.type = "button";
       option.className = "site-menu-link site-menu-option";
       option.dataset.siteMenuThemeOption = "";
       option.dataset.uiTextAction = "";
-      option.textContent = translate(`ui.${labelKey}`, fallback);
+      option.textContent = translate(translationKey, fallback);
       option.setAttribute("aria-pressed", String(value === preference));
       option.addEventListener("click", () => {
         setThemePreference(value);

@@ -36,11 +36,8 @@
     {
       "group": "economy",
       "directory": "gdp",
-      "title": "GDP Rankings",
       "indicatorCode": "NGDPD",
       "staticDataPath": "data/weo/rankings/current-prices/manifest.json",
-      "rankingTitleBase": "GDP Rankings",
-      "linkAriaMetric": "GDP",
       "displayScaleConfig": {
         "valueScaleMode": "gdpMagnitude",
         "basicMagnitudeInput": "billions"
@@ -57,11 +54,8 @@
     {
       "group": "economy",
       "directory": "gdp-per-capita",
-      "title": "GDP per Capita Rankings",
       "indicatorCode": "NGDPDPC",
       "staticDataPath": "data/weo/rankings/current-prices/manifest.json",
-      "rankingTitleBase": "GDP per Capita Rankings",
-      "linkAriaMetric": "GDP per Capita",
       "displayScaleConfig": {
         "valueScaleMode": "currencyUnitsMagnitude",
         "maximumFractionDigits": 0,
@@ -79,11 +73,8 @@
     {
       "group": "economy",
       "directory": "ppp-gdp",
-      "title": "PPP GDP Rankings",
       "indicatorCode": "PPPGDP",
       "staticDataPath": "data/weo/rankings/current-prices/manifest.json",
-      "rankingTitleBase": "PPP GDP Rankings",
-      "linkAriaMetric": "PPP",
       "displayScaleConfig": {
         "valueScaleMode": "internationalDollarMagnitude",
         "basicMagnitudeInput": "billions"
@@ -100,11 +91,8 @@
     {
       "group": "economy",
       "directory": "ppp-gdp-per-capita",
-      "title": "PPP GDP per Capita Rankings",
       "indicatorCode": "PPPPC",
       "staticDataPath": "data/weo/rankings/current-prices/manifest.json",
-      "rankingTitleBase": "PPP GDP per Capita Rankings",
-      "linkAriaMetric": "PPP per Capita",
       "displayScaleConfig": {
         "valueScaleMode": "currencyUnitsMagnitude",
         "maximumFractionDigits": 0,
@@ -122,11 +110,8 @@
     {
       "group": "economy",
       "directory": "gni",
-      "title": "GNI Rankings",
       "indicatorCode": "GNI_USD",
       "staticDataPath": "data/un-national-accounts/rankings/gni/manifest.json",
-      "rankingTitleBase": "GNI Rankings",
-      "linkAriaMetric": "GNI",
       "displayScaleConfig": {
         "valueScaleMode": "usdMagnitude",
         "basicMagnitudeInput": "units"
@@ -143,11 +128,8 @@
     {
       "group": "economy",
       "directory": "gni-per-capita",
-      "title": "GNI per Capita Rankings",
       "indicatorCode": "GNI_PER_CAPITA_USD",
       "staticDataPath": "data/un-national-accounts/rankings/gni/manifest.json",
-      "rankingTitleBase": "GNI per Capita Rankings",
-      "linkAriaMetric": "GNI per Capita",
       "displayScaleConfig": {
         "valueScaleMode": "currencyUnitsMagnitude",
         "maximumFractionDigits": 0,
@@ -165,11 +147,8 @@
     {
       "group": "economy",
       "directory": "gdp-growth",
-      "title": "GDP Growth Rankings",
       "indicatorCode": "NGDP_RPCH",
       "staticDataPath": "data/weo/rankings/current-prices/manifest.json",
-      "rankingTitleBase": "GDP Growth Rankings",
-      "linkAriaMetric": "GDP Growth",
       "displayScaleConfig": {
         "suffix": "%",
         "suffixSpacing": "",
@@ -187,11 +166,8 @@
     {
       "group": "economy",
       "directory": "inflation-rate",
-      "title": "Inflation Rate Rankings",
       "indicatorCode": "PCPIPCH",
       "staticDataPath": "data/weo/rankings/current-prices/manifest.json",
-      "rankingTitleBase": "Inflation Rate Rankings",
-      "linkAriaMetric": "Inflation Rate",
       "displayScaleConfig": {
         "suffix": "%",
         "suffixSpacing": "",
@@ -209,11 +185,8 @@
     {
       "group": "economy",
       "directory": "unemployment-rate",
-      "title": "Unemployment Rate Rankings",
       "indicatorCode": "LUR",
       "staticDataPath": "data/weo/rankings/current-prices/manifest.json",
-      "rankingTitleBase": "Unemployment Rate Rankings",
-      "linkAriaMetric": "Unemployment Rate",
       "displayScaleConfig": {
         "suffix": "%",
         "suffixSpacing": "",
@@ -231,11 +204,8 @@
     {
       "group": "population",
       "directory": "population",
-      "title": "Population Rankings",
       "indicatorCode": "POPULATION",
       "staticDataPath": "data/un-wpp/rankings/population/manifest.json",
-      "rankingTitleBase": "Population Rankings",
-      "linkAriaMetric": "Population",
       "displayScaleConfig": {
         "valueScaleMode": "populationUnitsMagnitude",
         "basicMagnitudeInput": ""
@@ -252,11 +222,8 @@
     {
       "group": "population",
       "directory": "population-growth",
-      "title": "Population Growth Rankings",
       "indicatorCode": "POPULATION_GROWTH",
       "staticDataPath": "data/un-wpp/rankings/population/manifest.json",
-      "rankingTitleBase": "Population Growth Rankings",
-      "linkAriaMetric": "Population Growth",
       "displayScaleConfig": {
         "suffix": "%",
         "suffixSpacing": "",
@@ -274,11 +241,8 @@
     {
       "group": "population",
       "directory": "population-density",
-      "title": "Population Density Rankings",
       "indicatorCode": "POPULATION_DENSITY",
       "staticDataPath": "data/un-wpp/rankings/population/manifest.json",
-      "rankingTitleBase": "Population Density Rankings",
-      "linkAriaMetric": "Population Density",
       "displayScaleConfig": {
         "maximumFractionDigits": 1
       },
@@ -294,11 +258,8 @@
     {
       "group": "population",
       "directory": "life-expectancy",
-      "title": "Life Expectancy Rankings",
       "indicatorCode": "LIFE_EXPECTANCY",
       "staticDataPath": "data/un-wpp/rankings/population/manifest.json",
-      "rankingTitleBase": "Life Expectancy Rankings",
-      "linkAriaMetric": "Life Expectancy",
       "displayScaleConfig": {
         "maximumFractionDigits": 1
       },
@@ -314,11 +275,8 @@
     {
       "group": "population",
       "directory": "fertility-rate",
-      "title": "Fertility Rate Rankings",
       "indicatorCode": "FERTILITY_RATE",
       "staticDataPath": "data/un-wpp/rankings/population/manifest.json",
-      "rankingTitleBase": "Fertility Rate Rankings",
-      "linkAriaMetric": "Fertility Rate",
       "displayScaleConfig": {
         "maximumFractionDigits": 2
       },
@@ -334,11 +292,8 @@
     {
       "group": "population",
       "directory": "immigrants",
-      "title": "Immigrants Rankings",
       "indicatorCode": "IMMIGRANTS",
       "staticDataPath": "data/un-migrant-stock/rankings/immigrants/manifest.json",
-      "rankingTitleBase": "Immigrants Rankings",
-      "linkAriaMetric": "Immigrants",
       "displayScaleConfig": {
         "valueScaleMode": "populationUnitsMagnitude",
         "basicMagnitudeInput": ""
@@ -355,11 +310,8 @@
     {
       "group": "population",
       "directory": "immigrants-percent-population",
-      "title": "Immigrants (% of Population) Rankings",
       "indicatorCode": "IMMIGRANTS_PERCENT_POPULATION",
       "staticDataPath": "data/un-migrant-stock/rankings/immigrants/manifest.json",
-      "rankingTitleBase": "Immigrants (% of Population) Rankings",
-      "linkAriaMetric": "Immigrants (% of Population)",
       "displayScaleConfig": {
         "suffix": "%",
         "suffixSpacing": "",
@@ -377,11 +329,8 @@
     {
       "group": "trade",
       "directory": "trade-balance",
-      "title": "Trade Balance Rankings",
       "indicatorCode": "TRADE_BALANCE",
       "staticDataPath": "data/unctad/rankings/trade/manifest.json",
-      "rankingTitleBase": "Trade Balance Rankings",
-      "linkAriaMetric": "Trade Balance",
       "displayScaleConfig": {
         "valueScaleMode": "usdMillionsMagnitude",
         "basicMagnitudeInput": "millions"
@@ -398,11 +347,8 @@
     {
       "group": "trade",
       "directory": "exports",
-      "title": "Exports Rankings",
       "indicatorCode": "EXPORTS",
       "staticDataPath": "data/unctad/rankings/trade/manifest.json",
-      "rankingTitleBase": "Exports Rankings",
-      "linkAriaMetric": "Exports",
       "displayScaleConfig": {
         "valueScaleMode": "usdMillionsMagnitude",
         "basicMagnitudeInput": "millions"
@@ -419,11 +365,8 @@
     {
       "group": "trade",
       "directory": "imports",
-      "title": "Imports Rankings",
       "indicatorCode": "IMPORTS",
       "staticDataPath": "data/unctad/rankings/trade/manifest.json",
-      "rankingTitleBase": "Imports Rankings",
-      "linkAriaMetric": "Imports",
       "displayScaleConfig": {
         "valueScaleMode": "usdMillionsMagnitude",
         "basicMagnitudeInput": "millions"
@@ -440,11 +383,8 @@
     {
       "group": "trade",
       "directory": "services-trade-balance",
-      "title": "Services Trade Balance Rankings",
       "indicatorCode": "SERVICES_TRADE_BALANCE",
       "staticDataPath": "data/unctad/rankings/services-trade/manifest.json",
-      "rankingTitleBase": "Services Trade Balance Rankings",
-      "linkAriaMetric": "Services Trade Balance",
       "displayScaleConfig": {
         "valueScaleMode": "usdMillionsMagnitude",
         "basicMagnitudeInput": "millions"
@@ -461,11 +401,8 @@
     {
       "group": "trade",
       "directory": "services-exports",
-      "title": "Services Exports Rankings",
       "indicatorCode": "SERVICES_EXPORTS",
       "staticDataPath": "data/unctad/rankings/services-trade/manifest.json",
-      "rankingTitleBase": "Services Exports Rankings",
-      "linkAriaMetric": "Services Exports",
       "displayScaleConfig": {
         "valueScaleMode": "usdMillionsMagnitude",
         "basicMagnitudeInput": "millions"
@@ -482,11 +419,8 @@
     {
       "group": "trade",
       "directory": "services-imports",
-      "title": "Services Imports Rankings",
       "indicatorCode": "SERVICES_IMPORTS",
       "staticDataPath": "data/unctad/rankings/services-trade/manifest.json",
-      "rankingTitleBase": "Services Imports Rankings",
-      "linkAriaMetric": "Services Imports",
       "displayScaleConfig": {
         "valueScaleMode": "usdMillionsMagnitude",
         "basicMagnitudeInput": "millions"
@@ -503,11 +437,8 @@
     {
       "group": "trade",
       "directory": "current-account-balance",
-      "title": "Current Account Balance Rankings",
       "indicatorCode": "BCA",
       "staticDataPath": "data/weo/rankings/current-prices/manifest.json",
-      "rankingTitleBase": "Current Account Balance Rankings",
-      "linkAriaMetric": "Current Account Balance",
       "displayScaleConfig": {
         "valueScaleMode": "gdpMagnitude",
         "basicMagnitudeInput": "billions"
@@ -524,11 +455,8 @@
     {
       "group": "trade",
       "directory": "current-account-balance-percent-gdp",
-      "title": "Current Account Balance (% of GDP) Rankings",
       "indicatorCode": "BCA_NGDPD",
       "staticDataPath": "data/weo/rankings/current-prices/manifest.json",
-      "rankingTitleBase": "Current Account Balance (% of GDP) Rankings",
-      "linkAriaMetric": "Current Account Balance (% of GDP)",
       "displayScaleConfig": {
         "suffix": "%",
         "suffixSpacing": "",
@@ -546,11 +474,8 @@
     {
       "group": "government-finance",
       "directory": "government-gross-debt",
-      "title": "Government Gross Debt (% of GDP) Rankings",
       "indicatorCode": "GGXWDG_NGDP",
       "staticDataPath": "data/weo/rankings/current-prices/manifest.json",
-      "rankingTitleBase": "Government Gross Debt (% of GDP) Rankings",
-      "linkAriaMetric": "Government Gross Debt (% of GDP)",
       "displayScaleConfig": {
         "suffix": "%",
         "suffixSpacing": "",
@@ -568,11 +493,8 @@
     {
       "group": "government-finance",
       "directory": "government-net-debt",
-      "title": "Government Net Debt (% of GDP) Rankings",
       "indicatorCode": "GGXWDN_NGDP",
       "staticDataPath": "data/weo/rankings/current-prices/manifest.json",
-      "rankingTitleBase": "Government Net Debt (% of GDP) Rankings",
-      "linkAriaMetric": "Government Net Debt (% of GDP)",
       "displayScaleConfig": {
         "suffix": "%",
         "suffixSpacing": "",
@@ -590,11 +512,8 @@
     {
       "group": "government-finance",
       "directory": "fiscal-balance",
-      "title": "Fiscal Balance (% of GDP) Rankings",
       "indicatorCode": "GGXCNL_NGDP",
       "staticDataPath": "data/weo/rankings/current-prices/manifest.json",
-      "rankingTitleBase": "Fiscal Balance (% of GDP) Rankings",
-      "linkAriaMetric": "Fiscal Balance (% of GDP)",
       "displayScaleConfig": {
         "suffix": "%",
         "suffixSpacing": "",
@@ -612,11 +531,8 @@
     {
       "group": "government-finance",
       "directory": "primary-fiscal-balance",
-      "title": "Primary Fiscal Balance (% of GDP) Rankings",
       "indicatorCode": "GGXONLB_NGDP",
       "staticDataPath": "data/weo/rankings/current-prices/manifest.json",
-      "rankingTitleBase": "Primary Fiscal Balance (% of GDP) Rankings",
-      "linkAriaMetric": "Primary Fiscal Balance (% of GDP)",
       "displayScaleConfig": {
         "suffix": "%",
         "suffixSpacing": "",
@@ -634,11 +550,8 @@
     {
       "group": "government-finance",
       "directory": "government-revenue",
-      "title": "Government Revenue (% of GDP) Rankings",
       "indicatorCode": "GGR_NGDP",
       "staticDataPath": "data/weo/rankings/current-prices/manifest.json",
-      "rankingTitleBase": "Government Revenue (% of GDP) Rankings",
-      "linkAriaMetric": "Government Revenue (% of GDP)",
       "displayScaleConfig": {
         "suffix": "%",
         "suffixSpacing": "",
@@ -656,11 +569,8 @@
     {
       "group": "government-finance",
       "directory": "government-spending",
-      "title": "Government Spending (% of GDP) Rankings",
       "indicatorCode": "GGX_NGDP",
       "staticDataPath": "data/weo/rankings/current-prices/manifest.json",
-      "rankingTitleBase": "Government Spending (% of GDP) Rankings",
-      "linkAriaMetric": "Government Spending (% of GDP)",
       "displayScaleConfig": {
         "suffix": "%",
         "suffixSpacing": "",
@@ -678,11 +588,8 @@
     {
       "group": "government-finance",
       "directory": "total-reserves",
-      "title": "Total Reserves Rankings",
       "indicatorCode": "FI.RES.TOTL.CD",
       "staticDataPath": "data/world-bank/rankings/total-reserves/manifest.json",
-      "rankingTitleBase": "Total Reserves Rankings",
-      "linkAriaMetric": "Total Reserves",
       "displayScaleConfig": {
         "valueScaleMode": "usdMagnitude",
         "basicMagnitudeInput": "units"
@@ -699,11 +606,8 @@
     {
       "group": "society",
       "directory": "hdi",
-      "title": "HDI Rankings",
       "indicatorCode": "HDI",
       "staticDataPath": "data/undp/rankings/hdi/manifest.json",
-      "rankingTitleBase": "HDI Rankings",
-      "linkAriaMetric": "HDI",
       "displayScaleConfig": {
         "maximumFractionDigits": 3
       },
@@ -719,11 +623,8 @@
     {
       "group": "society",
       "directory": "military-spending",
-      "title": "Military Spending Rankings",
       "indicatorCode": "MILITARY_SPENDING_USD",
       "staticDataPath": "data/sipri/rankings/military-spending/manifest.json",
-      "rankingTitleBase": "Military Spending Rankings",
-      "linkAriaMetric": "Military Spending",
       "displayScaleConfig": {
         "valueScaleMode": "usdMagnitude",
         "basicMagnitudeInput": "units"
@@ -740,11 +641,8 @@
     {
       "group": "society",
       "directory": "military-spending-percent-gdp",
-      "title": "Military Spending (% of GDP) Rankings",
       "indicatorCode": "MILITARY_SPENDING_PERCENT_GDP",
       "staticDataPath": "data/sipri/rankings/military-spending/manifest.json",
-      "rankingTitleBase": "Military Spending (% of GDP) Rankings",
-      "linkAriaMetric": "Military Spending (% of GDP)",
       "displayScaleConfig": {
         "suffix": "%",
         "suffixSpacing": "",
@@ -762,11 +660,8 @@
     {
       "group": "environment",
       "directory": "co2-emissions",
-      "title": "CO2 Emissions Rankings",
       "indicatorCode": "EN.GHG.CO2.MT.CE.AR5",
       "staticDataPath": "data/world-bank/rankings/environment/manifest.json",
-      "rankingTitleBase": "CO2 Emissions Rankings",
-      "linkAriaMetric": "CO2 Emissions",
       "displayScaleConfig": {
         "valueScaleMode": "populationUnitsMagnitude",
         "fallbackMaximumFractionDigits": 2,
@@ -788,11 +683,8 @@
     {
       "group": "environment",
       "directory": "co2-emissions-per-capita",
-      "title": "CO2 Emissions per Capita Rankings",
       "indicatorCode": "EN.GHG.CO2.PC.CE.AR5",
       "staticDataPath": "data/world-bank/rankings/environment/manifest.json",
-      "rankingTitleBase": "CO2 Emissions per Capita Rankings",
-      "linkAriaMetric": "CO2 Emissions per Capita",
       "displayScaleConfig": {
         "suffix": "t",
         "maximumFractionDigits": 2
@@ -809,11 +701,8 @@
     {
       "group": "environment",
       "directory": "area",
-      "title": "Area (km²) Rankings",
       "indicatorCode": "CIA.AREA.K2",
       "staticDataPath": "data/cia/rankings/area/manifest.json",
-      "rankingTitleBase": "Area (km²) Rankings",
-      "linkAriaMetric": "Area (km²)",
       "displayScaleConfig": {
         "valueScaleMode": "areaMagnitude",
         "fallbackMaximumFractionDigits": 0,
@@ -833,11 +722,8 @@
     {
       "group": "environment",
       "directory": "forest-area",
-      "title": "Forest Area (% of Land Area) Rankings",
       "indicatorCode": "AG.LND.FRST.ZS",
       "staticDataPath": "data/world-bank/rankings/environment/manifest.json",
-      "rankingTitleBase": "Forest Area (% of Land Area) Rankings",
-      "linkAriaMetric": "Forest Area",
       "displayScaleConfig": {
         "suffix": "%",
         "suffixSpacing": "",

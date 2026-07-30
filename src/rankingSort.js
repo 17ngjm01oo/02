@@ -3,8 +3,8 @@ import { createUiDropdown, hydrateUiDropdown } from "./uiDropdown.js";
 import { translate } from "./localization.js";
 
 const sortOptions = [
-  { value: "highest", label: translate("ui.highest", "Highest") },
-  { value: "lowest", label: translate("ui.lowest", "Lowest") },
+  { value: "highest", label: translate("ui.highest", "High to low") },
+  { value: "lowest", label: translate("ui.lowest", "Low to high") },
 ];
 
 export function initializeRankingSort({ initialValue = "highest", onChange }) {
@@ -19,12 +19,11 @@ export function initializeRankingSort({ initialValue = "highest", onChange }) {
     toggleClassName: "ranking-filter-toggle",
     optionClassName: "ranking-filter-option",
     optionDatasetName: "rankingOption",
-    toggleText: () => translate("ui.sortBy", "Sort by"),
-    toggleAriaLabel: "Choose ranking sort order",
-    menuAriaLabel: "Ranking sort order",
+    toggleText: (value) => sortOptions.find((option) => option.value === value)?.label ?? "",
     options: sortOptions,
     initialValue,
     onChange,
+    hideSelectedOption: true,
     outsideClickIgnoreSelector: '[data-ranking-control="territories"]',
   };
   const existingControl = controls.querySelector('[data-ranking-control="sort"]');

@@ -548,14 +548,14 @@ button.site-menu-option {
   line-height: 1.35;
 }
 
-@container site-footer (max-width: 26rem) {
-  body[data-locale="es"] .site-footer-nav {
+@container site-footer (max-width: 32rem) {
+  body:is([data-locale="es"], [data-locale="fr"], [data-locale="pt"], [data-locale="de"], [data-locale="tr"], [data-locale="id"]) .site-footer-nav {
     align-items: flex-start;
     flex-direction: column;
     gap: 4px;
   }
 
-  body[data-locale="es"] .site-footer-separator {
+  body:is([data-locale="es"], [data-locale="fr"], [data-locale="pt"], [data-locale="de"], [data-locale="tr"], [data-locale="id"]) .site-footer-separator {
     display: block;
     align-self: stretch;
     height: 1px;
@@ -3256,8 +3256,8 @@ body[data-page-kind="country-hub"] .country-hub-panel > .entity-count {
   left: 50%;
   z-index: 10;
   display: grid;
-  width: 88%;
-  min-width: 0;
+  width: max-content;
+  min-width: 100%;
   overflow: hidden;
   scrollbar-width: thin;
   border: 1px solid var(--border);
@@ -3265,6 +3265,10 @@ body[data-page-kind="country-hub"] .country-hub-panel > .entity-count {
   background: var(--surface);
   box-shadow: 0 12px 28px rgba(23, 32, 42, 0.14);
   transform: translateX(-50%);
+}
+
+.ui-dropdown-option[hidden] + .ui-dropdown-option {
+  border-top: 0;
 }
 
 .ranking-year-menu {

@@ -1,6 +1,8 @@
-import { translations } from "./translations.js";
+import { loadTranslation } from "./translations.js";
 export { defaultLocale, localeConfigs, supportedLocales } from "./locales.js";
-import { defaultLocale, localeConfigs, supportedLocales } from "./locales.js";
+import { defaultLocale, localeConfigs } from "./locales.js";
+
+const localeDictionary = await loadTranslation(getPageLocale());
 
 export function getPageLocale() {
   return document.body.dataset.locale || defaultLocale;
@@ -12,24 +14,12 @@ export function getLocalizedRootHref(rootHref = document.body.dataset.rootHref ?
   return `${rootHref}${prefix}`;
 }
 
-export function getAlternateLocales(locale = getPageLocale()) {
-  return supportedLocales.filter((candidateLocale) => candidateLocale !== locale);
-}
-
 export function getLocaleSwitchLabel(locale) {
   return localeConfigs[locale]?.switchLabel ?? locale.toUpperCase();
 }
 
 export function getLocaleDisplayName(locale) {
   return localeConfigs[locale]?.displayName ?? getLocaleSwitchLabel(locale);
-}
-
-export function getAlternatePageHref(targetLocale, rootHref = document.body.dataset.rootHref ?? "./") {
-  if (!localeConfigs[targetLocale] || targetLocale === getPageLocale()) {
-    return "";
-  }
-
-  return `${rootHref}${localeConfigs[targetLocale].pathPrefix}${getCurrentPagePathWithoutLocale(rootHref)}`;
 }
 
 function getLocalePathPrefix(locale) {
@@ -45,24 +35,6 @@ export function translate(key, fallback = "", params = {}) {
 export function translateExactText(text) {
   const normalized = String(text ?? "").trim();
   return translateFromDictionaries(normalized, ["exactText", "categories", "regions", "indicators"]);
-}
-
-export function translateContentLabel(label) {
-  const normalized = String(label ?? "").trim();
-  return translateFromDictionaries(normalized, ["indicators", "exactText", "categories", "regions"]);
-}
-
-export function translateExactTextList(items) {
-  return items.map((item) => translateExactText(item)).join(", ");
-}
-
-export function translateOfficialCountryName(country) {
-  const officialName = country?.officialName ?? "";
-  if (!officialName) {
-    return "";
-  }
-
-  return translateExactText(officialName);
 }
 
 export function translateCategoryLabel(label) {
@@ -103,28 +75,6 @@ export function formatCountryDisplayName(countryOrCode, options = {}) {
   return `${config?.countryNameFormPrefixes?.[form] ?? ""}${countryName}`;
 }
 
-export function getCountryNameSearchLabels(countryOrCode, fallback = "") {
-  const code = typeof countryOrCode === "string" ? countryOrCode : countryOrCode?.code;
-  const name = typeof countryOrCode === "string" ? fallback : countryOrCode?.name;
-  return uniqueLabels([
-    name,
-    fallback,
-    ...Object.values(translations).map((dictionary) => dictionary.countries?.[code]),
-  ]);
-}
-
-export function getExactTextSearchLabels(text) {
-  const normalized = String(text ?? "").trim();
-  if (!normalized) {
-    return [];
-  }
-
-  return uniqueLabels([
-    normalized,
-    ...Object.values(translations).map((dictionary) => dictionary.exactText?.[normalized]),
-  ]);
-}
-
 export function translateScopeLabel(scope) {
   if (!scope) {
     return translate("ui.world", "World");
@@ -141,24 +91,8 @@ export function translateScopeLabel(scope) {
   return translateExactText(scope.label);
 }
 
-function getCurrentPagePath(rootHref = document.body.dataset.rootHref ?? "./") {
-  if (document.body.dataset.pageKind === "home") {
-    return "";
-  }
-
-  const pagePath = window.location.pathname.replace(/^\/+/, "");
-  const basePath = getBasePathFromRootHref(rootHref);
-  return pagePath.startsWith(basePath) ? pagePath.slice(basePath.length) : pagePath;
-}
-
-function getCurrentPagePathWithoutLocale(rootHref = document.body.dataset.rootHref ?? "./") {
-  const pagePath = getCurrentPagePath(rootHref);
-  const localePrefix = localeConfigs[getPageLocale()]?.pathPrefix ?? "";
-  return localePrefix && pagePath.startsWith(localePrefix) ? pagePath.slice(localePrefix.length) : pagePath;
-}
-
 function getLocaleDictionary() {
-  return translations[getPageLocale()] ?? {};
+  return localeDictionary;
 }
 
 function getDictionaryValue(key) {
@@ -182,18 +116,4 @@ function translateFromDictionaries(text, dictionaryKeys) {
 
 function interpolate(text, params) {
   return String(text).replaceAll(/\{(\w+)\}/g, (_, key) => params[key] ?? "");
-}
-
-function uniqueLabels(labels) {
-  return [...new Set(labels.map((label) => String(label ?? "").trim()).filter(Boolean))];
-}
-
-function getBasePathFromRootHref(rootHref = document.body.dataset.rootHref ?? "./") {
-  if (!rootHref.startsWith("../")) {
-    return "";
-  }
-
-  const depth = rootHref.split("../").length - 1;
-  const parts = window.location.pathname.replace(/^\/+|\/+$/g, "").split("/").filter(Boolean);
-  return parts.slice(0, Math.max(0, parts.length - depth)).join("/") + "/";
 }

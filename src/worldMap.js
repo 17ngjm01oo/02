@@ -245,7 +245,7 @@ function buildCountryLookup(countryList, rootHref, countryIdentifiers) {
       lookup.byId.set(mapId, record);
     }
 
-    [country.name, country.officialName].forEach((name) => {
+    [country.name].forEach((name) => {
       const normalizedName = normalizeName(name);
 
       if (normalizedName) {

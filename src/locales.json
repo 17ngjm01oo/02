@@ -1,6 +1,18 @@
 {
   "default_locale": "en",
   "translation_schema_locale": "ja",
+  "planned_locale_order": [
+    "en",
+    "es",
+    "de",
+    "fr",
+    "ja",
+    "pt",
+    "it",
+    "ko",
+    "tr",
+    "id"
+  ],
   "locales": {
     "en": {
       "path_prefix": "",
@@ -18,27 +30,50 @@
       "magnitude_format": "western",
       "category_meta_case": "lower",
       "country_name_forms": {
-        "USA": { "definite": "the United States" },
-        "GBR": { "definite": "the United Kingdom" },
-        "SLB": { "definite": "the Solomon Islands" },
-        "FSM": { "definite": "the Federated States of Micronesia" },
-        "MHL": { "definite": "the Marshall Islands" },
-        "MDV": { "definite": "the Maldives" },
-        "ARE": { "definite": "the United Arab Emirates" },
-        "BHS": { "definite": "the Bahamas" },
-        "DOM": { "definite": "the Dominican Republic" },
-        "NLD": { "definite": "the Netherlands" },
-        "PHL": { "definite": "the Philippines" },
-        "CAF": { "definite": "the Central African Republic" },
-        "COG": { "definite": "the Republic of the Congo" },
-        "GMB": { "definite": "the Gambia" }
+        "USA": {
+          "definite": "the United States"
+        },
+        "GBR": {
+          "definite": "the United Kingdom"
+        },
+        "SLB": {
+          "definite": "the Solomon Islands"
+        },
+        "FSM": {
+          "definite": "the Federated States of Micronesia"
+        },
+        "MHL": {
+          "definite": "the Marshall Islands"
+        },
+        "MDV": {
+          "definite": "the Maldives"
+        },
+        "ARE": {
+          "definite": "the United Arab Emirates"
+        },
+        "BHS": {
+          "definite": "the Bahamas"
+        },
+        "DOM": {
+          "definite": "the Dominican Republic"
+        },
+        "NLD": {
+          "definite": "the Netherlands"
+        },
+        "PHL": {
+          "definite": "the Philippines"
+        },
+        "CAF": {
+          "definite": "the Central African Republic"
+        },
+        "COG": {
+          "definite": "the Republic of the Congo"
+        },
+        "GMB": {
+          "definite": "the Gambia"
+        }
       },
       "country_name_form_prefixes": {},
-      "chart_unit_segments": {
-        "constant_national_currency": " in constant national currency",
-        "national_currency": " in national currency",
-        "none": ""
-      },
       "page_metadata": {
         "home": {
           "title": "Global Statistics and Country Indicators",
@@ -66,17 +101,22 @@
         "country_profile_title": "{category} of {country}",
         "country_profile_meta_overview": "Explore {country_possessive} key data, latest indicators, global rankings, and category-based country profile.",
         "country_profile_meta_category": "Explore key {category} data for {country}, including the latest values and global rankings.",
-        "country_indicator_heading": "{country} {indicator} Trend",
-        "country_indicator_meta": "Explore {country_possessive} {indicator} over time with historical annual data, the latest value, chart, table, and global ranking.",
-        "ranking_year_segment": ", {year}",
-        "ranking_world_title": "{indicator} Rankings by Country: {scope}{year_segment}",
-        "ranking_scoped_title": "{indicator} Rankings by Country: {scope}{year_segment}",
-        "ranking_world_meta": "{indicator_description}",
-        "ranking_scoped_meta": "{indicator_description}",
+        "country_indicator_heading": "{country} {indicator} Over Time{period}",
+        "country_indicator_period": " ({start}–{end})",
+        "country_indicator_single_year": " ({year})",
+        "country_indicator_meta": "{indicator} data for {country}{period}: latest value, historical chart, table, and sources.",
+        "country_indicator_meta_period": ", {start}–{end}",
+        "country_indicator_meta_single_year": ", {year}",
+        "ranking_world_title": "{indicator} by Country ({year})",
+        "ranking_region_title": "{indicator} by Country in {scope} ({year})",
+        "ranking_category_title": "{indicator} by Country — {scope} ({year})",
+        "ranking_world_meta": "Compare {indicator} by country for {year}, including rankings, values, and source notes.",
+        "ranking_region_meta": "Compare {indicator} by country in {scope} for {year}, including rankings, values, and source notes.",
+        "ranking_category_meta": "Compare {indicator} by country — {scope} ({year}) — including rankings, values, and source notes.",
         "country_map_label": "{country} map",
-        "observation_projection": "Lighter or shaded values are projections.",
-        "observation_estimate": "Lighter or shaded values are estimates.",
-        "observation_estimate_projection": "Lighter or shaded values are estimates or projections."
+        "observation_projection": "Projections are shown in a lighter color on the chart and with shaded cells in the table.",
+        "observation_estimate": "Estimates are shown in a lighter color on the chart and with shaded cells in the table.",
+        "observation_estimate_projection": "Estimates and projections are shown in a lighter color on the chart and with shaded cells in the table."
       }
     },
     "ja": {
@@ -96,11 +136,6 @@
       "category_meta_case": "preserve",
       "country_name_forms": {},
       "country_name_form_prefixes": {},
-      "chart_unit_segments": {
-        "constant_national_currency": "（自国通貨、実質）",
-        "national_currency": "（自国通貨）",
-        "none": ""
-      },
       "page_metadata": {
         "home": {
           "title": "世界の統計・国別指標データサイト",
@@ -128,17 +163,22 @@
         "country_profile_title": "{country}の{category}",
         "country_profile_meta_overview": "{country}の主要データ、最新指標、世界順位、カテゴリ別の国別プロフィールを確認できます。",
         "country_profile_meta_category": "{country}の{category}に関する主要データ、最新値、世界順位を確認できます。",
-        "country_indicator_heading": "{country}の{indicator}の推移",
-        "country_indicator_meta": "{country}の{indicator}の推移を、過去の年次データ、最新値、グラフ、表、世界順位とともに確認できます。",
-        "ranking_year_segment": "：{year}年",
-        "ranking_world_title": "{scope}の{indicator}ランキング{year_segment}",
-        "ranking_scoped_title": "{scope}の{indicator}ランキング{year_segment}",
-        "ranking_world_meta": "{indicator_description}",
-        "ranking_scoped_meta": "{indicator_description}",
+        "country_indicator_heading": "{country}の{indicator}の推移{period}",
+        "country_indicator_period": "（{start}–{end}年）",
+        "country_indicator_single_year": "（{year}年）",
+        "country_indicator_meta": "{period}{country}の{indicator}データを、最新値、推移グラフ、表、出典とともに確認できます。",
+        "country_indicator_meta_period": "{start}～{end}年の",
+        "country_indicator_meta_single_year": "{year}年の",
+        "ranking_world_title": "{scope}の{indicator}ランキング：{year}年",
+        "ranking_region_title": "{scope}の{indicator}ランキング：{year}年",
+        "ranking_category_title": "{scope}の{indicator}ランキング：{year}年",
+        "ranking_world_meta": "{year}年の世界各国の{indicator}ランキングを、順位、数値、出典情報とともに比較できます。",
+        "ranking_region_meta": "{year}年の{scope}各国の{indicator}ランキングを、順位、数値、出典情報とともに比較できます。",
+        "ranking_category_meta": "{year}年の{scope}各国の{indicator}ランキングを、順位、数値、出典情報とともに比較できます。",
         "country_map_label": "{country}の地図",
-        "observation_projection": "薄い色または背景色付きの値は予測値です。",
-        "observation_estimate": "薄い色または背景色付きの値は推計値です。",
-        "observation_estimate_projection": "薄い色または背景色付きの値は推計または予測値です。"
+        "observation_projection": "予測値は、グラフでは薄い色、表では背景色付きで表示しています。",
+        "observation_estimate": "推計値は、グラフでは薄い色、表では背景色付きで表示しています。",
+        "observation_estimate_projection": "推計値・予測値は、グラフでは薄い色、表では背景色付きで表示しています。"
       }
     },
     "es": {
@@ -157,35 +197,72 @@
       "magnitude_format": "spanish",
       "category_meta_case": "lower",
       "country_name_forms": {
-        "GBR": { "after_de": "del Reino Unido" },
-        "COK": { "after_de": "de las Islas Cook" },
-        "MNP": { "after_de": "de las Islas Marianas del Norte" },
-        "PCN": { "after_de": "de las Islas Pitcairn" },
-        "SLB": { "after_de": "de las Islas Salomón" },
-        "MHL": { "after_de": "de las Islas Marshall" },
-        "MDV": { "after_de": "de las Maldivas" },
-        "ARE": { "after_de": "de los Emiratos Árabes Unidos" },
-        "BHS": { "after_de": "de las Bahamas" },
-        "DOM": { "after_de": "de la República Dominicana" },
-        "CYM": { "after_de": "de las Islas Caimán" },
-        "TCA": { "after_de": "de las Islas Turcas y Caicos" },
-        "VGB": { "after_de": "de las Islas Vírgenes Británicas" },
-        "VIR": { "after_de": "de las Islas Vírgenes de EE. UU." },
-        "FLK": { "after_de": "de las Islas Malvinas (Islas Falkland)" },
-        "FRO": { "after_de": "de las Islas Feroe" },
-        "IMN": { "after_de": "de la Isla de Man" },
-        "NLD": { "after_de": "de los Países Bajos" },
-        "CAF": { "after_de": "de la República Centroafricana" },
-        "COM": { "after_de": "de las Comoras" },
-        "COD": { "after_de": "de la República Democrática del Congo" }
+        "GBR": {
+          "after_de": "del Reino Unido"
+        },
+        "COK": {
+          "after_de": "de las Islas Cook"
+        },
+        "MNP": {
+          "after_de": "de las Islas Marianas del Norte"
+        },
+        "PCN": {
+          "after_de": "de las Islas Pitcairn"
+        },
+        "SLB": {
+          "after_de": "de las Islas Salomón"
+        },
+        "MHL": {
+          "after_de": "de las Islas Marshall"
+        },
+        "MDV": {
+          "after_de": "de las Maldivas"
+        },
+        "ARE": {
+          "after_de": "de los Emiratos Árabes Unidos"
+        },
+        "BHS": {
+          "after_de": "de las Bahamas"
+        },
+        "DOM": {
+          "after_de": "de la República Dominicana"
+        },
+        "CYM": {
+          "after_de": "de las Islas Caimán"
+        },
+        "TCA": {
+          "after_de": "de las Islas Turcas y Caicos"
+        },
+        "VGB": {
+          "after_de": "de las Islas Vírgenes Británicas"
+        },
+        "VIR": {
+          "after_de": "de las Islas Vírgenes de EE. UU."
+        },
+        "FLK": {
+          "after_de": "de las Islas Malvinas (Islas Falkland)"
+        },
+        "FRO": {
+          "after_de": "de las Islas Feroe"
+        },
+        "IMN": {
+          "after_de": "de la Isla de Man"
+        },
+        "NLD": {
+          "after_de": "de los Países Bajos"
+        },
+        "CAF": {
+          "after_de": "de la República Centroafricana"
+        },
+        "COM": {
+          "after_de": "de las Comoras"
+        },
+        "COD": {
+          "after_de": "de la República Democrática del Congo"
+        }
       },
       "country_name_form_prefixes": {
         "after_de": "de "
-      },
-      "chart_unit_segments": {
-        "constant_national_currency": " en moneda nacional constante",
-        "national_currency": " en moneda nacional",
-        "none": ""
       },
       "page_metadata": {
         "home": {
@@ -214,18 +291,522 @@
         "country_profile_title": "{category} {country_after_de}",
         "country_profile_meta_overview": "Consulta los principales datos de {country}, los indicadores más recientes, las clasificaciones mundiales y el perfil por categorías.",
         "country_profile_meta_category": "Consulta datos clave sobre {category} en {country}, incluidos los valores más recientes y las clasificaciones mundiales.",
-        "country_indicator_heading": "{indicator} {country_after_de}: datos y evolución",
-        "country_indicator_meta": "Consulta {indicator} {country_after_de}: datos anuales, último valor, gráfico, tabla y posición mundial.",
-        "ranking_year_segment": ", {year}",
-        "ranking_world_title": "{indicator}: ranking mundial por países{year_segment}",
-        "ranking_scoped_title": "{indicator}: ranking por países — {scope}{year_segment}",
-        "ranking_world_meta": "Consulta {indicator}: ranking mundial por países{year_segment}, con posiciones y valores actualizados.",
-        "ranking_scoped_meta": "Consulta {indicator}: ranking por países en {scope}{year_segment}, con posiciones y valores actualizados.",
+        "country_indicator_heading": "{indicator} {country_after_de}: evolución{period}",
+        "country_indicator_period": " ({start}–{end})",
+        "country_indicator_single_year": " ({year})",
+        "country_indicator_meta": "{indicator} {country_after_de}{period}: último valor, gráfico, tabla y fuentes.",
+        "country_indicator_meta_period": " ({start}–{end})",
+        "country_indicator_meta_single_year": " ({year})",
+        "ranking_world_title": "{indicator} por país ({year})",
+        "ranking_region_title": "{indicator} por país en {scope} ({year})",
+        "ranking_category_title": "{indicator} por país — {scope} ({year})",
+        "ranking_world_meta": "Compara {indicator} por país para {year}, con posiciones, valores y fuentes.",
+        "ranking_region_meta": "Compara {indicator} por país en {scope} para {year}, con posiciones, valores y fuentes.",
+        "ranking_category_meta": "Compara {indicator} por país — {scope} ({year}) — con posiciones, valores y fuentes.",
         "country_map_label": "Mapa {country_after_de}",
-        "observation_projection": "Los valores más claros o sombreados son proyecciones.",
-        "observation_estimate": "Los valores más claros o sombreados son estimaciones.",
-        "observation_estimate_projection": "Los valores más claros o sombreados son estimaciones o proyecciones."
+        "observation_projection": "Las proyecciones se muestran con un color más claro en el gráfico y con celdas sombreadas en la tabla.",
+        "observation_estimate": "Las estimaciones se muestran con un color más claro en el gráfico y con celdas sombreadas en la tabla.",
+        "observation_estimate_projection": "Las estimaciones y proyecciones se muestran con un color más claro en el gráfico y con celdas sombreadas en la tabla."
+      }
+    },
+    "fr": {
+      "path_prefix": "fr/",
+      "html_lang": "fr",
+      "switch_label": "FR",
+      "display_name": "Français",
+      "title_brand": "Geostarna",
+      "title_separator": " | ",
+      "number_locale": "fr-FR",
+      "number_symbols": {
+        "decimal": ",",
+        "group": " ",
+        "minimum_grouping_digits": 1
+      },
+      "magnitude_format": "french",
+      "category_meta_case": "lower",
+      "country_name_forms": {},
+      "country_name_form_prefixes": {},
+      "page_metadata": {
+        "home": {
+          "title": "Statistiques mondiales et indicateurs par pays",
+          "description": "Explorez les données, indicateurs, graphiques et classements mondiaux des pays et territoires."
+        },
+        "countries_hub": {
+          "title": "Pays",
+          "heading": "Pays",
+          "description": "Consultez les profils des pays et territoires avec leurs données clés, indicateurs, cartes et classements mondiaux."
+        },
+        "rankings_hub": {
+          "title": "Classements",
+          "heading": "Classements",
+          "description": "Comparez les pays et territoires dans les classements mondiaux de l’économie, de la population, du commerce, des finances publiques, de la société et de l’environnement."
+        },
+        "data_hub": {
+          "title": "Données",
+          "heading": "Données",
+          "description": "Consultez les indicateurs des pays et territoires par catégorie, source de données et période couverte."
+        }
+      },
+      "templates": {
+        "breadcrumb_label": "Fil d’Ariane",
+        "chart_label": "Graphique linéaire de {indicator}{unit_segment}",
+        "country_profile_title": "{country} : {category}",
+        "country_profile_meta_overview": "Consultez les données clés pour {country}, les indicateurs les plus récents, les classements mondiaux et le profil par catégorie.",
+        "country_profile_meta_category": "Consultez les principales données sur {category} pour {country}, notamment les valeurs les plus récentes et les classements mondiaux.",
+        "country_indicator_heading": "{country} — {indicator} : évolution{period}",
+        "country_indicator_period": " ({start}–{end})",
+        "country_indicator_single_year": " ({year})",
+        "country_indicator_meta": "{country} — {indicator}{period} : dernière valeur, graphique historique, tableau et sources.",
+        "country_indicator_meta_period": " ({start}–{end})",
+        "country_indicator_meta_single_year": " ({year})",
+        "ranking_world_title": "{indicator} par pays ({year})",
+        "ranking_region_title": "{indicator} par pays en {scope} ({year})",
+        "ranking_category_title": "{indicator} par pays — {scope} ({year})",
+        "ranking_world_meta": "Comparez les pays selon l’indicateur {indicator} en {year}, avec les classements, les valeurs et les sources.",
+        "ranking_region_meta": "Comparez, en {scope}, les pays selon l’indicateur {indicator} en {year}, avec les classements, les valeurs et les sources.",
+        "ranking_category_meta": "Comparez les pays selon l’indicateur {indicator} — {scope} ({year}) — avec les classements, les valeurs et les sources.",
+        "country_map_label": "Carte : {country}",
+        "observation_projection": "Les projections sont affichées dans une couleur plus claire sur le graphique et dans des cellules ombrées dans le tableau.",
+        "observation_estimate": "Les estimations sont affichées dans une couleur plus claire sur le graphique et dans des cellules ombrées dans le tableau.",
+        "observation_estimate_projection": "Les estimations et projections sont affichées dans une couleur plus claire sur le graphique et dans des cellules ombrées dans le tableau."
+      }
+    },
+    "pt": {
+      "path_prefix": "pt/",
+      "html_lang": "pt-BR",
+      "switch_label": "PT",
+      "display_name": "Português",
+      "title_brand": "Geostarna",
+      "title_separator": " | ",
+      "number_locale": "pt-BR",
+      "number_symbols": {
+        "decimal": ",",
+        "group": ".",
+        "minimum_grouping_digits": 1
+      },
+      "magnitude_format": "brazilian_portuguese",
+      "category_meta_case": "lower",
+      "country_name_forms": {},
+      "country_name_form_prefixes": {},
+      "ranking_title_region_forms": {
+        "Asia": "na Ásia",
+        "Europe": "na Europa",
+        "Oceania": "na Oceania",
+        "Africa": "na África",
+        "North America": "na América do Norte",
+        "South America": "na América do Sul"
+      },
+      "page_metadata": {
+        "home": {
+          "title": "Estatísticas mundiais e indicadores por país",
+          "description": "Explore dados de países e territórios, indicadores, gráficos e rankings mundiais."
+        },
+        "countries_hub": {
+          "title": "Países",
+          "heading": "Países",
+          "description": "Consulte perfis de países e territórios com dados essenciais, indicadores, mapas e rankings mundiais."
+        },
+        "rankings_hub": {
+          "title": "Rankings",
+          "heading": "Rankings",
+          "description": "Compare países e territórios em rankings mundiais de economia, população, comércio, finanças públicas, sociedade e meio ambiente."
+        },
+        "data_hub": {
+          "title": "Dados",
+          "heading": "Dados",
+          "description": "Consulte indicadores de países e territórios por categoria, fonte de dados e período de cobertura."
+        }
+      },
+      "templates": {
+        "breadcrumb_label": "Navegação estrutural",
+        "chart_label": "Gráfico de linhas de {indicator}{unit_segment}",
+        "country_profile_title": "{country}: {category}",
+        "country_profile_meta_overview": "Confira os principais dados de {country}, os indicadores mais recentes, os rankings mundiais e o perfil por categoria.",
+        "country_profile_meta_category": "Confira os principais dados de {category} para {country}, incluindo os valores mais recentes e os rankings mundiais.",
+        "country_indicator_heading": "{country} — {indicator}: evolução{period}",
+        "country_indicator_period": " ({start}–{end})",
+        "country_indicator_single_year": " ({year})",
+        "country_indicator_meta": "{country} — dados de {indicator}{period}: valor mais recente, gráfico histórico, tabela e fontes.",
+        "country_indicator_meta_period": " ({start}–{end})",
+        "country_indicator_meta_single_year": " ({year})",
+        "ranking_world_title": "{indicator} por país ({year})",
+        "ranking_region_title": "{indicator} por país {scope} ({year})",
+        "ranking_category_title": "{indicator} por país — {scope} ({year})",
+        "ranking_world_meta": "Compare {indicator} por país em {year}, com posições, valores e fontes.",
+        "ranking_region_meta": "Compare {indicator} por país {scope} em {year}, com posições, valores e fontes.",
+        "ranking_category_meta": "Compare {indicator} por país — {scope} ({year}) — com posições, valores e fontes.",
+        "country_map_label": "Mapa: {country}",
+        "observation_projection": "As projeções são exibidas em uma cor mais clara no gráfico e em células sombreadas na tabela.",
+        "observation_estimate": "As estimativas são exibidas em uma cor mais clara no gráfico e em células sombreadas na tabela.",
+        "observation_estimate_projection": "As estimativas e projeções são exibidas em uma cor mais clara no gráfico e em células sombreadas na tabela."
+      }
+    },
+    "de": {
+      "path_prefix": "de/",
+      "html_lang": "de",
+      "switch_label": "DE",
+      "display_name": "Deutsch",
+      "title_brand": "Geostarna",
+      "title_separator": " | ",
+      "number_locale": "de-DE",
+      "number_symbols": {
+        "decimal": ",",
+        "group": ".",
+        "minimum_grouping_digits": 1
+      },
+      "magnitude_format": "german",
+      "category_meta_case": "preserve",
+      "country_name_forms": {},
+      "country_name_form_prefixes": {},
+      "page_metadata": {
+        "home": {
+          "title": "Weltweite Statistiken und Länderindikatoren",
+          "description": "Entdecken Sie Daten, Indikatoren, Diagramme und weltweite Rankings für Länder und Gebiete."
+        },
+        "countries_hub": {
+          "title": "Länder",
+          "heading": "Länder",
+          "description": "Entdecken Sie Länder- und Gebietsprofile mit wichtigen Daten, Indikatoren, Karten und weltweiten Rankings."
+        },
+        "rankings_hub": {
+          "title": "Rankings",
+          "heading": "Rankings",
+          "description": "Vergleichen Sie Länder und Gebiete in weltweiten Rankings zu Wirtschaft, Bevölkerung, Handel, öffentlichen Finanzen, Gesellschaft und Umwelt."
+        },
+        "data_hub": {
+          "title": "Daten",
+          "heading": "Daten",
+          "description": "Entdecken Sie Länder- und Gebietsindikatoren nach Kategorie, Datenquelle und Erfassungszeitraum."
+        }
+      },
+      "templates": {
+        "breadcrumb_label": "Brotkrümelnavigation",
+        "chart_label": "Liniendiagramm: {indicator}{unit_segment}",
+        "country_profile_title": "{country}: {category}",
+        "country_profile_meta_overview": "Entdecken Sie wichtige Daten zu {country}, die neuesten Indikatoren, weltweite Rankings und das Länderprofil nach Kategorien.",
+        "country_profile_meta_category": "Entdecken Sie wichtige Daten zu {category} für {country}, einschließlich der neuesten Werte und weltweiten Rankings.",
+        "country_indicator_heading": "{country}: {indicator} im Zeitverlauf{period}",
+        "country_indicator_period": " ({start}–{end})",
+        "country_indicator_single_year": " ({year})",
+        "country_indicator_meta": "{country} — Daten zu {indicator}{period}: aktueller Wert, Zeitverlauf, Tabelle und Quellen.",
+        "country_indicator_meta_period": " ({start}–{end})",
+        "country_indicator_meta_single_year": " ({year})",
+        "ranking_world_title": "{indicator} nach Ländern ({year})",
+        "ranking_region_title": "{indicator} nach Ländern in {scope} ({year})",
+        "ranking_category_title": "{indicator} nach Ländern — {scope} ({year})",
+        "ranking_world_meta": "Vergleichen Sie {indicator} nach Ländern für {year}, einschließlich Platzierungen, Werten und Quellen.",
+        "ranking_region_meta": "Vergleichen Sie {indicator} nach Ländern in {scope} für {year}, einschließlich Platzierungen, Werten und Quellen.",
+        "ranking_category_meta": "Vergleich von {indicator} nach Ländern — {scope} ({year}) — mit Platzierungen, Werten und Quellen.",
+        "country_map_label": "Karte: {country}",
+        "observation_projection": "Prognosewerte werden im Diagramm heller und in der Tabelle mit hinterlegten Zellen dargestellt.",
+        "observation_estimate": "Schätzwerte werden im Diagramm heller und in der Tabelle mit hinterlegten Zellen dargestellt.",
+        "observation_estimate_projection": "Schätz- und Prognosewerte werden im Diagramm heller und in der Tabelle mit hinterlegten Zellen dargestellt."
+      }
+    },
+    "it": {
+      "path_prefix": "it/",
+      "html_lang": "it",
+      "switch_label": "IT",
+      "display_name": "Italiano",
+      "title_brand": "Geostarna",
+      "title_separator": " | ",
+      "number_locale": "it-IT",
+      "number_symbols": {
+        "decimal": ",",
+        "group": ".",
+        "minimum_grouping_digits": 1
+      },
+      "magnitude_format": "italian",
+      "category_meta_case": "lower",
+      "country_name_forms": {
+        "USA": {
+          "after_de": "negli Stati Uniti"
+        },
+        "GBR": {
+          "after_de": "nel Regno Unito"
+        },
+        "NLD": {
+          "after_de": "nei Paesi Bassi"
+        },
+        "PHL": {
+          "after_de": "nelle Filippine"
+        },
+        "MDV": {
+          "after_de": "alle Maldive"
+        },
+        "BHS": {
+          "after_de": "alle Bahamas"
+        },
+        "ARE": {
+          "after_de": "negli Emirati Arabi Uniti"
+        },
+        "DOM": {
+          "after_de": "nella Repubblica Dominicana"
+        },
+        "CAF": {
+          "after_de": "nella Repubblica Centrafricana"
+        },
+        "COD": {
+          "after_de": "nella Repubblica Democratica del Congo"
+        },
+        "COG": {
+          "after_de": "nella Repubblica del Congo"
+        },
+        "SLB": {
+          "after_de": "nelle Isole Salomone"
+        },
+        "MHL": {
+          "after_de": "nelle Isole Marshall"
+        },
+        "FSM": {
+          "after_de": "negli Stati Federati di Micronesia"
+        },
+        "COK": {
+          "after_de": "nelle Isole Cook"
+        }
+      },
+      "country_name_form_prefixes": {
+        "after_de": "in "
+      },
+      "page_metadata": {
+        "home": {
+          "title": "Statistiche mondiali e indicatori per paese",
+          "description": "Esplora dati, indicatori, grafici e classifiche mondiali di paesi e territori."
+        },
+        "countries_hub": {
+          "title": "Paesi",
+          "heading": "Paesi",
+          "description": "Esplora i profili di paesi e territori con dati chiave, indicatori, mappe e classifiche mondiali."
+        },
+        "rankings_hub": {
+          "title": "Classifiche",
+          "heading": "Classifiche",
+          "description": "Confronta paesi e territori nelle classifiche mondiali di economia, popolazione, commercio, finanza pubblica, società e ambiente."
+        },
+        "data_hub": {
+          "title": "Dati",
+          "heading": "Dati",
+          "description": "Esplora gli indicatori di paesi e territori per categoria, fonte dei dati e periodo di copertura."
+        }
+      },
+      "templates": {
+        "breadcrumb_label": "Percorso di navigazione",
+        "chart_label": "Grafico a linee: {indicator}{unit_segment}",
+        "country_profile_title": "{country}: {category}",
+        "country_profile_meta_overview": "{country}: consulta i dati principali, gli indicatori più recenti, le classifiche mondiali e il profilo per categoria.",
+        "country_profile_meta_category": "{country} — {category}: consulta i dati principali, i valori più recenti e le classifiche mondiali.",
+        "country_indicator_heading": "{country} — {indicator}: andamento{period}",
+        "country_indicator_period": " ({start}–{end})",
+        "country_indicator_single_year": " ({year})",
+        "country_indicator_meta": "{country} — dati su {indicator}{period}: ultimo valore, grafico storico, tabella e fonti.",
+        "country_indicator_meta_period": " ({start}–{end})",
+        "country_indicator_meta_single_year": " ({year})",
+        "ranking_world_title": "{indicator} per paese ({year})",
+        "ranking_region_title": "{indicator} per paese in {scope} ({year})",
+        "ranking_category_title": "{indicator} per paese — {scope} ({year})",
+        "ranking_world_meta": "Confronta {indicator} per paese nel {year}, con classifiche, valori e fonti.",
+        "ranking_region_meta": "Confronta {indicator} per paese in {scope} nel {year}, con classifiche, valori e fonti.",
+        "ranking_category_meta": "Confronta {indicator} per paese — {scope} ({year}) — con classifiche, valori e fonti.",
+        "country_map_label": "Mappa: {country}",
+        "observation_projection": "Le proiezioni sono visualizzate con un colore più chiaro nel grafico e con celle ombreggiate nella tabella.",
+        "observation_estimate": "Le stime sono visualizzate con un colore più chiaro nel grafico e con celle ombreggiate nella tabella.",
+        "observation_estimate_projection": "Le stime e le proiezioni sono visualizzate con un colore più chiaro nel grafico e con celle ombreggiate nella tabella."
+      }
+    },
+    "ko": {
+      "path_prefix": "ko/",
+      "html_lang": "ko",
+      "switch_label": "KO",
+      "display_name": "한국어",
+      "title_brand": "지오스타나",
+      "title_separator": " | ",
+      "number_locale": "ko-KR",
+      "number_symbols": {
+        "decimal": ".",
+        "group": ",",
+        "minimum_grouping_digits": 1
+      },
+      "magnitude_format": "korean",
+      "category_meta_case": "preserve",
+      "country_name_forms": {},
+      "country_name_form_prefixes": {},
+      "page_metadata": {
+        "home": {
+          "title": "세계 통계 및 국가별 지표",
+          "description": "국가 및 지역의 데이터, 지표, 차트와 세계 순위를 살펴보세요."
+        },
+        "countries_hub": {
+          "title": "국가",
+          "heading": "국가",
+          "description": "주요 데이터, 지표, 지도와 세계 순위를 포함한 국가 및 지역별 프로필을 살펴보세요."
+        },
+        "rankings_hub": {
+          "title": "순위",
+          "heading": "순위",
+          "description": "경제, 인구, 무역, 재정, 사회 및 환경 분야의 세계 순위에서 국가와 지역을 비교해 보세요."
+        },
+        "data_hub": {
+          "title": "데이터",
+          "heading": "데이터",
+          "description": "범주, 데이터 출처 및 수록 기간별로 국가 및 지역 지표를 살펴보세요."
+        }
+      },
+      "templates": {
+        "breadcrumb_label": "탐색 경로",
+        "chart_label": "{indicator}{unit_segment} 선형 차트",
+        "country_profile_title": "{country}의 {category}",
+        "country_profile_meta_overview": "{country}의 주요 데이터, 최신 지표, 세계 순위와 범주별 국가 프로필을 확인하세요.",
+        "country_profile_meta_category": "{country}의 {category} 주요 데이터와 최신 값, 세계 순위를 확인하세요.",
+        "country_indicator_heading": "{country} {indicator} 추이{period}",
+        "country_indicator_period": " ({start}–{end})",
+        "country_indicator_single_year": " ({year})",
+        "country_indicator_meta": "{period}{country}의 {indicator} 데이터: 최신 값, 추이 차트, 표, 출처를 확인하세요.",
+        "country_indicator_meta_period": "{start}~{end}년 ",
+        "country_indicator_meta_single_year": "{year}년 ",
+        "ranking_world_title": "국가별 {indicator} 순위 ({year}년)",
+        "ranking_region_title": "{scope} 국가별 {indicator} 순위 ({year}년)",
+        "ranking_category_title": "{scope} 국가별 {indicator} 순위 ({year}년)",
+        "ranking_world_meta": "{year}년 국가별 {indicator} 순위와 값, 출처 정보를 비교해 보세요.",
+        "ranking_region_meta": "{year}년 {scope} 국가별 {indicator} 순위와 값, 출처 정보를 비교해 보세요.",
+        "ranking_category_meta": "{year}년 {scope} 국가별 {indicator} 순위와 값, 출처 정보를 비교해 보세요.",
+        "country_map_label": "{country} 지도",
+        "observation_projection": "전망치는 차트에서 연한 색으로, 표에서 음영 처리된 셀로 표시됩니다.",
+        "observation_estimate": "추정치는 차트에서 연한 색으로, 표에서 음영 처리된 셀로 표시됩니다.",
+        "observation_estimate_projection": "추정치와 전망치는 차트에서 연한 색으로, 표에서 음영 처리된 셀로 표시됩니다."
+      }
+    },
+    "tr": {
+      "path_prefix": "tr/",
+      "html_lang": "tr",
+      "switch_label": "TR",
+      "display_name": "Türkçe",
+      "title_brand": "Geostarna",
+      "title_separator": " | ",
+      "number_locale": "tr-TR",
+      "number_symbols": {
+        "decimal": ",",
+        "group": ".",
+        "minimum_grouping_digits": 1
+      },
+      "magnitude_format": "turkish",
+      "category_meta_case": "preserve",
+      "country_name_forms": {},
+      "country_name_form_prefixes": {},
+      "ranking_title_region_forms": {
+        "Asia": "Asya’da",
+        "Europe": "Avrupa’da",
+        "Oceania": "Okyanusya’da",
+        "Africa": "Afrika’da",
+        "North America": "Kuzey Amerika’da",
+        "South America": "Güney Amerika’da"
+      },
+      "page_metadata": {
+        "home": {
+          "title": "Dünya istatistikleri ve ülke göstergeleri",
+          "description": "Ülke ve bölgelere ait verileri, göstergeleri, grafikleri ve dünya sıralamalarını keşfedin."
+        },
+        "countries_hub": {
+          "title": "Ülkeler",
+          "heading": "Ülkeler",
+          "description": "Temel veriler, göstergeler, haritalar ve dünya sıralamalarıyla ülke ve bölge profillerini inceleyin."
+        },
+        "rankings_hub": {
+          "title": "Sıralamalar",
+          "heading": "Sıralamalar",
+          "description": "Ekonomi, nüfus, ticaret, kamu maliyesi, toplum ve çevre alanlarındaki dünya sıralamalarında ülke ve bölgeleri karşılaştırın."
+        },
+        "data_hub": {
+          "title": "Veriler",
+          "heading": "Veriler",
+          "description": "Ülke ve bölge göstergelerini kategoriye, veri kaynağına ve kapsama dönemine göre inceleyin."
+        }
+      },
+      "templates": {
+        "breadcrumb_label": "Gezinti yolu",
+        "chart_label": "{indicator}{unit_segment} çizgi grafiği",
+        "country_profile_title": "{country}: {category}",
+        "country_profile_meta_overview": "{country}: temel verileri, en güncel göstergeleri, dünya sıralamalarını ve kategori bazlı ülke profilini inceleyin.",
+        "country_profile_meta_category": "{country} — {category}: temel verileri, en güncel değerleri ve dünya sıralamalarını inceleyin.",
+        "country_indicator_heading": "{country} — {indicator}: yıllara göre değişim{period}",
+        "country_indicator_period": " ({start}–{end})",
+        "country_indicator_single_year": " ({year})",
+        "country_indicator_meta": "{country} — {indicator} verileri{period}: güncel değer, tarihsel grafik, tablo ve kaynaklar.",
+        "country_indicator_meta_period": " ({start}–{end})",
+        "country_indicator_meta_single_year": " ({year})",
+        "ranking_world_title": "Ülkelere Göre {indicator} ({year})",
+        "ranking_region_title": "{scope} Ülkelere Göre {indicator} ({year})",
+        "ranking_category_title": "Ülkelere Göre {indicator} — {scope} ({year})",
+        "ranking_world_meta": "{year} için ülkelere göre {indicator} sıralamalarını, değerleri ve kaynak bilgilerini karşılaştırın.",
+        "ranking_region_meta": "{scope} {year} için ülkelere göre {indicator} sıralamalarını, değerleri ve kaynak bilgilerini karşılaştırın.",
+        "ranking_category_meta": "{scope} kapsamındaki ülkelerin {year} {indicator} sıralamalarını, değerlerini ve kaynak bilgilerini karşılaştırın.",
+        "country_map_label": "{country} haritası",
+        "observation_projection": "Projeksiyon değerleri grafikte daha açık renkte, tabloda ise gölgeli hücrelerle gösterilir.",
+        "observation_estimate": "Tahmini değerler grafikte daha açık renkte, tabloda ise gölgeli hücrelerle gösterilir.",
+        "observation_estimate_projection": "Tahmini ve projeksiyon değerleri grafikte daha açık renkte, tabloda ise gölgeli hücrelerle gösterilir."
+      }
+    },
+    "id": {
+      "path_prefix": "id/",
+      "html_lang": "id",
+      "switch_label": "ID",
+      "display_name": "Bahasa Indonesia",
+      "title_brand": "Geostarna",
+      "title_separator": " | ",
+      "number_locale": "id-ID",
+      "number_symbols": {
+        "decimal": ",",
+        "group": ".",
+        "minimum_grouping_digits": 1
+      },
+      "magnitude_format": "indonesian",
+      "category_meta_case": "preserve",
+      "country_name_forms": {},
+      "country_name_form_prefixes": {},
+      "page_metadata": {
+        "home": {
+          "title": "Statistik dunia dan indikator negara",
+          "description": "Jelajahi data negara dan wilayah, indikator, grafik, dan peringkat dunia."
+        },
+        "countries_hub": {
+          "title": "Negara",
+          "heading": "Negara",
+          "description": "Jelajahi profil negara dan wilayah dengan data utama, indikator, peta, dan peringkat dunia."
+        },
+        "rankings_hub": {
+          "title": "Peringkat",
+          "heading": "Peringkat",
+          "description": "Bandingkan negara dan wilayah dalam peringkat dunia untuk ekonomi, populasi, perdagangan, keuangan pemerintah, masyarakat, dan lingkungan."
+        },
+        "data_hub": {
+          "title": "Data",
+          "heading": "Data",
+          "description": "Jelajahi indikator negara dan wilayah menurut kategori, sumber data, dan periode cakupan."
+        }
+      },
+      "templates": {
+        "breadcrumb_label": "Jejak navigasi",
+        "chart_label": "Grafik garis {indicator}{unit_segment}",
+        "country_profile_title": "{country}: {category}",
+        "country_profile_meta_overview": "Jelajahi data utama, indikator terbaru, peringkat dunia, dan profil {country} menurut kategori.",
+        "country_profile_meta_category": "Jelajahi data utama, nilai terbaru, dan peringkat dunia untuk {category} di {country}.",
+        "country_indicator_heading": "{indicator} {country}: perkembangan{period}",
+        "country_indicator_period": " ({start}–{end})",
+        "country_indicator_single_year": " ({year})",
+        "country_indicator_meta": "{country} — data {indicator}{period}: nilai terbaru, grafik historis, tabel, dan sumber.",
+        "country_indicator_meta_period": " ({start}–{end})",
+        "country_indicator_meta_single_year": " ({year})",
+        "ranking_world_title": "{indicator} berdasarkan negara ({year})",
+        "ranking_region_title": "{indicator} berdasarkan negara di {scope} ({year})",
+        "ranking_category_title": "{indicator} berdasarkan negara — {scope} ({year})",
+        "ranking_world_meta": "Bandingkan {indicator} berdasarkan negara untuk {year}, lengkap dengan peringkat, nilai, dan sumber.",
+        "ranking_region_meta": "Bandingkan {indicator} berdasarkan negara di {scope} untuk {year}, lengkap dengan peringkat, nilai, dan sumber.",
+        "ranking_category_meta": "Bandingkan {indicator} berdasarkan negara — {scope} ({year}) — lengkap dengan peringkat, nilai, dan sumber.",
+        "country_map_label": "Peta {country}",
+        "observation_projection": "Proyeksi ditampilkan dengan warna lebih terang pada grafik dan sel berarsir pada tabel.",
+        "observation_estimate": "Estimasi ditampilkan dengan warna lebih terang pada grafik dan sel berarsir pada tabel.",
+        "observation_estimate_projection": "Estimasi dan proyeksi ditampilkan dengan warna lebih terang pada grafik dan sel berarsir pada tabel."
       }
     }
-  }
+  },
+  "prepared_locales": {}
 }

@@ -1,12 +1,13 @@
 import { countrySearchAliases } from "./countrySearchAliases.js";
 import { countries } from "./countries.js";
 import {
-  getCountryNameSearchLabels,
-  getExactTextSearchLabels,
   translate,
   translateCountryName,
   translateRegionLabel,
 } from "./localization.js";
+import {
+  getCountryNameSearchLabels,
+} from "./localizedSearchLabels.js";
 
 export function initializeCountrySelector({
   selectedCountry = null,
@@ -334,7 +335,6 @@ export function filterCountryList(countryList, query) {
 function getCountrySearchTerms(country) {
   const terms = [
     ...getCountryNameSearchLabels(country),
-    ...getExactTextSearchLabels(country.officialName),
     ...getCountrySearchAliases(country.code),
     country.slug,
     country.code,

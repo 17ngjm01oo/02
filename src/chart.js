@@ -140,7 +140,7 @@ export function renderLineChart(canvas, { points, config, comparison = null }) {
             ...(chartColors.isDark ? { color: chartColors.muted } : {}),
             maxRotation: 0,
             autoSkip: true,
-            maxTicksLimit: isCompactViewport ? 6 : 12,
+            maxTicksLimit: 6,
           },
         },
         y: {
@@ -158,7 +158,7 @@ export function renderLineChart(canvas, { points, config, comparison = null }) {
             callback(value) {
               return formatAxisTickValue(value, displayScale);
             },
-            maxTicksLimit: isCompactViewport ? 5 : 8,
+            maxTicksLimit: 6,
           },
         },
       },
@@ -261,9 +261,9 @@ function buildDataset({
     pointBorderColor: labels.map((labelYear) => {
       return estimatedYears.has(Number(labelYear)) ? estimatedColor : baseColor;
     }),
-    pointRadius: isCompactViewport ? 0 : 2,
+    pointRadius: isCompactViewport ? 1 : 2,
     pointHoverRadius: 5,
-    pointHitRadius: isCompactViewport ? 20 : 16,
+    pointHitRadius: 20,
     segment: {
       borderColor(context) {
         const startYear = Number(labels[context.p0DataIndex]);

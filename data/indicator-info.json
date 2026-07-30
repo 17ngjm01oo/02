@@ -44,8 +44,8 @@
     "militarySpending": "Spending on armed forces and defense-related activities. Converted to USD using each year’s exchange rate.",
     "militarySpendingPercentGdp": "Spending on armed forces and defense-related activities, as a share of nominal GDP.",
     "hdi": "An index combining indicators of health, education, and income. Values range from 0 to 1.",
-    "co2Emissions": "Greenhouse gas emissions excluding land use and forestry. Includes non-CO2 greenhouse gases expressed in CO2 equivalent.",
-    "co2EmissionsPerCapita": "Greenhouse gas emissions per capita excluding land use and forestry. Includes non-CO2 greenhouse gases expressed in CO2 equivalent.",
+    "co2Emissions": "Greenhouse gas emissions, excluding emissions from land use and forestry. Non-CO₂ greenhouse gases are included and expressed as CO₂ equivalents.",
+    "co2EmissionsPerCapita": "Greenhouse gas emissions per capita, excluding emissions from land use and forestry. Non-CO₂ greenhouse gases are included and expressed as CO₂ equivalents.",
     "area": "Total area, including both land and water.",
     "forestAreaPercentOfLandArea": "Forest area as a share of total land area."
   },
@@ -84,8 +84,8 @@
     "military-spending": "Spending on armed forces and defense-related activities. Converted to USD using each year’s exchange rate.",
     "military-spending-percent-gdp": "Spending on armed forces and defense-related activities, as a share of nominal GDP.",
     "hdi": "An index combining indicators of health, education, and income. Values range from 0 to 1.",
-    "co2-emissions": "Greenhouse gas emissions excluding land use and forestry. Includes non-CO2 greenhouse gases expressed in CO2 equivalent.",
-    "co2-emissions-per-capita": "Greenhouse gas emissions per capita excluding land use and forestry. Includes non-CO2 greenhouse gases expressed in CO2 equivalent.",
+    "co2-emissions": "Greenhouse gas emissions, excluding emissions from land use and forestry. Non-CO₂ greenhouse gases are included and expressed as CO₂ equivalents.",
+    "co2-emissions-per-capita": "Greenhouse gas emissions per capita, excluding emissions from land use and forestry. Non-CO₂ greenhouse gases are included and expressed as CO₂ equivalents.",
     "area": "Total area, including both land and water.",
     "forest-area": "Forest area as a share of total land area."
   }

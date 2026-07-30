@@ -4,12 +4,26 @@
     "title": {
       "en": "Contact",
       "ja": "お問い合わせ",
-      "es": "Contacto"
+      "es": "Contacto",
+      "fr": "Contact",
+      "pt": "Contato",
+      "de": "Kontakt",
+      "it": "Contatti",
+      "ko": "문의",
+      "tr": "İletişim",
+      "id": "Kontak"
     },
     "description": {
       "en": "Contact Geostarna for questions, data corrections, technical issues, or other inquiries.",
       "ja": "データの訂正、技術的な問題、その他のお問い合わせ先です。",
-      "es": "Contacta con Geostarna para realizar consultas, comunicar correcciones de datos o problemas técnicos."
+      "es": "Contacta con Geostarna para plantear preguntas, solicitar correcciones de datos, informar de problemas técnicos o realizar cualquier otra consulta.",
+      "fr": "Contactez Geostarna pour toute question, correction de données, difficulté technique ou autre demande.",
+      "pt": "Entre em contato com a Geostarna para dúvidas, correções de dados, problemas técnicos ou outros assuntos.",
+      "de": "Wenden Sie sich bei Fragen, Korrekturen an Daten, technischen Problemen oder anderen Anliegen an Geostarna.",
+      "it": "Contatta Geostarna per domande, correzioni dei dati, problemi tecnici o altre richieste.",
+      "ko": "질문, 데이터 수정, 기술 문제 또는 기타 문의 사항이 있으면 Geostarna로 연락해 주세요.",
+      "tr": "Sorular, veri düzeltmeleri, teknik sorunlar veya diğer konular için Geostarna ile iletişime geçin.",
+      "id": "Hubungi Geostarna untuk pertanyaan, koreksi data, masalah teknis, atau keperluan lainnya."
     },
     "intro": {
       "en": [
@@ -19,24 +33,66 @@
         "データの訂正、技術的な問題、その他のお問い合わせは、以下のメールアドレスまでご連絡ください。"
       ],
       "es": [
-        "Para consultas, correcciones de datos, problemas técnicos u otros asuntos, ponte en contacto con:"
+        "Para plantear preguntas, solicitar correcciones de datos, informar de problemas técnicos o realizar cualquier otra consulta, escríbenos a:"
+      ],
+      "fr": [
+        "Pour toute question, correction de données, difficulté technique ou autre demande, contactez-nous à l’adresse suivante :"
+      ],
+      "pt": [
+        "Para dúvidas, correções de dados, problemas técnicos ou outros assuntos, entre em contato conosco pelo e-mail:"
+      ],
+      "de": [
+        "Bei Fragen, Korrekturen an Daten, technischen Problemen oder anderen Anliegen erreichen Sie uns unter:"
+      ],
+      "it": [
+        "Per domande, correzioni dei dati, problemi tecnici o altre richieste, contattaci al seguente indirizzo e-mail:"
+      ],
+      "ko": [
+        "질문, 데이터 수정, 기술 문제 또는 기타 문의 사항이 있으면 다음 이메일 주소로 연락해 주세요."
+      ],
+      "tr": [
+        "Sorular, veri düzeltmeleri, teknik sorunlar veya diğer konular için aşağıdaki e-posta adresinden bizimle iletişime geçin:"
+      ],
+      "id": [
+        "Untuk pertanyaan, koreksi data, masalah teknis, atau keperluan lainnya, silakan hubungi kami melalui alamat email berikut:"
       ]
     },
     "email": "contact@geostarna.com",
     "contactSectionLabel": {
       "en": "Contact information",
       "ja": "お問い合わせ先",
-      "es": "Información de contacto"
+      "es": "Información de contacto",
+      "fr": "Coordonnées",
+      "pt": "Informações de contato",
+      "de": "Kontaktinformationen",
+      "it": "Informazioni di contatto",
+      "ko": "연락처",
+      "tr": "İletişim bilgileri",
+      "id": "Informasi kontak"
     },
     "contentClass": {
       "en": "information-content",
       "ja": "information-content",
-      "es": "information-content"
+      "es": "information-content",
+      "fr": "information-content",
+      "pt": "information-content",
+      "de": "information-content",
+      "it": "information-content",
+      "ko": "information-content",
+      "tr": "information-content",
+      "id": "information-content"
     },
     "sections": {
       "en": [],
       "ja": [],
-      "es": []
+      "es": [],
+      "fr": [],
+      "pt": [],
+      "de": [],
+      "it": [],
+      "ko": [],
+      "tr": [],
+      "id": []
     }
   },
   "about": {
@@ -44,17 +100,38 @@
     "title": {
       "en": "About & Sources",
       "ja": "概要と出典",
-      "es": "Acerca del sitio y fuentes"
+      "es": "Sobre el sitio y las fuentes",
+      "fr": "À propos et sources",
+      "pt": "Sobre o site e as fontes",
+      "de": "Website und Quellen",
+      "it": "Il sito e le fonti",
+      "ko": "소개 및 출처",
+      "tr": "Site Hakkında ve Kaynaklar",
+      "id": "Tentang Situs dan Sumber"
     },
     "description": {
       "en": "About this website, its country data, ranking methodology, source coverage, and primary statistical sources.",
       "ja": "このウェブサイトの概要、国別データ、ランキングの考え方、対象範囲、主要な統計出典について説明します。",
-      "es": "Información sobre este sitio web, sus datos por país, la metodología de las clasificaciones, la cobertura y las principales fuentes estadísticas."
+      "es": "Información sobre este sitio web, sus datos por país, la metodología de las clasificaciones, la cobertura de los datos y las principales fuentes estadísticas.",
+      "fr": "Présentation du site, des données par pays, de la méthode de classement, de la couverture des données et des principales sources statistiques.",
+      "pt": "Informações sobre este site, seus dados por país, a metodologia dos rankings, a cobertura das fontes e as principais fontes estatísticas.",
+      "de": "Informationen über diese Website, ihre Länderdaten, die Methodik der Rankings, die Datenabdeckung und die wichtigsten statistischen Quellen.",
+      "it": "Informazioni su questo sito, sui dati per paese, sulla metodologia delle classifiche, sulla copertura dei dati e sulle principali fonti statistiche.",
+      "ko": "이 웹사이트와 국가별 데이터, 순위 산정 방식, 데이터 수록 범위 및 주요 통계 출처를 안내합니다.",
+      "tr": "Bu sayfada web sitesi, sunduğu ülke verileri, sıralama yöntemi, veri kapsamı ve başlıca istatistik kaynakları hakkında bilgi verilir.",
+      "id": "Informasi tentang situs ini, data per negara, metodologi pemeringkatan, cakupan data, dan sumber statistik utama."
     },
     "contentClass": {
       "en": "information-content",
       "ja": "information-content",
-      "es": "information-content"
+      "es": "information-content",
+      "fr": "information-content",
+      "pt": "information-content",
+      "de": "information-content",
+      "it": "information-content",
+      "ko": "information-content",
+      "tr": "information-content",
+      "id": "information-content"
     },
     "sections": {
       "en": [
@@ -161,19 +238,19 @@
         [
           "Acerca del sitio",
           [
-            "Este sitio web ofrece datos, clasificaciones y comparaciones por país sobre los principales indicadores internacionales, para facilitar la búsqueda, comparación y consulta de estadísticas mundiales."
+            "Este sitio web ofrece datos, clasificaciones y comparaciones por país de los principales indicadores internacionales, para que las estadísticas mundiales sean más fáciles de buscar, comparar y explorar."
           ]
         ],
         [
           "Enlaces a este sitio web",
           [
-            "Se permite enlazar cualquier página sin autorización previa. Al compartir datos o gráficos, incluye un enlace a la página correspondiente para que los lectores puedan comprobar la fuente y los valores más recientes."
+            "Se puede enlazar a cualquier página sin autorización previa. Al compartir datos o gráficos, incluye un enlace a la página correspondiente para que los lectores puedan comprobar la fuente y los valores más recientes."
           ]
         ],
         [
           "Estimaciones y proyecciones",
           [
-            "Algunos datos pueden incluir estimaciones o proyecciones según la fuente, el lugar y el año. Consulta la fuente original para conocer los detalles metodológicos."
+            "Algunos datos pueden incluir estimaciones o proyecciones según la fuente, el país o territorio y el año. Consulta la fuente original para conocer los detalles metodológicos."
           ]
         ],
         [
@@ -185,13 +262,13 @@
         [
           "Cobertura de países y territorios",
           [
-            "La cobertura se basa en la norma «países o áreas» M49 de las Naciones Unidas. Las entradas se muestran como países o territorios únicamente con fines de navegación y no implican posición alguna sobre soberanía o estatus político."
+            "La cobertura se basa en la clasificación «países o áreas» de la norma M49 de las Naciones Unidas. Las entradas se muestran como países o territorios únicamente con fines de navegación y no suponen adoptar postura alguna sobre su soberanía o estatus político."
           ]
         ],
         [
           "Iconos de banderas",
           [
-            "Los iconos de banderas se utilizan con fines de identificación. Los territorios pueden mostrarse con la bandera del país administrador o con una bandera local, según su estatus oficial y el uso habitual. Su uso no implica posición alguna sobre soberanía, reconocimiento o estatus político."
+            "Los iconos de banderas se utilizan con fines de identificación. Los territorios pueden mostrarse con la bandera del país que los administra o con una bandera local, según su estatus oficial y el uso habitual. Su uso no supone adoptar postura alguna sobre soberanía, reconocimiento o estatus político."
           ]
         ],
         [
@@ -203,7 +280,357 @@
         [
           "Datos en moneda local de la zona del euro",
           [
-            "Para los países que adoptaron el euro, los datos en moneda local anteriores a la adopción pueden mostrarse en euros mediante los tipos de conversión oficiales fijos. Consulta las preguntas frecuentes de Perspectivas de la economía mundial del FMI para obtener más información."
+            "Para los países que adoptaron el euro, los datos en moneda local anteriores a la adopción del euro pueden mostrarse en euros mediante los tipos de conversión fijos oficiales. Consulta las preguntas frecuentes de Perspectivas de la economía mundial del FMI para obtener más información."
+          ]
+        ]
+      ],
+      "fr": [
+        [
+          "À propos",
+          [
+            "Ce site présente des données, des classements et des comparaisons par pays pour les principaux indicateurs internationaux, afin de faciliter la recherche, la comparaison et l’exploration des statistiques mondiales."
+          ]
+        ],
+        [
+          "Liens vers ce site",
+          [
+            "Vous pouvez créer librement un lien vers n’importe quelle page sans autorisation préalable. Lorsque vous partagez des données ou des graphiques, ajoutez un lien vers la page concernée afin que les lecteurs puissent vérifier la source et les valeurs les plus récentes."
+          ]
+        ],
+        [
+          "Estimations et projections",
+          [
+            "Certaines données peuvent inclure des estimations ou des projections selon la source, le pays ou le territoire et l’année. Consultez la source d’origine pour obtenir des précisions sur la méthodologie."
+          ]
+        ],
+        [
+          "Classification régionale",
+          [
+            "Les regroupements régionaux suivent la norme M49 des Nations unies. Pour la navigation, l’Amérique centrale et les Caraïbes sont incluses dans l’Amérique du Nord."
+          ]
+        ],
+        [
+          "Pays et territoires couverts",
+          [
+            "La couverture repose sur la classification M49 des Nations unies relative aux « pays ou zones ». Le fait de présenter les entrées comme des pays ou des territoires sert uniquement à la navigation et n’exprime aucune position sur la souveraineté ou le statut politique."
+          ]
+        ],
+        [
+          "Drapeaux",
+          [
+            "Les drapeaux servent à l’identification. Selon le statut officiel et l’usage courant, un territoire peut être représenté par son drapeau local ou celui du pays qui l’administre. Cet usage n’exprime aucune position sur la souveraineté, la reconnaissance ou le statut politique."
+          ]
+        ],
+        [
+          "Arrondi des chiffres",
+          [
+            "Les chiffres peuvent être arrondis pour faciliter la lecture. Les classements peuvent utiliser les données sources sous-jacentes plutôt que les valeurs arrondies affichées."
+          ]
+        ],
+        [
+          "Données en monnaie locale dans la zone euro",
+          [
+            "Pour les pays ayant adopté l’euro, les données en monnaie locale antérieures à l’adoption de l’euro peuvent être présentées en euros au moyen des taux de conversion fixes officiels. Consultez la FAQ des Perspectives de l’économie mondiale du FMI pour plus de détails."
+          ]
+        ]
+      ],
+      "pt": [
+        [
+          "Sobre",
+          [
+            "Este site reúne dados por país de fontes internacionais e os apresenta em tabelas de ranking para facilitar a pesquisa, a comparação e a exploração."
+          ]
+        ],
+        [
+          "Links para este site",
+          [
+            "Links para qualquer página são permitidos sem autorização prévia. Ao compartilhar dados ou gráficos, inclua o link da página correspondente para que os leitores possam verificar a fonte e os valores mais recentes."
+          ]
+        ],
+        [
+          "Estimativas e projeções",
+          [
+            "Alguns dados podem incluir estimativas ou projeções, dependendo da fonte, do país ou território e do ano. Consulte a fonte original para obter detalhes metodológicos."
+          ]
+        ],
+        [
+          "Classificação regional",
+          [
+            "Os agrupamentos regionais seguem o padrão M49 das Nações Unidas. Para fins de navegação, a América Central e o Caribe são incluídos na América do Norte."
+          ]
+        ],
+        [
+          "Cobertura de países e territórios",
+          [
+            "A cobertura segue o padrão M49 das Nações Unidas para “países ou áreas”. A exibição como país ou território serve apenas à navegação e não representa posição sobre soberania ou status político."
+          ]
+        ],
+        [
+          "Bandeiras",
+          [
+            "As bandeiras são usadas para identificação. Territórios podem aparecer com uma bandeira local ou com a do país administrador, conforme o status oficial e o uso comum. O uso de uma bandeira não implica qualquer posição sobre soberania, reconhecimento ou status político."
+          ]
+        ],
+        [
+          "Arredondamento",
+          [
+            "Os valores exibidos podem ser arredondados para facilitar a leitura. Os rankings podem ser calculados com base nos dados subjacentes da fonte, e não nos valores arredondados exibidos."
+          ]
+        ],
+        [
+          "Dados em moeda local na zona do euro",
+          [
+            "Quando uma série histórica abrange períodos anteriores e posteriores à adoção do euro, os dados em moeda local anteriores à adoção podem ser apresentados em euros usando as taxas de conversão fixas oficiais. Para mais informações, consulte as perguntas frequentes do World Economic Outlook do FMI."
+          ]
+        ]
+      ],
+      "de": [
+        [
+          "Über diese Website",
+          [
+            "Diese Website bietet Daten, Rankings und Vergleiche auf Länderebene zu wichtigen internationalen Indikatoren und erleichtert das Suchen, Vergleichen und Erkunden weltweiter Statistiken."
+          ]
+        ],
+        [
+          "Verlinkung dieser Website",
+          [
+            "Alle Seiten dürfen ohne vorherige Genehmigung verlinkt werden. Wenn Sie Daten oder Diagramme teilen, verlinken Sie bitte die betreffende Seite, damit die Quelle und die neuesten Werte überprüft werden können."
+          ]
+        ],
+        [
+          "Schätzungen und Prognosen",
+          [
+            "Einige Daten können je nach Quelle, Land oder Gebiet und Jahr Schätzungen oder Prognosen enthalten. Einzelheiten zur Methodik finden Sie in der Originalquelle."
+          ]
+        ],
+        [
+          "Regionale Einteilung",
+          [
+            "Die regionalen Gruppierungen folgen dem UN-M49-Standard. Für die Navigation werden Mittelamerika und die Karibik Nordamerika zugeordnet."
+          ]
+        ],
+        [
+          "Abdeckung von Ländern und Gebieten",
+          [
+            "Die Abdeckung basiert auf der UN-M49-Klassifikation für „Länder oder Gebiete“. Die Bezeichnung der Einträge als Länder oder Gebiete dient ausschließlich der Navigation und bringt keine Haltung zu Souveränität oder politischem Status zum Ausdruck."
+          ]
+        ],
+        [
+          "Flaggensymbole",
+          [
+            "Flaggensymbole dienen der Identifikation. Je nach offiziellem Status und üblicher Verwendung können Gebiete mit der Flagge des Landes, das sie verwaltet, oder mit einer lokalen Flagge dargestellt werden. Ihre Verwendung bringt keine Haltung zu Souveränität, Anerkennung oder politischem Status zum Ausdruck."
+          ]
+        ],
+        [
+          "Rundung von Zahlen",
+          [
+            "Zahlen können zur besseren Lesbarkeit gerundet werden. Rankings können auf den ungerundeten Quelldaten statt auf den angezeigten gerundeten Werten beruhen."
+          ]
+        ],
+        [
+          "Landeswährungsdaten im Euroraum",
+          [
+            "Für Länder, die den Euro eingeführt haben, können Landeswährungsdaten aus der Zeit vor der Euro-Einführung anhand der amtlich festgelegten Umrechnungskurse in Euro dargestellt werden. Einzelheiten finden Sie in den FAQ zum World Economic Outlook des IWF."
+          ]
+        ]
+      ],
+      "it": [
+        [
+          "Il sito",
+          [
+            "Questo sito presenta dati per paese, classifiche e confronti relativi ai principali indicatori internazionali, per rendere più semplice cercare, confrontare ed esplorare le statistiche globali."
+          ]
+        ],
+        [
+          "Collegamenti a questo sito",
+          [
+            "È possibile inserire liberamente link a qualsiasi pagina senza autorizzazione preventiva. Quando si condividono dati o grafici, si invita a inserire un link alla pagina pertinente, affinché i lettori possano verificare la fonte e i valori più recenti."
+          ]
+        ],
+        [
+          "Stime e proiezioni",
+          [
+            "Alcuni dati possono includere stime o proiezioni a seconda della fonte, del paese o territorio e dell’anno. Per i dettagli sulla metodologia, consultare la fonte originale."
+          ]
+        ],
+        [
+          "Classificazione regionale",
+          [
+            "I raggruppamenti regionali seguono lo standard UN M49. Ai fini della navigazione, l’America centrale e i Caraibi sono inclusi nell’America settentrionale."
+          ]
+        ],
+        [
+          "Copertura di paesi e territori",
+          [
+            "La copertura si basa sullo standard UN M49 «paesi o aree». Le voci sono visualizzate come paesi o territori esclusivamente ai fini della navigazione e non implicano alcuna posizione sulla sovranità o sullo status politico."
+          ]
+        ],
+        [
+          "Icone delle bandiere",
+          [
+            "Le icone delle bandiere sono utilizzate per l’identificazione. A seconda dello status ufficiale e dell’uso comune, i territori possono essere rappresentati dalla bandiera del paese che li amministra o da una bandiera locale. Il loro uso non implica alcuna posizione sulla sovranità, sul riconoscimento o sullo status politico."
+          ]
+        ],
+        [
+          "Arrotondamento dei valori",
+          [
+            "I valori possono essere arrotondati per facilitarne la lettura. Le classifiche possono utilizzare i dati sottostanti della fonte anziché i valori arrotondati visualizzati."
+          ]
+        ],
+        [
+          "Dati in valuta nazionale nell’area dell’euro",
+          [
+            "Per i paesi che hanno adottato l’euro, i dati in valuta nazionale precedenti all’adozione possono essere mostrati in euro utilizzando i tassi di conversione fissi ufficiali. Per maggiori dettagli, consultare le FAQ del World Economic Outlook del FMI."
+          ]
+        ]
+      ],
+      "ko": [
+        [
+          "소개",
+          [
+            "이 웹사이트는 주요 국제 지표의 국가별 데이터와 순위, 비교 정보를 제공하여 전 세계 통계를 더 쉽게 검색하고 비교하며 살펴볼 수 있도록 합니다."
+          ]
+        ],
+        [
+          "이 웹사이트에 링크하기",
+          [
+            "어느 페이지든 사전 허가 없이 자유롭게 링크할 수 있습니다. 데이터나 차트를 공유할 때는 독자가 출처와 최신 값을 확인할 수 있도록 해당 페이지의 링크를 함께 제공해 주세요."
+          ]
+        ],
+        [
+          "추정치 및 전망치",
+          [
+            "일부 데이터에는 출처, 국가·지역 및 연도에 따라 추정치나 전망치가 포함될 수 있습니다. 방법론에 관한 자세한 내용은 원출처를 확인하세요."
+          ]
+        ],
+        [
+          "지역 분류",
+          [
+            "지역 구분은 UN M49 기준을 따릅니다. 탐색 편의를 위해 중앙아메리카와 카리브해 지역은 북아메리카에 포함합니다."
+          ]
+        ],
+        [
+          "국가 및 지역 수록 범위",
+          [
+            "수록 범위는 UN M49의 ‘국가 또는 지역’ 기준을 따릅니다. 항목을 국가 또는 지역으로 표시하는 것은 탐색 목적일 뿐이며 주권이나 정치적 지위에 관한 어떠한 입장도 의미하지 않습니다."
+          ]
+        ],
+        [
+          "국기 아이콘",
+          [
+            "국기 아이콘은 식별을 위해 사용합니다. 지역은 공식 지위와 일반적인 사용 방식에 따라 관할 국가의 국기나 해당 지역의 깃발로 표시될 수 있습니다. 이러한 표시는 주권, 승인 또는 정치적 지위에 관한 어떠한 입장도 의미하지 않습니다."
+          ]
+        ],
+        [
+          "수치 반올림",
+          [
+            "읽기 쉽도록 수치를 반올림해 표시할 수 있습니다. 순위는 화면에 표시된 반올림 값이 아니라 출처의 기초 데이터를 기준으로 계산될 수 있습니다."
+          ]
+        ],
+        [
+          "유로 지역의 자국 통화 데이터",
+          [
+            "유로를 도입한 국가는 도입 이전의 자국 통화 데이터를 공식 고정 환산율을 적용해 유로로 표시할 수 있습니다. 자세한 내용은 IMF 세계경제전망(World Economic Outlook) FAQ를 확인하세요."
+          ]
+        ]
+      ],
+      "tr": [
+        [
+          "Hakkında",
+          [
+            "Bu web sitesi, başlıca uluslararası göstergeler için ülke düzeyinde veriler, sıralamalar ve karşılaştırmalar sunarak küresel istatistiklerin aranmasını, karşılaştırılmasını ve incelenmesini kolaylaştırır."
+          ]
+        ],
+        [
+          "Bu Web Sitesine Bağlantı Verme",
+          [
+            "Önceden izin almadan herhangi bir sayfaya bağlantı verebilirsiniz. Veri veya grafik paylaşırken okuyucuların kaynağı ve en güncel değerleri doğrulayabilmesi için ilgili sayfaya bağlantı vermenizi öneririz."
+          ]
+        ],
+        [
+          "Tahminler ve Projeksiyonlar",
+          [
+            "Bazı veriler kaynağa, ülke veya bölgeye ve yıla bağlı olarak tahmin ya da projeksiyon içerebilir. Yönteme ilişkin ayrıntılar için asıl kaynağa bakın."
+          ]
+        ],
+        [
+          "Bölgesel Sınıflandırma",
+          [
+            "Bölgesel gruplamalar BM M49 standardını izler. Gezinme amacıyla Orta Amerika ve Karayipler, Kuzey Amerika kapsamında değerlendirilir."
+          ]
+        ],
+        [
+          "Ülke ve Bölge Kapsamı",
+          [
+            "Kapsam, BM M49 “ülkeler veya bölgeler” standardına dayanır. Kayıtlar yalnızca gezinme amacıyla ülke veya bölge olarak gösterilir ve egemenlik ya da siyasi statü konusunda herhangi bir tutum ifade etmez."
+          ]
+        ],
+        [
+          "Bayrak Simgeleri",
+          [
+            "Bayrak simgeleri tanımlama amacıyla kullanılır. Bölgeler, resmî statüye ve yaygın kullanıma bağlı olarak, onları idare eden ülkenin bayrağıyla veya yerel bir bayrakla gösterilebilir. Bu bayrakların kullanımı egemenlik, tanınma veya siyasi statü konusunda herhangi bir tutum ifade etmez."
+          ]
+        ],
+        [
+          "Sayıların Yuvarlanması",
+          [
+            "Sayılar okunabilirlik için yuvarlanabilir. Sıralamalarda, görüntülenen yuvarlanmış değerler yerine kaynağın temel verileri kullanılabilir."
+          ]
+        ],
+        [
+          "Avro Bölgesi Yerel Para Birimi Verileri",
+          [
+            "Avroyu benimseyen ülkelerde, benimseme öncesindeki yerel para birimi verileri resmî sabit dönüşüm oranları kullanılarak avro cinsinden gösterilebilir. Ayrıntılar için IMF Dünya Ekonomik Görünüm SSS bölümüne bakın."
+          ]
+        ]
+      ],
+      "id": [
+        [
+          "Tentang",
+          [
+            "Situs ini menyajikan data, peringkat, dan perbandingan antarnegara untuk berbagai indikator internasional utama agar statistik global lebih mudah dicari, dibandingkan, dan dijelajahi."
+          ]
+        ],
+        [
+          "Menautkan ke Situs Ini",
+          [
+            "Tautan ke halaman mana pun diperbolehkan tanpa izin terlebih dahulu. Saat membagikan data atau grafik, sertakan tautan ke halaman terkait agar pembaca dapat memeriksa sumber dan nilai terbaru."
+          ]
+        ],
+        [
+          "Estimasi dan Proyeksi",
+          [
+            "Sebagian data dapat mencakup estimasi atau proyeksi, tergantung pada sumber, negara atau wilayah, dan tahun. Lihat sumber asli untuk mengetahui rincian metodologinya."
+          ]
+        ],
+        [
+          "Klasifikasi Wilayah",
+          [
+            "Pengelompokan wilayah mengikuti standar M49 PBB. Untuk keperluan penelusuran, Amerika Tengah dan Karibia dimasukkan ke dalam Amerika Utara."
+          ]
+        ],
+        [
+          "Cakupan Negara dan Teritori",
+          [
+            "Cakupan didasarkan pada standar M49 PBB mengenai “negara atau wilayah”. Entri ditampilkan sebagai negara atau teritori hanya untuk keperluan navigasi dan tidak menyatakan sikap mengenai kedaulatan atau status politik."
+          ]
+        ],
+        [
+          "Ikon Bendera",
+          [
+            "Ikon bendera digunakan untuk identifikasi. Teritori dapat ditampilkan dengan bendera negara yang mengelolanya atau bendera lokal, sesuai dengan status resmi dan penggunaan umum. Penggunaan bendera tersebut tidak menyatakan sikap apa pun mengenai kedaulatan, pengakuan, atau status politik."
+          ]
+        ],
+        [
+          "Pembulatan Angka",
+          [
+            "Angka dapat dibulatkan agar mudah dibaca. Peringkat dapat menggunakan data dasar dari sumber, bukan nilai yang telah dibulatkan dan ditampilkan."
+          ]
+        ],
+        [
+          "Data Mata Uang Lokal Zona Euro",
+          [
+            "Untuk negara yang mengadopsi euro, data mata uang lokal sebelum adopsi dapat ditampilkan dalam euro menggunakan kurs konversi tetap resmi. Lihat FAQ World Economic Outlook dari IMF untuk rinciannya."
           ]
         ]
       ]
@@ -219,7 +646,35 @@
       },
       "es": {
         "heading": "Fuentes",
-        "intro": "Este sitio web utiliza bases de datos internacionales públicas y fuentes estadísticas oficiales, entre ellas:"
+        "intro": "Este sitio web utiliza bases de datos internacionales de acceso público y fuentes estadísticas oficiales, entre ellas:"
+      },
+      "fr": {
+        "heading": "Sources",
+        "intro": "Ce site utilise des bases de données internationales accessibles au public et des sources statistiques officielles, notamment :"
+      },
+      "pt": {
+        "heading": "Fontes",
+        "intro": "Este site utiliza bases de dados internacionais públicas e fontes estatísticas oficiais, incluindo:"
+      },
+      "de": {
+        "heading": "Quellen",
+        "intro": "Diese Website verwendet öffentlich zugängliche internationale Datenbanken und amtliche statistische Quellen, darunter:"
+      },
+      "it": {
+        "heading": "Fonti",
+        "intro": "Questo sito utilizza banche dati internazionali pubbliche e fonti statistiche ufficiali, tra cui:"
+      },
+      "ko": {
+        "heading": "출처",
+        "intro": "이 웹사이트는 공개된 국제 데이터베이스와 공식 통계 자료를 사용하며, 주요 출처는 다음과 같습니다."
+      },
+      "tr": {
+        "heading": "Kaynaklar",
+        "intro": "Bu web sitesi, başta aşağıdakiler olmak üzere kamuya açık uluslararası veri tabanlarını ve resmî istatistik kaynaklarını kullanır:"
+      },
+      "id": {
+        "heading": "Sumber",
+        "intro": "Situs ini menggunakan basis data internasional yang tersedia untuk umum dan sumber statistik resmi, antara lain:"
       }
     }
   },
@@ -228,22 +683,50 @@
     "title": {
       "en": "Disclaimer & Privacy Policy",
       "ja": "免責事項・プライバシーポリシー",
-      "es": "Aviso legal y política de privacidad"
+      "es": "Aviso legal y política de privacidad",
+      "fr": "Mentions légales et politique de confidentialité",
+      "pt": "Aviso legal e política de privacidade",
+      "de": "Haftungsausschluss und Datenschutz",
+      "it": "Note legali e privacy",
+      "ko": "면책 조항 및 개인정보처리방침",
+      "tr": "Sorumluluk Reddi ve Gizlilik Politikası",
+      "id": "Penafian dan Kebijakan Privasi"
     },
     "description": {
       "en": "Disclaimer, data limitations, privacy policy, cookies, analytics, advertising, third-party links, and contact information for this website.",
       "ja": "このウェブサイトの免責事項、データの制約、プライバシーポリシー、Cookie、アクセス解析、広告、外部リンクについて説明します。",
-      "es": "Aviso legal, limitaciones de los datos, política de privacidad, cookies, analítica, publicidad, enlaces de terceros e información de contacto de este sitio web."
+      "es": "Aviso legal, limitaciones de los datos, política de privacidad, cookies, analítica, publicidad, enlaces de terceros e información de contacto de este sitio web.",
+      "fr": "Mentions légales, limites des données, politique de confidentialité, cookies, mesure d’audience, publicité, liens vers des sites tiers et informations de contact de ce site.",
+      "pt": "Aviso legal, limitações dos dados, política de privacidade, cookies, análise, publicidade, links de terceiros e informações de contato deste site.",
+      "de": "Haftungsausschluss, Dateneinschränkungen, Datenschutz, Cookies, Analyse, Werbung, Links zu Dritten und Kontaktinformationen dieser Website.",
+      "it": "Esclusione di responsabilità, limitazioni dei dati, informativa sulla privacy, cookie, analisi, pubblicità, link a siti terzi e informazioni di contatto per questo sito.",
+      "ko": "이 웹사이트의 면책 조항, 데이터의 한계, 개인정보처리방침, 쿠키, 이용 분석, 광고, 제3자 링크 및 연락처 정보를 안내합니다.",
+      "tr": "Bu sayfada web sitesinin sorumluluk reddi, veri sınırlamaları, gizlilik politikası, çerezler, analiz, reklam, üçüncü taraf bağlantıları ve iletişim bilgileri yer alır.",
+      "id": "Penafian, keterbatasan data, kebijakan privasi, cookie, analitik, iklan, tautan pihak ketiga, dan informasi kontak untuk situs ini."
     },
     "lastUpdated": {
       "en": "Last updated: July 20, 2026",
       "ja": "最終更新日：2026年7月20日",
-      "es": "Última actualización: 20 de julio de 2026"
+      "es": "Última actualización: 20 de julio de 2026",
+      "fr": "Dernière mise à jour : 20 juillet 2026",
+      "pt": "Última atualização: 20 de julho de 2026",
+      "de": "Zuletzt aktualisiert: 20. Juli 2026",
+      "it": "Ultimo aggiornamento: 20 luglio 2026",
+      "ko": "최종 수정일: 2026년 7월 20일",
+      "tr": "Son güncelleme: 20 Temmuz 2026",
+      "id": "Terakhir diperbarui: 20 Juli 2026"
     },
     "contentClass": {
       "en": "information-content",
       "ja": "information-content",
-      "es": "information-content"
+      "es": "information-content",
+      "fr": "information-content",
+      "pt": "information-content",
+      "de": "information-content",
+      "it": "information-content",
+      "ko": "information-content",
+      "tr": "information-content",
+      "id": "information-content"
     },
     "sections": {
       "en": [
@@ -570,49 +1053,49 @@
         [
           "Enlaces externos",
           [
-            "Este sitio web puede contener enlaces a sitios de terceros. No somos responsables de su contenido ni de sus prácticas de privacidad, y la inclusión de un enlace no implica aprobación."
+            "Este sitio web puede contener enlaces a sitios de terceros. No somos responsables de su contenido ni de sus prácticas de privacidad, y la inclusión de un enlace no implica que los respaldemos."
           ]
         ],
         [
           "Información que recopilamos",
           [
-            "Podemos recopilar automáticamente información técnica y de uso limitada, como la dirección IP, la ubicación aproximada, información del navegador y el dispositivo, la fuente de referencia, las páginas visitadas y las interacciones con el sitio. También podemos recopilar la información que facilites al contactarnos. No envíes información personal sensible."
+            "Podemos recopilar automáticamente información técnica y de uso limitada, como la dirección IP, la ubicación aproximada, información del navegador y el dispositivo, el sitio web de procedencia, las páginas visitadas y las interacciones con el sitio. También podemos recopilar la información que facilites al contactarnos. No envíes información personal sensible."
           ]
         ],
         [
           "Cómo utilizamos la información",
           [
-            "Utilizamos la información recopilada para operar y mejorar el sitio web, analizar su uso, responder consultas, mantener la seguridad, prevenir abusos, facilitar la publicidad y cumplir obligaciones legales. La información proporcionada al contactarnos se utilizará para responder a tu consulta y para fines relacionados."
+            "Utilizamos la información recopilada para operar y mejorar el sitio web, analizar su uso, responder consultas, mantener la seguridad, prevenir abusos, gestionar la publicidad y cumplir obligaciones legales. La información proporcionada al contactarnos se utilizará para responder a tu consulta y para fines relacionados."
           ]
         ],
         [
           "Bases jurídicas del tratamiento",
           [
-            "Cuando la legislación aplicable lo exija, tratamos la información personal sobre la base del consentimiento, intereses legítimos u obligaciones legales. Puedes retirar tu consentimiento en cualquier momento sin que ello afecte a la licitud del tratamiento anterior."
+            "Cuando la legislación aplicable lo exija, tratamos la información personal sobre la base de tu consentimiento, nuestros intereses legítimos o el cumplimiento de obligaciones legales. Puedes retirar tu consentimiento en cualquier momento sin que ello afecte a la licitud del tratamiento anterior."
           ]
         ],
         [
           "Cookies y tecnologías similares",
           [
-            "Nosotros y proveedores externos, incluido Google, podemos utilizar cookies y tecnologías similares para operar el sitio web, analizar su uso, mantener la seguridad y facilitar la publicidad. Estos proveedores pueden utilizar cookies, balizas web, direcciones IP u otros identificadores en relación con sus servicios. Cuando lo exija la ley, las tecnologías no esenciales solo se utilizarán después de obtener el consentimiento, que podrá administrarse o retirarse mediante la configuración de privacidad o cookies del sitio web."
+            "Tanto nosotros como los proveedores externos, incluido Google, podemos utilizar cookies y tecnologías similares para operar el sitio web, analizar su uso, mantener la seguridad y gestionar la publicidad. Estos proveedores pueden utilizar cookies, balizas web, direcciones IP u otros identificadores en relación con sus servicios. Cuando lo exija la ley, las tecnologías no esenciales solo se utilizarán después de obtener el consentimiento. Este podrá gestionarse o retirarse mediante la configuración de privacidad o cookies del sitio web."
           ]
         ],
         [
           "Gestión de las preferencias de cookies y privacidad",
           [
-            "Puedes administrar o retirar tu consentimiento para las cookies no esenciales y tecnologías similares mediante la configuración de cookies o privacidad del sitio web. También puedes bloquear o eliminar cookies desde el navegador, aunque su configuración puede no controlar todas las tecnologías de terceros y puede afectar a determinadas funciones del sitio."
+            "Puedes administrar o retirar tu consentimiento para las cookies no esenciales y tecnologías similares mediante la configuración de cookies o privacidad del sitio web. También puedes bloquear o eliminar cookies desde el navegador, aunque la configuración del navegador puede no controlar todas las tecnologías de terceros y puede afectar a determinadas funciones del sitio."
           ]
         ],
         [
           "Publicidad",
           [
-            "Este sitio web puede mostrar anuncios de proveedores externos, incluido Google AdSense. Estos proveedores pueden utilizar cookies, tecnologías similares e información sobre visitas a este y otros sitios para ofrecer, personalizar, medir y proteger anuncios. Puedes administrar el consentimiento y la personalización publicitaria mediante la configuración de cookies o privacidad del sitio y, cuando esté disponible, la configuración publicitaria del proveedor. Según tus elecciones y ubicación, los anuncios pueden ser personalizados, no personalizados o limitados."
+            "Este sitio web puede mostrar anuncios de proveedores externos, incluido Google AdSense. Estos proveedores pueden utilizar cookies, tecnologías similares e información sobre visitas a este y otros sitios para mostrar y personalizar anuncios, medir su rendimiento y garantizar su seguridad. Puedes administrar el consentimiento y la personalización publicitaria mediante la configuración de cookies o privacidad del sitio y, cuando esté disponible, la configuración publicitaria del proveedor. En función de tus preferencias y ubicación, los anuncios pueden ser personalizados, no personalizados o limitados."
           ]
         ],
         [
-          "Analítica",
+          "Análisis web",
           [
-            "Este sitio web puede utilizar servicios de analítica, incluido Google Analytics, para comprender su uso y mejorar el rendimiento. Estos servicios pueden tratar información como las páginas visitadas, la ubicación aproximada, los datos del dispositivo y navegador, la fuente de referencia y las interacciones con el sitio. Cuando lo exija la ley, las tecnologías de analítica solo se utilizarán después de obtener el consentimiento."
+            "Este sitio web puede utilizar servicios de análisis, incluido Google Analytics, para conocer cómo se utiliza el sitio y mejorar su rendimiento. Estos servicios pueden tratar información como las páginas visitadas, la ubicación aproximada, los datos del dispositivo y del navegador, el sitio web de procedencia y las interacciones con el sitio. Cuando lo exija la ley, las tecnologías de análisis solo se utilizarán después de obtener el consentimiento."
           ]
         ],
         [
@@ -646,7 +1129,7 @@
         [
           "Cómo compartimos la información",
           [
-            "Podemos compartir información con proveedores de servicios, asesores, autoridades u otras partes cuando sea necesario para operar y proteger el sitio web, ofrecer publicidad y analítica o cumplir la ley. No vendemos información personal a cambio de dinero, aunque algunas leyes pueden considerar ciertas comunicaciones relacionadas con la publicidad como «venta», «intercambio» o «publicidad dirigida»; en esos casos se ofrecerán las opciones de exclusión aplicables."
+            "Podemos compartir información con proveedores de servicios, asesores, autoridades u otras partes cuando sea necesario para operar y proteger el sitio web, ofrecer publicidad y servicios de análisis o cumplir la ley. No vendemos información personal a cambio de dinero, aunque algunas leyes pueden considerar determinadas divulgaciones relacionadas con la publicidad como «venta», «cesión» o «publicidad dirigida»; en esos casos se ofrecerán las opciones de exclusión aplicables."
           ]
         ],
         [
@@ -658,7 +1141,7 @@
         [
           "Conservación de datos",
           [
-            "Conservamos la información personal solo durante el tiempo razonablemente necesario para fines operativos, de seguridad, jurídicos y de resolución de disputas. Los periodos de conservación pueden variar según el tipo de datos y el servicio, incluidas las configuraciones y políticas de los proveedores de analítica, publicidad y otros servicios. Después, la información puede eliminarse, agregarse o anonimizarse."
+            "Conservamos la información personal solo durante el tiempo razonablemente necesario para fines operativos, de seguridad, jurídicos y de resolución de disputas. Los periodos de conservación pueden variar según el tipo de datos y el servicio, incluidas las configuraciones y políticas de los proveedores de análisis, publicidad y otros servicios. Una vez transcurridos esos periodos, la información podrá eliminarse, agregarse o anonimizarse."
           ]
         ],
         [
@@ -670,27 +1153,27 @@
         [
           "Tus derechos de privacidad",
           [
-            "Según tu ubicación y la legislación aplicable, puedes tener derecho a acceder, rectificar, eliminar o limitar el tratamiento de tu información personal, oponerte a él, solicitar su portabilidad, retirar el consentimiento y rechazar determinados usos publicitarios, ventas o intercambios. No sufrirás discriminación ilícita por ejercer los derechos de privacidad aplicables. Cuando corresponda, también puedes presentar una reclamación ante una autoridad competente de protección de datos."
+            "Según tu ubicación y la legislación aplicable, puedes tener derecho a acceder a tu información personal, rectificarla, eliminarla, limitar su tratamiento, oponerte a él, solicitar su portabilidad, retirar el consentimiento y excluirte de determinadas formas de publicidad, venta o cesión. No sufrirás discriminación ilícita por ejercer los derechos de privacidad aplicables. Cuando corresponda, también podrás presentar una reclamación ante una autoridad de protección de datos competente."
           ]
         ],
         [
           "Privacidad de los menores",
           [
-            "Este sitio web está destinado al público general y no se dirige a menores. No recopilamos deliberadamente información personal de menores de la edad legal aplicable. Si tenemos conocimiento de que se ha recopilado dicha información, tomaremos las medidas oportunas."
+            "Este sitio web está destinado al público general y no se dirige a menores. No recopilamos a sabiendas información personal de menores que no hayan alcanzado la edad mínima establecida por la legislación aplicable. Si tenemos conocimiento de que se ha recopilado dicha información, tomaremos las medidas oportunas."
           ]
         ],
         [
           "Cambios en esta política",
           [
-            "Podemos actualizar esta política periódicamente. Los cambios se publicarán en esta página con una nueva fecha de «Última actualización» y, cuando la ley lo exija, se facilitará un aviso adicional o se solicitará consentimiento."
+            "Podemos actualizar esta política periódicamente. Los cambios se publicarán en esta página con una nueva fecha de «Última actualización» y, cuando la ley lo exija, se proporcionará una notificación adicional o se solicitará consentimiento."
           ]
         ],
         [
           "Operador del sitio web y contacto",
           [
-            "Este sitio web opera bajo el nombre Geostarna.",
+            "Este sitio web se gestiona bajo el nombre de Geostarna.",
             {
-              "template": "Para consultas generales, utiliza nuestra {contactLink}.",
+              "template": "Para consultas generales, ponte en contacto con nosotros a través de nuestra {contactLink}.",
               "links": {
                 "contactLink": {
                   "path": "contact/index.html",
@@ -699,6 +1182,1070 @@
               }
             },
             "Para ejercer cualquier derecho de privacidad aplicable, indica claramente que tu solicitud se refiere a privacidad o datos personales. Es posible que debamos verificar tu identidad antes de tramitar determinadas solicitudes."
+          ]
+        ]
+      ],
+      "fr": [
+        [
+          "Mentions légales",
+          [
+            "Les informations fournies sur ce site le sont uniquement à des fins d’information générale.",
+            "Nous utilisons des sources fiables et cherchons à maintenir des informations exactes et à jour. Les données statistiques peuvent toutefois inclure des estimations, des révisions, des valeurs manquantes ou des différences méthodologiques.",
+            "Les données peuvent être révisées sans préavis et différer d’autres sources ou publications ultérieures. Nous ne garantissons pas qu’elles soient complètes, actuelles, exactes ou adaptées à un usage particulier.",
+            "Aucun contenu de ce site ne constitue un conseil professionnel. Vérifiez indépendamment toute information importante et consultez un professionnel qualifié si nécessaire.",
+            "Dans toute la mesure permise par la loi, nous déclinons toute responsabilité pour les pertes ou dommages résultant de l’utilisation de ce site ou de la confiance accordée à son contenu."
+          ]
+        ],
+        [
+          "Sources de données",
+          [
+            "Les données provenant de sources différentes peuvent ne pas être directement comparables en raison de différences de méthodologie, de définition, de couverture, de révision ou de calendrier de mise à jour. Les données et contenus de tiers restent soumis aux droits et conditions d’utilisation de leurs fournisseurs. Consultez la source d’origine, les métadonnées, les définitions et les notes de publication avant toute décision fondée sur ces données."
+          ]
+        ],
+        [
+          "Liens externes",
+          [
+            "Ce site peut contenir des liens vers des sites tiers. Nous ne sommes pas responsables de leur contenu ni de leurs pratiques de confidentialité, et la présence d’un lien ne vaut pas approbation."
+          ]
+        ],
+        [
+          "Informations collectées",
+          [
+            "Nous pouvons recueillir automatiquement un nombre limité d’informations techniques et d’utilisation, telles que l’adresse IP, la localisation approximative, les informations relatives au navigateur et à l’appareil, le site référent, les pages consultées et les interactions avec le site. Nous pouvons également recueillir les informations que vous fournissez en nous contactant. N’envoyez pas de données personnelles sensibles."
+          ]
+        ],
+        [
+          "Utilisation des informations",
+          [
+            "Nous utilisons les informations recueillies pour exploiter et améliorer le site, analyser son utilisation, répondre aux demandes, assurer la sécurité, prévenir les abus, permettre la publicité et respecter nos obligations légales. Les informations transmises lors d’un contact servent à répondre à votre demande et aux finalités connexes."
+          ]
+        ],
+        [
+          "Bases juridiques du traitement",
+          [
+            "Lorsque la loi l’exige, nous traitons les données personnelles sur la base du consentement, de nos intérêts légitimes ou d’obligations légales. Vous pouvez retirer votre consentement à tout moment sans remettre en cause la licéité du traitement antérieur."
+          ]
+        ],
+        [
+          "Cookies et technologies similaires",
+          [
+            "Nous et des prestataires tiers, dont Google, pouvons utiliser des cookies et des technologies similaires pour exploiter le site, analyser son utilisation, assurer sa sécurité et permettre la publicité. Ces prestataires peuvent utiliser des cookies, des balises web, des adresses IP ou d’autres identifiants dans le cadre de leurs services. Lorsque la loi l’exige, les technologies non essentielles ne sont utilisées qu’avec votre consentement, que vous pouvez gérer ou retirer dans les paramètres de confidentialité ou de cookies du site."
+          ]
+        ],
+        [
+          "Gestion des choix relatifs aux cookies et à la confidentialité",
+          [
+            "Vous pouvez gérer ou retirer votre consentement aux cookies non essentiels et aux technologies similaires dans les paramètres de cookies ou de confidentialité du site. Vous pouvez également bloquer ou supprimer les cookies dans votre navigateur. Toutefois, les paramètres du navigateur peuvent ne pas permettre de contrôler toutes les technologies de tiers et peuvent affecter certaines fonctionnalités du site."
+          ]
+        ],
+        [
+          "Publicité",
+          [
+            "Ce site peut afficher des annonces de prestataires tiers, dont Google AdSense. Ces prestataires peuvent utiliser des cookies, des technologies similaires et des informations relatives aux visites sur ce site et d’autres sites afin de diffuser, personnaliser, mesurer et sécuriser les annonces. Vous pouvez gérer votre consentement à la publicité et sa personnalisation dans les paramètres de cookies ou de confidentialité du site et, lorsqu’ils sont disponibles, dans les paramètres publicitaires du prestataire. Selon vos choix et votre localisation, les annonces peuvent être personnalisées, non personnalisées ou limitées."
+          ]
+        ],
+        [
+          "Mesure d’audience",
+          [
+            "Ce site peut utiliser des services de mesure d’audience, dont Google Analytics, afin de comprendre comment il est utilisé et d’améliorer ses performances. Ces services peuvent traiter des informations telles que les pages consultées, la localisation approximative, les caractéristiques de l’appareil et du navigateur, le site référent et les interactions avec le site. Lorsque la loi l’exige, les technologies de mesure d’audience ne sont utilisées qu’avec votre consentement."
+          ]
+        ],
+        [
+          "Services Google et utilisation des données",
+          [
+            "Pour savoir comment Google recueille et traite les informations au moyen de Google AdSense, Google Analytics et d’autres services, et connaître les contrôles disponibles, consultez les ressources suivantes :",
+            {
+              "items": [
+                {
+                  "label": "Utilisation par Google des informations provenant de sites ou d’applications qui utilisent ses services",
+                  "href": "https://policies.google.com/technologies/partner-sites?hl=fr"
+                },
+                {
+                  "label": "Règles de confidentialité de Google",
+                  "href": "https://policies.google.com/privacy?hl=fr"
+                },
+                {
+                  "label": "Mon centre d’annonces",
+                  "href": "https://myadcenter.google.com/"
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "Hébergement, sécurité et services techniques",
+          [
+            "Nous pouvons recourir à des prestataires d’hébergement, de sécurité, de traitement de formulaires et d’autres services techniques pour assurer le fonctionnement du site. Ils peuvent traiter les informations techniques ou les données transmises dans la mesure nécessaire à leurs services."
+          ]
+        ],
+        [
+          "Partage des informations",
+          [
+            "Nous pouvons partager des informations avec des prestataires, des conseillers, des autorités ou d’autres parties lorsque cela est nécessaire pour exploiter et protéger le site, proposer de la publicité et des services de mesure d’audience ou respecter la loi. Nous ne vendons pas les données personnelles contre rémunération. Certaines législations peuvent néanmoins considérer certaines communications de données liées à la publicité comme une « vente », un « partage » ou de la « publicité ciblée ». Les moyens d’opposition applicables seront alors proposés."
+          ]
+        ],
+        [
+          "Transferts internationaux de données",
+          [
+            "Nous-mêmes et nos prestataires pouvons traiter des informations dans des pays dont les lois sur la protection des données diffèrent, en appliquant les garanties juridiques appropriées lorsque cela est requis."
+          ]
+        ],
+        [
+          "Durée de conservation",
+          [
+            "Nous ne conservons les données personnelles que pendant la durée raisonnablement nécessaire aux finalités opérationnelles, de sécurité, juridiques et de règlement des litiges. La durée de conservation peut varier selon le type de données et le service concerné, notamment en fonction des paramètres et politiques des prestataires de mesure d’audience, de publicité et d’autres services. À l’issue de cette durée, les informations peuvent être supprimées, agrégées ou anonymisées."
+          ]
+        ],
+        [
+          "Sécurité des données",
+          [
+            "Nous appliquons des mesures techniques et organisationnelles raisonnables pour protéger les informations, sans pouvoir garantir une sécurité absolue."
+          ]
+        ],
+        [
+          "Vos droits en matière de protection des données",
+          [
+            "Selon votre lieu de résidence et la législation applicable, vous pouvez disposer de droits d’accès, de rectification, d’effacement, de limitation du traitement, d’opposition et de portabilité. Vous pouvez également retirer votre consentement et vous opposer à certaines formes de publicité ainsi qu’à la vente ou au partage de vos données personnelles. Vous ne ferez l’objet d’aucune discrimination illicite pour avoir exercé les droits qui vous sont applicables. Le cas échéant, vous pouvez aussi introduire une réclamation auprès d’une autorité compétente en matière de protection des données."
+          ]
+        ],
+        [
+          "Protection des enfants",
+          [
+            "Ce site s’adresse au grand public et non aux enfants. Nous ne recueillons pas sciemment les données personnelles d’enfants n’ayant pas atteint l’âge minimum prévu par la législation applicable. Si nous constatons que de telles données ont été recueillies, nous prendrons les mesures appropriées."
+          ]
+        ],
+        [
+          "Modifications de la présente politique",
+          [
+            "Nous pouvons mettre cette politique à jour. Toute modification sera publiée sur cette page avec une nouvelle date de mise à jour. Lorsque la loi l’exige, nous fournirons un avis supplémentaire ou recueillerons votre consentement."
+          ]
+        ],
+        [
+          "Exploitant du site et contact",
+          [
+            "Ce site est exploité sous le nom de Geostarna.",
+            {
+              "template": "Pour toute demande générale, utilisez notre {contactLink}.",
+              "links": {
+                "contactLink": {
+                  "path": "contact/index.html",
+                  "label": "page de contact"
+                }
+              }
+            },
+            "Pour exercer un droit relatif à la vie privée, indiquez clairement que votre demande concerne la confidentialité ou les données personnelles. Nous pouvons être amenés à vérifier votre identité avant de traiter certaines demandes."
+          ]
+        ]
+      ],
+      "pt": [
+        [
+          "Aviso legal",
+          [
+            "As informações deste site são fornecidas apenas para fins informativos gerais.",
+            "Utilizamos fontes confiáveis e buscamos manter as informações corretas e atualizadas. Entretanto, dados estatísticos podem incluir estimativas, revisões, valores ausentes ou diferenças metodológicas.",
+            "Os dados podem ser revisados sem aviso e diferir de outras fontes ou publicações posteriores. Não garantimos que sejam completos, atuais, exatos ou adequados a uma finalidade específica.",
+            "Nenhum conteúdo deste site constitui orientação profissional. Verifique informações importantes de forma independente e consulte um profissional qualificado quando necessário.",
+            "Na medida máxima permitida pela legislação aplicável, não nos responsabilizamos por perdas ou danos decorrentes do uso deste site ou da confiança em seu conteúdo."
+          ]
+        ],
+        [
+          "Fontes de dados",
+          [
+            "Dados de fontes diferentes podem não ser diretamente comparáveis devido a diferenças de metodologia, definições, cobertura, revisões ou momento da atualização. Dados e materiais de terceiros continuam sujeitos aos direitos e termos de seus fornecedores. Antes de tomar decisões com base nos dados, consulte a fonte original, os metadados, as definições e as notas de publicação."
+          ]
+        ],
+        [
+          "Links externos",
+          [
+            "Este site pode conter links para sites de terceiros. Não somos responsáveis pelo conteúdo nem pelas práticas de privacidade desses sites, e a inclusão de um link não implica recomendação ou aprovação."
+          ]
+        ],
+        [
+          "Informações que coletamos",
+          [
+            "Podemos coletar automaticamente uma quantidade limitada de informações técnicas e de uso, como endereço IP, localização aproximada, navegador, dispositivo, origem da visita, páginas acessadas e interações. Também podemos coletar informações fornecidas ao entrar em contato conosco. Não envie informações pessoais sensíveis."
+          ]
+        ],
+        [
+          "Como usamos as informações",
+          [
+            "Usamos as informações para operar e melhorar o site, analisar o uso, responder a solicitações, manter a segurança, prevenir abusos, viabilizar publicidade e cumprir obrigações legais. As informações fornecidas ao entrar em contato conosco são usadas para responder à sua solicitação e para fins relacionados."
+          ]
+        ],
+        [
+          "Bases legais para o tratamento",
+          [
+            "Quando exigido pela legislação aplicável, tratamos dados pessoais com base no consentimento, em interesses legítimos ou em obrigações legais. O consentimento pode ser retirado a qualquer momento, sem afetar a legalidade do tratamento realizado antes da retirada."
+          ]
+        ],
+        [
+          "Cookies e tecnologias semelhantes",
+          [
+            "Nós e prestadores de serviços terceiros, incluindo o Google, podemos usar cookies e tecnologias semelhantes para operar o site, analisar seu uso, manter a segurança e viabilizar publicidade. Esses prestadores podem usar cookies, web beacons, endereços IP ou outros identificadores na prestação de seus serviços. Quando exigido por lei, tecnologias não essenciais só são usadas após consentimento, que pode ser gerenciado ou retirado nas configurações de privacidade ou de cookies do site."
+          ]
+        ],
+        [
+          "Gerenciamento de cookies e privacidade",
+          [
+            "Você pode gerenciar ou retirar o consentimento para cookies e tecnologias semelhantes nas configurações de cookies ou privacidade do site, além de bloquear ou excluir cookies pelo navegador. As configurações do navegador podem não controlar todas as tecnologias de terceiros, e o bloqueio de determinados cookies pode afetar algumas funções do site."
+          ]
+        ],
+        [
+          "Publicidade",
+          [
+            "Este site pode exibir anúncios de provedores terceiros, incluindo o Google AdSense. Esses provedores podem usar cookies e tecnologias semelhantes para veicular, personalizar, mensurar e proteger anúncios com base nas visitas a este e a outros sites. Você pode gerenciar o consentimento e a personalização de anúncios nas configurações do site e dos provedores. Dependendo das suas escolhas e localização, os anúncios podem ser personalizados, não personalizados ou limitados."
+          ]
+        ],
+        [
+          "Análise de uso",
+          [
+            "Este site pode usar serviços de análise, incluindo o Google Analytics, para entender seu uso e melhorar o desempenho. Esses serviços podem tratar informações como páginas acessadas, eventos de interação, tipo de dispositivo, endereço IP aproximado e origem da visita. Quando exigido por lei, essas tecnologias só são usadas após consentimento."
+          ]
+        ],
+        [
+          "Serviços do Google e uso de dados",
+          [
+          "Para saber como o Google coleta e trata informações por meio do Google AdSense, do Google Analytics e de outros serviços, bem como conhecer os controles de privacidade e publicidade disponíveis, consulte os recursos a seguir:",
+            {
+              "items": [
+                {
+                  "label": "Como o Google usa informações de sites ou apps que utilizam seus serviços",
+                  "href": "https://policies.google.com/technologies/partner-sites?hl=pt-BR"
+                },
+                {
+                  "label": "Política de Privacidade do Google",
+                  "href": "https://policies.google.com/privacy?hl=pt-BR"
+                },
+                {
+                  "label": "Minha central de anúncios",
+                  "href": "https://myadcenter.google.com/"
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "Hospedagem, segurança e serviços técnicos",
+          [
+            "Podemos usar provedores de hospedagem, segurança, processamento de formulários e outros serviços técnicos, que poderão tratar informações técnicas e dados enviados na medida necessária para operar o site e prestar seus serviços."
+          ]
+        ],
+        [
+          "Compartilhamento de informações",
+          [
+            "Podemos compartilhar informações com prestadores, consultores, autoridades ou outras partes quando necessário para operar e proteger o site, viabilizar publicidade e análises ou cumprir a lei. Não vendemos dados pessoais por dinheiro. Algumas legislações podem considerar determinadas divulgações relacionadas à publicidade como “venda”, “compartilhamento” ou publicidade direcionada e podem conceder o direito de recusá-las."
+          ]
+        ],
+        [
+          "Transferências internacionais",
+          [
+            "Nós e nossos prestadores podemos tratar informações em países com leis de proteção de dados diferentes, usando as salvaguardas jurídicas adequadas quando necessário."
+          ]
+        ],
+        [
+          "Retenção de dados",
+          [
+            "Mantemos dados pessoais apenas pelo tempo razoavelmente necessário para finalidades operacionais, de segurança, legais e de resolução de disputas. Os períodos de retenção variam conforme o tipo de dado, o serviço e as configurações ou políticas do provedor aplicável. Depois disso, as informações podem ser excluídas, agregadas ou anonimizadas."
+          ]
+        ],
+        [
+          "Segurança dos dados",
+          [
+            "Adotamos medidas técnicas e organizacionais razoáveis para proteger as informações, mas não podemos garantir segurança absoluta."
+          ]
+        ],
+        [
+          "Seus direitos de privacidade",
+          [
+            "Dependendo da sua localização e da lei aplicável, você pode ter direitos de acesso, correção, exclusão, limitação, oposição, portabilidade, retirada do consentimento e recusa de determinadas formas de venda, compartilhamento ou publicidade direcionada. Você também pode ter o direito de não sofrer discriminação por exercer esses direitos e de apresentar uma reclamação à autoridade de proteção de dados competente."
+          ]
+        ],
+        [
+          "Privacidade infantil",
+          [
+            "Este site se destina ao público em geral e não é direcionado a crianças que não tenham atingido a idade mínima prevista pela legislação aplicável. Não coletamos conscientemente dados pessoais dessas crianças. Se soubermos que coletamos essas informações, tomaremos medidas razoáveis para excluí-las."
+          ]
+        ],
+        [
+          "Alterações nesta política",
+          [
+            "Podemos atualizar esta política. As alterações serão publicadas nesta página com uma nova data de atualização e, quando exigido por lei, forneceremos aviso adicional ou solicitaremos consentimento."
+          ]
+        ],
+        [
+          "Operador do site e contato",
+          [
+          "Este site é operado sob o nome de Geostarna.",
+            {
+              "template": "Para solicitações gerais, use nossa {contactLink}.",
+              "links": {
+                "contactLink": {
+                  "path": "contact/index.html",
+                  "label": "página de contato"
+                }
+              }
+            },
+          "Para exercer direitos de privacidade, informe claramente que a solicitação se refere à privacidade ou a dados pessoais. Podemos precisar verificar sua identidade antes de processar determinadas solicitações."
+          ]
+        ]
+      ],
+      "de": [
+        [
+          "Haftungsausschluss",
+          [
+            "Die auf dieser Website bereitgestellten Informationen dienen ausschließlich allgemeinen Informationszwecken.",
+            "Wir verwenden zuverlässige Quellen und bemühen uns um richtige und aktuelle Informationen. Statistische Daten können jedoch Schätzungen, Revisionen, fehlende Werte oder methodische Unterschiede enthalten.",
+            "Daten können ohne vorherige Ankündigung revidiert werden und von anderen Quellen oder späteren Veröffentlichungen abweichen. Wir gewährleisten nicht, dass die Informationen vollständig, aktuell, richtig oder für einen bestimmten Zweck geeignet sind.",
+            "Die Inhalte dieser Website stellen keine professionelle Beratung dar. Prüfen Sie wichtige Informationen unabhängig und ziehen Sie bei Bedarf qualifizierte Fachleute hinzu.",
+            "Soweit gesetzlich zulässig, haften wir nicht für Verluste oder Schäden, die aus der Nutzung dieser Website oder dem Vertrauen auf ihre Inhalte entstehen."
+          ]
+        ],
+        [
+          "Datenquellen",
+          [
+            "Daten aus verschiedenen Quellen sind aufgrund unterschiedlicher Methoden, Definitionen, Abdeckungen, Revisionen oder Aktualisierungszeitpunkte möglicherweise nicht direkt vergleichbar. Daten und Materialien Dritter unterliegen weiterhin den Rechten und Bedingungen ihrer Anbieter. Vor Entscheidungen auf Grundlage der Daten sollten Nutzer die Originalquelle, Metadaten, Definitionen und Veröffentlichungshinweise prüfen."
+          ]
+        ],
+        [
+          "Externe Links",
+          [
+            "Diese Website kann Links zu Websites Dritter enthalten. Wir sind für deren Inhalte oder Datenschutzpraktiken nicht verantwortlich; eine Verlinkung stellt keine Empfehlung dar."
+          ]
+        ],
+        [
+          "Von uns erhobene Informationen",
+          [
+            "Wir können in begrenztem Umfang automatisch technische und nutzungsbezogene Informationen erheben, etwa die IP-Adresse, den ungefähren Standort, Browser- und Geräteinformationen, die verweisende Seite, besuchte Seiten und Interaktionen mit der Website. Außerdem können wir Informationen erfassen, die Sie bei einer Kontaktaufnahme übermitteln. Bitte senden Sie keine sensiblen personenbezogenen Daten."
+          ]
+        ],
+        [
+          "Verwendung von Informationen",
+          [
+            "Wir verwenden erhobene Informationen, um die Website zu betreiben und zu verbessern, die Nutzung zu analysieren, Anfragen zu beantworten, die Sicherheit zu gewährleisten, Missbrauch zu verhindern, Werbung zu ermöglichen und rechtliche Pflichten zu erfüllen. Bei einer Kontaktaufnahme übermittelte Informationen werden zur Beantwortung Ihrer Anfrage und für damit verbundene Zwecke verwendet."
+          ]
+        ],
+        [
+          "Rechtsgrundlagen der Verarbeitung",
+          [
+            "Soweit nach geltendem Recht erforderlich, verarbeiten wir personenbezogene Daten auf Grundlage Ihrer Einwilligung, berechtigter Interessen oder gesetzlicher Verpflichtungen. Sie können eine Einwilligung jederzeit widerrufen, ohne dass die Rechtmäßigkeit der vorherigen Verarbeitung berührt wird."
+          ]
+        ],
+        [
+          "Cookies und ähnliche Technologien",
+          [
+            "Wir und Drittanbieter, darunter Google, können Cookies und ähnliche Technologien einsetzen, um die Website zu betreiben, die Nutzung zu analysieren, die Sicherheit zu gewährleisten und Werbung zu ermöglichen. Diese Anbieter können im Zusammenhang mit ihren Diensten Cookies, Web-Beacons, IP-Adressen oder andere Kennungen verwenden. Soweit gesetzlich erforderlich, werden nicht notwendige Technologien nur mit Ihrer Einwilligung eingesetzt; diese kann über die Datenschutz- oder Cookie-Einstellungen der Website verwaltet oder widerrufen werden."
+          ]
+        ],
+        [
+          "Verwaltung von Cookie- und Datenschutzeinstellungen",
+          [
+            "Sie können Ihre Einwilligung zu nicht notwendigen Cookies und ähnlichen Technologien über die Cookie- oder Datenschutzeinstellungen der Website verwalten oder widerrufen. Cookies lassen sich außerdem über den Browser blockieren oder löschen. Browsereinstellungen können möglicherweise nicht alle Technologien Dritter steuern und bestimmte Funktionen der Website beeinträchtigen."
+          ]
+        ],
+        [
+          "Werbung",
+          [
+            "Diese Website kann Werbung von Drittanbietern, darunter Google AdSense, anzeigen. Diese Anbieter können Cookies, ähnliche Technologien und Informationen über Besuche dieser und anderer Websites verwenden, um Werbung auszuliefern und zu personalisieren, ihre Wirkung zu messen und ihre Sicherheit zu gewährleisten. Sie können Ihre Einwilligung zu Werbung und deren Personalisierung über die Cookie- oder Datenschutzeinstellungen der Website und, soweit verfügbar, über die Werbeeinstellungen des Anbieters verwalten. Abhängig von Ihrer Auswahl und Ihrem Standort kann Werbung personalisiert, nicht personalisiert oder eingeschränkt sein."
+          ]
+        ],
+        [
+          "Webanalyse",
+          [
+            "Diese Website kann Analysedienste, darunter Google Analytics, verwenden, um zu verstehen, wie die Website genutzt wird, und ihre Leistung zu verbessern. Dabei können Informationen wie besuchte Seiten, der ungefähre Standort, Geräte- und Browserdaten, die verweisende Seite und Interaktionen mit der Website verarbeitet werden. Soweit gesetzlich erforderlich, werden Analysetechnologien nur mit Ihrer Einwilligung eingesetzt."
+          ]
+        ],
+        [
+          "Google-Dienste und Datennutzung",
+          [
+            "Weitere Informationen darüber, wie Google Daten über Google AdSense, Google Analytics und andere Dienste erhebt und verarbeitet, sowie zu verfügbaren Datenschutz- und Werbeeinstellungen finden Sie in den folgenden Ressourcen:",
+            {
+              "items": [
+                {
+                  "label": "Datennutzung durch Google bei der Nutzung von Websites oder Apps unserer Partner",
+                  "href": "https://policies.google.com/technologies/partner-sites?hl=de"
+                },
+                {
+                  "label": "Datenschutzerklärung von Google",
+                  "href": "https://policies.google.com/privacy?hl=de"
+                },
+                {
+                  "label": "Mein Anzeigen-Center",
+                  "href": "https://myadcenter.google.com/"
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "Hosting, Sicherheit und technische Dienste",
+          [
+            "Wir können Hosting-, Sicherheits-, Formularverarbeitungs- und andere technische Dienstleister zum Betrieb der Website einsetzen. Diese Anbieter können technische Informationen oder übermittelte Daten verarbeiten, soweit dies zur Erbringung ihrer Dienste erforderlich ist."
+          ]
+        ],
+        [
+          "Weitergabe von Informationen",
+          [
+            "Wir können Informationen an Dienstleister, Berater, Behörden oder andere Parteien weitergeben, soweit dies für den Betrieb und Schutz der Website, die Bereitstellung von Werbung und Analysen oder die Erfüllung gesetzlicher Pflichten erforderlich ist. Wir verkaufen personenbezogene Daten nicht gegen Entgelt. In einigen Rechtsordnungen können bestimmte werbebezogene Datenweitergaben jedoch als „Verkauf“, „Weitergabe“ oder „zielgerichtete Werbung“ gelten. In diesen Fällen stellen wir die jeweils vorgesehenen Widerspruchsmöglichkeiten bereit."
+          ]
+        ],
+        [
+          "Internationale Datenübermittlungen",
+          [
+            "Wir und unsere Dienstleister können Informationen in Ländern mit abweichenden Datenschutzgesetzen verarbeiten und verwenden dabei, soweit erforderlich, geeignete rechtliche Schutzmaßnahmen."
+          ]
+        ],
+        [
+          "Speicherdauer",
+          [
+            "Wir speichern personenbezogene Daten nur so lange, wie dies für betriebliche Zwecke, die Sicherheit, rechtliche Anforderungen und die Beilegung von Streitigkeiten vernünftigerweise erforderlich ist. Die Speicherdauer kann je nach Art der Daten und genutztem Dienst variieren; maßgeblich können auch die Einstellungen und Richtlinien der Analyse-, Werbe- und sonstigen Anbieter sein. Nach Ablauf der jeweiligen Speicherdauer können Informationen gelöscht, zusammengefasst oder anonymisiert werden."
+          ]
+        ],
+        [
+          "Datensicherheit",
+          [
+            "Wir setzen angemessene technische und organisatorische Maßnahmen zum Schutz von Informationen ein, können jedoch keine absolute Sicherheit gewährleisten."
+          ]
+        ],
+        [
+          "Ihre Datenschutzrechte",
+          [
+            "Je nach Ihrem Standort und dem anwendbaren Recht können Sie das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch und Datenübertragbarkeit haben. Außerdem können Sie Ihre Einwilligung widerrufen und bestimmter Werbung sowie dem Verkauf oder der Weitergabe Ihrer personenbezogenen Daten widersprechen. Die Ausübung geltender Datenschutzrechte führt nicht zu einer unzulässigen Benachteiligung. Gegebenenfalls können Sie außerdem Beschwerde bei einer zuständigen Datenschutzbehörde einlegen."
+          ]
+        ],
+        [
+          "Datenschutz von Kindern",
+          [
+            "Diese Website richtet sich an ein allgemeines Publikum und nicht gezielt an Kinder. Wir erheben wissentlich keine personenbezogenen Daten von Kindern, die das nach geltendem Recht maßgebliche Mindestalter noch nicht erreicht haben. Wenn wir feststellen, dass solche Daten erhoben wurden, ergreifen wir angemessene Maßnahmen."
+          ]
+        ],
+        [
+          "Änderungen dieser Richtlinie",
+          [
+            "Wir können diese Richtlinie von Zeit zu Zeit aktualisieren. Änderungen werden auf dieser Seite mit einem entsprechend aktualisierten Hinweis „Zuletzt aktualisiert“ veröffentlicht. Soweit gesetzlich erforderlich, stellen wir zusätzliche Hinweise bereit oder holen eine Einwilligung ein."
+          ]
+        ],
+        [
+          "Websitebetreiber und Kontakt",
+          [
+            "Diese Website wird unter dem Namen Geostarna betrieben.",
+            {
+              "template": "Für allgemeine Anfragen nutzen Sie bitte unsere {contactLink}.",
+              "links": {
+                "contactLink": {
+                  "path": "contact/index.html",
+                  "label": "Kontaktseite"
+                }
+              }
+            },
+            "Wenn Sie geltende Datenschutzrechte ausüben möchten, geben Sie bitte deutlich an, dass Ihre Anfrage den Datenschutz oder personenbezogene Daten betrifft. Vor der Bearbeitung bestimmter Anfragen müssen wir möglicherweise Ihre Identität überprüfen."
+          ]
+        ]
+      ],
+      "it": [
+        [
+          "Esclusione di responsabilità",
+          [
+            "Le informazioni fornite su questo sito hanno esclusivamente finalità informative generali.",
+            "Utilizziamo fonti affidabili e cerchiamo di mantenere le informazioni accurate e aggiornate. I dati statistici possono tuttavia includere stime, revisioni, valori mancanti o differenze metodologiche.",
+            "I dati possono essere rivisti senza preavviso e differire da altre fonti o da pubblicazioni successive. Non garantiamo che le informazioni siano complete, aggiornate, accurate o idonee a uno scopo specifico.",
+            "Nessun contenuto di questo sito costituisce consulenza professionale. Verificare autonomamente le informazioni importanti e consultare, se necessario, un professionista qualificato.",
+            "Nella misura massima consentita dalla legge, non rispondiamo di eventuali perdite o danni derivanti dall’uso di questo sito o dall’affidamento riposto nei suoi contenuti."
+          ]
+        ],
+        [
+          "Fonti dei dati",
+          [
+            "I dati provenienti da fonti diverse potrebbero non essere direttamente comparabili per differenze di metodologia, definizioni, copertura, revisioni o tempi di aggiornamento. I dati e i materiali di terzi restano soggetti ai diritti e alle condizioni dei rispettivi fornitori. Prima di prendere decisioni basate sui dati, gli utenti dovrebbero consultare la fonte originale, i metadati, le definizioni e le note di pubblicazione."
+          ]
+        ],
+        [
+          "Link esterni",
+          [
+            "Questo sito può contenere link a siti di terzi. Non siamo responsabili dei loro contenuti o delle loro pratiche in materia di privacy e la presenza di un link non implica approvazione."
+          ]
+        ],
+        [
+          "Informazioni raccolte",
+          [
+            "Possiamo raccogliere automaticamente una quantità limitata di informazioni tecniche e sull’utilizzo, come indirizzo IP, posizione approssimativa, dati su browser e dispositivo, provenienza della visita, pagine visitate e interazioni con il sito. Possiamo inoltre raccogliere le informazioni fornite quando ci contatti. Ti invitiamo a non inviare dati personali sensibili."
+          ]
+        ],
+        [
+          "Uso delle informazioni",
+          [
+            "Utilizziamo le informazioni raccolte per gestire e migliorare il sito, analizzarne l’uso, rispondere alle richieste, mantenere la sicurezza, prevenire abusi, supportare la pubblicità e adempiere agli obblighi di legge. Le informazioni fornite quando ci contatti saranno utilizzate per rispondere alla richiesta e per finalità correlate."
+          ]
+        ],
+        [
+          "Basi giuridiche del trattamento",
+          [
+            "Ove richiesto dalla legge applicabile, trattiamo i dati personali sulla base del consenso, di interessi legittimi o di obblighi legali. Il consenso può essere revocato in qualsiasi momento senza pregiudicare la liceità dei trattamenti effettuati prima della revoca."
+          ]
+        ],
+        [
+          "Cookie e tecnologie simili",
+          [
+            "Noi e fornitori di servizi terzi, tra cui Google, possiamo utilizzare cookie e tecnologie simili per gestire il sito, analizzarne l’uso, mantenerne la sicurezza e supportare la pubblicità. Tali fornitori possono utilizzare cookie, web beacon, indirizzi IP o altri identificatori nell’ambito dei propri servizi. Ove richiesto dalla legge, le tecnologie non essenziali sono utilizzate solo previo consenso, che può essere gestito o revocato tramite le impostazioni del sito relative alla privacy o ai cookie."
+          ]
+        ],
+        [
+          "Gestione delle preferenze su cookie e privacy",
+          [
+            "È possibile gestire o revocare il consenso ai cookie non essenziali e alle tecnologie simili tramite le impostazioni del sito relative ai cookie o alla privacy. È inoltre possibile bloccare o eliminare i cookie tramite il browser, anche se tali impostazioni potrebbero non controllare tutte le tecnologie di terzi e potrebbero influire su alcune funzioni del sito."
+          ]
+        ],
+        [
+          "Pubblicità",
+          [
+            "Questo sito può mostrare annunci tramite fornitori terzi, tra cui Google AdSense. Tali fornitori possono utilizzare cookie, tecnologie simili e informazioni sulle visite a questo e ad altri siti per mostrare, personalizzare, misurare e proteggere gli annunci. È possibile gestire il consenso pubblicitario e la personalizzazione degli annunci tramite le impostazioni del sito relative ai cookie o alla privacy e, ove disponibili, tramite le impostazioni pubblicitarie del fornitore. In base alle preferenze e alla posizione, gli annunci possono essere personalizzati, non personalizzati o limitati."
+          ]
+        ],
+        [
+          "Analisi",
+          [
+            "Questo sito può utilizzare servizi di analisi, tra cui Google Analytics, per comprendere l’uso del sito e migliorarne le prestazioni. Tali servizi possono trattare informazioni come pagine visitate, posizione approssimativa, dati su dispositivo e browser, provenienza della visita e interazioni con il sito. Ove richiesto dalla legge, le tecnologie di analisi sono utilizzate solo dopo il consenso."
+          ]
+        ],
+        [
+          "Servizi Google e uso dei dati",
+          [
+            "Per maggiori informazioni su come Google raccoglie e tratta i dati tramite Google AdSense, Google Analytics e altri servizi, nonché sui controlli disponibili per privacy e pubblicità, consultare le seguenti risorse:",
+            {
+              "items": [
+                {
+                  "label": "Come Google utilizza le informazioni provenienti da siti o app che usano i suoi servizi",
+                  "href": "https://policies.google.com/technologies/partner-sites?hl=it"
+                },
+                {
+                  "label": "Norme sulla privacy di Google",
+                  "href": "https://policies.google.com/privacy?hl=it"
+                },
+                {
+                  "label": "Il mio centro per gli annunci",
+                  "href": "https://myadcenter.google.com/"
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "Hosting, sicurezza e servizi tecnici",
+          [
+            "Possiamo utilizzare fornitori di servizi di hosting, sicurezza, gestione dei moduli e altri servizi tecnici per gestire il sito. Tali fornitori possono trattare informazioni tecniche o dati inviati nella misura necessaria a fornire i propri servizi."
+          ]
+        ],
+        [
+          "Condivisione delle informazioni",
+          [
+            "Possiamo condividere informazioni con fornitori di servizi, consulenti, autorità o altre parti nella misura necessaria a gestire e proteggere il sito, fornire pubblicità e analisi o rispettare la legge. Non vendiamo dati personali in cambio di denaro, sebbene alcune leggi possano considerare determinate comunicazioni di dati connesse alla pubblicità come «vendita», «condivisione» o «pubblicità mirata»; in tali casi saranno offerte le opzioni applicabili per opporsi."
+          ]
+        ],
+        [
+          "Trasferimenti internazionali di dati",
+          [
+            "Noi e i nostri fornitori di servizi possiamo trattare informazioni in paesi con leggi sulla protezione dei dati diverse, adottando ove necessario adeguate garanzie giuridiche."
+          ]
+        ],
+        [
+          "Conservazione dei dati",
+          [
+            "Conserviamo i dati personali solo per il tempo ragionevolmente necessario a finalità operative, di sicurezza, legali e di risoluzione delle controversie. I periodi di conservazione possono variare in base al tipo di dato e al servizio, comprese le impostazioni e le politiche dei fornitori di analisi, pubblicità e altri servizi. Successivamente, le informazioni possono essere eliminate, aggregate o rese anonime."
+          ]
+        ],
+        [
+          "Sicurezza dei dati",
+          [
+            "Adottiamo misure tecniche e organizzative ragionevoli per proteggere le informazioni, ma non possiamo garantirne la sicurezza assoluta."
+          ]
+        ],
+        [
+          "Diritti in materia di privacy",
+          [
+            "A seconda del luogo e della legge applicabile, si può avere il diritto di accedere ai propri dati personali, rettificarli o cancellarli, limitarne il trattamento, opporsi al trattamento o richiederne la portabilità, revocare il consenso e opporsi a determinate forme di pubblicità, vendita o condivisione. L’esercizio dei diritti applicabili non comporterà discriminazioni illecite. Ove previsto, è inoltre possibile presentare reclamo a un’autorità competente per la protezione dei dati."
+          ]
+        ],
+        [
+          "Privacy dei minori",
+          [
+            "Questo sito è destinato a un pubblico generale e non è rivolto ai minori. Non raccogliamo consapevolmente dati personali di minori che non abbiano raggiunto l’età minima prevista dalla legge applicabile. Se veniamo a conoscenza di aver raccolto tali dati, adotteremo misure appropriate."
+          ]
+        ],
+        [
+          "Modifiche a questa informativa",
+          [
+            "Possiamo aggiornare periodicamente questa informativa. Le modifiche saranno pubblicate su questa pagina con una nuova data di «Ultimo aggiornamento» e, ove richiesto dalla legge, forniremo un avviso aggiuntivo o richiederemo il consenso."
+          ]
+        ],
+        [
+          "Gestore del sito e contatti",
+          [
+          "Questo sito è gestito con il nome di Geostarna.",
+            {
+              "template": "Per richieste generali, utilizzare la nostra {contactLink}.",
+              "links": {
+                "contactLink": {
+                  "path": "contact/index.html",
+                  "label": "pagina dei contatti"
+                }
+              }
+            },
+            "Per esercitare eventuali diritti in materia di privacy, indicare chiaramente che la richiesta riguarda la privacy o i dati personali. Prima di elaborare determinate richieste potremmo dover verificare l’identità dell’interessato."
+          ]
+        ]
+      ],
+      "ko": [
+        [
+          "면책 조항",
+          [
+            "이 웹사이트에서 제공하는 정보는 일반적인 정보 제공만을 목적으로 합니다.",
+            "신뢰할 수 있는 출처를 사용하고 정보를 정확하고 최신 상태로 유지하기 위해 노력하지만, 통계 데이터에는 추정치, 수정치, 결측값 또는 방법론상의 차이가 포함될 수 있습니다.",
+            "데이터는 예고 없이 수정될 수 있으며 다른 출처나 이후 발표 자료와 다를 수 있습니다. 정보의 완전성, 최신성, 정확성 또는 특정 목적에 대한 적합성을 보장하지 않습니다.",
+            "이 웹사이트의 어떠한 내용도 전문적인 조언에 해당하지 않습니다. 중요한 정보는 독립적으로 확인하고 필요한 경우 자격을 갖춘 전문가와 상담하세요.",
+            "법이 허용하는 최대 범위에서 이 웹사이트를 이용하거나 그 내용을 신뢰하여 발생하는 손실이나 손해에 대해 책임을 지지 않습니다."
+          ]
+        ],
+        [
+          "데이터 출처",
+          [
+            "방법론, 정의, 수록 범위, 수정 또는 갱신 시점의 차이로 인해 출처 간 데이터를 직접 비교하기 어려울 수 있습니다. 제3자 데이터와 자료에는 각 제공자의 권리와 이용 조건이 계속 적용됩니다. 데이터를 바탕으로 판단하기 전에 원출처, 메타데이터, 정의 및 발표 자료를 확인하세요."
+          ]
+        ],
+        [
+          "외부 링크",
+          [
+            "이 웹사이트에는 제3자 웹사이트로 연결되는 링크가 포함될 수 있습니다. 해당 사이트의 콘텐츠나 개인정보 보호 관행에 책임을 지지 않으며, 링크를 제공한다고 해서 해당 사이트를 지지하거나 승인한다는 의미는 아닙니다."
+          ]
+        ],
+        [
+          "수집하는 정보",
+          [
+            "IP 주소, 대략적인 위치, 브라우저와 기기 정보, 유입 경로, 방문한 페이지 및 웹사이트와의 상호작용 등 제한된 범위의 기술 정보와 이용 정보를 자동으로 수집할 수 있습니다. 문의할 때 사용자가 제공한 정보도 수집할 수 있습니다. 민감한 개인정보는 제출하지 마세요."
+          ]
+        ],
+        [
+          "정보 이용 목적",
+          [
+            "수집한 정보는 웹사이트 운영과 개선, 이용 분석, 문의 대응, 보안 유지, 악용 방지, 광고 운영 및 법적 의무 준수를 위해 사용합니다. 문의할 때 제공된 정보는 문의에 답변하고 관련 업무를 처리하는 데 사용합니다."
+          ]
+        ],
+        [
+          "처리의 법적 근거",
+          [
+            "관련 법률이 요구하는 경우 동의, 정당한 이익 또는 법적 의무를 근거로 개인정보를 처리합니다. 철회 전에 이루어진 처리의 적법성에 영향을 주지 않고 언제든 동의를 철회할 수 있습니다."
+          ]
+        ],
+        [
+          "쿠키 및 유사 기술",
+          [
+            "당사와 Google을 포함한 제3자 서비스 제공자는 웹사이트 운영, 이용 분석, 보안 유지와 광고 지원을 위해 쿠키 및 유사 기술을 사용할 수 있습니다. 이러한 제공자는 서비스와 관련해 쿠키, 웹 비콘, IP 주소 또는 기타 식별자를 사용할 수 있습니다. 법률이 요구하는 경우 필수적이지 않은 기술은 동의를 받은 뒤에만 사용하며, 웹사이트의 개인정보 보호 또는 쿠키 설정에서 동의를 관리하거나 철회할 수 있습니다."
+          ]
+        ],
+        [
+          "쿠키 및 개인정보 보호 설정 관리",
+          [
+            "웹사이트의 쿠키 또는 개인정보 보호 설정에서 필수적이지 않은 쿠키와 유사 기술에 대한 동의를 관리하거나 철회할 수 있습니다. 브라우저에서 쿠키를 차단하거나 삭제할 수도 있지만, 브라우저 설정으로 모든 제3자 기술을 제어하지 못할 수 있고 일부 웹사이트 기능에 영향을 줄 수 있습니다."
+          ]
+        ],
+        [
+          "광고",
+          [
+            "이 웹사이트는 Google AdSense를 포함한 제3자 제공자를 통해 광고를 표시할 수 있습니다. 제공자는 광고를 게재·맞춤화·측정하고 안전하게 제공하기 위해 쿠키, 유사 기술 및 이 웹사이트와 다른 웹사이트의 방문 정보를 사용할 수 있습니다. 웹사이트의 쿠키·개인정보 보호 설정과 가능한 경우 제공자의 광고 설정에서 광고 관련 동의와 맞춤 설정을 관리할 수 있습니다. 사용자의 선택과 거주 지역에 따라 개인 맞춤형 광고, 개인 맞춤이 아닌 광고 또는 제한된 광고가 표시될 수 있습니다."
+          ]
+        ],
+        [
+          "이용 분석",
+          [
+            "웹사이트 이용 현황을 파악하고 성능을 개선하기 위해 Google Analytics를 포함한 분석 서비스를 사용할 수 있습니다. 이러한 서비스는 방문한 페이지, 대략적인 위치, 기기와 브라우저 정보, 유입 경로 및 웹사이트와의 상호작용 등의 정보를 처리할 수 있습니다. 법률이 요구하는 경우 분석 기술은 동의를 받은 뒤에만 사용합니다."
+          ]
+        ],
+        [
+          "Google 서비스와 데이터 이용",
+          [
+          "Google AdSense, Google Analytics 및 기타 서비스를 통해 Google이 정보를 수집·처리하는 방식과 사용할 수 있는 개인정보 보호 및 광고 설정에 관한 자세한 내용은 다음 자료를 확인하세요.",
+            {
+              "items": [
+                {
+                  "label": "Google 서비스를 사용하는 사이트 또는 앱의 정보 이용 방식",
+                  "href": "https://policies.google.com/technologies/partner-sites?hl=ko"
+                },
+                {
+                  "label": "Google 개인정보처리방침",
+                  "href": "https://policies.google.com/privacy?hl=ko"
+                },
+                {
+                  "label": "내 광고 센터",
+                  "href": "https://myadcenter.google.com/"
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "호스팅, 보안 및 기술 서비스",
+          [
+            "웹사이트 운영을 위해 호스팅, 보안, 웹 양식 처리 및 기타 기술 서비스 제공자를 이용할 수 있습니다. 이러한 제공자는 서비스 제공에 필요한 범위에서 기술 정보나 제출된 데이터를 처리할 수 있습니다."
+          ]
+        ],
+        [
+          "정보 공유 방식",
+          [
+            "웹사이트 운영과 보호, 광고 및 분석 서비스 제공 또는 법률 준수를 위해 필요한 범위에서 서비스 제공자, 자문가, 당국 또는 기타 당사자와 정보를 공유할 수 있습니다. 개인정보를 금전적 대가로 판매하지 않지만, 일부 법률에서는 특정 광고 관련 정보 제공을 ‘판매’, ‘공유’ 또는 ‘맞춤형 광고’로 간주할 수 있으며, 이 경우 관련 법률에 따른 거부 방법을 제공합니다."
+          ]
+        ],
+        [
+          "국제 데이터 이전",
+          [
+            "당사와 서비스 제공자는 개인정보 보호법이 다른 국가에서 정보를 처리할 수 있으며, 필요한 경우 적절한 법적 보호조치를 적용합니다."
+          ]
+        ],
+        [
+          "데이터 보유",
+          [
+            "운영, 보안, 법률 및 분쟁 해결에 합리적으로 필요한 기간 동안만 개인정보를 보유합니다. 보유 기간은 데이터 유형과 서비스에 따라 달라질 수 있으며, 분석·광고 및 기타 서비스 제공자의 설정과 정책도 이에 영향을 미칠 수 있습니다. 보유 기간이 지나면 정보는 삭제, 집계 또는 익명화될 수 있습니다."
+          ]
+        ],
+        [
+          "데이터 보안",
+          [
+            "정보를 보호하기 위해 합리적인 기술적·관리적 조치를 사용하지만 절대적인 보안을 보장할 수는 없습니다."
+          ]
+        ],
+        [
+          "개인정보에 관한 권리",
+          [
+            "거주 지역과 관련 법률에 따라 개인정보에 대한 열람·정정·삭제·처리 제한을 요구하거나, 처리에 반대하거나, 개인정보의 이동을 요청할 권리가 있을 수 있습니다. 또한 동의를 철회하고 특정 광고, 판매 또는 공유를 거부할 권리가 있을 수 있습니다. 관련 개인정보 보호 권리를 행사했다는 이유로 법률에 위배되는 차별을 받지 않습니다. 해당되는 경우 관할 개인정보 보호기관에 민원을 제기할 권리도 있습니다."
+          ]
+        ],
+        [
+          "아동의 개인정보",
+          [
+            "이 웹사이트는 일반 이용자를 대상으로 하며 아동을 대상으로 하지 않습니다. 관련 법률에서 정한 연령에 미달하는 아동의 개인정보를 고의로 수집하지 않습니다. 해당 정보를 수집한 사실을 알게 되면 적절한 조치를 취합니다."
+          ]
+        ],
+        [
+          "정책 변경",
+          [
+            "이 정책은 수시로 갱신될 수 있습니다. 변경 사항은 갱신된 ‘최종 수정일’과 함께 이 페이지에 게시하며, 법률이 요구하는 경우 추가로 고지하거나 동의를 받습니다."
+          ]
+        ],
+        [
+          "웹사이트 운영자 및 문의",
+          [
+            "이 웹사이트는 Geostarna라는 이름으로 운영됩니다.",
+            {
+              "template": "일반 문의는 {contactLink}를 이용해 주세요.",
+              "links": {
+                "contactLink": {
+                  "path": "contact/index.html",
+                  "label": "문의 페이지"
+                }
+              }
+            },
+          "관련 법률에 따른 개인정보 보호 권리를 행사하려면 요청이 개인정보 보호 또는 개인정보 처리에 관한 것임을 명확히 밝혀 주세요. 일부 요청을 처리하기 전에 본인 확인이 필요할 수 있습니다."
+          ]
+        ]
+      ],
+      "tr": [
+        [
+          "Sorumluluk Reddi",
+          [
+            "Bu web sitesindeki bilgiler yalnızca genel bilgilendirme amacıyla sunulur.",
+            "Güvenilir kaynaklar kullanır ve bilgileri doğru ve güncel tutmayı amaçlarız. Ancak istatistiksel veriler tahminler, revizyonlar, eksik değerler veya yöntem farklılıkları içerebilir.",
+            "Veriler bildirim yapılmadan değiştirilebilir ve diğer kaynaklardan ya da sonraki yayımlardan farklı olabilir. Bilgilerin eksiksiz, güncel, doğru veya belirli bir amaca uygun olduğunu garanti etmeyiz.",
+            "Bu web sitesindeki hiçbir içerik profesyonel tavsiye niteliğinde değildir. Önemli bilgileri bağımsız olarak doğrulayın ve gerektiğinde yetkin bir uzmana danışın.",
+            "Yasaların izin verdiği en geniş ölçüde, bu web sitesinin kullanılmasından veya buradaki bilgilere güvenilmesinden doğan hiçbir kayıp ya da zarardan sorumlu değiliz."
+          ]
+        ],
+        [
+          "Veri Kaynakları",
+          [
+            "Yöntem, tanım, kapsam, revizyon veya güncelleme zamanlamasındaki farklılıklar nedeniyle farklı kaynaklardaki veriler doğrudan karşılaştırılabilir olmayabilir. Üçüncü taraf verileri ve materyalleri, sağlayıcılarının haklarına ve koşullarına tabi olmaya devam eder. Verilere dayanarak karar vermeden önce asıl kaynağı, meta verileri, tanımları ve yayımlama notlarını inceleyin."
+          ]
+        ],
+        [
+          "Dış Bağlantılar",
+          [
+            "Bu web sitesi üçüncü taraf sitelere bağlantı verebilir. Bu sitelerin içeriklerinden veya gizlilik uygulamalarından sorumlu değiliz; bağlantı verilmesi bu siteleri desteklediğimiz veya onayladığımız anlamına gelmez."
+          ]
+        ],
+        [
+          "Topladığımız Bilgiler",
+          [
+            "IP adresi, yaklaşık konum, tarayıcı ve cihaz bilgileri, yönlendiren kaynak, ziyaret edilen sayfalar ve web sitesiyle etkileşimler gibi sınırlı teknik ve kullanım bilgilerini otomatik olarak toplayabiliriz. Bizimle iletişime geçtiğinizde sağladığınız bilgileri de toplayabiliriz. Lütfen özel nitelikli kişisel veri göndermeyin."
+          ]
+        ],
+        [
+          "Bilgileri Nasıl Kullanırız",
+          [
+            "Toplanan bilgileri siteyi işletmek ve geliştirmek, kullanımı analiz etmek, soruları yanıtlamak, güvenliği sağlamak, kötüye kullanımı önlemek, reklamları desteklemek ve yasal yükümlülüklere uymak için kullanırız. Bizimle iletişime geçerken sağladığınız bilgiler, talebinizi yanıtlamak ve ilgili amaçlar için kullanılır."
+          ]
+        ],
+        [
+          "İşlemenin Hukuki Dayanakları",
+          [
+            "Uygulanabilir hukukun gerektirdiği durumlarda kişisel verileri rıza, meşru menfaat veya yasal yükümlülük temelinde işleriz. Rızanızı istediğiniz zaman geri çekebilirsiniz; bu, rıza geri çekilmeden önce gerçekleştirilen işlemenin hukuka uygunluğunu etkilemez."
+          ]
+        ],
+        [
+          "Çerezler ve Benzer Teknolojiler",
+          [
+            "Biz ve Google dahil üçüncü taraf hizmet sağlayıcıları, siteyi işletmek, kullanımı analiz etmek, güvenliği sağlamak ve reklamları desteklemek için çerezler ve benzer teknolojiler kullanabiliriz. Bu sağlayıcılar, hizmetleriyle bağlantılı olarak çerezler, web işaretçileri, IP adresleri veya diğer tanımlayıcıları kullanabilir. Yasanın gerektirdiği durumlarda zorunlu olmayan teknolojiler yalnızca rıza alındıktan sonra kullanılır; rıza, sitenin gizlilik veya çerez ayarlarından yönetilebilir ya da geri çekilebilir."
+          ]
+        ],
+        [
+          "Çerez ve Gizlilik Tercihlerini Yönetme",
+          [
+            "Zorunlu olmayan çerezler ve benzer teknolojiler için verdiğiniz rızayı sitenin çerez veya gizlilik ayarlarından yönetebilir ya da geri çekebilirsiniz. Çerezleri tarayıcınızdan engelleyebilir veya silebilirsiniz; ancak tarayıcı ayarları tüm üçüncü taraf teknolojilerini kontrol etmeyebilir ve sitenin bazı işlevlerini etkileyebilir."
+          ]
+        ],
+        [
+          "Reklam",
+          [
+            "Bu web sitesi Google AdSense dahil üçüncü taraf sağlayıcılar aracılığıyla reklam gösterebilir. Bu sağlayıcılar, reklamları sunmak, kişiselleştirmek, ölçmek ve güvenliğini sağlamak için çerezleri, benzer teknolojileri ve bu siteyle diğer sitelere yapılan ziyaretlere ilişkin bilgileri kullanabilir. Reklam rızasını ve kişiselleştirmeyi sitenin çerez veya gizlilik ayarlarından ve mevcut olduğunda sağlayıcının reklam ayarlarından yönetebilirsiniz. Seçimlerinize ve bulunduğunuz yere bağlı olarak reklamlar kişiselleştirilmiş, kişiselleştirilmemiş veya sınırlı olabilir."
+          ]
+        ],
+        [
+          "Analiz",
+          [
+            "Bu web sitesi, kullanımını anlamak ve performansını geliştirmek için Google Analytics dahil analiz hizmetlerini kullanabilir. Bu hizmetler ziyaret edilen sayfalar, yaklaşık konum, cihaz ve tarayıcı bilgileri, yönlendiren kaynak ve siteyle etkileşimler gibi bilgileri işleyebilir. Yasanın gerektirdiği durumlarda analiz teknolojileri yalnızca rıza alındıktan sonra kullanılır."
+          ]
+        ],
+        [
+          "Google Hizmetleri ve Veri Kullanımı",
+          [
+          "Google'ın Google AdSense, Google Analytics ve diğer hizmetler aracılığıyla bilgileri nasıl topladığı ve işlediği ile kullanılabilir gizlilik ve reklam kontrolleri hakkında daha fazla bilgi için aşağıdaki kaynakları inceleyin:",
+            {
+              "items": [
+                {
+                  "label": "Google, hizmetlerimizi kullanan site veya uygulamalardan gelen bilgileri nasıl kullanır?",
+                  "href": "https://policies.google.com/technologies/partner-sites?hl=tr"
+                },
+                {
+                  "label": "Google Gizlilik Politikası",
+                  "href": "https://policies.google.com/privacy?hl=tr"
+                },
+                {
+                  "label": "Reklam Merkezim",
+                  "href": "https://myadcenter.google.com/"
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "Barındırma, Güvenlik ve Teknik Hizmetler",
+          [
+            "Siteyi işletmek için barındırma, güvenlik, form işleme ve diğer teknik hizmet sağlayıcılarından yararlanabiliriz. Bu sağlayıcılar, hizmetlerini sunmak için gerekli olduğu ölçüde teknik bilgileri veya gönderilen verileri işleyebilir."
+          ]
+        ],
+        [
+          "Bilgileri Nasıl Paylaşırız",
+          [
+            "Siteyi işletmek ve korumak, reklam ve analiz hizmetleri sunmak veya yasalara uymak için gerektiğinde hizmet sağlayıcılar, danışmanlar, makamlar veya diğer taraflarla bilgi paylaşabiliriz. Kişisel verileri para karşılığında satmayız. Ancak bazı yasalar, reklamla ilgili belirli veri aktarımlarını “satış”, “paylaşım” veya “hedefli reklamcılık” olarak değerlendirebilir; bu durumlarda geçerli vazgeçme seçenekleri sunulur."
+          ]
+        ],
+        [
+          "Uluslararası Veri Aktarımları",
+          [
+            "Biz ve hizmet sağlayıcılarımız, gerektiğinde uygun hukuki güvenceleri kullanarak bilgileri farklı veri koruma yasalarına sahip ülkelerde işleyebiliriz."
+          ]
+        ],
+        [
+          "Veri Saklama",
+          [
+            "Kişisel verileri yalnızca operasyon, güvenlik, hukuk ve uyuşmazlıkların çözümü amaçları için makul ölçüde gerekli olduğu sürece saklarız. Saklama süreleri, analiz, reklam ve diğer sağlayıcıların ayar ve politikaları dahil olmak üzere veri türüne ve hizmete göre değişebilir; bu sürelerin ardından bilgiler silinebilir, toplulaştırılabilir veya anonimleştirilebilir."
+          ]
+        ],
+        [
+          "Veri Güvenliği",
+          [
+            "Bilgileri korumak için makul teknik ve idari önlemler kullanırız ancak mutlak güvenliği garanti edemeyiz."
+          ]
+        ],
+        [
+          "Gizlilik Haklarınız",
+          [
+            "Bulunduğunuz yere ve geçerli hukuka bağlı olarak kişisel verilerinize erişme, bunları düzeltme veya silme, işlenmesini kısıtlama ya da işlemeye itiraz etme, veri taşınabilirliği talep etme, rızayı geri çekme ve belirli reklam, satış veya paylaşımlardan vazgeçme haklarına sahip olabilirsiniz. Geçerli gizlilik haklarını kullandığınız için hukuka aykırı ayrımcılığa uğramazsınız. Uygun olduğu durumlarda yetkili bir veri koruma makamına şikâyette bulunma hakkınız da olabilir."
+          ]
+        ],
+        [
+          "Çocukların Gizliliği",
+          [
+            "Bu web sitesi genel kitleye yöneliktir ve çocuklara yönelik değildir. Geçerli yasal yaş sınırının altındaki çocuklardan bilerek kişisel veri toplamayız. Bu tür verilerin toplandığını öğrenirsek uygun adımları atarız."
+          ]
+        ],
+        [
+          "Bu Politikadaki Değişiklikler",
+          [
+            "Bu politikayı zaman zaman güncelleyebiliriz. Değişiklikler güncellenmiş “Son güncelleme” tarihiyle bu sayfada yayımlanır; yasaların gerektirdiği durumlarda ek bildirim yapılır veya rıza alınır."
+          ]
+        ],
+        [
+          "Site İşletmecisi ve İletişim",
+          [
+            "Bu web sitesi Geostarna adı altında işletilmektedir.",
+            {
+              "template": "Genel sorular için {contactLink} sayfamızı kullanın.",
+              "links": {
+                "contactLink": {
+                  "path": "contact/index.html",
+                  "label": "iletişim"
+                }
+              }
+            },
+          "Geçerli gizlilik haklarınızı kullanmak için talebinizin gizlilik veya kişisel verilerle ilgili olduğunu açıkça belirtin. Bazı talepler işleme alınmadan önce kimliğinizi doğrulamamız gerekebilir."
+          ]
+        ]
+      ],
+      "id": [
+        [
+          "Penafian",
+          [
+            "Informasi pada situs ini disediakan hanya untuk tujuan informasi umum.",
+            "Kami menggunakan sumber tepercaya dan berupaya menjaga informasi tetap akurat dan mutakhir. Namun, data statistik dapat mencakup estimasi, revisi, nilai yang hilang, atau perbedaan metodologi.",
+            "Data dapat direvisi tanpa pemberitahuan dan mungkin berbeda dari sumber lain atau rilis berikutnya. Kami tidak menjamin bahwa informasi tersebut lengkap, terkini, akurat, atau sesuai untuk tujuan tertentu.",
+            "Tidak ada informasi pada situs ini yang merupakan nasihat profesional. Verifikasi informasi penting secara mandiri dan berkonsultasilah dengan tenaga profesional yang berkualifikasi bila diperlukan.",
+            "Sejauh diizinkan oleh hukum, kami tidak bertanggung jawab atas kerugian atau kerusakan yang timbul karena menggunakan atau mengandalkan situs ini."
+          ]
+        ],
+        [
+          "Sumber Data",
+          [
+            "Data dari sumber yang berbeda mungkin tidak dapat dibandingkan secara langsung karena perbedaan metodologi, definisi, cakupan, revisi, atau waktu pembaruan. Data dan materi pihak ketiga tetap tunduk pada hak dan ketentuan penyedianya. Sebelum mengambil keputusan berdasarkan data, tinjau sumber asli, metadata, definisi, dan catatan rilis."
+          ]
+        ],
+        [
+          "Tautan Eksternal",
+          [
+            "Situs ini dapat memuat tautan ke situs pihak ketiga. Kami tidak bertanggung jawab atas konten atau praktik privasi situs tersebut, dan adanya tautan tidak berarti bahwa kami mendukungnya."
+          ]
+        ],
+        [
+          "Informasi yang Kami Kumpulkan",
+          [
+            "Kami dapat secara otomatis mengumpulkan informasi teknis dan penggunaan dalam jumlah terbatas, seperti alamat IP, perkiraan lokasi, informasi peramban dan perangkat, sumber rujukan, halaman yang dikunjungi, dan interaksi dengan situs. Kami juga dapat mengumpulkan informasi yang Anda berikan saat menghubungi kami. Jangan mengirimkan informasi pribadi yang sensitif."
+          ]
+        ],
+        [
+          "Cara Kami Menggunakan Informasi",
+          [
+            "Kami menggunakan informasi yang dikumpulkan untuk mengoperasikan dan meningkatkan situs, menganalisis penggunaan, menanggapi pertanyaan, menjaga keamanan, mencegah penyalahgunaan, mendukung penayangan iklan, dan memenuhi kewajiban hukum. Informasi yang diberikan saat menghubungi kami akan digunakan untuk menjawab pertanyaan Anda dan untuk tujuan terkait."
+          ]
+        ],
+        [
+          "Dasar Hukum Pemrosesan",
+          [
+            "Jika diwajibkan oleh hukum yang berlaku, kami memproses informasi pribadi berdasarkan persetujuan, kepentingan yang sah, atau kewajiban hukum. Anda dapat menarik persetujuan kapan saja tanpa memengaruhi keabsahan pemrosesan yang dilakukan sebelum persetujuan ditarik."
+          ]
+        ],
+        [
+          "Cookie dan Teknologi Serupa",
+          [
+            "Kami dan penyedia layanan pihak ketiga, termasuk Google, dapat menggunakan cookie dan teknologi serupa untuk mengoperasikan situs, menganalisis penggunaan, menjaga keamanan, dan mendukung iklan. Penyedia tersebut dapat menggunakan cookie, web beacon, alamat IP, atau pengenal lainnya sehubungan dengan layanan mereka. Jika diwajibkan oleh hukum, teknologi yang tidak penting hanya digunakan setelah persetujuan diberikan. Persetujuan dapat dikelola atau ditarik melalui pengaturan privasi atau cookie situs."
+          ]
+        ],
+        [
+          "Mengelola Pilihan Cookie dan Privasi",
+          [
+            "Anda dapat mengelola atau menarik persetujuan untuk cookie yang tidak penting dan teknologi serupa melalui pengaturan cookie atau privasi situs. Anda juga dapat memblokir atau menghapus cookie melalui peramban, tetapi pengaturan peramban mungkin tidak dapat mengendalikan semua teknologi pihak ketiga dan dapat memengaruhi fungsi tertentu pada situs."
+          ]
+        ],
+        [
+          "Iklan",
+          [
+            "Situs ini dapat menampilkan iklan melalui penyedia pihak ketiga, termasuk Google AdSense. Penyedia tersebut dapat menggunakan cookie, teknologi serupa, dan informasi tentang kunjungan ke situs ini maupun situs lain untuk menayangkan, mempersonalisasi, mengukur, dan mengamankan iklan. Anda dapat mengelola persetujuan dan personalisasi iklan melalui pengaturan cookie atau privasi situs dan, jika tersedia, pengaturan iklan penyedia. Bergantung pada pilihan dan lokasi Anda, iklan dapat dipersonalisasi, tidak dipersonalisasi, atau dibatasi."
+          ]
+        ],
+        [
+          "Analitik",
+          [
+            "Situs ini dapat menggunakan layanan analitik, termasuk Google Analytics, untuk memahami penggunaan situs dan meningkatkan kinerja. Layanan tersebut dapat memproses informasi seperti halaman yang dikunjungi, perkiraan lokasi, informasi perangkat dan peramban, sumber rujukan, serta interaksi dengan situs. Jika diwajibkan oleh hukum, teknologi analitik hanya digunakan setelah persetujuan diberikan."
+          ]
+        ],
+        [
+          "Layanan Google dan Penggunaan Data",
+          [
+            "Untuk informasi lebih lanjut tentang cara Google mengumpulkan dan memproses informasi melalui Google AdSense, Google Analytics, dan layanan lainnya, serta kontrol privasi dan iklan yang tersedia, lihat sumber berikut:",
+            {
+              "items": [
+                {
+                  "label": "Cara Google menggunakan informasi dari situs atau aplikasi yang menggunakan layanan kami",
+                  "href": "https://policies.google.com/technologies/partner-sites?hl=id"
+                },
+                {
+                  "label": "Kebijakan Privasi Google",
+                  "href": "https://policies.google.com/privacy?hl=id"
+                },
+                {
+                  "label": "Pusat Iklan Saya",
+                  "href": "https://myadcenter.google.com/"
+                }
+              ]
+            }
+          ]
+        ],
+        [
+          "Hosting, Keamanan, dan Layanan Teknis",
+          [
+            "Kami dapat menggunakan penyedia hosting, keamanan, pemrosesan formulir, dan layanan teknis lainnya untuk mengoperasikan situs. Penyedia tersebut dapat memproses informasi teknis atau data yang dikirimkan sejauh diperlukan untuk menyediakan layanan mereka."
+          ]
+        ],
+        [
+          "Cara Kami Membagikan Informasi",
+          [
+            "Kami dapat membagikan informasi dengan penyedia layanan, penasihat, otoritas, atau pihak lain jika diperlukan untuk mengoperasikan dan melindungi situs, menyediakan iklan dan analitik, atau mematuhi hukum. Kami tidak menjual informasi pribadi dengan imbalan uang. Namun, beberapa hukum dapat menganggap pengungkapan tertentu terkait iklan sebagai “penjualan”, “pembagian”, atau “iklan bertarget”; dalam hal tersebut, pilihan penolakan yang berlaku akan disediakan."
+          ]
+        ],
+        [
+          "Transfer Data Internasional",
+          [
+            "Kami dan penyedia layanan dapat memproses informasi di negara dengan hukum perlindungan data yang berbeda, menggunakan perlindungan hukum yang sesuai bila diwajibkan."
+          ]
+        ],
+        [
+          "Penyimpanan Data",
+          [
+            "Kami menyimpan informasi pribadi hanya selama diperlukan secara wajar untuk tujuan operasional, keamanan, hukum, dan penyelesaian sengketa. Masa penyimpanan dapat berbeda menurut jenis data dan layanan, termasuk pengaturan dan kebijakan penyedia analitik, iklan, dan layanan lainnya. Setelah itu, informasi dapat dihapus, digabungkan, atau dianonimkan."
+          ]
+        ],
+        [
+          "Keamanan Data",
+          [
+            "Kami menerapkan langkah-langkah teknis dan organisatoris yang wajar untuk melindungi informasi, tetapi tidak dapat menjamin keamanan mutlak."
+          ]
+        ],
+        [
+          "Hak Privasi Anda",
+          [
+            "Bergantung pada lokasi Anda dan hukum yang berlaku, Anda mungkin berhak untuk mengakses, memperbaiki, menghapus, membatasi pemrosesan, menolak pemrosesan, atau meminta portabilitas informasi pribadi Anda; menarik persetujuan; serta menolak iklan, penjualan, atau pembagian tertentu. Anda tidak akan diperlakukan secara diskriminatif dan melawan hukum karena menggunakan hak privasi yang berlaku. Jika berlaku, Anda juga mungkin berhak mengajukan pengaduan kepada otoritas perlindungan data yang berwenang."
+          ]
+        ],
+        [
+          "Privasi Anak",
+          [
+            "Situs ini ditujukan untuk khalayak umum dan tidak ditujukan kepada anak-anak. Kami tidak dengan sengaja mengumpulkan informasi pribadi dari anak yang belum mencapai usia minimum berdasarkan hukum yang berlaku. Jika mengetahui bahwa informasi tersebut telah dikumpulkan, kami akan mengambil langkah yang sesuai."
+          ]
+        ],
+        [
+          "Perubahan pada Kebijakan Ini",
+          [
+            "Kami dapat memperbarui kebijakan ini dari waktu ke waktu. Perubahan akan dipublikasikan pada halaman ini dengan tanggal “Terakhir diperbarui” yang baru. Jika diwajibkan oleh hukum, pemberitahuan tambahan akan diberikan atau persetujuan akan diminta."
+          ]
+        ],
+        [
+          "Pengelola Situs dan Kontak",
+          [
+            "Situs ini dioperasikan dengan nama Geostarna.",
+            {
+              "template": "Untuk pertanyaan umum, gunakan {contactLink} kami.",
+              "links": {
+                "contactLink": {
+                  "path": "contact/index.html",
+                  "label": "halaman kontak"
+                }
+              }
+            },
+            "Untuk menggunakan hak privasi yang berlaku, nyatakan dengan jelas bahwa permintaan Anda berkaitan dengan privasi atau data pribadi. Kami mungkin perlu memverifikasi identitas Anda sebelum memproses permintaan tertentu."
           ]
         ]
       ]

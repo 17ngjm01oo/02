@@ -1,6 +1,17 @@
 import { isTerritory } from "./countryTypes.js";
 import { translate } from "./localization.js";
 
+const entityCountTranslationKeys = {
+  country: {
+    singular: "ui.countryCountSingular",
+    plural: "ui.countryCountPlural",
+  },
+  territory: {
+    singular: "ui.territoryCountSingular",
+    plural: "ui.territoryCountPlural",
+  },
+};
+
 export function renderEntityCountSummary(element, items = []) {
   if (!element) {
     return;
@@ -23,7 +34,8 @@ function getEntityCounts(items) {
 }
 
 function formatEntityCount(count, type) {
-  const key = count === 1 ? `ui.${type}CountSingular` : `ui.${type}CountPlural`;
+  const keys = entityCountTranslationKeys[type];
+  const key = count === 1 ? keys.singular : keys.plural;
   const fallbackLabel = type === "country"
     ? count === 1 ? "country" : "countries"
     : count === 1 ? "territory" : "territories";

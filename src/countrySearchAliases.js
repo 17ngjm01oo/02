@@ -116,7 +116,6 @@ export const countrySearchAliases = {
   },
   CIV: {
     en: ["Ivory Coast"],
-    es: ["Côte d’Ivoire", "Côte d'Ivoire"],
     ja: ["こーとじぼわーる"],
   },
   CMR: {
@@ -127,7 +126,6 @@ export const countrySearchAliases = {
     ja: ["こんごみんしゅきょうわこく"],
   },
   COG: {
-    es: ["Congo", "Congo-Brazzaville"],
     ja: ["こんごきょうわこく"],
   },
   COK: {
@@ -213,7 +211,6 @@ export const countrySearchAliases = {
     ja: ["ふぇろーしょとう"],
   },
   FSM: {
-    es: ["Micronesia"],
     ja: ["みくろねしあれんぽう"],
   },
   GAB: {

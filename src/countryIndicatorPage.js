@@ -575,7 +575,7 @@ function updateCompareAvailability(seriesId) {
 
   input.disabled = !state.hasMainData || !state.comparableCountryCodes;
   input.placeholder = state.hasMainData && state.comparableCountryCodes
-    ? translate("ui.compareWith", "Compare with...")
+    ? translate("ui.compareWith", "Search for a country to compare")
     : "";
 }
 
@@ -593,8 +593,8 @@ function updateCompareSelectionUi(seriesId, errorMessage = "") {
   if (errorMessage) {
     selected.append(createCompareSelectionText(errorMessage));
   } else if (state.comparisonCountry) {
-    selected.append(createCompareSelectionText(translate("ui.comparingWith", "Comparing with {country}", {
-      country: formatCountryDisplayName(state.comparisonCountry, { form: "definite" }),
+    selected.append(createCompareSelectionText(translate("ui.comparingWith", "Comparison: {country}", {
+      country: formatCountryDisplayName(state.comparisonCountry),
     })));
   } else {
     return;
@@ -620,7 +620,7 @@ function createCompareClearButton(seriesId, countryName) {
   button.className = "compare-clear-button";
   button.type = "button";
   button.textContent = "x";
-  button.setAttribute("aria-label", translate("ui.removeComparison", "Remove {country} comparison", {
+  button.setAttribute("aria-label", translate("ui.removeComparison", "Remove {country} from comparison", {
     country: countryName,
   }));
   button.addEventListener("click", () => {

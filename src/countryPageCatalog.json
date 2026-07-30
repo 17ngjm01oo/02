@@ -1,27 +1,23 @@
 {
   "pages": [
     {
-      "subtitle": "",
       "indicators": [
         {
           "seriesId": "currentAccountBalance",
-          "canvasLabel": "Current account balance line chart",
           "displayUnit": "USD",
-          "compareLabel": "Current Account Balance",
-          "title": "Current Account Balance"
+          "title": "Current Account Balance",
+          "comparisonEnabled": true
         },
         {
           "seriesId": "currentAccountBalancePercentGdp",
-          "canvasLabel": "Current account balance percent of GDP line chart",
           "displayUnit": "% of GDP",
-          "compareLabel": "Current Account Balance (% of GDP)",
-          "title": "Current Account Balance"
+          "title": "Current Account Balance",
+          "comparisonEnabled": true
         }
       ],
       "pageKind": "current-account-balance",
-      "titleSuffix": "Current Account Balance",
+      "titleIndicator": "Current Account Balance",
       "generatedLabel": "current account balance",
-      "trendIndicatorName": null,
       "relatedNavLabel": "Trade page navigation",
       "notesLabel": "Chart notes",
       "sourceNote": "Source: IMF World Economic Outlook.",
@@ -30,20 +26,17 @@
       "group": "trade"
     },
     {
-      "subtitle": "",
       "indicators": [
         {
           "seriesId": "forestAreaPercentOfLandArea",
-          "canvasLabel": "Forest area percent of land area line chart",
           "displayUnit": "% of Land Area",
-          "compareLabel": "Forest Area",
-          "title": "Forest Area"
+          "title": "Forest Area",
+          "comparisonEnabled": true
         }
       ],
       "pageKind": "forest-area",
-      "titleSuffix": "Forest Area",
+      "titleIndicator": "Forest Area",
       "generatedLabel": "forest area percent of land area",
-      "trendIndicatorName": null,
       "relatedNavLabel": "Environment page navigation",
       "notesLabel": "Chart notes",
       "sourceNote": "Source: World Bank World Development Indicators.",
@@ -52,27 +45,23 @@
       "group": "environment"
     },
     {
-      "subtitle": "",
       "indicators": [
         {
           "seriesId": "co2Emissions",
-          "canvasLabel": "CO2 emissions line chart",
           "displayUnit": "CO2e",
-          "compareLabel": "CO2 Emissions",
-          "title": "CO2 Emissions"
+          "title": "CO2 Emissions",
+          "comparisonEnabled": true
         },
         {
           "seriesId": "co2EmissionsPerCapita",
-          "canvasLabel": "CO2 emissions per Capita line chart",
           "displayUnit": "CO2e",
-          "compareLabel": "CO2 Emissions per Capita",
-          "title": "CO2 Emissions per Capita"
+          "title": "CO2 Emissions per Capita",
+          "comparisonEnabled": true
         }
       ],
       "pageKind": "co2-emissions",
-      "titleSuffix": "CO2 Emissions",
+      "titleIndicator": "CO2 Emissions",
       "generatedLabel": "CO2 emissions",
-      "trendIndicatorName": null,
       "relatedNavLabel": "Environment page navigation",
       "notesLabel": "Chart notes",
       "sourceNote": "Source: World Bank World Development Indicators.",
@@ -81,20 +70,17 @@
       "group": "environment"
     },
     {
-      "subtitle": "",
       "indicators": [
         {
           "seriesId": "fertilityRate",
-          "canvasLabel": "Fertility rate line chart",
           "displayUnit": "",
-          "compareLabel": "Fertility Rate",
-          "title": "Fertility Rate"
+          "title": "Fertility Rate",
+          "comparisonEnabled": true
         }
       ],
       "pageKind": "fertility-rate",
-      "titleSuffix": "Fertility Rate",
+      "titleIndicator": "Fertility Rate",
       "generatedLabel": "fertility rate",
-      "trendIndicatorName": null,
       "relatedNavLabel": "Population page navigation",
       "notesLabel": "Chart notes",
       "sourceNote": "Source: UN World Population Prospects.",
@@ -103,41 +89,33 @@
       "group": "population"
     },
     {
-      "subtitle": "",
       "indicators": [
         {
           "seriesId": "governmentGrossDebt",
-          "canvasLabel": "Government gross debt line chart",
           "displayUnit": "% of GDP",
-          "compareLabel": "Government Gross Debt (% of GDP)",
-          "title": "Government Gross Debt"
+          "title": "Government Gross Debt",
+          "comparisonEnabled": true
         },
         {
           "seriesId": "governmentGrossDebtNational",
-          "canvasLabel": "Government gross debt in national currency line chart",
           "displayUnit": "Local currency",
-          "compareLabel": null,
           "title": "Government Gross Debt"
         },
         {
           "seriesId": "governmentNetDebt",
-          "canvasLabel": "Government net debt line chart",
           "displayUnit": "% of GDP",
-          "compareLabel": "Government Net Debt (% of GDP)",
-          "title": "Government Net Debt"
+          "title": "Government Net Debt",
+          "comparisonEnabled": true
         },
         {
           "seriesId": "governmentNetDebtNational",
-          "canvasLabel": "Government net debt in national currency line chart",
           "displayUnit": "Local currency",
-          "compareLabel": null,
           "title": "Government Net Debt"
         }
       ],
       "pageKind": "government-debt",
-      "titleSuffix": "Government Debt",
+      "titleIndicator": "Government Debt",
       "generatedLabel": "government debt",
-      "trendIndicatorName": null,
       "relatedNavLabel": "Government Finance page navigation",
       "notesLabel": "Chart notes",
       "sourceNote": "Source: IMF World Economic Outlook.",
@@ -146,41 +124,33 @@
       "group": "government-finance"
     },
     {
-      "subtitle": "",
       "indicators": [
         {
           "seriesId": "fiscalBalance",
-          "canvasLabel": "Fiscal balance line chart",
           "displayUnit": "% of GDP",
-          "compareLabel": "Fiscal Balance (% of GDP)",
-          "title": "Fiscal Balance"
+          "title": "Fiscal Balance",
+          "comparisonEnabled": true
         },
         {
           "seriesId": "fiscalBalanceNational",
-          "canvasLabel": "Fiscal balance in national currency line chart",
           "displayUnit": "Local currency",
-          "compareLabel": null,
           "title": "Fiscal Balance"
         },
         {
           "seriesId": "primaryFiscalBalance",
-          "canvasLabel": "Primary fiscal balance line chart",
           "displayUnit": "% of GDP",
-          "compareLabel": "Primary Fiscal Balance (% of GDP)",
-          "title": "Primary Fiscal Balance"
+          "title": "Primary Fiscal Balance",
+          "comparisonEnabled": true
         },
         {
           "seriesId": "primaryFiscalBalanceNational",
-          "canvasLabel": "Primary fiscal balance in national currency line chart",
           "displayUnit": "Local currency",
-          "compareLabel": null,
           "title": "Primary Fiscal Balance"
         }
       ],
       "pageKind": "fiscal-balance",
-      "titleSuffix": "Fiscal Balance",
+      "titleIndicator": "Fiscal Balance",
       "generatedLabel": "fiscal balance",
-      "trendIndicatorName": null,
       "relatedNavLabel": "Government Finance page navigation",
       "notesLabel": "Chart notes",
       "sourceNote": "Source: IMF World Economic Outlook.",
@@ -189,41 +159,33 @@
       "group": "government-finance"
     },
     {
-      "subtitle": "",
       "indicators": [
         {
           "seriesId": "governmentRevenue",
-          "canvasLabel": "Government revenue line chart",
           "displayUnit": "% of GDP",
-          "compareLabel": "Government Revenue (% of GDP)",
-          "title": "Government Revenue"
+          "title": "Government Revenue",
+          "comparisonEnabled": true
         },
         {
           "seriesId": "governmentRevenueNational",
-          "canvasLabel": "Government revenue in national currency line chart",
           "displayUnit": "Local currency",
-          "compareLabel": null,
           "title": "Government Revenue"
         },
         {
           "seriesId": "governmentSpending",
-          "canvasLabel": "Government spending line chart",
           "displayUnit": "% of GDP",
-          "compareLabel": "Government Spending (% of GDP)",
-          "title": "Government Spending"
+          "title": "Government Spending",
+          "comparisonEnabled": true
         },
         {
           "seriesId": "governmentSpendingNational",
-          "canvasLabel": "Government spending in national currency line chart",
           "displayUnit": "Local currency",
-          "compareLabel": null,
           "title": "Government Spending"
         }
       ],
       "pageKind": "government-revenue-spending",
-      "titleSuffix": "Government Revenue and Spending",
+      "titleIndicator": "Government Revenue and Spending",
       "generatedLabel": "government revenue and spending",
-      "trendIndicatorName": null,
       "relatedNavLabel": "Government Finance page navigation",
       "notesLabel": "Chart notes",
       "sourceNote": "Source: IMF World Economic Outlook.",
@@ -232,20 +194,17 @@
       "group": "government-finance"
     },
     {
-      "subtitle": "Values are shown in current U.S. dollars.",
       "indicators": [
         {
           "seriesId": "totalReservesIncludingGold",
-          "canvasLabel": "Total reserves including gold line chart",
           "displayUnit": "",
-          "compareLabel": "Total Reserves",
-          "title": "Total Reserves"
+          "title": "Total Reserves",
+          "comparisonEnabled": true
         }
       ],
       "pageKind": "total-reserves",
-      "titleSuffix": "Total Reserves",
+      "titleIndicator": "Total Reserves",
       "generatedLabel": "total reserves including gold",
-      "trendIndicatorName": null,
       "relatedNavLabel": "Government Finance page navigation",
       "notesLabel": "Chart notes",
       "sourceNote": "Source: World Bank World Development Indicators.",
@@ -254,20 +213,17 @@
       "group": "government-finance"
     },
     {
-      "subtitle": "GDP growth is the annual percentage change in real GDP in national currency.",
       "indicators": [
         {
           "seriesId": "gdpGrowth",
-          "canvasLabel": "GDP Growth line chart",
           "displayUnit": "",
-          "compareLabel": "GDP Growth",
-          "title": "GDP Growth"
+          "title": "GDP Growth",
+          "comparisonEnabled": true
         }
       ],
       "pageKind": "gdp-growth",
-      "titleSuffix": "GDP Growth",
+      "titleIndicator": "GDP Growth Rate",
       "generatedLabel": "GDP growth",
-      "trendIndicatorName": "GDP Growth Rate",
       "relatedNavLabel": "Economy page navigation",
       "notesLabel": "Chart notes",
       "sourceNote": "Source: IMF World Economic Outlook.",
@@ -276,34 +232,27 @@
       "group": "economy"
     },
     {
-      "subtitle": "",
       "indicators": [
         {
           "seriesId": "gdp",
-          "canvasLabel": "GDP line chart",
           "displayUnit": "USD",
-          "compareLabel": "GDP",
-          "title": "GDP"
+          "title": "GDP",
+          "comparisonEnabled": true
         },
         {
           "seriesId": "gdpNational",
-          "canvasLabel": "GDP in national currency line chart",
           "displayUnit": "Local currency",
-          "compareLabel": null,
           "title": "GDP"
         },
         {
           "seriesId": "realGdp",
-          "canvasLabel": "Real GDP in constant national currency line chart",
           "displayUnit": "Local currency",
-          "compareLabel": null,
           "title": "Real GDP"
         }
       ],
       "pageKind": "gdp",
-      "titleSuffix": "GDP",
+      "titleIndicator": "GDP",
       "generatedLabel": "GDP",
-      "trendIndicatorName": null,
       "relatedNavLabel": "Economy page navigation",
       "notesLabel": "Chart notes",
       "sourceNote": "Source: IMF World Economic Outlook.",
@@ -312,34 +261,27 @@
       "group": "economy"
     },
     {
-      "subtitle": "",
       "indicators": [
         {
           "seriesId": "gdpPerCapita",
-          "canvasLabel": "GDP per Capita line chart",
           "displayUnit": "USD",
-          "compareLabel": "GDP per Capita",
-          "title": "GDP per Capita"
+          "title": "GDP per Capita",
+          "comparisonEnabled": true
         },
         {
           "seriesId": "gdpNationalPerCapita",
-          "canvasLabel": "GDP per Capita in national currency line chart",
           "displayUnit": "Local currency",
-          "compareLabel": null,
           "title": "GDP per Capita"
         },
         {
           "seriesId": "realGdpPerCapita",
-          "canvasLabel": "Real GDP per Capita in constant national currency line chart",
           "displayUnit": "Local currency",
-          "compareLabel": null,
           "title": "Real GDP per Capita"
         }
       ],
       "pageKind": "gdp-per-capita",
-      "titleSuffix": "GDP per Capita",
+      "titleIndicator": "GDP per Capita",
       "generatedLabel": "GDP per Capita",
-      "trendIndicatorName": "GDP per Capita",
       "relatedNavLabel": "Economy page navigation",
       "notesLabel": "Chart notes",
       "sourceNote": "Source: IMF World Economic Outlook.",
@@ -348,20 +290,17 @@
       "group": "economy"
     },
     {
-      "subtitle": "",
       "indicators": [
         {
           "seriesId": "gni",
-          "canvasLabel": "GNI line chart",
           "displayUnit": "USD",
-          "compareLabel": "GNI",
-          "title": "GNI"
+          "title": "GNI",
+          "comparisonEnabled": true
         }
       ],
       "pageKind": "gni",
-      "titleSuffix": "GNI",
+      "titleIndicator": "GNI",
       "generatedLabel": "GNI",
-      "trendIndicatorName": null,
       "relatedNavLabel": "Economy page navigation",
       "notesLabel": "Chart notes",
       "sourceNote": "Source: UNdata National Accounts Main Aggregates Database.",
@@ -370,20 +309,17 @@
       "group": "economy"
     },
     {
-      "subtitle": "",
       "indicators": [
         {
           "seriesId": "gniPerCapita",
-          "canvasLabel": "GNI per Capita line chart",
           "displayUnit": "USD",
-          "compareLabel": "GNI per Capita",
-          "title": "GNI per Capita"
+          "title": "GNI per Capita",
+          "comparisonEnabled": true
         }
       ],
       "pageKind": "gni-per-capita",
-      "titleSuffix": "GNI per Capita",
+      "titleIndicator": "GNI per Capita",
       "generatedLabel": "GNI per Capita",
-      "trendIndicatorName": "GNI per Capita",
       "relatedNavLabel": "Economy page navigation",
       "notesLabel": "Chart notes",
       "sourceNote": "Source: UNdata National Accounts Main Aggregates Database.",
@@ -392,27 +328,23 @@
       "group": "economy"
     },
     {
-      "subtitle": "Values are based on UN DESA International Migrant Stock.",
       "indicators": [
         {
           "seriesId": "immigrants",
-          "canvasLabel": "Immigrants line chart",
           "displayUnit": "",
-          "compareLabel": "Immigrants",
-          "title": "Immigrants"
+          "title": "Immigrants",
+          "comparisonEnabled": true
         },
         {
           "seriesId": "immigrantsPercentPopulation",
-          "canvasLabel": "Immigrants percent of population line chart",
           "displayUnit": "% of Population",
-          "compareLabel": "Immigrants (% of Population)",
-          "title": "Immigrants"
+          "title": "Immigrants",
+          "comparisonEnabled": true
         }
       ],
       "pageKind": "immigrants",
-      "titleSuffix": "Immigrants",
+      "titleIndicator": "Immigrants",
       "generatedLabel": "immigrants",
-      "trendIndicatorName": null,
       "relatedNavLabel": "Population page navigation",
       "notesLabel": "Chart notes",
       "sourceNote": "Source: UN DESA Population Division International Migrant Stock.",
@@ -421,20 +353,17 @@
       "group": "population"
     },
     {
-      "subtitle": "Inflation rate is the annual percentage change in the consumer price index.",
       "indicators": [
         {
           "seriesId": "inflationRate",
-          "canvasLabel": "Inflation Rate line chart",
           "displayUnit": "",
-          "compareLabel": "Inflation Rate",
-          "title": "Inflation Rate"
+          "title": "Inflation Rate",
+          "comparisonEnabled": true
         }
       ],
       "pageKind": "inflation-rate",
-      "titleSuffix": "Inflation Rate",
+      "titleIndicator": "Inflation Rate",
       "generatedLabel": "inflation rate",
-      "trendIndicatorName": null,
       "relatedNavLabel": "Economy page navigation",
       "notesLabel": "Chart notes",
       "sourceNote": "Source: IMF World Economic Outlook.",
@@ -443,20 +372,17 @@
       "group": "economy"
     },
     {
-      "subtitle": "",
       "indicators": [
         {
           "seriesId": "lifeExpectancy",
-          "canvasLabel": "Life expectancy line chart",
           "displayUnit": "",
-          "compareLabel": "Life Expectancy",
-          "title": "Life Expectancy"
+          "title": "Life Expectancy",
+          "comparisonEnabled": true
         }
       ],
       "pageKind": "life-expectancy",
-      "titleSuffix": "Life Expectancy",
+      "titleIndicator": "Life Expectancy",
       "generatedLabel": "life expectancy",
-      "trendIndicatorName": null,
       "relatedNavLabel": "Population page navigation",
       "notesLabel": "Chart notes",
       "sourceNote": "Source: UN World Population Prospects.",
@@ -465,20 +391,17 @@
       "group": "population"
     },
     {
-      "subtitle": "",
       "indicators": [
         {
           "seriesId": "populationDensity",
-          "canvasLabel": "Population density line chart",
           "displayUnit": "/km²",
-          "compareLabel": "Population Density",
-          "title": "Population Density"
+          "title": "Population Density",
+          "comparisonEnabled": true
         }
       ],
       "pageKind": "population-density",
-      "titleSuffix": "Population Density",
+      "titleIndicator": "Population Density",
       "generatedLabel": "population density",
-      "trendIndicatorName": null,
       "relatedNavLabel": "Population page navigation",
       "notesLabel": "Data notes",
       "sourceNote": "Source: UN World Population Prospects.",
@@ -487,20 +410,17 @@
       "group": "population"
     },
     {
-      "subtitle": "",
       "indicators": [
         {
           "seriesId": "populationGrowth",
-          "canvasLabel": "Population growth line chart",
           "displayUnit": "",
-          "compareLabel": "Population Growth",
-          "title": "Population Growth"
+          "title": "Population Growth",
+          "comparisonEnabled": true
         }
       ],
       "pageKind": "population-growth",
-      "titleSuffix": "Population Growth",
+      "titleIndicator": "Population Growth",
       "generatedLabel": "population growth",
-      "trendIndicatorName": null,
       "relatedNavLabel": "Population page navigation",
       "notesLabel": "Chart notes",
       "sourceNote": "Source: UN World Population Prospects.",
@@ -509,20 +429,17 @@
       "group": "population"
     },
     {
-      "subtitle": "",
       "indicators": [
         {
           "seriesId": "population",
-          "canvasLabel": "Population line chart",
           "displayUnit": "",
-          "compareLabel": "Population",
-          "title": "Population"
+          "title": "Population",
+          "comparisonEnabled": true
         }
       ],
       "pageKind": "population",
-      "titleSuffix": "Population",
+      "titleIndicator": "Population",
       "generatedLabel": "population",
-      "trendIndicatorName": null,
       "relatedNavLabel": "Population page navigation",
       "notesLabel": "Data notes",
       "sourceNote": "Source: UN World Population Prospects.",
@@ -531,20 +448,17 @@
       "group": "population"
     },
     {
-      "subtitle": "",
       "indicators": [
         {
           "seriesId": "ppp",
-          "canvasLabel": "PPP line chart",
           "displayUnit": "Int$",
-          "compareLabel": "PPP",
-          "title": "PPP GDP"
+          "title": "PPP GDP",
+          "comparisonEnabled": true
         }
       ],
       "pageKind": "ppp-gdp",
-      "titleSuffix": "PPP GDP",
+      "titleIndicator": "PPP GDP",
       "generatedLabel": "PPP",
-      "trendIndicatorName": null,
       "relatedNavLabel": "Economy page navigation",
       "notesLabel": "Chart notes",
       "sourceNote": "Source: IMF World Economic Outlook.",
@@ -553,20 +467,17 @@
       "group": "economy"
     },
     {
-      "subtitle": "",
       "indicators": [
         {
           "seriesId": "pppPerCapita",
-          "canvasLabel": "PPP per Capita line chart",
           "displayUnit": "Int$",
-          "compareLabel": "PPP per Capita",
-          "title": "PPP GDP per Capita"
+          "title": "PPP GDP per Capita",
+          "comparisonEnabled": true
         }
       ],
       "pageKind": "ppp-gdp-per-capita",
-      "titleSuffix": "PPP GDP per Capita",
+      "titleIndicator": "PPP GDP per Capita",
       "generatedLabel": "PPP per Capita",
-      "trendIndicatorName": null,
       "relatedNavLabel": "Economy page navigation",
       "notesLabel": "Chart notes",
       "sourceNote": "Source: IMF World Economic Outlook.",
@@ -575,34 +486,29 @@
       "group": "economy"
     },
     {
-      "subtitle": "",
       "indicators": [
         {
           "seriesId": "servicesTradeBalance",
-          "canvasLabel": "Services trade balance line chart",
           "displayUnit": "USD",
-          "compareLabel": "Services Trade Balance",
-          "title": "Services Trade Balance"
+          "title": "Services Trade Balance",
+          "comparisonEnabled": true
         },
         {
           "seriesId": "servicesExports",
-          "canvasLabel": "Services exports line chart",
           "displayUnit": "USD",
-          "compareLabel": "Services Exports",
-          "title": "Services Exports"
+          "title": "Services Exports",
+          "comparisonEnabled": true
         },
         {
           "seriesId": "servicesImports",
-          "canvasLabel": "Services imports line chart",
           "displayUnit": "USD",
-          "compareLabel": "Services Imports",
-          "title": "Services Imports"
+          "title": "Services Imports",
+          "comparisonEnabled": true
         }
       ],
       "pageKind": "services-trade",
-      "titleSuffix": "Services Exports, Imports and Trade Balance",
+      "titleIndicator": "Services Exports, Imports and Trade Balance",
       "generatedLabel": "services trade",
-      "trendIndicatorName": null,
       "relatedNavLabel": "Services trade page navigation",
       "notesLabel": "Chart notes",
       "sourceNote": "Source: UNCTADstat.",
@@ -611,20 +517,17 @@
       "group": "trade"
     },
     {
-      "subtitle": "",
       "indicators": [
         {
           "seriesId": "hdi",
-          "canvasLabel": "HDI line chart",
           "displayUnit": "",
-          "compareLabel": "HDI",
-          "title": "HDI"
+          "title": "HDI",
+          "comparisonEnabled": true
         }
       ],
       "pageKind": "hdi",
-      "titleSuffix": "HDI",
+      "titleIndicator": "HDI",
       "generatedLabel": "HDI",
-      "trendIndicatorName": null,
       "relatedNavLabel": "Society page navigation",
       "notesLabel": "Chart notes",
       "sourceNote": "Source: UNDP Human Development Reports.",
@@ -633,27 +536,23 @@
       "group": "society"
     },
     {
-      "subtitle": "",
       "indicators": [
         {
           "seriesId": "militarySpending",
-          "canvasLabel": "Military spending line chart",
           "displayUnit": "USD",
-          "compareLabel": "Military Spending",
-          "title": "Military Spending"
+          "title": "Military Spending",
+          "comparisonEnabled": true
         },
         {
           "seriesId": "militarySpendingPercentGdp",
-          "canvasLabel": "Military spending percent of GDP line chart",
           "displayUnit": "% of GDP",
-          "compareLabel": "Military Spending (% of GDP)",
-          "title": "Military Spending"
+          "title": "Military Spending",
+          "comparisonEnabled": true
         }
       ],
       "pageKind": "military-spending",
-      "titleSuffix": "Military Spending",
+      "titleIndicator": "Military Spending",
       "generatedLabel": "military spending",
-      "trendIndicatorName": null,
       "relatedNavLabel": "Society page navigation",
       "notesLabel": "Chart notes",
       "sourceNote": "Source: SIPRI Military Expenditure Database.",
@@ -662,34 +561,29 @@
       "group": "society"
     },
     {
-      "subtitle": "",
       "indicators": [
         {
           "seriesId": "tradeBalance",
-          "canvasLabel": "Trade balance line chart",
           "displayUnit": "USD",
-          "compareLabel": "Trade Balance",
-          "title": "Trade Balance"
+          "title": "Trade Balance",
+          "comparisonEnabled": true
         },
         {
           "seriesId": "exports",
-          "canvasLabel": "Exports line chart",
           "displayUnit": "USD",
-          "compareLabel": "Exports",
-          "title": "Exports"
+          "title": "Exports",
+          "comparisonEnabled": true
         },
         {
           "seriesId": "imports",
-          "canvasLabel": "Imports line chart",
           "displayUnit": "USD",
-          "compareLabel": "Imports",
-          "title": "Imports"
+          "title": "Imports",
+          "comparisonEnabled": true
         }
       ],
       "pageKind": "trade",
-      "titleSuffix": "Exports, Imports and Trade Balance",
+      "titleIndicator": "Exports, Imports and Trade Balance",
       "generatedLabel": "trade",
-      "trendIndicatorName": null,
       "relatedNavLabel": "Trade page navigation",
       "notesLabel": "Chart notes",
       "sourceNote": "Source: UNCTADstat.",
@@ -698,20 +592,17 @@
       "group": "trade"
     },
     {
-      "subtitle": "",
       "indicators": [
         {
           "seriesId": "unemploymentRate",
-          "canvasLabel": "Unemployment rate line chart",
           "displayUnit": "",
-          "compareLabel": "Unemployment Rate",
-          "title": "Unemployment Rate"
+          "title": "Unemployment Rate",
+          "comparisonEnabled": true
         }
       ],
       "pageKind": "unemployment-rate",
-      "titleSuffix": "Unemployment Rate",
+      "titleIndicator": "Unemployment Rate",
       "generatedLabel": "unemployment rate",
-      "trendIndicatorName": null,
       "relatedNavLabel": "Economy page navigation",
       "notesLabel": "Data notes",
       "sourceNote": "Source: IMF World Economic Outlook.",
