@@ -202,7 +202,7 @@ function createMenuLink(item, { rootHref, currentLocale, currentSection }) {
 
 function createLanguageMenu(section, { rootHref, currentLocale, pagePath }) {
   const details = document.createElement("details");
-  details.className = "site-menu-disclosure";
+  details.className = "site-menu-disclosure site-menu-language";
 
   const label = translate(`ui.${section.labelKey}`, section.fallbackLabel);
   const summary = document.createElement("summary");

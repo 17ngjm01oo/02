@@ -16,7 +16,6 @@
         "unComtradeIsoFallback": "USA",
         "worldMapTopojson": "840",
         "oecdRevenue": "USA",
-        "sipriMilitarySpending": "United States of America",
         "unNationalAccounts": "United States"
       }
     },
@@ -34,7 +33,6 @@
         "unComtradeIsoFallback": "JPN",
         "worldMapTopojson": "392",
         "oecdRevenue": "JPN",
-        "sipriMilitarySpending": "Japan",
         "unNationalAccounts": "Japan"
       }
     },
@@ -52,7 +50,6 @@
         "unComtradeIsoFallback": "CHN",
         "worldMapTopojson": "156",
         "oecdRevenue": "CHN",
-        "sipriMilitarySpending": "China",
         "unNationalAccounts": "China (mainland)"
       }
     },
@@ -67,7 +64,6 @@
         "unComtradeReporter": "158",
         "worldMapTopojson": "158",
         "oecdRevenue": "TWN",
-        "sipriMilitarySpending": "Taiwan",
         "unNationalAccounts": "Taiwan"
       }
     },
@@ -85,7 +81,6 @@
         "unComtradeIsoFallback": "HKG",
         "worldMapTopojson": "344",
         "oecdRevenue": "HKG",
-        "sipriMilitarySpending": "Hong Kong",
         "unNationalAccounts": "China, Hong Kong SAR"
       }
     },
@@ -103,7 +98,6 @@
         "unComtradeIsoFallback": "MAC",
         "worldMapTopojson": "446",
         "oecdRevenue": "MAC",
-        "sipriMilitarySpending": "Macao",
         "unNationalAccounts": "China, Macao Special Administrative Region"
       }
     },
@@ -121,7 +115,6 @@
         "unComtradeIsoFallback": "DEU",
         "worldMapTopojson": "276",
         "oecdRevenue": "DEU",
-        "sipriMilitarySpending": "Germany",
         "unNationalAccounts": "Germany"
       }
     },
@@ -139,7 +132,6 @@
         "unComtradeIsoFallback": "FRA",
         "worldMapTopojson": "250",
         "oecdRevenue": "FRA",
-        "sipriMilitarySpending": "France",
         "unNationalAccounts": "France"
       }
     },
@@ -157,7 +149,6 @@
         "unComtradeIsoFallback": "GBR",
         "worldMapTopojson": "826",
         "oecdRevenue": "GBR",
-        "sipriMilitarySpending": "United Kingdom",
         "unNationalAccounts": "United Kingdom of Great Britain and Northern Ireland"
       }
     },
@@ -175,7 +166,6 @@
         "unComtradeIsoFallback": "ITA",
         "worldMapTopojson": "380",
         "oecdRevenue": "ITA",
-        "sipriMilitarySpending": "Italy",
         "unNationalAccounts": "Italy"
       }
     },
@@ -193,7 +183,6 @@
         "unComtradeIsoFallback": "CAN",
         "worldMapTopojson": "124",
         "oecdRevenue": "CAN",
-        "sipriMilitarySpending": "Canada",
         "unNationalAccounts": "Canada"
       }
     },
@@ -211,7 +200,6 @@
         "unComtradeIsoFallback": "AUS",
         "worldMapTopojson": "036",
         "oecdRevenue": "AUS",
-        "sipriMilitarySpending": "Australia",
         "unNationalAccounts": "Australia"
       }
     },
@@ -229,7 +217,6 @@
         "unComtradeIsoFallback": "NZL",
         "worldMapTopojson": "554",
         "oecdRevenue": "NZL",
-        "sipriMilitarySpending": "New Zealand",
         "unNationalAccounts": "New Zealand"
       }
     },
@@ -247,7 +234,6 @@
         "unComtradeIsoFallback": "ASM",
         "worldMapTopojson": "016",
         "oecdRevenue": "ASM",
-        "sipriMilitarySpending": "American Samoa",
         "unNationalAccounts": "American Samoa"
       }
     },
@@ -262,7 +248,6 @@
         "unComtradeReporter": "184",
         "worldMapTopojson": "184",
         "oecdRevenue": "COK",
-        "sipriMilitarySpending": "Cook Islands",
         "unNationalAccounts": "Cook Islands"
       }
     },
@@ -280,7 +265,6 @@
         "unComtradeIsoFallback": "FJI",
         "worldMapTopojson": "242",
         "oecdRevenue": "FJI",
-        "sipriMilitarySpending": "Fiji",
         "unNationalAccounts": "Fiji"
       }
     },
@@ -298,7 +282,6 @@
         "unComtradeIsoFallback": "GUM",
         "worldMapTopojson": "316",
         "oecdRevenue": "GUM",
-        "sipriMilitarySpending": "Guam",
         "unNationalAccounts": "Guam"
       }
     },
@@ -316,7 +299,6 @@
         "unComtradeIsoFallback": "MNP",
         "worldMapTopojson": "580",
         "oecdRevenue": "MNP",
-        "sipriMilitarySpending": "Northern Mariana Islands",
         "unNationalAccounts": "Northern Mariana Islands"
       }
     },
@@ -334,7 +316,6 @@
         "unComtradeIsoFallback": "NCL",
         "worldMapTopojson": "540",
         "oecdRevenue": "NCL",
-        "sipriMilitarySpending": "New Caledonia",
         "unNationalAccounts": "New Caledonia"
       }
     },
@@ -349,7 +330,6 @@
         "unComtradeReporter": "570",
         "worldMapTopojson": "570",
         "oecdRevenue": "NIU",
-        "sipriMilitarySpending": "Niue",
         "unNationalAccounts": "Niue"
       }
     },
@@ -359,7 +339,6 @@
       "m49": null,
       "sourceIds": {
         "oecdRevenue": "PCN",
-        "sipriMilitarySpending": "Pitcairn",
         "unNationalAccounts": "Pitcairn"
       }
     },
@@ -377,7 +356,6 @@
         "unComtradeIsoFallback": "PNG",
         "worldMapTopojson": "598",
         "oecdRevenue": "PNG",
-        "sipriMilitarySpending": "Papua New Guinea",
         "unNationalAccounts": "Papua New Guinea"
       }
     },
@@ -395,7 +373,6 @@
         "unComtradeIsoFallback": "PYF",
         "worldMapTopojson": "258",
         "oecdRevenue": "PYF",
-        "sipriMilitarySpending": "French Polynesia",
         "unNationalAccounts": "French Polynesia"
       }
     },
@@ -413,7 +390,6 @@
         "unComtradeIsoFallback": "SLB",
         "worldMapTopojson": "090",
         "oecdRevenue": "SLB",
-        "sipriMilitarySpending": "Solomon Islands",
         "unNationalAccounts": "Solomon Islands"
       }
     },
@@ -428,7 +404,6 @@
         "unComtradeReporter": "772",
         "worldMapTopojson": "772",
         "oecdRevenue": "TKL",
-        "sipriMilitarySpending": "Tokelau",
         "unNationalAccounts": "Tokelau"
       }
     },
@@ -446,7 +421,6 @@
         "unComtradeIsoFallback": "VUT",
         "worldMapTopojson": "548",
         "oecdRevenue": "VUT",
-        "sipriMilitarySpending": "Vanuatu",
         "unNationalAccounts": "Vanuatu"
       }
     },
@@ -464,7 +438,6 @@
         "unComtradeIsoFallback": "FSM",
         "worldMapTopojson": "583",
         "oecdRevenue": "FSM",
-        "sipriMilitarySpending": "Federated States of Micronesia",
         "unNationalAccounts": "Micronesia (Federated States of)"
       }
     },
@@ -482,7 +455,6 @@
         "unComtradeIsoFallback": "KIR",
         "worldMapTopojson": "296",
         "oecdRevenue": "KIR",
-        "sipriMilitarySpending": "Kiribati",
         "unNationalAccounts": "Kiribati"
       }
     },
@@ -500,7 +472,6 @@
         "unComtradeIsoFallback": "MHL",
         "worldMapTopojson": "584",
         "oecdRevenue": "MHL",
-        "sipriMilitarySpending": "Marshall Islands",
         "unNationalAccounts": "Marshall Islands"
       }
     },
@@ -518,7 +489,6 @@
         "unComtradeIsoFallback": "NRU",
         "worldMapTopojson": "520",
         "oecdRevenue": "NRU",
-        "sipriMilitarySpending": "Nauru",
         "unNationalAccounts": "Nauru"
       }
     },
@@ -536,7 +506,6 @@
         "unComtradeIsoFallback": "PLW",
         "worldMapTopojson": "585",
         "oecdRevenue": "PLW",
-        "sipriMilitarySpending": "Palau",
         "unNationalAccounts": "Palau"
       }
     },
@@ -554,7 +523,6 @@
         "unComtradeIsoFallback": "WSM",
         "worldMapTopojson": "882",
         "oecdRevenue": "WSM",
-        "sipriMilitarySpending": "Samoa",
         "unNationalAccounts": "Samoa"
       }
     },
@@ -572,7 +540,6 @@
         "unComtradeIsoFallback": "TON",
         "worldMapTopojson": "776",
         "oecdRevenue": "TON",
-        "sipriMilitarySpending": "Tonga",
         "unNationalAccounts": "Tonga"
       }
     },
@@ -590,7 +557,6 @@
         "unComtradeIsoFallback": "TUV",
         "worldMapTopojson": "798",
         "oecdRevenue": "TUV",
-        "sipriMilitarySpending": "Tuvalu",
         "unNationalAccounts": "Tuvalu"
       }
     },
@@ -605,7 +571,6 @@
         "unComtradeReporter": "876",
         "worldMapTopojson": "876",
         "oecdRevenue": "WLF",
-        "sipriMilitarySpending": "Wallis and Futuna",
         "unNationalAccounts": "Wallis and Futuna"
       }
     },
@@ -623,7 +588,6 @@
         "unComtradeIsoFallback": "KOR",
         "worldMapTopojson": "410",
         "oecdRevenue": "KOR",
-        "sipriMilitarySpending": "Korea, South",
         "unNationalAccounts": "Republic of Korea"
       }
     },
@@ -641,7 +605,6 @@
         "unComtradeIsoFallback": "PRK",
         "worldMapTopojson": "408",
         "oecdRevenue": "PRK",
-        "sipriMilitarySpending": "Korea, North",
         "unNationalAccounts": "Democratic People's Republic of Korea"
       }
     },
@@ -659,7 +622,6 @@
         "unComtradeIsoFallback": "IDN",
         "worldMapTopojson": "360",
         "oecdRevenue": "IDN",
-        "sipriMilitarySpending": "Indonesia",
         "unNationalAccounts": "Indonesia"
       }
     },
@@ -677,7 +639,6 @@
         "unComtradeIsoFallback": "TUR",
         "worldMapTopojson": "792",
         "oecdRevenue": "TUR",
-        "sipriMilitarySpending": "Türkiye",
         "unNationalAccounts": "Türkiye"
       }
     },
@@ -695,7 +656,6 @@
         "unComtradeIsoFallback": "IND",
         "worldMapTopojson": "356",
         "oecdRevenue": "IND",
-        "sipriMilitarySpending": "India",
         "unNationalAccounts": "India"
       }
     },
@@ -713,7 +673,6 @@
         "unComtradeIsoFallback": "LKA",
         "worldMapTopojson": "144",
         "oecdRevenue": "LKA",
-        "sipriMilitarySpending": "Sri Lanka",
         "unNationalAccounts": "Sri Lanka"
       }
     },
@@ -731,7 +690,6 @@
         "unComtradeIsoFallback": "MDV",
         "worldMapTopojson": "462",
         "oecdRevenue": "MDV",
-        "sipriMilitarySpending": "Maldives",
         "unNationalAccounts": "Maldives"
       }
     },
@@ -749,7 +707,6 @@
         "unComtradeIsoFallback": "BGD",
         "worldMapTopojson": "050",
         "oecdRevenue": "BGD",
-        "sipriMilitarySpending": "Bangladesh",
         "unNationalAccounts": "Bangladesh"
       }
     },
@@ -767,7 +724,6 @@
         "unComtradeIsoFallback": "BTN",
         "worldMapTopojson": "064",
         "oecdRevenue": "BTN",
-        "sipriMilitarySpending": "Bhutan",
         "unNationalAccounts": "Bhutan"
       }
     },
@@ -785,7 +741,6 @@
         "unComtradeIsoFallback": "NPL",
         "worldMapTopojson": "524",
         "oecdRevenue": "NPL",
-        "sipriMilitarySpending": "Nepal",
         "unNationalAccounts": "Nepal"
       }
     },
@@ -803,7 +758,6 @@
         "unComtradeIsoFallback": "PAK",
         "worldMapTopojson": "586",
         "oecdRevenue": "PAK",
-        "sipriMilitarySpending": "Pakistan",
         "unNationalAccounts": "Pakistan"
       }
     },
@@ -821,7 +775,6 @@
         "unComtradeIsoFallback": "AFG",
         "worldMapTopojson": "004",
         "oecdRevenue": "AFG",
-        "sipriMilitarySpending": "Afghanistan",
         "unNationalAccounts": "Afghanistan"
       }
     },
@@ -839,7 +792,6 @@
         "unComtradeIsoFallback": "TJK",
         "worldMapTopojson": "762",
         "oecdRevenue": "TJK",
-        "sipriMilitarySpending": "Tajikistan",
         "unNationalAccounts": "Tajikistan"
       }
     },
@@ -857,7 +809,6 @@
         "unComtradeIsoFallback": "KGZ",
         "worldMapTopojson": "417",
         "oecdRevenue": "KGZ",
-        "sipriMilitarySpending": "Kyrgyz Republic",
         "unNationalAccounts": "Kyrgyzstan"
       }
     },
@@ -875,7 +826,6 @@
         "unComtradeIsoFallback": "TKM",
         "worldMapTopojson": "795",
         "oecdRevenue": "TKM",
-        "sipriMilitarySpending": "Turkmenistan",
         "unNationalAccounts": "Turkmenistan"
       }
     },
@@ -893,7 +843,6 @@
         "unComtradeIsoFallback": "UZB",
         "worldMapTopojson": "860",
         "oecdRevenue": "UZB",
-        "sipriMilitarySpending": "Uzbekistan",
         "unNationalAccounts": "Uzbekistan"
       }
     },
@@ -911,7 +860,6 @@
         "unComtradeIsoFallback": "KAZ",
         "worldMapTopojson": "398",
         "oecdRevenue": "KAZ",
-        "sipriMilitarySpending": "Kazakhstan",
         "unNationalAccounts": "Kazakhstan"
       }
     },
@@ -929,7 +877,6 @@
         "unComtradeIsoFallback": "MNG",
         "worldMapTopojson": "496",
         "oecdRevenue": "MNG",
-        "sipriMilitarySpending": "Mongolia",
         "unNationalAccounts": "Mongolia"
       }
     },
@@ -947,7 +894,6 @@
         "unComtradeIsoFallback": "AZE",
         "worldMapTopojson": "031",
         "oecdRevenue": "AZE",
-        "sipriMilitarySpending": "Azerbaijan",
         "unNationalAccounts": "Azerbaijan"
       }
     },
@@ -965,7 +911,6 @@
         "unComtradeIsoFallback": "GEO",
         "worldMapTopojson": "268",
         "oecdRevenue": "GEO",
-        "sipriMilitarySpending": "Georgia",
         "unNationalAccounts": "Georgia"
       }
     },
@@ -983,7 +928,6 @@
         "unComtradeIsoFallback": "ARM",
         "worldMapTopojson": "051",
         "oecdRevenue": "ARM",
-        "sipriMilitarySpending": "Armenia",
         "unNationalAccounts": "Armenia"
       }
     },
@@ -1001,7 +945,6 @@
         "unComtradeIsoFallback": "SAU",
         "worldMapTopojson": "682",
         "oecdRevenue": "SAU",
-        "sipriMilitarySpending": "Saudi Arabia",
         "unNationalAccounts": "Saudi Arabia"
       }
     },
@@ -1019,7 +962,6 @@
         "unComtradeIsoFallback": "IRN",
         "worldMapTopojson": "364",
         "oecdRevenue": "IRN",
-        "sipriMilitarySpending": "Iran",
         "unNationalAccounts": "Iran, Islamic Republic of"
       }
     },
@@ -1037,7 +979,6 @@
         "unComtradeIsoFallback": "IRQ",
         "worldMapTopojson": "368",
         "oecdRevenue": "IRQ",
-        "sipriMilitarySpending": "Iraq",
         "unNationalAccounts": "Iraq"
       }
     },
@@ -1055,7 +996,6 @@
         "unComtradeIsoFallback": "SYR",
         "worldMapTopojson": "760",
         "oecdRevenue": "SYR",
-        "sipriMilitarySpending": "Syria",
         "unNationalAccounts": "Syrian Arab Republic"
       }
     },
@@ -1073,7 +1013,6 @@
         "unComtradeIsoFallback": "LBN",
         "worldMapTopojson": "422",
         "oecdRevenue": "LBN",
-        "sipriMilitarySpending": "Lebanon",
         "unNationalAccounts": "Lebanon"
       }
     },
@@ -1091,7 +1030,6 @@
         "unComtradeIsoFallback": "JOR",
         "worldMapTopojson": "400",
         "oecdRevenue": "JOR",
-        "sipriMilitarySpending": "Jordan",
         "unNationalAccounts": "Jordan"
       }
     },
@@ -1109,7 +1047,6 @@
         "unComtradeIsoFallback": "KWT",
         "worldMapTopojson": "414",
         "oecdRevenue": "KWT",
-        "sipriMilitarySpending": "Kuwait",
         "unNationalAccounts": "Kuwait"
       }
     },
@@ -1127,7 +1064,6 @@
         "unComtradeIsoFallback": "BHR",
         "worldMapTopojson": "048",
         "oecdRevenue": "BHR",
-        "sipriMilitarySpending": "Bahrain",
         "unNationalAccounts": "Bahrain"
       }
     },
@@ -1145,7 +1081,6 @@
         "unComtradeIsoFallback": "QAT",
         "worldMapTopojson": "634",
         "oecdRevenue": "QAT",
-        "sipriMilitarySpending": "Qatar",
         "unNationalAccounts": "Qatar"
       }
     },
@@ -1163,7 +1098,6 @@
         "unComtradeIsoFallback": "ARE",
         "worldMapTopojson": "784",
         "oecdRevenue": "ARE",
-        "sipriMilitarySpending": "United Arab Emirates",
         "unNationalAccounts": "United Arab Emirates"
       }
     },
@@ -1181,7 +1115,6 @@
         "unComtradeIsoFallback": "OMN",
         "worldMapTopojson": "512",
         "oecdRevenue": "OMN",
-        "sipriMilitarySpending": "Oman",
         "unNationalAccounts": "Oman"
       }
     },
@@ -1199,7 +1132,6 @@
         "unComtradeIsoFallback": "YEM",
         "worldMapTopojson": "887",
         "oecdRevenue": "YEM",
-        "sipriMilitarySpending": "Yemen",
         "unNationalAccounts": "Yemen"
       }
     },
@@ -1217,7 +1149,6 @@
         "unComtradeIsoFallback": "ARG",
         "worldMapTopojson": "032",
         "oecdRevenue": "ARG",
-        "sipriMilitarySpending": "Argentina",
         "unNationalAccounts": "Argentina"
       }
     },
@@ -1235,7 +1166,6 @@
         "unComtradeIsoFallback": "BRA",
         "worldMapTopojson": "076",
         "oecdRevenue": "BRA",
-        "sipriMilitarySpending": "Brazil",
         "unNationalAccounts": "Brazil"
       }
     },
@@ -1253,7 +1183,6 @@
         "unComtradeIsoFallback": "MEX",
         "worldMapTopojson": "484",
         "oecdRevenue": "MEX",
-        "sipriMilitarySpending": "Mexico",
         "unNationalAccounts": "Mexico"
       }
     },
@@ -1271,7 +1200,6 @@
         "unComtradeIsoFallback": "ABW",
         "worldMapTopojson": "533",
         "oecdRevenue": "ABW",
-        "sipriMilitarySpending": "Aruba",
         "unNationalAccounts": "Aruba"
       }
     },
@@ -1286,7 +1214,6 @@
         "unComtradeReporter": "660",
         "worldMapTopojson": "660",
         "oecdRevenue": "AIA",
-        "sipriMilitarySpending": "Anguilla",
         "unNationalAccounts": "Anguilla"
       }
     },
@@ -1304,7 +1231,6 @@
         "unComtradeIsoFallback": "BMU",
         "worldMapTopojson": "060",
         "oecdRevenue": "BMU",
-        "sipriMilitarySpending": "Bermuda",
         "unNationalAccounts": "Bermuda"
       }
     },
@@ -1322,7 +1248,6 @@
         "unComtradeIsoFallback": "GTM",
         "worldMapTopojson": "320",
         "oecdRevenue": "GTM",
-        "sipriMilitarySpending": "Guatemala",
         "unNationalAccounts": "Guatemala"
       }
     },
@@ -1340,7 +1265,6 @@
         "unComtradeIsoFallback": "BLZ",
         "worldMapTopojson": "084",
         "oecdRevenue": "BLZ",
-        "sipriMilitarySpending": "Belize",
         "unNationalAccounts": "Belize"
       }
     },
@@ -1358,7 +1282,6 @@
         "unComtradeIsoFallback": "SLV",
         "worldMapTopojson": "222",
         "oecdRevenue": "SLV",
-        "sipriMilitarySpending": "El Salvador",
         "unNationalAccounts": "El Salvador"
       }
     },
@@ -1376,7 +1299,6 @@
         "unComtradeIsoFallback": "HND",
         "worldMapTopojson": "340",
         "oecdRevenue": "HND",
-        "sipriMilitarySpending": "Honduras",
         "unNationalAccounts": "Honduras"
       }
     },
@@ -1394,7 +1316,6 @@
         "unComtradeIsoFallback": "NIC",
         "worldMapTopojson": "558",
         "oecdRevenue": "NIC",
-        "sipriMilitarySpending": "Nicaragua",
         "unNationalAccounts": "Nicaragua"
       }
     },
@@ -1412,7 +1333,6 @@
         "unComtradeIsoFallback": "PAN",
         "worldMapTopojson": "591",
         "oecdRevenue": "PAN",
-        "sipriMilitarySpending": "Panama",
         "unNationalAccounts": "Panama"
       }
     },
@@ -1430,7 +1350,6 @@
         "unComtradeIsoFallback": "BHS",
         "worldMapTopojson": "044",
         "oecdRevenue": "BHS",
-        "sipriMilitarySpending": "Bahamas",
         "unNationalAccounts": "Bahamas"
       }
     },
@@ -1448,7 +1367,6 @@
         "unComtradeIsoFallback": "CUB",
         "worldMapTopojson": "192",
         "oecdRevenue": "CUB",
-        "sipriMilitarySpending": "Cuba",
         "unNationalAccounts": "Cuba"
       }
     },
@@ -1466,7 +1384,6 @@
         "unComtradeIsoFallback": "JAM",
         "worldMapTopojson": "388",
         "oecdRevenue": "JAM",
-        "sipriMilitarySpending": "Jamaica",
         "unNationalAccounts": "Jamaica"
       }
     },
@@ -1484,7 +1401,6 @@
         "unComtradeIsoFallback": "HTI",
         "worldMapTopojson": "332",
         "oecdRevenue": "HTI",
-        "sipriMilitarySpending": "Haiti",
         "unNationalAccounts": "Haiti"
       }
     },
@@ -1502,7 +1418,6 @@
         "unComtradeIsoFallback": "DOM",
         "worldMapTopojson": "214",
         "oecdRevenue": "DOM",
-        "sipriMilitarySpending": "Dominican Republic",
         "unNationalAccounts": "Dominican Republic"
       }
     },
@@ -1520,7 +1435,6 @@
         "unComtradeIsoFallback": "ATG",
         "worldMapTopojson": "028",
         "oecdRevenue": "ATG",
-        "sipriMilitarySpending": "Antigua and Barbuda",
         "unNationalAccounts": "Antigua and Barbuda"
       }
     },
@@ -1538,7 +1452,6 @@
         "unComtradeIsoFallback": "KNA",
         "worldMapTopojson": "659",
         "oecdRevenue": "KNA",
-        "sipriMilitarySpending": "Saint Kitts and Nevis",
         "unNationalAccounts": "Saint Kitts and Nevis"
       }
     },
@@ -1556,7 +1469,6 @@
         "unComtradeIsoFallback": "DMA",
         "worldMapTopojson": "212",
         "oecdRevenue": "DMA",
-        "sipriMilitarySpending": "Dominica",
         "unNationalAccounts": "Dominica"
       }
     },
@@ -1574,7 +1486,6 @@
         "unComtradeIsoFallback": "LCA",
         "worldMapTopojson": "662",
         "oecdRevenue": "LCA",
-        "sipriMilitarySpending": "Saint Lucia",
         "unNationalAccounts": "Saint Lucia"
       }
     },
@@ -1592,7 +1503,6 @@
         "unComtradeIsoFallback": "BRB",
         "worldMapTopojson": "052",
         "oecdRevenue": "BRB",
-        "sipriMilitarySpending": "Barbados",
         "unNationalAccounts": "Barbados"
       }
     },
@@ -1610,7 +1520,6 @@
         "unComtradeIsoFallback": "VCT",
         "worldMapTopojson": "670",
         "oecdRevenue": "VCT",
-        "sipriMilitarySpending": "Saint Vincent and the Grenadines",
         "unNationalAccounts": "Saint Vincent and the Grenadines"
       }
     },
@@ -1628,7 +1537,6 @@
         "unComtradeIsoFallback": "GRD",
         "worldMapTopojson": "308",
         "oecdRevenue": "GRD",
-        "sipriMilitarySpending": "Grenada",
         "unNationalAccounts": "Grenada"
       }
     },
@@ -1646,7 +1554,6 @@
         "unComtradeIsoFallback": "TTO",
         "worldMapTopojson": "780",
         "oecdRevenue": "TTO",
-        "sipriMilitarySpending": "Trinidad and Tobago",
         "unNationalAccounts": "Trinidad and Tobago"
       }
     },
@@ -1664,7 +1571,6 @@
         "unComtradeIsoFallback": "CYM",
         "worldMapTopojson": "136",
         "oecdRevenue": "CYM",
-        "sipriMilitarySpending": "Cayman Islands",
         "unNationalAccounts": "Cayman Islands"
       }
     },
@@ -1682,7 +1588,6 @@
         "unComtradeIsoFallback": "CUW",
         "worldMapTopojson": "531",
         "oecdRevenue": "CUW",
-        "sipriMilitarySpending": "Curaçao",
         "unNationalAccounts": "Curaçao"
       }
     },
@@ -1697,7 +1602,6 @@
         "unComtradeReporter": "312",
         "worldMapTopojson": "312",
         "oecdRevenue": "GLP",
-        "sipriMilitarySpending": "Guadeloupe",
         "unNationalAccounts": "Guadeloupe"
       }
     },
@@ -1715,7 +1619,6 @@
         "unComtradeIsoFallback": "GRL",
         "worldMapTopojson": "304",
         "oecdRevenue": "GRL",
-        "sipriMilitarySpending": "Greenland",
         "unNationalAccounts": "Greenland"
       }
     },
@@ -1729,7 +1632,6 @@
         "worldBankAgeComposition": "MAF",
         "unComtradeIsoFallback": "MAF",
         "oecdRevenue": "MAF",
-        "sipriMilitarySpending": "Saint Martin",
         "unNationalAccounts": "Saint Martin"
       }
     },
@@ -1744,7 +1646,6 @@
         "unComtradeReporter": "500",
         "worldMapTopojson": "500",
         "oecdRevenue": "MSR",
-        "sipriMilitarySpending": "Montserrat",
         "unNationalAccounts": "Montserrat"
       }
     },
@@ -1759,7 +1660,6 @@
         "unComtradeReporter": "474",
         "worldMapTopojson": "474",
         "oecdRevenue": "MTQ",
-        "sipriMilitarySpending": "Martinique",
         "unNationalAccounts": "Martinique"
       }
     },
@@ -1773,7 +1673,6 @@
         "worldBankAgeComposition": "PRI",
         "unComtradeIsoFallback": "PRI",
         "oecdRevenue": "PRI",
-        "sipriMilitarySpending": "Puerto Rico",
         "unNationalAccounts": "Puerto Rico"
       }
     },
@@ -1788,7 +1687,6 @@
         "unComtradeReporter": "666",
         "worldMapTopojson": "666",
         "oecdRevenue": "SPM",
-        "sipriMilitarySpending": "Saint Pierre and Miquelon",
         "unNationalAccounts": "Saint Pierre and Miquelon"
       }
     },
@@ -1806,7 +1704,6 @@
         "unComtradeIsoFallback": "SXM",
         "worldMapTopojson": "534",
         "oecdRevenue": "SXM",
-        "sipriMilitarySpending": "Sint Maarten",
         "unNationalAccounts": "Sint Maarten (Dutch part)"
       }
     },
@@ -1824,7 +1721,6 @@
         "unComtradeIsoFallback": "TCA",
         "worldMapTopojson": "796",
         "oecdRevenue": "TCA",
-        "sipriMilitarySpending": "Turks and Caicos Islands",
         "unNationalAccounts": "Turks and Caicos Islands"
       }
     },
@@ -1842,7 +1738,6 @@
         "unComtradeIsoFallback": "VGB",
         "worldMapTopojson": "092",
         "oecdRevenue": "VGB",
-        "sipriMilitarySpending": "British Virgin Islands",
         "unNationalAccounts": "British Virgin Islands"
       }
     },
@@ -1856,7 +1751,6 @@
         "worldBankAgeComposition": "VIR",
         "unComtradeIsoFallback": "VIR",
         "oecdRevenue": "VIR",
-        "sipriMilitarySpending": "U.S. Virgin Islands",
         "unNationalAccounts": "U.S. Virgin Islands"
       }
     },
@@ -1874,7 +1768,6 @@
         "unComtradeIsoFallback": "VEN",
         "worldMapTopojson": "862",
         "oecdRevenue": "VEN",
-        "sipriMilitarySpending": "Venezuela",
         "unNationalAccounts": "Venezuela (Bolivarian Republic of)"
       }
     },
@@ -1889,7 +1782,6 @@
         "unComtradeReporter": "238",
         "worldMapTopojson": "238",
         "oecdRevenue": "FLK",
-        "sipriMilitarySpending": "Falkland Islands",
         "unNationalAccounts": "Falkland Islands"
       }
     },
@@ -1904,7 +1796,6 @@
         "unComtradeReporter": "254",
         "worldMapTopojson": "254",
         "oecdRevenue": "GUF",
-        "sipriMilitarySpending": "French Guiana",
         "unNationalAccounts": "French Guiana"
       }
     },
@@ -1922,7 +1813,6 @@
         "unComtradeIsoFallback": "GUY",
         "worldMapTopojson": "328",
         "oecdRevenue": "GUY",
-        "sipriMilitarySpending": "Guyana",
         "unNationalAccounts": "Guyana"
       }
     },
@@ -1940,7 +1830,6 @@
         "unComtradeIsoFallback": "SUR",
         "worldMapTopojson": "740",
         "oecdRevenue": "SUR",
-        "sipriMilitarySpending": "Suriname",
         "unNationalAccounts": "Suriname"
       }
     },
@@ -1958,7 +1847,6 @@
         "unComtradeIsoFallback": "ECU",
         "worldMapTopojson": "218",
         "oecdRevenue": "ECU",
-        "sipriMilitarySpending": "Ecuador",
         "unNationalAccounts": "Ecuador"
       }
     },
@@ -1976,7 +1864,6 @@
         "unComtradeIsoFallback": "BOL",
         "worldMapTopojson": "068",
         "oecdRevenue": "BOL",
-        "sipriMilitarySpending": "Bolivia",
         "unNationalAccounts": "Bolivia (Plurinational State of)"
       }
     },
@@ -1994,7 +1881,6 @@
         "unComtradeIsoFallback": "PRY",
         "worldMapTopojson": "600",
         "oecdRevenue": "PRY",
-        "sipriMilitarySpending": "Paraguay",
         "unNationalAccounts": "Paraguay"
       }
     },
@@ -2012,7 +1898,6 @@
         "unComtradeIsoFallback": "URY",
         "worldMapTopojson": "858",
         "oecdRevenue": "URY",
-        "sipriMilitarySpending": "Uruguay",
         "unNationalAccounts": "Uruguay"
       }
     },
@@ -2030,7 +1915,6 @@
         "unComtradeIsoFallback": "PER",
         "worldMapTopojson": "604",
         "oecdRevenue": "PER",
-        "sipriMilitarySpending": "Peru",
         "unNationalAccounts": "Peru"
       }
     },
@@ -2048,7 +1932,6 @@
         "unComtradeIsoFallback": "RUS",
         "worldMapTopojson": "643",
         "oecdRevenue": "RUS",
-        "sipriMilitarySpending": "Russia",
         "unNationalAccounts": "Russian Federation"
       }
     },
@@ -2066,7 +1949,6 @@
         "unComtradeIsoFallback": "ZAF",
         "worldMapTopojson": "710",
         "oecdRevenue": "ZAF",
-        "sipriMilitarySpending": "South Africa",
         "unNationalAccounts": "South Africa"
       }
     },
@@ -2084,7 +1966,6 @@
         "unComtradeIsoFallback": "CHL",
         "worldMapTopojson": "152",
         "oecdRevenue": "CHL",
-        "sipriMilitarySpending": "Chile",
         "unNationalAccounts": "Chile"
       }
     },
@@ -2102,7 +1983,6 @@
         "unComtradeIsoFallback": "COL",
         "worldMapTopojson": "170",
         "oecdRevenue": "COL",
-        "sipriMilitarySpending": "Colombia",
         "unNationalAccounts": "Colombia"
       }
     },
@@ -2120,7 +2000,6 @@
         "unComtradeIsoFallback": "CRI",
         "worldMapTopojson": "188",
         "oecdRevenue": "CRI",
-        "sipriMilitarySpending": "Costa Rica",
         "unNationalAccounts": "Costa Rica"
       }
     },
@@ -2138,7 +2017,6 @@
         "unComtradeIsoFallback": "NOR",
         "worldMapTopojson": "578",
         "oecdRevenue": "NOR",
-        "sipriMilitarySpending": "Norway",
         "unNationalAccounts": "Norway"
       }
     },
@@ -2156,7 +2034,6 @@
         "unComtradeIsoFallback": "ISL",
         "worldMapTopojson": "352",
         "oecdRevenue": "ISL",
-        "sipriMilitarySpending": "Iceland",
         "unNationalAccounts": "Iceland"
       }
     },
@@ -2174,7 +2051,6 @@
         "unComtradeIsoFallback": "CHE",
         "worldMapTopojson": "756",
         "oecdRevenue": "CHE",
-        "sipriMilitarySpending": "Switzerland",
         "unNationalAccounts": "Switzerland"
       }
     },
@@ -2192,7 +2068,6 @@
         "unComtradeIsoFallback": "ISR",
         "worldMapTopojson": "376",
         "oecdRevenue": "ISR",
-        "sipriMilitarySpending": "Israel",
         "unNationalAccounts": "Israel"
       }
     },
@@ -2210,7 +2085,6 @@
         "unComtradeIsoFallback": "FRO",
         "worldMapTopojson": "234",
         "oecdRevenue": "FRO",
-        "sipriMilitarySpending": "Faroe Islands",
         "unNationalAccounts": "Faroe Islands"
       }
     },
@@ -2228,7 +2102,6 @@
         "unComtradeIsoFallback": "GIB",
         "worldMapTopojson": "292",
         "oecdRevenue": "GIB",
-        "sipriMilitarySpending": "Gibraltar",
         "unNationalAccounts": "Gibraltar"
       }
     },
@@ -2242,7 +2115,6 @@
         "worldBankAgeComposition": "IMN",
         "unComtradeIsoFallback": "IMN",
         "oecdRevenue": "IMN",
-        "sipriMilitarySpending": "Isle of Man",
         "unNationalAccounts": "Isle of Man"
       }
     },
@@ -2256,7 +2128,6 @@
         "worldBankAgeComposition": "LIE",
         "unComtradeIsoFallback": "LIE",
         "oecdRevenue": "LIE",
-        "sipriMilitarySpending": "Liechtenstein",
         "unNationalAccounts": "Liechtenstein"
       }
     },
@@ -2267,7 +2138,6 @@
       "sourceIds": {
         "unMigrantStock": "336",
         "oecdRevenue": "VAT",
-        "sipriMilitarySpending": "Vatican City",
         "unNationalAccounts": "Vatican City"
       }
     },
@@ -2281,7 +2151,6 @@
         "worldBankAgeComposition": "SMR",
         "unComtradeIsoFallback": "SMR",
         "oecdRevenue": "SMR",
-        "sipriMilitarySpending": "San Marino",
         "unNationalAccounts": "San Marino"
       }
     },
@@ -2299,7 +2168,6 @@
         "unComtradeIsoFallback": "AND",
         "worldMapTopojson": "020",
         "oecdRevenue": "AND",
-        "sipriMilitarySpending": "Andorra",
         "unNationalAccounts": "Andorra"
       }
     },
@@ -2313,7 +2181,6 @@
         "worldBankAgeComposition": "MCO",
         "unComtradeIsoFallback": "MCO",
         "oecdRevenue": "MCO",
-        "sipriMilitarySpending": "Monaco",
         "unNationalAccounts": "Monaco"
       }
     },
@@ -2331,7 +2198,6 @@
         "unComtradeIsoFallback": "BLR",
         "worldMapTopojson": "112",
         "oecdRevenue": "BLR",
-        "sipriMilitarySpending": "Belarus",
         "unNationalAccounts": "Belarus"
       }
     },
@@ -2349,7 +2215,6 @@
         "unComtradeIsoFallback": "BIH",
         "worldMapTopojson": "070",
         "oecdRevenue": "BIH",
-        "sipriMilitarySpending": "Bosnia and Herzegovina",
         "unNationalAccounts": "Bosnia and Herzegovina"
       }
     },
@@ -2367,7 +2232,6 @@
         "unComtradeIsoFallback": "SRB",
         "worldMapTopojson": "688",
         "oecdRevenue": "SRB",
-        "sipriMilitarySpending": "Serbia",
         "unNationalAccounts": "Serbia"
       }
     },
@@ -2385,7 +2249,6 @@
         "unComtradeIsoFallback": "MNE",
         "worldMapTopojson": "499",
         "oecdRevenue": "MNE",
-        "sipriMilitarySpending": "Montenegro",
         "unNationalAccounts": "Montenegro"
       }
     },
@@ -2399,7 +2262,6 @@
         "worldBankAgeComposition": "XKX",
         "unComtradeIsoFallback": "XKX",
         "oecdRevenue": "KOS",
-        "sipriMilitarySpending": "Kosovo",
         "unNationalAccounts": "Kosovo"
       }
     },
@@ -2417,7 +2279,6 @@
         "unComtradeIsoFallback": "MKD",
         "worldMapTopojson": "807",
         "oecdRevenue": "MKD",
-        "sipriMilitarySpending": "North Macedonia",
         "unNationalAccounts": "Republic of North Macedonia"
       }
     },
@@ -2435,7 +2296,6 @@
         "unComtradeIsoFallback": "ALB",
         "worldMapTopojson": "008",
         "oecdRevenue": "ALB",
-        "sipriMilitarySpending": "Albania",
         "unNationalAccounts": "Albania"
       }
     },
@@ -2453,7 +2313,6 @@
         "unComtradeIsoFallback": "MDA",
         "worldMapTopojson": "498",
         "oecdRevenue": "MDA",
-        "sipriMilitarySpending": "Moldova",
         "unNationalAccounts": "Republic of Moldova"
       }
     },
@@ -2471,7 +2330,6 @@
         "unComtradeIsoFallback": "UKR",
         "worldMapTopojson": "804",
         "oecdRevenue": "UKR",
-        "sipriMilitarySpending": "Ukraine",
         "unNationalAccounts": "Ukraine"
       }
     },
@@ -2489,7 +2347,6 @@
         "unComtradeIsoFallback": "AUT",
         "worldMapTopojson": "040",
         "oecdRevenue": "AUT",
-        "sipriMilitarySpending": "Austria",
         "unNationalAccounts": "Austria"
       }
     },
@@ -2507,7 +2364,6 @@
         "unComtradeIsoFallback": "BEL",
         "worldMapTopojson": "056",
         "oecdRevenue": "BEL",
-        "sipriMilitarySpending": "Belgium",
         "unNationalAccounts": "Belgium"
       }
     },
@@ -2525,7 +2381,6 @@
         "unComtradeIsoFallback": "BGR",
         "worldMapTopojson": "100",
         "oecdRevenue": "BGR",
-        "sipriMilitarySpending": "Bulgaria",
         "unNationalAccounts": "Bulgaria"
       }
     },
@@ -2543,7 +2398,6 @@
         "unComtradeIsoFallback": "HRV",
         "worldMapTopojson": "191",
         "oecdRevenue": "HRV",
-        "sipriMilitarySpending": "Croatia",
         "unNationalAccounts": "Croatia"
       }
     },
@@ -2561,7 +2415,6 @@
         "unComtradeIsoFallback": "CYP",
         "worldMapTopojson": "196",
         "oecdRevenue": "CYP",
-        "sipriMilitarySpending": "Cyprus",
         "unNationalAccounts": "Cyprus"
       }
     },
@@ -2579,7 +2432,6 @@
         "unComtradeIsoFallback": "CZE",
         "worldMapTopojson": "203",
         "oecdRevenue": "CZE",
-        "sipriMilitarySpending": "Czechia",
         "unNationalAccounts": "Czechia"
       }
     },
@@ -2597,7 +2449,6 @@
         "unComtradeIsoFallback": "DNK",
         "worldMapTopojson": "208",
         "oecdRevenue": "DNK",
-        "sipriMilitarySpending": "Denmark",
         "unNationalAccounts": "Denmark"
       }
     },
@@ -2615,7 +2466,6 @@
         "unComtradeIsoFallback": "EST",
         "worldMapTopojson": "233",
         "oecdRevenue": "EST",
-        "sipriMilitarySpending": "Estonia",
         "unNationalAccounts": "Estonia"
       }
     },
@@ -2633,7 +2483,6 @@
         "unComtradeIsoFallback": "FIN",
         "worldMapTopojson": "246",
         "oecdRevenue": "FIN",
-        "sipriMilitarySpending": "Finland",
         "unNationalAccounts": "Finland"
       }
     },
@@ -2651,7 +2500,6 @@
         "unComtradeIsoFallback": "GRC",
         "worldMapTopojson": "300",
         "oecdRevenue": "GRC",
-        "sipriMilitarySpending": "Greece",
         "unNationalAccounts": "Greece"
       }
     },
@@ -2669,7 +2517,6 @@
         "unComtradeIsoFallback": "HUN",
         "worldMapTopojson": "348",
         "oecdRevenue": "HUN",
-        "sipriMilitarySpending": "Hungary",
         "unNationalAccounts": "Hungary"
       }
     },
@@ -2687,7 +2534,6 @@
         "unComtradeIsoFallback": "IRL",
         "worldMapTopojson": "372",
         "oecdRevenue": "IRL",
-        "sipriMilitarySpending": "Ireland",
         "unNationalAccounts": "Ireland"
       }
     },
@@ -2705,7 +2551,6 @@
         "unComtradeIsoFallback": "LVA",
         "worldMapTopojson": "428",
         "oecdRevenue": "LVA",
-        "sipriMilitarySpending": "Latvia",
         "unNationalAccounts": "Latvia"
       }
     },
@@ -2723,7 +2568,6 @@
         "unComtradeIsoFallback": "LTU",
         "worldMapTopojson": "440",
         "oecdRevenue": "LTU",
-        "sipriMilitarySpending": "Lithuania",
         "unNationalAccounts": "Lithuania"
       }
     },
@@ -2741,7 +2585,6 @@
         "unComtradeIsoFallback": "LUX",
         "worldMapTopojson": "442",
         "oecdRevenue": "LUX",
-        "sipriMilitarySpending": "Luxembourg",
         "unNationalAccounts": "Luxembourg"
       }
     },
@@ -2759,7 +2602,6 @@
         "unComtradeIsoFallback": "MLT",
         "worldMapTopojson": "470",
         "oecdRevenue": "MLT",
-        "sipriMilitarySpending": "Malta",
         "unNationalAccounts": "Malta"
       }
     },
@@ -2777,7 +2619,6 @@
         "unComtradeIsoFallback": "NLD",
         "worldMapTopojson": "528",
         "oecdRevenue": "NLD",
-        "sipriMilitarySpending": "Netherlands",
         "unNationalAccounts": "Netherlands"
       }
     },
@@ -2795,7 +2636,6 @@
         "unComtradeIsoFallback": "POL",
         "worldMapTopojson": "616",
         "oecdRevenue": "POL",
-        "sipriMilitarySpending": "Poland",
         "unNationalAccounts": "Poland"
       }
     },
@@ -2813,7 +2653,6 @@
         "unComtradeIsoFallback": "PRT",
         "worldMapTopojson": "620",
         "oecdRevenue": "PRT",
-        "sipriMilitarySpending": "Portugal",
         "unNationalAccounts": "Portugal"
       }
     },
@@ -2831,7 +2670,6 @@
         "unComtradeIsoFallback": "ROU",
         "worldMapTopojson": "642",
         "oecdRevenue": "ROU",
-        "sipriMilitarySpending": "Romania",
         "unNationalAccounts": "Romania"
       }
     },
@@ -2849,7 +2687,6 @@
         "unComtradeIsoFallback": "SVK",
         "worldMapTopojson": "703",
         "oecdRevenue": "SVK",
-        "sipriMilitarySpending": "Slovakia",
         "unNationalAccounts": "Slovakia"
       }
     },
@@ -2867,7 +2704,6 @@
         "unComtradeIsoFallback": "SVN",
         "worldMapTopojson": "705",
         "oecdRevenue": "SVN",
-        "sipriMilitarySpending": "Slovenia",
         "unNationalAccounts": "Slovenia"
       }
     },
@@ -2885,7 +2721,6 @@
         "unComtradeIsoFallback": "ESP",
         "worldMapTopojson": "724",
         "oecdRevenue": "ESP",
-        "sipriMilitarySpending": "Spain",
         "unNationalAccounts": "Spain"
       }
     },
@@ -2903,7 +2738,6 @@
         "unComtradeIsoFallback": "SWE",
         "worldMapTopojson": "752",
         "oecdRevenue": "SWE",
-        "sipriMilitarySpending": "Sweden",
         "unNationalAccounts": "Sweden"
       }
     },
@@ -2921,7 +2755,6 @@
         "unComtradeIsoFallback": "BRN",
         "worldMapTopojson": "096",
         "oecdRevenue": "BRN",
-        "sipriMilitarySpending": "Brunei",
         "unNationalAccounts": "Brunei Darussalam"
       }
     },
@@ -2939,7 +2772,6 @@
         "unComtradeIsoFallback": "KHM",
         "worldMapTopojson": "116",
         "oecdRevenue": "KHM",
-        "sipriMilitarySpending": "Cambodia",
         "unNationalAccounts": "Cambodia"
       }
     },
@@ -2957,7 +2789,6 @@
         "unComtradeIsoFallback": "LAO",
         "worldMapTopojson": "418",
         "oecdRevenue": "LAO",
-        "sipriMilitarySpending": "Laos",
         "unNationalAccounts": "Lao People's Democratic Republic"
       }
     },
@@ -2975,7 +2806,6 @@
         "unComtradeIsoFallback": "MYS",
         "worldMapTopojson": "458",
         "oecdRevenue": "MYS",
-        "sipriMilitarySpending": "Malaysia",
         "unNationalAccounts": "Malaysia"
       }
     },
@@ -2993,7 +2823,6 @@
         "unComtradeIsoFallback": "MMR",
         "worldMapTopojson": "104",
         "oecdRevenue": "MMR",
-        "sipriMilitarySpending": "Myanmar",
         "unNationalAccounts": "Myanmar"
       }
     },
@@ -3011,7 +2840,6 @@
         "unComtradeIsoFallback": "PHL",
         "worldMapTopojson": "608",
         "oecdRevenue": "PHL",
-        "sipriMilitarySpending": "Philippines",
         "unNationalAccounts": "Philippines"
       }
     },
@@ -3029,7 +2857,6 @@
         "unComtradeIsoFallback": "SGP",
         "worldMapTopojson": "702",
         "oecdRevenue": "SGP",
-        "sipriMilitarySpending": "Singapore",
         "unNationalAccounts": "Singapore"
       }
     },
@@ -3047,7 +2874,6 @@
         "unComtradeIsoFallback": "THA",
         "worldMapTopojson": "764",
         "oecdRevenue": "THA",
-        "sipriMilitarySpending": "Thailand",
         "unNationalAccounts": "Thailand"
       }
     },
@@ -3065,7 +2891,6 @@
         "unComtradeIsoFallback": "TLS",
         "worldMapTopojson": "626",
         "oecdRevenue": "TLS",
-        "sipriMilitarySpending": "Timor Leste",
         "unNationalAccounts": "Timor-Leste"
       }
     },
@@ -3083,7 +2908,6 @@
         "unComtradeIsoFallback": "VNM",
         "worldMapTopojson": "704",
         "oecdRevenue": "VNM",
-        "sipriMilitarySpending": "Viet Nam",
         "unNationalAccounts": "Viet Nam"
       }
     },
@@ -3102,7 +2926,6 @@
         "unComtradeIsoFallback": "PSE",
         "worldMapTopojson": "275",
         "oecdRevenue": "WBG",
-        "sipriMilitarySpending": "Palestine",
         "unNationalAccounts": "State of Palestine",
         "undpHdi": "PSE"
       }
@@ -3121,7 +2944,6 @@
         "unComtradeIsoFallback": "DZA",
         "worldMapTopojson": "012",
         "oecdRevenue": "DZA",
-        "sipriMilitarySpending": "Algeria",
         "unNationalAccounts": "Algeria"
       }
     },
@@ -3139,7 +2961,6 @@
         "unComtradeIsoFallback": "AGO",
         "worldMapTopojson": "024",
         "oecdRevenue": "AGO",
-        "sipriMilitarySpending": "Angola",
         "unNationalAccounts": "Angola"
       }
     },
@@ -3157,7 +2978,6 @@
         "unComtradeIsoFallback": "BEN",
         "worldMapTopojson": "204",
         "oecdRevenue": "BEN",
-        "sipriMilitarySpending": "Benin",
         "unNationalAccounts": "Benin"
       }
     },
@@ -3175,7 +2995,6 @@
         "unComtradeIsoFallback": "BWA",
         "worldMapTopojson": "072",
         "oecdRevenue": "BWA",
-        "sipriMilitarySpending": "Botswana",
         "unNationalAccounts": "Botswana"
       }
     },
@@ -3193,7 +3012,6 @@
         "unComtradeIsoFallback": "BFA",
         "worldMapTopojson": "854",
         "oecdRevenue": "BFA",
-        "sipriMilitarySpending": "Burkina Faso",
         "unNationalAccounts": "Burkina Faso"
       }
     },
@@ -3211,7 +3029,6 @@
         "unComtradeIsoFallback": "BDI",
         "worldMapTopojson": "108",
         "oecdRevenue": "BDI",
-        "sipriMilitarySpending": "Burundi",
         "unNationalAccounts": "Burundi"
       }
     },
@@ -3229,7 +3046,6 @@
         "unComtradeIsoFallback": "CPV",
         "worldMapTopojson": "132",
         "oecdRevenue": "CPV",
-        "sipriMilitarySpending": "Cape Verde",
         "unNationalAccounts": "Cabo Verde"
       }
     },
@@ -3247,7 +3063,6 @@
         "unComtradeIsoFallback": "CMR",
         "worldMapTopojson": "120",
         "oecdRevenue": "CMR",
-        "sipriMilitarySpending": "Cameroon",
         "unNationalAccounts": "Cameroon"
       }
     },
@@ -3265,7 +3080,6 @@
         "unComtradeIsoFallback": "CAF",
         "worldMapTopojson": "140",
         "oecdRevenue": "CAF",
-        "sipriMilitarySpending": "Central African Republic",
         "unNationalAccounts": "Central African Republic"
       }
     },
@@ -3283,7 +3097,6 @@
         "unComtradeIsoFallback": "TCD",
         "worldMapTopojson": "148",
         "oecdRevenue": "TCD",
-        "sipriMilitarySpending": "Chad",
         "unNationalAccounts": "Chad"
       }
     },
@@ -3301,7 +3114,6 @@
         "unComtradeIsoFallback": "COM",
         "worldMapTopojson": "174",
         "oecdRevenue": "COM",
-        "sipriMilitarySpending": "Comoros",
         "unNationalAccounts": "Comoros"
       }
     },
@@ -3319,7 +3131,6 @@
         "unComtradeIsoFallback": "COG",
         "worldMapTopojson": "178",
         "oecdRevenue": "COG",
-        "sipriMilitarySpending": "Congo, Republic",
         "unNationalAccounts": "Congo"
       }
     },
@@ -3337,7 +3148,6 @@
         "unComtradeIsoFallback": "COD",
         "worldMapTopojson": "180",
         "oecdRevenue": "COD",
-        "sipriMilitarySpending": "Congo, DR",
         "unNationalAccounts": "Democratic Republic of the Congo"
       }
     },
@@ -3355,7 +3165,6 @@
         "unComtradeIsoFallback": "CIV",
         "worldMapTopojson": "384",
         "oecdRevenue": "CIV",
-        "sipriMilitarySpending": "Cote d'Ivoire",
         "unNationalAccounts": "Côte d'Ivoire"
       }
     },
@@ -3373,7 +3182,6 @@
         "unComtradeIsoFallback": "DJI",
         "worldMapTopojson": "262",
         "oecdRevenue": "DJI",
-        "sipriMilitarySpending": "Djibouti",
         "unNationalAccounts": "Djibouti"
       }
     },
@@ -3391,7 +3199,6 @@
         "unComtradeIsoFallback": "EGY",
         "worldMapTopojson": "818",
         "oecdRevenue": "EGY",
-        "sipriMilitarySpending": "Egypt",
         "unNationalAccounts": "Egypt"
       }
     },
@@ -3409,7 +3216,6 @@
         "unComtradeIsoFallback": "GNQ",
         "worldMapTopojson": "226",
         "oecdRevenue": "GNQ",
-        "sipriMilitarySpending": "Equatorial Guinea",
         "unNationalAccounts": "Equatorial Guinea"
       }
     },
@@ -3427,7 +3233,6 @@
         "unComtradeIsoFallback": "ERI",
         "worldMapTopojson": "232",
         "oecdRevenue": "ERI",
-        "sipriMilitarySpending": "Eritrea",
         "unNationalAccounts": "Eritrea"
       }
     },
@@ -3445,7 +3250,6 @@
         "unComtradeIsoFallback": "SWZ",
         "worldMapTopojson": "748",
         "oecdRevenue": "SWZ",
-        "sipriMilitarySpending": "Eswatini",
         "unNationalAccounts": "Kingdom of Eswatini"
       }
     },
@@ -3463,7 +3267,6 @@
         "unComtradeIsoFallback": "ETH",
         "worldMapTopojson": "231",
         "oecdRevenue": "ETH",
-        "sipriMilitarySpending": "Ethiopia",
         "unNationalAccounts": "Ethiopia"
       }
     },
@@ -3481,7 +3284,6 @@
         "unComtradeIsoFallback": "GAB",
         "worldMapTopojson": "266",
         "oecdRevenue": "GAB",
-        "sipriMilitarySpending": "Gabon",
         "unNationalAccounts": "Gabon"
       }
     },
@@ -3499,7 +3301,6 @@
         "unComtradeIsoFallback": "GMB",
         "worldMapTopojson": "270",
         "oecdRevenue": "GMB",
-        "sipriMilitarySpending": "Gambia, The",
         "unNationalAccounts": "Gambia"
       }
     },
@@ -3517,7 +3318,6 @@
         "unComtradeIsoFallback": "GHA",
         "worldMapTopojson": "288",
         "oecdRevenue": "GHA",
-        "sipriMilitarySpending": "Ghana",
         "unNationalAccounts": "Ghana"
       }
     },
@@ -3535,7 +3335,6 @@
         "unComtradeIsoFallback": "GIN",
         "worldMapTopojson": "324",
         "oecdRevenue": "GIN",
-        "sipriMilitarySpending": "Guinea",
         "unNationalAccounts": "Guinea"
       }
     },
@@ -3553,7 +3352,6 @@
         "unComtradeIsoFallback": "GNB",
         "worldMapTopojson": "624",
         "oecdRevenue": "GNB",
-        "sipriMilitarySpending": "Guinea-Bissau",
         "unNationalAccounts": "Guinea-Bissau"
       }
     },
@@ -3571,7 +3369,6 @@
         "unComtradeIsoFallback": "KEN",
         "worldMapTopojson": "404",
         "oecdRevenue": "KEN",
-        "sipriMilitarySpending": "Kenya",
         "unNationalAccounts": "Kenya"
       }
     },
@@ -3589,7 +3386,6 @@
         "unComtradeIsoFallback": "LSO",
         "worldMapTopojson": "426",
         "oecdRevenue": "LSO",
-        "sipriMilitarySpending": "Lesotho",
         "unNationalAccounts": "Lesotho"
       }
     },
@@ -3607,7 +3403,6 @@
         "unComtradeIsoFallback": "LBR",
         "worldMapTopojson": "430",
         "oecdRevenue": "LBR",
-        "sipriMilitarySpending": "Liberia",
         "unNationalAccounts": "Liberia"
       }
     },
@@ -3625,7 +3420,6 @@
         "unComtradeIsoFallback": "LBY",
         "worldMapTopojson": "434",
         "oecdRevenue": "LBY",
-        "sipriMilitarySpending": "Libya",
         "unNationalAccounts": "Libya"
       }
     },
@@ -3643,7 +3437,6 @@
         "unComtradeIsoFallback": "MDG",
         "worldMapTopojson": "450",
         "oecdRevenue": "MDG",
-        "sipriMilitarySpending": "Madagascar",
         "unNationalAccounts": "Madagascar"
       }
     },
@@ -3661,7 +3454,6 @@
         "unComtradeIsoFallback": "MWI",
         "worldMapTopojson": "454",
         "oecdRevenue": "MWI",
-        "sipriMilitarySpending": "Malawi",
         "unNationalAccounts": "Malawi"
       }
     },
@@ -3672,7 +3464,6 @@
       "sourceIds": {
         "unMigrantStock": "175",
         "oecdRevenue": "MYT",
-        "sipriMilitarySpending": "Mayotte",
         "unNationalAccounts": "Mayotte"
       }
     },
@@ -3690,7 +3481,6 @@
         "unComtradeIsoFallback": "MLI",
         "worldMapTopojson": "466",
         "oecdRevenue": "MLI",
-        "sipriMilitarySpending": "Mali",
         "unNationalAccounts": "Mali"
       }
     },
@@ -3708,7 +3498,6 @@
         "unComtradeIsoFallback": "MRT",
         "worldMapTopojson": "478",
         "oecdRevenue": "MRT",
-        "sipriMilitarySpending": "Mauritania",
         "unNationalAccounts": "Mauritania"
       }
     },
@@ -3726,7 +3515,6 @@
         "unComtradeIsoFallback": "MUS",
         "worldMapTopojson": "480",
         "oecdRevenue": "MUS",
-        "sipriMilitarySpending": "Mauritius",
         "unNationalAccounts": "Mauritius"
       }
     },
@@ -3744,7 +3532,6 @@
         "unComtradeIsoFallback": "MAR",
         "worldMapTopojson": "504",
         "oecdRevenue": "MAR",
-        "sipriMilitarySpending": "Morocco",
         "unNationalAccounts": "Morocco"
       }
     },
@@ -3762,7 +3549,6 @@
         "unComtradeIsoFallback": "MOZ",
         "worldMapTopojson": "508",
         "oecdRevenue": "MOZ",
-        "sipriMilitarySpending": "Mozambique",
         "unNationalAccounts": "Mozambique"
       }
     },
@@ -3780,7 +3566,6 @@
         "unComtradeIsoFallback": "NAM",
         "worldMapTopojson": "516",
         "oecdRevenue": "NAM",
-        "sipriMilitarySpending": "Namibia",
         "unNationalAccounts": "Namibia"
       }
     },
@@ -3798,7 +3583,6 @@
         "unComtradeIsoFallback": "NER",
         "worldMapTopojson": "562",
         "oecdRevenue": "NER",
-        "sipriMilitarySpending": "Niger",
         "unNationalAccounts": "Niger"
       }
     },
@@ -3816,7 +3600,6 @@
         "unComtradeIsoFallback": "NGA",
         "worldMapTopojson": "566",
         "oecdRevenue": "NGA",
-        "sipriMilitarySpending": "Nigeria",
         "unNationalAccounts": "Nigeria"
       }
     },
@@ -3834,7 +3617,6 @@
         "unComtradeIsoFallback": "RWA",
         "worldMapTopojson": "646",
         "oecdRevenue": "RWA",
-        "sipriMilitarySpending": "Rwanda",
         "unNationalAccounts": "Rwanda"
       }
     },
@@ -3849,7 +3631,6 @@
         "unComtradeReporter": "638",
         "worldMapTopojson": "638",
         "oecdRevenue": "REU",
-        "sipriMilitarySpending": "Réunion",
         "unNationalAccounts": "Réunion"
       }
     },
@@ -3864,7 +3645,6 @@
         "unComtradeReporter": "654",
         "worldMapTopojson": "654",
         "oecdRevenue": "SHN",
-        "sipriMilitarySpending": "Saint Helena",
         "unNationalAccounts": "Saint Helena"
       }
     },
@@ -3882,7 +3662,6 @@
         "unComtradeIsoFallback": "STP",
         "worldMapTopojson": "678",
         "oecdRevenue": "STP",
-        "sipriMilitarySpending": "São Tomé and Príncipe",
         "unNationalAccounts": "Sao Tome and Principe"
       }
     },
@@ -3900,7 +3679,6 @@
         "unComtradeIsoFallback": "SEN",
         "worldMapTopojson": "686",
         "oecdRevenue": "SEN",
-        "sipriMilitarySpending": "Senegal",
         "unNationalAccounts": "Senegal"
       }
     },
@@ -3918,7 +3696,6 @@
         "unComtradeIsoFallback": "SYC",
         "worldMapTopojson": "690",
         "oecdRevenue": "SYC",
-        "sipriMilitarySpending": "Seychelles",
         "unNationalAccounts": "Seychelles"
       }
     },
@@ -3936,7 +3713,6 @@
         "unComtradeIsoFallback": "SLE",
         "worldMapTopojson": "694",
         "oecdRevenue": "SLE",
-        "sipriMilitarySpending": "Sierra Leone",
         "unNationalAccounts": "Sierra Leone"
       }
     },
@@ -3954,7 +3730,6 @@
         "unComtradeIsoFallback": "SOM",
         "worldMapTopojson": "706",
         "oecdRevenue": "SOM",
-        "sipriMilitarySpending": "Somalia",
         "unNationalAccounts": "Somalia"
       }
     },
@@ -3972,7 +3747,6 @@
         "unComtradeIsoFallback": "SSD",
         "worldMapTopojson": "728",
         "oecdRevenue": "SSD",
-        "sipriMilitarySpending": "South Sudan",
         "unNationalAccounts": "South Sudan"
       }
     },
@@ -3990,7 +3764,6 @@
         "unComtradeIsoFallback": "SDN",
         "worldMapTopojson": "729",
         "oecdRevenue": "SDN",
-        "sipriMilitarySpending": "Sudan",
         "unNationalAccounts": "Sudan"
       }
     },
@@ -4008,7 +3781,6 @@
         "unComtradeIsoFallback": "TZA",
         "worldMapTopojson": "834",
         "oecdRevenue": "TZA",
-        "sipriMilitarySpending": "Tanzania",
         "unNationalAccounts": "Tanzania"
       }
     },
@@ -4026,7 +3798,6 @@
         "unComtradeIsoFallback": "TGO",
         "worldMapTopojson": "768",
         "oecdRevenue": "TGO",
-        "sipriMilitarySpending": "Togo",
         "unNationalAccounts": "Togo"
       }
     },
@@ -4044,7 +3815,6 @@
         "unComtradeIsoFallback": "TUN",
         "worldMapTopojson": "788",
         "oecdRevenue": "TUN",
-        "sipriMilitarySpending": "Tunisia",
         "unNationalAccounts": "Tunisia"
       }
     },
@@ -4062,7 +3832,6 @@
         "unComtradeIsoFallback": "UGA",
         "worldMapTopojson": "800",
         "oecdRevenue": "UGA",
-        "sipriMilitarySpending": "Uganda",
         "unNationalAccounts": "Uganda"
       }
     },
@@ -4080,7 +3849,6 @@
         "unComtradeIsoFallback": "ZMB",
         "worldMapTopojson": "894",
         "oecdRevenue": "ZMB",
-        "sipriMilitarySpending": "Zambia",
         "unNationalAccounts": "Zambia"
       }
     },
@@ -4098,7 +3866,6 @@
         "unComtradeIsoFallback": "ZWE",
         "worldMapTopojson": "716",
         "oecdRevenue": "ZWE",
-        "sipriMilitarySpending": "Zimbabwe",
         "unNationalAccounts": "Zimbabwe"
       }
     }
@@ -4143,10 +3910,6 @@
     "oecdRevenue": {
       "default": "explicit",
       "description": "OECD revenue composition script uses sourceIds.oecdRevenue."
-    },
-    "sipriMilitarySpending": {
-      "default": "explicit",
-      "description": "SIPRI military spending script uses sourceIds.sipriMilitarySpending."
     },
     "unNationalAccounts": {
       "default": "explicit",

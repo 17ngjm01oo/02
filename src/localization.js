@@ -1,11 +1,45 @@
-import { loadTranslation } from "./translations.js";
+import { getCriticalTranslation, loadTranslation } from "./translations.js";
 export { defaultLocale, localeConfigs, supportedLocales } from "./locales.js";
 import { defaultLocale, localeConfigs } from "./locales.js";
 
-const localeDictionary = await loadTranslation(getPageLocale());
+const translationLoadTimeoutMs = 2_500;
+const pageLocale = getPageLocale();
+let localeDictionary = getCriticalTranslation(pageLocale);
+let fullTranslationLoaded = pageLocale === defaultLocale;
+
+await initializeLocaleDictionary(pageLocale);
+
+async function initializeLocaleDictionary(locale) {
+  let timeoutId;
+  const fullTranslationPromise = loadTranslation(locale)
+    .then((dictionary) => {
+      localeDictionary = dictionary;
+      fullTranslationLoaded = true;
+      return "loaded";
+    })
+    .catch((error) => {
+      console.error(`[Localization] Failed to load the ${locale} translation; using critical UI text.`, error);
+      return "failed";
+    });
+  const timeoutPromise = new Promise((resolve) => {
+    timeoutId = window.setTimeout(() => {
+      console.warn(
+        `[Localization] The ${locale} translation did not load within ${translationLoadTimeoutMs} ms; continuing with critical UI text.`,
+      );
+      resolve("timed-out");
+    }, translationLoadTimeoutMs);
+  });
+
+  await Promise.race([fullTranslationPromise, timeoutPromise]);
+  window.clearTimeout(timeoutId);
+}
 
 export function getPageLocale() {
   return document.body.dataset.locale || defaultLocale;
+}
+
+export function hasFullTranslation() {
+  return fullTranslationLoaded;
 }
 
 export function getLocalizedRootHref(rootHref = document.body.dataset.rootHref ?? "./") {

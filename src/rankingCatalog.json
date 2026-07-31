@@ -623,8 +623,8 @@
     {
       "group": "society",
       "directory": "military-spending",
-      "indicatorCode": "MILITARY_SPENDING_USD",
-      "staticDataPath": "data/sipri/rankings/military-spending/manifest.json",
+      "indicatorCode": "MS.MIL.XPND.CD",
+      "staticDataPath": "data/world-bank/rankings/military-spending/manifest.json",
       "displayScaleConfig": {
         "valueScaleMode": "usdMagnitude",
         "basicMagnitudeInput": "units"
@@ -633,7 +633,7 @@
       "hasCountryIndicatorPage": true,
       "showWorldShare": true,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: SIPRI Military Expenditure Database.",
+      "sourceNote": "Source: World Bank World Development Indicators; original source: SIPRI Military Expenditure Database.",
       "dataNote": "",
       "label": "Military Spending",
       "seriesId": "militarySpending"
@@ -641,8 +641,8 @@
     {
       "group": "society",
       "directory": "military-spending-percent-gdp",
-      "indicatorCode": "MILITARY_SPENDING_PERCENT_GDP",
-      "staticDataPath": "data/sipri/rankings/military-spending/manifest.json",
+      "indicatorCode": "MS.MIL.XPND.GD.ZS",
+      "staticDataPath": "data/world-bank/rankings/military-spending/manifest.json",
       "displayScaleConfig": {
         "suffix": "%",
         "suffixSpacing": "",
@@ -652,7 +652,7 @@
       "hasCountryIndicatorPage": true,
       "showWorldShare": false,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: SIPRI Military Expenditure Database.",
+      "sourceNote": "Source: World Bank World Development Indicators; original source: SIPRI Military Expenditure Database.",
       "dataNote": "",
       "label": "Military Spending (% of GDP)",
       "seriesId": "militarySpendingPercentGdp"

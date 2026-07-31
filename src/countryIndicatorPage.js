@@ -23,6 +23,7 @@ import { comparisonTableTwoColumnQuery } from "./responsive.js";
 import {
   getLocalizedRootHref,
   getPageLocale,
+  hasFullTranslation,
   localeConfigs,
   formatCountryDisplayName,
   translate,
@@ -126,10 +127,23 @@ function getCountryPageStaticDataPath(seriesConfig, targetCountryCode) {
 }
 
 function getSeriesChartTitle(seriesConfig, currencyCode) {
+  if (!hasFullTranslation()) {
+    const titleElement = document.querySelector(`#${seriesConfig.id}-title`);
+    const label = titleElement?.querySelector(".indicator-label-text")?.textContent?.trim();
+    const unit = titleElement?.querySelector(".indicator-display-unit")?.textContent?.trim();
+    if (label) {
+      return unit ? `${label} ${unit}` : label;
+    }
+  }
+
   return getIndicatorDisplayText(seriesConfig, { currencyCode });
 }
 
 function updateSeriesHeadings(countrySeriesConfigs) {
+  if (!hasFullTranslation()) {
+    return;
+  }
+
   countrySeriesConfigs.forEach((seriesConfig) => {
     const titleElement = document.querySelector(`#${seriesConfig.id}-title`);
     const canvas = document.querySelector(`#${seriesConfig.canvasId}`);
@@ -1078,7 +1092,13 @@ function hideChartOverlay(chartCard, overlayElement) {
 }
 
 function showPageError() {
+  const message = translate("ui.failedToLoadData", "Failed to load data.");
   document.querySelectorAll(".chart-card").forEach((chartCard) => {
-    chartCard.classList.add("is-error");
+    showChartOverlay({
+      chartCard,
+      overlayElement: chartCard.querySelector(".chart-overlay"),
+      message,
+      state: "error",
+    });
   });
 }

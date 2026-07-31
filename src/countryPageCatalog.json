@@ -555,7 +555,7 @@
       "generatedLabel": "military spending",
       "relatedNavLabel": "Society page navigation",
       "notesLabel": "Chart notes",
-      "sourceNote": "Source: SIPRI Military Expenditure Database.",
+      "sourceNote": "Source: World Bank World Development Indicators; original source: SIPRI Military Expenditure Database.",
       "sourceNoteOverridable": false,
       "dataNote": "",
       "group": "society"

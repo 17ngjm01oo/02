@@ -4,6 +4,7 @@ import { isCompactViewport } from "./responsive.js";
 const chartInstances = new Map();
 const chartRenderRequests = new Map();
 const chartJsUrl = new URL("./vendor/chart.umd.min.js", import.meta.url).href;
+const chartJsAttemptTimeouts = [5_000, 8_000];
 let chartJsLoadPromise = null;
 
 export function loadChartJs() {
@@ -12,23 +13,95 @@ export function loadChartJs() {
   }
 
   if (!chartJsLoadPromise) {
-    chartJsLoadPromise = new Promise((resolve, reject) => {
-      const existingScript = document.querySelector(`script[src="${chartJsUrl}"]`);
-      const script = existingScript || document.createElement("script");
-
-      script.addEventListener("load", () => resolve(window.Chart), { once: true });
-      script.addEventListener("error", () => reject(new Error("Failed to load Chart.js.")), { once: true });
-
-      if (!existingScript) {
-        script.src = chartJsUrl;
-        script.async = true;
-        script.dataset.chartJsLoader = "true";
-        document.head.append(script);
-      }
+    chartJsLoadPromise = loadChartJsWithRetry().catch((error) => {
+      chartJsLoadPromise = null;
+      throw error;
     });
   }
 
   return chartJsLoadPromise;
+}
+
+async function loadChartJsWithRetry() {
+  let lastError;
+
+  for (let attempt = 0; attempt < chartJsAttemptTimeouts.length; attempt += 1) {
+    try {
+      return await loadChartJsAttempt(attempt, chartJsAttemptTimeouts[attempt]);
+    } catch (error) {
+      lastError = error;
+      if (attempt + 1 < chartJsAttemptTimeouts.length) {
+        console.warn("[Chart] Chart.js load failed; retrying.", {
+          attempt: attempt + 1,
+          error,
+        });
+      }
+    }
+  }
+
+  throw lastError ?? new Error("Failed to load Chart.js.");
+}
+
+function loadChartJsAttempt(attempt, timeoutMs) {
+  return new Promise((resolve, reject) => {
+    const existingScript = attempt === 0
+      ? document.querySelector(`script[src="${chartJsUrl}"]`)
+      : null;
+    const script = existingScript || document.createElement("script");
+    let settled = false;
+
+    const finish = (callback) => {
+      if (settled) {
+        return;
+      }
+      settled = true;
+      window.clearTimeout(timeoutId);
+      script.removeEventListener("load", handleLoad);
+      script.removeEventListener("error", handleError);
+      callback();
+    };
+    const handleLoad = () => {
+      if (window.Chart) {
+        finish(() => resolve(window.Chart));
+        return;
+      }
+      if (script.dataset.chartJsLoader === "true") {
+        script.remove();
+      }
+      finish(() => reject(new Error("Chart.js loaded without exposing the Chart constructor.")));
+    };
+    const handleError = () => {
+      if (script.dataset.chartJsLoader === "true") {
+        script.remove();
+      }
+      finish(() => reject(new Error("Failed to load Chart.js.")));
+    };
+    const timeoutId = window.setTimeout(() => {
+      if (script.dataset.chartJsLoader === "true") {
+        script.remove();
+      }
+      finish(() => reject(new Error(`Chart.js load timed out after ${timeoutMs} ms.`)));
+    }, timeoutMs);
+
+    script.addEventListener("load", handleLoad, { once: true });
+    script.addEventListener("error", handleError, { once: true });
+
+    if (existingScript) {
+      if (window.Chart) {
+        finish(() => resolve(window.Chart));
+      }
+      return;
+    }
+
+    const requestUrl = new URL(chartJsUrl);
+    if (attempt > 0) {
+      requestUrl.searchParams.set("_retry", String(Date.now()));
+    }
+    script.src = requestUrl.href;
+    script.async = true;
+    script.dataset.chartJsLoader = "true";
+    document.head.append(script);
+  });
 }
 
 export function renderLineChart(canvas, { points, config, comparison = null }) {

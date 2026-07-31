@@ -1,4 +1,5 @@
 const staticDataCache = new Map();
+const staticDataAttemptTimeouts = [6_000, 10_000];
 
 export function buildStaticDataRequestUrls({ staticDataPath, sourceUrl, indicatorCode }) {
   if (!staticDataPath) {
@@ -50,25 +51,69 @@ export async function fetchStaticData(options) {
 }
 
 async function requestStaticData(appUrl) {
-  const response = await fetch(appUrl, {
-    headers: {
-      Accept: "application/json",
-    },
-  });
+  let lastError;
 
-  console.info("[Static Data] Response status:", response.status, response.statusText);
-
-  if (!response.ok) {
-    const errorBody = await response.text();
-    console.error("[Static Data] Error response body:", errorBody);
-    throw new Error(`Static data file request failed: ${response.status} ${response.statusText}`);
+  for (let attempt = 0; attempt < staticDataAttemptTimeouts.length; attempt += 1) {
+    try {
+      return await requestStaticDataAttempt(appUrl, {
+        bypassCache: attempt > 0,
+        timeoutMs: staticDataAttemptTimeouts[attempt],
+      });
+    } catch (error) {
+      lastError = error;
+      if (attempt + 1 < staticDataAttemptTimeouts.length) {
+        console.warn("[Static Data] Request failed; retrying.", {
+          requestUrl: appUrl,
+          attempt: attempt + 1,
+          error,
+        });
+      }
+    }
   }
 
-  const data = await response.json();
+  throw lastError ?? new Error("Static data request failed.");
+}
 
-  console.groupCollapsed("[Static Data] Raw response");
-  console.log(data);
-  console.groupEnd();
+async function requestStaticDataAttempt(appUrl, { bypassCache, timeoutMs }) {
+  const controller = new AbortController();
+  const requestUrl = new URL(appUrl);
+  if (bypassCache) {
+    requestUrl.searchParams.set("_retry", String(Date.now()));
+  }
+  const timeoutId = window.setTimeout(() => {
+    controller.abort();
+  }, timeoutMs);
 
-  return data;
+  try {
+    const response = await fetch(requestUrl.href, {
+      headers: {
+        Accept: "application/json",
+      },
+      signal: controller.signal,
+      ...(bypassCache ? { cache: "reload" } : {}),
+    });
+
+    console.info("[Static Data] Response status:", response.status, response.statusText);
+
+    if (!response.ok) {
+      const errorBody = await response.text();
+      console.error("[Static Data] Error response body:", errorBody);
+      throw new Error(`Static data file request failed: ${response.status} ${response.statusText}`);
+    }
+
+    const data = await response.json();
+
+    console.groupCollapsed("[Static Data] Raw response");
+    console.log(data);
+    console.groupEnd();
+
+    return data;
+  } catch (error) {
+    if (controller.signal.aborted) {
+      throw new Error(`Static data request timed out after ${timeoutMs} ms.`);
+    }
+    throw error;
+  } finally {
+    window.clearTimeout(timeoutId);
+  }
 }

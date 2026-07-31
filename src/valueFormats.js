@@ -1,4 +1,9 @@
 // Spread a shared preset into a series config, then override only true exceptions.
+export const compactMagnitudePrecision = {
+  maximumFractionDigits: 2,
+  significantDigitBudget: 5,
+};
+
 export const valueFormats = {
   gdpMagnitude: {
     valueScaleMode: "gdpMagnitude",

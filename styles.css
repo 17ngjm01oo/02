@@ -31,7 +31,6 @@
   --tooltip-border: rgba(15, 23, 42, 0.12);
   --tooltip-shadow: 0 10px 24px rgba(15, 23, 42, 0.14);
   --error-border: rgba(159, 47, 47, 0.28);
-  --chart-error-overlay: rgba(255, 240, 240, 0.94);
   --comparison-value-lower: #d46a6a;
   --comparison-value-higher: #4f9f74;
   --section-gap: 4px;
@@ -93,7 +92,6 @@ html[data-theme="dark"] {
   --tooltip-border: #3d3d3d;
   --tooltip-shadow: 0 10px 24px rgba(0, 0, 0, 0.52);
   --error-border: #6c3535;
-  --chart-error-overlay: rgba(44, 17, 17, 0.96);
   --comparison-value-lower: #e58b8b;
   --comparison-value-higher: #75b98d;
 }
@@ -501,6 +499,27 @@ body {
 .site-menu-options {
   display: grid;
   gap: 1px;
+}
+
+.site-menu-language .site-menu-options {
+  max-height: 160px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-color: var(--border-strong) transparent;
+  scrollbar-width: thin;
+}
+
+.site-menu-language .site-menu-options::-webkit-scrollbar {
+  width: 6px;
+}
+
+.site-menu-language .site-menu-options::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.site-menu-language .site-menu-options::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: var(--border-strong);
 }
 
 .site-menu-option {
@@ -2940,11 +2959,6 @@ body[data-country-code] .subtitle {
   max-width: 100%;
   overflow-wrap: anywhere;
   font-weight: 700;
-}
-
-.chart-card.is-error .chart-overlay {
-  background: var(--chart-error-overlay);
-  color: var(--error);
 }
 
 .chart-card.is-no-data .chart-overlay {

@@ -1,4 +1,5 @@
 import { getPageLocale, localeConfigs } from "./localization.js";
+import { compactMagnitudePrecision } from "./valueFormats.js";
 
 const basicMagnitudeModes = {
   gdpMagnitude: "billions",
@@ -68,128 +69,128 @@ export function getSingleValueDisplayScale(value, config) {
 const rawMagnitudeStepsByFormat = {
   western: {
     compactFromMillions: [
-      { threshold: 1000000000000000, valueScale: 0.000000000000001, compactUnit: "Q", fixedFractionDigits: 2 },
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: "T", fixedFractionDigits: 2 },
+      { threshold: 1000000000000000, valueScale: 0.000000000000001, compactUnit: "Q" },
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: "T" },
       { threshold: 1000000000, valueScale: 0.000000001, compactUnit: "B" },
       { threshold: Number.NEGATIVE_INFINITY, valueScale: 0.000001, compactUnit: "M" },
     ],
     compactFromUnits: [
-      { threshold: 1000000000000000, valueScale: 0.000000000000001, compactUnit: "Q", fixedFractionDigits: 2 },
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: "T", fixedFractionDigits: 2 },
+      { threshold: 1000000000000000, valueScale: 0.000000000000001, compactUnit: "Q" },
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: "T" },
       { threshold: 1000000000, valueScale: 0.000000001, compactUnit: "B" },
       { threshold: 1000000, valueScale: 0.000001, compactUnit: "M" },
     ],
   },
   japanese: {
     compactFromMillions: [
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: "兆", fixedFractionDigits: 2 },
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: "兆" },
       { threshold: 100000000, valueScale: 0.00000001, compactUnit: "億" },
       { threshold: Number.NEGATIVE_INFINITY, valueScale: 0.0001, compactUnit: "万" },
     ],
     compactFromUnits: [
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: "兆", fixedFractionDigits: 2 },
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: "兆" },
       { threshold: 100000000, valueScale: 0.00000001, compactUnit: "億" },
       { threshold: 10000, valueScale: 0.0001, compactUnit: "万" },
     ],
   },
   spanish: {
     compactFromMillions: [
-      { threshold: 1000000000000000, valueScale: 0.000000000000001, compactUnit: " mil bill.", fixedFractionDigits: 2 },
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " bill.", fixedFractionDigits: 2 },
+      { threshold: 1000000000000000, valueScale: 0.000000000000001, compactUnit: " mil bill." },
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " bill." },
       { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " mil M" },
       { threshold: Number.NEGATIVE_INFINITY, valueScale: 0.000001, compactUnit: " M" },
     ],
     compactFromUnits: [
-      { threshold: 1000000000000000, valueScale: 0.000000000000001, compactUnit: " mil bill.", fixedFractionDigits: 2 },
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " bill.", fixedFractionDigits: 2 },
+      { threshold: 1000000000000000, valueScale: 0.000000000000001, compactUnit: " mil bill." },
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " bill." },
       { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " mil M" },
       { threshold: 1000000, valueScale: 0.000001, compactUnit: " M" },
     ],
   },
   french: {
     compactFromMillions: [
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " Bn", fixedFractionDigits: 2 },
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " Bn" },
       { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " Md" },
       { threshold: Number.NEGATIVE_INFINITY, valueScale: 0.000001, compactUnit: " M" },
     ],
     compactFromUnits: [
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " Bn", fixedFractionDigits: 2 },
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " Bn" },
       { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " Md" },
       { threshold: 1000000, valueScale: 0.000001, compactUnit: " M" },
     ],
   },
   brazilian_portuguese: {
     compactFromMillions: [
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " tri", fixedFractionDigits: 2 },
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " tri" },
       { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " bi" },
       { threshold: Number.NEGATIVE_INFINITY, valueScale: 0.000001, compactUnit: " mi" },
     ],
     compactFromUnits: [
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " tri", fixedFractionDigits: 2 },
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " tri" },
       { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " bi" },
       { threshold: 1000000, valueScale: 0.000001, compactUnit: " mi" },
     ],
   },
   german: {
     compactFromMillions: [
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " Bio.", fixedFractionDigits: 2 },
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " Bio." },
       { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " Mrd." },
       { threshold: Number.NEGATIVE_INFINITY, valueScale: 0.000001, compactUnit: " Mio." },
     ],
     compactFromUnits: [
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " Bio.", fixedFractionDigits: 2 },
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " Bio." },
       { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " Mrd." },
       { threshold: 1000000, valueScale: 0.000001, compactUnit: " Mio." },
     ],
   },
   italian: {
     compactFromMillions: [
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " mila mld", fixedFractionDigits: 2 },
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " mila mld" },
       { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " mld" },
       { threshold: Number.NEGATIVE_INFINITY, valueScale: 0.000001, compactUnit: " mln" },
     ],
     compactFromUnits: [
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " mila mld", fixedFractionDigits: 2 },
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " mila mld" },
       { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " mld" },
       { threshold: 1000000, valueScale: 0.000001, compactUnit: " mln" },
     ],
   },
   korean: {
     compactFromMillions: [
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: "조", fixedFractionDigits: 2 },
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: "조" },
       { threshold: 100000000, valueScale: 0.00000001, compactUnit: "억" },
       { threshold: Number.NEGATIVE_INFINITY, valueScale: 0.0001, compactUnit: "만" },
     ],
     compactFromUnits: [
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: "조", fixedFractionDigits: 2 },
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: "조" },
       { threshold: 100000000, valueScale: 0.00000001, compactUnit: "억" },
       { threshold: 10000, valueScale: 0.0001, compactUnit: "만" },
     ],
   },
   turkish: {
     compactFromMillions: [
-      { threshold: 1000000000000000, valueScale: 0.000000000000001, compactUnit: " katrilyon", fixedFractionDigits: 2 },
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " trilyon", fixedFractionDigits: 2 },
+      { threshold: 1000000000000000, valueScale: 0.000000000000001, compactUnit: " katrilyon" },
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " trilyon" },
       { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " milyar" },
       { threshold: Number.NEGATIVE_INFINITY, valueScale: 0.000001, compactUnit: " milyon" },
     ],
     compactFromUnits: [
-      { threshold: 1000000000000000, valueScale: 0.000000000000001, compactUnit: " katrilyon", fixedFractionDigits: 2 },
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " trilyon", fixedFractionDigits: 2 },
+      { threshold: 1000000000000000, valueScale: 0.000000000000001, compactUnit: " katrilyon" },
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " trilyon" },
       { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " milyar" },
       { threshold: 1000000, valueScale: 0.000001, compactUnit: " milyon" },
     ],
   },
   indonesian: {
     compactFromMillions: [
-      { threshold: 1000000000000000, valueScale: 0.000000000000001, compactUnit: " kuadriliun", fixedFractionDigits: 2 },
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " triliun", fixedFractionDigits: 2 },
+      { threshold: 1000000000000000, valueScale: 0.000000000000001, compactUnit: " kuadriliun" },
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " triliun" },
       { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " miliar" },
       { threshold: Number.NEGATIVE_INFINITY, valueScale: 0.000001, compactUnit: " juta" },
     ],
     compactFromUnits: [
-      { threshold: 1000000000000000, valueScale: 0.000000000000001, compactUnit: " kuadriliun", fixedFractionDigits: 2 },
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " triliun", fixedFractionDigits: 2 },
+      { threshold: 1000000000000000, valueScale: 0.000000000000001, compactUnit: " kuadriliun" },
+      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " triliun" },
       { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " miliar" },
       { threshold: 1000000, valueScale: 0.000001, compactUnit: " juta" },
     ],
@@ -274,20 +275,34 @@ function getMagnitudeDisplayScale(points, magnitudeInput, fallback = {}) {
     smallValueMaximumFractionDigits: fallback.smallValueMaximumFractionDigits,
     smallValueThreshold: fallback.smallValueThreshold,
     integerValueThreshold: fallback.integerValueThreshold,
-    maximumFractionDigits: magnitudeStep.fixedFractionDigits ?? getMagnitudeFractionDigits(displayValue),
+    maximumFractionDigits: resolveMaximumFractionDigits(displayValue, compactMagnitudePrecision),
   };
 }
 
-function getMagnitudeFractionDigits(maxDisplayValue) {
-  if (maxDisplayValue >= 100) {
+function resolveMaximumFractionDigits(value, policy) {
+  const absoluteValue = Math.abs(value);
+  const integerValueThreshold = policy.integerValueThreshold ?? Number.POSITIVE_INFINITY;
+
+  if (absoluteValue >= integerValueThreshold) {
     return 0;
   }
 
-  if (maxDisplayValue >= 10) {
-    return 1;
+  if (
+    policy.smallValueMaximumFractionDigits != null
+    && absoluteValue !== 0
+    && absoluteValue < (policy.smallValueThreshold ?? 10)
+  ) {
+    return policy.smallValueMaximumFractionDigits;
   }
 
-  return 2;
+  const maximumFractionDigits = policy.maximumFractionDigits ?? 1;
+  const significantDigitBudget = policy.significantDigitBudget;
+  if (significantDigitBudget == null || absoluteValue < 1) {
+    return maximumFractionDigits;
+  }
+
+  const integerDigits = Math.floor(Math.log10(absoluteValue)) + 1;
+  return Math.min(maximumFractionDigits, Math.max(0, significantDigitBudget - integerDigits));
 }
 
 function getNumberFormatLocale() {
@@ -348,7 +363,12 @@ function formatAdaptiveCompactValue(value, displayScale) {
     const fallbackValue = value * (displayScale.adaptiveFallbackValueScale ?? 1);
     const formattedValue = formatNumber(
       fallbackValue,
-      getAdaptiveFallbackFractionDigits(fallbackValue, displayScale),
+      resolveMaximumFractionDigits(fallbackValue, {
+        maximumFractionDigits: displayScale.adaptiveFallbackMaximumFractionDigits,
+        smallValueMaximumFractionDigits: displayScale.smallValueMaximumFractionDigits,
+        smallValueThreshold: displayScale.smallValueThreshold,
+        integerValueThreshold: displayScale.integerValueThreshold,
+      }),
       displayScale.locale,
     );
     const unit = displayScale.tooltipUnit ? ` ${displayScale.tooltipUnit}` : "";
@@ -360,29 +380,10 @@ function formatAdaptiveCompactValue(value, displayScale) {
   }
 
   const displayValue = rawValue * magnitudeStep.valueScale;
-  const maximumFractionDigits = magnitudeStep.fixedFractionDigits ?? getMagnitudeFractionDigits(Math.abs(displayValue));
+  const maximumFractionDigits = resolveMaximumFractionDigits(displayValue, compactMagnitudePrecision);
   const formattedValue = formatNumber(displayValue, maximumFractionDigits, displayScale.locale);
   const suffixValue = displayScale.suffix;
   const suffixSpacing = displayScale.suffixSpacing ?? (suffixValue ? " " : "");
   const suffix = suffixValue ? `${suffixSpacing}${suffixValue}` : "";
   return `${displayScale.tooltipPrefix}${formattedValue}${magnitudeStep.compactUnit}${suffix}`;
-}
-
-function getAdaptiveFallbackFractionDigits(value, displayScale) {
-  const defaultFractionDigits = displayScale.adaptiveFallbackMaximumFractionDigits;
-  const smallValueMaximumFractionDigits = displayScale.smallValueMaximumFractionDigits;
-
-  if (Math.abs(value) >= (displayScale.integerValueThreshold ?? Number.POSITIVE_INFINITY)) {
-    return 0;
-  }
-
-  if (
-    smallValueMaximumFractionDigits != null
-    && value !== 0
-    && Math.abs(value) < (displayScale.smallValueThreshold ?? 10)
-  ) {
-    return smallValueMaximumFractionDigits;
-  }
-
-  return defaultFractionDigits;
 }
