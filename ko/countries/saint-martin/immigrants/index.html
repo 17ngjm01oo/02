@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="인구 페이지 탐색"><a class="navigation-control" href="../population/">인구</a><a class="navigation-control" href="../population-growth/">인구증가율</a><a class="navigation-control" href="../population-density/">인구밀도</a><a class="navigation-control" href="../life-expectancy/">기대수명</a><a class="navigation-control" href="../fertility-rate/">합계출산율</a><a class="navigation-control is-current" href="../immigrants/" aria-current="page">이민자 수</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="immigrants-title">
+          <section class="indicator-block" aria-label="이민자 수 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="immigrants-title"><span class="indicator-label-cell"><span class="indicator-label-text">이민자 수</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="이민자 수 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="immigrants">i</button></span></span></h2>
+                <h2 data-country-indicator-title="immigrants"><span class="indicator-label-cell"><span class="indicator-label-text">이민자 수</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="이민자 수 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="immigrants">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="immigrants">
                 <div class="compare-input-wrap">
@@ -134,14 +134,16 @@
 
             <details class="data-table-toggle" id="immigrantsTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="immigrantsTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="immigrantsTableWrap" role="region" aria-label="데이터 표" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="immigrantsPercentPopulation-title">
+          <section class="indicator-block" aria-label="이민자 수 (인구 대비 %) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="immigrantsPercentPopulation-title"><span class="indicator-label-cell"><span class="indicator-label-text">이민자 수</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(인구 대비 %)</span><button class="indicator-info-button" type="button" aria-label="이민자 수 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="immigrantsPercentPopulation">i</button></span></span></h2>
+                <h2 data-country-indicator-title="immigrantsPercentPopulation"><span class="indicator-label-cell"><span class="indicator-label-text">이민자 수</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(인구 대비 %)</span><button class="indicator-info-button" type="button" aria-label="이민자 수 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="immigrantsPercentPopulation">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="immigrantsPercentPopulation">
                 <div class="compare-input-wrap">
@@ -169,12 +171,14 @@
 
             <details class="data-table-toggle" id="immigrantsPercentPopulationTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="immigrantsPercentPopulationTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="immigrantsPercentPopulationTableWrap" role="region" aria-label="데이터 표" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
           <footer class="shared-notes" aria-label="차트 참고 사항">
-            <p>출처: UN DESA Population Division International Migrant Stock.</p>
+            <p>출처: UN DESA International Migrant Stock.</p>
           </footer>
         </div>
       </section>

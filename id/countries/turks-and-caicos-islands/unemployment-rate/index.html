@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Navigasi halaman ekonomi"><a class="navigation-control" href="../gni/">PNB</a><a class="navigation-control" href="../gni-per-capita/">PNB per Kapita</a><a class="navigation-control is-current" href="../unemployment-rate/" aria-current="page">Tingkat Pengangguran Terbuka</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="unemploymentRate-title">
+          <section class="indicator-block" aria-label="Grafik garis Tingkat Pengangguran Terbuka">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="unemploymentRate-title"><span class="indicator-label-cell"><span class="indicator-label-text">Tingkat Pengangguran Terbuka</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="Informasi tentang Tingkat Pengangguran Terbuka" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="unemploymentRate">i</button></span></span></h2>
+                <h2 data-country-indicator-title="unemploymentRate"><span class="indicator-label-cell"><span class="indicator-label-text">Tingkat Pengangguran Terbuka</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="Informasi tentang Tingkat Pengangguran Terbuka" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="unemploymentRate">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="unemploymentRate">
                 <div class="compare-input-wrap">
@@ -134,7 +134,9 @@
 
             <details class="data-table-toggle" id="unemploymentRateTableToggle">
               <summary data-ui-text-action>Tabel data</summary>
-              <div class="data-table-wrap" id="unemploymentRateTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="unemploymentRateTableWrap" role="region" aria-label="Tabel data" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
@@ -150,7 +152,8 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/turks-and-caicos-islands/population/">Jumlah Penduduk</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/turks-and-caicos-islands/population-growth/">Pertumbuhan Penduduk</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/turks-and-caicos-islands/fertility-rate/">Angka Kelahiran Total</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/turks-and-caicos-islands/trade/">Neraca Perdagangan</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/turks-and-caicos-islands/trade/">Ekspor, Impor, dan Neraca Perdagangan</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/turks-and-caicos-islands/co2-emissions/">Emisi Gas Rumah Kaca</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../id/countries/turks-and-caicos-islands/"><img class="flag-image flag-image-tc country-flag" src="../../../../public/flags/tc.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">Lihat profil negara</span></a>
       </section>

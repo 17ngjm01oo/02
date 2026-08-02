@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Economy page navigation"><a class="navigation-control" href="../gdp/">GDP</a><a class="navigation-control" href="../gdp-per-capita/">GDP per Capita</a><a class="navigation-control" href="../ppp-gdp/">PPP GDP</a><a class="navigation-control" href="../ppp-gdp-per-capita/">PPP GDP per Capita</a><a class="navigation-control is-current" href="../gni/" aria-current="page">GNI</a><a class="navigation-control" href="../gdp-growth/">GDP Growth</a><a class="navigation-control" href="../inflation-rate/">Inflation Rate</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="gni-title">
+          <section class="indicator-block" aria-label="GNI (USD) line chart">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gni-title"><span class="indicator-label-cell"><span class="indicator-label-text">GNI</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="GNI information" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gni">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gni"><span class="indicator-label-cell"><span class="indicator-label-text">GNI</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="GNI information" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gni">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="gni">
                 <div class="compare-input-wrap">
@@ -134,7 +134,9 @@
 
             <details class="data-table-toggle" id="gniTableToggle">
               <summary data-ui-text-action>Data table</summary>
-              <div class="data-table-wrap" id="gniTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gniTableWrap" role="region" aria-label="Data table" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
@@ -152,10 +154,11 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/tanzania/population/">Population</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/tanzania/population-growth/">Population Growth</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/tanzania/fertility-rate/">Fertility Rate</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../countries/tanzania/trade/">Trade Balance</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../countries/tanzania/trade/">Exports, Imports and Trade Balance</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/tanzania/government-debt/">Government Debt</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/tanzania/fiscal-balance/">Fiscal Balance</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/tanzania/hdi/">HDI</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../countries/tanzania/co2-emissions/">CO2 Emissions</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../countries/tanzania/"><img class="flag-image flag-image-tz country-flag" src="../../../public/flags/tz.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">View Country Profile</span></a>
       </section>

@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Economy page navigation"><a class="navigation-control is-current" href="../gdp/" aria-current="page">GDP</a><a class="navigation-control" href="../gdp-per-capita/">GDP per Capita</a><a class="navigation-control" href="../ppp-gdp/">PPP GDP</a><a class="navigation-control" href="../ppp-gdp-per-capita/">PPP GDP per Capita</a><a class="navigation-control" href="../gni/">GNI</a><a class="navigation-control" href="../gni-per-capita/">GNI per Capita</a><a class="navigation-control" href="../gdp-growth/">GDP Growth</a><a class="navigation-control" href="../inflation-rate/">Inflation Rate</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="gdp-title">
+          <section class="indicator-block" aria-label="GDP (USD) line chart">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gdp-title"><span class="indicator-label-cell"><span class="indicator-label-text">GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="GDP information" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gdp"><span class="indicator-label-cell"><span class="indicator-label-text">GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="GDP information" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdp">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="gdp">
                 <div class="compare-input-wrap">
@@ -134,14 +134,16 @@
 
             <details class="data-table-toggle" id="gdpTableToggle">
               <summary data-ui-text-action>Data table</summary>
-              <div class="data-table-wrap" id="gdpTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>606M</td><td>2002</td><td>564M</td><td>2012</td><td>2.26B</td></tr><tr><td>1993</td><td>374M</td><td>2003</td><td>673M</td><td>2013</td><td>1.96B</td></tr><tr><td>1994</td><td>433M</td><td>2004</td><td>858M</td><td>2014</td><td>2.6B</td></tr><tr><td>1995</td><td>483M</td><td>2005</td><td>850M</td><td>2015</td><td>2.02B</td></tr><tr><td>1996</td><td>579M</td><td>2006</td><td>937M</td><td>2016</td><td>2.21B</td></tr><tr><td>1997</td><td>594M</td><td>2007</td><td>1.02B</td><td>2017</td><td>1.9B</td></tr><tr><td>1998</td><td>626M</td><td>2008</td><td>923M</td><td>2018</td><td>2.01B</td></tr><tr><td>1999</td><td>614M</td><td>2009</td><td>1.3B</td><td>2019</td><td>1.98B</td></tr><tr><td>2000</td><td>547M</td><td>2010</td><td>1.59B</td><td></td><td></td></tr><tr><td>2001</td><td>582M</td><td>2011</td><td>2.07B</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gdpTableWrap" role="region" aria-label="Data table" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>606M</td><td>2002</td><td>564M</td><td>2012</td><td>2.26B</td></tr><tr><td>1993</td><td>374M</td><td>2003</td><td>673M</td><td>2013</td><td>1.96B</td></tr><tr><td>1994</td><td>433M</td><td>2004</td><td>858M</td><td>2014</td><td>2.6B</td></tr><tr><td>1995</td><td>483M</td><td>2005</td><td>850M</td><td>2015</td><td>2.02B</td></tr><tr><td>1996</td><td>579M</td><td>2006</td><td>937M</td><td>2016</td><td>2.21B</td></tr><tr><td>1997</td><td>594M</td><td>2007</td><td>1.02B</td><td>2017</td><td>1.9B</td></tr><tr><td>1998</td><td>626M</td><td>2008</td><td>923M</td><td>2018</td><td>2.01B</td></tr><tr><td>1999</td><td>614M</td><td>2009</td><td>1.3B</td><td>2019</td><td>1.98B</td></tr><tr><td>2000</td><td>547M</td><td>2010</td><td>1.59B</td><td></td><td></td></tr><tr><td>2001</td><td>582M</td><td>2011</td><td>2.07B</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="gdpNational-title">
+          <section class="indicator-block" aria-label="GDP (Local currency) line chart">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gdpNational-title"><span class="indicator-label-cell"><span class="indicator-label-text">GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Local currency)</span><button class="indicator-info-button" type="button" aria-label="GDP information" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpNational">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gdpNational"><span class="indicator-label-cell"><span class="indicator-label-text">GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Local currency)</span><button class="indicator-info-button" type="button" aria-label="GDP information" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpNational">i</button></span></span></h2>
               </div>
             </header>
 
@@ -152,14 +154,16 @@
 
             <details class="data-table-toggle" id="gdpNationalTableToggle">
               <summary data-ui-text-action>Data table</summary>
-              <div class="data-table-wrap" id="gdpNationalTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>1.7B</td><td>2002</td><td>7.88B</td><td>2012</td><td>34.67B</td></tr><tr><td>1993</td><td>1.96B</td><td>2003</td><td>9.35B</td><td>2013</td><td>30.1B</td></tr><tr><td>1994</td><td>2.67B</td><td>2004</td><td>11.83B</td><td>2014</td><td>40.04B</td></tr><tr><td>1995</td><td>3.05B</td><td>2005</td><td>13.06B</td><td>2015</td><td>30.95B</td></tr><tr><td>1996</td><td>3.68B</td><td>2006</td><td>14.41B</td><td>2016</td><td>33.37B</td></tr><tr><td>1997</td><td>4.14B</td><td>2007</td><td>15.68B</td><td>2017</td><td>28.7B</td></tr><tr><td>1998</td><td>4.61B</td><td>2008</td><td>14.19B</td><td>2018</td><td>30.24B</td></tr><tr><td>1999</td><td>5.01B</td><td>2009</td><td>19.94B</td><td>2019</td><td>29.88B</td></tr><tr><td>2000</td><td>5.26B</td><td>2010</td><td>24.44B</td><td></td><td></td></tr><tr><td>2001</td><td>6.59B</td><td>2011</td><td>31.75B</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gdpNationalTableWrap" role="region" aria-label="Data table" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>1.7B</td><td>2002</td><td>7.88B</td><td>2012</td><td>34.67B</td></tr><tr><td>1993</td><td>1.96B</td><td>2003</td><td>9.35B</td><td>2013</td><td>30.1B</td></tr><tr><td>1994</td><td>2.67B</td><td>2004</td><td>11.83B</td><td>2014</td><td>40.04B</td></tr><tr><td>1995</td><td>3.05B</td><td>2005</td><td>13.06B</td><td>2015</td><td>30.95B</td></tr><tr><td>1996</td><td>3.68B</td><td>2006</td><td>14.41B</td><td>2016</td><td>33.37B</td></tr><tr><td>1997</td><td>4.14B</td><td>2007</td><td>15.68B</td><td>2017</td><td>28.7B</td></tr><tr><td>1998</td><td>4.61B</td><td>2008</td><td>14.19B</td><td>2018</td><td>30.24B</td></tr><tr><td>1999</td><td>5.01B</td><td>2009</td><td>19.94B</td><td>2019</td><td>29.88B</td></tr><tr><td>2000</td><td>5.26B</td><td>2010</td><td>24.44B</td><td></td><td></td></tr><tr><td>2001</td><td>6.59B</td><td>2011</td><td>31.75B</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="realGdp-title">
+          <section class="indicator-block" aria-label="Real GDP (Local currency) line chart">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="realGdp-title"><span class="indicator-label-cell"><span class="indicator-label-text">Real GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Local currency)</span><button class="indicator-info-button" type="button" aria-label="Real GDP information" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="realGdp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="realGdp"><span class="indicator-label-cell"><span class="indicator-label-text">Real GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Local currency)</span><button class="indicator-info-button" type="button" aria-label="Real GDP information" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="realGdp">i</button></span></span></h2>
               </div>
             </header>
 
@@ -170,7 +174,9 @@
 
             <details class="data-table-toggle" id="realGdpTableToggle">
               <summary data-ui-text-action>Data table</summary>
-              <div class="data-table-wrap" id="realGdpTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>15.02B</td><td>2002</td><td>24.78B</td><td>2012</td><td>32.35B</td></tr><tr><td>1993</td><td>16.95B</td><td>2003</td><td>24.12B</td><td>2013</td><td>28.97B</td></tr><tr><td>1994</td><td>20.5B</td><td>2004</td><td>24.47B</td><td>2014</td><td>37.93B</td></tr><tr><td>1995</td><td>20.98B</td><td>2005</td><td>25.1B</td><td>2015</td><td>30.11B</td></tr><tr><td>1996</td><td>22.89B</td><td>2006</td><td>24.86B</td><td>2016</td><td>32.33B</td></tr><tr><td>1997</td><td>24.7B</td><td>2007</td><td>25.21B</td><td>2017</td><td>29.09B</td></tr><tr><td>1998</td><td>25.19B</td><td>2008</td><td>20.31B</td><td>2018</td><td>32.88B</td></tr><tr><td>1999</td><td>25.23B</td><td>2009</td><td>22.78B</td><td>2019</td><td>34.15B</td></tr><tr><td>2000</td><td>22.12B</td><td>2010</td><td>25.26B</td><td></td><td></td></tr><tr><td>2001</td><td>24.05B</td><td>2011</td><td>31.75B</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="realGdpTableWrap" role="region" aria-label="Data table" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>15.02B</td><td>2002</td><td>24.78B</td><td>2012</td><td>32.35B</td></tr><tr><td>1993</td><td>16.95B</td><td>2003</td><td>24.12B</td><td>2013</td><td>28.97B</td></tr><tr><td>1994</td><td>20.5B</td><td>2004</td><td>24.47B</td><td>2014</td><td>37.93B</td></tr><tr><td>1995</td><td>20.98B</td><td>2005</td><td>25.1B</td><td>2015</td><td>30.11B</td></tr><tr><td>1996</td><td>22.89B</td><td>2006</td><td>24.86B</td><td>2016</td><td>32.33B</td></tr><tr><td>1997</td><td>24.7B</td><td>2007</td><td>25.21B</td><td>2017</td><td>29.09B</td></tr><tr><td>1998</td><td>25.19B</td><td>2008</td><td>20.31B</td><td>2018</td><td>32.88B</td></tr><tr><td>1999</td><td>25.23B</td><td>2009</td><td>22.78B</td><td>2019</td><td>34.15B</td></tr><tr><td>2000</td><td>22.12B</td><td>2010</td><td>25.26B</td><td></td><td></td></tr><tr><td>2001</td><td>24.05B</td><td>2011</td><td>31.75B</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -188,10 +194,11 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/eritrea/population/">Population</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/eritrea/population-growth/">Population Growth</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/eritrea/fertility-rate/">Fertility Rate</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../countries/eritrea/trade/">Trade Balance</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../countries/eritrea/trade/">Exports, Imports and Trade Balance</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/eritrea/government-debt/">Government Debt</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/eritrea/fiscal-balance/">Fiscal Balance</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/eritrea/hdi/">HDI</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../countries/eritrea/co2-emissions/">CO2 Emissions</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../countries/eritrea/"><img class="flag-image flag-image-er country-flag" src="../../../public/flags/er.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">View Country Profile</span></a>
       </section>

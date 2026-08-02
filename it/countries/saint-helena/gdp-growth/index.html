@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Navigazione della pagina Economia"><a class="navigation-control is-current" href="../gdp-growth/" aria-current="page">Crescita del PIL</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="gdpGrowth-title">
+          <section class="indicator-block" aria-label="Grafico a linee: Crescita del PIL">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gdpGrowth-title"><span class="indicator-label-cell"><span class="indicator-label-text">Crescita del PIL</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="Informazioni su Crescita del PIL" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpGrowth">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gdpGrowth"><span class="indicator-label-cell"><span class="indicator-label-text">Crescita del PIL</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="Informazioni su Crescita del PIL" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpGrowth">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="gdpGrowth">
                 <div class="compare-input-wrap">
@@ -134,7 +134,9 @@
 
             <details class="data-table-toggle" id="gdpGrowthTableToggle">
               <summary data-ui-text-action>Tabella dei dati</summary>
-              <div class="data-table-wrap" id="gdpGrowthTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gdpGrowthTableWrap" role="region" aria-label="Tabella dei dati" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
@@ -150,7 +152,7 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../it/countries/saint-helena/population/">Popolazione</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../it/countries/saint-helena/population-growth/">Crescita della popolazione</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../it/countries/saint-helena/fertility-rate/">Tasso di fecondità</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../it/countries/saint-helena/trade/">Bilancia commerciale</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../it/countries/saint-helena/trade/">Esportazioni, importazioni e bilancia commerciale</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../it/countries/saint-helena/"><img class="flag-image flag-image-sh country-flag" src="../../../../public/flags/sh.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">Vedi il profilo del paese</span></a>
       </section>

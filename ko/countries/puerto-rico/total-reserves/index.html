@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="정부 재정 페이지 탐색"><a class="navigation-control" href="../government-debt/">정부 부채</a><a class="navigation-control" href="../fiscal-balance/">재정수지</a><a class="navigation-control" href="../government-revenue-spending/">정부 수입 및 지출</a><a class="navigation-control is-current" href="../total-reserves/" aria-current="page">총외환보유액</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="totalReservesIncludingGold-title">
+          <section class="indicator-block" aria-label="총외환보유액 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="totalReservesIncludingGold-title"><span class="indicator-label-cell"><span class="indicator-label-text">총외환보유액</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="총외환보유액 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="totalReservesIncludingGold">i</button></span></span></h2>
+                <h2 data-country-indicator-title="totalReservesIncludingGold"><span class="indicator-label-cell"><span class="indicator-label-text">총외환보유액</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="총외환보유액 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="totalReservesIncludingGold">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="totalReservesIncludingGold">
                 <div class="compare-input-wrap">
@@ -134,7 +134,9 @@
 
             <details class="data-table-toggle" id="totalReservesIncludingGoldTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="totalReservesIncludingGoldTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="totalReservesIncludingGoldTableWrap" role="region" aria-label="데이터 표" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
@@ -155,6 +157,7 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/puerto-rico/fertility-rate/">합계출산율</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/puerto-rico/government-debt/">정부 부채</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/puerto-rico/fiscal-balance/">재정수지</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/puerto-rico/co2-emissions/">온실가스 배출량</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../ko/countries/puerto-rico/"><img class="flag-image flag-image-pr country-flag" src="../../../../public/flags/pr.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">국가 프로필 보기</span></a>
       </section>

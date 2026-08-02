@@ -11,6 +11,7 @@ export const dataSources = {
   weoCurrentPrices: defineDataSource({
     dataSource: "IMF World Economic Outlook",
     dataset: "WEO",
+    citationLabel: "IMF World Economic Outlook",
     shortLabel: {
       en: "IMF WEO",
       ja: "IMF WEO",
@@ -34,6 +35,9 @@ export const dataSources = {
   unctadTrade: defineDataSource({
     dataSource: "UNCTADstat",
     dataset: "UNCTAD Trade",
+    citationLabel: "UNCTADstat",
+    aboutSourceId: "unctadstat",
+    aboutSourceUrl: "https://unctadstat.unctad.org/datacentre/",
     shortLabel: {
       en: "UNCTAD",
       ja: "UNCTAD",
@@ -57,6 +61,9 @@ export const dataSources = {
   unctadServicesTrade: defineDataSource({
     dataSource: "UNCTADstat",
     dataset: "UNCTAD Services Trade",
+    citationLabel: "UNCTADstat",
+    aboutSourceId: "unctadstat",
+    aboutSourceUrl: "https://unctadstat.unctad.org/datacentre/",
     shortLabel: {
       en: "UNCTAD",
       ja: "UNCTAD",
@@ -80,6 +87,7 @@ export const dataSources = {
   worldBankWdi: defineDataSource({
     dataSource: "World Bank",
     dataset: "World Development Indicators",
+    citationLabel: "World Bank World Development Indicators",
     shortLabel: {
       en: "WB",
       ja: "世銀",
@@ -105,6 +113,7 @@ export const dataSources = {
   unWppPopulation: defineDataSource({
     dataSource: "United Nations",
     dataset: "World Population Prospects",
+    citationLabel: "UN World Population Prospects",
     shortLabel: {
       en: "UNWPP",
       ja: "UNWPP",
@@ -129,6 +138,7 @@ export const dataSources = {
   unMigrantStock: defineDataSource({
     dataSource: "UN DESA Population Division",
     dataset: "International Migrant Stock",
+    citationLabel: "UN DESA International Migrant Stock",
     shortLabel: {
       en: "UN DESA",
       ja: "UN DESA",
@@ -152,6 +162,7 @@ export const dataSources = {
   worldBankEnvironment: defineDataSource({
     dataSource: "World Bank",
     dataset: "World Development Indicators",
+    citationLabel: "World Bank World Development Indicators",
     shortLabel: {
       en: "WB",
       ja: "世銀",
@@ -176,6 +187,7 @@ export const dataSources = {
   unNationalAccountsGni: defineDataSource({
     dataSource: "UNdata",
     dataset: "National Accounts Main Aggregates Database",
+    citationLabel: "UNdata National Accounts Main Aggregates Database",
     shortLabel: {
       en: "UNdata",
       ja: "UNdata",
@@ -196,31 +208,33 @@ export const dataSources = {
     endYear: 2024,
     subtitle: "UNdata National Accounts Main Aggregates Database, 1970-2024",
   }),
-  ciaWorldFactbook: defineDataSource({
-    dataSource: "CIA",
-    dataset: "The World Factbook",
+  unsdDemographicYearbookArea: defineDataSource({
+    dataSource: "United Nations Statistics Division",
+    dataset: "Demographic Yearbook, Table 3",
+    citationLabel: "UNSD Demographic Yearbook, Table 3",
     shortLabel: {
-      en: "CIA",
-      ja: "CIA",
-      es: "CIA",
-      fr: "CIA",
-      pt: "CIA",
-      de: "CIA",
-      it: "CIA",
-      ko: "CIA",
-      tr: "CIA",
-      id: "CIA",
+      en: "UNSD",
+      ja: "UNSD",
+      es: "UNSD",
+      fr: "UNSD",
+      pt: "UNSD",
+      de: "UNSD",
+      it: "UNSD",
+      ko: "UNSD",
+      tr: "UNSD",
+      id: "UNSD",
     },
-    staticDataPath: "./data/cia/area.json",
-    rankingStaticDataPath: "../data/cia/rankings/area/manifest.json",
-    sourceUrl: "https://www.cia.gov/the-world-factbook/",
-    startYear: 2025,
-    endYear: 2025,
-    subtitle: "CIA World Factbook, 2025",
+    staticDataPath: "./data/unsd/area.json",
+    rankingStaticDataPath: "../data/unsd/rankings/area/manifest.json",
+    sourceUrl: "https://unstats.un.org/unsd/demographic-social/products/dyb/dyb_2024/",
+    startYear: 2024,
+    endYear: 2024,
+    subtitle: "UNSD Demographic Yearbook, 2024",
   }),
   worldBankMilitarySpending: defineDataSource({
     dataSource: "World Bank",
     dataset: "World Development Indicators",
+    citationLabel: "World Bank World Development Indicators",
     shortLabel: {
       en: "WB",
       ja: "世銀",
@@ -246,6 +260,7 @@ export const dataSources = {
   undpHdi: defineDataSource({
     dataSource: "UNDP Human Development Reports",
     dataset: "Human Development Index",
+    citationLabel: "UNDP Human Development Reports",
     shortLabel: {
       en: "UNDP",
       ja: "UNDP",
@@ -269,6 +284,7 @@ export const dataSources = {
   unNationalAccountsEstimates: defineDataSource({
     dataSource: "UNdata",
     dataset: "National Accounts Estimates of Main Aggregates",
+    citationLabel: "UNdata National Accounts Estimates of Main Aggregates",
     shortLabel: {
       en: "UNdata",
       ja: "UNdata",
@@ -287,6 +303,7 @@ export const dataSources = {
   unComtrade: defineDataSource({
     dataSource: "UN Comtrade",
     dataset: "UN Comtrade Database",
+    citationLabel: "UN Comtrade",
     shortLabel: {
       en: "UN Comtrade",
       ja: "UN Comtrade",
@@ -305,6 +322,7 @@ export const dataSources = {
   oecdRevenueStatistics: defineDataSource({
     dataSource: "OECD",
     dataset: "Global Revenue Statistics Database",
+    citationLabel: "OECD Global Revenue Statistics Database",
     shortLabel: {
       en: "OECD",
       ja: "OECD",

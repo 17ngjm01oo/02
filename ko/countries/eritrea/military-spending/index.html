@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="사회 페이지 탐색"><a class="navigation-control" href="../hdi/">인간개발지수(HDI)</a><a class="navigation-control is-current" href="../military-spending/" aria-current="page">군사비</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="militarySpending-title">
+          <section class="indicator-block" aria-label="군사비 (USD) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="militarySpending-title"><span class="indicator-label-cell"><span class="indicator-label-text">군사비</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="군사비 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="militarySpending">i</button></span></span></h2>
+                <h2 data-country-indicator-title="militarySpending"><span class="indicator-label-cell"><span class="indicator-label-text">군사비</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="군사비 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="militarySpending">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="militarySpending">
                 <div class="compare-input-wrap">
@@ -134,14 +134,16 @@
 
             <details class="data-table-toggle" id="militarySpendingTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="militarySpendingTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1993</td><td>1.08억</td><td>1997</td><td>9,275.6만</td><td>2001</td><td>1.67억</td></tr><tr><td>1994</td><td>8,019.8만</td><td>1998</td><td>2.63억</td><td>2002</td><td>1.51억</td></tr><tr><td>1995</td><td>1.25억</td><td>1999</td><td>2.73억</td><td>2003</td><td>1.82억</td></tr><tr><td>1996</td><td>1.52억</td><td>2000</td><td>2.31억</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="militarySpendingTableWrap" role="region" aria-label="데이터 표" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1993</td><td>1.08억</td><td>1997</td><td>9,276만</td><td>2001</td><td>1.67억</td></tr><tr><td>1994</td><td>8,020만</td><td>1998</td><td>2.63억</td><td>2002</td><td>1.51억</td></tr><tr><td>1995</td><td>1.25억</td><td>1999</td><td>2.73억</td><td>2003</td><td>1.82억</td></tr><tr><td>1996</td><td>1.52억</td><td>2000</td><td>2.31억</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="militarySpendingPercentGdp-title">
+          <section class="indicator-block" aria-label="군사비 (GDP 대비 %) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="militarySpendingPercentGdp-title"><span class="indicator-label-cell"><span class="indicator-label-text">군사비</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GDP 대비 %)</span><button class="indicator-info-button" type="button" aria-label="군사비 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="militarySpendingPercentGdp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="militarySpendingPercentGdp"><span class="indicator-label-cell"><span class="indicator-label-text">군사비</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GDP 대비 %)</span><button class="indicator-info-button" type="button" aria-label="군사비 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="militarySpendingPercentGdp">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="militarySpendingPercentGdp">
                 <div class="compare-input-wrap">
@@ -169,7 +171,9 @@
 
             <details class="data-table-toggle" id="militarySpendingPercentGdpTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="militarySpendingPercentGdpTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1993</td><td>21.3%</td><td>1997</td><td>11.9%</td><td>2001</td><td>22.1%</td></tr><tr><td>1994</td><td>12.7%</td><td>1998</td><td>32.5%</td><td>2002</td><td>20.7%</td></tr><tr><td>1995</td><td>19.5%</td><td>1999</td><td>34.4%</td><td>2003</td><td>20.9%</td></tr><tr><td>1996</td><td>20.3%</td><td>2000</td><td>32.7%</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="militarySpendingPercentGdpTableWrap" role="region" aria-label="데이터 표" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1993</td><td>21.3%</td><td>1997</td><td>11.9%</td><td>2001</td><td>22.1%</td></tr><tr><td>1994</td><td>12.7%</td><td>1998</td><td>32.5%</td><td>2002</td><td>20.7%</td></tr><tr><td>1995</td><td>19.5%</td><td>1999</td><td>34.4%</td><td>2003</td><td>20.9%</td></tr><tr><td>1996</td><td>20.3%</td><td>2000</td><td>32.7%</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -187,10 +191,11 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/eritrea/population/">인구</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/eritrea/population-growth/">인구증가율</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/eritrea/fertility-rate/">합계출산율</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/eritrea/trade/">무역수지</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/eritrea/trade/">수출, 수입 및 무역수지</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/eritrea/government-debt/">정부 부채</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/eritrea/fiscal-balance/">재정수지</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/eritrea/hdi/">인간개발지수(HDI)</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/eritrea/co2-emissions/">온실가스 배출량</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../ko/countries/eritrea/"><img class="flag-image flag-image-er country-flag" src="../../../../public/flags/er.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">국가 프로필 보기</span></a>
       </section>

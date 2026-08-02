@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Navigation de la page Économie"><a class="navigation-control is-current" href="../gdp/" aria-current="page">PIB</a><a class="navigation-control" href="../gdp-per-capita/">PIB par habitant</a><a class="navigation-control" href="../ppp-gdp/">PIB en PPA</a><a class="navigation-control" href="../ppp-gdp-per-capita/">PIB par habitant en PPA</a><a class="navigation-control" href="../gni/">RNB</a><a class="navigation-control" href="../gni-per-capita/">RNB par habitant</a><a class="navigation-control" href="../gdp-growth/">Croissance du PIB</a><a class="navigation-control" href="../inflation-rate/">Taux d’inflation</a><a class="navigation-control" href="../unemployment-rate/">Taux de chômage</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="gdp-title">
+          <section class="indicator-block" aria-label="Graphique linéaire de PIB (USD)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gdp-title"><span class="indicator-label-cell"><span class="indicator-label-text">PIB</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Informations sur PIB" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gdp"><span class="indicator-label-cell"><span class="indicator-label-text">PIB</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Informations sur PIB" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdp">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="gdp">
                 <div class="compare-input-wrap">
@@ -134,14 +134,16 @@
 
             <details class="data-table-toggle" id="gdpTableToggle">
               <summary data-ui-text-action>Tableau de données</summary>
-              <div class="data-table-wrap" id="gdpTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1980</td><td>12,98 Md</td><td>1991</td><td>12,74 Md</td><td>2002</td><td>22,76 Md</td></tr><tr><td>1981</td><td>16,65 Md</td><td>1992</td><td>13,26 Md</td><td>2003</td><td>21,7 Md</td></tr><tr><td>1982</td><td>17,42 Md</td><td>1993</td><td>13,8 Md</td><td>2004</td><td>25,2 Md</td></tr><tr><td>1983</td><td>18,65 Md</td><td>1994</td><td>15,11 Md</td><td>2005</td><td>28,88 Md</td></tr><tr><td>1984</td><td>19,17 Md</td><td>1995</td><td>16,56 Md</td><td>2006</td><td>33,82 Md</td></tr><tr><td>1985</td><td>21,18 Md</td><td>1996</td><td>17,76 Md</td><td>2007</td><td>40,49 Md</td></tr><tr><td>1986</td><td>25,43 Md</td><td>1997</td><td>16,57 Md</td><td>2008</td><td>52,63 Md</td></tr><tr><td>1987</td><td>32,5 Md</td><td>1998</td><td>16,14 Md</td><td>2009</td><td>53,94 Md</td></tr><tr><td>1988</td><td>16,54 Md</td><td>1999</td><td>16,79 Md</td><td>2010</td><td>60,04 Md</td></tr><tr><td>1989</td><td>9,85 Md</td><td>2000</td><td>19,86 Md</td><td></td><td></td></tr><tr><td>1990</td><td>12,3 Md</td><td>2001</td><td>20,98 Md</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gdpTableWrap" role="region" aria-label="Tableau de données" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1980</td><td>12,98 Md</td><td>1991</td><td>12,74 Md</td><td>2002</td><td>22,76 Md</td></tr><tr><td>1981</td><td>16,65 Md</td><td>1992</td><td>13,26 Md</td><td>2003</td><td>21,7 Md</td></tr><tr><td>1982</td><td>17,42 Md</td><td>1993</td><td>13,8 Md</td><td>2004</td><td>25,2 Md</td></tr><tr><td>1983</td><td>18,65 Md</td><td>1994</td><td>15,11 Md</td><td>2005</td><td>28,88 Md</td></tr><tr><td>1984</td><td>19,17 Md</td><td>1995</td><td>16,56 Md</td><td>2006</td><td>33,82 Md</td></tr><tr><td>1985</td><td>21,18 Md</td><td>1996</td><td>17,76 Md</td><td>2007</td><td>40,49 Md</td></tr><tr><td>1986</td><td>25,43 Md</td><td>1997</td><td>16,57 Md</td><td>2008</td><td>52,63 Md</td></tr><tr><td>1987</td><td>32,5 Md</td><td>1998</td><td>16,14 Md</td><td>2009</td><td>53,94 Md</td></tr><tr><td>1988</td><td>16,54 Md</td><td>1999</td><td>16,79 Md</td><td>2010</td><td>60,04 Md</td></tr><tr><td>1989</td><td>9,85 Md</td><td>2000</td><td>19,86 Md</td><td></td><td></td></tr><tr><td>1990</td><td>12,3 Md</td><td>2001</td><td>20,98 Md</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="gdpNational-title">
+          <section class="indicator-block" aria-label="Graphique linéaire de PIB (Monnaie locale)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gdpNational-title"><span class="indicator-label-cell"><span class="indicator-label-text">PIB</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Monnaie locale)</span><button class="indicator-info-button" type="button" aria-label="Informations sur PIB" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpNational">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gdpNational"><span class="indicator-label-cell"><span class="indicator-label-text">PIB</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Monnaie locale)</span><button class="indicator-info-button" type="button" aria-label="Informations sur PIB" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpNational">i</button></span></span></h2>
               </div>
             </header>
 
@@ -152,14 +154,16 @@
 
             <details class="data-table-toggle" id="gdpNationalTableToggle">
               <summary data-ui-text-action>Tableau de données</summary>
-              <div class="data-table-wrap" id="gdpNationalTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1980</td><td>51,27 Md</td><td>1991</td><td>311,56 Md</td><td>2002</td><td>1,12 Bn</td></tr><tr><td>1981</td><td>65,78 Md</td><td>1992</td><td>371,63 Md</td><td>2003</td><td>1,07 Bn</td></tr><tr><td>1982</td><td>68,79 Md</td><td>1993</td><td>413,76 Md</td><td>2004</td><td>1,27 Bn</td></tr><tr><td>1983</td><td>73,29 Md</td><td>1994</td><td>506,1 Md</td><td>2005</td><td>1,51 Bn</td></tr><tr><td>1984</td><td>75,34 Md</td><td>1995</td><td>570,98 Md</td><td>2006</td><td>1,73 Bn</td></tr><tr><td>1985</td><td>83,23 Md</td><td>1996</td><td>690,86 Md</td><td>2007</td><td>2,02 Bn</td></tr><tr><td>1986</td><td>99,93 Md</td><td>1997</td><td>745,57 Md</td><td>2008</td><td>2,45 Bn</td></tr><tr><td>1987</td><td>127,71 Md</td><td>1998</td><td>790,44 Md</td><td>2009</td><td>2,52 Bn</td></tr><tr><td>1988</td><td>186,05 Md</td><td>1999</td><td>819,09 Md</td><td>2010</td><td>2,79 Bn</td></tr><tr><td>1989</td><td>208,89 Md</td><td>2000</td><td>947,13 Md</td><td></td><td></td></tr><tr><td>1990</td><td>268,33 Md</td><td>2001</td><td>1,01 Bn</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gdpNationalTableWrap" role="region" aria-label="Tableau de données" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1980</td><td>51,27 Md</td><td>1991</td><td>311,6 Md</td><td>2002</td><td>1,12 Bn</td></tr><tr><td>1981</td><td>65,78 Md</td><td>1992</td><td>371,6 Md</td><td>2003</td><td>1,07 Bn</td></tr><tr><td>1982</td><td>68,79 Md</td><td>1993</td><td>413,8 Md</td><td>2004</td><td>1,27 Bn</td></tr><tr><td>1983</td><td>73,29 Md</td><td>1994</td><td>506,1 Md</td><td>2005</td><td>1,51 Bn</td></tr><tr><td>1984</td><td>75,34 Md</td><td>1995</td><td>571 Md</td><td>2006</td><td>1,73 Bn</td></tr><tr><td>1985</td><td>83,23 Md</td><td>1996</td><td>690,9 Md</td><td>2007</td><td>2,02 Bn</td></tr><tr><td>1986</td><td>99,93 Md</td><td>1997</td><td>745,6 Md</td><td>2008</td><td>2,45 Bn</td></tr><tr><td>1987</td><td>127,7 Md</td><td>1998</td><td>790,4 Md</td><td>2009</td><td>2,52 Bn</td></tr><tr><td>1988</td><td>186 Md</td><td>1999</td><td>819,1 Md</td><td>2010</td><td>2,79 Bn</td></tr><tr><td>1989</td><td>208,9 Md</td><td>2000</td><td>947,1 Md</td><td></td><td></td></tr><tr><td>1990</td><td>268,3 Md</td><td>2001</td><td>1,01 Bn</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="realGdp-title">
+          <section class="indicator-block" aria-label="Graphique linéaire de PIB réel (Monnaie locale)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="realGdp-title"><span class="indicator-label-cell"><span class="indicator-label-text">PIB réel</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Monnaie locale)</span><button class="indicator-info-button" type="button" aria-label="Informations sur PIB réel" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="realGdp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="realGdp"><span class="indicator-label-cell"><span class="indicator-label-text">PIB réel</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Monnaie locale)</span><button class="indicator-info-button" type="button" aria-label="Informations sur PIB réel" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="realGdp">i</button></span></span></h2>
               </div>
             </header>
 
@@ -170,7 +174,9 @@
 
             <details class="data-table-toggle" id="realGdpTableToggle">
               <summary data-ui-text-action>Tableau de données</summary>
-              <div class="data-table-wrap" id="realGdpTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1980</td><td>464,24 Md</td><td>1991</td><td>656,95 Md</td><td>2002</td><td>1,04 Bn</td></tr><tr><td>1981</td><td>503,53 Md</td><td>1992</td><td>743,97 Md</td><td>2003</td><td>1,02 Bn</td></tr><tr><td>1982</td><td>516,53 Md</td><td>1993</td><td>799,09 Md</td><td>2004</td><td>1,09 Bn</td></tr><tr><td>1983</td><td>524,82 Md</td><td>1994</td><td>843,31 Md</td><td>2005</td><td>1,16 Bn</td></tr><tr><td>1984</td><td>490,72 Md</td><td>1995</td><td>889,04 Md</td><td>2006</td><td>1,22 Bn</td></tr><tr><td>1985</td><td>526,52 Md</td><td>1996</td><td>915,41 Md</td><td>2007</td><td>1,28 Bn</td></tr><tr><td>1986</td><td>501,48 Md</td><td>1997</td><td>905,43 Md</td><td>2008</td><td>1,34 Bn</td></tr><tr><td>1987</td><td>507,75 Md</td><td>1998</td><td>955,71 Md</td><td>2009</td><td>1,42 Bn</td></tr><tr><td>1988</td><td>572,34 Md</td><td>1999</td><td>925,88 Md</td><td>2010</td><td>1,47 Bn</td></tr><tr><td>1989</td><td>537,62 Md</td><td>2000</td><td>947,13 Md</td><td></td><td></td></tr><tr><td>1990</td><td>593,3 Md</td><td>2001</td><td>981,98 Md</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="realGdpTableWrap" role="region" aria-label="Tableau de données" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1980</td><td>464,2 Md</td><td>1991</td><td>656,9 Md</td><td>2002</td><td>1,04 Bn</td></tr><tr><td>1981</td><td>503,5 Md</td><td>1992</td><td>744 Md</td><td>2003</td><td>1,02 Bn</td></tr><tr><td>1982</td><td>516,5 Md</td><td>1993</td><td>799,1 Md</td><td>2004</td><td>1,09 Bn</td></tr><tr><td>1983</td><td>524,8 Md</td><td>1994</td><td>843,3 Md</td><td>2005</td><td>1,16 Bn</td></tr><tr><td>1984</td><td>490,7 Md</td><td>1995</td><td>889 Md</td><td>2006</td><td>1,22 Bn</td></tr><tr><td>1985</td><td>526,5 Md</td><td>1996</td><td>915,4 Md</td><td>2007</td><td>1,28 Bn</td></tr><tr><td>1986</td><td>501,5 Md</td><td>1997</td><td>905,4 Md</td><td>2008</td><td>1,34 Bn</td></tr><tr><td>1987</td><td>507,8 Md</td><td>1998</td><td>955,7 Md</td><td>2009</td><td>1,42 Bn</td></tr><tr><td>1988</td><td>572,3 Md</td><td>1999</td><td>925,9 Md</td><td>2010</td><td>1,47 Bn</td></tr><tr><td>1989</td><td>537,6 Md</td><td>2000</td><td>947,1 Md</td><td></td><td></td></tr><tr><td>1990</td><td>593,3 Md</td><td>2001</td><td>982 Md</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -189,10 +195,11 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/syria/population/">Population</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/syria/population-growth/">Croissance démographique</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/syria/fertility-rate/">Indice de fécondité</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/syria/trade/">Balance commerciale</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/syria/trade/">Exportations, importations et balance commerciale</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/syria/government-debt/">Dette publique</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/syria/fiscal-balance/">Solde budgétaire</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/syria/hdi/">IDH</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/syria/co2-emissions/">Émissions de CO₂</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../fr/countries/syria/"><img class="flag-image flag-image-sy country-flag" src="../../../../public/flags/sy.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">Voir le profil du pays</span></a>
       </section>

@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Economy page navigation"><a class="navigation-control" href="../gni/">GNI</a><a class="navigation-control" href="../gni-per-capita/">GNI per Capita</a><a class="navigation-control is-current" href="../unemployment-rate/" aria-current="page">Unemployment Rate</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="unemploymentRate-title">
+          <section class="indicator-block" aria-label="Unemployment Rate line chart">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="unemploymentRate-title"><span class="indicator-label-cell"><span class="indicator-label-text">Unemployment Rate</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="Unemployment Rate information" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="unemploymentRate">i</button></span></span></h2>
+                <h2 data-country-indicator-title="unemploymentRate"><span class="indicator-label-cell"><span class="indicator-label-text">Unemployment Rate</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="Unemployment Rate information" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="unemploymentRate">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="unemploymentRate">
                 <div class="compare-input-wrap">
@@ -134,7 +134,9 @@
 
             <details class="data-table-toggle" id="unemploymentRateTableToggle">
               <summary data-ui-text-action>Data table</summary>
-              <div class="data-table-wrap" id="unemploymentRateTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="unemploymentRateTableWrap" role="region" aria-label="Data table" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
@@ -150,7 +152,8 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/new-caledonia/population/">Population</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/new-caledonia/population-growth/">Population Growth</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/new-caledonia/fertility-rate/">Fertility Rate</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../countries/new-caledonia/trade/">Trade Balance</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../countries/new-caledonia/trade/">Exports, Imports and Trade Balance</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../countries/new-caledonia/co2-emissions/">CO2 Emissions</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../countries/new-caledonia/"><img class="flag-image flag-image-nc country-flag" src="../../../public/flags/nc.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">View Country Profile</span></a>
       </section>

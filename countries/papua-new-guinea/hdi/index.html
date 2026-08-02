@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Society page navigation"><a class="navigation-control is-current" href="../hdi/" aria-current="page">HDI</a><a class="navigation-control" href="../military-spending/">Military Spending</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="hdi-title">
+          <section class="indicator-block" aria-label="HDI line chart">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="hdi-title"><span class="indicator-label-cell"><span class="indicator-label-text">HDI</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="HDI information" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="hdi">i</button></span></span></h2>
+                <h2 data-country-indicator-title="hdi"><span class="indicator-label-cell"><span class="indicator-label-text">HDI</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="HDI information" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="hdi">i</button></span></span></h2>
                 <p class="indicator-rank"><a data-ui-text-action href="../../../rankings/countries/hdi/">Global rank: #160 / 193</a></p>
               </div>
               <div class="compare-control" data-series-id="hdi">
@@ -135,7 +135,9 @@
 
             <details class="data-table-toggle" id="hdiTableToggle">
               <summary data-ui-text-action>Data table</summary>
-              <div class="data-table-wrap" id="hdiTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1990</td><td>0.403</td><td>2002</td><td>0.461</td><td>2014</td><td>0.534</td></tr><tr><td>1991</td><td>0.411</td><td>2003</td><td>0.464</td><td>2015</td><td>0.543</td></tr><tr><td>1992</td><td>0.421</td><td>2004</td><td>0.468</td><td>2016</td><td>0.55</td></tr><tr><td>1993</td><td>0.432</td><td>2005</td><td>0.473</td><td>2017</td><td>0.555</td></tr><tr><td>1994</td><td>0.439</td><td>2006</td><td>0.479</td><td>2018</td><td>0.559</td></tr><tr><td>1995</td><td>0.442</td><td>2007</td><td>0.485</td><td>2019</td><td>0.566</td></tr><tr><td>1996</td><td>0.448</td><td>2008</td><td>0.489</td><td>2020</td><td>0.567</td></tr><tr><td>1997</td><td>0.449</td><td>2009</td><td>0.495</td><td>2021</td><td>0.567</td></tr><tr><td>1998</td><td>0.446</td><td>2010</td><td>0.503</td><td>2022</td><td>0.572</td></tr><tr><td>1999</td><td>0.454</td><td>2011</td><td>0.508</td><td>2023</td><td>0.576</td></tr><tr><td>2000</td><td>0.456</td><td>2012</td><td>0.514</td><td></td><td></td></tr><tr><td>2001</td><td>0.458</td><td>2013</td><td>0.522</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="hdiTableWrap" role="region" aria-label="Data table" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1990</td><td>0.403</td><td>2002</td><td>0.461</td><td>2014</td><td>0.534</td></tr><tr><td>1991</td><td>0.411</td><td>2003</td><td>0.464</td><td>2015</td><td>0.543</td></tr><tr><td>1992</td><td>0.421</td><td>2004</td><td>0.468</td><td>2016</td><td>0.55</td></tr><tr><td>1993</td><td>0.432</td><td>2005</td><td>0.473</td><td>2017</td><td>0.555</td></tr><tr><td>1994</td><td>0.439</td><td>2006</td><td>0.479</td><td>2018</td><td>0.559</td></tr><tr><td>1995</td><td>0.442</td><td>2007</td><td>0.485</td><td>2019</td><td>0.566</td></tr><tr><td>1996</td><td>0.448</td><td>2008</td><td>0.489</td><td>2020</td><td>0.567</td></tr><tr><td>1997</td><td>0.449</td><td>2009</td><td>0.495</td><td>2021</td><td>0.567</td></tr><tr><td>1998</td><td>0.446</td><td>2010</td><td>0.503</td><td>2022</td><td>0.572</td></tr><tr><td>1999</td><td>0.454</td><td>2011</td><td>0.508</td><td>2023</td><td>0.576</td></tr><tr><td>2000</td><td>0.456</td><td>2012</td><td>0.514</td><td></td><td></td></tr><tr><td>2001</td><td>0.458</td><td>2013</td><td>0.522</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -153,9 +155,10 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/papua-new-guinea/population/">Population</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/papua-new-guinea/population-growth/">Population Growth</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/papua-new-guinea/fertility-rate/">Fertility Rate</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../countries/papua-new-guinea/trade/">Trade Balance</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../countries/papua-new-guinea/trade/">Exports, Imports and Trade Balance</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/papua-new-guinea/government-debt/">Government Debt</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/papua-new-guinea/fiscal-balance/">Fiscal Balance</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../countries/papua-new-guinea/co2-emissions/">CO2 Emissions</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../countries/papua-new-guinea/"><img class="flag-image flag-image-pg country-flag" src="../../../public/flags/pg.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">View Country Profile</span></a>
       </section>

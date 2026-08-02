@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Navigazione della pagina Economia"><a class="navigation-control" href="../gdp/">PIL</a><a class="navigation-control" href="../gdp-per-capita/">PIL pro capite</a><a class="navigation-control is-current" href="../ppp-gdp/" aria-current="page">PIL a parità di potere d’acquisto</a><a class="navigation-control" href="../ppp-gdp-per-capita/">PIL pro capite a parità di potere d’acquisto</a><a class="navigation-control" href="../gni/">RNL</a><a class="navigation-control" href="../gni-per-capita/">RNL pro capite</a><a class="navigation-control" href="../gdp-growth/">Crescita del PIL</a><a class="navigation-control" href="../inflation-rate/">Tasso di inflazione</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="ppp-title">
+          <section class="indicator-block" aria-label="Grafico a linee: PIL a parità di potere d’acquisto (Int$)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="ppp-title"><span class="indicator-label-cell"><span class="indicator-label-text">PIL a parità di potere d’acquisto</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Int$)</span><button class="indicator-info-button" type="button" aria-label="Informazioni su PIL a parità di potere d’acquisto" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="ppp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="ppp"><span class="indicator-label-cell"><span class="indicator-label-text">PIL a parità di potere d’acquisto</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Int$)</span><button class="indicator-info-button" type="button" aria-label="Informazioni su PIL a parità di potere d’acquisto" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="ppp">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="ppp">
                 <div class="compare-input-wrap">
@@ -134,7 +134,9 @@
 
             <details class="data-table-toggle" id="pppTableToggle">
               <summary data-ui-text-action>Tabella dei dati</summary>
-              <div class="data-table-wrap" id="pppTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>1,72 mld</td><td>2002</td><td>3,42 mld</td><td>2012</td><td>5,52 mld</td></tr><tr><td>1993</td><td>1,99 mld</td><td>2003</td><td>3,4 mld</td><td>2013</td><td>5,02 mld</td></tr><tr><td>1994</td><td>2,46 mld</td><td>2004</td><td>3,54 mld</td><td>2014</td><td>6,69 mld</td></tr><tr><td>1995</td><td>2,57 mld</td><td>2005</td><td>3,75 mld</td><td>2015</td><td>5,36 mld</td></tr><tr><td>1996</td><td>2,86 mld</td><td>2006</td><td>3,82 mld</td><td>2016</td><td>5,81 mld</td></tr><tr><td>1997</td><td>3,13 mld</td><td>2007</td><td>3,98 mld</td><td>2017</td><td>5,32 mld</td></tr><tr><td>1998</td><td>3,23 mld</td><td>2008</td><td>3,27 mld</td><td>2018</td><td>6,1 mld</td></tr><tr><td>1999</td><td>3,28 mld</td><td>2009</td><td>3,69 mld</td><td>2019</td><td>6,37 mld</td></tr><tr><td>2000</td><td>2,94 mld</td><td>2010</td><td>4,14 mld</td><td></td><td></td></tr><tr><td>2001</td><td>3,27 mld</td><td>2011</td><td>5,31 mld</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="pppTableWrap" role="region" aria-label="Tabella dei dati" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>1,72 Mld</td><td>2002</td><td>3,42 Mld</td><td>2012</td><td>5,52 Mld</td></tr><tr><td>1993</td><td>1,99 Mld</td><td>2003</td><td>3,4 Mld</td><td>2013</td><td>5,02 Mld</td></tr><tr><td>1994</td><td>2,46 Mld</td><td>2004</td><td>3,54 Mld</td><td>2014</td><td>6,69 Mld</td></tr><tr><td>1995</td><td>2,57 Mld</td><td>2005</td><td>3,75 Mld</td><td>2015</td><td>5,36 Mld</td></tr><tr><td>1996</td><td>2,86 Mld</td><td>2006</td><td>3,82 Mld</td><td>2016</td><td>5,81 Mld</td></tr><tr><td>1997</td><td>3,13 Mld</td><td>2007</td><td>3,98 Mld</td><td>2017</td><td>5,32 Mld</td></tr><tr><td>1998</td><td>3,23 Mld</td><td>2008</td><td>3,27 Mld</td><td>2018</td><td>6,1 Mld</td></tr><tr><td>1999</td><td>3,28 Mld</td><td>2009</td><td>3,69 Mld</td><td>2019</td><td>6,37 Mld</td></tr><tr><td>2000</td><td>2,94 Mld</td><td>2010</td><td>4,14 Mld</td><td></td><td></td></tr><tr><td>2001</td><td>3,27 Mld</td><td>2011</td><td>5,31 Mld</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -152,10 +154,11 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../it/countries/eritrea/population/">Popolazione</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../it/countries/eritrea/population-growth/">Crescita della popolazione</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../it/countries/eritrea/fertility-rate/">Tasso di fecondità</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../it/countries/eritrea/trade/">Bilancia commerciale</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../it/countries/eritrea/trade/">Esportazioni, importazioni e bilancia commerciale</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../it/countries/eritrea/government-debt/">Debito pubblico</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../it/countries/eritrea/fiscal-balance/">Saldo di bilancio</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../it/countries/eritrea/hdi/">Indice di sviluppo umano (HDI)</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../it/countries/eritrea/co2-emissions/">Emissioni di gas serra</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../it/countries/eritrea/"><img class="flag-image flag-image-er country-flag" src="../../../../public/flags/er.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">Vedi il profilo del paese</span></a>
       </section>

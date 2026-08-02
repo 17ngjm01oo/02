@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="서비스 무역 페이지 탐색"><a class="navigation-control" href="../trade/">무역수지</a><a class="navigation-control is-current" href="../services-trade/" aria-current="page">서비스수지</a><a class="navigation-control" href="../current-account-balance/">경상수지</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="servicesTradeBalance-title">
+          <section class="indicator-block" aria-label="서비스수지 (USD) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="servicesTradeBalance-title"><span class="indicator-label-cell"><span class="indicator-label-text">서비스수지</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="서비스수지 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="servicesTradeBalance">i</button></span></span></h2>
+                <h2 data-country-indicator-title="servicesTradeBalance"><span class="indicator-label-cell"><span class="indicator-label-text">서비스수지</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="서비스수지 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="servicesTradeBalance">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="servicesTradeBalance">
                 <div class="compare-input-wrap">
@@ -134,14 +134,16 @@
 
             <details class="data-table-toggle" id="servicesTradeBalanceTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="servicesTradeBalanceTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>2005</td><td>-5,302.5만</td><td>2012</td><td>-2.29억</td><td>2019</td><td>-14.26억</td></tr><tr><td>2006</td><td>-9,777.3만</td><td>2013</td><td>-3.38억</td><td>2020</td><td>-18.09억</td></tr><tr><td>2007</td><td>-9,964.2만</td><td>2014</td><td>-2.45억</td><td>2021</td><td>-26.49억</td></tr><tr><td>2008</td><td>-1.13억</td><td>2015</td><td>-2.78억</td><td>2022</td><td>-35.91억</td></tr><tr><td>2009</td><td>-1.02억</td><td>2016</td><td>-2.68억</td><td>2023</td><td>-44.25억</td></tr><tr><td>2010</td><td>-9,578.9만</td><td>2017</td><td>-3.68억</td><td></td><td></td></tr><tr><td>2011</td><td>-1.36억</td><td>2018</td><td>-9.99억</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="servicesTradeBalanceTableWrap" role="region" aria-label="데이터 표" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>2005</td><td>-5,303만</td><td>2012</td><td>-2.29억</td><td>2019</td><td>-14.26억</td></tr><tr><td>2006</td><td>-9,777만</td><td>2013</td><td>-3.38억</td><td>2020</td><td>-18.09억</td></tr><tr><td>2007</td><td>-9,964만</td><td>2014</td><td>-2.45억</td><td>2021</td><td>-26.49억</td></tr><tr><td>2008</td><td>-1.13억</td><td>2015</td><td>-2.78억</td><td>2022</td><td>-35.91억</td></tr><tr><td>2009</td><td>-1.02억</td><td>2016</td><td>-2.68억</td><td>2023</td><td>-44.25억</td></tr><tr><td>2010</td><td>-9,579만</td><td>2017</td><td>-3.68억</td><td></td><td></td></tr><tr><td>2011</td><td>-1.36억</td><td>2018</td><td>-9.99억</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="servicesExports-title">
+          <section class="indicator-block" aria-label="서비스 수출액 (USD) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="servicesExports-title"><span class="indicator-label-cell"><span class="indicator-label-text">서비스 수출액</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="서비스 수출액 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="servicesExports">i</button></span></span></h2>
+                <h2 data-country-indicator-title="servicesExports"><span class="indicator-label-cell"><span class="indicator-label-text">서비스 수출액</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="서비스 수출액 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="servicesExports">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="servicesExports">
                 <div class="compare-input-wrap">
@@ -169,14 +171,16 @@
 
             <details class="data-table-toggle" id="servicesExportsTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="servicesExportsTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>2005</td><td>1.48억</td><td>2012</td><td>2.98억</td><td>2019</td><td>2.31억</td></tr><tr><td>2006</td><td>1.48억</td><td>2013</td><td>1.65억</td><td>2020</td><td>1.83억</td></tr><tr><td>2007</td><td>1.73억</td><td>2014</td><td>1.81억</td><td>2021</td><td>2.38억</td></tr><tr><td>2008</td><td>2.12억</td><td>2015</td><td>1.45억</td><td>2022</td><td>2.37억</td></tr><tr><td>2009</td><td>1.7억</td><td>2016</td><td>2.46억</td><td>2023</td><td>5.29억</td></tr><tr><td>2010</td><td>2.48억</td><td>2017</td><td>2.06억</td><td></td><td></td></tr><tr><td>2011</td><td>2.98억</td><td>2018</td><td>1.92억</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="servicesExportsTableWrap" role="region" aria-label="데이터 표" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>2005</td><td>1.48억</td><td>2012</td><td>2.98억</td><td>2019</td><td>2.31억</td></tr><tr><td>2006</td><td>1.48억</td><td>2013</td><td>1.65억</td><td>2020</td><td>1.83억</td></tr><tr><td>2007</td><td>1.73억</td><td>2014</td><td>1.81억</td><td>2021</td><td>2.38억</td></tr><tr><td>2008</td><td>2.12억</td><td>2015</td><td>1.45억</td><td>2022</td><td>2.37억</td></tr><tr><td>2009</td><td>1.7억</td><td>2016</td><td>2.46억</td><td>2023</td><td>5.29억</td></tr><tr><td>2010</td><td>2.48억</td><td>2017</td><td>2.06억</td><td></td><td></td></tr><tr><td>2011</td><td>2.98억</td><td>2018</td><td>1.92억</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="servicesImports-title">
+          <section class="indicator-block" aria-label="서비스 수입액 (USD) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="servicesImports-title"><span class="indicator-label-cell"><span class="indicator-label-text">서비스 수입액</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="서비스 수입액 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="servicesImports">i</button></span></span></h2>
+                <h2 data-country-indicator-title="servicesImports"><span class="indicator-label-cell"><span class="indicator-label-text">서비스 수입액</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="서비스 수입액 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="servicesImports">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="servicesImports">
                 <div class="compare-input-wrap">
@@ -204,7 +208,9 @@
 
             <details class="data-table-toggle" id="servicesImportsTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="servicesImportsTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>2005</td><td>2.01억</td><td>2012</td><td>5.26억</td><td>2019</td><td>16.57억</td></tr><tr><td>2006</td><td>2.45억</td><td>2013</td><td>5.03억</td><td>2020</td><td>19.92억</td></tr><tr><td>2007</td><td>2.73억</td><td>2014</td><td>4.26억</td><td>2021</td><td>28.87억</td></tr><tr><td>2008</td><td>3.25억</td><td>2015</td><td>4.23억</td><td>2022</td><td>38.28억</td></tr><tr><td>2009</td><td>2.72억</td><td>2016</td><td>5.14억</td><td>2023</td><td>49.54억</td></tr><tr><td>2010</td><td>3.44억</td><td>2017</td><td>5.75억</td><td></td><td></td></tr><tr><td>2011</td><td>4.34억</td><td>2018</td><td>11.9억</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="servicesImportsTableWrap" role="region" aria-label="데이터 표" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>2005</td><td>2.01억</td><td>2012</td><td>5.26억</td><td>2019</td><td>16.57억</td></tr><tr><td>2006</td><td>2.45억</td><td>2013</td><td>5.03억</td><td>2020</td><td>19.92억</td></tr><tr><td>2007</td><td>2.73억</td><td>2014</td><td>4.26억</td><td>2021</td><td>28.87억</td></tr><tr><td>2008</td><td>3.25억</td><td>2015</td><td>4.23억</td><td>2022</td><td>38.28억</td></tr><tr><td>2009</td><td>2.72억</td><td>2016</td><td>5.14억</td><td>2023</td><td>49.54억</td></tr><tr><td>2010</td><td>3.44억</td><td>2017</td><td>5.75억</td><td></td><td></td></tr><tr><td>2011</td><td>4.34억</td><td>2018</td><td>11.9억</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -222,10 +228,11 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/guyana/population/">인구</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/guyana/population-growth/">인구증가율</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/guyana/fertility-rate/">합계출산율</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/guyana/trade/">무역수지</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/guyana/trade/">수출, 수입 및 무역수지</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/guyana/government-debt/">정부 부채</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/guyana/fiscal-balance/">재정수지</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/guyana/hdi/">인간개발지수(HDI)</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/guyana/co2-emissions/">온실가스 배출량</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../ko/countries/guyana/"><img class="flag-image flag-image-gy country-flag" src="../../../../public/flags/gy.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">국가 프로필 보기</span></a>
       </section>

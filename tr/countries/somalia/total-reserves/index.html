@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Kamu maliyesi sayfası navigasyonu"><a class="navigation-control" href="../fiscal-balance/">Mali Denge</a><a class="navigation-control" href="../government-revenue-spending/">Kamu Gelirleri ve Harcamaları</a><a class="navigation-control is-current" href="../total-reserves/" aria-current="page">Toplam Rezervler</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="totalReservesIncludingGold-title">
+          <section class="indicator-block" aria-label="Toplam Rezervler çizgi grafiği">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="totalReservesIncludingGold-title"><span class="indicator-label-cell"><span class="indicator-label-text">Toplam Rezervler</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="Toplam Rezervler hakkında bilgi" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="totalReservesIncludingGold">i</button></span></span></h2>
+                <h2 data-country-indicator-title="totalReservesIncludingGold"><span class="indicator-label-cell"><span class="indicator-label-text">Toplam Rezervler</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="Toplam Rezervler hakkında bilgi" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="totalReservesIncludingGold">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="totalReservesIncludingGold">
                 <div class="compare-input-wrap">
@@ -134,7 +134,9 @@
 
             <details class="data-table-toggle" id="totalReservesIncludingGoldTableToggle">
               <summary data-ui-text-action>Veri tablosu</summary>
-              <div class="data-table-wrap" id="totalReservesIncludingGoldTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1960</td><td>9,3 milyon</td><td>1970</td><td>21,25 milyon</td><td>1980</td><td>25,75 milyon</td></tr><tr><td>1961</td><td>16,5 milyon</td><td>1971</td><td>26,19 milyon</td><td>1981</td><td>38,25 milyon</td></tr><tr><td>1962</td><td>17,9 milyon</td><td>1972</td><td>31,53 milyon</td><td>1982</td><td>15,26 milyon</td></tr><tr><td>1963</td><td>18,77 milyon</td><td>1973</td><td>35,33 milyon</td><td>1983</td><td>16,48 milyon</td></tr><tr><td>1964</td><td>10,2 milyon</td><td>1974</td><td>42,82 milyon</td><td>1984</td><td>6,96 milyon</td></tr><tr><td>1965</td><td>8,6 milyon</td><td>1975</td><td>68,74 milyon</td><td>1985</td><td>8,79 milyon</td></tr><tr><td>1966</td><td>12,3 milyon</td><td>1976</td><td>85,23 milyon</td><td>1986</td><td>20,32 milyon</td></tr><tr><td>1967</td><td>10 milyon</td><td>1977</td><td>121,75 milyon</td><td>1987</td><td>16,61 milyon</td></tr><tr><td>1968</td><td>6,75 milyon</td><td>1978</td><td>129,69 milyon</td><td>1988</td><td>23,19 milyon</td></tr><tr><td>1969</td><td>14,23 milyon</td><td>1979</td><td>51,38 milyon</td><td>1989</td><td>23,11 milyon</td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="totalReservesIncludingGoldTableWrap" role="region" aria-label="Veri tablosu" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1960</td><td>9,3 Mn</td><td>1970</td><td>21,25 Mn</td><td>1980</td><td>25,75 Mn</td></tr><tr><td>1961</td><td>16,5 Mn</td><td>1971</td><td>26,19 Mn</td><td>1981</td><td>38,25 Mn</td></tr><tr><td>1962</td><td>17,9 Mn</td><td>1972</td><td>31,53 Mn</td><td>1982</td><td>15,26 Mn</td></tr><tr><td>1963</td><td>18,77 Mn</td><td>1973</td><td>35,33 Mn</td><td>1983</td><td>16,48 Mn</td></tr><tr><td>1964</td><td>10,2 Mn</td><td>1974</td><td>42,82 Mn</td><td>1984</td><td>6,96 Mn</td></tr><tr><td>1965</td><td>8,6 Mn</td><td>1975</td><td>68,74 Mn</td><td>1985</td><td>8,79 Mn</td></tr><tr><td>1966</td><td>12,3 Mn</td><td>1976</td><td>85,23 Mn</td><td>1986</td><td>20,32 Mn</td></tr><tr><td>1967</td><td>10 Mn</td><td>1977</td><td>121,8 Mn</td><td>1987</td><td>16,61 Mn</td></tr><tr><td>1968</td><td>6,75 Mn</td><td>1978</td><td>129,7 Mn</td><td>1988</td><td>23,19 Mn</td></tr><tr><td>1969</td><td>14,23 Mn</td><td>1979</td><td>51,38 Mn</td><td>1989</td><td>23,11 Mn</td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -152,9 +154,10 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/somalia/population/">Nüfus</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/somalia/population-growth/">Nüfus Artışı</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/somalia/fertility-rate/">Toplam Doğurganlık Hızı</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/somalia/trade/">Dış Ticaret Dengesi</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/somalia/trade/">İhracat, İthalat ve Dış Ticaret Dengesi</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/somalia/fiscal-balance/">Mali Denge</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/somalia/hdi/">İnsani Gelişme Endeksi</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/somalia/co2-emissions/">Sera Gazı Emisyonları</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../tr/countries/somalia/"><img class="flag-image flag-image-so country-flag" src="../../../../public/flags/so.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">Ülke profilini görüntüle</span></a>
       </section>

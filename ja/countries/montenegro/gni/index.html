@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="経済ページナビゲーション"><a class="navigation-control" href="../gdp/">GDP</a><a class="navigation-control" href="../gdp-per-capita/">1人あたりGDP</a><a class="navigation-control" href="../ppp-gdp/">購買力平価GDP</a><a class="navigation-control" href="../ppp-gdp-per-capita/">1人あたり購買力平価GDP</a><a class="navigation-control is-current" href="../gni/" aria-current="page">GNI</a><a class="navigation-control" href="../gni-per-capita/">1人あたりGNI</a><a class="navigation-control" href="../gdp-growth/">経済成長率</a><a class="navigation-control" href="../inflation-rate/">インフレ率</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="gni-title">
+          <section class="indicator-block" aria-label="GNI (米ドル)折れ線グラフ">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gni-title"><span class="indicator-label-cell"><span class="indicator-label-text">GNI</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(米ドル)</span><button class="indicator-info-button" type="button" aria-label="GNIの情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gni">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gni"><span class="indicator-label-cell"><span class="indicator-label-text">GNI</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(米ドル)</span><button class="indicator-info-button" type="button" aria-label="GNIの情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gni">i</button></span></span></h2>
                 <p class="indicator-rank"><a data-ui-text-action href="../../../../ja/rankings/countries/gni/">世界ランク: #158 / 210</a></p>
               </div>
               <div class="compare-control" data-series-id="gni">
@@ -135,7 +135,9 @@
 
             <details class="data-table-toggle" id="gniTableToggle">
               <summary data-ui-text-action>データ表</summary>
-              <div class="data-table-wrap" id="gniTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1990</td><td>22.56億</td><td>2002</td><td>13.71億</td><td>2014</td><td>46.41億</td></tr><tr><td>1991</td><td>18.43億</td><td>2003</td><td>18.24億</td><td>2015</td><td>41億</td></tr><tr><td>1992</td><td>15.56億</td><td>2004</td><td>22.03億</td><td>2016</td><td>43.96億</td></tr><tr><td>1993</td><td>8.61億</td><td>2005</td><td>23.02億</td><td>2017</td><td>49.04億</td></tr><tr><td>1994</td><td>8.89億</td><td>2006</td><td>27.65億</td><td>2018</td><td>54.98億</td></tr><tr><td>1995</td><td>12.76億</td><td>2007</td><td>37.25億</td><td>2019</td><td>55.46億</td></tr><tr><td>1996</td><td>9.18億</td><td>2008</td><td>46.27億</td><td>2020</td><td>48.1億</td></tr><tr><td>1997</td><td>8.89億</td><td>2009</td><td>41.67億</td><td>2021</td><td>59.44億</td></tr><tr><td>1998</td><td>9.02億</td><td>2010</td><td>41.08億</td><td>2022</td><td>63.85億</td></tr><tr><td>1999</td><td>8.79億</td><td>2011</td><td>45.44億</td><td>2023</td><td>77.16億</td></tr><tr><td>2000</td><td>10.44億</td><td>2012</td><td>41.41億</td><td>2024</td><td>82.51億</td></tr><tr><td>2001</td><td>12.29億</td><td>2013</td><td>45.09億</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gniTableWrap" role="region" aria-label="データ表" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1990</td><td>22.56億</td><td>2002</td><td>13.71億</td><td>2014</td><td>46.41億</td></tr><tr><td>1991</td><td>18.43億</td><td>2003</td><td>18.24億</td><td>2015</td><td>41億</td></tr><tr><td>1992</td><td>15.56億</td><td>2004</td><td>22.03億</td><td>2016</td><td>43.96億</td></tr><tr><td>1993</td><td>8.61億</td><td>2005</td><td>23.02億</td><td>2017</td><td>49.04億</td></tr><tr><td>1994</td><td>8.89億</td><td>2006</td><td>27.65億</td><td>2018</td><td>54.98億</td></tr><tr><td>1995</td><td>12.76億</td><td>2007</td><td>37.25億</td><td>2019</td><td>55.46億</td></tr><tr><td>1996</td><td>9.18億</td><td>2008</td><td>46.27億</td><td>2020</td><td>48.1億</td></tr><tr><td>1997</td><td>8.89億</td><td>2009</td><td>41.67億</td><td>2021</td><td>59.44億</td></tr><tr><td>1998</td><td>9.02億</td><td>2010</td><td>41.08億</td><td>2022</td><td>63.85億</td></tr><tr><td>1999</td><td>8.79億</td><td>2011</td><td>45.44億</td><td>2023</td><td>77.16億</td></tr><tr><td>2000</td><td>10.44億</td><td>2012</td><td>41.41億</td><td>2024</td><td>82.51億</td></tr><tr><td>2001</td><td>12.29億</td><td>2013</td><td>45.09億</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -153,7 +155,7 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/montenegro/population/">人口</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/montenegro/population-growth/">人口増加率</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/montenegro/fertility-rate/">合計特殊出生率</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/montenegro/trade/">貿易収支</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/montenegro/trade/">貿易収支・輸出額・輸入額</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/montenegro/government-debt/">政府債務残高</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/montenegro/fiscal-balance/">財政収支</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/montenegro/hdi/">HDI</a>

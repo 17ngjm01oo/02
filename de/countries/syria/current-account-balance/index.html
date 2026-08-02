@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Seitennavigation Handel"><a class="navigation-control" href="../trade/">Handelsbilanz</a><a class="navigation-control" href="../services-trade/">Dienstleistungsbilanz</a><a class="navigation-control is-current" href="../current-account-balance/" aria-current="page">Leistungsbilanzsaldo</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="currentAccountBalance-title">
+          <section class="indicator-block" aria-label="Liniendiagramm: Leistungsbilanzsaldo (USD)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="currentAccountBalance-title"><span class="indicator-label-cell"><span class="indicator-label-text">Leistungsbilanzsaldo</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Informationen zu Leistungsbilanzsaldo" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="currentAccountBalance">i</button></span></span></h2>
+                <h2 data-country-indicator-title="currentAccountBalance"><span class="indicator-label-cell"><span class="indicator-label-text">Leistungsbilanzsaldo</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Informationen zu Leistungsbilanzsaldo" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="currentAccountBalance">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="currentAccountBalance">
                 <div class="compare-input-wrap">
@@ -134,14 +134,16 @@
 
             <details class="data-table-toggle" id="currentAccountBalanceTableToggle">
               <summary data-ui-text-action>Datentabelle</summary>
-              <div class="data-table-wrap" id="currentAccountBalanceTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1980</td><td>-635 Mio.</td><td>1991</td><td>1,69 Mrd.</td><td>2002</td><td>1,12 Mrd.</td></tr><tr><td>1981</td><td>-466 Mio.</td><td>1992</td><td>542 Mio.</td><td>2003</td><td>-1,66 Mrd.</td></tr><tr><td>1982</td><td>-252 Mio.</td><td>1993</td><td>-242 Mio.</td><td>2004</td><td>-781 Mio.</td></tr><tr><td>1983</td><td>-807 Mio.</td><td>1994</td><td>-852 Mio.</td><td>2005</td><td>-648 Mio.</td></tr><tr><td>1984</td><td>-797 Mio.</td><td>1995</td><td>207 Mio.</td><td>2006</td><td>480 Mio.</td></tr><tr><td>1985</td><td>-859 Mio.</td><td>1996</td><td>-41 Mio.</td><td>2007</td><td>-95 Mio.</td></tr><tr><td>1986</td><td>-504 Mio.</td><td>1997</td><td>412 Mio.</td><td>2008</td><td>-673 Mio.</td></tr><tr><td>1987</td><td>-298 Mio.</td><td>1998</td><td>130 Mio.</td><td>2009</td><td>-1,58 Mrd.</td></tr><tr><td>1988</td><td>-131 Mio.</td><td>1999</td><td>303 Mio.</td><td>2010</td><td class="data-table-observation-estimated">-1,71 Mrd.</td></tr><tr><td>1989</td><td>1,22 Mrd.</td><td>2000</td><td>1,04 Mrd.</td><td></td><td></td></tr><tr><td>1990</td><td>1,75 Mrd.</td><td>2001</td><td>830 Mio.</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="currentAccountBalanceTableWrap" role="region" aria-label="Datentabelle" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1980</td><td>-635 Mio.</td><td>1991</td><td>1,69 Mrd.</td><td>2002</td><td>1,12 Mrd.</td></tr><tr><td>1981</td><td>-466 Mio.</td><td>1992</td><td>542 Mio.</td><td>2003</td><td>-1,66 Mrd.</td></tr><tr><td>1982</td><td>-252 Mio.</td><td>1993</td><td>-242 Mio.</td><td>2004</td><td>-781 Mio.</td></tr><tr><td>1983</td><td>-807 Mio.</td><td>1994</td><td>-852 Mio.</td><td>2005</td><td>-648 Mio.</td></tr><tr><td>1984</td><td>-797 Mio.</td><td>1995</td><td>207 Mio.</td><td>2006</td><td>480 Mio.</td></tr><tr><td>1985</td><td>-859 Mio.</td><td>1996</td><td>-41 Mio.</td><td>2007</td><td>-95 Mio.</td></tr><tr><td>1986</td><td>-504 Mio.</td><td>1997</td><td>412 Mio.</td><td>2008</td><td>-673 Mio.</td></tr><tr><td>1987</td><td>-298 Mio.</td><td>1998</td><td>130 Mio.</td><td>2009</td><td>-1,58 Mrd.</td></tr><tr><td>1988</td><td>-131 Mio.</td><td>1999</td><td>303 Mio.</td><td>2010</td><td class="data-table-observation-estimated">-1,71 Mrd.</td></tr><tr><td>1989</td><td>1,22 Mrd.</td><td>2000</td><td>1,04 Mrd.</td><td></td><td></td></tr><tr><td>1990</td><td>1,75 Mrd.</td><td>2001</td><td>830 Mio.</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="currentAccountBalancePercentGdp-title">
+          <section class="indicator-block" aria-label="Liniendiagramm: Leistungsbilanzsaldo (% des BIP)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="currentAccountBalancePercentGdp-title"><span class="indicator-label-cell"><span class="indicator-label-text">Leistungsbilanzsaldo</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(% des BIP)</span><button class="indicator-info-button" type="button" aria-label="Informationen zu Leistungsbilanzsaldo" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="currentAccountBalancePercentGdp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="currentAccountBalancePercentGdp"><span class="indicator-label-cell"><span class="indicator-label-text">Leistungsbilanzsaldo</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(% des BIP)</span><button class="indicator-info-button" type="button" aria-label="Informationen zu Leistungsbilanzsaldo" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="currentAccountBalancePercentGdp">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="currentAccountBalancePercentGdp">
                 <div class="compare-input-wrap">
@@ -169,7 +171,9 @@
 
             <details class="data-table-toggle" id="currentAccountBalancePercentGdpTableToggle">
               <summary data-ui-text-action>Datentabelle</summary>
-              <div class="data-table-wrap" id="currentAccountBalancePercentGdpTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1980</td><td>-4,9%</td><td>1991</td><td>13,2%</td><td>2002</td><td>4,9%</td></tr><tr><td>1981</td><td>-2,8%</td><td>1992</td><td>4,1%</td><td>2003</td><td>-7,7%</td></tr><tr><td>1982</td><td>-1,4%</td><td>1993</td><td>-1,8%</td><td>2004</td><td>-3,1%</td></tr><tr><td>1983</td><td>-4,3%</td><td>1994</td><td>-5,6%</td><td>2005</td><td>-2,2%</td></tr><tr><td>1984</td><td>-4,2%</td><td>1995</td><td>1,3%</td><td>2006</td><td>1,4%</td></tr><tr><td>1985</td><td>-4,1%</td><td>1996</td><td>-0,2%</td><td>2007</td><td>-0,2%</td></tr><tr><td>1986</td><td>-2%</td><td>1997</td><td>2,5%</td><td>2008</td><td>-1,3%</td></tr><tr><td>1987</td><td>-0,9%</td><td>1998</td><td>0,8%</td><td>2009</td><td>-2,9%</td></tr><tr><td>1988</td><td>-0,8%</td><td>1999</td><td>1,8%</td><td>2010</td><td class="data-table-observation-estimated">-2,8%</td></tr><tr><td>1989</td><td>12,4%</td><td>2000</td><td>5,2%</td><td></td><td></td></tr><tr><td>1990</td><td>14,2%</td><td>2001</td><td>4%</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="currentAccountBalancePercentGdpTableWrap" role="region" aria-label="Datentabelle" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1980</td><td>-4,9%</td><td>1991</td><td>13,2%</td><td>2002</td><td>4,9%</td></tr><tr><td>1981</td><td>-2,8%</td><td>1992</td><td>4,1%</td><td>2003</td><td>-7,7%</td></tr><tr><td>1982</td><td>-1,4%</td><td>1993</td><td>-1,8%</td><td>2004</td><td>-3,1%</td></tr><tr><td>1983</td><td>-4,3%</td><td>1994</td><td>-5,6%</td><td>2005</td><td>-2,2%</td></tr><tr><td>1984</td><td>-4,2%</td><td>1995</td><td>1,3%</td><td>2006</td><td>1,4%</td></tr><tr><td>1985</td><td>-4,1%</td><td>1996</td><td>-0,2%</td><td>2007</td><td>-0,2%</td></tr><tr><td>1986</td><td>-2%</td><td>1997</td><td>2,5%</td><td>2008</td><td>-1,3%</td></tr><tr><td>1987</td><td>-0,9%</td><td>1998</td><td>0,8%</td><td>2009</td><td>-2,9%</td></tr><tr><td>1988</td><td>-0,8%</td><td>1999</td><td>1,8%</td><td>2010</td><td class="data-table-observation-estimated">-2,8%</td></tr><tr><td>1989</td><td>12,4%</td><td>2000</td><td>5,2%</td><td></td><td></td></tr><tr><td>1990</td><td>14,2%</td><td>2001</td><td>4%</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -189,10 +193,11 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../de/countries/syria/population/">Bevölkerung</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../de/countries/syria/population-growth/">Bevölkerungswachstum</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../de/countries/syria/fertility-rate/">Fertilitätsrate</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../de/countries/syria/trade/">Handelsbilanz</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../de/countries/syria/trade/">Exporte, Importe und Handelsbilanz</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../de/countries/syria/government-debt/">Staatsverschuldung</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../de/countries/syria/fiscal-balance/">Finanzierungssaldo</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../de/countries/syria/hdi/">HDI</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../de/countries/syria/co2-emissions/">Treibhausgasemissionen</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../de/countries/syria/"><img class="flag-image flag-image-sy country-flag" src="../../../../public/flags/sy.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">Länderprofil anzeigen</span></a>
       </section>

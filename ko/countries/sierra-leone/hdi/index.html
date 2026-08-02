@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="사회 페이지 탐색"><a class="navigation-control is-current" href="../hdi/" aria-current="page">인간개발지수(HDI)</a><a class="navigation-control" href="../military-spending/">군사비</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="hdi-title">
+          <section class="indicator-block" aria-label="인간개발지수(HDI) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="hdi-title"><span class="indicator-label-cell"><span class="indicator-label-text">인간개발지수(HDI)</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="인간개발지수(HDI) 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="hdi">i</button></span></span></h2>
+                <h2 data-country-indicator-title="hdi"><span class="indicator-label-cell"><span class="indicator-label-text">인간개발지수(HDI)</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="인간개발지수(HDI) 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="hdi">i</button></span></span></h2>
                 <p class="indicator-rank"><a data-ui-text-action href="../../../../ko/rankings/countries/hdi/">세계 순위: #185 / 193</a></p>
               </div>
               <div class="compare-control" data-series-id="hdi">
@@ -135,7 +135,9 @@
 
             <details class="data-table-toggle" id="hdiTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="hdiTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1990</td><td>0.313</td><td>2002</td><td>0.345</td><td>2014</td><td>0.438</td></tr><tr><td>1991</td><td>0.303</td><td>2003</td><td>0.354</td><td>2015</td><td>0.432</td></tr><tr><td>1992</td><td>0.305</td><td>2004</td><td>0.363</td><td>2016</td><td>0.441</td></tr><tr><td>1993</td><td>0.312</td><td>2005</td><td>0.37</td><td>2017</td><td>0.445</td></tr><tr><td>1994</td><td>0.312</td><td>2006</td><td>0.372</td><td>2018</td><td>0.451</td></tr><tr><td>1995</td><td>0.314</td><td>2007</td><td>0.391</td><td>2019</td><td>0.455</td></tr><tr><td>1996</td><td>0.311</td><td>2008</td><td>0.4</td><td>2020</td><td>0.454</td></tr><tr><td>1997</td><td>0.307</td><td>2009</td><td>0.406</td><td>2021</td><td>0.458</td></tr><tr><td>1998</td><td>0.304</td><td>2010</td><td>0.41</td><td>2022</td><td>0.463</td></tr><tr><td>1999</td><td>0.301</td><td>2011</td><td>0.416</td><td>2023</td><td>0.467</td></tr><tr><td>2000</td><td>0.318</td><td>2012</td><td>0.418</td><td></td><td></td></tr><tr><td>2001</td><td>0.33</td><td>2013</td><td>0.436</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="hdiTableWrap" role="region" aria-label="데이터 표" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1990</td><td>0.313</td><td>2002</td><td>0.345</td><td>2014</td><td>0.438</td></tr><tr><td>1991</td><td>0.303</td><td>2003</td><td>0.354</td><td>2015</td><td>0.432</td></tr><tr><td>1992</td><td>0.305</td><td>2004</td><td>0.363</td><td>2016</td><td>0.441</td></tr><tr><td>1993</td><td>0.312</td><td>2005</td><td>0.37</td><td>2017</td><td>0.445</td></tr><tr><td>1994</td><td>0.312</td><td>2006</td><td>0.372</td><td>2018</td><td>0.451</td></tr><tr><td>1995</td><td>0.314</td><td>2007</td><td>0.391</td><td>2019</td><td>0.455</td></tr><tr><td>1996</td><td>0.311</td><td>2008</td><td>0.4</td><td>2020</td><td>0.454</td></tr><tr><td>1997</td><td>0.307</td><td>2009</td><td>0.406</td><td>2021</td><td>0.458</td></tr><tr><td>1998</td><td>0.304</td><td>2010</td><td>0.41</td><td>2022</td><td>0.463</td></tr><tr><td>1999</td><td>0.301</td><td>2011</td><td>0.416</td><td>2023</td><td>0.467</td></tr><tr><td>2000</td><td>0.318</td><td>2012</td><td>0.418</td><td></td><td></td></tr><tr><td>2001</td><td>0.33</td><td>2013</td><td>0.436</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -153,9 +155,10 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/sierra-leone/population/">인구</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/sierra-leone/population-growth/">인구증가율</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/sierra-leone/fertility-rate/">합계출산율</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/sierra-leone/trade/">무역수지</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/sierra-leone/trade/">수출, 수입 및 무역수지</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/sierra-leone/government-debt/">정부 부채</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/sierra-leone/fiscal-balance/">재정수지</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/sierra-leone/co2-emissions/">온실가스 배출량</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../ko/countries/sierra-leone/"><img class="flag-image flag-image-sl country-flag" src="../../../../public/flags/sl.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">국가 프로필 보기</span></a>
       </section>

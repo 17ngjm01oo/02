@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="정부 재정 페이지 탐색"><a class="navigation-control is-current" href="../government-debt/" aria-current="page">정부 부채</a><a class="navigation-control" href="../fiscal-balance/">재정수지</a><a class="navigation-control" href="../government-revenue-spending/">정부 수입 및 지출</a><a class="navigation-control" href="../total-reserves/">총외환보유액</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="governmentGrossDebt-title">
+          <section class="indicator-block" aria-label="정부 총부채 (GDP 대비 %) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="governmentGrossDebt-title"><span class="indicator-label-cell"><span class="indicator-label-text">정부 총부채</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GDP 대비 %)</span><button class="indicator-info-button" type="button" aria-label="정부 총부채 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentGrossDebt">i</button></span></span></h2>
+                <h2 data-country-indicator-title="governmentGrossDebt"><span class="indicator-label-cell"><span class="indicator-label-text">정부 총부채</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GDP 대비 %)</span><button class="indicator-info-button" type="button" aria-label="정부 총부채 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentGrossDebt">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="governmentGrossDebt">
                 <div class="compare-input-wrap">
@@ -134,14 +134,16 @@
 
             <details class="data-table-toggle" id="governmentGrossDebtTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="governmentGrossDebtTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="governmentGrossDebtTableWrap" role="region" aria-label="데이터 표" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="governmentGrossDebtNational-title">
+          <section class="indicator-block" aria-label="정부 총부채 (자국 통화) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="governmentGrossDebtNational-title"><span class="indicator-label-cell"><span class="indicator-label-text">정부 총부채</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(자국 통화)</span><button class="indicator-info-button" type="button" aria-label="정부 총부채 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentGrossDebtNational">i</button></span></span></h2>
+                <h2 data-country-indicator-title="governmentGrossDebtNational"><span class="indicator-label-cell"><span class="indicator-label-text">정부 총부채</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(자국 통화)</span><button class="indicator-info-button" type="button" aria-label="정부 총부채 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentGrossDebtNational">i</button></span></span></h2>
               </div>
             </header>
 
@@ -152,14 +154,16 @@
 
             <details class="data-table-toggle" id="governmentGrossDebtNationalTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="governmentGrossDebtNationalTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="governmentGrossDebtNationalTableWrap" role="region" aria-label="데이터 표" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="governmentNetDebt-title">
+          <section class="indicator-block" aria-label="정부 순부채 (GDP 대비 %) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="governmentNetDebt-title"><span class="indicator-label-cell"><span class="indicator-label-text">정부 순부채</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GDP 대비 %)</span><button class="indicator-info-button" type="button" aria-label="정부 순부채 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentNetDebt">i</button></span></span></h2>
+                <h2 data-country-indicator-title="governmentNetDebt"><span class="indicator-label-cell"><span class="indicator-label-text">정부 순부채</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GDP 대비 %)</span><button class="indicator-info-button" type="button" aria-label="정부 순부채 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentNetDebt">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="governmentNetDebt">
                 <div class="compare-input-wrap">
@@ -187,14 +191,16 @@
 
             <details class="data-table-toggle" id="governmentNetDebtTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="governmentNetDebtTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="governmentNetDebtTableWrap" role="region" aria-label="데이터 표" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="governmentNetDebtNational-title">
+          <section class="indicator-block" aria-label="정부 순부채 (자국 통화) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="governmentNetDebtNational-title"><span class="indicator-label-cell"><span class="indicator-label-text">정부 순부채</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(자국 통화)</span><button class="indicator-info-button" type="button" aria-label="정부 순부채 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentNetDebtNational">i</button></span></span></h2>
+                <h2 data-country-indicator-title="governmentNetDebtNational"><span class="indicator-label-cell"><span class="indicator-label-text">정부 순부채</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(자국 통화)</span><button class="indicator-info-button" type="button" aria-label="정부 순부채 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentNetDebtNational">i</button></span></span></h2>
               </div>
             </header>
 
@@ -205,7 +211,9 @@
 
             <details class="data-table-toggle" id="governmentNetDebtNationalTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="governmentNetDebtNationalTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="governmentNetDebtNationalTableWrap" role="region" aria-label="데이터 표" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
@@ -224,9 +232,10 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/libya/population/">인구</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/libya/population-growth/">인구증가율</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/libya/fertility-rate/">합계출산율</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/libya/trade/">무역수지</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/libya/trade/">수출, 수입 및 무역수지</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/libya/fiscal-balance/">재정수지</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/libya/hdi/">인간개발지수(HDI)</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/libya/co2-emissions/">온실가스 배출량</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../ko/countries/libya/"><img class="flag-image flag-image-ly country-flag" src="../../../../public/flags/ly.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">국가 프로필 보기</span></a>
       </section>

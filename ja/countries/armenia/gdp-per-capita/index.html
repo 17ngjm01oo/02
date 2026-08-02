@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="経済ページナビゲーション"><a class="navigation-control" href="../gdp/">GDP</a><a class="navigation-control is-current" href="../gdp-per-capita/" aria-current="page">1人あたりGDP</a><a class="navigation-control" href="../ppp-gdp/">購買力平価GDP</a><a class="navigation-control" href="../ppp-gdp-per-capita/">1人あたり購買力平価GDP</a><a class="navigation-control" href="../gni/">GNI</a><a class="navigation-control" href="../gni-per-capita/">1人あたりGNI</a><a class="navigation-control" href="../gdp-growth/">経済成長率</a><a class="navigation-control" href="../inflation-rate/">インフレ率</a><a class="navigation-control" href="../unemployment-rate/">失業率</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="gdpPerCapita-title">
+          <section class="indicator-block" aria-label="1人あたりGDP (米ドル)折れ線グラフ">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gdpPerCapita-title"><span class="indicator-label-cell"><span class="indicator-label-text">1人あたりGDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(米ドル)</span><button class="indicator-info-button" type="button" aria-label="1人あたりGDPの情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpPerCapita">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gdpPerCapita"><span class="indicator-label-cell"><span class="indicator-label-text">1人あたりGDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(米ドル)</span><button class="indicator-info-button" type="button" aria-label="1人あたりGDPの情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpPerCapita">i</button></span></span></h2>
                 <p class="indicator-rank"><a data-ui-text-action href="../../../../ja/rankings/countries/gdp-per-capita/">世界ランク: #92 / 190</a></p>
               </div>
               <div class="compare-control" data-series-id="gdpPerCapita">
@@ -135,14 +135,16 @@
 
             <details class="data-table-toggle" id="gdpPerCapitaTableToggle">
               <summary data-ui-text-action>データ表</summary>
-              <div class="data-table-wrap" id="gdpPerCapitaTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>31</td><td>2004</td><td>1,137</td><td>2016</td><td>3,540</td></tr><tr><td>1993</td><td>248</td><td>2005</td><td>1,567</td><td>2017</td><td>3,883</td></tr><tr><td>1994</td><td>199</td><td>2006</td><td>2,055</td><td>2018</td><td>4,205</td></tr><tr><td>1995</td><td>396</td><td>2007</td><td>2,982</td><td>2019</td><td>4,599</td></tr><tr><td>1996</td><td>493</td><td>2008</td><td>3,804</td><td>2020</td><td>4,267</td></tr><tr><td>1997</td><td>507</td><td>2009</td><td>2,847</td><td>2021</td><td>4,674</td></tr><tr><td>1998</td><td>586</td><td>2010</td><td>3,066</td><td>2022</td><td>6,539</td></tr><tr><td>1999</td><td>573</td><td>2011</td><td>3,354</td><td>2023</td><td>7,973</td></tr><tr><td>2000</td><td>595</td><td>2012</td><td>3,514</td><td>2024</td><td>8,556</td></tr><tr><td>2001</td><td>662</td><td>2013</td><td>3,690</td><td>2025</td><td>9,521</td></tr><tr><td>2002</td><td>747</td><td>2014</td><td>3,864</td><td>2026</td><td class="data-table-observation-estimated">1.04万</td></tr><tr><td>2003</td><td>887</td><td>2015</td><td>3,527</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gdpPerCapitaTableWrap" role="region" aria-label="データ表" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>31</td><td>2004</td><td>1,137</td><td>2016</td><td>3,540</td></tr><tr><td>1993</td><td>248</td><td>2005</td><td>1,567</td><td>2017</td><td>3,883</td></tr><tr><td>1994</td><td>199</td><td>2006</td><td>2,055</td><td>2018</td><td>4,205</td></tr><tr><td>1995</td><td>396</td><td>2007</td><td>2,982</td><td>2019</td><td>4,599</td></tr><tr><td>1996</td><td>493</td><td>2008</td><td>3,804</td><td>2020</td><td>4,267</td></tr><tr><td>1997</td><td>507</td><td>2009</td><td>2,847</td><td>2021</td><td>4,674</td></tr><tr><td>1998</td><td>586</td><td>2010</td><td>3,066</td><td>2022</td><td>6,539</td></tr><tr><td>1999</td><td>573</td><td>2011</td><td>3,354</td><td>2023</td><td>7,973</td></tr><tr><td>2000</td><td>595</td><td>2012</td><td>3,514</td><td>2024</td><td>8,556</td></tr><tr><td>2001</td><td>662</td><td>2013</td><td>3,690</td><td>2025</td><td>9,521</td></tr><tr><td>2002</td><td>747</td><td>2014</td><td>3,864</td><td>2026</td><td class="data-table-observation-estimated">1.04万</td></tr><tr><td>2003</td><td>887</td><td>2015</td><td>3,527</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="gdpNationalPerCapita-title">
+          <section class="indicator-block" aria-label="1人あたりGDP (自国通貨)折れ線グラフ">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gdpNationalPerCapita-title"><span class="indicator-label-cell"><span class="indicator-label-text">1人あたりGDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(自国通貨)</span><button class="indicator-info-button" type="button" aria-label="1人あたりGDPの情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpNationalPerCapita">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gdpNationalPerCapita"><span class="indicator-label-cell"><span class="indicator-label-text">1人あたりGDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(自国通貨)</span><button class="indicator-info-button" type="button" aria-label="1人あたりGDPの情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpNationalPerCapita">i</button></span></span></h2>
               </div>
             </header>
 
@@ -153,14 +155,16 @@
 
             <details class="data-table-toggle" id="gdpNationalPerCapitaTableToggle">
               <summary data-ui-text-action>データ表</summary>
-              <div class="data-table-wrap" id="gdpNationalPerCapitaTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>86</td><td>2004</td><td>60.64万</td><td>2016</td><td>170.07万</td></tr><tr><td>1993</td><td>1,156</td><td>2005</td><td>71.72万</td><td>2017</td><td>187.42万</td></tr><tr><td>1994</td><td>5.75万</td><td>2006</td><td>85.48万</td><td>2018</td><td>203.11万</td></tr><tr><td>1995</td><td>16.08万</td><td>2007</td><td>102.02万</td><td>2019</td><td>220.95万</td></tr><tr><td>1996</td><td>20.39万</td><td>2008</td><td>116.38万</td><td>2020</td><td>208.68万</td></tr><tr><td>1997</td><td>24.86万</td><td>2009</td><td>103.44万</td><td>2021</td><td>235.47万</td></tr><tr><td>1998</td><td>29.58万</td><td>2010</td><td>114.57万</td><td>2022</td><td>284.89万</td></tr><tr><td>1999</td><td>30.66万</td><td>2011</td><td>124.93万</td><td>2023</td><td>312.9万</td></tr><tr><td>2000</td><td>32.11万</td><td>2012</td><td>141.18万</td><td>2024</td><td>336.01万</td></tr><tr><td>2001</td><td>36.75万</td><td>2013</td><td>151.16万</td><td>2025</td><td>368.47万</td></tr><tr><td>2002</td><td>42.81万</td><td>2014</td><td>160.71万</td><td>2026</td><td class="data-table-observation-estimated">401.68万</td></tr><tr><td>2003</td><td>51.33万</td><td>2015</td><td>168.55万</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gdpNationalPerCapitaTableWrap" role="region" aria-label="データ表" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>86</td><td>2004</td><td>60.64万</td><td>2016</td><td>170.1万</td></tr><tr><td>1993</td><td>1,156</td><td>2005</td><td>71.72万</td><td>2017</td><td>187.4万</td></tr><tr><td>1994</td><td>5.75万</td><td>2006</td><td>85.48万</td><td>2018</td><td>203.1万</td></tr><tr><td>1995</td><td>16.08万</td><td>2007</td><td>102万</td><td>2019</td><td>220.9万</td></tr><tr><td>1996</td><td>20.39万</td><td>2008</td><td>116.4万</td><td>2020</td><td>208.7万</td></tr><tr><td>1997</td><td>24.86万</td><td>2009</td><td>103.4万</td><td>2021</td><td>235.5万</td></tr><tr><td>1998</td><td>29.58万</td><td>2010</td><td>114.6万</td><td>2022</td><td>284.9万</td></tr><tr><td>1999</td><td>30.66万</td><td>2011</td><td>124.9万</td><td>2023</td><td>312.9万</td></tr><tr><td>2000</td><td>32.11万</td><td>2012</td><td>141.2万</td><td>2024</td><td>336万</td></tr><tr><td>2001</td><td>36.75万</td><td>2013</td><td>151.2万</td><td>2025</td><td>368.5万</td></tr><tr><td>2002</td><td>42.81万</td><td>2014</td><td>160.7万</td><td>2026</td><td class="data-table-observation-estimated">401.7万</td></tr><tr><td>2003</td><td>51.33万</td><td>2015</td><td>168.5万</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="realGdpPerCapita-title">
+          <section class="indicator-block" aria-label="1人あたり実質GDP (自国通貨)折れ線グラフ">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="realGdpPerCapita-title"><span class="indicator-label-cell"><span class="indicator-label-text">1人あたり実質GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(自国通貨)</span><button class="indicator-info-button" type="button" aria-label="1人あたり実質GDPの情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="realGdpPerCapita">i</button></span></span></h2>
+                <h2 data-country-indicator-title="realGdpPerCapita"><span class="indicator-label-cell"><span class="indicator-label-text">1人あたり実質GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(自国通貨)</span><button class="indicator-info-button" type="button" aria-label="1人あたり実質GDPの情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="realGdpPerCapita">i</button></span></span></h2>
               </div>
             </header>
 
@@ -171,7 +175,9 @@
 
             <details class="data-table-toggle" id="realGdpPerCapitaTableToggle">
               <summary data-ui-text-action>データ表</summary>
-              <div class="data-table-wrap" id="realGdpPerCapitaTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>28.77万</td><td>2004</td><td>62.64万</td><td>2016</td><td>113.08万</td></tr><tr><td>1993</td><td>25.31万</td><td>2005</td><td>71.72万</td><td>2017</td><td>122.01万</td></tr><tr><td>1994</td><td>27.63万</td><td>2006</td><td>81.71万</td><td>2018</td><td>128.67万</td></tr><tr><td>1995</td><td>29.96万</td><td>2007</td><td>93.55万</td><td>2019</td><td>138.54万</td></tr><tr><td>1996</td><td>31.77万</td><td>2008</td><td>100.74万</td><td>2020</td><td>128.66万</td></tr><tr><td>1997</td><td>32.87万</td><td>2009</td><td>87.31万</td><td>2021</td><td>135.76万</td></tr><tr><td>1998</td><td>35.33万</td><td>2010</td><td>89.73万</td><td>2022</td><td>152.07万</td></tr><tr><td>1999</td><td>36.62万</td><td>2011</td><td>93.82万</td><td>2023</td><td>162.07万</td></tr><tr><td>2000</td><td>38.77万</td><td>2012</td><td>100.59万</td><td>2024</td><td>171.56万</td></tr><tr><td>2001</td><td>42.65万</td><td>2013</td><td>104.3万</td><td>2025</td><td>181.59万</td></tr><tr><td>2002</td><td>49.21万</td><td>2014</td><td>108.39万</td><td>2026</td><td class="data-table-observation-estimated">191.81万</td></tr><tr><td>2003</td><td>56.43万</td><td>2015</td><td>112.38万</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="realGdpPerCapitaTableWrap" role="region" aria-label="データ表" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>28.77万</td><td>2004</td><td>62.64万</td><td>2016</td><td>113.1万</td></tr><tr><td>1993</td><td>25.31万</td><td>2005</td><td>71.72万</td><td>2017</td><td>122万</td></tr><tr><td>1994</td><td>27.63万</td><td>2006</td><td>81.71万</td><td>2018</td><td>128.7万</td></tr><tr><td>1995</td><td>29.96万</td><td>2007</td><td>93.55万</td><td>2019</td><td>138.5万</td></tr><tr><td>1996</td><td>31.77万</td><td>2008</td><td>100.7万</td><td>2020</td><td>128.7万</td></tr><tr><td>1997</td><td>32.87万</td><td>2009</td><td>87.31万</td><td>2021</td><td>135.8万</td></tr><tr><td>1998</td><td>35.33万</td><td>2010</td><td>89.73万</td><td>2022</td><td>152.1万</td></tr><tr><td>1999</td><td>36.62万</td><td>2011</td><td>93.82万</td><td>2023</td><td>162.1万</td></tr><tr><td>2000</td><td>38.77万</td><td>2012</td><td>100.6万</td><td>2024</td><td>171.6万</td></tr><tr><td>2001</td><td>42.65万</td><td>2013</td><td>104.3万</td><td>2025</td><td>181.6万</td></tr><tr><td>2002</td><td>49.21万</td><td>2014</td><td>108.4万</td><td>2026</td><td class="data-table-observation-estimated">191.8万</td></tr><tr><td>2003</td><td>56.43万</td><td>2015</td><td>112.4万</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -190,10 +196,11 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/armenia/population/">人口</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/armenia/population-growth/">人口増加率</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/armenia/fertility-rate/">合計特殊出生率</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/armenia/trade/">貿易収支</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/armenia/trade/">貿易収支・輸出額・輸入額</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/armenia/government-debt/">政府債務残高</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/armenia/fiscal-balance/">財政収支</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/armenia/hdi/">HDI</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/armenia/co2-emissions/">CO2排出量</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../ja/countries/armenia/"><img class="flag-image flag-image-am country-flag" src="../../../../public/flags/am.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">国の概要ページを見る</span></a>
       </section>

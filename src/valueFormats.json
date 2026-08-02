@@ -1,0 +1,124 @@
+{
+  "compactMagnitudePrecision": {
+    "maximumFractionDigits": 2,
+    "significantDigitBudget": 4
+  },
+  "valueFormats": {
+    "billionsMagnitude": {
+      "valueScaleMode": "billionsMagnitude"
+    },
+    "percentOneDecimal": {
+      "valueScaleMode": "percentOneDecimal",
+      "suffix": "%",
+      "suffixSpacing": "",
+      "maximumFractionDigits": 1,
+      "integerValueThreshold": 1000
+    },
+    "decimalOne": {
+      "maximumFractionDigits": 1
+    },
+    "populationDensity": {
+      "maximumFractionDigits": 1,
+      "integerValueThreshold": 1000
+    },
+    "decimalTwo": {
+      "maximumFractionDigits": 2
+    },
+    "decimalThree": {
+      "maximumFractionDigits": 3
+    },
+    "peopleCountMagnitude": {
+      "valueScaleMode": "unitsMagnitude",
+      "compactIntegerValueThreshold": 100
+    },
+    "millionsMagnitude": {
+      "valueScaleMode": "millionsMagnitude"
+    },
+    "unitsMagnitude": {
+      "valueScaleMode": "unitsMagnitude"
+    },
+    "areaMagnitude": {
+      "valueScaleMode": "unitsMagnitude",
+      "fallbackPrecisionMode": "compact"
+    },
+    "co2Emissions": {
+      "valueScaleMode": "unitsMagnitude",
+      "fallbackPrecisionMode": "compact",
+      "lowerUnitThreshold": 1,
+      "lowerUnitValueScale": 1000,
+      "lowerUnitSuffix": "kt",
+      "suffix": "Mt"
+    },
+    "co2EmissionsPerCapita": {
+      "suffix": "t",
+      "maximumFractionDigits": 2
+    }
+  },
+  "magnitudeFormats": {
+    "english": [
+      { "threshold": 1000000000000000, "valueScale": 0.000000000000001, "compactUnit": "Q" },
+      { "threshold": 1000000000000, "valueScale": 0.000000000001, "compactUnit": "T" },
+      { "threshold": 1000000000, "valueScale": 0.000000001, "compactUnit": "B" },
+      { "threshold": 1000000, "valueScale": 0.000001, "compactUnit": "M" }
+    ],
+    "japanese": [
+      { "threshold": 1000000000000, "valueScale": 0.000000000001, "compactUnit": "兆" },
+      { "threshold": 100000000, "valueScale": 0.00000001, "compactUnit": "億" },
+      { "threshold": 10000, "valueScale": 0.0001, "compactUnit": "万" }
+    ],
+    "spanish": [
+      { "threshold": 1000000000000000, "valueScale": 0.000000000000001, "compactUnit": " mil B" },
+      { "threshold": 1000000000000, "valueScale": 0.000000000001, "compactUnit": " B" },
+      { "threshold": 1000000000, "valueScale": 0.000000001, "compactUnit": " mil M" },
+      { "threshold": 1000000, "valueScale": 0.000001, "compactUnit": " M" }
+    ],
+    "french": [
+      { "threshold": 1000000000000, "valueScale": 0.000000000001, "compactUnit": " Bn" },
+      { "threshold": 1000000000, "valueScale": 0.000000001, "compactUnit": " Md" },
+      { "threshold": 1000000, "valueScale": 0.000001, "compactUnit": " M" }
+    ],
+    "brazilian_portuguese": [
+      { "threshold": 1000000000000, "valueScale": 0.000000000001, "compactUnit": " tri" },
+      { "threshold": 1000000000, "valueScale": 0.000000001, "compactUnit": " bi" },
+      { "threshold": 1000000, "valueScale": 0.000001, "compactUnit": " mi" }
+    ],
+    "german": [
+      { "threshold": 1000000000000, "valueScale": 0.000000000001, "compactUnit": " Bio." },
+      { "threshold": 1000000000, "valueScale": 0.000000001, "compactUnit": " Mrd." },
+      { "threshold": 1000000, "valueScale": 0.000001, "compactUnit": " Mio." }
+    ],
+    "italian": [
+      { "threshold": 1000000000000, "valueScale": 0.000000000001, "compactUnit": " Bln" },
+      { "threshold": 1000000000, "valueScale": 0.000000001, "compactUnit": " Mld" },
+      { "threshold": 1000000, "valueScale": 0.000001, "compactUnit": " Mln" }
+    ],
+    "korean": [
+      { "threshold": 1000000000000, "valueScale": 0.000000000001, "compactUnit": "조" },
+      { "threshold": 100000000, "valueScale": 0.00000001, "compactUnit": "억" },
+      { "threshold": 10000, "valueScale": 0.0001, "compactUnit": "만" }
+    ],
+    "turkish": [
+      { "threshold": 1000000000000, "valueScale": 0.000000000001, "compactUnit": " Tn" },
+      { "threshold": 1000000000, "valueScale": 0.000000001, "compactUnit": " Mr" },
+      { "threshold": 1000000, "valueScale": 0.000001, "compactUnit": " Mn" }
+    ],
+    "indonesian": [
+      { "threshold": 1000000000000, "valueScale": 0.000000000001, "compactUnit": " T" },
+      { "threshold": 1000000000, "valueScale": 0.000000001, "compactUnit": " M" },
+      { "threshold": 1000000, "valueScale": 0.000001, "compactUnit": " jt" }
+    ]
+  },
+  "magnitudeInputs": {
+    "billions": {
+      "rawValueScale": 1000000000,
+      "forceMinimumCompactUnit": true
+    },
+    "millions": {
+      "rawValueScale": 1000000,
+      "forceMinimumCompactUnit": true
+    },
+    "units": {
+      "rawValueScale": 1
+    }
+  }
+}

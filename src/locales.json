@@ -27,7 +27,7 @@
         "group": ",",
         "minimum_grouping_digits": 1
       },
-      "magnitude_format": "western",
+      "magnitude_format": "english",
       "category_meta_case": "lower",
       "country_name_forms": {
         "USA": {
@@ -514,7 +514,7 @@
       "number_symbols": {
         "decimal": ",",
         "group": ".",
-        "minimum_grouping_digits": 1
+        "minimum_grouping_digits": 2
       },
       "magnitude_format": "italian",
       "category_meta_case": "lower",

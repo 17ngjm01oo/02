@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="사회 페이지 탐색"><a class="navigation-control" href="../hdi/">인간개발지수(HDI)</a><a class="navigation-control is-current" href="../military-spending/" aria-current="page">군사비</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="militarySpending-title">
+          <section class="indicator-block" aria-label="군사비 (USD) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="militarySpending-title"><span class="indicator-label-cell"><span class="indicator-label-text">군사비</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="군사비 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="militarySpending">i</button></span></span></h2>
+                <h2 data-country-indicator-title="militarySpending"><span class="indicator-label-cell"><span class="indicator-label-text">군사비</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="군사비 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="militarySpending">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="militarySpending">
                 <div class="compare-input-wrap">
@@ -134,14 +134,16 @@
 
             <details class="data-table-toggle" id="militarySpendingTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="militarySpendingTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1997</td><td>33.36억</td><td>2003</td><td>58.35억</td><td>2009</td><td>138.36억</td></tr><tr><td>1998</td><td>40.1억</td><td>2004</td><td>68.17억</td><td>2010</td><td>175.05억</td></tr><tr><td>1999</td><td>42.33억</td><td>2005</td><td>66.04억</td><td>2011</td><td>191.82억</td></tr><tr><td>2000</td><td>58.76억</td><td>2006</td><td>71.65억</td><td>2012</td><td>190.24억</td></tr><tr><td>2001</td><td>57.98억</td><td>2007</td><td>84.61억</td><td>2013</td><td>235.61억</td></tr><tr><td>2002</td><td>53.54억</td><td>2008</td><td>115.72억</td><td>2014</td><td>227.55억</td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="militarySpendingTableWrap" role="region" aria-label="데이터 표" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1997</td><td>33.36억</td><td>2003</td><td>58.35억</td><td>2009</td><td>138.4억</td></tr><tr><td>1998</td><td>40.1억</td><td>2004</td><td>68.17억</td><td>2010</td><td>175억</td></tr><tr><td>1999</td><td>42.33억</td><td>2005</td><td>66.04억</td><td>2011</td><td>191.8억</td></tr><tr><td>2000</td><td>58.76억</td><td>2006</td><td>71.65억</td><td>2012</td><td>190.2억</td></tr><tr><td>2001</td><td>57.98억</td><td>2007</td><td>84.61억</td><td>2013</td><td>235.6억</td></tr><tr><td>2002</td><td>53.54억</td><td>2008</td><td>115.7억</td><td>2014</td><td>227.6억</td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="militarySpendingPercentGdp-title">
+          <section class="indicator-block" aria-label="군사비 (GDP 대비 %) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="militarySpendingPercentGdp-title"><span class="indicator-label-cell"><span class="indicator-label-text">군사비</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GDP 대비 %)</span><button class="indicator-info-button" type="button" aria-label="군사비 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="militarySpendingPercentGdp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="militarySpendingPercentGdp"><span class="indicator-label-cell"><span class="indicator-label-text">군사비</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GDP 대비 %)</span><button class="indicator-info-button" type="button" aria-label="군사비 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="militarySpendingPercentGdp">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="militarySpendingPercentGdp">
                 <div class="compare-input-wrap">
@@ -169,7 +171,9 @@
 
             <details class="data-table-toggle" id="militarySpendingPercentGdpTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="militarySpendingPercentGdpTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1997</td><td>6.8%</td><td>2003</td><td>4.7%</td><td>2009</td><td>5.5%</td></tr><tr><td>1998</td><td>8.6%</td><td>2004</td><td>4.6%</td><td>2010</td><td>6%</td></tr><tr><td>1999</td><td>7.7%</td><td>2005</td><td>3.7%</td><td>2011</td><td>5.5%</td></tr><tr><td>2000</td><td>8.3%</td><td>2006</td><td>3.2%</td><td>2012</td><td>5.1%</td></tr><tr><td>2001</td><td>5.6%</td><td>2007</td><td>3.3%</td><td>2013</td><td>6%</td></tr><tr><td>2002</td><td>4.9%</td><td>2008</td><td>3.7%</td><td>2014</td><td>5.6%</td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="militarySpendingPercentGdpTableWrap" role="region" aria-label="데이터 표" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1997</td><td>6.8%</td><td>2003</td><td>4.7%</td><td>2009</td><td>5.5%</td></tr><tr><td>1998</td><td>8.6%</td><td>2004</td><td>4.6%</td><td>2010</td><td>6%</td></tr><tr><td>1999</td><td>7.7%</td><td>2005</td><td>3.7%</td><td>2011</td><td>5.5%</td></tr><tr><td>2000</td><td>8.3%</td><td>2006</td><td>3.2%</td><td>2012</td><td>5.1%</td></tr><tr><td>2001</td><td>5.6%</td><td>2007</td><td>3.3%</td><td>2013</td><td>6%</td></tr><tr><td>2002</td><td>4.9%</td><td>2008</td><td>3.7%</td><td>2014</td><td>5.6%</td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -187,10 +191,11 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/united-arab-emirates/population/">인구</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/united-arab-emirates/population-growth/">인구증가율</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/united-arab-emirates/fertility-rate/">합계출산율</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/united-arab-emirates/trade/">무역수지</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/united-arab-emirates/trade/">수출, 수입 및 무역수지</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/united-arab-emirates/government-debt/">정부 부채</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/united-arab-emirates/fiscal-balance/">재정수지</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/united-arab-emirates/hdi/">인간개발지수(HDI)</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/united-arab-emirates/co2-emissions/">온실가스 배출량</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../ko/countries/united-arab-emirates/"><img class="flag-image flag-image-ae country-flag" src="../../../../public/flags/ae.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">국가 프로필 보기</span></a>
       </section>

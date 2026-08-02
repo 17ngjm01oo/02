@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="社会ページナビゲーション"><a class="navigation-control" href="../hdi/">HDI</a><a class="navigation-control is-current" href="../military-spending/" aria-current="page">軍事費</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="militarySpending-title">
+          <section class="indicator-block" aria-label="軍事費 (米ドル)折れ線グラフ">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="militarySpending-title"><span class="indicator-label-cell"><span class="indicator-label-text">軍事費</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(米ドル)</span><button class="indicator-info-button" type="button" aria-label="軍事費の情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="militarySpending">i</button></span></span></h2>
+                <h2 data-country-indicator-title="militarySpending"><span class="indicator-label-cell"><span class="indicator-label-text">軍事費</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(米ドル)</span><button class="indicator-info-button" type="button" aria-label="軍事費の情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="militarySpending">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="militarySpending">
                 <div class="compare-input-wrap">
@@ -134,14 +134,16 @@
 
             <details class="data-table-toggle" id="militarySpendingTableToggle">
               <summary data-ui-text-action>データ表</summary>
-              <div class="data-table-wrap" id="militarySpendingTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1982</td><td>940.78万</td><td>1998</td><td>290.02万</td><td>2014</td><td>2,147.1万</td></tr><tr><td>1983</td><td>1,806.5万</td><td>2000</td><td>953.14万</td><td>2015</td><td>1,703.7万</td></tr><tr><td>1984</td><td>646.51万</td><td>2001</td><td>618.32万</td><td>2016</td><td>1,573万</td></tr><tr><td>1985</td><td>465.26万</td><td>2002</td><td>636.31万</td><td>2017</td><td>1,902.2万</td></tr><tr><td>1986</td><td>612.88万</td><td>2003</td><td>750.52万</td><td>2018</td><td>2,119.8万</td></tr><tr><td>1987</td><td>388.37万</td><td>2005</td><td>1,211.6万</td><td>2019</td><td>2,257.1万</td></tr><tr><td>1989</td><td>443.47万</td><td>2009</td><td>1,374.5万</td><td>2020</td><td>2,416.6万</td></tr><tr><td>1994</td><td>201.67万</td><td>2010</td><td>1,713万</td><td>2021</td><td>2,567.4万</td></tr><tr><td>1995</td><td>221.19万</td><td>2011</td><td>1,752万</td><td>2022</td><td>2,453.9万</td></tr><tr><td>1996</td><td>189.77万</td><td>2012</td><td>2,449.2万</td><td>2023</td><td>2,529.2万</td></tr><tr><td>1997</td><td>181.78万</td><td>2013</td><td>2,171.1万</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="militarySpendingTableWrap" role="region" aria-label="データ表" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1982</td><td>940.8万</td><td>1998</td><td>290万</td><td>2014</td><td>2,147万</td></tr><tr><td>1983</td><td>1,806万</td><td>2000</td><td>953.1万</td><td>2015</td><td>1,704万</td></tr><tr><td>1984</td><td>646.5万</td><td>2001</td><td>618.3万</td><td>2016</td><td>1,573万</td></tr><tr><td>1985</td><td>465.3万</td><td>2002</td><td>636.3万</td><td>2017</td><td>1,902万</td></tr><tr><td>1986</td><td>612.9万</td><td>2003</td><td>750.5万</td><td>2018</td><td>2,120万</td></tr><tr><td>1987</td><td>388.4万</td><td>2005</td><td>1,212万</td><td>2019</td><td>2,257万</td></tr><tr><td>1989</td><td>443.5万</td><td>2009</td><td>1,374万</td><td>2020</td><td>2,417万</td></tr><tr><td>1994</td><td>201.7万</td><td>2010</td><td>1,713万</td><td>2021</td><td>2,567万</td></tr><tr><td>1995</td><td>221.2万</td><td>2011</td><td>1,752万</td><td>2022</td><td>2,454万</td></tr><tr><td>1996</td><td>189.8万</td><td>2012</td><td>2,449万</td><td>2023</td><td>2,529万</td></tr><tr><td>1997</td><td>181.8万</td><td>2013</td><td>2,171万</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="militarySpendingPercentGdp-title">
+          <section class="indicator-block" aria-label="軍事費 (GDP比)折れ線グラフ">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="militarySpendingPercentGdp-title"><span class="indicator-label-cell"><span class="indicator-label-text">軍事費</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GDP比)</span><button class="indicator-info-button" type="button" aria-label="軍事費の情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="militarySpendingPercentGdp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="militarySpendingPercentGdp"><span class="indicator-label-cell"><span class="indicator-label-text">軍事費</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GDP比)</span><button class="indicator-info-button" type="button" aria-label="軍事費の情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="militarySpendingPercentGdp">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="militarySpendingPercentGdp">
                 <div class="compare-input-wrap">
@@ -169,7 +171,9 @@
 
             <details class="data-table-toggle" id="militarySpendingPercentGdpTableToggle">
               <summary data-ui-text-action>データ表</summary>
-              <div class="data-table-wrap" id="militarySpendingPercentGdpTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1982</td><td>0%</td><td>1998</td><td>1.4%</td><td>2014</td><td>1.9%</td></tr><tr><td>1983</td><td>0%</td><td>2000</td><td>2.6%</td><td>2015</td><td>1.5%</td></tr><tr><td>1984</td><td>0%</td><td>2001</td><td>1.6%</td><td>2016</td><td>1.3%</td></tr><tr><td>1985</td><td>0%</td><td>2002</td><td>1.6%</td><td>2017</td><td>1.3%</td></tr><tr><td>1986</td><td>0%</td><td>2003</td><td>1.6%</td><td>2018</td><td>1.4%</td></tr><tr><td>1987</td><td>0.1%</td><td>2005</td><td>1.9%</td><td>2019</td><td>1.5%</td></tr><tr><td>1989</td><td>0.2%</td><td>2009</td><td>1.6%</td><td>2020</td><td>1.5%</td></tr><tr><td>1994</td><td>0.3%</td><td>2010</td><td>1.8%</td><td>2021</td><td>1.5%</td></tr><tr><td>1995</td><td>0.5%</td><td>2011</td><td>1.5%</td><td>2022</td><td>1.4%</td></tr><tr><td>1996</td><td>0.6%</td><td>2012</td><td>2.3%</td><td>2023</td><td>1.2%</td></tr><tr><td>1997</td><td>0.7%</td><td>2013</td><td>2%</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="militarySpendingPercentGdpTableWrap" role="region" aria-label="データ表" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1982</td><td>0%</td><td>1998</td><td>1.4%</td><td>2014</td><td>1.9%</td></tr><tr><td>1983</td><td>0%</td><td>2000</td><td>2.6%</td><td>2015</td><td>1.5%</td></tr><tr><td>1984</td><td>0%</td><td>2001</td><td>1.6%</td><td>2016</td><td>1.3%</td></tr><tr><td>1985</td><td>0%</td><td>2002</td><td>1.6%</td><td>2017</td><td>1.3%</td></tr><tr><td>1986</td><td>0%</td><td>2003</td><td>1.6%</td><td>2018</td><td>1.4%</td></tr><tr><td>1987</td><td>0.1%</td><td>2005</td><td>1.9%</td><td>2019</td><td>1.5%</td></tr><tr><td>1989</td><td>0.2%</td><td>2009</td><td>1.6%</td><td>2020</td><td>1.5%</td></tr><tr><td>1994</td><td>0.3%</td><td>2010</td><td>1.8%</td><td>2021</td><td>1.5%</td></tr><tr><td>1995</td><td>0.5%</td><td>2011</td><td>1.5%</td><td>2022</td><td>1.4%</td></tr><tr><td>1996</td><td>0.6%</td><td>2012</td><td>2.3%</td><td>2023</td><td>1.2%</td></tr><tr><td>1997</td><td>0.7%</td><td>2013</td><td>2%</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -187,10 +191,11 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/guinea-bissau/population/">人口</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/guinea-bissau/population-growth/">人口増加率</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/guinea-bissau/fertility-rate/">合計特殊出生率</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/guinea-bissau/trade/">貿易収支</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/guinea-bissau/trade/">貿易収支・輸出額・輸入額</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/guinea-bissau/government-debt/">政府債務残高</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/guinea-bissau/fiscal-balance/">財政収支</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/guinea-bissau/hdi/">HDI</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/guinea-bissau/co2-emissions/">CO2排出量</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../ja/countries/guinea-bissau/"><img class="flag-image flag-image-gw country-flag" src="../../../../public/flags/gw.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">国の概要ページを見る</span></a>
       </section>

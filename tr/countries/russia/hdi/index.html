@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Toplum sayfası navigasyonu"><a class="navigation-control is-current" href="../hdi/" aria-current="page">İnsani Gelişme Endeksi</a><a class="navigation-control" href="../military-spending/">Askerî Harcamalar</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="hdi-title">
+          <section class="indicator-block" aria-label="İnsani Gelişme Endeksi çizgi grafiği">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="hdi-title"><span class="indicator-label-cell"><span class="indicator-label-text">İnsani Gelişme Endeksi</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="İnsani Gelişme Endeksi hakkında bilgi" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="hdi">i</button></span></span></h2>
+                <h2 data-country-indicator-title="hdi"><span class="indicator-label-cell"><span class="indicator-label-text">İnsani Gelişme Endeksi</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="İnsani Gelişme Endeksi hakkında bilgi" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="hdi">i</button></span></span></h2>
                 <p class="indicator-rank"><a data-ui-text-action href="../../../../tr/rankings/countries/hdi/">Dünya sırası: #64 / 193</a></p>
               </div>
               <div class="compare-control" data-series-id="hdi">
@@ -135,7 +135,9 @@
 
             <details class="data-table-toggle" id="hdiTableToggle">
               <summary data-ui-text-action>Veri tablosu</summary>
-              <div class="data-table-wrap" id="hdiTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1990</td><td>0,762</td><td>2002</td><td>0,764</td><td>2014</td><td>0,831</td></tr><tr><td>1991</td><td>0,758</td><td>2003</td><td>0,772</td><td>2015</td><td>0,833</td></tr><tr><td>1992</td><td>0,744</td><td>2004</td><td>0,777</td><td>2016</td><td>0,835</td></tr><tr><td>1993</td><td>0,725</td><td>2005</td><td>0,78</td><td>2017</td><td>0,838</td></tr><tr><td>1994</td><td>0,712</td><td>2006</td><td>0,791</td><td>2018</td><td>0,845</td></tr><tr><td>1995</td><td>0,713</td><td>2007</td><td>0,802</td><td>2019</td><td>0,847</td></tr><tr><td>1996</td><td>0,723</td><td>2008</td><td>0,807</td><td>2020</td><td>0,818</td></tr><tr><td>1997</td><td>0,734</td><td>2009</td><td>0,805</td><td>2021</td><td>0,813</td></tr><tr><td>1998</td><td>0,738</td><td>2010</td><td>0,808</td><td>2022</td><td>0,826</td></tr><tr><td>1999</td><td>0,74</td><td>2011</td><td>0,822</td><td>2023</td><td>0,832</td></tr><tr><td>2000</td><td>0,75</td><td>2012</td><td>0,825</td><td></td><td></td></tr><tr><td>2001</td><td>0,758</td><td>2013</td><td>0,83</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="hdiTableWrap" role="region" aria-label="Veri tablosu" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1990</td><td>0,762</td><td>2002</td><td>0,764</td><td>2014</td><td>0,831</td></tr><tr><td>1991</td><td>0,758</td><td>2003</td><td>0,772</td><td>2015</td><td>0,833</td></tr><tr><td>1992</td><td>0,744</td><td>2004</td><td>0,777</td><td>2016</td><td>0,835</td></tr><tr><td>1993</td><td>0,725</td><td>2005</td><td>0,78</td><td>2017</td><td>0,838</td></tr><tr><td>1994</td><td>0,712</td><td>2006</td><td>0,791</td><td>2018</td><td>0,845</td></tr><tr><td>1995</td><td>0,713</td><td>2007</td><td>0,802</td><td>2019</td><td>0,847</td></tr><tr><td>1996</td><td>0,723</td><td>2008</td><td>0,807</td><td>2020</td><td>0,818</td></tr><tr><td>1997</td><td>0,734</td><td>2009</td><td>0,805</td><td>2021</td><td>0,813</td></tr><tr><td>1998</td><td>0,738</td><td>2010</td><td>0,808</td><td>2022</td><td>0,826</td></tr><tr><td>1999</td><td>0,74</td><td>2011</td><td>0,822</td><td>2023</td><td>0,832</td></tr><tr><td>2000</td><td>0,75</td><td>2012</td><td>0,825</td><td></td><td></td></tr><tr><td>2001</td><td>0,758</td><td>2013</td><td>0,83</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -154,9 +156,10 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/russia/population/">Nüfus</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/russia/population-growth/">Nüfus Artışı</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/russia/fertility-rate/">Toplam Doğurganlık Hızı</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/russia/trade/">Dış Ticaret Dengesi</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/russia/trade/">İhracat, İthalat ve Dış Ticaret Dengesi</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/russia/government-debt/">Kamu Borcu</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/russia/fiscal-balance/">Mali Denge</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/russia/co2-emissions/">Sera Gazı Emisyonları</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../tr/countries/russia/"><img class="flag-image flag-image-ru country-flag" src="../../../../public/flags/ru.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">Ülke profilini görüntüle</span></a>
       </section>

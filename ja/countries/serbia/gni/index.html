@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="経済ページナビゲーション"><a class="navigation-control" href="../gdp/">GDP</a><a class="navigation-control" href="../gdp-per-capita/">1人あたりGDP</a><a class="navigation-control" href="../ppp-gdp/">購買力平価GDP</a><a class="navigation-control" href="../ppp-gdp-per-capita/">1人あたり購買力平価GDP</a><a class="navigation-control is-current" href="../gni/" aria-current="page">GNI</a><a class="navigation-control" href="../gni-per-capita/">1人あたりGNI</a><a class="navigation-control" href="../gdp-growth/">経済成長率</a><a class="navigation-control" href="../inflation-rate/">インフレ率</a><a class="navigation-control" href="../unemployment-rate/">失業率</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="gni-title">
+          <section class="indicator-block" aria-label="GNI (米ドル)折れ線グラフ">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gni-title"><span class="indicator-label-cell"><span class="indicator-label-text">GNI</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(米ドル)</span><button class="indicator-info-button" type="button" aria-label="GNIの情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gni">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gni"><span class="indicator-label-cell"><span class="indicator-label-text">GNI</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(米ドル)</span><button class="indicator-info-button" type="button" aria-label="GNIの情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gni">i</button></span></span></h2>
                 <p class="indicator-rank"><a data-ui-text-action href="../../../../ja/rankings/countries/gni/">世界ランク: #76 / 210</a></p>
               </div>
               <div class="compare-control" data-series-id="gni">
@@ -135,7 +135,9 @@
 
             <details class="data-table-toggle" id="gniTableToggle">
               <summary data-ui-text-action>データ表</summary>
-              <div class="data-table-wrap" id="gniTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1990</td><td>406.88億</td><td>2002</td><td>170.36億</td><td>2014</td><td>473.73億</td></tr><tr><td>1991</td><td>371.6億</td><td>2003</td><td>223.63億</td><td>2015</td><td>394.99億</td></tr><tr><td>1992</td><td>274.15億</td><td>2004</td><td>259.95億</td><td>2016</td><td>400.45億</td></tr><tr><td>1993</td><td>194.51億</td><td>2005</td><td>271.87億</td><td>2017</td><td>431.64億</td></tr><tr><td>1994</td><td>203.82億</td><td>2006</td><td>320.22億</td><td>2018</td><td>502.55億</td></tr><tr><td>1995</td><td>219.92億</td><td>2007</td><td>432.14億</td><td>2019</td><td>511.5億</td></tr><tr><td>1996</td><td>237.27億</td><td>2008</td><td>526.7億</td><td>2020</td><td>542.85億</td></tr><tr><td>1997</td><td>228.15億</td><td>2009</td><td>462.99億</td><td>2021</td><td>637.74億</td></tr><tr><td>1998</td><td>203.15億</td><td>2010</td><td>426.87億</td><td>2022</td><td>636.42億</td></tr><tr><td>1999</td><td>118.67億</td><td>2011</td><td>493.81億</td><td>2023</td><td>769.78億</td></tr><tr><td>2000</td><td>98.66億</td><td>2012</td><td>437.22億</td><td>2024</td><td>842.94億</td></tr><tr><td>2001</td><td>129.67億</td><td>2013</td><td>486.05億</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gniTableWrap" role="region" aria-label="データ表" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1990</td><td>406.9億</td><td>2002</td><td>170.4億</td><td>2014</td><td>473.7億</td></tr><tr><td>1991</td><td>371.6億</td><td>2003</td><td>223.6億</td><td>2015</td><td>395億</td></tr><tr><td>1992</td><td>274.2億</td><td>2004</td><td>259.9億</td><td>2016</td><td>400.4億</td></tr><tr><td>1993</td><td>194.5億</td><td>2005</td><td>271.9億</td><td>2017</td><td>431.6億</td></tr><tr><td>1994</td><td>203.8億</td><td>2006</td><td>320.2億</td><td>2018</td><td>502.5億</td></tr><tr><td>1995</td><td>219.9億</td><td>2007</td><td>432.1億</td><td>2019</td><td>511.5億</td></tr><tr><td>1996</td><td>237.3億</td><td>2008</td><td>526.7億</td><td>2020</td><td>542.9億</td></tr><tr><td>1997</td><td>228.2億</td><td>2009</td><td>463億</td><td>2021</td><td>637.7億</td></tr><tr><td>1998</td><td>203.1億</td><td>2010</td><td>426.9億</td><td>2022</td><td>636.4億</td></tr><tr><td>1999</td><td>118.7億</td><td>2011</td><td>493.8億</td><td>2023</td><td>769.8億</td></tr><tr><td>2000</td><td>98.66億</td><td>2012</td><td>437.2億</td><td>2024</td><td>842.9億</td></tr><tr><td>2001</td><td>129.7億</td><td>2013</td><td>486.1億</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -154,7 +156,7 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/serbia/population/">人口</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/serbia/population-growth/">人口増加率</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/serbia/fertility-rate/">合計特殊出生率</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/serbia/trade/">貿易収支</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/serbia/trade/">貿易収支・輸出額・輸入額</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/serbia/government-debt/">政府債務残高</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/serbia/fiscal-balance/">財政収支</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/serbia/hdi/">HDI</a>

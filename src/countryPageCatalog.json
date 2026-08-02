@@ -20,8 +20,6 @@
       "generatedLabel": "current account balance",
       "relatedNavLabel": "Trade page navigation",
       "notesLabel": "Chart notes",
-      "sourceNote": "Source: IMF World Economic Outlook.",
-      "sourceNoteOverridable": false,
       "dataNote": "Data may include estimates and projections.",
       "group": "trade"
     },
@@ -39,8 +37,6 @@
       "generatedLabel": "forest area percent of land area",
       "relatedNavLabel": "Environment page navigation",
       "notesLabel": "Chart notes",
-      "sourceNote": "Source: World Bank World Development Indicators.",
-      "sourceNoteOverridable": false,
       "dataNote": "",
       "group": "environment"
     },
@@ -64,8 +60,6 @@
       "generatedLabel": "CO2 emissions",
       "relatedNavLabel": "Environment page navigation",
       "notesLabel": "Chart notes",
-      "sourceNote": "Source: World Bank World Development Indicators.",
-      "sourceNoteOverridable": false,
       "dataNote": "",
       "group": "environment"
     },
@@ -83,8 +77,6 @@
       "generatedLabel": "fertility rate",
       "relatedNavLabel": "Population page navigation",
       "notesLabel": "Chart notes",
-      "sourceNote": "Source: UN World Population Prospects.",
-      "sourceNoteOverridable": false,
       "dataNote": "",
       "group": "population"
     },
@@ -118,8 +110,6 @@
       "generatedLabel": "government debt",
       "relatedNavLabel": "Government Finance page navigation",
       "notesLabel": "Chart notes",
-      "sourceNote": "Source: IMF World Economic Outlook.",
-      "sourceNoteOverridable": false,
       "dataNote": "Data may include estimates and projections.",
       "group": "government-finance"
     },
@@ -153,8 +143,6 @@
       "generatedLabel": "fiscal balance",
       "relatedNavLabel": "Government Finance page navigation",
       "notesLabel": "Chart notes",
-      "sourceNote": "Source: IMF World Economic Outlook.",
-      "sourceNoteOverridable": false,
       "dataNote": "Data may include estimates and projections.",
       "group": "government-finance"
     },
@@ -188,8 +176,6 @@
       "generatedLabel": "government revenue and spending",
       "relatedNavLabel": "Government Finance page navigation",
       "notesLabel": "Chart notes",
-      "sourceNote": "Source: IMF World Economic Outlook.",
-      "sourceNoteOverridable": false,
       "dataNote": "Data may include estimates and projections.",
       "group": "government-finance"
     },
@@ -207,8 +193,6 @@
       "generatedLabel": "total reserves including gold",
       "relatedNavLabel": "Government Finance page navigation",
       "notesLabel": "Chart notes",
-      "sourceNote": "Source: World Bank World Development Indicators.",
-      "sourceNoteOverridable": false,
       "dataNote": "",
       "group": "government-finance"
     },
@@ -226,8 +210,6 @@
       "generatedLabel": "GDP growth",
       "relatedNavLabel": "Economy page navigation",
       "notesLabel": "Chart notes",
-      "sourceNote": "Source: IMF World Economic Outlook.",
-      "sourceNoteOverridable": false,
       "dataNote": "Data may include estimates and projections.",
       "group": "economy"
     },
@@ -255,8 +237,6 @@
       "generatedLabel": "GDP",
       "relatedNavLabel": "Economy page navigation",
       "notesLabel": "Chart notes",
-      "sourceNote": "Source: IMF World Economic Outlook.",
-      "sourceNoteOverridable": false,
       "dataNote": "Data may include estimates and projections.",
       "group": "economy"
     },
@@ -284,8 +264,6 @@
       "generatedLabel": "GDP per Capita",
       "relatedNavLabel": "Economy page navigation",
       "notesLabel": "Chart notes",
-      "sourceNote": "Source: IMF World Economic Outlook.",
-      "sourceNoteOverridable": false,
       "dataNote": "Data may include estimates and projections.",
       "group": "economy"
     },
@@ -303,8 +281,6 @@
       "generatedLabel": "GNI",
       "relatedNavLabel": "Economy page navigation",
       "notesLabel": "Chart notes",
-      "sourceNote": "Source: UNdata National Accounts Main Aggregates Database.",
-      "sourceNoteOverridable": false,
       "dataNote": "",
       "group": "economy"
     },
@@ -322,8 +298,6 @@
       "generatedLabel": "GNI per Capita",
       "relatedNavLabel": "Economy page navigation",
       "notesLabel": "Chart notes",
-      "sourceNote": "Source: UNdata National Accounts Main Aggregates Database.",
-      "sourceNoteOverridable": false,
       "dataNote": "",
       "group": "economy"
     },
@@ -347,8 +321,6 @@
       "generatedLabel": "immigrants",
       "relatedNavLabel": "Population page navigation",
       "notesLabel": "Chart notes",
-      "sourceNote": "Source: UN DESA Population Division International Migrant Stock.",
-      "sourceNoteOverridable": false,
       "dataNote": "",
       "group": "population"
     },
@@ -366,8 +338,6 @@
       "generatedLabel": "inflation rate",
       "relatedNavLabel": "Economy page navigation",
       "notesLabel": "Chart notes",
-      "sourceNote": "Source: IMF World Economic Outlook.",
-      "sourceNoteOverridable": false,
       "dataNote": "Data may include estimates and projections.",
       "group": "economy"
     },
@@ -385,8 +355,6 @@
       "generatedLabel": "life expectancy",
       "relatedNavLabel": "Population page navigation",
       "notesLabel": "Chart notes",
-      "sourceNote": "Source: UN World Population Prospects.",
-      "sourceNoteOverridable": false,
       "dataNote": "",
       "group": "population"
     },
@@ -404,8 +372,6 @@
       "generatedLabel": "population density",
       "relatedNavLabel": "Population page navigation",
       "notesLabel": "Data notes",
-      "sourceNote": "Source: UN World Population Prospects.",
-      "sourceNoteOverridable": false,
       "dataNote": "",
       "group": "population"
     },
@@ -423,8 +389,6 @@
       "generatedLabel": "population growth",
       "relatedNavLabel": "Population page navigation",
       "notesLabel": "Chart notes",
-      "sourceNote": "Source: UN World Population Prospects.",
-      "sourceNoteOverridable": false,
       "dataNote": "",
       "group": "population"
     },
@@ -442,8 +406,6 @@
       "generatedLabel": "population",
       "relatedNavLabel": "Population page navigation",
       "notesLabel": "Data notes",
-      "sourceNote": "Source: UN World Population Prospects.",
-      "sourceNoteOverridable": false,
       "dataNote": "",
       "group": "population"
     },
@@ -461,8 +423,6 @@
       "generatedLabel": "PPP",
       "relatedNavLabel": "Economy page navigation",
       "notesLabel": "Chart notes",
-      "sourceNote": "Source: IMF World Economic Outlook.",
-      "sourceNoteOverridable": false,
       "dataNote": "",
       "group": "economy"
     },
@@ -480,8 +440,6 @@
       "generatedLabel": "PPP per Capita",
       "relatedNavLabel": "Economy page navigation",
       "notesLabel": "Chart notes",
-      "sourceNote": "Source: IMF World Economic Outlook.",
-      "sourceNoteOverridable": false,
       "dataNote": "",
       "group": "economy"
     },
@@ -511,8 +469,6 @@
       "generatedLabel": "services trade",
       "relatedNavLabel": "Services trade page navigation",
       "notesLabel": "Chart notes",
-      "sourceNote": "Source: UNCTADstat.",
-      "sourceNoteOverridable": false,
       "dataNote": "",
       "group": "trade"
     },
@@ -530,8 +486,6 @@
       "generatedLabel": "HDI",
       "relatedNavLabel": "Society page navigation",
       "notesLabel": "Chart notes",
-      "sourceNote": "Source: UNDP Human Development Reports.",
-      "sourceNoteOverridable": false,
       "dataNote": "",
       "group": "society"
     },
@@ -556,7 +510,7 @@
       "relatedNavLabel": "Society page navigation",
       "notesLabel": "Chart notes",
       "sourceNote": "Source: World Bank World Development Indicators; original source: SIPRI Military Expenditure Database.",
-      "sourceNoteOverridable": false,
+      "sourceNoteOverride": true,
       "dataNote": "",
       "group": "society"
     },
@@ -586,8 +540,6 @@
       "generatedLabel": "trade",
       "relatedNavLabel": "Trade page navigation",
       "notesLabel": "Chart notes",
-      "sourceNote": "Source: UNCTADstat.",
-      "sourceNoteOverridable": false,
       "dataNote": "",
       "group": "trade"
     },
@@ -605,8 +557,6 @@
       "generatedLabel": "unemployment rate",
       "relatedNavLabel": "Economy page navigation",
       "notesLabel": "Data notes",
-      "sourceNote": "Source: IMF World Economic Outlook.",
-      "sourceNoteOverridable": false,
       "dataNote": "Data may include estimates and projections.",
       "group": "economy"
     }

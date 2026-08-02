@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="정부 재정 페이지 탐색"><a class="navigation-control is-current" href="../government-debt/" aria-current="page">정부 부채</a><a class="navigation-control" href="../fiscal-balance/">재정수지</a><a class="navigation-control" href="../government-revenue-spending/">정부 수입 및 지출</a><a class="navigation-control" href="../total-reserves/">총외환보유액</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="governmentGrossDebt-title">
+          <section class="indicator-block" aria-label="정부 총부채 (GDP 대비 %) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="governmentGrossDebt-title"><span class="indicator-label-cell"><span class="indicator-label-text">정부 총부채</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GDP 대비 %)</span><button class="indicator-info-button" type="button" aria-label="정부 총부채 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentGrossDebt">i</button></span></span></h2>
+                <h2 data-country-indicator-title="governmentGrossDebt"><span class="indicator-label-cell"><span class="indicator-label-text">정부 총부채</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GDP 대비 %)</span><button class="indicator-info-button" type="button" aria-label="정부 총부채 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentGrossDebt">i</button></span></span></h2>
                 <p class="indicator-rank"><a data-ui-text-action href="../../../../ko/rankings/countries/government-gross-debt/">세계 순위: #135 / 184</a></p>
               </div>
               <div class="compare-control" data-series-id="governmentGrossDebt">
@@ -135,14 +135,16 @@
 
             <details class="data-table-toggle" id="governmentGrossDebtTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="governmentGrossDebtTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>2000</td><td>55.5%</td><td>2009</td><td>54.3%</td><td>2018</td><td>59.2%</td></tr><tr><td>2001</td><td>63.5%</td><td>2010</td><td>43.9%</td><td>2019</td><td>57.7%</td></tr><tr><td>2002</td><td>59.5%</td><td>2011</td><td>38.8%</td><td>2020</td><td>56.5%</td></tr><tr><td>2003</td><td>22.9%</td><td>2012</td><td>39.3%</td><td>2021</td><td>54.5%</td></tr><tr><td>2004</td><td>22%</td><td>2013</td><td>40.7%</td><td>2022</td><td>50.3%</td></tr><tr><td>2005</td><td>71.1%</td><td>2014</td><td>49.5%</td><td>2023</td><td>48.6%</td></tr><tr><td>2006</td><td>38%</td><td>2015</td><td>59.9%</td><td>2024</td><td class="data-table-observation-estimated">45.1%</td></tr><tr><td>2007</td><td>61.5%</td><td>2016</td><td>57.6%</td><td>2025</td><td class="data-table-observation-estimated">40.1%</td></tr><tr><td>2008</td><td>57.2%</td><td>2017</td><td>55.7%</td><td>2026</td><td class="data-table-observation-estimated">37.1%</td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="governmentGrossDebtTableWrap" role="region" aria-label="데이터 표" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>2000</td><td>55.5%</td><td>2009</td><td>54.3%</td><td>2018</td><td>59.2%</td></tr><tr><td>2001</td><td>63.5%</td><td>2010</td><td>43.9%</td><td>2019</td><td>57.7%</td></tr><tr><td>2002</td><td>59.5%</td><td>2011</td><td>38.8%</td><td>2020</td><td>56.5%</td></tr><tr><td>2003</td><td>22.9%</td><td>2012</td><td>39.3%</td><td>2021</td><td>54.5%</td></tr><tr><td>2004</td><td>22%</td><td>2013</td><td>40.7%</td><td>2022</td><td>50.3%</td></tr><tr><td>2005</td><td>71.1%</td><td>2014</td><td>49.5%</td><td>2023</td><td>48.6%</td></tr><tr><td>2006</td><td>38%</td><td>2015</td><td>59.9%</td><td>2024</td><td class="data-table-observation-estimated">45.1%</td></tr><tr><td>2007</td><td>61.5%</td><td>2016</td><td>57.6%</td><td>2025</td><td class="data-table-observation-estimated">40.1%</td></tr><tr><td>2008</td><td>57.2%</td><td>2017</td><td>55.7%</td><td>2026</td><td class="data-table-observation-estimated">37.1%</td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="governmentGrossDebtNational-title">
+          <section class="indicator-block" aria-label="정부 총부채 (자국 통화) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="governmentGrossDebtNational-title"><span class="indicator-label-cell"><span class="indicator-label-text">정부 총부채</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(자국 통화)</span><button class="indicator-info-button" type="button" aria-label="정부 총부채 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentGrossDebtNational">i</button></span></span></h2>
+                <h2 data-country-indicator-title="governmentGrossDebtNational"><span class="indicator-label-cell"><span class="indicator-label-text">정부 총부채</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(자국 통화)</span><button class="indicator-info-button" type="button" aria-label="정부 총부채 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentGrossDebtNational">i</button></span></span></h2>
               </div>
             </header>
 
@@ -153,14 +155,16 @@
 
             <details class="data-table-toggle" id="governmentGrossDebtNationalTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="governmentGrossDebtNationalTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>2000</td><td>236.09억</td><td>2009</td><td>672.21억</td><td>2018</td><td>1,578억</td></tr><tr><td>2001</td><td>283.27억</td><td>2010</td><td>682.49억</td><td>2019</td><td>1,671억</td></tr><tr><td>2002</td><td>287.09억</td><td>2011</td><td>738.58억</td><td>2020</td><td>1,735.4억</td></tr><tr><td>2003</td><td>123.74억</td><td>2012</td><td>784.67억</td><td>2021</td><td>1,811억</td></tr><tr><td>2004</td><td>138억</td><td>2013</td><td>884.68억</td><td>2022</td><td>1,775.5억</td></tr><tr><td>2005</td><td>554.12억</td><td>2014</td><td>988.73억</td><td>2023</td><td>1,902.2억</td></tr><tr><td>2006</td><td>400.1억</td><td>2015</td><td>1,199.1억</td><td>2024</td><td class="data-table-observation-estimated">1,947.4억</td></tr><tr><td>2007</td><td>691.18억</td><td>2016</td><td>1,297.7억</td><td>2025</td><td class="data-table-observation-estimated">1,925.1억</td></tr><tr><td>2008</td><td>709.84억</td><td>2017</td><td>1,354.9억</td><td>2026</td><td class="data-table-observation-estimated">2,088.8억</td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="governmentGrossDebtNationalTableWrap" role="region" aria-label="데이터 표" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>2000</td><td>236.1억</td><td>2009</td><td>672.2억</td><td>2018</td><td>1,578억</td></tr><tr><td>2001</td><td>283.3억</td><td>2010</td><td>682.5억</td><td>2019</td><td>1,671억</td></tr><tr><td>2002</td><td>287.1억</td><td>2011</td><td>738.6억</td><td>2020</td><td>1,735억</td></tr><tr><td>2003</td><td>123.7억</td><td>2012</td><td>784.7억</td><td>2021</td><td>1,811억</td></tr><tr><td>2004</td><td>138억</td><td>2013</td><td>884.7억</td><td>2022</td><td>1,776억</td></tr><tr><td>2005</td><td>554.1억</td><td>2014</td><td>988.7억</td><td>2023</td><td>1,902억</td></tr><tr><td>2006</td><td>400.1억</td><td>2015</td><td>1,199억</td><td>2024</td><td class="data-table-observation-estimated">1,947억</td></tr><tr><td>2007</td><td>691.2억</td><td>2016</td><td>1,298억</td><td>2025</td><td class="data-table-observation-estimated">1,925억</td></tr><tr><td>2008</td><td>709.8억</td><td>2017</td><td>1,355억</td><td>2026</td><td class="data-table-observation-estimated">2,089억</td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="governmentNetDebt-title">
+          <section class="indicator-block" aria-label="정부 순부채 (GDP 대비 %) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="governmentNetDebt-title"><span class="indicator-label-cell"><span class="indicator-label-text">정부 순부채</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GDP 대비 %)</span><button class="indicator-info-button" type="button" aria-label="정부 순부채 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentNetDebt">i</button></span></span></h2>
+                <h2 data-country-indicator-title="governmentNetDebt"><span class="indicator-label-cell"><span class="indicator-label-text">정부 순부채</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GDP 대비 %)</span><button class="indicator-info-button" type="button" aria-label="정부 순부채 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentNetDebt">i</button></span></span></h2>
                 <p class="indicator-rank"><a data-ui-text-action href="../../../../ko/rankings/countries/government-net-debt/">세계 순위: #59 / 86</a></p>
               </div>
               <div class="compare-control" data-series-id="governmentNetDebt">
@@ -189,14 +193,16 @@
 
             <details class="data-table-toggle" id="governmentNetDebtTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="governmentNetDebtTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>2000</td><td>120.2%</td><td>2009</td><td>47.4%</td><td>2018</td><td>56.9%</td></tr><tr><td>2001</td><td>121.3%</td><td>2010</td><td>43.3%</td><td>2019</td><td>56.6%</td></tr><tr><td>2002</td><td>107.5%</td><td>2011</td><td>37.6%</td><td>2020</td><td>55.5%</td></tr><tr><td>2003</td><td>95.7%</td><td>2012</td><td>37.9%</td><td>2021</td><td>50.9%</td></tr><tr><td>2004</td><td>93.4%</td><td>2013</td><td>39.4%</td><td>2022</td><td>46.7%</td></tr><tr><td>2005</td><td>81.3%</td><td>2014</td><td>48.1%</td><td>2023</td><td>45.1%</td></tr><tr><td>2006</td><td>45.2%</td><td>2015</td><td>58.6%</td><td>2024</td><td class="data-table-observation-estimated">41.7%</td></tr><tr><td>2007</td><td>40%</td><td>2016</td><td>56.7%</td><td>2025</td><td class="data-table-observation-estimated">37.5%</td></tr><tr><td>2008</td><td>39.9%</td><td>2017</td><td>54.6%</td><td>2026</td><td class="data-table-observation-estimated">34.2%</td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="governmentNetDebtTableWrap" role="region" aria-label="데이터 표" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>2000</td><td>120.2%</td><td>2009</td><td>47.4%</td><td>2018</td><td>56.9%</td></tr><tr><td>2001</td><td>121.3%</td><td>2010</td><td>43.3%</td><td>2019</td><td>56.6%</td></tr><tr><td>2002</td><td>107.5%</td><td>2011</td><td>37.6%</td><td>2020</td><td>55.5%</td></tr><tr><td>2003</td><td>95.7%</td><td>2012</td><td>37.9%</td><td>2021</td><td>50.9%</td></tr><tr><td>2004</td><td>93.4%</td><td>2013</td><td>39.4%</td><td>2022</td><td>46.7%</td></tr><tr><td>2005</td><td>81.3%</td><td>2014</td><td>48.1%</td><td>2023</td><td>45.1%</td></tr><tr><td>2006</td><td>45.2%</td><td>2015</td><td>58.6%</td><td>2024</td><td class="data-table-observation-estimated">41.7%</td></tr><tr><td>2007</td><td>40%</td><td>2016</td><td>56.7%</td><td>2025</td><td class="data-table-observation-estimated">37.5%</td></tr><tr><td>2008</td><td>39.9%</td><td>2017</td><td>54.6%</td><td>2026</td><td class="data-table-observation-estimated">34.2%</td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="governmentNetDebtNational-title">
+          <section class="indicator-block" aria-label="정부 순부채 (자국 통화) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="governmentNetDebtNational-title"><span class="indicator-label-cell"><span class="indicator-label-text">정부 순부채</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(자국 통화)</span><button class="indicator-info-button" type="button" aria-label="정부 순부채 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentNetDebtNational">i</button></span></span></h2>
+                <h2 data-country-indicator-title="governmentNetDebtNational"><span class="indicator-label-cell"><span class="indicator-label-text">정부 순부채</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(자국 통화)</span><button class="indicator-info-button" type="button" aria-label="정부 순부채 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentNetDebtNational">i</button></span></span></h2>
               </div>
             </header>
 
@@ -207,7 +213,9 @@
 
             <details class="data-table-toggle" id="governmentNetDebtNationalTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="governmentNetDebtNationalTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>2000</td><td>511.13억</td><td>2009</td><td>586.18억</td><td>2018</td><td>1,516.8억</td></tr><tr><td>2001</td><td>541.47억</td><td>2010</td><td>672.52억</td><td>2019</td><td>1,639.9억</td></tr><tr><td>2002</td><td>519.02억</td><td>2011</td><td>715.7억</td><td>2020</td><td>1,703.8억</td></tr><tr><td>2003</td><td>516.05억</td><td>2012</td><td>756.48억</td><td>2021</td><td>1,692.9억</td></tr><tr><td>2004</td><td>585.66억</td><td>2013</td><td>855.64억</td><td>2022</td><td>1,647.1억</td></tr><tr><td>2005</td><td>634.28억</td><td>2014</td><td>959.72억</td><td>2023</td><td>1,763.7억</td></tr><tr><td>2006</td><td>475.83억</td><td>2015</td><td>1,173.1억</td><td>2024</td><td class="data-table-observation-estimated">1,800.8억</td></tr><tr><td>2007</td><td>449.54억</td><td>2016</td><td>1,278.9억</td><td>2025</td><td class="data-table-observation-estimated">1,799.5억</td></tr><tr><td>2008</td><td>495.34억</td><td>2017</td><td>1,328.4억</td><td>2026</td><td class="data-table-observation-estimated">1,925.6억</td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="governmentNetDebtNationalTableWrap" role="region" aria-label="데이터 표" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>2000</td><td>511.1억</td><td>2009</td><td>586.2억</td><td>2018</td><td>1,517억</td></tr><tr><td>2001</td><td>541.5억</td><td>2010</td><td>672.5억</td><td>2019</td><td>1,640억</td></tr><tr><td>2002</td><td>519억</td><td>2011</td><td>715.7억</td><td>2020</td><td>1,704억</td></tr><tr><td>2003</td><td>516.1억</td><td>2012</td><td>756.5억</td><td>2021</td><td>1,693억</td></tr><tr><td>2004</td><td>585.7억</td><td>2013</td><td>855.6억</td><td>2022</td><td>1,647억</td></tr><tr><td>2005</td><td>634.3억</td><td>2014</td><td>959.7억</td><td>2023</td><td>1,764억</td></tr><tr><td>2006</td><td>475.8억</td><td>2015</td><td>1,173억</td><td>2024</td><td class="data-table-observation-estimated">1,801억</td></tr><tr><td>2007</td><td>449.5억</td><td>2016</td><td>1,279억</td><td>2025</td><td class="data-table-observation-estimated">1,800억</td></tr><tr><td>2008</td><td>495.3억</td><td>2017</td><td>1,328억</td><td>2026</td><td class="data-table-observation-estimated">1,926억</td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -226,9 +234,10 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/mauritania/population/">인구</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/mauritania/population-growth/">인구증가율</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/mauritania/fertility-rate/">합계출산율</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/mauritania/trade/">무역수지</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/mauritania/trade/">수출, 수입 및 무역수지</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/mauritania/fiscal-balance/">재정수지</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/mauritania/hdi/">인간개발지수(HDI)</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/mauritania/co2-emissions/">온실가스 배출량</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../ko/countries/mauritania/"><img class="flag-image flag-image-mr country-flag" src="../../../../public/flags/mr.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">국가 프로필 보기</span></a>
       </section>

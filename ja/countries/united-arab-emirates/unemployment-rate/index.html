@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="経済ページナビゲーション"><a class="navigation-control" href="../gdp/">GDP</a><a class="navigation-control" href="../gdp-per-capita/">1人あたりGDP</a><a class="navigation-control" href="../ppp-gdp/">購買力平価GDP</a><a class="navigation-control" href="../ppp-gdp-per-capita/">1人あたり購買力平価GDP</a><a class="navigation-control" href="../gni/">GNI</a><a class="navigation-control" href="../gni-per-capita/">1人あたりGNI</a><a class="navigation-control" href="../gdp-growth/">経済成長率</a><a class="navigation-control" href="../inflation-rate/">インフレ率</a><a class="navigation-control is-current" href="../unemployment-rate/" aria-current="page">失業率</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="unemploymentRate-title">
+          <section class="indicator-block" aria-label="失業率折れ線グラフ">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="unemploymentRate-title"><span class="indicator-label-cell"><span class="indicator-label-text">失業率</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="失業率の情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="unemploymentRate">i</button></span></span></h2>
+                <h2 data-country-indicator-title="unemploymentRate"><span class="indicator-label-cell"><span class="indicator-label-text">失業率</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="失業率の情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="unemploymentRate">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="unemploymentRate">
                 <div class="compare-input-wrap">
@@ -134,7 +134,9 @@
 
             <details class="data-table-toggle" id="unemploymentRateTableToggle">
               <summary data-ui-text-action>データ表</summary>
-              <div class="data-table-wrap" id="unemploymentRateTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="unemploymentRateTableWrap" role="region" aria-label="データ表" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
@@ -153,10 +155,11 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/united-arab-emirates/population/">人口</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/united-arab-emirates/population-growth/">人口増加率</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/united-arab-emirates/fertility-rate/">合計特殊出生率</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/united-arab-emirates/trade/">貿易収支</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/united-arab-emirates/trade/">貿易収支・輸出額・輸入額</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/united-arab-emirates/government-debt/">政府債務残高</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/united-arab-emirates/fiscal-balance/">財政収支</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/united-arab-emirates/hdi/">HDI</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/united-arab-emirates/co2-emissions/">CO2排出量</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../ja/countries/united-arab-emirates/"><img class="flag-image flag-image-ae country-flag" src="../../../../public/flags/ae.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">国の概要ページを見る</span></a>
       </section>

@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Services trade page navigation"><a class="navigation-control" href="../trade/">Trade Balance</a><a class="navigation-control is-current" href="../services-trade/" aria-current="page">Services Trade Balance</a><a class="navigation-control" href="../current-account-balance/">Current Account Balance</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="servicesTradeBalance-title">
+          <section class="indicator-block" aria-label="Services Trade Balance (USD) line chart">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="servicesTradeBalance-title"><span class="indicator-label-cell"><span class="indicator-label-text">Services Trade Balance</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Services Trade Balance information" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="servicesTradeBalance">i</button></span></span></h2>
+                <h2 data-country-indicator-title="servicesTradeBalance"><span class="indicator-label-cell"><span class="indicator-label-text">Services Trade Balance</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Services Trade Balance information" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="servicesTradeBalance">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="servicesTradeBalance">
                 <div class="compare-input-wrap">
@@ -134,14 +134,16 @@
 
             <details class="data-table-toggle" id="servicesTradeBalanceTableToggle">
               <summary data-ui-text-action>Data table</summary>
-              <div class="data-table-wrap" id="servicesTradeBalanceTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="servicesTradeBalanceTableWrap" role="region" aria-label="Data table" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="servicesExports-title">
+          <section class="indicator-block" aria-label="Services Exports (USD) line chart">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="servicesExports-title"><span class="indicator-label-cell"><span class="indicator-label-text">Services Exports</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Services Exports information" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="servicesExports">i</button></span></span></h2>
+                <h2 data-country-indicator-title="servicesExports"><span class="indicator-label-cell"><span class="indicator-label-text">Services Exports</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Services Exports information" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="servicesExports">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="servicesExports">
                 <div class="compare-input-wrap">
@@ -169,14 +171,16 @@
 
             <details class="data-table-toggle" id="servicesExportsTableToggle">
               <summary data-ui-text-action>Data table</summary>
-              <div class="data-table-wrap" id="servicesExportsTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="servicesExportsTableWrap" role="region" aria-label="Data table" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="servicesImports-title">
+          <section class="indicator-block" aria-label="Services Imports (USD) line chart">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="servicesImports-title"><span class="indicator-label-cell"><span class="indicator-label-text">Services Imports</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Services Imports information" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="servicesImports">i</button></span></span></h2>
+                <h2 data-country-indicator-title="servicesImports"><span class="indicator-label-cell"><span class="indicator-label-text">Services Imports</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Services Imports information" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="servicesImports">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="servicesImports">
                 <div class="compare-input-wrap">
@@ -204,7 +208,9 @@
 
             <details class="data-table-toggle" id="servicesImportsTableToggle">
               <summary data-ui-text-action>Data table</summary>
-              <div class="data-table-wrap" id="servicesImportsTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="servicesImportsTableWrap" role="region" aria-label="Data table" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
@@ -223,7 +229,7 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/andorra/population/">Population</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/andorra/population-growth/">Population Growth</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/andorra/fertility-rate/">Fertility Rate</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../countries/andorra/trade/">Trade Balance</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../countries/andorra/trade/">Exports, Imports and Trade Balance</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/andorra/government-debt/">Government Debt</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/andorra/fiscal-balance/">Fiscal Balance</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/andorra/hdi/">HDI</a>

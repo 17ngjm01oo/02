@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="경제 페이지 탐색"><a class="navigation-control is-current" href="../gni-per-capita/" aria-current="page">1인당 국민총소득(GNI)</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="gniPerCapita-title">
+          <section class="indicator-block" aria-label="1인당 국민총소득(GNI) (USD) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gniPerCapita-title"><span class="indicator-label-cell"><span class="indicator-label-text">1인당 국민총소득(GNI)</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="1인당 국민총소득(GNI) 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gniPerCapita">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gniPerCapita"><span class="indicator-label-cell"><span class="indicator-label-text">1인당 국민총소득(GNI)</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="1인당 국민총소득(GNI) 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gniPerCapita">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="gniPerCapita">
                 <div class="compare-input-wrap">
@@ -134,7 +134,9 @@
 
             <details class="data-table-toggle" id="gniPerCapitaTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="gniPerCapitaTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gniPerCapitaTableWrap" role="region" aria-label="데이터 표" tabindex="0"></div>
+              </div>
             </details>
           </section>
 

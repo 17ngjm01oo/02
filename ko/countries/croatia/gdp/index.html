@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="경제 페이지 탐색"><a class="navigation-control is-current" href="../gdp/" aria-current="page">GDP</a><a class="navigation-control" href="../gdp-per-capita/">1인당 GDP</a><a class="navigation-control" href="../ppp-gdp/">구매력평가 GDP</a><a class="navigation-control" href="../ppp-gdp-per-capita/">1인당 구매력평가 GDP</a><a class="navigation-control" href="../gni/">국민총소득(GNI)</a><a class="navigation-control" href="../gni-per-capita/">1인당 국민총소득(GNI)</a><a class="navigation-control" href="../gdp-growth/">경제성장률</a><a class="navigation-control" href="../inflation-rate/">물가상승률</a><a class="navigation-control" href="../unemployment-rate/">실업률</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="gdp-title">
+          <section class="indicator-block" aria-label="GDP (USD) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gdp-title"><span class="indicator-label-cell"><span class="indicator-label-text">GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="GDP 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gdp"><span class="indicator-label-cell"><span class="indicator-label-text">GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="GDP 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdp">i</button></span></span></h2>
                 <p class="indicator-rank"><a data-ui-text-action href="../../../../ko/rankings/countries/gdp/">세계 순위: #73 / 190</a></p>
               </div>
               <div class="compare-control" data-series-id="gdp">
@@ -135,14 +135,16 @@
 
             <details class="data-table-toggle" id="gdpTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="gdpTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>5.68억</td><td>2004</td><td>418.17억</td><td>2016</td><td>526.36억</td></tr><tr><td>1993</td><td>73.58억</td><td>2005</td><td>450.35억</td><td>2017</td><td>561.64억</td></tr><tr><td>1994</td><td>166.69억</td><td>2006</td><td>495.84억</td><td>2018</td><td>616.94억</td></tr><tr><td>1995</td><td>206.57억</td><td>2007</td><td>592.95억</td><td>2019</td><td>614.74억</td></tr><tr><td>1996</td><td>221.04억</td><td>2008</td><td>684.61억</td><td>2020</td><td>579.14억</td></tr><tr><td>1997</td><td>221.01억</td><td>2009</td><td>622.51억</td><td>2021</td><td>690.52억</td></tr><tr><td>1998</td><td>239.71억</td><td>2010</td><td>590.28억</td><td>2022</td><td>712.57억</td></tr><tr><td>1999</td><td>235.93억</td><td>2011</td><td>628.75억</td><td>2023</td><td>856.47억</td></tr><tr><td>2000</td><td>221.45억</td><td>2012</td><td>575.86억</td><td>2024</td><td>929.55억</td></tr><tr><td>2001</td><td>230.68억</td><td>2013</td><td>598.46억</td><td>2025</td><td>1,060.6억</td></tr><tr><td>2002</td><td>267.39억</td><td>2014</td><td>596.23억</td><td>2026</td><td class="data-table-observation-estimated">1,165.7억</td></tr><tr><td>2003</td><td>352.4억</td><td>2015</td><td>510.05억</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gdpTableWrap" role="region" aria-label="데이터 표" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>5.68억</td><td>2004</td><td>418.2억</td><td>2016</td><td>526.4억</td></tr><tr><td>1993</td><td>73.58억</td><td>2005</td><td>450.4억</td><td>2017</td><td>561.6억</td></tr><tr><td>1994</td><td>166.7억</td><td>2006</td><td>495.8억</td><td>2018</td><td>616.9억</td></tr><tr><td>1995</td><td>206.6억</td><td>2007</td><td>593억</td><td>2019</td><td>614.7억</td></tr><tr><td>1996</td><td>221억</td><td>2008</td><td>684.6억</td><td>2020</td><td>579.1억</td></tr><tr><td>1997</td><td>221억</td><td>2009</td><td>622.5억</td><td>2021</td><td>690.5억</td></tr><tr><td>1998</td><td>239.7억</td><td>2010</td><td>590.3억</td><td>2022</td><td>712.6억</td></tr><tr><td>1999</td><td>235.9억</td><td>2011</td><td>628.8억</td><td>2023</td><td>856.5억</td></tr><tr><td>2000</td><td>221.5억</td><td>2012</td><td>575.9억</td><td>2024</td><td>929.6억</td></tr><tr><td>2001</td><td>230.7억</td><td>2013</td><td>598.5억</td><td>2025</td><td>1,061억</td></tr><tr><td>2002</td><td>267.4억</td><td>2014</td><td>596.2억</td><td>2026</td><td class="data-table-observation-estimated">1,166억</td></tr><tr><td>2003</td><td>352.4억</td><td>2015</td><td>510.1억</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="gdpNational-title">
+          <section class="indicator-block" aria-label="GDP (자국 통화) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gdpNational-title"><span class="indicator-label-cell"><span class="indicator-label-text">GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(자국 통화)</span><button class="indicator-info-button" type="button" aria-label="GDP 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpNational">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gdpNational"><span class="indicator-label-cell"><span class="indicator-label-text">GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(자국 통화)</span><button class="indicator-info-button" type="button" aria-label="GDP 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpNational">i</button></span></span></h2>
               </div>
             </header>
 
@@ -153,14 +155,16 @@
 
             <details class="data-table-toggle" id="gdpNationalTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="gdpNationalTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>4.28억</td><td>2004</td><td>336.33억</td><td>2016</td><td>475.66억</td></tr><tr><td>1993</td><td>61.72억</td><td>2005</td><td>361.79억</td><td>2017</td><td>497.34억</td></tr><tr><td>1994</td><td>138.36억</td><td>2006</td><td>394.88억</td><td>2018</td><td>522.17억</td></tr><tr><td>1995</td><td>155.71억</td><td>2007</td><td>432.61억</td><td>2019</td><td>549.07억</td></tr><tr><td>1996</td><td>171.09억</td><td>2008</td><td>465.53억</td><td>2020</td><td>507.45억</td></tr><tr><td>1997</td><td>195.14억</td><td>2009</td><td>446.8억</td><td>2021</td><td>583.44억</td></tr><tr><td>1998</td><td>215.18억</td><td>2010</td><td>444.89억</td><td>2022</td><td>676.14억</td></tr><tr><td>1999</td><td>221.15억</td><td>2011</td><td>451.78억</td><td>2023</td><td>791.87억</td></tr><tr><td>2000</td><td>239.66억</td><td>2012</td><td>447.93억</td><td>2024</td><td>859.06억</td></tr><tr><td>2001</td><td>257.56억</td><td>2013</td><td>450.6억</td><td>2025</td><td>939.09억</td></tr><tr><td>2002</td><td>282.98억</td><td>2014</td><td>448.68억</td><td>2026</td><td class="data-table-observation-estimated">988.57억</td></tr><tr><td>2003</td><td>311.62억</td><td>2015</td><td>459.66억</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gdpNationalTableWrap" role="region" aria-label="데이터 표" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>4.28억</td><td>2004</td><td>336.3억</td><td>2016</td><td>475.7억</td></tr><tr><td>1993</td><td>61.72억</td><td>2005</td><td>361.8억</td><td>2017</td><td>497.3억</td></tr><tr><td>1994</td><td>138.4억</td><td>2006</td><td>394.9억</td><td>2018</td><td>522.2억</td></tr><tr><td>1995</td><td>155.7억</td><td>2007</td><td>432.6억</td><td>2019</td><td>549.1억</td></tr><tr><td>1996</td><td>171.1억</td><td>2008</td><td>465.5억</td><td>2020</td><td>507.5억</td></tr><tr><td>1997</td><td>195.1억</td><td>2009</td><td>446.8억</td><td>2021</td><td>583.4억</td></tr><tr><td>1998</td><td>215.2억</td><td>2010</td><td>444.9억</td><td>2022</td><td>676.1억</td></tr><tr><td>1999</td><td>221.2억</td><td>2011</td><td>451.8억</td><td>2023</td><td>791.9억</td></tr><tr><td>2000</td><td>239.7억</td><td>2012</td><td>447.9억</td><td>2024</td><td>859.1억</td></tr><tr><td>2001</td><td>257.6억</td><td>2013</td><td>450.6억</td><td>2025</td><td>939.1억</td></tr><tr><td>2002</td><td>283억</td><td>2014</td><td>448.7억</td><td>2026</td><td class="data-table-observation-estimated">988.6억</td></tr><tr><td>2003</td><td>311.6억</td><td>2015</td><td>459.7억</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="realGdp-title">
+          <section class="indicator-block" aria-label="실질 GDP (자국 통화) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="realGdp-title"><span class="indicator-label-cell"><span class="indicator-label-text">실질 GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(자국 통화)</span><button class="indicator-info-button" type="button" aria-label="실질 GDP 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="realGdp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="realGdp"><span class="indicator-label-cell"><span class="indicator-label-text">실질 GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(자국 통화)</span><button class="indicator-info-button" type="button" aria-label="실질 GDP 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="realGdp">i</button></span></span></h2>
               </div>
             </header>
 
@@ -171,7 +175,9 @@
 
             <details class="data-table-toggle" id="realGdpTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="realGdpTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>315.67억</td><td>2004</td><td>465.1억</td><td>2016</td><td>515.52억</td></tr><tr><td>1993</td><td>290.42억</td><td>2005</td><td>485.22억</td><td>2017</td><td>532.46억</td></tr><tr><td>1994</td><td>307.55억</td><td>2006</td><td>509.81억</td><td>2018</td><td>547.96억</td></tr><tr><td>1995</td><td>327.96억</td><td>2007</td><td>535.56억</td><td>2019</td><td>564.95억</td></tr><tr><td>1996</td><td>347.22억</td><td>2008</td><td>546.12억</td><td>2020</td><td>518억</td></tr><tr><td>1997</td><td>370.29억</td><td>2009</td><td>508.92억</td><td>2021</td><td>583.42억</td></tr><tr><td>1998</td><td>377.19억</td><td>2010</td><td>502.12억</td><td>2022</td><td>625.99억</td></tr><tr><td>1999</td><td>373.66억</td><td>2011</td><td>501.55억</td><td>2023</td><td>649.53억</td></tr><tr><td>2000</td><td>387.67억</td><td>2012</td><td>490.35억</td><td>2024</td><td>674.39억</td></tr><tr><td>2001</td><td>399.74억</td><td>2013</td><td>489.69억</td><td>2025</td><td>695.66억</td></tr><tr><td>2002</td><td>422.92억</td><td>2014</td><td>486.96억</td><td>2026</td><td class="data-table-observation-estimated">714.01억</td></tr><tr><td>2003</td><td>446.48억</td><td>2015</td><td>498.26억</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="realGdpTableWrap" role="region" aria-label="데이터 표" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>315.7억</td><td>2004</td><td>465.1억</td><td>2016</td><td>515.5억</td></tr><tr><td>1993</td><td>290.4억</td><td>2005</td><td>485.2억</td><td>2017</td><td>532.5억</td></tr><tr><td>1994</td><td>307.6억</td><td>2006</td><td>509.8억</td><td>2018</td><td>548억</td></tr><tr><td>1995</td><td>328억</td><td>2007</td><td>535.6억</td><td>2019</td><td>565억</td></tr><tr><td>1996</td><td>347.2억</td><td>2008</td><td>546.1억</td><td>2020</td><td>518억</td></tr><tr><td>1997</td><td>370.3억</td><td>2009</td><td>508.9억</td><td>2021</td><td>583.4억</td></tr><tr><td>1998</td><td>377.2억</td><td>2010</td><td>502.1억</td><td>2022</td><td>626억</td></tr><tr><td>1999</td><td>373.7억</td><td>2011</td><td>501.6억</td><td>2023</td><td>649.5억</td></tr><tr><td>2000</td><td>387.7억</td><td>2012</td><td>490.4억</td><td>2024</td><td>674.4억</td></tr><tr><td>2001</td><td>399.7억</td><td>2013</td><td>489.7억</td><td>2025</td><td>695.7억</td></tr><tr><td>2002</td><td>422.9억</td><td>2014</td><td>487억</td><td>2026</td><td class="data-table-observation-estimated">714억</td></tr><tr><td>2003</td><td>446.5억</td><td>2015</td><td>498.3억</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -190,10 +196,11 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/croatia/population/">인구</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/croatia/population-growth/">인구증가율</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/croatia/fertility-rate/">합계출산율</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/croatia/trade/">무역수지</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/croatia/trade/">수출, 수입 및 무역수지</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/croatia/government-debt/">정부 부채</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/croatia/fiscal-balance/">재정수지</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/croatia/hdi/">인간개발지수(HDI)</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/croatia/co2-emissions/">온실가스 배출량</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../ko/countries/croatia/"><img class="flag-image flag-image-hr country-flag" src="../../../../public/flags/hr.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">국가 프로필 보기</span></a>
       </section>

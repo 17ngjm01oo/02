@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Navigasi halaman perdagangan jasa"><a class="navigation-control is-current" href="../services-trade/" aria-current="page">Neraca Perdagangan Jasa</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="servicesTradeBalance-title">
+          <section class="indicator-block" aria-label="Grafik garis Neraca Perdagangan Jasa (USD)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="servicesTradeBalance-title"><span class="indicator-label-cell"><span class="indicator-label-text">Neraca Perdagangan Jasa</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Informasi tentang Neraca Perdagangan Jasa" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="servicesTradeBalance">i</button></span></span></h2>
+                <h2 data-country-indicator-title="servicesTradeBalance"><span class="indicator-label-cell"><span class="indicator-label-text">Neraca Perdagangan Jasa</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Informasi tentang Neraca Perdagangan Jasa" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="servicesTradeBalance">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="servicesTradeBalance">
                 <div class="compare-input-wrap">
@@ -134,14 +134,16 @@
 
             <details class="data-table-toggle" id="servicesTradeBalanceTableToggle">
               <summary data-ui-text-action>Tabel data</summary>
-              <div class="data-table-wrap" id="servicesTradeBalanceTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="servicesTradeBalanceTableWrap" role="region" aria-label="Tabel data" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="servicesExports-title">
+          <section class="indicator-block" aria-label="Grafik garis Ekspor Jasa (USD)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="servicesExports-title"><span class="indicator-label-cell"><span class="indicator-label-text">Ekspor Jasa</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Informasi tentang Ekspor Jasa" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="servicesExports">i</button></span></span></h2>
+                <h2 data-country-indicator-title="servicesExports"><span class="indicator-label-cell"><span class="indicator-label-text">Ekspor Jasa</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Informasi tentang Ekspor Jasa" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="servicesExports">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="servicesExports">
                 <div class="compare-input-wrap">
@@ -169,14 +171,16 @@
 
             <details class="data-table-toggle" id="servicesExportsTableToggle">
               <summary data-ui-text-action>Tabel data</summary>
-              <div class="data-table-wrap" id="servicesExportsTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="servicesExportsTableWrap" role="region" aria-label="Tabel data" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="servicesImports-title">
+          <section class="indicator-block" aria-label="Grafik garis Impor Jasa (USD)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="servicesImports-title"><span class="indicator-label-cell"><span class="indicator-label-text">Impor Jasa</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Informasi tentang Impor Jasa" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="servicesImports">i</button></span></span></h2>
+                <h2 data-country-indicator-title="servicesImports"><span class="indicator-label-cell"><span class="indicator-label-text">Impor Jasa</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Informasi tentang Impor Jasa" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="servicesImports">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="servicesImports">
                 <div class="compare-input-wrap">
@@ -204,7 +208,9 @@
 
             <details class="data-table-toggle" id="servicesImportsTableToggle">
               <summary data-ui-text-action>Tabel data</summary>
-              <div class="data-table-wrap" id="servicesImportsTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="servicesImportsTableWrap" role="region" aria-label="Tabel data" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
@@ -219,6 +225,7 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/us-virgin-islands/population/">Jumlah Penduduk</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/us-virgin-islands/population-growth/">Pertumbuhan Penduduk</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/us-virgin-islands/fertility-rate/">Angka Kelahiran Total</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/us-virgin-islands/co2-emissions/">Emisi Gas Rumah Kaca</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../id/countries/us-virgin-islands/"><img class="flag-image flag-image-vi country-flag" src="../../../../public/flags/vi.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">Lihat profil negara</span></a>
       </section>

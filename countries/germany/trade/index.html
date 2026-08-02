@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Trade page navigation"><a class="navigation-control is-current" href="../trade/" aria-current="page">Trade Balance</a><a class="navigation-control" href="../services-trade/">Services Trade Balance</a><a class="navigation-control" href="../current-account-balance/">Current Account Balance</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="tradeBalance-title">
+          <section class="indicator-block" aria-label="Trade Balance (USD) line chart">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="tradeBalance-title"><span class="indicator-label-cell"><span class="indicator-label-text">Trade Balance</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Trade Balance information" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="tradeBalance">i</button></span></span></h2>
+                <h2 data-country-indicator-title="tradeBalance"><span class="indicator-label-cell"><span class="indicator-label-text">Trade Balance</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Trade Balance information" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="tradeBalance">i</button></span></span></h2>
                 <p class="indicator-rank"><a data-ui-text-action href="../../../rankings/countries/trade-balance/">Global rank: #2 / 218</a></p>
               </div>
               <div class="compare-control" data-series-id="tradeBalance">
@@ -135,14 +135,16 @@
 
             <details class="data-table-toggle" id="tradeBalanceTableToggle">
               <summary data-ui-text-action>Data table</summary>
-              <div class="data-table-wrap" id="tradeBalanceTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1990</td><td>65.41B</td><td>2002</td><td>125.55B</td><td>2014</td><td>287.02B</td></tr><tr><td>1991</td><td>12.94B</td><td>2003</td><td>146.95B</td><td>2015</td><td>275.07B</td></tr><tr><td>1992</td><td>21.42B</td><td>2004</td><td>194.15B</td><td>2016</td><td>279.03B</td></tr><tr><td>1993</td><td>37.53B</td><td>2005</td><td>193.84B</td><td>2017</td><td>285.28B</td></tr><tr><td>1994</td><td>45.51B</td><td>2006</td><td>201.42B</td><td>2018</td><td>276.19B</td></tr><tr><td>1995</td><td>59.6B</td><td>2007</td><td>266.23B</td><td>2019</td><td>255.43B</td></tr><tr><td>1996</td><td>65.45B</td><td>2008</td><td>261.1B</td><td>2020</td><td>210.75B</td></tr><tr><td>1997</td><td>67.16B</td><td>2009</td><td>193.69B</td><td>2021</td><td>215.94B</td></tr><tr><td>1998</td><td>72.21B</td><td>2010</td><td>204.11B</td><td>2022</td><td>92.85B</td></tr><tr><td>1999</td><td>69.56B</td><td>2011</td><td>219.12B</td><td>2023</td><td>234.68B</td></tr><tr><td>2000</td><td>54.48B</td><td>2012</td><td>246.26B</td><td>2024</td><td>262.26B</td></tr><tr><td>2001</td><td>85.53B</td><td>2013</td><td>263.8B</td><td>2025</td><td>221.39B</td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="tradeBalanceTableWrap" role="region" aria-label="Data table" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1990</td><td>65.41B</td><td>2002</td><td>125.5B</td><td>2014</td><td>287B</td></tr><tr><td>1991</td><td>12.94B</td><td>2003</td><td>146.9B</td><td>2015</td><td>275.1B</td></tr><tr><td>1992</td><td>21.42B</td><td>2004</td><td>194.1B</td><td>2016</td><td>279B</td></tr><tr><td>1993</td><td>37.53B</td><td>2005</td><td>193.8B</td><td>2017</td><td>285.3B</td></tr><tr><td>1994</td><td>45.51B</td><td>2006</td><td>201.4B</td><td>2018</td><td>276.2B</td></tr><tr><td>1995</td><td>59.6B</td><td>2007</td><td>266.2B</td><td>2019</td><td>255.4B</td></tr><tr><td>1996</td><td>65.45B</td><td>2008</td><td>261.1B</td><td>2020</td><td>210.8B</td></tr><tr><td>1997</td><td>67.16B</td><td>2009</td><td>193.7B</td><td>2021</td><td>215.9B</td></tr><tr><td>1998</td><td>72.21B</td><td>2010</td><td>204.1B</td><td>2022</td><td>92.85B</td></tr><tr><td>1999</td><td>69.56B</td><td>2011</td><td>219.1B</td><td>2023</td><td>234.7B</td></tr><tr><td>2000</td><td>54.48B</td><td>2012</td><td>246.3B</td><td>2024</td><td>262.3B</td></tr><tr><td>2001</td><td>85.53B</td><td>2013</td><td>263.8B</td><td>2025</td><td>221.4B</td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="exports-title">
+          <section class="indicator-block" aria-label="Exports (USD) line chart">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="exports-title"><span class="indicator-label-cell"><span class="indicator-label-text">Exports</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Exports information" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="exports">i</button></span></span></h2>
+                <h2 data-country-indicator-title="exports"><span class="indicator-label-cell"><span class="indicator-label-text">Exports</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Exports information" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="exports">i</button></span></span></h2>
                 <p class="indicator-rank"><a data-ui-text-action href="../../../rankings/countries/exports/">Global rank: #3 / 218</a></p>
               </div>
               <div class="compare-control" data-series-id="exports">
@@ -171,14 +173,16 @@
 
             <details class="data-table-toggle" id="exportsTableToggle">
               <summary data-ui-text-action>Data table</summary>
-              <div class="data-table-wrap" id="exportsTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1990</td><td>421.1B</td><td>2002</td><td>615.83B</td><td>2014</td><td>1.49T</td></tr><tr><td>1991</td><td>402.84B</td><td>2003</td><td>751.56B</td><td>2015</td><td>1.33T</td></tr><tr><td>1992</td><td>430.04B</td><td>2004</td><td>909.89B</td><td>2016</td><td>1.33T</td></tr><tr><td>1993</td><td>380.52B</td><td>2005</td><td>970.91B</td><td>2017</td><td>1.45T</td></tr><tr><td>1994</td><td>426.6B</td><td>2006</td><td>1.11T</td><td>2018</td><td>1.56T</td></tr><tr><td>1995</td><td>523.5B</td><td>2007</td><td>1.32T</td><td>2019</td><td>1.49T</td></tr><tr><td>1996</td><td>523.92B</td><td>2008</td><td>1.45T</td><td>2020</td><td>1.38T</td></tr><tr><td>1997</td><td>512.92B</td><td>2009</td><td>1.12T</td><td>2021</td><td>1.63T</td></tr><tr><td>1998</td><td>543.22B</td><td>2010</td><td>1.26T</td><td>2022</td><td>1.68T</td></tr><tr><td>1999</td><td>544.05B</td><td>2011</td><td>1.47T</td><td>2023</td><td>1.7T</td></tr><tr><td>2000</td><td>550.45B</td><td>2012</td><td>1.4T</td><td>2024</td><td>1.68T</td></tr><tr><td>2001</td><td>571.65B</td><td>2013</td><td>1.44T</td><td>2025</td><td>1.76T</td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="exportsTableWrap" role="region" aria-label="Data table" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1990</td><td>421.1B</td><td>2002</td><td>615.8B</td><td>2014</td><td>1.49T</td></tr><tr><td>1991</td><td>402.8B</td><td>2003</td><td>751.6B</td><td>2015</td><td>1.33T</td></tr><tr><td>1992</td><td>430B</td><td>2004</td><td>909.9B</td><td>2016</td><td>1.33T</td></tr><tr><td>1993</td><td>380.5B</td><td>2005</td><td>970.9B</td><td>2017</td><td>1.45T</td></tr><tr><td>1994</td><td>426.6B</td><td>2006</td><td>1.11T</td><td>2018</td><td>1.56T</td></tr><tr><td>1995</td><td>523.5B</td><td>2007</td><td>1.32T</td><td>2019</td><td>1.49T</td></tr><tr><td>1996</td><td>523.9B</td><td>2008</td><td>1.45T</td><td>2020</td><td>1.38T</td></tr><tr><td>1997</td><td>512.9B</td><td>2009</td><td>1.12T</td><td>2021</td><td>1.63T</td></tr><tr><td>1998</td><td>543.2B</td><td>2010</td><td>1.26T</td><td>2022</td><td>1.68T</td></tr><tr><td>1999</td><td>544B</td><td>2011</td><td>1.47T</td><td>2023</td><td>1.7T</td></tr><tr><td>2000</td><td>550.4B</td><td>2012</td><td>1.4T</td><td>2024</td><td>1.68T</td></tr><tr><td>2001</td><td>571.6B</td><td>2013</td><td>1.44T</td><td>2025</td><td>1.76T</td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="imports-title">
+          <section class="indicator-block" aria-label="Imports (USD) line chart">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="imports-title"><span class="indicator-label-cell"><span class="indicator-label-text">Imports</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Imports information" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="imports">i</button></span></span></h2>
+                <h2 data-country-indicator-title="imports"><span class="indicator-label-cell"><span class="indicator-label-text">Imports</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Imports information" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="imports">i</button></span></span></h2>
                 <p class="indicator-rank"><a data-ui-text-action href="../../../rankings/countries/imports/">Global rank: #3 / 218</a></p>
               </div>
               <div class="compare-control" data-series-id="imports">
@@ -207,7 +211,9 @@
 
             <details class="data-table-toggle" id="importsTableToggle">
               <summary data-ui-text-action>Data table</summary>
-              <div class="data-table-wrap" id="importsTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1990</td><td>355.69B</td><td>2002</td><td>490.28B</td><td>2014</td><td>1.21T</td></tr><tr><td>1991</td><td>389.91B</td><td>2003</td><td>604.61B</td><td>2015</td><td>1.05T</td></tr><tr><td>1992</td><td>408.62B</td><td>2004</td><td>715.74B</td><td>2016</td><td>1.06T</td></tr><tr><td>1993</td><td>342.99B</td><td>2005</td><td>777.07B</td><td>2017</td><td>1.16T</td></tr><tr><td>1994</td><td>381.09B</td><td>2006</td><td>906.68B</td><td>2018</td><td>1.28T</td></tr><tr><td>1995</td><td>463.9B</td><td>2007</td><td>1.05T</td><td>2019</td><td>1.23T</td></tr><tr><td>1996</td><td>458.47B</td><td>2008</td><td>1.19T</td><td>2020</td><td>1.17T</td></tr><tr><td>1997</td><td>445.76B</td><td>2009</td><td>926.35B</td><td>2021</td><td>1.41T</td></tr><tr><td>1998</td><td>471.02B</td><td>2010</td><td>1.05T</td><td>2022</td><td>1.58T</td></tr><tr><td>1999</td><td>474.49B</td><td>2011</td><td>1.25T</td><td>2023</td><td>1.47T</td></tr><tr><td>2000</td><td>495.97B</td><td>2012</td><td>1.15T</td><td>2024</td><td>1.41T</td></tr><tr><td>2001</td><td>486.12B</td><td>2013</td><td>1.18T</td><td>2025</td><td>1.54T</td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="importsTableWrap" role="region" aria-label="Data table" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1990</td><td>355.7B</td><td>2002</td><td>490.3B</td><td>2014</td><td>1.21T</td></tr><tr><td>1991</td><td>389.9B</td><td>2003</td><td>604.6B</td><td>2015</td><td>1.05T</td></tr><tr><td>1992</td><td>408.6B</td><td>2004</td><td>715.7B</td><td>2016</td><td>1.06T</td></tr><tr><td>1993</td><td>343B</td><td>2005</td><td>777.1B</td><td>2017</td><td>1.16T</td></tr><tr><td>1994</td><td>381.1B</td><td>2006</td><td>906.7B</td><td>2018</td><td>1.28T</td></tr><tr><td>1995</td><td>463.9B</td><td>2007</td><td>1.05T</td><td>2019</td><td>1.23T</td></tr><tr><td>1996</td><td>458.5B</td><td>2008</td><td>1.19T</td><td>2020</td><td>1.17T</td></tr><tr><td>1997</td><td>445.8B</td><td>2009</td><td>926.3B</td><td>2021</td><td>1.41T</td></tr><tr><td>1998</td><td>471B</td><td>2010</td><td>1.05T</td><td>2022</td><td>1.58T</td></tr><tr><td>1999</td><td>474.5B</td><td>2011</td><td>1.25T</td><td>2023</td><td>1.47T</td></tr><tr><td>2000</td><td>496B</td><td>2012</td><td>1.15T</td><td>2024</td><td>1.41T</td></tr><tr><td>2001</td><td>486.1B</td><td>2013</td><td>1.18T</td><td>2025</td><td>1.54T</td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -229,6 +235,7 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/germany/government-debt/">Government Debt</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/germany/fiscal-balance/">Fiscal Balance</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/germany/hdi/">HDI</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../countries/germany/co2-emissions/">CO2 Emissions</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../countries/germany/"><img class="flag-image flag-image-de country-flag" src="../../../public/flags/de.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">View Country Profile</span></a>
       </section>

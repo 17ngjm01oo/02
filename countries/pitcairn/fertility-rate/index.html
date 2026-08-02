@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Population page navigation"><a class="navigation-control is-current" href="../fertility-rate/" aria-current="page">Fertility Rate</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="fertilityRate-title">
+          <section class="indicator-block" aria-label="Fertility Rate line chart">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="fertilityRate-title"><span class="indicator-label-cell"><span class="indicator-label-text">Fertility Rate</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="Fertility Rate information" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="fertilityRate">i</button></span></span></h2>
+                <h2 data-country-indicator-title="fertilityRate"><span class="indicator-label-cell"><span class="indicator-label-text">Fertility Rate</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="Fertility Rate information" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="fertilityRate">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="fertilityRate">
                 <div class="compare-input-wrap">
@@ -134,7 +134,9 @@
 
             <details class="data-table-toggle" id="fertilityRateTableToggle">
               <summary data-ui-text-action>Data table</summary>
-              <div class="data-table-wrap" id="fertilityRateTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="fertilityRateTableWrap" role="region" aria-label="Data table" tabindex="0"></div>
+              </div>
             </details>
           </section>
 

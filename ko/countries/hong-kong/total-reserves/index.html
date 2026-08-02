@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="정부 재정 페이지 탐색"><a class="navigation-control" href="../government-debt/">정부 부채</a><a class="navigation-control" href="../fiscal-balance/">재정수지</a><a class="navigation-control" href="../government-revenue-spending/">정부 수입 및 지출</a><a class="navigation-control is-current" href="../total-reserves/" aria-current="page">총외환보유액</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="totalReservesIncludingGold-title">
+          <section class="indicator-block" aria-label="총외환보유액 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="totalReservesIncludingGold-title"><span class="indicator-label-cell"><span class="indicator-label-text">총외환보유액</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="총외환보유액 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="totalReservesIncludingGold">i</button></span></span></h2>
+                <h2 data-country-indicator-title="totalReservesIncludingGold"><span class="indicator-label-cell"><span class="indicator-label-text">총외환보유액</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="총외환보유액 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="totalReservesIncludingGold">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="totalReservesIncludingGold">
                 <div class="compare-input-wrap">
@@ -134,7 +134,9 @@
 
             <details class="data-table-toggle" id="totalReservesIncludingGoldTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="totalReservesIncludingGoldTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1990</td><td>246.56억</td><td>2001</td><td>1,111.7억</td><td>2013</td><td>3,112.1억</td></tr><tr><td>1991</td><td>288.89억</td><td>2002</td><td>1,119.2억</td><td>2014</td><td>3,285.2억</td></tr><tr><td>1992</td><td>352.5억</td><td>2003</td><td>1,183.9억</td><td>2015</td><td>3,587.7억</td></tr><tr><td>1993</td><td>430.13억</td><td>2004</td><td>1,235.7억</td><td>2016</td><td>3,862.9억</td></tr><tr><td>1994</td><td>492.77억</td><td>2005</td><td>1,242.8억</td><td>2017</td><td>4,314.4억</td></tr><tr><td>1995</td><td>554.24억</td><td>2006</td><td>1,332.1억</td><td>2018</td><td>4,246.2억</td></tr><tr><td>1996</td><td>638.33억</td><td>2007</td><td>1,526.9억</td><td>2019</td><td>4,413.5억</td></tr><tr><td>1997</td><td>928.23억</td><td>2008</td><td>1,825.3억</td><td>2020</td><td>4,917.8억</td></tr><tr><td>1998</td><td>896.69억</td><td>2009</td><td>2,558.4억</td><td>2021</td><td>4,968.7억</td></tr><tr><td>1999</td><td>962.55억</td><td>2011</td><td>2,854억</td><td>2022</td><td>4,240.3억</td></tr><tr><td>2000</td><td>1,075.6억</td><td>2012</td><td>3,173.6억</td><td>2023</td><td>4,255.5억</td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="totalReservesIncludingGoldTableWrap" role="region" aria-label="데이터 표" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1990</td><td>246.6억</td><td>2001</td><td>1,112억</td><td>2013</td><td>3,112억</td></tr><tr><td>1991</td><td>288.9억</td><td>2002</td><td>1,119억</td><td>2014</td><td>3,285억</td></tr><tr><td>1992</td><td>352.5억</td><td>2003</td><td>1,184억</td><td>2015</td><td>3,588억</td></tr><tr><td>1993</td><td>430.1억</td><td>2004</td><td>1,236억</td><td>2016</td><td>3,863억</td></tr><tr><td>1994</td><td>492.8억</td><td>2005</td><td>1,243억</td><td>2017</td><td>4,314억</td></tr><tr><td>1995</td><td>554.2억</td><td>2006</td><td>1,332억</td><td>2018</td><td>4,246억</td></tr><tr><td>1996</td><td>638.3억</td><td>2007</td><td>1,527억</td><td>2019</td><td>4,413억</td></tr><tr><td>1997</td><td>928.2억</td><td>2008</td><td>1,825억</td><td>2020</td><td>4,918억</td></tr><tr><td>1998</td><td>896.7억</td><td>2009</td><td>2,558억</td><td>2021</td><td>4,969억</td></tr><tr><td>1999</td><td>962.6억</td><td>2011</td><td>2,854억</td><td>2022</td><td>4,240억</td></tr><tr><td>2000</td><td>1,076억</td><td>2012</td><td>3,174억</td><td>2023</td><td>4,256억</td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -153,10 +155,11 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/hong-kong/population/">인구</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/hong-kong/population-growth/">인구증가율</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/hong-kong/fertility-rate/">합계출산율</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/hong-kong/trade/">무역수지</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/hong-kong/trade/">수출, 수입 및 무역수지</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/hong-kong/government-debt/">정부 부채</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/hong-kong/fiscal-balance/">재정수지</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/hong-kong/hdi/">인간개발지수(HDI)</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/hong-kong/co2-emissions/">온실가스 배출량</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../ko/countries/hong-kong/"><img class="flag-image flag-image-hk country-flag" src="../../../../public/flags/hk.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">국가 프로필 보기</span></a>
       </section>

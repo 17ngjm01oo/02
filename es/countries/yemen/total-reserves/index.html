@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Navegación de la página de finanzas públicas"><a class="navigation-control" href="../fiscal-balance/">Saldo fiscal</a><a class="navigation-control" href="../government-revenue-spending/">Ingresos y gastos públicos</a><a class="navigation-control is-current" href="../total-reserves/" aria-current="page">Reservas totales</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="totalReservesIncludingGold-title">
+          <section class="indicator-block" aria-label="Gráfico de líneas de Reservas totales">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="totalReservesIncludingGold-title"><span class="indicator-label-cell"><span class="indicator-label-text">Reservas totales</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="Información sobre Reservas totales" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="totalReservesIncludingGold">i</button></span></span></h2>
+                <h2 data-country-indicator-title="totalReservesIncludingGold"><span class="indicator-label-cell"><span class="indicator-label-text">Reservas totales</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="Información sobre Reservas totales" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="totalReservesIncludingGold">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="totalReservesIncludingGold">
                 <div class="compare-input-wrap">
@@ -134,7 +134,9 @@
 
             <details class="data-table-toggle" id="totalReservesIncludingGoldTableToggle">
               <summary data-ui-text-action>Tabla de datos</summary>
-              <div class="data-table-wrap" id="totalReservesIncludingGoldTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1990</td><td>441,45 M</td><td>2001</td><td>3,67 mil M</td><td>2012</td><td>6,15 mil M</td></tr><tr><td>1991</td><td>696,93 M</td><td>2002</td><td>4,43 mil M</td><td>2013</td><td>5,34 mil M</td></tr><tr><td>1992</td><td>337,12 M</td><td>2003</td><td>5,01 mil M</td><td>2014</td><td>4,36 mil M</td></tr><tr><td>1993</td><td>164,81 M</td><td>2004</td><td>5,69 mil M</td><td>2015</td><td>1,44 mil M</td></tr><tr><td>1994</td><td>273,98 M</td><td>2005</td><td>6,14 mil M</td><td>2016</td><td>877,44 M</td></tr><tr><td>1995</td><td>638,37 M</td><td>2006</td><td>7,54 mil M</td><td>2017</td><td>920,56 M</td></tr><tr><td>1996</td><td>1,04 mil M</td><td>2007</td><td>7,76 mil M</td><td>2018</td><td>2,98 mil M</td></tr><tr><td>1997</td><td>1,22 mil M</td><td>2008</td><td>8,15 mil M</td><td>2019</td><td>1,65 mil M</td></tr><tr><td>1998</td><td>1,01 mil M</td><td>2009</td><td>6,99 mil M</td><td>2020</td><td>969,61 M</td></tr><tr><td>1999</td><td>1,49 mil M</td><td>2010</td><td>5,94 mil M</td><td>2021</td><td>1,69 mil M</td></tr><tr><td>2000</td><td>2,91 mil M</td><td>2011</td><td>4,53 mil M</td><td>2022</td><td>1,25 mil M</td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="totalReservesIncludingGoldTableWrap" role="region" aria-label="Tabla de datos" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1990</td><td>441,4 M</td><td>2001</td><td>3,67 mil M</td><td>2012</td><td>6,15 mil M</td></tr><tr><td>1991</td><td>696,9 M</td><td>2002</td><td>4,43 mil M</td><td>2013</td><td>5,34 mil M</td></tr><tr><td>1992</td><td>337,1 M</td><td>2003</td><td>5,01 mil M</td><td>2014</td><td>4,36 mil M</td></tr><tr><td>1993</td><td>164,8 M</td><td>2004</td><td>5,69 mil M</td><td>2015</td><td>1,44 mil M</td></tr><tr><td>1994</td><td>274 M</td><td>2005</td><td>6,14 mil M</td><td>2016</td><td>877,4 M</td></tr><tr><td>1995</td><td>638,4 M</td><td>2006</td><td>7,54 mil M</td><td>2017</td><td>920,6 M</td></tr><tr><td>1996</td><td>1,04 mil M</td><td>2007</td><td>7,76 mil M</td><td>2018</td><td>2,98 mil M</td></tr><tr><td>1997</td><td>1,22 mil M</td><td>2008</td><td>8,15 mil M</td><td>2019</td><td>1,65 mil M</td></tr><tr><td>1998</td><td>1,01 mil M</td><td>2009</td><td>6,99 mil M</td><td>2020</td><td>969,6 M</td></tr><tr><td>1999</td><td>1,49 mil M</td><td>2010</td><td>5,94 mil M</td><td>2021</td><td>1,69 mil M</td></tr><tr><td>2000</td><td>2,91 mil M</td><td>2011</td><td>4,53 mil M</td><td>2022</td><td>1,25 mil M</td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -152,9 +154,10 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../es/countries/yemen/population/">Población</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../es/countries/yemen/population-growth/">Crecimiento de la población</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../es/countries/yemen/fertility-rate/">Tasa de fecundidad</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../es/countries/yemen/trade/">Balanza comercial</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../es/countries/yemen/trade/">Exportaciones, importaciones y balanza comercial</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../es/countries/yemen/fiscal-balance/">Saldo fiscal</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../es/countries/yemen/hdi/">IDH</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../es/countries/yemen/co2-emissions/">Emisiones de CO₂</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../es/countries/yemen/"><img class="flag-image flag-image-ye country-flag" src="../../../../public/flags/ye.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">Ver el perfil del país</span></a>
       </section>

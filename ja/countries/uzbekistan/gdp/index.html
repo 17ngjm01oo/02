@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="経済ページナビゲーション"><a class="navigation-control is-current" href="../gdp/" aria-current="page">GDP</a><a class="navigation-control" href="../gdp-per-capita/">1人あたりGDP</a><a class="navigation-control" href="../ppp-gdp/">購買力平価GDP</a><a class="navigation-control" href="../ppp-gdp-per-capita/">1人あたり購買力平価GDP</a><a class="navigation-control" href="../gni/">GNI</a><a class="navigation-control" href="../gni-per-capita/">1人あたりGNI</a><a class="navigation-control" href="../gdp-growth/">経済成長率</a><a class="navigation-control" href="../inflation-rate/">インフレ率</a><a class="navigation-control" href="../unemployment-rate/">失業率</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="gdp-title">
+          <section class="indicator-block" aria-label="GDP (米ドル)折れ線グラフ">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gdp-title"><span class="indicator-label-cell"><span class="indicator-label-text">GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(米ドル)</span><button class="indicator-info-button" type="button" aria-label="GDPの情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gdp"><span class="indicator-label-cell"><span class="indicator-label-text">GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(米ドル)</span><button class="indicator-info-button" type="button" aria-label="GDPの情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdp">i</button></span></span></h2>
                 <p class="indicator-rank"><a data-ui-text-action href="../../../../ja/rankings/countries/gdp/">世界ランク: #59 / 190</a></p>
               </div>
               <div class="compare-control" data-series-id="gdp">
@@ -135,14 +135,16 @@
 
             <details class="data-table-toggle" id="gdpTableToggle">
               <summary data-ui-text-action>データ表</summary>
-              <div class="data-table-wrap" id="gdpTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>49.71億</td><td>2004</td><td>167.08億</td><td>2016</td><td>973.25億</td></tr><tr><td>1993</td><td>76.59億</td><td>2005</td><td>199.22億</td><td>2017</td><td>697.03億</td></tr><tr><td>1994</td><td>90.78億</td><td>2006</td><td>237.03億</td><td>2018</td><td>613.18億</td></tr><tr><td>1995</td><td>141.55億</td><td>2007</td><td>310.54億</td><td>2019</td><td>701.71億</td></tr><tr><td>1996</td><td>193.82億</td><td>2008</td><td>398.22億</td><td>2020</td><td>701.27億</td></tr><tr><td>1997</td><td>204.71億</td><td>2009</td><td>465.82億</td><td>2021</td><td>811.7億</td></tr><tr><td>1998</td><td>208.1億</td><td>2010</td><td>555.51億</td><td>2022</td><td>943.17億</td></tr><tr><td>1999</td><td>237.24億</td><td>2011</td><td>674.43億</td><td>2023</td><td>1,075.2億</td></tr><tr><td>2000</td><td>190.96億</td><td>2012</td><td>753.22億</td><td>2024</td><td>1,213.5億</td></tr><tr><td>2001</td><td>161.93億</td><td>2013</td><td>826.88億</td><td>2025</td><td class="data-table-observation-estimated">1,470.7億</td></tr><tr><td>2002</td><td>134.44億</td><td>2014</td><td>913.07億</td><td>2026</td><td class="data-table-observation-estimated">1,815億</td></tr><tr><td>2003</td><td>141億</td><td>2015</td><td>969.6億</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gdpTableWrap" role="region" aria-label="データ表" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>49.71億</td><td>2004</td><td>167.1億</td><td>2016</td><td>973.3億</td></tr><tr><td>1993</td><td>76.59億</td><td>2005</td><td>199.2億</td><td>2017</td><td>697億</td></tr><tr><td>1994</td><td>90.78億</td><td>2006</td><td>237億</td><td>2018</td><td>613.2億</td></tr><tr><td>1995</td><td>141.6億</td><td>2007</td><td>310.5億</td><td>2019</td><td>701.7億</td></tr><tr><td>1996</td><td>193.8億</td><td>2008</td><td>398.2億</td><td>2020</td><td>701.3億</td></tr><tr><td>1997</td><td>204.7億</td><td>2009</td><td>465.8億</td><td>2021</td><td>811.7億</td></tr><tr><td>1998</td><td>208.1億</td><td>2010</td><td>555.5億</td><td>2022</td><td>943.2億</td></tr><tr><td>1999</td><td>237.2億</td><td>2011</td><td>674.4億</td><td>2023</td><td>1,075億</td></tr><tr><td>2000</td><td>191億</td><td>2012</td><td>753.2億</td><td>2024</td><td>1,214億</td></tr><tr><td>2001</td><td>161.9億</td><td>2013</td><td>826.9億</td><td>2025</td><td class="data-table-observation-estimated">1,471億</td></tr><tr><td>2002</td><td>134.4億</td><td>2014</td><td>913.1億</td><td>2026</td><td class="data-table-observation-estimated">1,815億</td></tr><tr><td>2003</td><td>141億</td><td>2015</td><td>969.6億</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="gdpNational-title">
+          <section class="indicator-block" aria-label="GDP (自国通貨)折れ線グラフ">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gdpNational-title"><span class="indicator-label-cell"><span class="indicator-label-text">GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(自国通貨)</span><button class="indicator-info-button" type="button" aria-label="GDPの情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpNational">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gdpNational"><span class="indicator-label-cell"><span class="indicator-label-text">GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(自国通貨)</span><button class="indicator-info-button" type="button" aria-label="GDPの情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpNational">i</button></span></span></h2>
               </div>
             </header>
 
@@ -153,14 +155,16 @@
 
             <details class="data-table-toggle" id="gdpNationalTableToggle">
               <summary data-ui-text-action>データ表</summary>
-              <div class="data-table-wrap" id="gdpNationalTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1991</td><td>8,600万</td><td>2003</td><td>13.7兆</td><td>2015</td><td>250.54兆</td></tr><tr><td>1992</td><td>6.18億</td><td>2004</td><td>17.07兆</td><td>2016</td><td>290.21兆</td></tr><tr><td>1993</td><td>70.93億</td><td>2005</td><td>22.17兆</td><td>2017</td><td>356.45兆</td></tr><tr><td>1994</td><td>903.18億</td><td>2006</td><td>28.9兆</td><td>2018</td><td>494.81兆</td></tr><tr><td>1995</td><td>4,215.2億</td><td>2007</td><td>39.24兆</td><td>2019</td><td>620.08兆</td></tr><tr><td>1996</td><td>7,783億</td><td>2008</td><td>52.55兆</td><td>2020</td><td>705.08兆</td></tr><tr><td>1997</td><td>1.36兆</td><td>2009</td><td>68.27兆</td><td>2021</td><td>861.17兆</td></tr><tr><td>1998</td><td>1.97兆</td><td>2010</td><td>88.1兆</td><td>2022</td><td>1,041.9兆</td></tr><tr><td>1999</td><td>2.96兆</td><td>2011</td><td>115.63兆</td><td>2023</td><td>1,261.8兆</td></tr><tr><td>2000</td><td>4.53兆</td><td>2012</td><td>142.33兆</td><td>2024</td><td>1,535.4兆</td></tr><tr><td>2001</td><td>6.86兆</td><td>2013</td><td>173.2兆</td><td>2025</td><td class="data-table-observation-estimated">1,849.6兆</td></tr><tr><td>2002</td><td>10.37兆</td><td>2014</td><td>211兆</td><td>2026</td><td class="data-table-observation-estimated">2,216.6兆</td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gdpNationalTableWrap" role="region" aria-label="データ表" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1991</td><td>8,600万</td><td>2003</td><td>13.7兆</td><td>2015</td><td>250.5兆</td></tr><tr><td>1992</td><td>6.18億</td><td>2004</td><td>17.07兆</td><td>2016</td><td>290.2兆</td></tr><tr><td>1993</td><td>70.93億</td><td>2005</td><td>22.17兆</td><td>2017</td><td>356.5兆</td></tr><tr><td>1994</td><td>903.2億</td><td>2006</td><td>28.9兆</td><td>2018</td><td>494.8兆</td></tr><tr><td>1995</td><td>4,215億</td><td>2007</td><td>39.24兆</td><td>2019</td><td>620.1兆</td></tr><tr><td>1996</td><td>7,783億</td><td>2008</td><td>52.55兆</td><td>2020</td><td>705.1兆</td></tr><tr><td>1997</td><td>1.36兆</td><td>2009</td><td>68.27兆</td><td>2021</td><td>861.2兆</td></tr><tr><td>1998</td><td>1.97兆</td><td>2010</td><td>88.1兆</td><td>2022</td><td>1,042兆</td></tr><tr><td>1999</td><td>2.96兆</td><td>2011</td><td>115.6兆</td><td>2023</td><td>1,262兆</td></tr><tr><td>2000</td><td>4.53兆</td><td>2012</td><td>142.3兆</td><td>2024</td><td>1,535兆</td></tr><tr><td>2001</td><td>6.86兆</td><td>2013</td><td>173.2兆</td><td>2025</td><td class="data-table-observation-estimated">1,850兆</td></tr><tr><td>2002</td><td>10.37兆</td><td>2014</td><td>211兆</td><td>2026</td><td class="data-table-observation-estimated">2,217兆</td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="realGdp-title">
+          <section class="indicator-block" aria-label="実質GDP (自国通貨)折れ線グラフ">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="realGdp-title"><span class="indicator-label-cell"><span class="indicator-label-text">実質GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(自国通貨)</span><button class="indicator-info-button" type="button" aria-label="実質GDPの情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="realGdp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="realGdp"><span class="indicator-label-cell"><span class="indicator-label-text">実質GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(自国通貨)</span><button class="indicator-info-button" type="button" aria-label="実質GDPの情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="realGdp">i</button></span></span></h2>
               </div>
             </header>
 
@@ -171,7 +175,9 @@
 
             <details class="data-table-toggle" id="realGdpTableToggle">
               <summary data-ui-text-action>データ表</summary>
-              <div class="data-table-wrap" id="realGdpTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1991</td><td>197.69兆</td><td>2003</td><td>220.06兆</td><td>2015</td><td>550.02兆</td></tr><tr><td>1992</td><td>175.75兆</td><td>2004</td><td>236.34兆</td><td>2016</td><td>586.93兆</td></tr><tr><td>1993</td><td>171.71兆</td><td>2005</td><td>252.89兆</td><td>2017</td><td>614.52兆</td></tr><tr><td>1994</td><td>162.78兆</td><td>2006</td><td>271.85兆</td><td>2018</td><td>649.69兆</td></tr><tr><td>1995</td><td>161.31兆</td><td>2007</td><td>297.68兆</td><td>2019</td><td>693.83兆</td></tr><tr><td>1996</td><td>164.05兆</td><td>2008</td><td>324.47兆</td><td>2020</td><td>705.08兆</td></tr><tr><td>1997</td><td>172.59兆</td><td>2009</td><td>350.75兆</td><td>2021</td><td>762.92兆</td></tr><tr><td>1998</td><td>180.01兆</td><td>2010</td><td>377.6兆</td><td>2022</td><td>809.36兆</td></tr><tr><td>1999</td><td>187.75兆</td><td>2011</td><td>408.29兆</td><td>2023</td><td>860.47兆</td></tr><tr><td>2000</td><td>194.88兆</td><td>2012</td><td>438.32兆</td><td>2024</td><td>917.92兆</td></tr><tr><td>2001</td><td>203.07兆</td><td>2013</td><td>473.05兆</td><td>2025</td><td class="data-table-observation-estimated">988.6兆</td></tr><tr><td>2002</td><td>211.19兆</td><td>2014</td><td>509.54兆</td><td>2026</td><td class="data-table-observation-estimated">1,052.6兆</td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="realGdpTableWrap" role="region" aria-label="データ表" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1991</td><td>197.7兆</td><td>2003</td><td>220.1兆</td><td>2015</td><td>550兆</td></tr><tr><td>1992</td><td>175.7兆</td><td>2004</td><td>236.3兆</td><td>2016</td><td>586.9兆</td></tr><tr><td>1993</td><td>171.7兆</td><td>2005</td><td>252.9兆</td><td>2017</td><td>614.5兆</td></tr><tr><td>1994</td><td>162.8兆</td><td>2006</td><td>271.9兆</td><td>2018</td><td>649.7兆</td></tr><tr><td>1995</td><td>161.3兆</td><td>2007</td><td>297.7兆</td><td>2019</td><td>693.8兆</td></tr><tr><td>1996</td><td>164.1兆</td><td>2008</td><td>324.5兆</td><td>2020</td><td>705.1兆</td></tr><tr><td>1997</td><td>172.6兆</td><td>2009</td><td>350.8兆</td><td>2021</td><td>762.9兆</td></tr><tr><td>1998</td><td>180兆</td><td>2010</td><td>377.6兆</td><td>2022</td><td>809.4兆</td></tr><tr><td>1999</td><td>187.7兆</td><td>2011</td><td>408.3兆</td><td>2023</td><td>860.5兆</td></tr><tr><td>2000</td><td>194.9兆</td><td>2012</td><td>438.3兆</td><td>2024</td><td>917.9兆</td></tr><tr><td>2001</td><td>203.1兆</td><td>2013</td><td>473兆</td><td>2025</td><td class="data-table-observation-estimated">988.6兆</td></tr><tr><td>2002</td><td>211.2兆</td><td>2014</td><td>509.5兆</td><td>2026</td><td class="data-table-observation-estimated">1,053兆</td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -190,10 +196,11 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/uzbekistan/population/">人口</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/uzbekistan/population-growth/">人口増加率</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/uzbekistan/fertility-rate/">合計特殊出生率</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/uzbekistan/trade/">貿易収支</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/uzbekistan/trade/">貿易収支・輸出額・輸入額</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/uzbekistan/government-debt/">政府債務残高</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/uzbekistan/fiscal-balance/">財政収支</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/uzbekistan/hdi/">HDI</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/uzbekistan/co2-emissions/">CO2排出量</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../ja/countries/uzbekistan/"><img class="flag-image flag-image-uz country-flag" src="../../../../public/flags/uz.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">国の概要ページを見る</span></a>
       </section>

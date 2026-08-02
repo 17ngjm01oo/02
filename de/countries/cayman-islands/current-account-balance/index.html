@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Seitennavigation Handel"><a class="navigation-control" href="../trade/">Handelsbilanz</a><a class="navigation-control" href="../services-trade/">Dienstleistungsbilanz</a><a class="navigation-control is-current" href="../current-account-balance/" aria-current="page">Leistungsbilanzsaldo</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="currentAccountBalance-title">
+          <section class="indicator-block" aria-label="Liniendiagramm: Leistungsbilanzsaldo (USD)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="currentAccountBalance-title"><span class="indicator-label-cell"><span class="indicator-label-text">Leistungsbilanzsaldo</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Informationen zu Leistungsbilanzsaldo" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="currentAccountBalance">i</button></span></span></h2>
+                <h2 data-country-indicator-title="currentAccountBalance"><span class="indicator-label-cell"><span class="indicator-label-text">Leistungsbilanzsaldo</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Informationen zu Leistungsbilanzsaldo" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="currentAccountBalance">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="currentAccountBalance">
                 <div class="compare-input-wrap">
@@ -134,14 +134,16 @@
 
             <details class="data-table-toggle" id="currentAccountBalanceTableToggle">
               <summary data-ui-text-action>Datentabelle</summary>
-              <div class="data-table-wrap" id="currentAccountBalanceTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="currentAccountBalanceTableWrap" role="region" aria-label="Datentabelle" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="currentAccountBalancePercentGdp-title">
+          <section class="indicator-block" aria-label="Liniendiagramm: Leistungsbilanzsaldo (% des BIP)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="currentAccountBalancePercentGdp-title"><span class="indicator-label-cell"><span class="indicator-label-text">Leistungsbilanzsaldo</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(% des BIP)</span><button class="indicator-info-button" type="button" aria-label="Informationen zu Leistungsbilanzsaldo" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="currentAccountBalancePercentGdp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="currentAccountBalancePercentGdp"><span class="indicator-label-cell"><span class="indicator-label-text">Leistungsbilanzsaldo</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(% des BIP)</span><button class="indicator-info-button" type="button" aria-label="Informationen zu Leistungsbilanzsaldo" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="currentAccountBalancePercentGdp">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="currentAccountBalancePercentGdp">
                 <div class="compare-input-wrap">
@@ -169,7 +171,9 @@
 
             <details class="data-table-toggle" id="currentAccountBalancePercentGdpTableToggle">
               <summary data-ui-text-action>Datentabelle</summary>
-              <div class="data-table-wrap" id="currentAccountBalancePercentGdpTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="currentAccountBalancePercentGdpTableWrap" role="region" aria-label="Datentabelle" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
@@ -185,7 +189,8 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../de/countries/cayman-islands/population/">Bevölkerung</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../de/countries/cayman-islands/population-growth/">Bevölkerungswachstum</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../de/countries/cayman-islands/fertility-rate/">Fertilitätsrate</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../de/countries/cayman-islands/trade/">Handelsbilanz</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../de/countries/cayman-islands/trade/">Exporte, Importe und Handelsbilanz</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../de/countries/cayman-islands/co2-emissions/">Treibhausgasemissionen</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../de/countries/cayman-islands/"><img class="flag-image flag-image-ky country-flag" src="../../../../public/flags/ky.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">Länderprofil anzeigen</span></a>
       </section>

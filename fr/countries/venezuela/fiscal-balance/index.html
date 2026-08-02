@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Navigation de la page Finances publiques"><a class="navigation-control" href="../government-debt/">Dette publique</a><a class="navigation-control is-current" href="../fiscal-balance/" aria-current="page">Solde budgétaire</a><a class="navigation-control" href="../government-revenue-spending/">Recettes et dépenses publiques</a><a class="navigation-control" href="../total-reserves/">Réserves totales</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="fiscalBalance-title">
+          <section class="indicator-block" aria-label="Graphique linéaire de Solde budgétaire (% du PIB)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="fiscalBalance-title"><span class="indicator-label-cell"><span class="indicator-label-text">Solde budgétaire</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(% du PIB)</span><button class="indicator-info-button" type="button" aria-label="Informations sur Solde budgétaire" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="fiscalBalance">i</button></span></span></h2>
+                <h2 data-country-indicator-title="fiscalBalance"><span class="indicator-label-cell"><span class="indicator-label-text">Solde budgétaire</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(% du PIB)</span><button class="indicator-info-button" type="button" aria-label="Informations sur Solde budgétaire" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="fiscalBalance">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="fiscalBalance">
                 <div class="compare-input-wrap">
@@ -134,14 +134,16 @@
 
             <details class="data-table-toggle" id="fiscalBalanceTableToggle">
               <summary data-ui-text-action>Tableau de données</summary>
-              <div class="data-table-wrap" id="fiscalBalanceTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1988</td><td>-9,2%</td><td>2001</td><td>-4,6%</td><td>2014</td><td>-9,8%</td></tr><tr><td>1989</td><td>-0,9%</td><td>2002</td><td>-1,5%</td><td>2015</td><td>-8,1%</td></tr><tr><td>1990</td><td>3,8%</td><td>2003</td><td>0,2%</td><td>2016</td><td>-8,5%</td></tr><tr><td>1991</td><td>-2,3%</td><td>2004</td><td>2,5%</td><td>2017</td><td>-13,3%</td></tr><tr><td>1992</td><td>-6,4%</td><td>2005</td><td>4,1%</td><td>2018</td><td class="data-table-observation-estimated">-31%</td></tr><tr><td>1993</td><td>-2,9%</td><td>2006</td><td>-1,6%</td><td>2019</td><td class="data-table-observation-estimated">-10,9%</td></tr><tr><td>1994</td><td>-11,2%</td><td>2007</td><td>-2,8%</td><td>2020</td><td class="data-table-observation-estimated">-6,6%</td></tr><tr><td>1995</td><td>-5,9%</td><td>2008</td><td>-3,5%</td><td>2021</td><td class="data-table-observation-estimated">-5,8%</td></tr><tr><td>1996</td><td>7,9%</td><td>2009</td><td>-8,7%</td><td>2022</td><td class="data-table-observation-estimated">-5,3%</td></tr><tr><td>1997</td><td>2,6%</td><td>2010</td><td>-4,7%</td><td>2023</td><td class="data-table-observation-estimated">-1,2%</td></tr><tr><td>1998</td><td>-4,5%</td><td>2011</td><td>-8,2%</td><td>2024</td><td class="data-table-observation-estimated">-3,7%</td></tr><tr><td>1999</td><td>0,7%</td><td>2012</td><td>-9,9%</td><td>2025</td><td class="data-table-observation-estimated">-5,8%</td></tr><tr><td>2000</td><td>4,5%</td><td>2013</td><td>-10,4%</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="fiscalBalanceTableWrap" role="region" aria-label="Tableau de données" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1988</td><td>-9,2%</td><td>2001</td><td>-4,6%</td><td>2014</td><td>-9,8%</td></tr><tr><td>1989</td><td>-0,9%</td><td>2002</td><td>-1,5%</td><td>2015</td><td>-8,1%</td></tr><tr><td>1990</td><td>3,8%</td><td>2003</td><td>0,2%</td><td>2016</td><td>-8,5%</td></tr><tr><td>1991</td><td>-2,3%</td><td>2004</td><td>2,5%</td><td>2017</td><td>-13,3%</td></tr><tr><td>1992</td><td>-6,4%</td><td>2005</td><td>4,1%</td><td>2018</td><td class="data-table-observation-estimated">-31%</td></tr><tr><td>1993</td><td>-2,9%</td><td>2006</td><td>-1,6%</td><td>2019</td><td class="data-table-observation-estimated">-10,9%</td></tr><tr><td>1994</td><td>-11,2%</td><td>2007</td><td>-2,8%</td><td>2020</td><td class="data-table-observation-estimated">-6,6%</td></tr><tr><td>1995</td><td>-5,9%</td><td>2008</td><td>-3,5%</td><td>2021</td><td class="data-table-observation-estimated">-5,8%</td></tr><tr><td>1996</td><td>7,9%</td><td>2009</td><td>-8,7%</td><td>2022</td><td class="data-table-observation-estimated">-5,3%</td></tr><tr><td>1997</td><td>2,6%</td><td>2010</td><td>-4,7%</td><td>2023</td><td class="data-table-observation-estimated">-1,2%</td></tr><tr><td>1998</td><td>-4,5%</td><td>2011</td><td>-8,2%</td><td>2024</td><td class="data-table-observation-estimated">-3,7%</td></tr><tr><td>1999</td><td>0,7%</td><td>2012</td><td>-9,9%</td><td>2025</td><td class="data-table-observation-estimated">-5,8%</td></tr><tr><td>2000</td><td>4,5%</td><td>2013</td><td>-10,4%</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="fiscalBalanceNational-title">
+          <section class="indicator-block" aria-label="Graphique linéaire de Solde budgétaire (Monnaie locale)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="fiscalBalanceNational-title"><span class="indicator-label-cell"><span class="indicator-label-text">Solde budgétaire</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Monnaie locale)</span><button class="indicator-info-button" type="button" aria-label="Informations sur Solde budgétaire" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="fiscalBalanceNational">i</button></span></span></h2>
+                <h2 data-country-indicator-title="fiscalBalanceNational"><span class="indicator-label-cell"><span class="indicator-label-text">Solde budgétaire</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Monnaie locale)</span><button class="indicator-info-button" type="button" aria-label="Informations sur Solde budgétaire" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="fiscalBalanceNational">i</button></span></span></h2>
               </div>
             </header>
 
@@ -152,14 +154,16 @@
 
             <details class="data-table-toggle" id="fiscalBalanceNationalTableToggle">
               <summary data-ui-text-action>Tableau de données</summary>
-              <div class="data-table-wrap" id="fiscalBalanceNationalTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>2018</td><td class="data-table-observation-estimated">-2 M</td><td>2021</td><td class="data-table-observation-estimated">-10,82 Md</td><td>2024</td><td class="data-table-observation-estimated">-182,12 Md</td></tr><tr><td>2019</td><td class="data-table-observation-estimated">-110 M</td><td>2022</td><td class="data-table-observation-estimated">-32,89 Md</td><td>2025</td><td class="data-table-observation-estimated">-963,28 Md</td></tr><tr><td>2020</td><td class="data-table-observation-estimated">-929 M</td><td>2023</td><td class="data-table-observation-estimated">-37,78 Md</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="fiscalBalanceNationalTableWrap" role="region" aria-label="Tableau de données" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>2018</td><td class="data-table-observation-estimated">-2 M</td><td>2021</td><td class="data-table-observation-estimated">-10,82 Md</td><td>2024</td><td class="data-table-observation-estimated">-182,1 Md</td></tr><tr><td>2019</td><td class="data-table-observation-estimated">-110 M</td><td>2022</td><td class="data-table-observation-estimated">-32,89 Md</td><td>2025</td><td class="data-table-observation-estimated">-963,3 Md</td></tr><tr><td>2020</td><td class="data-table-observation-estimated">-929 M</td><td>2023</td><td class="data-table-observation-estimated">-37,78 Md</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="primaryFiscalBalance-title">
+          <section class="indicator-block" aria-label="Graphique linéaire de Solde budgétaire primaire (% du PIB)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="primaryFiscalBalance-title"><span class="indicator-label-cell"><span class="indicator-label-text">Solde budgétaire primaire</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(% du PIB)</span><button class="indicator-info-button" type="button" aria-label="Informations sur Solde budgétaire primaire" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="primaryFiscalBalance">i</button></span></span></h2>
+                <h2 data-country-indicator-title="primaryFiscalBalance"><span class="indicator-label-cell"><span class="indicator-label-text">Solde budgétaire primaire</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(% du PIB)</span><button class="indicator-info-button" type="button" aria-label="Informations sur Solde budgétaire primaire" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="primaryFiscalBalance">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="primaryFiscalBalance">
                 <div class="compare-input-wrap">
@@ -187,14 +191,16 @@
 
             <details class="data-table-toggle" id="primaryFiscalBalanceTableToggle">
               <summary data-ui-text-action>Tableau de données</summary>
-              <div class="data-table-wrap" id="primaryFiscalBalanceTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1988</td><td>-5,8%</td><td>2001</td><td>-1,2%</td><td>2014</td><td>-7,5%</td></tr><tr><td>1989</td><td>4,5%</td><td>2002</td><td>3,7%</td><td>2015</td><td>-6,8%</td></tr><tr><td>1990</td><td>8,9%</td><td>2003</td><td>5,4%</td><td>2016</td><td>-8,1%</td></tr><tr><td>1991</td><td>1,9%</td><td>2004</td><td>6,2%</td><td>2017</td><td>-13,2%</td></tr><tr><td>1992</td><td>-2,4%</td><td>2005</td><td>7,1%</td><td>2018</td><td class="data-table-observation-estimated">-30,3%</td></tr><tr><td>1993</td><td>1,7%</td><td>2006</td><td>0,5%</td><td>2019</td><td class="data-table-observation-estimated">-10%</td></tr><tr><td>1994</td><td>-6,1%</td><td>2007</td><td>-1,2%</td><td>2020</td><td class="data-table-observation-estimated">-4,9%</td></tr><tr><td>1995</td><td>0,3%</td><td>2008</td><td>-2%</td><td>2021</td><td class="data-table-observation-estimated">-4,5%</td></tr><tr><td>1996</td><td>12,8%</td><td>2009</td><td>-7,2%</td><td>2022</td><td class="data-table-observation-estimated">-4,3%</td></tr><tr><td>1997</td><td>5,6%</td><td>2010</td><td>-3,2%</td><td>2023</td><td class="data-table-observation-estimated">-0,5%</td></tr><tr><td>1998</td><td>-0,6%</td><td>2011</td><td>-6,1%</td><td>2024</td><td class="data-table-observation-estimated">-3%</td></tr><tr><td>1999</td><td>4,6%</td><td>2012</td><td>-6,5%</td><td>2025</td><td class="data-table-observation-estimated">-5,1%</td></tr><tr><td>2000</td><td>7,5%</td><td>2013</td><td>-7,5%</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="primaryFiscalBalanceTableWrap" role="region" aria-label="Tableau de données" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1988</td><td>-5,8%</td><td>2001</td><td>-1,2%</td><td>2014</td><td>-7,5%</td></tr><tr><td>1989</td><td>4,5%</td><td>2002</td><td>3,7%</td><td>2015</td><td>-6,8%</td></tr><tr><td>1990</td><td>8,9%</td><td>2003</td><td>5,4%</td><td>2016</td><td>-8,1%</td></tr><tr><td>1991</td><td>1,9%</td><td>2004</td><td>6,2%</td><td>2017</td><td>-13,2%</td></tr><tr><td>1992</td><td>-2,4%</td><td>2005</td><td>7,1%</td><td>2018</td><td class="data-table-observation-estimated">-30,3%</td></tr><tr><td>1993</td><td>1,7%</td><td>2006</td><td>0,5%</td><td>2019</td><td class="data-table-observation-estimated">-10%</td></tr><tr><td>1994</td><td>-6,1%</td><td>2007</td><td>-1,2%</td><td>2020</td><td class="data-table-observation-estimated">-4,9%</td></tr><tr><td>1995</td><td>0,3%</td><td>2008</td><td>-2%</td><td>2021</td><td class="data-table-observation-estimated">-4,5%</td></tr><tr><td>1996</td><td>12,8%</td><td>2009</td><td>-7,2%</td><td>2022</td><td class="data-table-observation-estimated">-4,3%</td></tr><tr><td>1997</td><td>5,6%</td><td>2010</td><td>-3,2%</td><td>2023</td><td class="data-table-observation-estimated">-0,5%</td></tr><tr><td>1998</td><td>-0,6%</td><td>2011</td><td>-6,1%</td><td>2024</td><td class="data-table-observation-estimated">-3%</td></tr><tr><td>1999</td><td>4,6%</td><td>2012</td><td>-6,5%</td><td>2025</td><td class="data-table-observation-estimated">-5,1%</td></tr><tr><td>2000</td><td>7,5%</td><td>2013</td><td>-7,5%</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="primaryFiscalBalanceNational-title">
+          <section class="indicator-block" aria-label="Graphique linéaire de Solde budgétaire primaire (Monnaie locale)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="primaryFiscalBalanceNational-title"><span class="indicator-label-cell"><span class="indicator-label-text">Solde budgétaire primaire</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Monnaie locale)</span><button class="indicator-info-button" type="button" aria-label="Informations sur Solde budgétaire primaire" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="primaryFiscalBalanceNational">i</button></span></span></h2>
+                <h2 data-country-indicator-title="primaryFiscalBalanceNational"><span class="indicator-label-cell"><span class="indicator-label-text">Solde budgétaire primaire</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Monnaie locale)</span><button class="indicator-info-button" type="button" aria-label="Informations sur Solde budgétaire primaire" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="primaryFiscalBalanceNational">i</button></span></span></h2>
               </div>
             </header>
 
@@ -205,7 +211,9 @@
 
             <details class="data-table-toggle" id="primaryFiscalBalanceNationalTableToggle">
               <summary data-ui-text-action>Tableau de données</summary>
-              <div class="data-table-wrap" id="primaryFiscalBalanceNationalTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>2018</td><td class="data-table-observation-estimated">-2 M</td><td>2021</td><td class="data-table-observation-estimated">-8,41 Md</td><td>2024</td><td class="data-table-observation-estimated">-149,18 Md</td></tr><tr><td>2019</td><td class="data-table-observation-estimated">-100 M</td><td>2022</td><td class="data-table-observation-estimated">-26,58 Md</td><td>2025</td><td class="data-table-observation-estimated">-834,23 Md</td></tr><tr><td>2020</td><td class="data-table-observation-estimated">-687 M</td><td>2023</td><td class="data-table-observation-estimated">-14,85 Md</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="primaryFiscalBalanceNationalTableWrap" role="region" aria-label="Tableau de données" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>2018</td><td class="data-table-observation-estimated">-2 M</td><td>2021</td><td class="data-table-observation-estimated">-8,41 Md</td><td>2024</td><td class="data-table-observation-estimated">-149,2 Md</td></tr><tr><td>2019</td><td class="data-table-observation-estimated">-100 M</td><td>2022</td><td class="data-table-observation-estimated">-26,58 Md</td><td>2025</td><td class="data-table-observation-estimated">-834,2 Md</td></tr><tr><td>2020</td><td class="data-table-observation-estimated">-687 M</td><td>2023</td><td class="data-table-observation-estimated">-14,85 Md</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -225,9 +233,10 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/venezuela/population/">Population</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/venezuela/population-growth/">Croissance démographique</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/venezuela/fertility-rate/">Indice de fécondité</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/venezuela/trade/">Balance commerciale</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/venezuela/trade/">Exportations, importations et balance commerciale</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/venezuela/government-debt/">Dette publique</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/venezuela/hdi/">IDH</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/venezuela/co2-emissions/">Émissions de CO₂</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../fr/countries/venezuela/"><img class="flag-image flag-image-ve country-flag" src="../../../../public/flags/ve.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">Voir le profil du pays</span></a>
       </section>

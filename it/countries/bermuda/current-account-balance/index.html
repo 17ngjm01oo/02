@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Navigazione della pagina Commercio"><a class="navigation-control" href="../trade/">Bilancia commerciale</a><a class="navigation-control" href="../services-trade/">Saldo degli scambi di servizi</a><a class="navigation-control is-current" href="../current-account-balance/" aria-current="page">Saldo delle partite correnti</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="currentAccountBalance-title">
+          <section class="indicator-block" aria-label="Grafico a linee: Saldo delle partite correnti (USD)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="currentAccountBalance-title"><span class="indicator-label-cell"><span class="indicator-label-text">Saldo delle partite correnti</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Informazioni su Saldo delle partite correnti" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="currentAccountBalance">i</button></span></span></h2>
+                <h2 data-country-indicator-title="currentAccountBalance"><span class="indicator-label-cell"><span class="indicator-label-text">Saldo delle partite correnti</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Informazioni su Saldo delle partite correnti" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="currentAccountBalance">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="currentAccountBalance">
                 <div class="compare-input-wrap">
@@ -134,14 +134,16 @@
 
             <details class="data-table-toggle" id="currentAccountBalanceTableToggle">
               <summary data-ui-text-action>Tabella dei dati</summary>
-              <div class="data-table-wrap" id="currentAccountBalanceTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="currentAccountBalanceTableWrap" role="region" aria-label="Tabella dei dati" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="currentAccountBalancePercentGdp-title">
+          <section class="indicator-block" aria-label="Grafico a linee: Saldo delle partite correnti (% del PIL)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="currentAccountBalancePercentGdp-title"><span class="indicator-label-cell"><span class="indicator-label-text">Saldo delle partite correnti</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(% del PIL)</span><button class="indicator-info-button" type="button" aria-label="Informazioni su Saldo delle partite correnti" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="currentAccountBalancePercentGdp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="currentAccountBalancePercentGdp"><span class="indicator-label-cell"><span class="indicator-label-text">Saldo delle partite correnti</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(% del PIL)</span><button class="indicator-info-button" type="button" aria-label="Informazioni su Saldo delle partite correnti" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="currentAccountBalancePercentGdp">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="currentAccountBalancePercentGdp">
                 <div class="compare-input-wrap">
@@ -169,7 +171,9 @@
 
             <details class="data-table-toggle" id="currentAccountBalancePercentGdpTableToggle">
               <summary data-ui-text-action>Tabella dei dati</summary>
-              <div class="data-table-wrap" id="currentAccountBalancePercentGdpTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="currentAccountBalancePercentGdpTableWrap" role="region" aria-label="Tabella dei dati" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
@@ -185,7 +189,8 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../it/countries/bermuda/population/">Popolazione</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../it/countries/bermuda/population-growth/">Crescita della popolazione</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../it/countries/bermuda/fertility-rate/">Tasso di fecondità</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../it/countries/bermuda/trade/">Bilancia commerciale</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../it/countries/bermuda/trade/">Esportazioni, importazioni e bilancia commerciale</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../it/countries/bermuda/co2-emissions/">Emissioni di gas serra</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../it/countries/bermuda/"><img class="flag-image flag-image-bm country-flag" src="../../../../public/flags/bm.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">Vedi il profilo del paese</span></a>
       </section>

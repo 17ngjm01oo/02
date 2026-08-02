@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Navigazione della pagina Economia"><a class="navigation-control is-current" href="../gdp/" aria-current="page">PIL</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="gdp-title">
+          <section class="indicator-block" aria-label="Grafico a linee: PIL (USD)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gdp-title"><span class="indicator-label-cell"><span class="indicator-label-text">PIL</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Informazioni su PIL" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gdp"><span class="indicator-label-cell"><span class="indicator-label-text">PIL</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Informazioni su PIL" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdp">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="gdp">
                 <div class="compare-input-wrap">
@@ -134,14 +134,16 @@
 
             <details class="data-table-toggle" id="gdpTableToggle">
               <summary data-ui-text-action>Tabella dei dati</summary>
-              <div class="data-table-wrap" id="gdpTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gdpTableWrap" role="region" aria-label="Tabella dei dati" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="gdpNational-title">
+          <section class="indicator-block" aria-label="Grafico a linee: PIL (Valuta nazionale)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gdpNational-title"><span class="indicator-label-cell"><span class="indicator-label-text">PIL</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Valuta nazionale)</span><button class="indicator-info-button" type="button" aria-label="Informazioni su PIL" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpNational">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gdpNational"><span class="indicator-label-cell"><span class="indicator-label-text">PIL</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Valuta nazionale)</span><button class="indicator-info-button" type="button" aria-label="Informazioni su PIL" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpNational">i</button></span></span></h2>
               </div>
             </header>
 
@@ -152,14 +154,16 @@
 
             <details class="data-table-toggle" id="gdpNationalTableToggle">
               <summary data-ui-text-action>Tabella dei dati</summary>
-              <div class="data-table-wrap" id="gdpNationalTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gdpNationalTableWrap" role="region" aria-label="Tabella dei dati" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="realGdp-title">
+          <section class="indicator-block" aria-label="Grafico a linee: PIL reale (Valuta nazionale)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="realGdp-title"><span class="indicator-label-cell"><span class="indicator-label-text">PIL reale</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Valuta nazionale)</span><button class="indicator-info-button" type="button" aria-label="Informazioni su PIL reale" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="realGdp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="realGdp"><span class="indicator-label-cell"><span class="indicator-label-text">PIL reale</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Valuta nazionale)</span><button class="indicator-info-button" type="button" aria-label="Informazioni su PIL reale" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="realGdp">i</button></span></span></h2>
               </div>
             </header>
 
@@ -170,7 +174,9 @@
 
             <details class="data-table-toggle" id="realGdpTableToggle">
               <summary data-ui-text-action>Tabella dei dati</summary>
-              <div class="data-table-wrap" id="realGdpTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="realGdpTableWrap" role="region" aria-label="Tabella dei dati" tabindex="0"></div>
+              </div>
             </details>
           </section>
 

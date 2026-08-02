@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="人口ページナビゲーション"><a class="navigation-control is-current" href="../population/" aria-current="page">人口</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="population-title">
+          <section class="indicator-block" aria-label="人口折れ線グラフ">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="population-title"><span class="indicator-label-cell"><span class="indicator-label-text">人口</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="人口の情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="population">i</button></span></span></h2>
+                <h2 data-country-indicator-title="population"><span class="indicator-label-cell"><span class="indicator-label-text">人口</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="人口の情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="population">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="population">
                 <div class="compare-input-wrap">
@@ -134,7 +134,9 @@
 
             <details class="data-table-toggle" id="populationTableToggle">
               <summary data-ui-text-action>データ表</summary>
-              <div class="data-table-wrap" id="populationTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="populationTableWrap" role="region" aria-label="データ表" tabindex="0"></div>
+              </div>
             </details>
           </section>
 

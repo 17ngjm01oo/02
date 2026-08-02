@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Navigasi halaman ekonomi"><a class="navigation-control is-current" href="../gdp/" aria-current="page">PDB</a><a class="navigation-control" href="../gdp-per-capita/">PDB per Kapita</a><a class="navigation-control" href="../ppp-gdp/">PDB berdasarkan PPP</a><a class="navigation-control" href="../ppp-gdp-per-capita/">PDB per Kapita (PPP)</a><a class="navigation-control" href="../gni/">PNB</a><a class="navigation-control" href="../gni-per-capita/">PNB per Kapita</a><a class="navigation-control" href="../gdp-growth/">Pertumbuhan Ekonomi</a><a class="navigation-control" href="../inflation-rate/">Tingkat Inflasi</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="gdp-title">
+          <section class="indicator-block" aria-label="Grafik garis PDB (USD)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gdp-title"><span class="indicator-label-cell"><span class="indicator-label-text">PDB</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Informasi tentang PDB" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gdp"><span class="indicator-label-cell"><span class="indicator-label-text">PDB</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Informasi tentang PDB" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdp">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="gdp">
                 <div class="compare-input-wrap">
@@ -134,14 +134,16 @@
 
             <details class="data-table-toggle" id="gdpTableToggle">
               <summary data-ui-text-action>Tabel data</summary>
-              <div class="data-table-wrap" id="gdpTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>606 juta</td><td>2002</td><td>564 juta</td><td>2012</td><td>2,26 miliar</td></tr><tr><td>1993</td><td>374 juta</td><td>2003</td><td>673 juta</td><td>2013</td><td>1,96 miliar</td></tr><tr><td>1994</td><td>433 juta</td><td>2004</td><td>858 juta</td><td>2014</td><td>2,6 miliar</td></tr><tr><td>1995</td><td>483 juta</td><td>2005</td><td>850 juta</td><td>2015</td><td>2,02 miliar</td></tr><tr><td>1996</td><td>579 juta</td><td>2006</td><td>937 juta</td><td>2016</td><td>2,21 miliar</td></tr><tr><td>1997</td><td>594 juta</td><td>2007</td><td>1,02 miliar</td><td>2017</td><td>1,9 miliar</td></tr><tr><td>1998</td><td>626 juta</td><td>2008</td><td>923 juta</td><td>2018</td><td>2,01 miliar</td></tr><tr><td>1999</td><td>614 juta</td><td>2009</td><td>1,3 miliar</td><td>2019</td><td>1,98 miliar</td></tr><tr><td>2000</td><td>547 juta</td><td>2010</td><td>1,59 miliar</td><td></td><td></td></tr><tr><td>2001</td><td>582 juta</td><td>2011</td><td>2,07 miliar</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gdpTableWrap" role="region" aria-label="Tabel data" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>606 jt</td><td>2002</td><td>564 jt</td><td>2012</td><td>2,26 M</td></tr><tr><td>1993</td><td>374 jt</td><td>2003</td><td>673 jt</td><td>2013</td><td>1,96 M</td></tr><tr><td>1994</td><td>433 jt</td><td>2004</td><td>858 jt</td><td>2014</td><td>2,6 M</td></tr><tr><td>1995</td><td>483 jt</td><td>2005</td><td>850 jt</td><td>2015</td><td>2,02 M</td></tr><tr><td>1996</td><td>579 jt</td><td>2006</td><td>937 jt</td><td>2016</td><td>2,21 M</td></tr><tr><td>1997</td><td>594 jt</td><td>2007</td><td>1,02 M</td><td>2017</td><td>1,9 M</td></tr><tr><td>1998</td><td>626 jt</td><td>2008</td><td>923 jt</td><td>2018</td><td>2,01 M</td></tr><tr><td>1999</td><td>614 jt</td><td>2009</td><td>1,3 M</td><td>2019</td><td>1,98 M</td></tr><tr><td>2000</td><td>547 jt</td><td>2010</td><td>1,59 M</td><td></td><td></td></tr><tr><td>2001</td><td>582 jt</td><td>2011</td><td>2,07 M</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="gdpNational-title">
+          <section class="indicator-block" aria-label="Grafik garis PDB (Mata uang lokal)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gdpNational-title"><span class="indicator-label-cell"><span class="indicator-label-text">PDB</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Mata uang lokal)</span><button class="indicator-info-button" type="button" aria-label="Informasi tentang PDB" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpNational">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gdpNational"><span class="indicator-label-cell"><span class="indicator-label-text">PDB</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Mata uang lokal)</span><button class="indicator-info-button" type="button" aria-label="Informasi tentang PDB" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpNational">i</button></span></span></h2>
               </div>
             </header>
 
@@ -152,14 +154,16 @@
 
             <details class="data-table-toggle" id="gdpNationalTableToggle">
               <summary data-ui-text-action>Tabel data</summary>
-              <div class="data-table-wrap" id="gdpNationalTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>1,7 miliar</td><td>2002</td><td>7,88 miliar</td><td>2012</td><td>34,67 miliar</td></tr><tr><td>1993</td><td>1,96 miliar</td><td>2003</td><td>9,35 miliar</td><td>2013</td><td>30,1 miliar</td></tr><tr><td>1994</td><td>2,67 miliar</td><td>2004</td><td>11,83 miliar</td><td>2014</td><td>40,04 miliar</td></tr><tr><td>1995</td><td>3,05 miliar</td><td>2005</td><td>13,06 miliar</td><td>2015</td><td>30,95 miliar</td></tr><tr><td>1996</td><td>3,68 miliar</td><td>2006</td><td>14,41 miliar</td><td>2016</td><td>33,37 miliar</td></tr><tr><td>1997</td><td>4,14 miliar</td><td>2007</td><td>15,68 miliar</td><td>2017</td><td>28,7 miliar</td></tr><tr><td>1998</td><td>4,61 miliar</td><td>2008</td><td>14,19 miliar</td><td>2018</td><td>30,24 miliar</td></tr><tr><td>1999</td><td>5,01 miliar</td><td>2009</td><td>19,94 miliar</td><td>2019</td><td>29,88 miliar</td></tr><tr><td>2000</td><td>5,26 miliar</td><td>2010</td><td>24,44 miliar</td><td></td><td></td></tr><tr><td>2001</td><td>6,59 miliar</td><td>2011</td><td>31,75 miliar</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gdpNationalTableWrap" role="region" aria-label="Tabel data" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>1,7 M</td><td>2002</td><td>7,88 M</td><td>2012</td><td>34,67 M</td></tr><tr><td>1993</td><td>1,96 M</td><td>2003</td><td>9,35 M</td><td>2013</td><td>30,1 M</td></tr><tr><td>1994</td><td>2,67 M</td><td>2004</td><td>11,83 M</td><td>2014</td><td>40,04 M</td></tr><tr><td>1995</td><td>3,05 M</td><td>2005</td><td>13,06 M</td><td>2015</td><td>30,95 M</td></tr><tr><td>1996</td><td>3,68 M</td><td>2006</td><td>14,41 M</td><td>2016</td><td>33,37 M</td></tr><tr><td>1997</td><td>4,14 M</td><td>2007</td><td>15,68 M</td><td>2017</td><td>28,7 M</td></tr><tr><td>1998</td><td>4,61 M</td><td>2008</td><td>14,19 M</td><td>2018</td><td>30,24 M</td></tr><tr><td>1999</td><td>5,01 M</td><td>2009</td><td>19,94 M</td><td>2019</td><td>29,88 M</td></tr><tr><td>2000</td><td>5,26 M</td><td>2010</td><td>24,44 M</td><td></td><td></td></tr><tr><td>2001</td><td>6,59 M</td><td>2011</td><td>31,75 M</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="realGdp-title">
+          <section class="indicator-block" aria-label="Grafik garis PDB Riil (Mata uang lokal)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="realGdp-title"><span class="indicator-label-cell"><span class="indicator-label-text">PDB Riil</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Mata uang lokal)</span><button class="indicator-info-button" type="button" aria-label="Informasi tentang PDB Riil" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="realGdp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="realGdp"><span class="indicator-label-cell"><span class="indicator-label-text">PDB Riil</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Mata uang lokal)</span><button class="indicator-info-button" type="button" aria-label="Informasi tentang PDB Riil" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="realGdp">i</button></span></span></h2>
               </div>
             </header>
 
@@ -170,7 +174,9 @@
 
             <details class="data-table-toggle" id="realGdpTableToggle">
               <summary data-ui-text-action>Tabel data</summary>
-              <div class="data-table-wrap" id="realGdpTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>15,02 miliar</td><td>2002</td><td>24,78 miliar</td><td>2012</td><td>32,35 miliar</td></tr><tr><td>1993</td><td>16,95 miliar</td><td>2003</td><td>24,12 miliar</td><td>2013</td><td>28,97 miliar</td></tr><tr><td>1994</td><td>20,5 miliar</td><td>2004</td><td>24,47 miliar</td><td>2014</td><td>37,93 miliar</td></tr><tr><td>1995</td><td>20,98 miliar</td><td>2005</td><td>25,1 miliar</td><td>2015</td><td>30,11 miliar</td></tr><tr><td>1996</td><td>22,89 miliar</td><td>2006</td><td>24,86 miliar</td><td>2016</td><td>32,33 miliar</td></tr><tr><td>1997</td><td>24,7 miliar</td><td>2007</td><td>25,21 miliar</td><td>2017</td><td>29,09 miliar</td></tr><tr><td>1998</td><td>25,19 miliar</td><td>2008</td><td>20,31 miliar</td><td>2018</td><td>32,88 miliar</td></tr><tr><td>1999</td><td>25,23 miliar</td><td>2009</td><td>22,78 miliar</td><td>2019</td><td>34,15 miliar</td></tr><tr><td>2000</td><td>22,12 miliar</td><td>2010</td><td>25,26 miliar</td><td></td><td></td></tr><tr><td>2001</td><td>24,05 miliar</td><td>2011</td><td>31,75 miliar</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="realGdpTableWrap" role="region" aria-label="Tabel data" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>15,02 M</td><td>2002</td><td>24,78 M</td><td>2012</td><td>32,35 M</td></tr><tr><td>1993</td><td>16,95 M</td><td>2003</td><td>24,12 M</td><td>2013</td><td>28,97 M</td></tr><tr><td>1994</td><td>20,5 M</td><td>2004</td><td>24,47 M</td><td>2014</td><td>37,93 M</td></tr><tr><td>1995</td><td>20,98 M</td><td>2005</td><td>25,1 M</td><td>2015</td><td>30,11 M</td></tr><tr><td>1996</td><td>22,89 M</td><td>2006</td><td>24,86 M</td><td>2016</td><td>32,33 M</td></tr><tr><td>1997</td><td>24,7 M</td><td>2007</td><td>25,21 M</td><td>2017</td><td>29,09 M</td></tr><tr><td>1998</td><td>25,19 M</td><td>2008</td><td>20,31 M</td><td>2018</td><td>32,88 M</td></tr><tr><td>1999</td><td>25,23 M</td><td>2009</td><td>22,78 M</td><td>2019</td><td>34,15 M</td></tr><tr><td>2000</td><td>22,12 M</td><td>2010</td><td>25,26 M</td><td></td><td></td></tr><tr><td>2001</td><td>24,05 M</td><td>2011</td><td>31,75 M</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -188,10 +194,11 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/eritrea/population/">Jumlah Penduduk</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/eritrea/population-growth/">Pertumbuhan Penduduk</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/eritrea/fertility-rate/">Angka Kelahiran Total</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/eritrea/trade/">Neraca Perdagangan</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/eritrea/trade/">Ekspor, Impor, dan Neraca Perdagangan</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/eritrea/government-debt/">Utang Pemerintah</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/eritrea/fiscal-balance/">Neraca Fiskal</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/eritrea/hdi/">Indeks Pembangunan Manusia</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/eritrea/co2-emissions/">Emisi Gas Rumah Kaca</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../id/countries/eritrea/"><img class="flag-image flag-image-er country-flag" src="../../../../public/flags/er.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">Lihat profil negara</span></a>
       </section>

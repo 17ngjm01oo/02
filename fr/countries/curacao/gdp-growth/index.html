@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Navigation de la page Économie"><a class="navigation-control" href="../gni/">RNB</a><a class="navigation-control" href="../gni-per-capita/">RNB par habitant</a><a class="navigation-control is-current" href="../gdp-growth/" aria-current="page">Croissance du PIB</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="gdpGrowth-title">
+          <section class="indicator-block" aria-label="Graphique linéaire de Croissance du PIB">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gdpGrowth-title"><span class="indicator-label-cell"><span class="indicator-label-text">Croissance du PIB</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="Informations sur Croissance du PIB" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpGrowth">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gdpGrowth"><span class="indicator-label-cell"><span class="indicator-label-text">Croissance du PIB</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="Informations sur Croissance du PIB" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpGrowth">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="gdpGrowth">
                 <div class="compare-input-wrap">
@@ -134,7 +134,9 @@
 
             <details class="data-table-toggle" id="gdpGrowthTableToggle">
               <summary data-ui-text-action>Tableau de données</summary>
-              <div class="data-table-wrap" id="gdpGrowthTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gdpGrowthTableWrap" role="region" aria-label="Tableau de données" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
@@ -150,7 +152,7 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/curacao/population/">Population</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/curacao/population-growth/">Croissance démographique</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/curacao/fertility-rate/">Indice de fécondité</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/curacao/trade/">Balance commerciale</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/curacao/trade/">Exportations, importations et balance commerciale</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../fr/countries/curacao/"><img class="flag-image flag-image-cw country-flag" src="../../../../public/flags/cw.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">Voir le profil du pays</span></a>
       </section>

@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Navegación de la página de economía"><a class="navigation-control is-current" href="../ppp-gdp/" aria-current="page">PIB en PPA</a><a class="navigation-control" href="../gni/">INB</a><a class="navigation-control" href="../gni-per-capita/">INB per cápita</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="ppp-title">
+          <section class="indicator-block" aria-label="Gráfico de líneas de PIB en PPA (Int$)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="ppp-title"><span class="indicator-label-cell"><span class="indicator-label-text">PIB en PPA</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Int$)</span><button class="indicator-info-button" type="button" aria-label="Información sobre PIB en PPA" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="ppp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="ppp"><span class="indicator-label-cell"><span class="indicator-label-text">PIB en PPA</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Int$)</span><button class="indicator-info-button" type="button" aria-label="Información sobre PIB en PPA" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="ppp">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="ppp">
                 <div class="compare-input-wrap">
@@ -134,7 +134,9 @@
 
             <details class="data-table-toggle" id="pppTableToggle">
               <summary data-ui-text-action>Tabla de datos</summary>
-              <div class="data-table-wrap" id="pppTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="pppTableWrap" role="region" aria-label="Tabla de datos" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
@@ -149,7 +151,7 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../es/countries/anguilla/population/">Población</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../es/countries/anguilla/population-growth/">Crecimiento de la población</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../es/countries/anguilla/fertility-rate/">Tasa de fecundidad</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../es/countries/anguilla/trade/">Balanza comercial</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../es/countries/anguilla/trade/">Exportaciones, importaciones y balanza comercial</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../es/countries/anguilla/"><img class="flag-image flag-image-ai country-flag" src="../../../../public/flags/ai.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">Ver el perfil del país</span></a>
       </section>

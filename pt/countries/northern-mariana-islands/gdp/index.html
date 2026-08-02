@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Navegação da página de economia"><a class="navigation-control is-current" href="../gdp/" aria-current="page">PIB</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="gdp-title">
+          <section class="indicator-block" aria-label="Gráfico de linhas de PIB (USD)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gdp-title"><span class="indicator-label-cell"><span class="indicator-label-text">PIB</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Informações sobre PIB" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gdp"><span class="indicator-label-cell"><span class="indicator-label-text">PIB</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Informações sobre PIB" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdp">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="gdp">
                 <div class="compare-input-wrap">
@@ -134,14 +134,16 @@
 
             <details class="data-table-toggle" id="gdpTableToggle">
               <summary data-ui-text-action>Tabela de dados</summary>
-              <div class="data-table-wrap" id="gdpTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gdpTableWrap" role="region" aria-label="Tabela de dados" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="gdpNational-title">
+          <section class="indicator-block" aria-label="Gráfico de linhas de PIB (Moeda local)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gdpNational-title"><span class="indicator-label-cell"><span class="indicator-label-text">PIB</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Moeda local)</span><button class="indicator-info-button" type="button" aria-label="Informações sobre PIB" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpNational">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gdpNational"><span class="indicator-label-cell"><span class="indicator-label-text">PIB</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Moeda local)</span><button class="indicator-info-button" type="button" aria-label="Informações sobre PIB" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpNational">i</button></span></span></h2>
               </div>
             </header>
 
@@ -152,14 +154,16 @@
 
             <details class="data-table-toggle" id="gdpNationalTableToggle">
               <summary data-ui-text-action>Tabela de dados</summary>
-              <div class="data-table-wrap" id="gdpNationalTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gdpNationalTableWrap" role="region" aria-label="Tabela de dados" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="realGdp-title">
+          <section class="indicator-block" aria-label="Gráfico de linhas de PIB real (Moeda local)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="realGdp-title"><span class="indicator-label-cell"><span class="indicator-label-text">PIB real</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Moeda local)</span><button class="indicator-info-button" type="button" aria-label="Informações sobre PIB real" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="realGdp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="realGdp"><span class="indicator-label-cell"><span class="indicator-label-text">PIB real</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Moeda local)</span><button class="indicator-info-button" type="button" aria-label="Informações sobre PIB real" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="realGdp">i</button></span></span></h2>
               </div>
             </header>
 
@@ -170,7 +174,9 @@
 
             <details class="data-table-toggle" id="realGdpTableToggle">
               <summary data-ui-text-action>Tabela de dados</summary>
-              <div class="data-table-wrap" id="realGdpTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="realGdpTableWrap" role="region" aria-label="Tabela de dados" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
@@ -186,7 +192,8 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../pt/countries/northern-mariana-islands/population/">População</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../pt/countries/northern-mariana-islands/population-growth/">Crescimento populacional</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../pt/countries/northern-mariana-islands/fertility-rate/">Taxa de fecundidade</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../pt/countries/northern-mariana-islands/trade/">Balança comercial</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../pt/countries/northern-mariana-islands/trade/">Exportações, importações e balança comercial</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../pt/countries/northern-mariana-islands/co2-emissions/">Emissões de CO₂</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../pt/countries/northern-mariana-islands/"><img class="flag-image flag-image-mp country-flag" src="../../../../public/flags/mp.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">Ver perfil do país</span></a>
       </section>

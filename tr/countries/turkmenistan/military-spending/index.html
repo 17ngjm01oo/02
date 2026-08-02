@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Toplum sayfası navigasyonu"><a class="navigation-control" href="../hdi/">İnsani Gelişme Endeksi</a><a class="navigation-control is-current" href="../military-spending/" aria-current="page">Askerî Harcamalar</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="militarySpending-title">
+          <section class="indicator-block" aria-label="Askerî Harcamalar (USD) çizgi grafiği">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="militarySpending-title"><span class="indicator-label-cell"><span class="indicator-label-text">Askerî Harcamalar</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Askerî Harcamalar hakkında bilgi" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="militarySpending">i</button></span></span></h2>
+                <h2 data-country-indicator-title="militarySpending"><span class="indicator-label-cell"><span class="indicator-label-text">Askerî Harcamalar</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Askerî Harcamalar hakkında bilgi" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="militarySpending">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="militarySpending">
                 <div class="compare-input-wrap">
@@ -134,14 +134,16 @@
 
             <details class="data-table-toggle" id="militarySpendingTableToggle">
               <summary data-ui-text-action>Veri tablosu</summary>
-              <div class="data-table-wrap" id="militarySpendingTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1994</td><td>79,58 milyon</td><td>1996</td><td>48,55 milyon</td><td>1998</td><td>87,51 milyon</td></tr><tr><td>1995</td><td>135,61 milyon</td><td>1997</td><td>106,19 milyon</td><td>1999</td><td>111,92 milyon</td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="militarySpendingTableWrap" role="region" aria-label="Veri tablosu" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1994</td><td>79,58 Mn</td><td>1996</td><td>48,55 Mn</td><td>1998</td><td>87,51 Mn</td></tr><tr><td>1995</td><td>135,6 Mn</td><td>1997</td><td>106,2 Mn</td><td>1999</td><td>111,9 Mn</td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="militarySpendingPercentGdp-title">
+          <section class="indicator-block" aria-label="Askerî Harcamalar (GSYİH&#x27;nin %&#x27;si) çizgi grafiği">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="militarySpendingPercentGdp-title"><span class="indicator-label-cell"><span class="indicator-label-text">Askerî Harcamalar</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GSYİH&#x27;nin %&#x27;si)</span><button class="indicator-info-button" type="button" aria-label="Askerî Harcamalar hakkında bilgi" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="militarySpendingPercentGdp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="militarySpendingPercentGdp"><span class="indicator-label-cell"><span class="indicator-label-text">Askerî Harcamalar</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GSYİH&#x27;nin %&#x27;si)</span><button class="indicator-info-button" type="button" aria-label="Askerî Harcamalar hakkında bilgi" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="militarySpendingPercentGdp">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="militarySpendingPercentGdp">
                 <div class="compare-input-wrap">
@@ -169,7 +171,9 @@
 
             <details class="data-table-toggle" id="militarySpendingPercentGdpTableToggle">
               <summary data-ui-text-action>Veri tablosu</summary>
-              <div class="data-table-wrap" id="militarySpendingPercentGdpTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1994</td><td>1,8%</td><td>1996</td><td>2%</td><td>1998</td><td>3,1%</td></tr><tr><td>1995</td><td>2,3%</td><td>1997</td><td>4%</td><td>1999</td><td>2,9%</td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="militarySpendingPercentGdpTableWrap" role="region" aria-label="Veri tablosu" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1994</td><td>1,8%</td><td>1996</td><td>2%</td><td>1998</td><td>3,1%</td></tr><tr><td>1995</td><td>2,3%</td><td>1997</td><td>4%</td><td>1999</td><td>2,9%</td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -187,10 +191,11 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/turkmenistan/population/">Nüfus</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/turkmenistan/population-growth/">Nüfus Artışı</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/turkmenistan/fertility-rate/">Toplam Doğurganlık Hızı</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/turkmenistan/trade/">Dış Ticaret Dengesi</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/turkmenistan/trade/">İhracat, İthalat ve Dış Ticaret Dengesi</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/turkmenistan/government-debt/">Kamu Borcu</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/turkmenistan/fiscal-balance/">Mali Denge</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/turkmenistan/hdi/">İnsani Gelişme Endeksi</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/turkmenistan/co2-emissions/">Sera Gazı Emisyonları</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../tr/countries/turkmenistan/"><img class="flag-image flag-image-tm country-flag" src="../../../../public/flags/tm.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">Ülke profilini görüntüle</span></a>
       </section>

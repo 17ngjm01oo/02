@@ -6,7 +6,7 @@ export const localeConfigs = {
     "switchLabel": "EN",
     "displayName": "English",
     "numberLocale": "en-US",
-    "magnitudeFormat": "western",
+    "magnitudeFormat": "english",
     "countryNameForms": {
       "USA": {
         "definite": "the United States"

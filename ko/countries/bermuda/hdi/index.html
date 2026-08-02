@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="사회 페이지 탐색"><a class="navigation-control is-current" href="../hdi/" aria-current="page">인간개발지수(HDI)</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="hdi-title">
+          <section class="indicator-block" aria-label="인간개발지수(HDI) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="hdi-title"><span class="indicator-label-cell"><span class="indicator-label-text">인간개발지수(HDI)</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="인간개발지수(HDI) 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="hdi">i</button></span></span></h2>
+                <h2 data-country-indicator-title="hdi"><span class="indicator-label-cell"><span class="indicator-label-text">인간개발지수(HDI)</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="인간개발지수(HDI) 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="hdi">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="hdi">
                 <div class="compare-input-wrap">
@@ -134,7 +134,9 @@
 
             <details class="data-table-toggle" id="hdiTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="hdiTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="hdiTableWrap" role="region" aria-label="데이터 표" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
@@ -149,7 +151,8 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/bermuda/population/">인구</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/bermuda/population-growth/">인구증가율</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/bermuda/fertility-rate/">합계출산율</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/bermuda/trade/">무역수지</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/bermuda/trade/">수출, 수입 및 무역수지</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/bermuda/co2-emissions/">온실가스 배출량</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../ko/countries/bermuda/"><img class="flag-image flag-image-bm country-flag" src="../../../../public/flags/bm.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">국가 프로필 보기</span></a>
       </section>

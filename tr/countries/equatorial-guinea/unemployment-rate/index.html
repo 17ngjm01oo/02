@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Ekonomi sayfası navigasyonu"><a class="navigation-control" href="../gdp/">GSYİH</a><a class="navigation-control" href="../gdp-per-capita/">Kişi Başına GSYİH</a><a class="navigation-control" href="../ppp-gdp/">SGP&#x27;ye Göre GSYİH</a><a class="navigation-control" href="../ppp-gdp-per-capita/">Kişi Başına GSYİH (SGP)</a><a class="navigation-control" href="../gni/">GSMG</a><a class="navigation-control" href="../gni-per-capita/">Kişi Başına GSMG</a><a class="navigation-control" href="../gdp-growth/">Ekonomik Büyüme</a><a class="navigation-control" href="../inflation-rate/">Enflasyon Oranı</a><a class="navigation-control is-current" href="../unemployment-rate/" aria-current="page">İşsizlik Oranı</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="unemploymentRate-title">
+          <section class="indicator-block" aria-label="İşsizlik Oranı çizgi grafiği">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="unemploymentRate-title"><span class="indicator-label-cell"><span class="indicator-label-text">İşsizlik Oranı</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="İşsizlik Oranı hakkında bilgi" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="unemploymentRate">i</button></span></span></h2>
+                <h2 data-country-indicator-title="unemploymentRate"><span class="indicator-label-cell"><span class="indicator-label-text">İşsizlik Oranı</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="İşsizlik Oranı hakkında bilgi" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="unemploymentRate">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="unemploymentRate">
                 <div class="compare-input-wrap">
@@ -134,7 +134,9 @@
 
             <details class="data-table-toggle" id="unemploymentRateTableToggle">
               <summary data-ui-text-action>Veri tablosu</summary>
-              <div class="data-table-wrap" id="unemploymentRateTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="unemploymentRateTableWrap" role="region" aria-label="Veri tablosu" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
@@ -153,10 +155,11 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/equatorial-guinea/population/">Nüfus</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/equatorial-guinea/population-growth/">Nüfus Artışı</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/equatorial-guinea/fertility-rate/">Toplam Doğurganlık Hızı</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/equatorial-guinea/trade/">Dış Ticaret Dengesi</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/equatorial-guinea/trade/">İhracat, İthalat ve Dış Ticaret Dengesi</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/equatorial-guinea/government-debt/">Kamu Borcu</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/equatorial-guinea/fiscal-balance/">Mali Denge</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/equatorial-guinea/hdi/">İnsani Gelişme Endeksi</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/equatorial-guinea/co2-emissions/">Sera Gazı Emisyonları</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../tr/countries/equatorial-guinea/"><img class="flag-image flag-image-gq country-flag" src="../../../../public/flags/gq.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">Ülke profilini görüntüle</span></a>
       </section>

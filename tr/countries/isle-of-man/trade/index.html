@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Ticaret sayfası navigasyonu"><a class="navigation-control is-current" href="../trade/" aria-current="page">Dış Ticaret Dengesi</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="tradeBalance-title">
+          <section class="indicator-block" aria-label="Dış Ticaret Dengesi (USD) çizgi grafiği">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="tradeBalance-title"><span class="indicator-label-cell"><span class="indicator-label-text">Dış Ticaret Dengesi</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Dış Ticaret Dengesi hakkında bilgi" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="tradeBalance">i</button></span></span></h2>
+                <h2 data-country-indicator-title="tradeBalance"><span class="indicator-label-cell"><span class="indicator-label-text">Dış Ticaret Dengesi</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Dış Ticaret Dengesi hakkında bilgi" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="tradeBalance">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="tradeBalance">
                 <div class="compare-input-wrap">
@@ -134,14 +134,16 @@
 
             <details class="data-table-toggle" id="tradeBalanceTableToggle">
               <summary data-ui-text-action>Veri tablosu</summary>
-              <div class="data-table-wrap" id="tradeBalanceTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="tradeBalanceTableWrap" role="region" aria-label="Veri tablosu" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="exports-title">
+          <section class="indicator-block" aria-label="İhracat (USD) çizgi grafiği">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="exports-title"><span class="indicator-label-cell"><span class="indicator-label-text">İhracat</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="İhracat hakkında bilgi" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="exports">i</button></span></span></h2>
+                <h2 data-country-indicator-title="exports"><span class="indicator-label-cell"><span class="indicator-label-text">İhracat</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="İhracat hakkında bilgi" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="exports">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="exports">
                 <div class="compare-input-wrap">
@@ -169,14 +171,16 @@
 
             <details class="data-table-toggle" id="exportsTableToggle">
               <summary data-ui-text-action>Veri tablosu</summary>
-              <div class="data-table-wrap" id="exportsTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="exportsTableWrap" role="region" aria-label="Veri tablosu" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="imports-title">
+          <section class="indicator-block" aria-label="İthalat (USD) çizgi grafiği">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="imports-title"><span class="indicator-label-cell"><span class="indicator-label-text">İthalat</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="İthalat hakkında bilgi" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="imports">i</button></span></span></h2>
+                <h2 data-country-indicator-title="imports"><span class="indicator-label-cell"><span class="indicator-label-text">İthalat</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="İthalat hakkında bilgi" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="imports">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="imports">
                 <div class="compare-input-wrap">
@@ -204,7 +208,9 @@
 
             <details class="data-table-toggle" id="importsTableToggle">
               <summary data-ui-text-action>Veri tablosu</summary>
-              <div class="data-table-wrap" id="importsTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="importsTableWrap" role="region" aria-label="Veri tablosu" tabindex="0"></div>
+              </div>
             </details>
           </section>
 

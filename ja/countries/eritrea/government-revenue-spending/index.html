@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="財政ページナビゲーション"><a class="navigation-control" href="../government-debt/">政府債務残高</a><a class="navigation-control" href="../fiscal-balance/">財政収支</a><a class="navigation-control is-current" href="../government-revenue-spending/" aria-current="page">政府歳入・歳出</a><a class="navigation-control" href="../total-reserves/">外貨準備高</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="governmentRevenue-title">
+          <section class="indicator-block" aria-label="政府歳入 (GDP比)折れ線グラフ">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="governmentRevenue-title"><span class="indicator-label-cell"><span class="indicator-label-text">政府歳入</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GDP比)</span><button class="indicator-info-button" type="button" aria-label="政府歳入の情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentRevenue">i</button></span></span></h2>
+                <h2 data-country-indicator-title="governmentRevenue"><span class="indicator-label-cell"><span class="indicator-label-text">政府歳入</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GDP比)</span><button class="indicator-info-button" type="button" aria-label="政府歳入の情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentRevenue">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="governmentRevenue">
                 <div class="compare-input-wrap">
@@ -134,14 +134,16 @@
 
             <details class="data-table-toggle" id="governmentRevenueTableToggle">
               <summary data-ui-text-action>データ表</summary>
-              <div class="data-table-wrap" id="governmentRevenueTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>39.5%</td><td>2002</td><td>46.8%</td><td>2012</td><td>28.1%</td></tr><tr><td>1993</td><td>71.4%</td><td>2003</td><td>64.4%</td><td>2013</td><td>25.1%</td></tr><tr><td>1994</td><td>59%</td><td>2004</td><td>49.4%</td><td>2014</td><td>21.5%</td></tr><tr><td>1995</td><td>58.3%</td><td>2005</td><td>45.6%</td><td>2015</td><td>28.3%</td></tr><tr><td>1996</td><td>50.2%</td><td>2006</td><td>35%</td><td>2016</td><td>29.5%</td></tr><tr><td>1997</td><td>54.5%</td><td>2007</td><td>31.4%</td><td>2017</td><td>36.8%</td></tr><tr><td>1998</td><td>47.6%</td><td>2008</td><td>31.4%</td><td>2018</td><td>31.6%</td></tr><tr><td>1999</td><td>46.3%</td><td>2009</td><td>22.8%</td><td>2019</td><td>34%</td></tr><tr><td>2000</td><td>59.3%</td><td>2010</td><td>25.9%</td><td></td><td></td></tr><tr><td>2001</td><td>49.9%</td><td>2011</td><td>26.7%</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="governmentRevenueTableWrap" role="region" aria-label="データ表" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>39.5%</td><td>2002</td><td>46.8%</td><td>2012</td><td>28.1%</td></tr><tr><td>1993</td><td>71.4%</td><td>2003</td><td>64.4%</td><td>2013</td><td>25.1%</td></tr><tr><td>1994</td><td>59%</td><td>2004</td><td>49.4%</td><td>2014</td><td>21.5%</td></tr><tr><td>1995</td><td>58.3%</td><td>2005</td><td>45.6%</td><td>2015</td><td>28.3%</td></tr><tr><td>1996</td><td>50.2%</td><td>2006</td><td>35%</td><td>2016</td><td>29.5%</td></tr><tr><td>1997</td><td>54.5%</td><td>2007</td><td>31.4%</td><td>2017</td><td>36.8%</td></tr><tr><td>1998</td><td>47.6%</td><td>2008</td><td>31.4%</td><td>2018</td><td>31.6%</td></tr><tr><td>1999</td><td>46.3%</td><td>2009</td><td>22.8%</td><td>2019</td><td>34%</td></tr><tr><td>2000</td><td>59.3%</td><td>2010</td><td>25.9%</td><td></td><td></td></tr><tr><td>2001</td><td>49.9%</td><td>2011</td><td>26.7%</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="governmentRevenueNational-title">
+          <section class="indicator-block" aria-label="政府歳入 (自国通貨)折れ線グラフ">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="governmentRevenueNational-title"><span class="indicator-label-cell"><span class="indicator-label-text">政府歳入</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(自国通貨)</span><button class="indicator-info-button" type="button" aria-label="政府歳入の情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentRevenueNational">i</button></span></span></h2>
+                <h2 data-country-indicator-title="governmentRevenueNational"><span class="indicator-label-cell"><span class="indicator-label-text">政府歳入</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(自国通貨)</span><button class="indicator-info-button" type="button" aria-label="政府歳入の情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentRevenueNational">i</button></span></span></h2>
               </div>
             </header>
 
@@ -152,14 +154,16 @@
 
             <details class="data-table-toggle" id="governmentRevenueNationalTableToggle">
               <summary data-ui-text-action>データ表</summary>
-              <div class="data-table-wrap" id="governmentRevenueNationalTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>6.7億</td><td>2002</td><td>36.86億</td><td>2012</td><td>97.44億</td></tr><tr><td>1993</td><td>13.98億</td><td>2003</td><td>60.17億</td><td>2013</td><td>75.57億</td></tr><tr><td>1994</td><td>15.77億</td><td>2004</td><td>58.46億</td><td>2014</td><td>85.99億</td></tr><tr><td>1995</td><td>17.78億</td><td>2005</td><td>59.57億</td><td>2015</td><td>87.64億</td></tr><tr><td>1996</td><td>18.5億</td><td>2006</td><td>50.43億</td><td>2016</td><td>98.43億</td></tr><tr><td>1997</td><td>22.55億</td><td>2007</td><td>49.21億</td><td>2017</td><td>105.5億</td></tr><tr><td>1998</td><td>21.97億</td><td>2008</td><td>44.57億</td><td>2018</td><td>95.49億</td></tr><tr><td>1999</td><td>23.2億</td><td>2009</td><td>45.42億</td><td>2019</td><td>101.5億</td></tr><tr><td>2000</td><td>31.22億</td><td>2010</td><td>63.36億</td><td></td><td></td></tr><tr><td>2001</td><td>32.87億</td><td>2011</td><td>84.93億</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="governmentRevenueNationalTableWrap" role="region" aria-label="データ表" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>6.7億</td><td>2002</td><td>36.86億</td><td>2012</td><td>97.44億</td></tr><tr><td>1993</td><td>13.98億</td><td>2003</td><td>60.17億</td><td>2013</td><td>75.57億</td></tr><tr><td>1994</td><td>15.77億</td><td>2004</td><td>58.46億</td><td>2014</td><td>85.99億</td></tr><tr><td>1995</td><td>17.78億</td><td>2005</td><td>59.57億</td><td>2015</td><td>87.64億</td></tr><tr><td>1996</td><td>18.5億</td><td>2006</td><td>50.43億</td><td>2016</td><td>98.43億</td></tr><tr><td>1997</td><td>22.55億</td><td>2007</td><td>49.21億</td><td>2017</td><td>105.5億</td></tr><tr><td>1998</td><td>21.97億</td><td>2008</td><td>44.57億</td><td>2018</td><td>95.49億</td></tr><tr><td>1999</td><td>23.2億</td><td>2009</td><td>45.42億</td><td>2019</td><td>101.5億</td></tr><tr><td>2000</td><td>31.22億</td><td>2010</td><td>63.36億</td><td></td><td></td></tr><tr><td>2001</td><td>32.87億</td><td>2011</td><td>84.93億</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="governmentSpending-title">
+          <section class="indicator-block" aria-label="政府歳出 (GDP比)折れ線グラフ">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="governmentSpending-title"><span class="indicator-label-cell"><span class="indicator-label-text">政府歳出</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GDP比)</span><button class="indicator-info-button" type="button" aria-label="政府歳出の情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentSpending">i</button></span></span></h2>
+                <h2 data-country-indicator-title="governmentSpending"><span class="indicator-label-cell"><span class="indicator-label-text">政府歳出</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GDP比)</span><button class="indicator-info-button" type="button" aria-label="政府歳出の情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentSpending">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="governmentSpending">
                 <div class="compare-input-wrap">
@@ -187,14 +191,16 @@
 
             <details class="data-table-toggle" id="governmentSpendingTableToggle">
               <summary data-ui-text-action>データ表</summary>
-              <div class="data-table-wrap" id="governmentSpendingTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>32.7%</td><td>2002</td><td>60.1%</td><td>2012</td><td>33.3%</td></tr><tr><td>1993</td><td>67.2%</td><td>2003</td><td>58.1%</td><td>2013</td><td>32.7%</td></tr><tr><td>1994</td><td>50.4%</td><td>2004</td><td>57.1%</td><td>2014</td><td>21.6%</td></tr><tr><td>1995</td><td>81.2%</td><td>2005</td><td>76.6%</td><td>2015</td><td>31.1%</td></tr><tr><td>1996</td><td>68.6%</td><td>2006</td><td>50.5%</td><td>2016</td><td>30.9%</td></tr><tr><td>1997</td><td>60.1%</td><td>2007</td><td>51.2%</td><td>2017</td><td>42.5%</td></tr><tr><td>1998</td><td>88%</td><td>2008</td><td>69.4%</td><td>2018</td><td>26.4%</td></tr><tr><td>1999</td><td>106.1%</td><td>2009</td><td>44.9%</td><td>2019</td><td>31.3%</td></tr><tr><td>2000</td><td>84.7%</td><td>2010</td><td>42.4%</td><td></td><td></td></tr><tr><td>2001</td><td>59.5%</td><td>2011</td><td>32.3%</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="governmentSpendingTableWrap" role="region" aria-label="データ表" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>32.7%</td><td>2002</td><td>60.1%</td><td>2012</td><td>33.3%</td></tr><tr><td>1993</td><td>67.2%</td><td>2003</td><td>58.1%</td><td>2013</td><td>32.7%</td></tr><tr><td>1994</td><td>50.4%</td><td>2004</td><td>57.1%</td><td>2014</td><td>21.6%</td></tr><tr><td>1995</td><td>81.2%</td><td>2005</td><td>76.6%</td><td>2015</td><td>31.1%</td></tr><tr><td>1996</td><td>68.6%</td><td>2006</td><td>50.5%</td><td>2016</td><td>30.9%</td></tr><tr><td>1997</td><td>60.1%</td><td>2007</td><td>51.2%</td><td>2017</td><td>42.5%</td></tr><tr><td>1998</td><td>88%</td><td>2008</td><td>69.4%</td><td>2018</td><td>26.4%</td></tr><tr><td>1999</td><td>106.1%</td><td>2009</td><td>44.9%</td><td>2019</td><td>31.3%</td></tr><tr><td>2000</td><td>84.7%</td><td>2010</td><td>42.4%</td><td></td><td></td></tr><tr><td>2001</td><td>59.5%</td><td>2011</td><td>32.3%</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="governmentSpendingNational-title">
+          <section class="indicator-block" aria-label="政府歳出 (自国通貨)折れ線グラフ">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="governmentSpendingNational-title"><span class="indicator-label-cell"><span class="indicator-label-text">政府歳出</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(自国通貨)</span><button class="indicator-info-button" type="button" aria-label="政府歳出の情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentSpendingNational">i</button></span></span></h2>
+                <h2 data-country-indicator-title="governmentSpendingNational"><span class="indicator-label-cell"><span class="indicator-label-text">政府歳出</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(自国通貨)</span><button class="indicator-info-button" type="button" aria-label="政府歳出の情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentSpendingNational">i</button></span></span></h2>
               </div>
             </header>
 
@@ -205,7 +211,9 @@
 
             <details class="data-table-toggle" id="governmentSpendingNationalTableToggle">
               <summary data-ui-text-action>データ表</summary>
-              <div class="data-table-wrap" id="governmentSpendingNationalTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>5.54億</td><td>2002</td><td>47.32億</td><td>2012</td><td>115.52億</td></tr><tr><td>1993</td><td>13.15億</td><td>2003</td><td>54.35億</td><td>2013</td><td>98.52億</td></tr><tr><td>1994</td><td>13.45億</td><td>2004</td><td>67.52億</td><td>2014</td><td>86.48億</td></tr><tr><td>1995</td><td>24.78億</td><td>2005</td><td>100.03億</td><td>2015</td><td>96.21億</td></tr><tr><td>1996</td><td>25.28億</td><td>2006</td><td>72.74億</td><td>2016</td><td>103.22億</td></tr><tr><td>1997</td><td>24.89億</td><td>2007</td><td>80.29億</td><td>2017</td><td>121.96億</td></tr><tr><td>1998</td><td>40.57億</td><td>2008</td><td>98.44億</td><td>2018</td><td>79.69億</td></tr><tr><td>1999</td><td>53.11億</td><td>2009</td><td>89.59億</td><td>2019</td><td>93.38億</td></tr><tr><td>2000</td><td>44.59億</td><td>2010</td><td>103.73億</td><td></td><td></td></tr><tr><td>2001</td><td>39.2億</td><td>2011</td><td>102.39億</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="governmentSpendingNationalTableWrap" role="region" aria-label="データ表" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>5.54億</td><td>2002</td><td>47.32億</td><td>2012</td><td>115.5億</td></tr><tr><td>1993</td><td>13.15億</td><td>2003</td><td>54.35億</td><td>2013</td><td>98.52億</td></tr><tr><td>1994</td><td>13.45億</td><td>2004</td><td>67.52億</td><td>2014</td><td>86.48億</td></tr><tr><td>1995</td><td>24.78億</td><td>2005</td><td>100億</td><td>2015</td><td>96.21億</td></tr><tr><td>1996</td><td>25.28億</td><td>2006</td><td>72.74億</td><td>2016</td><td>103.2億</td></tr><tr><td>1997</td><td>24.89億</td><td>2007</td><td>80.29億</td><td>2017</td><td>122億</td></tr><tr><td>1998</td><td>40.57億</td><td>2008</td><td>98.44億</td><td>2018</td><td>79.69億</td></tr><tr><td>1999</td><td>53.11億</td><td>2009</td><td>89.59億</td><td>2019</td><td>93.38億</td></tr><tr><td>2000</td><td>44.59億</td><td>2010</td><td>103.7億</td><td></td><td></td></tr><tr><td>2001</td><td>39.2億</td><td>2011</td><td>102.4億</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -224,10 +232,11 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/eritrea/population/">人口</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/eritrea/population-growth/">人口増加率</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/eritrea/fertility-rate/">合計特殊出生率</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/eritrea/trade/">貿易収支</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/eritrea/trade/">貿易収支・輸出額・輸入額</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/eritrea/government-debt/">政府債務残高</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/eritrea/fiscal-balance/">財政収支</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/eritrea/hdi/">HDI</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/eritrea/co2-emissions/">CO2排出量</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../ja/countries/eritrea/"><img class="flag-image flag-image-er country-flag" src="../../../../public/flags/er.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">国の概要ページを見る</span></a>
       </section>

@@ -38,15 +38,10 @@
       "directory": "gdp",
       "indicatorCode": "NGDPD",
       "staticDataPath": "data/weo/rankings/current-prices/manifest.json",
-      "displayScaleConfig": {
-        "valueScaleMode": "gdpMagnitude",
-        "basicMagnitudeInput": "billions"
-      },
       "countryPageKind": "gdp",
       "hasCountryIndicatorPage": true,
       "showWorldShare": true,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: IMF World Economic Outlook.",
       "dataNote": "Data may include estimates and projections.",
       "label": "GDP",
       "seriesId": "gdp"
@@ -56,16 +51,10 @@
       "directory": "gdp-per-capita",
       "indicatorCode": "NGDPDPC",
       "staticDataPath": "data/weo/rankings/current-prices/manifest.json",
-      "displayScaleConfig": {
-        "valueScaleMode": "currencyUnitsMagnitude",
-        "maximumFractionDigits": 0,
-        "basicMagnitudeInput": ""
-      },
       "countryPageKind": "gdp-per-capita",
       "hasCountryIndicatorPage": true,
       "showWorldShare": false,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: IMF World Economic Outlook.",
       "dataNote": "Data may include estimates and projections.",
       "label": "GDP per Capita",
       "seriesId": "gdpPerCapita"
@@ -75,15 +64,10 @@
       "directory": "ppp-gdp",
       "indicatorCode": "PPPGDP",
       "staticDataPath": "data/weo/rankings/current-prices/manifest.json",
-      "displayScaleConfig": {
-        "valueScaleMode": "internationalDollarMagnitude",
-        "basicMagnitudeInput": "billions"
-      },
       "countryPageKind": "ppp-gdp",
       "hasCountryIndicatorPage": true,
       "showWorldShare": true,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: IMF World Economic Outlook.",
       "dataNote": "",
       "label": "PPP GDP",
       "seriesId": "ppp"
@@ -93,16 +77,10 @@
       "directory": "ppp-gdp-per-capita",
       "indicatorCode": "PPPPC",
       "staticDataPath": "data/weo/rankings/current-prices/manifest.json",
-      "displayScaleConfig": {
-        "valueScaleMode": "currencyUnitsMagnitude",
-        "maximumFractionDigits": 0,
-        "basicMagnitudeInput": ""
-      },
       "countryPageKind": "ppp-gdp-per-capita",
       "hasCountryIndicatorPage": true,
       "showWorldShare": false,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: IMF World Economic Outlook.",
       "dataNote": "",
       "label": "PPP GDP per Capita",
       "seriesId": "pppPerCapita"
@@ -112,15 +90,10 @@
       "directory": "gni",
       "indicatorCode": "GNI_USD",
       "staticDataPath": "data/un-national-accounts/rankings/gni/manifest.json",
-      "displayScaleConfig": {
-        "valueScaleMode": "usdMagnitude",
-        "basicMagnitudeInput": "units"
-      },
       "countryPageKind": "gni",
       "hasCountryIndicatorPage": true,
       "showWorldShare": true,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: UNdata National Accounts Main Aggregates Database.",
       "dataNote": "",
       "label": "GNI",
       "seriesId": "gni"
@@ -130,16 +103,10 @@
       "directory": "gni-per-capita",
       "indicatorCode": "GNI_PER_CAPITA_USD",
       "staticDataPath": "data/un-national-accounts/rankings/gni/manifest.json",
-      "displayScaleConfig": {
-        "valueScaleMode": "currencyUnitsMagnitude",
-        "maximumFractionDigits": 0,
-        "basicMagnitudeInput": ""
-      },
       "countryPageKind": "gni-per-capita",
       "hasCountryIndicatorPage": true,
       "showWorldShare": false,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: UNdata National Accounts Main Aggregates Database.",
       "dataNote": "",
       "label": "GNI per Capita",
       "seriesId": "gniPerCapita"
@@ -149,16 +116,10 @@
       "directory": "gdp-growth",
       "indicatorCode": "NGDP_RPCH",
       "staticDataPath": "data/weo/rankings/current-prices/manifest.json",
-      "displayScaleConfig": {
-        "suffix": "%",
-        "suffixSpacing": "",
-        "maximumFractionDigits": 1
-      },
       "countryPageKind": "gdp-growth",
       "hasCountryIndicatorPage": true,
       "showWorldShare": false,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: IMF World Economic Outlook.",
       "dataNote": "Data may include estimates and projections.",
       "label": "GDP Growth",
       "seriesId": "gdpGrowth"
@@ -168,16 +129,10 @@
       "directory": "inflation-rate",
       "indicatorCode": "PCPIPCH",
       "staticDataPath": "data/weo/rankings/current-prices/manifest.json",
-      "displayScaleConfig": {
-        "suffix": "%",
-        "suffixSpacing": "",
-        "maximumFractionDigits": 1
-      },
       "countryPageKind": "inflation-rate",
       "hasCountryIndicatorPage": true,
       "showWorldShare": false,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: IMF World Economic Outlook.",
       "dataNote": "Data may include estimates and projections.",
       "label": "Inflation Rate",
       "seriesId": "inflationRate"
@@ -187,16 +142,10 @@
       "directory": "unemployment-rate",
       "indicatorCode": "LUR",
       "staticDataPath": "data/weo/rankings/current-prices/manifest.json",
-      "displayScaleConfig": {
-        "suffix": "%",
-        "suffixSpacing": "",
-        "maximumFractionDigits": 1
-      },
       "countryPageKind": "unemployment-rate",
       "hasCountryIndicatorPage": true,
       "showWorldShare": false,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: IMF World Economic Outlook.",
       "dataNote": "Data may include estimates and projections.",
       "label": "Unemployment Rate",
       "seriesId": "unemploymentRate"
@@ -206,15 +155,10 @@
       "directory": "population",
       "indicatorCode": "POPULATION",
       "staticDataPath": "data/un-wpp/rankings/population/manifest.json",
-      "displayScaleConfig": {
-        "valueScaleMode": "populationUnitsMagnitude",
-        "basicMagnitudeInput": ""
-      },
       "countryPageKind": "population",
       "hasCountryIndicatorPage": true,
       "showWorldShare": true,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: UN World Population Prospects.",
       "dataNote": "Data may include projections.",
       "label": "Population",
       "seriesId": "population"
@@ -224,16 +168,10 @@
       "directory": "population-growth",
       "indicatorCode": "POPULATION_GROWTH",
       "staticDataPath": "data/un-wpp/rankings/population/manifest.json",
-      "displayScaleConfig": {
-        "suffix": "%",
-        "suffixSpacing": "",
-        "maximumFractionDigits": 1
-      },
       "countryPageKind": "population-growth",
       "hasCountryIndicatorPage": true,
       "showWorldShare": false,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: UN World Population Prospects.",
       "dataNote": "Data may include projections.",
       "label": "Population Growth",
       "seriesId": "populationGrowth"
@@ -243,14 +181,10 @@
       "directory": "population-density",
       "indicatorCode": "POPULATION_DENSITY",
       "staticDataPath": "data/un-wpp/rankings/population/manifest.json",
-      "displayScaleConfig": {
-        "maximumFractionDigits": 1
-      },
       "countryPageKind": "population-density",
       "hasCountryIndicatorPage": true,
       "showWorldShare": false,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: UN World Population Prospects.",
       "dataNote": "Data may include projections.",
       "label": "Population Density",
       "seriesId": "populationDensity"
@@ -260,14 +194,10 @@
       "directory": "life-expectancy",
       "indicatorCode": "LIFE_EXPECTANCY",
       "staticDataPath": "data/un-wpp/rankings/population/manifest.json",
-      "displayScaleConfig": {
-        "maximumFractionDigits": 1
-      },
       "countryPageKind": "life-expectancy",
       "hasCountryIndicatorPage": true,
       "showWorldShare": false,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: UN World Population Prospects.",
       "dataNote": "Data may include projections.",
       "label": "Life Expectancy",
       "seriesId": "lifeExpectancy"
@@ -277,14 +207,10 @@
       "directory": "fertility-rate",
       "indicatorCode": "FERTILITY_RATE",
       "staticDataPath": "data/un-wpp/rankings/population/manifest.json",
-      "displayScaleConfig": {
-        "maximumFractionDigits": 2
-      },
       "countryPageKind": "fertility-rate",
       "hasCountryIndicatorPage": true,
       "showWorldShare": false,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: UN World Population Prospects.",
       "dataNote": "Data may include projections.",
       "label": "Fertility Rate",
       "seriesId": "fertilityRate"
@@ -294,15 +220,10 @@
       "directory": "immigrants",
       "indicatorCode": "IMMIGRANTS",
       "staticDataPath": "data/un-migrant-stock/rankings/immigrants/manifest.json",
-      "displayScaleConfig": {
-        "valueScaleMode": "populationUnitsMagnitude",
-        "basicMagnitudeInput": ""
-      },
       "countryPageKind": "immigrants",
       "hasCountryIndicatorPage": true,
       "showWorldShare": true,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: UN DESA Population Division International Migrant Stock.",
       "dataNote": "",
       "label": "Immigrants",
       "seriesId": "immigrants"
@@ -312,16 +233,10 @@
       "directory": "immigrants-percent-population",
       "indicatorCode": "IMMIGRANTS_PERCENT_POPULATION",
       "staticDataPath": "data/un-migrant-stock/rankings/immigrants/manifest.json",
-      "displayScaleConfig": {
-        "suffix": "%",
-        "suffixSpacing": "",
-        "maximumFractionDigits": 1
-      },
       "countryPageKind": "immigrants",
       "hasCountryIndicatorPage": true,
       "showWorldShare": false,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: UN DESA Population Division International Migrant Stock.",
       "dataNote": "",
       "label": "Immigrants (% of Population)",
       "seriesId": "immigrantsPercentPopulation"
@@ -331,15 +246,10 @@
       "directory": "trade-balance",
       "indicatorCode": "TRADE_BALANCE",
       "staticDataPath": "data/unctad/rankings/trade/manifest.json",
-      "displayScaleConfig": {
-        "valueScaleMode": "usdMillionsMagnitude",
-        "basicMagnitudeInput": "millions"
-      },
       "countryPageKind": "trade",
       "hasCountryIndicatorPage": true,
       "showWorldShare": false,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: UNCTADstat.",
       "dataNote": "",
       "label": "Trade Balance",
       "seriesId": "tradeBalance"
@@ -349,15 +259,10 @@
       "directory": "exports",
       "indicatorCode": "EXPORTS",
       "staticDataPath": "data/unctad/rankings/trade/manifest.json",
-      "displayScaleConfig": {
-        "valueScaleMode": "usdMillionsMagnitude",
-        "basicMagnitudeInput": "millions"
-      },
       "countryPageKind": "trade",
       "hasCountryIndicatorPage": true,
       "showWorldShare": true,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: UNCTADstat.",
       "dataNote": "",
       "label": "Exports",
       "seriesId": "exports"
@@ -367,15 +272,10 @@
       "directory": "imports",
       "indicatorCode": "IMPORTS",
       "staticDataPath": "data/unctad/rankings/trade/manifest.json",
-      "displayScaleConfig": {
-        "valueScaleMode": "usdMillionsMagnitude",
-        "basicMagnitudeInput": "millions"
-      },
       "countryPageKind": "trade",
       "hasCountryIndicatorPage": true,
       "showWorldShare": true,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: UNCTADstat.",
       "dataNote": "",
       "label": "Imports",
       "seriesId": "imports"
@@ -385,15 +285,10 @@
       "directory": "services-trade-balance",
       "indicatorCode": "SERVICES_TRADE_BALANCE",
       "staticDataPath": "data/unctad/rankings/services-trade/manifest.json",
-      "displayScaleConfig": {
-        "valueScaleMode": "usdMillionsMagnitude",
-        "basicMagnitudeInput": "millions"
-      },
       "countryPageKind": "services-trade",
       "hasCountryIndicatorPage": true,
       "showWorldShare": false,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: UNCTADstat.",
       "dataNote": "",
       "label": "Services Trade Balance",
       "seriesId": "servicesTradeBalance"
@@ -403,15 +298,10 @@
       "directory": "services-exports",
       "indicatorCode": "SERVICES_EXPORTS",
       "staticDataPath": "data/unctad/rankings/services-trade/manifest.json",
-      "displayScaleConfig": {
-        "valueScaleMode": "usdMillionsMagnitude",
-        "basicMagnitudeInput": "millions"
-      },
       "countryPageKind": "services-trade",
       "hasCountryIndicatorPage": true,
       "showWorldShare": true,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: UNCTADstat.",
       "dataNote": "",
       "label": "Services Exports",
       "seriesId": "servicesExports"
@@ -421,15 +311,10 @@
       "directory": "services-imports",
       "indicatorCode": "SERVICES_IMPORTS",
       "staticDataPath": "data/unctad/rankings/services-trade/manifest.json",
-      "displayScaleConfig": {
-        "valueScaleMode": "usdMillionsMagnitude",
-        "basicMagnitudeInput": "millions"
-      },
       "countryPageKind": "services-trade",
       "hasCountryIndicatorPage": true,
       "showWorldShare": true,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: UNCTADstat.",
       "dataNote": "",
       "label": "Services Imports",
       "seriesId": "servicesImports"
@@ -439,15 +324,10 @@
       "directory": "current-account-balance",
       "indicatorCode": "BCA",
       "staticDataPath": "data/weo/rankings/current-prices/manifest.json",
-      "displayScaleConfig": {
-        "valueScaleMode": "gdpMagnitude",
-        "basicMagnitudeInput": "billions"
-      },
       "countryPageKind": "current-account-balance",
       "hasCountryIndicatorPage": true,
       "showWorldShare": true,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: IMF World Economic Outlook.",
       "dataNote": "Data may include estimates and projections.",
       "label": "Current Account Balance",
       "seriesId": "currentAccountBalance"
@@ -457,16 +337,10 @@
       "directory": "current-account-balance-percent-gdp",
       "indicatorCode": "BCA_NGDPD",
       "staticDataPath": "data/weo/rankings/current-prices/manifest.json",
-      "displayScaleConfig": {
-        "suffix": "%",
-        "suffixSpacing": "",
-        "maximumFractionDigits": 1
-      },
       "countryPageKind": "current-account-balance",
       "hasCountryIndicatorPage": true,
       "showWorldShare": false,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: IMF World Economic Outlook.",
       "dataNote": "Data may include estimates and projections.",
       "label": "Current Account Balance (% of GDP)",
       "seriesId": "currentAccountBalancePercentGdp"
@@ -476,16 +350,10 @@
       "directory": "government-gross-debt",
       "indicatorCode": "GGXWDG_NGDP",
       "staticDataPath": "data/weo/rankings/current-prices/manifest.json",
-      "displayScaleConfig": {
-        "suffix": "%",
-        "suffixSpacing": "",
-        "maximumFractionDigits": 1
-      },
       "countryPageKind": "government-debt",
       "hasCountryIndicatorPage": true,
       "showWorldShare": false,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: IMF World Economic Outlook.",
       "dataNote": "Data may include estimates and projections.",
       "label": "Government Gross Debt (% of GDP)",
       "seriesId": "governmentGrossDebt"
@@ -495,16 +363,10 @@
       "directory": "government-net-debt",
       "indicatorCode": "GGXWDN_NGDP",
       "staticDataPath": "data/weo/rankings/current-prices/manifest.json",
-      "displayScaleConfig": {
-        "suffix": "%",
-        "suffixSpacing": "",
-        "maximumFractionDigits": 1
-      },
       "countryPageKind": "government-debt",
       "hasCountryIndicatorPage": true,
       "showWorldShare": false,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: IMF World Economic Outlook.",
       "dataNote": "Data may include estimates and projections.",
       "label": "Government Net Debt (% of GDP)",
       "seriesId": "governmentNetDebt"
@@ -514,16 +376,10 @@
       "directory": "fiscal-balance",
       "indicatorCode": "GGXCNL_NGDP",
       "staticDataPath": "data/weo/rankings/current-prices/manifest.json",
-      "displayScaleConfig": {
-        "suffix": "%",
-        "suffixSpacing": "",
-        "maximumFractionDigits": 1
-      },
       "countryPageKind": "fiscal-balance",
       "hasCountryIndicatorPage": true,
       "showWorldShare": false,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: IMF World Economic Outlook.",
       "dataNote": "Data may include estimates and projections.",
       "label": "Fiscal Balance (% of GDP)",
       "seriesId": "fiscalBalance"
@@ -533,16 +389,10 @@
       "directory": "primary-fiscal-balance",
       "indicatorCode": "GGXONLB_NGDP",
       "staticDataPath": "data/weo/rankings/current-prices/manifest.json",
-      "displayScaleConfig": {
-        "suffix": "%",
-        "suffixSpacing": "",
-        "maximumFractionDigits": 1
-      },
       "countryPageKind": "fiscal-balance",
       "hasCountryIndicatorPage": true,
       "showWorldShare": false,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: IMF World Economic Outlook.",
       "dataNote": "Data may include estimates and projections.",
       "label": "Primary Fiscal Balance (% of GDP)",
       "seriesId": "primaryFiscalBalance"
@@ -552,16 +402,10 @@
       "directory": "government-revenue",
       "indicatorCode": "GGR_NGDP",
       "staticDataPath": "data/weo/rankings/current-prices/manifest.json",
-      "displayScaleConfig": {
-        "suffix": "%",
-        "suffixSpacing": "",
-        "maximumFractionDigits": 1
-      },
       "countryPageKind": "government-revenue-spending",
       "hasCountryIndicatorPage": true,
       "showWorldShare": false,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: IMF World Economic Outlook.",
       "dataNote": "Data may include estimates and projections.",
       "label": "Government Revenue (% of GDP)",
       "seriesId": "governmentRevenue"
@@ -571,16 +415,10 @@
       "directory": "government-spending",
       "indicatorCode": "GGX_NGDP",
       "staticDataPath": "data/weo/rankings/current-prices/manifest.json",
-      "displayScaleConfig": {
-        "suffix": "%",
-        "suffixSpacing": "",
-        "maximumFractionDigits": 1
-      },
       "countryPageKind": "government-revenue-spending",
       "hasCountryIndicatorPage": true,
       "showWorldShare": false,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: IMF World Economic Outlook.",
       "dataNote": "Data may include estimates and projections.",
       "label": "Government Spending (% of GDP)",
       "seriesId": "governmentSpending"
@@ -590,15 +428,10 @@
       "directory": "total-reserves",
       "indicatorCode": "FI.RES.TOTL.CD",
       "staticDataPath": "data/world-bank/rankings/total-reserves/manifest.json",
-      "displayScaleConfig": {
-        "valueScaleMode": "usdMagnitude",
-        "basicMagnitudeInput": "units"
-      },
       "countryPageKind": "total-reserves",
       "hasCountryIndicatorPage": true,
       "showWorldShare": true,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: World Bank World Development Indicators.",
       "dataNote": "",
       "label": "Total Reserves",
       "seriesId": "totalReservesIncludingGold"
@@ -608,14 +441,10 @@
       "directory": "hdi",
       "indicatorCode": "HDI",
       "staticDataPath": "data/undp/rankings/hdi/manifest.json",
-      "displayScaleConfig": {
-        "maximumFractionDigits": 3
-      },
       "countryPageKind": "hdi",
       "hasCountryIndicatorPage": true,
       "showWorldShare": false,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: UNDP Human Development Reports.",
       "dataNote": "",
       "label": "HDI",
       "seriesId": "hdi"
@@ -625,15 +454,12 @@
       "directory": "military-spending",
       "indicatorCode": "MS.MIL.XPND.CD",
       "staticDataPath": "data/world-bank/rankings/military-spending/manifest.json",
-      "displayScaleConfig": {
-        "valueScaleMode": "usdMagnitude",
-        "basicMagnitudeInput": "units"
-      },
       "countryPageKind": "military-spending",
       "hasCountryIndicatorPage": true,
       "showWorldShare": true,
       "hideFromRankingHub": false,
       "sourceNote": "Source: World Bank World Development Indicators; original source: SIPRI Military Expenditure Database.",
+      "sourceNoteOverride": true,
       "dataNote": "",
       "label": "Military Spending",
       "seriesId": "militarySpending"
@@ -643,16 +469,12 @@
       "directory": "military-spending-percent-gdp",
       "indicatorCode": "MS.MIL.XPND.GD.ZS",
       "staticDataPath": "data/world-bank/rankings/military-spending/manifest.json",
-      "displayScaleConfig": {
-        "suffix": "%",
-        "suffixSpacing": "",
-        "maximumFractionDigits": 1
-      },
       "countryPageKind": "military-spending",
       "hasCountryIndicatorPage": true,
       "showWorldShare": false,
       "hideFromRankingHub": false,
       "sourceNote": "Source: World Bank World Development Indicators; original source: SIPRI Military Expenditure Database.",
+      "sourceNoteOverride": true,
       "dataNote": "",
       "label": "Military Spending (% of GDP)",
       "seriesId": "militarySpendingPercentGdp"
@@ -662,20 +484,10 @@
       "directory": "co2-emissions",
       "indicatorCode": "EN.GHG.CO2.MT.CE.AR5",
       "staticDataPath": "data/world-bank/rankings/environment/manifest.json",
-      "displayScaleConfig": {
-        "valueScaleMode": "populationUnitsMagnitude",
-        "fallbackMaximumFractionDigits": 2,
-        "fallbackSmallValueMaximumFractionDigits": 4,
-        "fallbackSmallValueThreshold": 10,
-        "fallbackIntegerValueThreshold": 1000,
-        "suffix": "Mt",
-        "basicMagnitudeInput": ""
-      },
       "countryPageKind": "co2-emissions",
       "hasCountryIndicatorPage": true,
       "showWorldShare": true,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: World Bank World Development Indicators.",
       "dataNote": "",
       "label": "CO2 Emissions",
       "seriesId": "co2Emissions"
@@ -685,15 +497,10 @@
       "directory": "co2-emissions-per-capita",
       "indicatorCode": "EN.GHG.CO2.PC.CE.AR5",
       "staticDataPath": "data/world-bank/rankings/environment/manifest.json",
-      "displayScaleConfig": {
-        "suffix": "t",
-        "maximumFractionDigits": 2
-      },
       "countryPageKind": "co2-emissions",
       "hasCountryIndicatorPage": true,
       "showWorldShare": false,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: World Bank World Development Indicators.",
       "dataNote": "",
       "label": "CO2 Emissions per Capita",
       "seriesId": "co2EmissionsPerCapita"
@@ -701,20 +508,12 @@
     {
       "group": "environment",
       "directory": "area",
-      "indicatorCode": "CIA.AREA.K2",
-      "staticDataPath": "data/cia/rankings/area/manifest.json",
-      "displayScaleConfig": {
-        "valueScaleMode": "areaMagnitude",
-        "fallbackMaximumFractionDigits": 0,
-        "fallbackSmallValueMaximumFractionDigits": 2,
-        "fallbackSmallValueThreshold": 10,
-        "basicMagnitudeInput": ""
-      },
+      "indicatorCode": "UNSD.DYB.AREA.K2",
+      "staticDataPath": "data/unsd/rankings/area/manifest.json",
       "countryPageKind": "",
       "hasCountryIndicatorPage": false,
       "showWorldShare": true,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: CIA World Factbook.",
       "dataNote": "",
       "label": "Area (km²)",
       "seriesId": "area"
@@ -724,16 +523,10 @@
       "directory": "forest-area",
       "indicatorCode": "AG.LND.FRST.ZS",
       "staticDataPath": "data/world-bank/rankings/environment/manifest.json",
-      "displayScaleConfig": {
-        "suffix": "%",
-        "suffixSpacing": "",
-        "maximumFractionDigits": 1
-      },
       "countryPageKind": "forest-area",
       "hasCountryIndicatorPage": true,
       "showWorldShare": false,
       "hideFromRankingHub": false,
-      "sourceNote": "Source: World Bank World Development Indicators.",
       "dataNote": "",
       "label": "Forest Area",
       "seriesId": "forestAreaPercentOfLandArea"

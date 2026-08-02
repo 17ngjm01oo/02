@@ -1,64 +1,62 @@
 import { getPageLocale, localeConfigs } from "./localization.js";
-import { compactMagnitudePrecision } from "./valueFormats.js";
+import {
+  compactMagnitudePrecision,
+  magnitudeInputs,
+  rawMagnitudeStepsByFormat,
+} from "./valueFormats.js";
 
 const basicMagnitudeModes = {
-  gdpMagnitude: "billions",
-  usdMillionsMagnitude: "millions",
-  usdMagnitude: "units",
-  internationalDollarMagnitude: "billions",
-  nationalCurrencyMagnitude: "billions",
+  billionsMagnitude: "billions",
+  millionsMagnitude: "millions",
 };
 
 export function getDisplayScale(points, config) {
-  const basicMagnitudeInput = basicMagnitudeModes[config.valueScaleMode];
+  const resolvedConfig = config;
+  const magnitudeInputKey = basicMagnitudeModes[resolvedConfig.valueScaleMode];
+  const compactPrecisionPolicy = getCompactPrecisionPolicy(resolvedConfig);
 
-  if (basicMagnitudeInput) {
-    return getMagnitudeDisplayScale(points, getMagnitudeInput(basicMagnitudeInput));
+  if (magnitudeInputKey) {
+    return getMagnitudeDisplayScale(points, getMagnitudeInput(magnitudeInputKey), { compactPrecisionPolicy });
   }
 
-  if (config.valueScaleMode === "currencyUnitsMagnitude") {
+  if (resolvedConfig.valueScaleMode === "unitsMagnitude") {
+    const fallbackMaximumFractionDigits = resolvedConfig.fallbackMaximumFractionDigits
+      ?? (resolvedConfig.fallbackPrecisionMode === "compact"
+        ? compactPrecisionPolicy.maximumFractionDigits
+        : 0);
     return getMagnitudeDisplayScale(points, getMagnitudeInput("units"), {
-      maximumFractionDigits: config.maximumFractionDigits ?? 0,
-      tooltipUnit: config.tooltipUnit ?? "",
-    });
-  }
-
-  if (config.valueScaleMode === "populationMagnitude") {
-    return getMagnitudeDisplayScale(points, getMagnitudeInput("people"), {
-      valueScale: 1000000,
-      maximumFractionDigits: 0,
-    });
-  }
-
-  if (config.valueScaleMode === "populationUnitsMagnitude") {
-    return getMagnitudeDisplayScale(points, getMagnitudeInput("units"), {
-      maximumFractionDigits: config.fallbackMaximumFractionDigits ?? 0,
-      smallValueMaximumFractionDigits: config.fallbackSmallValueMaximumFractionDigits,
-      smallValueThreshold: config.fallbackSmallValueThreshold,
-      integerValueThreshold: config.fallbackIntegerValueThreshold,
-      suffix: config.suffix,
-      suffixSpacing: config.suffixSpacing,
-    });
-  }
-
-  if (config.valueScaleMode === "areaMagnitude") {
-    return getMagnitudeDisplayScale(points, getMagnitudeInput("units"), {
-      maximumFractionDigits: config.fallbackMaximumFractionDigits ?? 0,
-      smallValueMaximumFractionDigits: config.fallbackSmallValueMaximumFractionDigits ?? 2,
-      smallValueThreshold: config.fallbackSmallValueThreshold ?? 10,
+      maximumFractionDigits: fallbackMaximumFractionDigits,
+      smallValueMaximumFractionDigits: resolvedConfig.fallbackSmallValueMaximumFractionDigits,
+      smallValueThreshold: resolvedConfig.fallbackSmallValueThreshold,
+      integerValueThreshold: resolvedConfig.fallbackIntegerValueThreshold,
+      lowerUnitThreshold: resolvedConfig.lowerUnitThreshold,
+      lowerUnitValueScale: resolvedConfig.lowerUnitValueScale,
+      lowerUnitSuffix: resolvedConfig.lowerUnitSuffix,
+      suffix: resolvedConfig.suffix,
+      suffixSpacing: resolvedConfig.suffixSpacing,
+      compactPrecisionPolicy,
     });
   }
 
   return {
-    valueScale: config.valueScale ?? 1,
-    tooltipPrefix: config.tooltipPrefix ?? "",
-    tooltipUnit: config.tooltipUnit ?? "",
-    tickPrefix: config.tickPrefix ?? "",
-    suffix: config.suffix ?? "",
-    suffixSpacing: config.suffixSpacing ?? " ",
-    compactUnit: config.compactUnit ?? "",
+    valueScale: resolvedConfig.valueScale ?? 1,
+    tooltipPrefix: resolvedConfig.tooltipPrefix ?? "",
+    tooltipUnit: resolvedConfig.tooltipUnit ?? "",
+    tickPrefix: resolvedConfig.tickPrefix ?? "",
+    suffix: resolvedConfig.suffix ?? "",
+    suffixSpacing: resolvedConfig.suffixSpacing ?? " ",
+    compactUnit: resolvedConfig.compactUnit ?? "",
     locale: getNumberFormatLocale(),
-    maximumFractionDigits: config.maximumFractionDigits ?? 1,
+    maximumFractionDigits: resolvedConfig.maximumFractionDigits ?? 1,
+    integerValueThreshold: resolvedConfig.integerValueThreshold,
+  };
+}
+
+function getCompactPrecisionPolicy(config) {
+  return {
+    maximumFractionDigits: config.compactMaximumFractionDigits ?? compactMagnitudePrecision.maximumFractionDigits,
+    significantDigitBudget: config.compactSignificantDigitBudget ?? compactMagnitudePrecision.significantDigitBudget,
+    integerValueThreshold: config.compactIntegerValueThreshold ?? compactMagnitudePrecision.integerValueThreshold,
   };
 }
 
@@ -66,164 +64,19 @@ export function getSingleValueDisplayScale(value, config) {
   return getDisplayScale([{ value }], config);
 }
 
-const rawMagnitudeStepsByFormat = {
-  western: {
-    compactFromMillions: [
-      { threshold: 1000000000000000, valueScale: 0.000000000000001, compactUnit: "Q" },
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: "T" },
-      { threshold: 1000000000, valueScale: 0.000000001, compactUnit: "B" },
-      { threshold: Number.NEGATIVE_INFINITY, valueScale: 0.000001, compactUnit: "M" },
-    ],
-    compactFromUnits: [
-      { threshold: 1000000000000000, valueScale: 0.000000000000001, compactUnit: "Q" },
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: "T" },
-      { threshold: 1000000000, valueScale: 0.000000001, compactUnit: "B" },
-      { threshold: 1000000, valueScale: 0.000001, compactUnit: "M" },
-    ],
-  },
-  japanese: {
-    compactFromMillions: [
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: "兆" },
-      { threshold: 100000000, valueScale: 0.00000001, compactUnit: "億" },
-      { threshold: Number.NEGATIVE_INFINITY, valueScale: 0.0001, compactUnit: "万" },
-    ],
-    compactFromUnits: [
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: "兆" },
-      { threshold: 100000000, valueScale: 0.00000001, compactUnit: "億" },
-      { threshold: 10000, valueScale: 0.0001, compactUnit: "万" },
-    ],
-  },
-  spanish: {
-    compactFromMillions: [
-      { threshold: 1000000000000000, valueScale: 0.000000000000001, compactUnit: " mil bill." },
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " bill." },
-      { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " mil M" },
-      { threshold: Number.NEGATIVE_INFINITY, valueScale: 0.000001, compactUnit: " M" },
-    ],
-    compactFromUnits: [
-      { threshold: 1000000000000000, valueScale: 0.000000000000001, compactUnit: " mil bill." },
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " bill." },
-      { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " mil M" },
-      { threshold: 1000000, valueScale: 0.000001, compactUnit: " M" },
-    ],
-  },
-  french: {
-    compactFromMillions: [
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " Bn" },
-      { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " Md" },
-      { threshold: Number.NEGATIVE_INFINITY, valueScale: 0.000001, compactUnit: " M" },
-    ],
-    compactFromUnits: [
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " Bn" },
-      { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " Md" },
-      { threshold: 1000000, valueScale: 0.000001, compactUnit: " M" },
-    ],
-  },
-  brazilian_portuguese: {
-    compactFromMillions: [
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " tri" },
-      { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " bi" },
-      { threshold: Number.NEGATIVE_INFINITY, valueScale: 0.000001, compactUnit: " mi" },
-    ],
-    compactFromUnits: [
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " tri" },
-      { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " bi" },
-      { threshold: 1000000, valueScale: 0.000001, compactUnit: " mi" },
-    ],
-  },
-  german: {
-    compactFromMillions: [
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " Bio." },
-      { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " Mrd." },
-      { threshold: Number.NEGATIVE_INFINITY, valueScale: 0.000001, compactUnit: " Mio." },
-    ],
-    compactFromUnits: [
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " Bio." },
-      { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " Mrd." },
-      { threshold: 1000000, valueScale: 0.000001, compactUnit: " Mio." },
-    ],
-  },
-  italian: {
-    compactFromMillions: [
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " mila mld" },
-      { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " mld" },
-      { threshold: Number.NEGATIVE_INFINITY, valueScale: 0.000001, compactUnit: " mln" },
-    ],
-    compactFromUnits: [
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " mila mld" },
-      { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " mld" },
-      { threshold: 1000000, valueScale: 0.000001, compactUnit: " mln" },
-    ],
-  },
-  korean: {
-    compactFromMillions: [
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: "조" },
-      { threshold: 100000000, valueScale: 0.00000001, compactUnit: "억" },
-      { threshold: Number.NEGATIVE_INFINITY, valueScale: 0.0001, compactUnit: "만" },
-    ],
-    compactFromUnits: [
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: "조" },
-      { threshold: 100000000, valueScale: 0.00000001, compactUnit: "억" },
-      { threshold: 10000, valueScale: 0.0001, compactUnit: "만" },
-    ],
-  },
-  turkish: {
-    compactFromMillions: [
-      { threshold: 1000000000000000, valueScale: 0.000000000000001, compactUnit: " katrilyon" },
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " trilyon" },
-      { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " milyar" },
-      { threshold: Number.NEGATIVE_INFINITY, valueScale: 0.000001, compactUnit: " milyon" },
-    ],
-    compactFromUnits: [
-      { threshold: 1000000000000000, valueScale: 0.000000000000001, compactUnit: " katrilyon" },
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " trilyon" },
-      { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " milyar" },
-      { threshold: 1000000, valueScale: 0.000001, compactUnit: " milyon" },
-    ],
-  },
-  indonesian: {
-    compactFromMillions: [
-      { threshold: 1000000000000000, valueScale: 0.000000000000001, compactUnit: " kuadriliun" },
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " triliun" },
-      { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " miliar" },
-      { threshold: Number.NEGATIVE_INFINITY, valueScale: 0.000001, compactUnit: " juta" },
-    ],
-    compactFromUnits: [
-      { threshold: 1000000000000000, valueScale: 0.000000000000001, compactUnit: " kuadriliun" },
-      { threshold: 1000000000000, valueScale: 0.000000000001, compactUnit: " triliun" },
-      { threshold: 1000000000, valueScale: 0.000000001, compactUnit: " miliar" },
-      { threshold: 1000000, valueScale: 0.000001, compactUnit: " juta" },
-    ],
-  },
-};
-
-const magnitudeInputs = {
-  billions: {
-    rawValueScale: 1000000000,
-    stepsKey: "compactFromMillions",
-  },
-  millions: {
-    rawValueScale: 1000000,
-    stepsKey: "compactFromMillions",
-  },
-  units: {
-    rawValueScale: 1,
-    stepsKey: "compactFromUnits",
-  },
-  people: {
-    rawValueScale: 1000000,
-    stepsKey: "compactFromUnits",
-  },
-};
-
 function getMagnitudeInput(inputKey) {
   const locale = getNumberFormatLocale();
   const input = magnitudeInputs[inputKey];
   const magnitudeFormat = localeConfigs[getPageLocale()]?.magnitudeFormat;
-  const steps = rawMagnitudeStepsByFormat[magnitudeFormat]?.[input.stepsKey];
-  if (!steps) {
+  const baseSteps = rawMagnitudeStepsByFormat[magnitudeFormat];
+  if (!baseSteps) {
     throw new Error(`Unsupported magnitude format for locale: ${getPageLocale()}`);
   }
+  const steps = input.forceMinimumCompactUnit
+    ? baseSteps.map((step, index) => (
+      index === baseSteps.length - 1 ? { ...step, threshold: Number.NEGATIVE_INFINITY } : step
+    ))
+    : baseSteps;
 
   return {
     ...input,
@@ -236,6 +89,7 @@ function getMagnitudeDisplayScale(points, magnitudeInput, fallback = {}) {
   const maxRawValue = Math.max(...points.map((point) => Math.abs(point.value * magnitudeInput.rawValueScale)));
   const magnitudeSteps = magnitudeInput.steps;
   const magnitudeStep = magnitudeSteps.find((step) => maxRawValue >= step.threshold);
+  const compactPrecisionPolicy = fallback.compactPrecisionPolicy ?? compactMagnitudePrecision;
 
   if (!magnitudeStep) {
     return {
@@ -251,9 +105,15 @@ function getMagnitudeDisplayScale(points, magnitudeInput, fallback = {}) {
       adaptiveCompactSteps: magnitudeSteps,
       adaptiveFallbackValueScale: fallback.valueScale ?? 1,
       adaptiveFallbackMaximumFractionDigits: fallback.maximumFractionDigits ?? 0,
+      adaptiveFallbackSignificantDigitBudget: compactPrecisionPolicy.significantDigitBudget,
+      adaptiveLowerUnitThreshold: fallback.lowerUnitThreshold,
+      adaptiveLowerUnitValueScale: fallback.lowerUnitValueScale,
+      adaptiveLowerUnitSuffix: fallback.lowerUnitSuffix,
       smallValueMaximumFractionDigits: fallback.smallValueMaximumFractionDigits,
       smallValueThreshold: fallback.smallValueThreshold,
       integerValueThreshold: fallback.integerValueThreshold,
+      significantDigitBudget: compactPrecisionPolicy.significantDigitBudget,
+      compactPrecisionPolicy,
       maximumFractionDigits: fallback.maximumFractionDigits ?? 0,
     };
   }
@@ -272,10 +132,19 @@ function getMagnitudeDisplayScale(points, magnitudeInput, fallback = {}) {
     adaptiveCompactSteps: magnitudeSteps,
     adaptiveFallbackValueScale: fallback.valueScale ?? 1,
     adaptiveFallbackMaximumFractionDigits: fallback.maximumFractionDigits ?? 0,
+    adaptiveFallbackSignificantDigitBudget: compactPrecisionPolicy.significantDigitBudget,
+    adaptiveLowerUnitThreshold: fallback.lowerUnitThreshold,
+    adaptiveLowerUnitValueScale: fallback.lowerUnitValueScale,
+    adaptiveLowerUnitSuffix: fallback.lowerUnitSuffix,
     smallValueMaximumFractionDigits: fallback.smallValueMaximumFractionDigits,
     smallValueThreshold: fallback.smallValueThreshold,
     integerValueThreshold: fallback.integerValueThreshold,
-    maximumFractionDigits: resolveMaximumFractionDigits(displayValue, compactMagnitudePrecision),
+    significantDigitBudget: compactPrecisionPolicy.significantDigitBudget,
+    compactPrecisionPolicy,
+    maximumFractionDigits: resolveMaximumFractionDigits(
+      displayValue,
+      compactPrecisionPolicy,
+    ),
   };
 }
 
@@ -309,10 +178,27 @@ function getNumberFormatLocale() {
   return localeConfigs[getPageLocale()]?.numberLocale ?? "en-US";
 }
 
+const numberFormatterCache = new Map();
+
+function getNumberFormatter(locale, maximumFractionDigits, useGrouping = true) {
+  const cacheKey = `${locale}:${maximumFractionDigits}:${useGrouping}`;
+  if (!numberFormatterCache.has(cacheKey)) {
+    const options = { maximumFractionDigits };
+    if (!useGrouping) {
+      options.useGrouping = false;
+    }
+    numberFormatterCache.set(cacheKey, new Intl.NumberFormat(locale, options));
+  }
+  return numberFormatterCache.get(cacheKey);
+}
+
+function getRoundedDisplayValue(value, maximumFractionDigits) {
+  return Number(getNumberFormatter("en-US", maximumFractionDigits, false).format(value));
+}
+
 function formatNumber(value, maximumFractionDigits = 1, locale = getNumberFormatLocale()) {
-  return new Intl.NumberFormat(locale, {
-    maximumFractionDigits,
-  }).format(value);
+  const normalizedValue = getRoundedDisplayValue(value, maximumFractionDigits) === 0 ? 0 : value;
+  return getNumberFormatter(locale, maximumFractionDigits).format(normalizedValue);
 }
 
 export function formatAxisTickValue(value, displayScale) {
@@ -324,7 +210,8 @@ export function formatAxisTickValue(value, displayScale) {
     return formatAdaptiveCompactValue(value / displayScale.valueScale, displayScale);
   }
 
-  const formattedValue = formatNumber(value, displayScale.maximumFractionDigits, displayScale.locale);
+  const maximumFractionDigits = resolveMaximumFractionDigits(value, displayScale);
+  const formattedValue = formatNumber(value, maximumFractionDigits, displayScale.locale);
   const compactUnit = displayScale.compactUnit ?? "";
   const suffixSpacing = displayScale.suffixSpacing ?? (displayScale.suffix ? " " : "");
   const suffix = displayScale.suffix ? `${suffixSpacing}${displayScale.suffix}` : "";
@@ -333,7 +220,9 @@ export function formatAxisTickValue(value, displayScale) {
 }
 
 export function formatDisplayValue(value, displayScale) {
-  const formattedValue = formatNumber(value * displayScale.valueScale, displayScale.maximumFractionDigits, displayScale.locale);
+  const displayValue = value * displayScale.valueScale;
+  const maximumFractionDigits = resolveMaximumFractionDigits(displayValue, displayScale);
+  const formattedValue = formatNumber(displayValue, maximumFractionDigits, displayScale.locale);
   const unit = displayScale.tooltipUnit ? ` ${displayScale.tooltipUnit}` : "";
   const suffixSpacing = displayScale.suffixSpacing ?? (displayScale.suffix ? " " : "");
   const suffix = displayScale.suffix ? `${suffixSpacing}${displayScale.suffix}` : "";
@@ -357,33 +246,103 @@ export function formatCompactDisplayValue(value, displayScale) {
 
 function formatAdaptiveCompactValue(value, displayScale) {
   const rawValue = value * (displayScale.rawValueScale ?? 1);
-  const magnitudeStep = displayScale.adaptiveCompactSteps.find((step) => Math.abs(rawValue) >= step.threshold);
+  const magnitudeStepIndex = displayScale.adaptiveCompactSteps.findIndex(
+    (step) => Math.abs(rawValue) >= step.threshold,
+  );
 
-  if (!magnitudeStep) {
-    const fallbackValue = value * (displayScale.adaptiveFallbackValueScale ?? 1);
-    const formattedValue = formatNumber(
-      fallbackValue,
-      resolveMaximumFractionDigits(fallbackValue, {
-        maximumFractionDigits: displayScale.adaptiveFallbackMaximumFractionDigits,
-        smallValueMaximumFractionDigits: displayScale.smallValueMaximumFractionDigits,
-        smallValueThreshold: displayScale.smallValueThreshold,
-        integerValueThreshold: displayScale.integerValueThreshold,
-      }),
-      displayScale.locale,
-    );
-    const unit = displayScale.tooltipUnit ? ` ${displayScale.tooltipUnit}` : "";
-    const suffixValue = displayScale.suffix;
-    const suffixSpacing = displayScale.suffixSpacing ?? (suffixValue ? " " : "");
-    const suffix = suffixValue ? `${suffixSpacing}${suffixValue}` : "";
-
-    return `${displayScale.tooltipPrefix}${formattedValue}${unit}${suffix}`;
+  if (magnitudeStepIndex < 0) {
+    return formatAdaptiveFallbackValue(value, rawValue, displayScale);
   }
 
-  const displayValue = rawValue * magnitudeStep.valueScale;
-  const maximumFractionDigits = resolveMaximumFractionDigits(displayValue, compactMagnitudePrecision);
+  return formatAdaptiveMagnitudeValue(rawValue, magnitudeStepIndex, displayScale);
+}
+
+function formatAdaptiveFallbackValue(value, rawValue, displayScale) {
+  const fallbackValue = value * (displayScale.adaptiveFallbackValueScale ?? 1);
+  const fallbackPrecisionPolicy = {
+    maximumFractionDigits: displayScale.adaptiveFallbackMaximumFractionDigits,
+    significantDigitBudget: displayScale.adaptiveFallbackSignificantDigitBudget,
+    smallValueMaximumFractionDigits: displayScale.smallValueMaximumFractionDigits,
+    smallValueThreshold: displayScale.smallValueThreshold,
+    integerValueThreshold: displayScale.integerValueThreshold,
+  };
+  const lowerUnitThreshold = displayScale.adaptiveLowerUnitThreshold;
+  if (lowerUnitThreshold != null && Math.abs(fallbackValue) > 0 && Math.abs(fallbackValue) < lowerUnitThreshold) {
+    const lowerUnitValueScale = displayScale.adaptiveLowerUnitValueScale ?? 1;
+    const lowerUnitDisplayValue = fallbackValue * lowerUnitValueScale;
+    const lowerUnitMaximumFractionDigits = resolveMaximumFractionDigits(lowerUnitDisplayValue, fallbackPrecisionPolicy);
+    const lowerUnitPromotionThreshold = lowerUnitThreshold * lowerUnitValueScale;
+    if (!roundsToThreshold(lowerUnitDisplayValue, lowerUnitMaximumFractionDigits, lowerUnitPromotionThreshold)) {
+      return formatAdaptiveValue(
+        lowerUnitDisplayValue,
+        lowerUnitMaximumFractionDigits,
+        displayScale,
+        { suffixValue: displayScale.adaptiveLowerUnitSuffix },
+      );
+    }
+  }
+
+  const maximumFractionDigits = resolveMaximumFractionDigits(fallbackValue, fallbackPrecisionPolicy);
+  const smallestStepIndex = displayScale.adaptiveCompactSteps.length - 1;
+  const smallestStep = displayScale.adaptiveCompactSteps[smallestStepIndex];
+  const fallbackPromotionThreshold = (
+    smallestStep.threshold
+    / (displayScale.rawValueScale ?? 1)
+    * (displayScale.adaptiveFallbackValueScale ?? 1)
+  );
+  if (
+    Number.isFinite(fallbackPromotionThreshold)
+    && roundsToThreshold(fallbackValue, maximumFractionDigits, fallbackPromotionThreshold)
+  ) {
+    return formatAdaptiveMagnitudeValue(rawValue, smallestStepIndex, displayScale);
+  }
+
+  return formatAdaptiveValue(fallbackValue, maximumFractionDigits, displayScale, {
+    includeTooltipUnit: true,
+    suffixValue: displayScale.suffix,
+  });
+}
+
+function formatAdaptiveMagnitudeValue(rawValue, initialStepIndex, displayScale) {
+  let stepIndex = initialStepIndex;
+  let magnitudeStep = displayScale.adaptiveCompactSteps[stepIndex];
+  let displayValue = rawValue * magnitudeStep.valueScale;
+  let maximumFractionDigits = resolveMaximumFractionDigits(
+    displayValue,
+    displayScale.compactPrecisionPolicy ?? compactMagnitudePrecision,
+  );
+
+  while (stepIndex > 0) {
+    const largerStep = displayScale.adaptiveCompactSteps[stepIndex - 1];
+    const promotionThreshold = largerStep.threshold * magnitudeStep.valueScale;
+    if (!roundsToThreshold(displayValue, maximumFractionDigits, promotionThreshold)) {
+      break;
+    }
+    stepIndex -= 1;
+    magnitudeStep = largerStep;
+    displayValue = rawValue * magnitudeStep.valueScale;
+    maximumFractionDigits = resolveMaximumFractionDigits(
+      displayValue,
+      displayScale.compactPrecisionPolicy ?? compactMagnitudePrecision,
+    );
+  }
+
+  return formatAdaptiveValue(displayValue, maximumFractionDigits, displayScale, {
+    compactUnit: magnitudeStep.compactUnit,
+    suffixValue: displayScale.suffix,
+  });
+}
+
+function roundsToThreshold(value, maximumFractionDigits, threshold) {
+  const tolerance = Math.max(1, Math.abs(threshold)) * 1e-12;
+  return Math.abs(getRoundedDisplayValue(value, maximumFractionDigits)) >= threshold - tolerance;
+}
+
+function formatAdaptiveValue(displayValue, maximumFractionDigits, displayScale, options = {}) {
+  const { compactUnit = "", includeTooltipUnit = false, suffixValue = "" } = options;
   const formattedValue = formatNumber(displayValue, maximumFractionDigits, displayScale.locale);
-  const suffixValue = displayScale.suffix;
+  const unit = includeTooltipUnit && displayScale.tooltipUnit ? ` ${displayScale.tooltipUnit}` : "";
   const suffixSpacing = displayScale.suffixSpacing ?? (suffixValue ? " " : "");
   const suffix = suffixValue ? `${suffixSpacing}${suffixValue}` : "";
-  return `${displayScale.tooltipPrefix}${formattedValue}${magnitudeStep.compactUnit}${suffix}`;
+  return `${displayScale.tooltipPrefix}${formattedValue}${unit}${compactUnit}${suffix}`;
 }

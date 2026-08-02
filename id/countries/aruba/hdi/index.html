@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Navigasi halaman masyarakat"><a class="navigation-control is-current" href="../hdi/" aria-current="page">Indeks Pembangunan Manusia</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="hdi-title">
+          <section class="indicator-block" aria-label="Grafik garis Indeks Pembangunan Manusia">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="hdi-title"><span class="indicator-label-cell"><span class="indicator-label-text">Indeks Pembangunan Manusia</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="Informasi tentang Indeks Pembangunan Manusia" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="hdi">i</button></span></span></h2>
+                <h2 data-country-indicator-title="hdi"><span class="indicator-label-cell"><span class="indicator-label-text">Indeks Pembangunan Manusia</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="Informasi tentang Indeks Pembangunan Manusia" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="hdi">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="hdi">
                 <div class="compare-input-wrap">
@@ -134,7 +134,9 @@
 
             <details class="data-table-toggle" id="hdiTableToggle">
               <summary data-ui-text-action>Tabel data</summary>
-              <div class="data-table-wrap" id="hdiTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="hdiTableWrap" role="region" aria-label="Tabel data" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
@@ -153,9 +155,10 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/aruba/population/">Jumlah Penduduk</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/aruba/population-growth/">Pertumbuhan Penduduk</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/aruba/fertility-rate/">Angka Kelahiran Total</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/aruba/trade/">Neraca Perdagangan</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/aruba/trade/">Ekspor, Impor, dan Neraca Perdagangan</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/aruba/government-debt/">Utang Pemerintah</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/aruba/fiscal-balance/">Neraca Fiskal</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/aruba/co2-emissions/">Emisi Gas Rumah Kaca</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../id/countries/aruba/"><img class="flag-image flag-image-aw country-flag" src="../../../../public/flags/aw.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">Lihat profil negara</span></a>
       </section>

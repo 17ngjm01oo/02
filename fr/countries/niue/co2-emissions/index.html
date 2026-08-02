@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Navigation de la page Environnement"><a class="navigation-control is-current" href="../co2-emissions/" aria-current="page">Émissions de CO₂</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="co2Emissions-title">
+          <section class="indicator-block" aria-label="Graphique linéaire de Émissions de CO₂ (éq. CO₂)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="co2Emissions-title"><span class="indicator-label-cell"><span class="indicator-label-text">Émissions de CO₂</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(éq. CO₂)</span><button class="indicator-info-button" type="button" aria-label="Informations sur Émissions de CO₂" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="co2Emissions">i</button></span></span></h2>
+                <h2 data-country-indicator-title="co2Emissions"><span class="indicator-label-cell"><span class="indicator-label-text">Émissions de CO₂</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(éq. CO₂)</span><button class="indicator-info-button" type="button" aria-label="Informations sur Émissions de CO₂" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="co2Emissions">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="co2Emissions">
                 <div class="compare-input-wrap">
@@ -134,14 +134,16 @@
 
             <details class="data-table-toggle" id="co2EmissionsTableToggle">
               <summary data-ui-text-action>Tableau de données</summary>
-              <div class="data-table-wrap" id="co2EmissionsTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="co2EmissionsTableWrap" role="region" aria-label="Tableau de données" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="co2EmissionsPerCapita-title">
+          <section class="indicator-block" aria-label="Graphique linéaire de Émissions de CO₂ par habitant (éq. CO₂)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="co2EmissionsPerCapita-title"><span class="indicator-label-cell"><span class="indicator-label-text">Émissions de CO₂ par habitant</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(éq. CO₂)</span><button class="indicator-info-button" type="button" aria-label="Informations sur Émissions de CO₂ par habitant" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="co2EmissionsPerCapita">i</button></span></span></h2>
+                <h2 data-country-indicator-title="co2EmissionsPerCapita"><span class="indicator-label-cell"><span class="indicator-label-text">Émissions de CO₂ par habitant</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(éq. CO₂)</span><button class="indicator-info-button" type="button" aria-label="Informations sur Émissions de CO₂ par habitant" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="co2EmissionsPerCapita">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="co2EmissionsPerCapita">
                 <div class="compare-input-wrap">
@@ -169,7 +171,9 @@
 
             <details class="data-table-toggle" id="co2EmissionsPerCapitaTableToggle">
               <summary data-ui-text-action>Tableau de données</summary>
-              <div class="data-table-wrap" id="co2EmissionsPerCapitaTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="co2EmissionsPerCapitaTableWrap" role="region" aria-label="Tableau de données" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
@@ -184,7 +188,7 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/niue/population/">Population</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/niue/population-growth/">Croissance démographique</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/niue/fertility-rate/">Indice de fécondité</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/niue/trade/">Balance commerciale</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/niue/trade/">Exportations, importations et balance commerciale</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../fr/countries/niue/"><img class="flag-image flag-image-nu country-flag" src="../../../../public/flags/nu.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">Voir le profil du pays</span></a>
       </section>

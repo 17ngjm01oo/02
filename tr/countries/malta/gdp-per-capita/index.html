@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Ekonomi sayfası navigasyonu"><a class="navigation-control" href="../gdp/">GSYİH</a><a class="navigation-control is-current" href="../gdp-per-capita/" aria-current="page">Kişi Başına GSYİH</a><a class="navigation-control" href="../ppp-gdp/">SGP&#x27;ye Göre GSYİH</a><a class="navigation-control" href="../ppp-gdp-per-capita/">Kişi Başına GSYİH (SGP)</a><a class="navigation-control" href="../gni/">GSMG</a><a class="navigation-control" href="../gni-per-capita/">Kişi Başına GSMG</a><a class="navigation-control" href="../gdp-growth/">Ekonomik Büyüme</a><a class="navigation-control" href="../inflation-rate/">Enflasyon Oranı</a><a class="navigation-control" href="../unemployment-rate/">İşsizlik Oranı</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="gdpPerCapita-title">
+          <section class="indicator-block" aria-label="Kişi Başına GSYİH (USD) çizgi grafiği">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gdpPerCapita-title"><span class="indicator-label-cell"><span class="indicator-label-text">Kişi Başına GSYİH</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Kişi Başına GSYİH hakkında bilgi" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpPerCapita">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gdpPerCapita"><span class="indicator-label-cell"><span class="indicator-label-text">Kişi Başına GSYİH</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Kişi Başına GSYİH hakkında bilgi" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpPerCapita">i</button></span></span></h2>
                 <p class="indicator-rank"><a data-ui-text-action href="../../../../tr/rankings/countries/gdp-per-capita/">Dünya sırası: #25 / 190</a></p>
               </div>
               <div class="compare-control" data-series-id="gdpPerCapita">
@@ -135,14 +135,16 @@
 
             <details class="data-table-toggle" id="gdpPerCapitaTableToggle">
               <summary data-ui-text-action>Veri tablosu</summary>
-              <div class="data-table-wrap" id="gdpPerCapitaTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1995</td><td>8.907</td><td>2006</td><td>16.748</td><td>2017</td><td>30.817</td></tr><tr><td>1996</td><td>9.035</td><td>2007</td><td>19.655</td><td>2018</td><td>34.035</td></tr><tr><td>1997</td><td>9.075</td><td>2008</td><td>22.488</td><td>2019</td><td>33.145</td></tr><tr><td>1998</td><td>9.545</td><td>2009</td><td>21.319</td><td>2020</td><td>31.837</td></tr><tr><td>1999</td><td>9.904</td><td>2010</td><td>21.990</td><td>2021</td><td>38.253</td></tr><tr><td>2000</td><td>10.398</td><td>2011</td><td>23.585</td><td>2022</td><td>36.438</td></tr><tr><td>2001</td><td>10.403</td><td>2012</td><td>23.029</td><td>2023</td><td>41.752</td></tr><tr><td>2002</td><td>11.307</td><td>2013</td><td>25.618</td><td>2024</td><td>45.295</td></tr><tr><td>2003</td><td>13.655</td><td>2014</td><td>27.773</td><td>2025</td><td>49.297</td></tr><tr><td>2004</td><td>15.277</td><td>2015</td><td>25.847</td><td>2026</td><td class="data-table-observation-estimated">53.560</td></tr><tr><td>2005</td><td>15.873</td><td>2016</td><td>26.738</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gdpPerCapitaTableWrap" role="region" aria-label="Veri tablosu" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1995</td><td>8.907</td><td>2006</td><td>16.748</td><td>2017</td><td>30.817</td></tr><tr><td>1996</td><td>9.035</td><td>2007</td><td>19.655</td><td>2018</td><td>34.035</td></tr><tr><td>1997</td><td>9.075</td><td>2008</td><td>22.488</td><td>2019</td><td>33.145</td></tr><tr><td>1998</td><td>9.545</td><td>2009</td><td>21.319</td><td>2020</td><td>31.837</td></tr><tr><td>1999</td><td>9.904</td><td>2010</td><td>21.990</td><td>2021</td><td>38.253</td></tr><tr><td>2000</td><td>10.398</td><td>2011</td><td>23.585</td><td>2022</td><td>36.438</td></tr><tr><td>2001</td><td>10.403</td><td>2012</td><td>23.029</td><td>2023</td><td>41.752</td></tr><tr><td>2002</td><td>11.307</td><td>2013</td><td>25.618</td><td>2024</td><td>45.295</td></tr><tr><td>2003</td><td>13.655</td><td>2014</td><td>27.773</td><td>2025</td><td>49.297</td></tr><tr><td>2004</td><td>15.277</td><td>2015</td><td>25.847</td><td>2026</td><td class="data-table-observation-estimated">53.560</td></tr><tr><td>2005</td><td>15.873</td><td>2016</td><td>26.738</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="gdpNationalPerCapita-title">
+          <section class="indicator-block" aria-label="Kişi Başına GSYİH (Yerel para birimi) çizgi grafiği">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gdpNationalPerCapita-title"><span class="indicator-label-cell"><span class="indicator-label-text">Kişi Başına GSYİH</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Yerel para birimi)</span><button class="indicator-info-button" type="button" aria-label="Kişi Başına GSYİH hakkında bilgi" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpNationalPerCapita">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gdpNationalPerCapita"><span class="indicator-label-cell"><span class="indicator-label-text">Kişi Başına GSYİH</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Yerel para birimi)</span><button class="indicator-info-button" type="button" aria-label="Kişi Başına GSYİH hakkında bilgi" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpNationalPerCapita">i</button></span></span></h2>
               </div>
             </header>
 
@@ -153,14 +155,16 @@
 
             <details class="data-table-toggle" id="gdpNationalPerCapitaTableToggle">
               <summary data-ui-text-action>Veri tablosu</summary>
-              <div class="data-table-wrap" id="gdpNationalPerCapitaTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1995</td><td>7.323</td><td>2006</td><td>13.285</td><td>2017</td><td>27.289</td></tr><tr><td>1996</td><td>7.585</td><td>2007</td><td>14.245</td><td>2018</td><td>28.807</td></tr><tr><td>1997</td><td>8.155</td><td>2008</td><td>15.292</td><td>2019</td><td>29.605</td></tr><tr><td>1998</td><td>8.632</td><td>2009</td><td>15.301</td><td>2020</td><td>27.896</td></tr><tr><td>1999</td><td>9.199</td><td>2010</td><td>16.574</td><td>2021</td><td>32.321</td></tr><tr><td>2000</td><td>10.598</td><td>2011</td><td>16.947</td><td>2022</td><td>34.575</td></tr><tr><td>2001</td><td>10.903</td><td>2012</td><td>17.913</td><td>2023</td><td>38.603</td></tr><tr><td>2002</td><td>11.403</td><td>2013</td><td>19.288</td><td>2024</td><td>41.860</td></tr><tr><td>2003</td><td>11.984</td><td>2014</td><td>20.900</td><td>2025</td><td>43.651</td></tr><tr><td>2004</td><td>12.256</td><td>2015</td><td>23.294</td><td>2026</td><td class="data-table-observation-estimated">45.420</td></tr><tr><td>2005</td><td>12.767</td><td>2016</td><td>24.162</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gdpNationalPerCapitaTableWrap" role="region" aria-label="Veri tablosu" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1995</td><td>7.323</td><td>2006</td><td>13.285</td><td>2017</td><td>27.289</td></tr><tr><td>1996</td><td>7.585</td><td>2007</td><td>14.245</td><td>2018</td><td>28.807</td></tr><tr><td>1997</td><td>8.155</td><td>2008</td><td>15.292</td><td>2019</td><td>29.605</td></tr><tr><td>1998</td><td>8.632</td><td>2009</td><td>15.301</td><td>2020</td><td>27.896</td></tr><tr><td>1999</td><td>9.199</td><td>2010</td><td>16.574</td><td>2021</td><td>32.321</td></tr><tr><td>2000</td><td>10.598</td><td>2011</td><td>16.947</td><td>2022</td><td>34.575</td></tr><tr><td>2001</td><td>10.903</td><td>2012</td><td>17.913</td><td>2023</td><td>38.603</td></tr><tr><td>2002</td><td>11.403</td><td>2013</td><td>19.288</td><td>2024</td><td>41.860</td></tr><tr><td>2003</td><td>11.984</td><td>2014</td><td>20.900</td><td>2025</td><td>43.651</td></tr><tr><td>2004</td><td>12.256</td><td>2015</td><td>23.294</td><td>2026</td><td class="data-table-observation-estimated">45.420</td></tr><tr><td>2005</td><td>12.767</td><td>2016</td><td>24.162</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="realGdpPerCapita-title">
+          <section class="indicator-block" aria-label="Kişi Başına Reel GSYİH (Yerel para birimi) çizgi grafiği">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="realGdpPerCapita-title"><span class="indicator-label-cell"><span class="indicator-label-text">Kişi Başına Reel GSYİH</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Yerel para birimi)</span><button class="indicator-info-button" type="button" aria-label="Kişi Başına Reel GSYİH hakkında bilgi" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="realGdpPerCapita">i</button></span></span></h2>
+                <h2 data-country-indicator-title="realGdpPerCapita"><span class="indicator-label-cell"><span class="indicator-label-text">Kişi Başına Reel GSYİH</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Yerel para birimi)</span><button class="indicator-info-button" type="button" aria-label="Kişi Başına Reel GSYİH hakkında bilgi" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="realGdpPerCapita">i</button></span></span></h2>
               </div>
             </header>
 
@@ -171,7 +175,9 @@
 
             <details class="data-table-toggle" id="realGdpPerCapitaTableToggle">
               <summary data-ui-text-action>Veri tablosu</summary>
-              <div class="data-table-wrap" id="realGdpPerCapitaTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>2000</td><td>17.237</td><td>2009</td><td>19.710</td><td>2018</td><td>30.100</td></tr><tr><td>2001</td><td>16.990</td><td>2010</td><td>20.774</td><td>2019</td><td>30.178</td></tr><tr><td>2002</td><td>17.313</td><td>2011</td><td>20.932</td><td>2020</td><td>27.896</td></tr><tr><td>2003</td><td>17.833</td><td>2012</td><td>21.657</td><td>2021</td><td>31.543</td></tr><tr><td>2004</td><td>17.790</td><td>2013</td><td>22.806</td><td>2022</td><td>32.109</td></tr><tr><td>2005</td><td>18.176</td><td>2014</td><td>24.163</td><td>2023</td><td>34.089</td></tr><tr><td>2006</td><td>18.493</td><td>2015</td><td>25.845</td><td>2024</td><td>35.509</td></tr><tr><td>2007</td><td>19.395</td><td>2016</td><td>26.251</td><td>2025</td><td>36.239</td></tr><tr><td>2008</td><td>20.140</td><td>2017</td><td>29.027</td><td>2026</td><td class="data-table-observation-estimated">36.900</td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="realGdpPerCapitaTableWrap" role="region" aria-label="Veri tablosu" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>2000</td><td>17.237</td><td>2009</td><td>19.710</td><td>2018</td><td>30.100</td></tr><tr><td>2001</td><td>16.990</td><td>2010</td><td>20.774</td><td>2019</td><td>30.178</td></tr><tr><td>2002</td><td>17.313</td><td>2011</td><td>20.932</td><td>2020</td><td>27.896</td></tr><tr><td>2003</td><td>17.833</td><td>2012</td><td>21.657</td><td>2021</td><td>31.543</td></tr><tr><td>2004</td><td>17.790</td><td>2013</td><td>22.806</td><td>2022</td><td>32.109</td></tr><tr><td>2005</td><td>18.176</td><td>2014</td><td>24.163</td><td>2023</td><td>34.089</td></tr><tr><td>2006</td><td>18.493</td><td>2015</td><td>25.845</td><td>2024</td><td>35.509</td></tr><tr><td>2007</td><td>19.395</td><td>2016</td><td>26.251</td><td>2025</td><td>36.239</td></tr><tr><td>2008</td><td>20.140</td><td>2017</td><td>29.027</td><td>2026</td><td class="data-table-observation-estimated">36.900</td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -190,10 +196,11 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/malta/population/">Nüfus</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/malta/population-growth/">Nüfus Artışı</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/malta/fertility-rate/">Toplam Doğurganlık Hızı</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/malta/trade/">Dış Ticaret Dengesi</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/malta/trade/">İhracat, İthalat ve Dış Ticaret Dengesi</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/malta/government-debt/">Kamu Borcu</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/malta/fiscal-balance/">Mali Denge</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/malta/hdi/">İnsani Gelişme Endeksi</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../tr/countries/malta/co2-emissions/">Sera Gazı Emisyonları</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../tr/countries/malta/"><img class="flag-image flag-image-mt country-flag" src="../../../../public/flags/mt.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">Ülke profilini görüntüle</span></a>
       </section>

@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="経済ページナビゲーション"><a class="navigation-control" href="../gdp/">GDP</a><a class="navigation-control" href="../gdp-per-capita/">1人あたりGDP</a><a class="navigation-control" href="../ppp-gdp/">購買力平価GDP</a><a class="navigation-control" href="../ppp-gdp-per-capita/">1人あたり購買力平価GDP</a><a class="navigation-control is-current" href="../gni/" aria-current="page">GNI</a><a class="navigation-control" href="../gni-per-capita/">1人あたりGNI</a><a class="navigation-control" href="../gdp-growth/">経済成長率</a><a class="navigation-control" href="../inflation-rate/">インフレ率</a><a class="navigation-control" href="../unemployment-rate/">失業率</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="gni-title">
+          <section class="indicator-block" aria-label="GNI (米ドル)折れ線グラフ">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gni-title"><span class="indicator-label-cell"><span class="indicator-label-text">GNI</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(米ドル)</span><button class="indicator-info-button" type="button" aria-label="GNIの情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gni">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gni"><span class="indicator-label-cell"><span class="indicator-label-text">GNI</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(米ドル)</span><button class="indicator-info-button" type="button" aria-label="GNIの情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gni">i</button></span></span></h2>
                 <p class="indicator-rank"><a data-ui-text-action href="../../../../ja/rankings/countries/gni/">世界ランク: #67 / 210</a></p>
               </div>
               <div class="compare-control" data-series-id="gni">
@@ -135,7 +135,9 @@
 
             <details class="data-table-toggle" id="gniTableToggle">
               <summary data-ui-text-action>データ表</summary>
-              <div class="data-table-wrap" id="gniTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1990</td><td>175.73億</td><td>2002</td><td>115.03億</td><td>2014</td><td>837.82億</td></tr><tr><td>1991</td><td>180.78億</td><td>2003</td><td>118.74億</td><td>2015</td><td>876.2億</td></tr><tr><td>1992</td><td>164.19億</td><td>2004</td><td>142.32億</td><td>2016</td><td>870.73億</td></tr><tr><td>1993</td><td>164.52億</td><td>2005</td><td>169.92億</td><td>2017</td><td>709.2億</td></tr><tr><td>1994</td><td>159.36億</td><td>2006</td><td>203.38億</td><td>2018</td><td>602.22億</td></tr><tr><td>1995</td><td>161.36億</td><td>2007</td><td>282.35億</td><td>2019</td><td>680.29億</td></tr><tr><td>1996</td><td>166.66億</td><td>2008</td><td>365.31億</td><td>2020</td><td>666.03億</td></tr><tr><td>1997</td><td>184.2億</td><td>2009</td><td>421.01億</td><td>2021</td><td>777億</td></tr><tr><td>1998</td><td>178.73億</td><td>2010</td><td>512.11億</td><td>2022</td><td>909.93億</td></tr><tr><td>1999</td><td>203.06億</td><td>2011</td><td>623.02億</td><td>2023</td><td>1,036.3億</td></tr><tr><td>2000</td><td>160.09億</td><td>2012</td><td>702.69億</td><td>2024</td><td>1,160.8億</td></tr><tr><td>2001</td><td>108.37億</td><td>2013</td><td>763.3億</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gniTableWrap" role="region" aria-label="データ表" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1990</td><td>175.7億</td><td>2002</td><td>115億</td><td>2014</td><td>837.8億</td></tr><tr><td>1991</td><td>180.8億</td><td>2003</td><td>118.7億</td><td>2015</td><td>876.2億</td></tr><tr><td>1992</td><td>164.2億</td><td>2004</td><td>142.3億</td><td>2016</td><td>870.7億</td></tr><tr><td>1993</td><td>164.5億</td><td>2005</td><td>169.9億</td><td>2017</td><td>709.2億</td></tr><tr><td>1994</td><td>159.4億</td><td>2006</td><td>203.4億</td><td>2018</td><td>602.2億</td></tr><tr><td>1995</td><td>161.4億</td><td>2007</td><td>282.3億</td><td>2019</td><td>680.3億</td></tr><tr><td>1996</td><td>166.7億</td><td>2008</td><td>365.3億</td><td>2020</td><td>666億</td></tr><tr><td>1997</td><td>184.2億</td><td>2009</td><td>421億</td><td>2021</td><td>777億</td></tr><tr><td>1998</td><td>178.7億</td><td>2010</td><td>512.1億</td><td>2022</td><td>909.9億</td></tr><tr><td>1999</td><td>203.1億</td><td>2011</td><td>623億</td><td>2023</td><td>1,036億</td></tr><tr><td>2000</td><td>160.1億</td><td>2012</td><td>702.7億</td><td>2024</td><td>1,161億</td></tr><tr><td>2001</td><td>108.4億</td><td>2013</td><td>763.3億</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -154,10 +156,11 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/uzbekistan/population/">人口</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/uzbekistan/population-growth/">人口増加率</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/uzbekistan/fertility-rate/">合計特殊出生率</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/uzbekistan/trade/">貿易収支</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/uzbekistan/trade/">貿易収支・輸出額・輸入額</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/uzbekistan/government-debt/">政府債務残高</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/uzbekistan/fiscal-balance/">財政収支</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/uzbekistan/hdi/">HDI</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/uzbekistan/co2-emissions/">CO2排出量</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../ja/countries/uzbekistan/"><img class="flag-image flag-image-uz country-flag" src="../../../../public/flags/uz.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">国の概要ページを見る</span></a>
       </section>

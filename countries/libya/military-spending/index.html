@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Society page navigation"><a class="navigation-control" href="../hdi/">HDI</a><a class="navigation-control is-current" href="../military-spending/" aria-current="page">Military Spending</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="militarySpending-title">
+          <section class="indicator-block" aria-label="Military Spending (USD) line chart">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="militarySpending-title"><span class="indicator-label-cell"><span class="indicator-label-text">Military Spending</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Military Spending information" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="militarySpending">i</button></span></span></h2>
+                <h2 data-country-indicator-title="militarySpending"><span class="indicator-label-cell"><span class="indicator-label-text">Military Spending</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Military Spending information" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="militarySpending">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="militarySpending">
                 <div class="compare-input-wrap">
@@ -134,14 +134,16 @@
 
             <details class="data-table-toggle" id="militarySpendingTableToggle">
               <summary data-ui-text-action>Data table</summary>
-              <div class="data-table-wrap" id="militarySpendingTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1960</td><td>5.57M</td><td>1974</td><td>431.68M</td><td>2002</td><td>452.51M</td></tr><tr><td>1961</td><td>7.17M</td><td>1975</td><td>287.79M</td><td>2003</td><td>541.4M</td></tr><tr><td>1962</td><td>16.69M</td><td>1976</td><td>326.3M</td><td>2004</td><td>685.07M</td></tr><tr><td>1963</td><td>18.68M</td><td>1977</td><td>479.65M</td><td>2005</td><td>690.93M</td></tr><tr><td>1964</td><td>21.48M</td><td>1978</td><td>729.94M</td><td>2006</td><td>614.36M</td></tr><tr><td>1965</td><td>29.12M</td><td>1979</td><td>853.57M</td><td>2007</td><td>639.14M</td></tr><tr><td>1966</td><td>58.52M</td><td>1980</td><td>1.07B</td><td>2008</td><td>1.1B</td></tr><tr><td>1967</td><td>79.52M</td><td>1981</td><td>557.33M</td><td>2012</td><td>2.99B</td></tr><tr><td>1968</td><td>95.48M</td><td>1982</td><td>709.33M</td><td>2013</td><td>3.96B</td></tr><tr><td>1969</td><td>143.08M</td><td>1997</td><td>1.25B</td><td>2014</td><td>3.76B</td></tr><tr><td>1970</td><td>242.48M</td><td>1998</td><td>1.44B</td><td>2022</td><td>1.21B</td></tr><tr><td>1971</td><td>243.04M</td><td>1999</td><td>1.15B</td><td>2023</td><td>1.57B</td></tr><tr><td>1972</td><td>202.77M</td><td>2000</td><td>1.09B</td><td></td><td></td></tr><tr><td>1973</td><td>298.31M</td><td>2001</td><td>819.75M</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="militarySpendingTableWrap" role="region" aria-label="Data table" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1960</td><td>5.57M</td><td>1974</td><td>431.7M</td><td>2002</td><td>452.5M</td></tr><tr><td>1961</td><td>7.17M</td><td>1975</td><td>287.8M</td><td>2003</td><td>541.4M</td></tr><tr><td>1962</td><td>16.69M</td><td>1976</td><td>326.3M</td><td>2004</td><td>685.1M</td></tr><tr><td>1963</td><td>18.68M</td><td>1977</td><td>479.6M</td><td>2005</td><td>690.9M</td></tr><tr><td>1964</td><td>21.48M</td><td>1978</td><td>729.9M</td><td>2006</td><td>614.4M</td></tr><tr><td>1965</td><td>29.12M</td><td>1979</td><td>853.6M</td><td>2007</td><td>639.1M</td></tr><tr><td>1966</td><td>58.52M</td><td>1980</td><td>1.07B</td><td>2008</td><td>1.1B</td></tr><tr><td>1967</td><td>79.52M</td><td>1981</td><td>557.3M</td><td>2012</td><td>2.99B</td></tr><tr><td>1968</td><td>95.48M</td><td>1982</td><td>709.3M</td><td>2013</td><td>3.96B</td></tr><tr><td>1969</td><td>143.1M</td><td>1997</td><td>1.25B</td><td>2014</td><td>3.76B</td></tr><tr><td>1970</td><td>242.5M</td><td>1998</td><td>1.44B</td><td>2022</td><td>1.21B</td></tr><tr><td>1971</td><td>243M</td><td>1999</td><td>1.15B</td><td>2023</td><td>1.57B</td></tr><tr><td>1972</td><td>202.8M</td><td>2000</td><td>1.09B</td><td></td><td></td></tr><tr><td>1973</td><td>298.3M</td><td>2001</td><td>819.7M</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="militarySpendingPercentGdp-title">
+          <section class="indicator-block" aria-label="Military Spending (% of GDP) line chart">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="militarySpendingPercentGdp-title"><span class="indicator-label-cell"><span class="indicator-label-text">Military Spending</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(% of GDP)</span><button class="indicator-info-button" type="button" aria-label="Military Spending information" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="militarySpendingPercentGdp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="militarySpendingPercentGdp"><span class="indicator-label-cell"><span class="indicator-label-text">Military Spending</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(% of GDP)</span><button class="indicator-info-button" type="button" aria-label="Military Spending information" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="militarySpendingPercentGdp">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="militarySpendingPercentGdp">
                 <div class="compare-input-wrap">
@@ -169,7 +171,9 @@
 
             <details class="data-table-toggle" id="militarySpendingPercentGdpTableToggle">
               <summary data-ui-text-action>Data table</summary>
-              <div class="data-table-wrap" id="militarySpendingPercentGdpTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1960</td><td>1.6%</td><td>1974</td><td>3.3%</td><td>2002</td><td>2.1%</td></tr><tr><td>1961</td><td>1.9%</td><td>1975</td><td>2.3%</td><td>2003</td><td>2.1%</td></tr><tr><td>1962</td><td>3.1%</td><td>1976</td><td>2%</td><td>2004</td><td>2.1%</td></tr><tr><td>1963</td><td>2.4%</td><td>1977</td><td>2.5%</td><td>2005</td><td>1.5%</td></tr><tr><td>1964</td><td>1.8%</td><td>1978</td><td>3.8%</td><td>2006</td><td>1.1%</td></tr><tr><td>1965</td><td>1.9%</td><td>1979</td><td>3.2%</td><td>2007</td><td>0.9%</td></tr><tr><td>1966</td><td>2.9%</td><td>1980</td><td>2.9%</td><td>2008</td><td>1.5%</td></tr><tr><td>1967</td><td>3.4%</td><td>1981</td><td>1.8%</td><td>2012</td><td>3.7%</td></tr><tr><td>1968</td><td>2.9%</td><td>1982</td><td>2.2%</td><td>2013</td><td>7.6%</td></tr><tr><td>1969</td><td>3.8%</td><td>1997</td><td>4.1%</td><td>2014</td><td>15.5%</td></tr><tr><td>1970</td><td>6.1%</td><td>1998</td><td>5.3%</td><td>2022</td><td>4.3%</td></tr><tr><td>1971</td><td>5.3%</td><td>1999</td><td>3.8%</td><td>2023</td><td>5.3%</td></tr><tr><td>1972</td><td>3.7%</td><td>2000</td><td>3.1%</td><td></td><td></td></tr><tr><td>1973</td><td>4%</td><td>2001</td><td>2.4%</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="militarySpendingPercentGdpTableWrap" role="region" aria-label="Data table" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1960</td><td>1.6%</td><td>1974</td><td>3.3%</td><td>2002</td><td>2.1%</td></tr><tr><td>1961</td><td>1.9%</td><td>1975</td><td>2.3%</td><td>2003</td><td>2.1%</td></tr><tr><td>1962</td><td>3.1%</td><td>1976</td><td>2%</td><td>2004</td><td>2.1%</td></tr><tr><td>1963</td><td>2.4%</td><td>1977</td><td>2.5%</td><td>2005</td><td>1.5%</td></tr><tr><td>1964</td><td>1.8%</td><td>1978</td><td>3.8%</td><td>2006</td><td>1.1%</td></tr><tr><td>1965</td><td>1.9%</td><td>1979</td><td>3.2%</td><td>2007</td><td>0.9%</td></tr><tr><td>1966</td><td>2.9%</td><td>1980</td><td>2.9%</td><td>2008</td><td>1.5%</td></tr><tr><td>1967</td><td>3.4%</td><td>1981</td><td>1.8%</td><td>2012</td><td>3.7%</td></tr><tr><td>1968</td><td>2.9%</td><td>1982</td><td>2.2%</td><td>2013</td><td>7.6%</td></tr><tr><td>1969</td><td>3.8%</td><td>1997</td><td>4.1%</td><td>2014</td><td>15.5%</td></tr><tr><td>1970</td><td>6.1%</td><td>1998</td><td>5.3%</td><td>2022</td><td>4.3%</td></tr><tr><td>1971</td><td>5.3%</td><td>1999</td><td>3.8%</td><td>2023</td><td>5.3%</td></tr><tr><td>1972</td><td>3.7%</td><td>2000</td><td>3.1%</td><td></td><td></td></tr><tr><td>1973</td><td>4%</td><td>2001</td><td>2.4%</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -187,9 +191,10 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/libya/population/">Population</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/libya/population-growth/">Population Growth</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/libya/fertility-rate/">Fertility Rate</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../countries/libya/trade/">Trade Balance</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../countries/libya/trade/">Exports, Imports and Trade Balance</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/libya/fiscal-balance/">Fiscal Balance</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/libya/hdi/">HDI</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../countries/libya/co2-emissions/">CO2 Emissions</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../countries/libya/"><img class="flag-image flag-image-ly country-flag" src="../../../public/flags/ly.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">View Country Profile</span></a>
       </section>

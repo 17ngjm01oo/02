@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="環境ページナビゲーション"><a class="navigation-control is-current" href="../co2-emissions/" aria-current="page">CO2排出量</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="co2Emissions-title">
+          <section class="indicator-block" aria-label="CO2排出量 (CO2換算)折れ線グラフ">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="co2Emissions-title"><span class="indicator-label-cell"><span class="indicator-label-text">CO2排出量</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(CO2換算)</span><button class="indicator-info-button" type="button" aria-label="CO2排出量の情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="co2Emissions">i</button></span></span></h2>
+                <h2 data-country-indicator-title="co2Emissions"><span class="indicator-label-cell"><span class="indicator-label-text">CO2排出量</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(CO2換算)</span><button class="indicator-info-button" type="button" aria-label="CO2排出量の情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="co2Emissions">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="co2Emissions">
                 <div class="compare-input-wrap">
@@ -134,14 +134,16 @@
 
             <details class="data-table-toggle" id="co2EmissionsTableToggle">
               <summary data-ui-text-action>データ表</summary>
-              <div class="data-table-wrap" id="co2EmissionsTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="co2EmissionsTableWrap" role="region" aria-label="データ表" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="co2EmissionsPerCapita-title">
+          <section class="indicator-block" aria-label="1人あたりCO2排出量 (CO2換算)折れ線グラフ">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="co2EmissionsPerCapita-title"><span class="indicator-label-cell"><span class="indicator-label-text">1人あたりCO2排出量</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(CO2換算)</span><button class="indicator-info-button" type="button" aria-label="1人あたりCO2排出量の情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="co2EmissionsPerCapita">i</button></span></span></h2>
+                <h2 data-country-indicator-title="co2EmissionsPerCapita"><span class="indicator-label-cell"><span class="indicator-label-text">1人あたりCO2排出量</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(CO2換算)</span><button class="indicator-info-button" type="button" aria-label="1人あたりCO2排出量の情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="co2EmissionsPerCapita">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="co2EmissionsPerCapita">
                 <div class="compare-input-wrap">
@@ -169,7 +171,9 @@
 
             <details class="data-table-toggle" id="co2EmissionsPerCapitaTableToggle">
               <summary data-ui-text-action>データ表</summary>
-              <div class="data-table-wrap" id="co2EmissionsPerCapitaTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="co2EmissionsPerCapitaTableWrap" role="region" aria-label="データ表" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
@@ -184,7 +188,7 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/wallis-and-futuna/population/">人口</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/wallis-and-futuna/population-growth/">人口増加率</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/wallis-and-futuna/fertility-rate/">合計特殊出生率</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/wallis-and-futuna/trade/">貿易収支</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/wallis-and-futuna/trade/">貿易収支・輸出額・輸入額</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../ja/countries/wallis-and-futuna/"><img class="flag-image flag-image-wf country-flag" src="../../../../public/flags/wf.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">国の概要ページを見る</span></a>
       </section>

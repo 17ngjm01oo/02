@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="무역 페이지 탐색"><a class="navigation-control" href="../trade/">무역수지</a><a class="navigation-control" href="../services-trade/">서비스수지</a><a class="navigation-control is-current" href="../current-account-balance/" aria-current="page">경상수지</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="currentAccountBalance-title">
+          <section class="indicator-block" aria-label="경상수지 (USD) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="currentAccountBalance-title"><span class="indicator-label-cell"><span class="indicator-label-text">경상수지</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="경상수지 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="currentAccountBalance">i</button></span></span></h2>
+                <h2 data-country-indicator-title="currentAccountBalance"><span class="indicator-label-cell"><span class="indicator-label-text">경상수지</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="경상수지 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="currentAccountBalance">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="currentAccountBalance">
                 <div class="compare-input-wrap">
@@ -134,14 +134,16 @@
 
             <details class="data-table-toggle" id="currentAccountBalanceTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="currentAccountBalanceTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1980</td><td>-6.35억</td><td>1991</td><td>16.85억</td><td>2002</td><td>11.2억</td></tr><tr><td>1981</td><td>-4.66억</td><td>1992</td><td>5.42억</td><td>2003</td><td>-16.63억</td></tr><tr><td>1982</td><td>-2.52억</td><td>1993</td><td>-2.42억</td><td>2004</td><td>-7.81억</td></tr><tr><td>1983</td><td>-8.07억</td><td>1994</td><td>-8.52억</td><td>2005</td><td>-6.48억</td></tr><tr><td>1984</td><td>-7.97억</td><td>1995</td><td>2.07억</td><td>2006</td><td>4.8억</td></tr><tr><td>1985</td><td>-8.59억</td><td>1996</td><td>-4,100만</td><td>2007</td><td>-9,500만</td></tr><tr><td>1986</td><td>-5.04억</td><td>1997</td><td>4.12억</td><td>2008</td><td>-6.73억</td></tr><tr><td>1987</td><td>-2.98억</td><td>1998</td><td>1.3억</td><td>2009</td><td>-15.84억</td></tr><tr><td>1988</td><td>-1.31억</td><td>1999</td><td>3.03억</td><td>2010</td><td class="data-table-observation-estimated">-17.07억</td></tr><tr><td>1989</td><td>12.22억</td><td>2000</td><td>10.36억</td><td></td><td></td></tr><tr><td>1990</td><td>17.48억</td><td>2001</td><td>8.3억</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="currentAccountBalanceTableWrap" role="region" aria-label="데이터 표" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1980</td><td>-6.35억</td><td>1991</td><td>16.85억</td><td>2002</td><td>11.2억</td></tr><tr><td>1981</td><td>-4.66억</td><td>1992</td><td>5.42억</td><td>2003</td><td>-16.63억</td></tr><tr><td>1982</td><td>-2.52억</td><td>1993</td><td>-2.42억</td><td>2004</td><td>-7.81억</td></tr><tr><td>1983</td><td>-8.07억</td><td>1994</td><td>-8.52억</td><td>2005</td><td>-6.48억</td></tr><tr><td>1984</td><td>-7.97억</td><td>1995</td><td>2.07억</td><td>2006</td><td>4.8억</td></tr><tr><td>1985</td><td>-8.59억</td><td>1996</td><td>-4,100만</td><td>2007</td><td>-9,500만</td></tr><tr><td>1986</td><td>-5.04억</td><td>1997</td><td>4.12억</td><td>2008</td><td>-6.73억</td></tr><tr><td>1987</td><td>-2.98억</td><td>1998</td><td>1.3억</td><td>2009</td><td>-15.84억</td></tr><tr><td>1988</td><td>-1.31억</td><td>1999</td><td>3.03억</td><td>2010</td><td class="data-table-observation-estimated">-17.07억</td></tr><tr><td>1989</td><td>12.22억</td><td>2000</td><td>10.36억</td><td></td><td></td></tr><tr><td>1990</td><td>17.48억</td><td>2001</td><td>8.3억</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="currentAccountBalancePercentGdp-title">
+          <section class="indicator-block" aria-label="경상수지 (GDP 대비 %) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="currentAccountBalancePercentGdp-title"><span class="indicator-label-cell"><span class="indicator-label-text">경상수지</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GDP 대비 %)</span><button class="indicator-info-button" type="button" aria-label="경상수지 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="currentAccountBalancePercentGdp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="currentAccountBalancePercentGdp"><span class="indicator-label-cell"><span class="indicator-label-text">경상수지</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GDP 대비 %)</span><button class="indicator-info-button" type="button" aria-label="경상수지 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="currentAccountBalancePercentGdp">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="currentAccountBalancePercentGdp">
                 <div class="compare-input-wrap">
@@ -169,7 +171,9 @@
 
             <details class="data-table-toggle" id="currentAccountBalancePercentGdpTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="currentAccountBalancePercentGdpTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1980</td><td>-4.9%</td><td>1991</td><td>13.2%</td><td>2002</td><td>4.9%</td></tr><tr><td>1981</td><td>-2.8%</td><td>1992</td><td>4.1%</td><td>2003</td><td>-7.7%</td></tr><tr><td>1982</td><td>-1.4%</td><td>1993</td><td>-1.8%</td><td>2004</td><td>-3.1%</td></tr><tr><td>1983</td><td>-4.3%</td><td>1994</td><td>-5.6%</td><td>2005</td><td>-2.2%</td></tr><tr><td>1984</td><td>-4.2%</td><td>1995</td><td>1.3%</td><td>2006</td><td>1.4%</td></tr><tr><td>1985</td><td>-4.1%</td><td>1996</td><td>-0.2%</td><td>2007</td><td>-0.2%</td></tr><tr><td>1986</td><td>-2%</td><td>1997</td><td>2.5%</td><td>2008</td><td>-1.3%</td></tr><tr><td>1987</td><td>-0.9%</td><td>1998</td><td>0.8%</td><td>2009</td><td>-2.9%</td></tr><tr><td>1988</td><td>-0.8%</td><td>1999</td><td>1.8%</td><td>2010</td><td class="data-table-observation-estimated">-2.8%</td></tr><tr><td>1989</td><td>12.4%</td><td>2000</td><td>5.2%</td><td></td><td></td></tr><tr><td>1990</td><td>14.2%</td><td>2001</td><td>4%</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="currentAccountBalancePercentGdpTableWrap" role="region" aria-label="데이터 표" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1980</td><td>-4.9%</td><td>1991</td><td>13.2%</td><td>2002</td><td>4.9%</td></tr><tr><td>1981</td><td>-2.8%</td><td>1992</td><td>4.1%</td><td>2003</td><td>-7.7%</td></tr><tr><td>1982</td><td>-1.4%</td><td>1993</td><td>-1.8%</td><td>2004</td><td>-3.1%</td></tr><tr><td>1983</td><td>-4.3%</td><td>1994</td><td>-5.6%</td><td>2005</td><td>-2.2%</td></tr><tr><td>1984</td><td>-4.2%</td><td>1995</td><td>1.3%</td><td>2006</td><td>1.4%</td></tr><tr><td>1985</td><td>-4.1%</td><td>1996</td><td>-0.2%</td><td>2007</td><td>-0.2%</td></tr><tr><td>1986</td><td>-2%</td><td>1997</td><td>2.5%</td><td>2008</td><td>-1.3%</td></tr><tr><td>1987</td><td>-0.9%</td><td>1998</td><td>0.8%</td><td>2009</td><td>-2.9%</td></tr><tr><td>1988</td><td>-0.8%</td><td>1999</td><td>1.8%</td><td>2010</td><td class="data-table-observation-estimated">-2.8%</td></tr><tr><td>1989</td><td>12.4%</td><td>2000</td><td>5.2%</td><td></td><td></td></tr><tr><td>1990</td><td>14.2%</td><td>2001</td><td>4%</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -189,10 +193,11 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/syria/population/">인구</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/syria/population-growth/">인구증가율</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/syria/fertility-rate/">합계출산율</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/syria/trade/">무역수지</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/syria/trade/">수출, 수입 및 무역수지</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/syria/government-debt/">정부 부채</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/syria/fiscal-balance/">재정수지</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/syria/hdi/">인간개발지수(HDI)</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/syria/co2-emissions/">온실가스 배출량</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../ko/countries/syria/"><img class="flag-image flag-image-sy country-flag" src="../../../../public/flags/sy.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">국가 프로필 보기</span></a>
       </section>

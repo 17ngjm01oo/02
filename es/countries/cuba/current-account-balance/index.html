@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Navegación de la página de comercio"><a class="navigation-control" href="../trade/">Balanza comercial</a><a class="navigation-control" href="../services-trade/">Balanza comercial de servicios</a><a class="navigation-control is-current" href="../current-account-balance/" aria-current="page">Saldo en cuenta corriente</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="currentAccountBalance-title">
+          <section class="indicator-block" aria-label="Gráfico de líneas de Saldo en cuenta corriente (USD)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="currentAccountBalance-title"><span class="indicator-label-cell"><span class="indicator-label-text">Saldo en cuenta corriente</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Información sobre Saldo en cuenta corriente" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="currentAccountBalance">i</button></span></span></h2>
+                <h2 data-country-indicator-title="currentAccountBalance"><span class="indicator-label-cell"><span class="indicator-label-text">Saldo en cuenta corriente</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Información sobre Saldo en cuenta corriente" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="currentAccountBalance">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="currentAccountBalance">
                 <div class="compare-input-wrap">
@@ -134,14 +134,16 @@
 
             <details class="data-table-toggle" id="currentAccountBalanceTableToggle">
               <summary data-ui-text-action>Tabla de datos</summary>
-              <div class="data-table-wrap" id="currentAccountBalanceTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="currentAccountBalanceTableWrap" role="region" aria-label="Tabla de datos" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="currentAccountBalancePercentGdp-title">
+          <section class="indicator-block" aria-label="Gráfico de líneas de Saldo en cuenta corriente (% del PIB)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="currentAccountBalancePercentGdp-title"><span class="indicator-label-cell"><span class="indicator-label-text">Saldo en cuenta corriente</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(% del PIB)</span><button class="indicator-info-button" type="button" aria-label="Información sobre Saldo en cuenta corriente" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="currentAccountBalancePercentGdp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="currentAccountBalancePercentGdp"><span class="indicator-label-cell"><span class="indicator-label-text">Saldo en cuenta corriente</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(% del PIB)</span><button class="indicator-info-button" type="button" aria-label="Información sobre Saldo en cuenta corriente" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="currentAccountBalancePercentGdp">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="currentAccountBalancePercentGdp">
                 <div class="compare-input-wrap">
@@ -169,7 +171,9 @@
 
             <details class="data-table-toggle" id="currentAccountBalancePercentGdpTableToggle">
               <summary data-ui-text-action>Tabla de datos</summary>
-              <div class="data-table-wrap" id="currentAccountBalancePercentGdpTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="currentAccountBalancePercentGdpTableWrap" role="region" aria-label="Tabla de datos" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
@@ -185,8 +189,9 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../es/countries/cuba/population/">Población</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../es/countries/cuba/population-growth/">Crecimiento de la población</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../es/countries/cuba/fertility-rate/">Tasa de fecundidad</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../es/countries/cuba/trade/">Balanza comercial</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../es/countries/cuba/trade/">Exportaciones, importaciones y balanza comercial</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../es/countries/cuba/hdi/">IDH</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../es/countries/cuba/co2-emissions/">Emisiones de CO₂</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../es/countries/cuba/"><img class="flag-image flag-image-cu country-flag" src="../../../../public/flags/cu.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">Ver el perfil del país</span></a>
       </section>

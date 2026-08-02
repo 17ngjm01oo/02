@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Economy page navigation"><a class="navigation-control" href="../gdp/">GDP</a><a class="navigation-control" href="../gdp-per-capita/">GDP per Capita</a><a class="navigation-control is-current" href="../ppp-gdp/" aria-current="page">PPP GDP</a><a class="navigation-control" href="../ppp-gdp-per-capita/">PPP GDP per Capita</a><a class="navigation-control" href="../gni/">GNI</a><a class="navigation-control" href="../gni-per-capita/">GNI per Capita</a><a class="navigation-control" href="../gdp-growth/">GDP Growth</a><a class="navigation-control" href="../inflation-rate/">Inflation Rate</a><a class="navigation-control" href="../unemployment-rate/">Unemployment Rate</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="ppp-title">
+          <section class="indicator-block" aria-label="PPP GDP (Int$) line chart">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="ppp-title"><span class="indicator-label-cell"><span class="indicator-label-text">PPP GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Int$)</span><button class="indicator-info-button" type="button" aria-label="PPP GDP information" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="ppp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="ppp"><span class="indicator-label-cell"><span class="indicator-label-text">PPP GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Int$)</span><button class="indicator-info-button" type="button" aria-label="PPP GDP information" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="ppp">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="ppp">
                 <div class="compare-input-wrap">
@@ -134,7 +134,9 @@
 
             <details class="data-table-toggle" id="pppTableToggle">
               <summary data-ui-text-action>Data table</summary>
-              <div class="data-table-wrap" id="pppTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1980</td><td>18.92B</td><td>1991</td><td>41.7B</td><td>2002</td><td>81.3B</td></tr><tr><td>1981</td><td>22.47B</td><td>1992</td><td>48.3B</td><td>2003</td><td>81.21B</td></tr><tr><td>1982</td><td>24.47B</td><td>1993</td><td>53.11B</td><td>2004</td><td>89.15B</td></tr><tr><td>1983</td><td>25.84B</td><td>1994</td><td>57.24B</td><td>2005</td><td>97.67B</td></tr><tr><td>1984</td><td>25.03B</td><td>1995</td><td>61.61B</td><td>2006</td><td>105.76B</td></tr><tr><td>1985</td><td>27.71B</td><td>1996</td><td>64.6B</td><td>2007</td><td>114.79B</td></tr><tr><td>1986</td><td>26.92B</td><td>1997</td><td>65B</td><td>2008</td><td>122.24B</td></tr><tr><td>1987</td><td>27.93B</td><td>1998</td><td>69.38B</td><td>2009</td><td>130.26B</td></tr><tr><td>1988</td><td>32.59B</td><td>1999</td><td>68.16B</td><td>2010</td><td>136.38B</td></tr><tr><td>1989</td><td>31.82B</td><td>2000</td><td>71.31B</td><td></td><td></td></tr><tr><td>1990</td><td>36.43B</td><td>2001</td><td>75.6B</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="pppTableWrap" role="region" aria-label="Data table" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1980</td><td>18.92B</td><td>1991</td><td>41.7B</td><td>2002</td><td>81.3B</td></tr><tr><td>1981</td><td>22.47B</td><td>1992</td><td>48.3B</td><td>2003</td><td>81.21B</td></tr><tr><td>1982</td><td>24.47B</td><td>1993</td><td>53.11B</td><td>2004</td><td>89.15B</td></tr><tr><td>1983</td><td>25.84B</td><td>1994</td><td>57.24B</td><td>2005</td><td>97.67B</td></tr><tr><td>1984</td><td>25.03B</td><td>1995</td><td>61.61B</td><td>2006</td><td>105.8B</td></tr><tr><td>1985</td><td>27.71B</td><td>1996</td><td>64.6B</td><td>2007</td><td>114.8B</td></tr><tr><td>1986</td><td>26.92B</td><td>1997</td><td>65B</td><td>2008</td><td>122.2B</td></tr><tr><td>1987</td><td>27.93B</td><td>1998</td><td>69.38B</td><td>2009</td><td>130.3B</td></tr><tr><td>1988</td><td>32.59B</td><td>1999</td><td>68.16B</td><td>2010</td><td>136.4B</td></tr><tr><td>1989</td><td>31.82B</td><td>2000</td><td>71.31B</td><td></td><td></td></tr><tr><td>1990</td><td>36.43B</td><td>2001</td><td>75.6B</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -153,10 +155,11 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/syria/population/">Population</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/syria/population-growth/">Population Growth</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/syria/fertility-rate/">Fertility Rate</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../countries/syria/trade/">Trade Balance</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../countries/syria/trade/">Exports, Imports and Trade Balance</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/syria/government-debt/">Government Debt</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/syria/fiscal-balance/">Fiscal Balance</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../countries/syria/hdi/">HDI</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../countries/syria/co2-emissions/">CO2 Emissions</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../countries/syria/"><img class="flag-image flag-image-sy country-flag" src="../../../public/flags/sy.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">View Country Profile</span></a>
       </section>

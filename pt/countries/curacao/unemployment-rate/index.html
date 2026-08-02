@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Navegação da página de economia"><a class="navigation-control" href="../gni/">RNB</a><a class="navigation-control" href="../gni-per-capita/">RNB per capita</a><a class="navigation-control is-current" href="../unemployment-rate/" aria-current="page">Taxa de desemprego</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="unemploymentRate-title">
+          <section class="indicator-block" aria-label="Gráfico de linhas de Taxa de desemprego">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="unemploymentRate-title"><span class="indicator-label-cell"><span class="indicator-label-text">Taxa de desemprego</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="Informações sobre Taxa de desemprego" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="unemploymentRate">i</button></span></span></h2>
+                <h2 data-country-indicator-title="unemploymentRate"><span class="indicator-label-cell"><span class="indicator-label-text">Taxa de desemprego</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="Informações sobre Taxa de desemprego" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="unemploymentRate">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="unemploymentRate">
                 <div class="compare-input-wrap">
@@ -134,7 +134,9 @@
 
             <details class="data-table-toggle" id="unemploymentRateTableToggle">
               <summary data-ui-text-action>Tabela de dados</summary>
-              <div class="data-table-wrap" id="unemploymentRateTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="unemploymentRateTableWrap" role="region" aria-label="Tabela de dados" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
@@ -150,7 +152,7 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../pt/countries/curacao/population/">População</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../pt/countries/curacao/population-growth/">Crescimento populacional</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../pt/countries/curacao/fertility-rate/">Taxa de fecundidade</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../pt/countries/curacao/trade/">Balança comercial</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../pt/countries/curacao/trade/">Exportações, importações e balança comercial</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../pt/countries/curacao/"><img class="flag-image flag-image-cw country-flag" src="../../../../public/flags/cw.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">Ver perfil do país</span></a>
       </section>

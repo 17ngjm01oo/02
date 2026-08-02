@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Navigasi halaman keuangan pemerintah"><a class="navigation-control" href="../government-debt/">Utang Pemerintah</a><a class="navigation-control" href="../fiscal-balance/">Neraca Fiskal</a><a class="navigation-control is-current" href="../government-revenue-spending/" aria-current="page">Pendapatan dan Belanja Pemerintah</a><a class="navigation-control" href="../total-reserves/">Total Cadangan</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="governmentRevenue-title">
+          <section class="indicator-block" aria-label="Grafik garis Pendapatan Pemerintah (% dari PDB)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="governmentRevenue-title"><span class="indicator-label-cell"><span class="indicator-label-text">Pendapatan Pemerintah</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(% dari PDB)</span><button class="indicator-info-button" type="button" aria-label="Informasi tentang Pendapatan Pemerintah" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentRevenue">i</button></span></span></h2>
+                <h2 data-country-indicator-title="governmentRevenue"><span class="indicator-label-cell"><span class="indicator-label-text">Pendapatan Pemerintah</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(% dari PDB)</span><button class="indicator-info-button" type="button" aria-label="Informasi tentang Pendapatan Pemerintah" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentRevenue">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="governmentRevenue">
                 <div class="compare-input-wrap">
@@ -134,14 +134,16 @@
 
             <details class="data-table-toggle" id="governmentRevenueTableToggle">
               <summary data-ui-text-action>Tabel data</summary>
-              <div class="data-table-wrap" id="governmentRevenueTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1988</td><td>24%</td><td>2001</td><td>27,3%</td><td>2014</td><td>21,8%</td></tr><tr><td>1989</td><td>31,6%</td><td>2002</td><td>29,5%</td><td>2015</td><td>14,9%</td></tr><tr><td>1990</td><td>35,8%</td><td>2003</td><td>32,3%</td><td>2016</td><td>11,2%</td></tr><tr><td>1991</td><td>31,6%</td><td>2004</td><td>34,4%</td><td>2017</td><td>8,5%</td></tr><tr><td>1992</td><td>24,3%</td><td>2005</td><td>37,6%</td><td>2018</td><td class="data-table-observation-estimated">6,9%</td></tr><tr><td>1993</td><td>24,7%</td><td>2006</td><td>37,7%</td><td>2019</td><td class="data-table-observation-estimated">10,1%</td></tr><tr><td>1994</td><td>31%</td><td>2007</td><td>33,1%</td><td>2020</td><td class="data-table-observation-estimated">4,5%</td></tr><tr><td>1995</td><td>27%</td><td>2008</td><td>31,4%</td><td>2021</td><td class="data-table-observation-estimated">7,3%</td></tr><tr><td>1996</td><td>35,7%</td><td>2009</td><td>24,6%</td><td>2022</td><td class="data-table-observation-estimated">9,8%</td></tr><tr><td>1997</td><td>33,6%</td><td>2010</td><td>26,4%</td><td>2023</td><td class="data-table-observation-estimated">11,9%</td></tr><tr><td>1998</td><td>24,3%</td><td>2011</td><td>31,1%</td><td>2024</td><td class="data-table-observation-estimated">13,8%</td></tr><tr><td>1999</td><td>26,8%</td><td>2012</td><td>28,2%</td><td>2025</td><td class="data-table-observation-estimated">14,5%</td></tr><tr><td>2000</td><td>32,7%</td><td>2013</td><td>26,1%</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="governmentRevenueTableWrap" role="region" aria-label="Tabel data" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1988</td><td>24%</td><td>2001</td><td>27,3%</td><td>2014</td><td>21,8%</td></tr><tr><td>1989</td><td>31,6%</td><td>2002</td><td>29,5%</td><td>2015</td><td>14,9%</td></tr><tr><td>1990</td><td>35,8%</td><td>2003</td><td>32,3%</td><td>2016</td><td>11,2%</td></tr><tr><td>1991</td><td>31,6%</td><td>2004</td><td>34,4%</td><td>2017</td><td>8,5%</td></tr><tr><td>1992</td><td>24,3%</td><td>2005</td><td>37,6%</td><td>2018</td><td class="data-table-observation-estimated">6,9%</td></tr><tr><td>1993</td><td>24,7%</td><td>2006</td><td>37,7%</td><td>2019</td><td class="data-table-observation-estimated">10,1%</td></tr><tr><td>1994</td><td>31%</td><td>2007</td><td>33,1%</td><td>2020</td><td class="data-table-observation-estimated">4,5%</td></tr><tr><td>1995</td><td>27%</td><td>2008</td><td>31,4%</td><td>2021</td><td class="data-table-observation-estimated">7,3%</td></tr><tr><td>1996</td><td>35,7%</td><td>2009</td><td>24,6%</td><td>2022</td><td class="data-table-observation-estimated">9,8%</td></tr><tr><td>1997</td><td>33,6%</td><td>2010</td><td>26,4%</td><td>2023</td><td class="data-table-observation-estimated">11,9%</td></tr><tr><td>1998</td><td>24,3%</td><td>2011</td><td>31,1%</td><td>2024</td><td class="data-table-observation-estimated">13,8%</td></tr><tr><td>1999</td><td>26,8%</td><td>2012</td><td>28,2%</td><td>2025</td><td class="data-table-observation-estimated">14,5%</td></tr><tr><td>2000</td><td>32,7%</td><td>2013</td><td>26,1%</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="governmentRevenueNational-title">
+          <section class="indicator-block" aria-label="Grafik garis Pendapatan Pemerintah (Mata uang lokal)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="governmentRevenueNational-title"><span class="indicator-label-cell"><span class="indicator-label-text">Pendapatan Pemerintah</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Mata uang lokal)</span><button class="indicator-info-button" type="button" aria-label="Informasi tentang Pendapatan Pemerintah" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentRevenueNational">i</button></span></span></h2>
+                <h2 data-country-indicator-title="governmentRevenueNational"><span class="indicator-label-cell"><span class="indicator-label-text">Pendapatan Pemerintah</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Mata uang lokal)</span><button class="indicator-info-button" type="button" aria-label="Informasi tentang Pendapatan Pemerintah" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentRevenueNational">i</button></span></span></h2>
               </div>
             </header>
 
@@ -152,14 +154,16 @@
 
             <details class="data-table-toggle" id="governmentRevenueNationalTableToggle">
               <summary data-ui-text-action>Tabel data</summary>
-              <div class="data-table-wrap" id="governmentRevenueNationalTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>2018</td><td class="data-table-observation-estimated">0 juta</td><td>2021</td><td class="data-table-observation-estimated">13,48 miliar</td><td>2024</td><td class="data-table-observation-estimated">687,26 miliar</td></tr><tr><td>2019</td><td class="data-table-observation-estimated">101 juta</td><td>2022</td><td class="data-table-observation-estimated">61,24 miliar</td><td>2025</td><td class="data-table-observation-estimated">2,38 triliun</td></tr><tr><td>2020</td><td class="data-table-observation-estimated">635 juta</td><td>2023</td><td class="data-table-observation-estimated">359,24 miliar</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="governmentRevenueNationalTableWrap" role="region" aria-label="Tabel data" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>2018</td><td class="data-table-observation-estimated">0 jt</td><td>2021</td><td class="data-table-observation-estimated">13,48 M</td><td>2024</td><td class="data-table-observation-estimated">687,3 M</td></tr><tr><td>2019</td><td class="data-table-observation-estimated">101 jt</td><td>2022</td><td class="data-table-observation-estimated">61,24 M</td><td>2025</td><td class="data-table-observation-estimated">2,38 T</td></tr><tr><td>2020</td><td class="data-table-observation-estimated">635 jt</td><td>2023</td><td class="data-table-observation-estimated">359,2 M</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="governmentSpending-title">
+          <section class="indicator-block" aria-label="Grafik garis Belanja Pemerintah (% dari PDB)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="governmentSpending-title"><span class="indicator-label-cell"><span class="indicator-label-text">Belanja Pemerintah</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(% dari PDB)</span><button class="indicator-info-button" type="button" aria-label="Informasi tentang Belanja Pemerintah" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentSpending">i</button></span></span></h2>
+                <h2 data-country-indicator-title="governmentSpending"><span class="indicator-label-cell"><span class="indicator-label-text">Belanja Pemerintah</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(% dari PDB)</span><button class="indicator-info-button" type="button" aria-label="Informasi tentang Belanja Pemerintah" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentSpending">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="governmentSpending">
                 <div class="compare-input-wrap">
@@ -187,14 +191,16 @@
 
             <details class="data-table-toggle" id="governmentSpendingTableToggle">
               <summary data-ui-text-action>Tabel data</summary>
-              <div class="data-table-wrap" id="governmentSpendingTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1988</td><td>33,2%</td><td>2001</td><td>31,9%</td><td>2014</td><td>31,6%</td></tr><tr><td>1989</td><td>32,5%</td><td>2002</td><td>31%</td><td>2015</td><td>22,9%</td></tr><tr><td>1990</td><td>31,9%</td><td>2003</td><td>32,2%</td><td>2016</td><td>19,7%</td></tr><tr><td>1991</td><td>33,9%</td><td>2004</td><td>31,9%</td><td>2017</td><td>21,8%</td></tr><tr><td>1992</td><td>30,6%</td><td>2005</td><td>33,5%</td><td>2018</td><td class="data-table-observation-estimated">37,9%</td></tr><tr><td>1993</td><td>27,7%</td><td>2006</td><td>39,3%</td><td>2019</td><td class="data-table-observation-estimated">21%</td></tr><tr><td>1994</td><td>42,2%</td><td>2007</td><td>35,9%</td><td>2020</td><td class="data-table-observation-estimated">11,2%</td></tr><tr><td>1995</td><td>32,9%</td><td>2008</td><td>34,9%</td><td>2021</td><td class="data-table-observation-estimated">13,1%</td></tr><tr><td>1996</td><td>27,7%</td><td>2009</td><td>33,3%</td><td>2022</td><td class="data-table-observation-estimated">15,1%</td></tr><tr><td>1997</td><td>31%</td><td>2010</td><td>31,1%</td><td>2023</td><td class="data-table-observation-estimated">13,1%</td></tr><tr><td>1998</td><td>28,8%</td><td>2011</td><td>39,4%</td><td>2024</td><td class="data-table-observation-estimated">17,5%</td></tr><tr><td>1999</td><td>26,1%</td><td>2012</td><td>38%</td><td>2025</td><td class="data-table-observation-estimated">20,3%</td></tr><tr><td>2000</td><td>28,3%</td><td>2013</td><td>36,5%</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="governmentSpendingTableWrap" role="region" aria-label="Tabel data" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1988</td><td>33,2%</td><td>2001</td><td>31,9%</td><td>2014</td><td>31,6%</td></tr><tr><td>1989</td><td>32,5%</td><td>2002</td><td>31%</td><td>2015</td><td>22,9%</td></tr><tr><td>1990</td><td>31,9%</td><td>2003</td><td>32,2%</td><td>2016</td><td>19,7%</td></tr><tr><td>1991</td><td>33,9%</td><td>2004</td><td>31,9%</td><td>2017</td><td>21,8%</td></tr><tr><td>1992</td><td>30,6%</td><td>2005</td><td>33,5%</td><td>2018</td><td class="data-table-observation-estimated">37,9%</td></tr><tr><td>1993</td><td>27,7%</td><td>2006</td><td>39,3%</td><td>2019</td><td class="data-table-observation-estimated">21%</td></tr><tr><td>1994</td><td>42,2%</td><td>2007</td><td>35,9%</td><td>2020</td><td class="data-table-observation-estimated">11,2%</td></tr><tr><td>1995</td><td>32,9%</td><td>2008</td><td>34,9%</td><td>2021</td><td class="data-table-observation-estimated">13,1%</td></tr><tr><td>1996</td><td>27,7%</td><td>2009</td><td>33,3%</td><td>2022</td><td class="data-table-observation-estimated">15,1%</td></tr><tr><td>1997</td><td>31%</td><td>2010</td><td>31,1%</td><td>2023</td><td class="data-table-observation-estimated">13,1%</td></tr><tr><td>1998</td><td>28,8%</td><td>2011</td><td>39,4%</td><td>2024</td><td class="data-table-observation-estimated">17,5%</td></tr><tr><td>1999</td><td>26,1%</td><td>2012</td><td>38%</td><td>2025</td><td class="data-table-observation-estimated">20,3%</td></tr><tr><td>2000</td><td>28,3%</td><td>2013</td><td>36,5%</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="governmentSpendingNational-title">
+          <section class="indicator-block" aria-label="Grafik garis Belanja Pemerintah (Mata uang lokal)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="governmentSpendingNational-title"><span class="indicator-label-cell"><span class="indicator-label-text">Belanja Pemerintah</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Mata uang lokal)</span><button class="indicator-info-button" type="button" aria-label="Informasi tentang Belanja Pemerintah" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentSpendingNational">i</button></span></span></h2>
+                <h2 data-country-indicator-title="governmentSpendingNational"><span class="indicator-label-cell"><span class="indicator-label-text">Belanja Pemerintah</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Mata uang lokal)</span><button class="indicator-info-button" type="button" aria-label="Informasi tentang Belanja Pemerintah" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentSpendingNational">i</button></span></span></h2>
               </div>
             </header>
 
@@ -205,7 +211,9 @@
 
             <details class="data-table-toggle" id="governmentSpendingNationalTableToggle">
               <summary data-ui-text-action>Tabel data</summary>
-              <div class="data-table-wrap" id="governmentSpendingNationalTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>2017</td><td>0 juta</td><td>2020</td><td class="data-table-observation-estimated">1,56 miliar</td><td>2023</td><td class="data-table-observation-estimated">397,01 miliar</td></tr><tr><td>2018</td><td class="data-table-observation-estimated">2 juta</td><td>2021</td><td class="data-table-observation-estimated">24,31 miliar</td><td>2024</td><td class="data-table-observation-estimated">869,38 miliar</td></tr><tr><td>2019</td><td class="data-table-observation-estimated">211 juta</td><td>2022</td><td class="data-table-observation-estimated">94,13 miliar</td><td>2025</td><td class="data-table-observation-estimated">3,35 triliun</td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="governmentSpendingNationalTableWrap" role="region" aria-label="Tabel data" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>2017</td><td>0 jt</td><td>2020</td><td class="data-table-observation-estimated">1,56 M</td><td>2023</td><td class="data-table-observation-estimated">397 M</td></tr><tr><td>2018</td><td class="data-table-observation-estimated">2 jt</td><td>2021</td><td class="data-table-observation-estimated">24,31 M</td><td>2024</td><td class="data-table-observation-estimated">869,4 M</td></tr><tr><td>2019</td><td class="data-table-observation-estimated">211 jt</td><td>2022</td><td class="data-table-observation-estimated">94,13 M</td><td>2025</td><td class="data-table-observation-estimated">3,35 T</td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -225,10 +233,11 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/venezuela/population/">Jumlah Penduduk</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/venezuela/population-growth/">Pertumbuhan Penduduk</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/venezuela/fertility-rate/">Angka Kelahiran Total</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/venezuela/trade/">Neraca Perdagangan</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/venezuela/trade/">Ekspor, Impor, dan Neraca Perdagangan</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/venezuela/government-debt/">Utang Pemerintah</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/venezuela/fiscal-balance/">Neraca Fiskal</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/venezuela/hdi/">Indeks Pembangunan Manusia</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/venezuela/co2-emissions/">Emisi Gas Rumah Kaca</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../id/countries/venezuela/"><img class="flag-image flag-image-ve country-flag" src="../../../../public/flags/ve.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">Lihat profil negara</span></a>
       </section>

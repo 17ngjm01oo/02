@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="経済ページナビゲーション"><a class="navigation-control is-current" href="../gdp/" aria-current="page">GDP</a><a class="navigation-control" href="../gdp-per-capita/">1人あたりGDP</a><a class="navigation-control" href="../ppp-gdp/">購買力平価GDP</a><a class="navigation-control" href="../ppp-gdp-per-capita/">1人あたり購買力平価GDP</a><a class="navigation-control" href="../gni/">GNI</a><a class="navigation-control" href="../gni-per-capita/">1人あたりGNI</a><a class="navigation-control" href="../gdp-growth/">経済成長率</a><a class="navigation-control" href="../inflation-rate/">インフレ率</a><a class="navigation-control" href="../unemployment-rate/">失業率</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="gdp-title">
+          <section class="indicator-block" aria-label="GDP (米ドル)折れ線グラフ">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gdp-title"><span class="indicator-label-cell"><span class="indicator-label-text">GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(米ドル)</span><button class="indicator-info-button" type="button" aria-label="GDPの情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gdp"><span class="indicator-label-cell"><span class="indicator-label-text">GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(米ドル)</span><button class="indicator-info-button" type="button" aria-label="GDPの情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdp">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="gdp">
                 <div class="compare-input-wrap">
@@ -134,14 +134,16 @@
 
             <details class="data-table-toggle" id="gdpTableToggle">
               <summary data-ui-text-action>データ表</summary>
-              <div class="data-table-wrap" id="gdpTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1980</td><td>129.8億</td><td>1991</td><td>127.38億</td><td>2002</td><td>227.58億</td></tr><tr><td>1981</td><td>166.52億</td><td>1992</td><td>132.63億</td><td>2003</td><td>217.02億</td></tr><tr><td>1982</td><td>174.15億</td><td>1993</td><td>137.96億</td><td>2004</td><td>252.04億</td></tr><tr><td>1983</td><td>186.49億</td><td>1994</td><td>151.05億</td><td>2005</td><td>288.81億</td></tr><tr><td>1984</td><td>191.71億</td><td>1995</td><td>165.56億</td><td>2006</td><td>338.24億</td></tr><tr><td>1985</td><td>211.77億</td><td>1996</td><td>177.61億</td><td>2007</td><td>404.88億</td></tr><tr><td>1986</td><td>254.28億</td><td>1997</td><td>165.73億</td><td>2008</td><td>526.31億</td></tr><tr><td>1987</td><td>324.97億</td><td>1998</td><td>161.44億</td><td>2009</td><td>539.39億</td></tr><tr><td>1988</td><td>165.38億</td><td>1999</td><td>167.85億</td><td>2010</td><td>600.43億</td></tr><tr><td>1989</td><td>98.49億</td><td>2000</td><td>198.61億</td><td></td><td></td></tr><tr><td>1990</td><td>123.03億</td><td>2001</td><td>209.79億</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gdpTableWrap" role="region" aria-label="データ表" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1980</td><td>129.8億</td><td>1991</td><td>127.4億</td><td>2002</td><td>227.6億</td></tr><tr><td>1981</td><td>166.5億</td><td>1992</td><td>132.6億</td><td>2003</td><td>217億</td></tr><tr><td>1982</td><td>174.2億</td><td>1993</td><td>138億</td><td>2004</td><td>252億</td></tr><tr><td>1983</td><td>186.5億</td><td>1994</td><td>151.1億</td><td>2005</td><td>288.8億</td></tr><tr><td>1984</td><td>191.7億</td><td>1995</td><td>165.6億</td><td>2006</td><td>338.2億</td></tr><tr><td>1985</td><td>211.8億</td><td>1996</td><td>177.6億</td><td>2007</td><td>404.9億</td></tr><tr><td>1986</td><td>254.3億</td><td>1997</td><td>165.7億</td><td>2008</td><td>526.3億</td></tr><tr><td>1987</td><td>325億</td><td>1998</td><td>161.4億</td><td>2009</td><td>539.4億</td></tr><tr><td>1988</td><td>165.4億</td><td>1999</td><td>167.9億</td><td>2010</td><td>600.4億</td></tr><tr><td>1989</td><td>98.49億</td><td>2000</td><td>198.6億</td><td></td><td></td></tr><tr><td>1990</td><td>123億</td><td>2001</td><td>209.8億</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="gdpNational-title">
+          <section class="indicator-block" aria-label="GDP (自国通貨)折れ線グラフ">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gdpNational-title"><span class="indicator-label-cell"><span class="indicator-label-text">GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(自国通貨)</span><button class="indicator-info-button" type="button" aria-label="GDPの情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpNational">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gdpNational"><span class="indicator-label-cell"><span class="indicator-label-text">GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(自国通貨)</span><button class="indicator-info-button" type="button" aria-label="GDPの情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpNational">i</button></span></span></h2>
               </div>
             </header>
 
@@ -152,14 +154,16 @@
 
             <details class="data-table-toggle" id="gdpNationalTableToggle">
               <summary data-ui-text-action>データ表</summary>
-              <div class="data-table-wrap" id="gdpNationalTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1980</td><td>512.7億</td><td>1991</td><td>3,115.6億</td><td>2002</td><td>1.12兆</td></tr><tr><td>1981</td><td>657.77億</td><td>1992</td><td>3,716.3億</td><td>2003</td><td>1.07兆</td></tr><tr><td>1982</td><td>687.88億</td><td>1993</td><td>4,137.6億</td><td>2004</td><td>1.27兆</td></tr><tr><td>1983</td><td>732.91億</td><td>1994</td><td>5,061億</td><td>2005</td><td>1.51兆</td></tr><tr><td>1984</td><td>753.42億</td><td>1995</td><td>5,709.8億</td><td>2006</td><td>1.73兆</td></tr><tr><td>1985</td><td>832.25億</td><td>1996</td><td>6,908.6億</td><td>2007</td><td>2.02兆</td></tr><tr><td>1986</td><td>999.33億</td><td>1997</td><td>7,455.7億</td><td>2008</td><td>2.45兆</td></tr><tr><td>1987</td><td>1,277.1億</td><td>1998</td><td>7,904.4億</td><td>2009</td><td>2.52兆</td></tr><tr><td>1988</td><td>1,860.5億</td><td>1999</td><td>8,190.9億</td><td>2010</td><td>2.79兆</td></tr><tr><td>1989</td><td>2,088.9億</td><td>2000</td><td>9,471.3億</td><td></td><td></td></tr><tr><td>1990</td><td>2,683.3億</td><td>2001</td><td>1.01兆</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gdpNationalTableWrap" role="region" aria-label="データ表" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1980</td><td>512.7億</td><td>1991</td><td>3,116億</td><td>2002</td><td>1.12兆</td></tr><tr><td>1981</td><td>657.8億</td><td>1992</td><td>3,716億</td><td>2003</td><td>1.07兆</td></tr><tr><td>1982</td><td>687.9億</td><td>1993</td><td>4,138億</td><td>2004</td><td>1.27兆</td></tr><tr><td>1983</td><td>732.9億</td><td>1994</td><td>5,061億</td><td>2005</td><td>1.51兆</td></tr><tr><td>1984</td><td>753.4億</td><td>1995</td><td>5,710億</td><td>2006</td><td>1.73兆</td></tr><tr><td>1985</td><td>832.3億</td><td>1996</td><td>6,909億</td><td>2007</td><td>2.02兆</td></tr><tr><td>1986</td><td>999.3億</td><td>1997</td><td>7,456億</td><td>2008</td><td>2.45兆</td></tr><tr><td>1987</td><td>1,277億</td><td>1998</td><td>7,904億</td><td>2009</td><td>2.52兆</td></tr><tr><td>1988</td><td>1,860億</td><td>1999</td><td>8,191億</td><td>2010</td><td>2.79兆</td></tr><tr><td>1989</td><td>2,089億</td><td>2000</td><td>9,471億</td><td></td><td></td></tr><tr><td>1990</td><td>2,683億</td><td>2001</td><td>1.01兆</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="realGdp-title">
+          <section class="indicator-block" aria-label="実質GDP (自国通貨)折れ線グラフ">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="realGdp-title"><span class="indicator-label-cell"><span class="indicator-label-text">実質GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(自国通貨)</span><button class="indicator-info-button" type="button" aria-label="実質GDPの情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="realGdp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="realGdp"><span class="indicator-label-cell"><span class="indicator-label-text">実質GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(自国通貨)</span><button class="indicator-info-button" type="button" aria-label="実質GDPの情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="realGdp">i</button></span></span></h2>
               </div>
             </header>
 
@@ -170,7 +174,9 @@
 
             <details class="data-table-toggle" id="realGdpTableToggle">
               <summary data-ui-text-action>データ表</summary>
-              <div class="data-table-wrap" id="realGdpTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1980</td><td>4,642.4億</td><td>1991</td><td>6,569.5億</td><td>2002</td><td>1.04兆</td></tr><tr><td>1981</td><td>5,035.3億</td><td>1992</td><td>7,439.7億</td><td>2003</td><td>1.02兆</td></tr><tr><td>1982</td><td>5,165.3億</td><td>1993</td><td>7,990.9億</td><td>2004</td><td>1.09兆</td></tr><tr><td>1983</td><td>5,248.2億</td><td>1994</td><td>8,433.1億</td><td>2005</td><td>1.16兆</td></tr><tr><td>1984</td><td>4,907.2億</td><td>1995</td><td>8,890.4億</td><td>2006</td><td>1.22兆</td></tr><tr><td>1985</td><td>5,265.2億</td><td>1996</td><td>9,154.1億</td><td>2007</td><td>1.28兆</td></tr><tr><td>1986</td><td>5,014.8億</td><td>1997</td><td>9,054.3億</td><td>2008</td><td>1.34兆</td></tr><tr><td>1987</td><td>5,077.5億</td><td>1998</td><td>9,557.1億</td><td>2009</td><td>1.42兆</td></tr><tr><td>1988</td><td>5,723.4億</td><td>1999</td><td>9,258.8億</td><td>2010</td><td>1.47兆</td></tr><tr><td>1989</td><td>5,376.2億</td><td>2000</td><td>9,471.3億</td><td></td><td></td></tr><tr><td>1990</td><td>5,933億</td><td>2001</td><td>9,819.8億</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="realGdpTableWrap" role="region" aria-label="データ表" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1980</td><td>4,642億</td><td>1991</td><td>6,569億</td><td>2002</td><td>1.04兆</td></tr><tr><td>1981</td><td>5,035億</td><td>1992</td><td>7,440億</td><td>2003</td><td>1.02兆</td></tr><tr><td>1982</td><td>5,165億</td><td>1993</td><td>7,991億</td><td>2004</td><td>1.09兆</td></tr><tr><td>1983</td><td>5,248億</td><td>1994</td><td>8,433億</td><td>2005</td><td>1.16兆</td></tr><tr><td>1984</td><td>4,907億</td><td>1995</td><td>8,890億</td><td>2006</td><td>1.22兆</td></tr><tr><td>1985</td><td>5,265億</td><td>1996</td><td>9,154億</td><td>2007</td><td>1.28兆</td></tr><tr><td>1986</td><td>5,015億</td><td>1997</td><td>9,054億</td><td>2008</td><td>1.34兆</td></tr><tr><td>1987</td><td>5,078億</td><td>1998</td><td>9,557億</td><td>2009</td><td>1.42兆</td></tr><tr><td>1988</td><td>5,723億</td><td>1999</td><td>9,259億</td><td>2010</td><td>1.47兆</td></tr><tr><td>1989</td><td>5,376億</td><td>2000</td><td>9,471億</td><td></td><td></td></tr><tr><td>1990</td><td>5,933億</td><td>2001</td><td>9,820億</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -189,10 +195,11 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/syria/population/">人口</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/syria/population-growth/">人口増加率</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/syria/fertility-rate/">合計特殊出生率</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/syria/trade/">貿易収支</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/syria/trade/">貿易収支・輸出額・輸入額</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/syria/government-debt/">政府債務残高</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/syria/fiscal-balance/">財政収支</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/syria/hdi/">HDI</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/syria/co2-emissions/">CO2排出量</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../ja/countries/syria/"><img class="flag-image flag-image-sy country-flag" src="../../../../public/flags/sy.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">国の概要ページを見る</span></a>
       </section>

@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Navigasi halaman lingkungan"><a class="navigation-control is-current" href="../co2-emissions/" aria-current="page">Emisi Gas Rumah Kaca</a><a class="navigation-control" href="../forest-area/">Luas Hutan</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="co2Emissions-title">
+          <section class="indicator-block" aria-label="Grafik garis Emisi Gas Rumah Kaca (CO2e)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="co2Emissions-title"><span class="indicator-label-cell"><span class="indicator-label-text">Emisi Gas Rumah Kaca</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(CO2e)</span><button class="indicator-info-button" type="button" aria-label="Informasi tentang Emisi Gas Rumah Kaca" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="co2Emissions">i</button></span></span></h2>
+                <h2 data-country-indicator-title="co2Emissions"><span class="indicator-label-cell"><span class="indicator-label-text">Emisi Gas Rumah Kaca</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(CO2e)</span><button class="indicator-info-button" type="button" aria-label="Informasi tentang Emisi Gas Rumah Kaca" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="co2Emissions">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="co2Emissions">
                 <div class="compare-input-wrap">
@@ -134,14 +134,16 @@
 
             <details class="data-table-toggle" id="co2EmissionsTableToggle">
               <summary data-ui-text-action>Tabel data</summary>
-              <div class="data-table-wrap" id="co2EmissionsTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="co2EmissionsTableWrap" role="region" aria-label="Tabel data" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="co2EmissionsPerCapita-title">
+          <section class="indicator-block" aria-label="Grafik garis Emisi Gas Rumah Kaca per Kapita (CO2e)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="co2EmissionsPerCapita-title"><span class="indicator-label-cell"><span class="indicator-label-text">Emisi Gas Rumah Kaca per Kapita</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(CO2e)</span><button class="indicator-info-button" type="button" aria-label="Informasi tentang Emisi Gas Rumah Kaca per Kapita" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="co2EmissionsPerCapita">i</button></span></span></h2>
+                <h2 data-country-indicator-title="co2EmissionsPerCapita"><span class="indicator-label-cell"><span class="indicator-label-text">Emisi Gas Rumah Kaca per Kapita</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(CO2e)</span><button class="indicator-info-button" type="button" aria-label="Informasi tentang Emisi Gas Rumah Kaca per Kapita" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="co2EmissionsPerCapita">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="co2EmissionsPerCapita">
                 <div class="compare-input-wrap">
@@ -169,7 +171,9 @@
 
             <details class="data-table-toggle" id="co2EmissionsPerCapitaTableToggle">
               <summary data-ui-text-action>Tabel data</summary>
-              <div class="data-table-wrap" id="co2EmissionsPerCapitaTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="co2EmissionsPerCapitaTableWrap" role="region" aria-label="Tabel data" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
@@ -188,7 +192,7 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/andorra/population/">Jumlah Penduduk</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/andorra/population-growth/">Pertumbuhan Penduduk</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/andorra/fertility-rate/">Angka Kelahiran Total</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/andorra/trade/">Neraca Perdagangan</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/andorra/trade/">Ekspor, Impor, dan Neraca Perdagangan</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/andorra/government-debt/">Utang Pemerintah</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/andorra/fiscal-balance/">Neraca Fiskal</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../id/countries/andorra/hdi/">Indeks Pembangunan Manusia</a>

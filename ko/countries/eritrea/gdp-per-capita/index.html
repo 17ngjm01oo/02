@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="경제 페이지 탐색"><a class="navigation-control" href="../gdp/">GDP</a><a class="navigation-control is-current" href="../gdp-per-capita/" aria-current="page">1인당 GDP</a><a class="navigation-control" href="../ppp-gdp/">구매력평가 GDP</a><a class="navigation-control" href="../ppp-gdp-per-capita/">1인당 구매력평가 GDP</a><a class="navigation-control" href="../gni/">국민총소득(GNI)</a><a class="navigation-control" href="../gni-per-capita/">1인당 국민총소득(GNI)</a><a class="navigation-control" href="../gdp-growth/">경제성장률</a><a class="navigation-control" href="../inflation-rate/">물가상승률</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="gdpPerCapita-title">
+          <section class="indicator-block" aria-label="1인당 GDP (USD) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gdpPerCapita-title"><span class="indicator-label-cell"><span class="indicator-label-text">1인당 GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="1인당 GDP 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpPerCapita">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gdpPerCapita"><span class="indicator-label-cell"><span class="indicator-label-text">1인당 GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="1인당 GDP 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpPerCapita">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="gdpPerCapita">
                 <div class="compare-input-wrap">
@@ -134,14 +134,16 @@
 
             <details class="data-table-toggle" id="gdpPerCapitaTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="gdpPerCapitaTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>268</td><td>2002</td><td>227</td><td>2012</td><td>694</td></tr><tr><td>1993</td><td>167</td><td>2003</td><td>259</td><td>2013</td><td>597</td></tr><tr><td>1994</td><td>195</td><td>2004</td><td>316</td><td>2014</td><td>787</td></tr><tr><td>1995</td><td>219</td><td>2005</td><td>301</td><td>2015</td><td>603</td></tr><tr><td>1996</td><td>264</td><td>2006</td><td>321</td><td>2016</td><td>655</td></tr><tr><td>1997</td><td>271</td><td>2007</td><td>340</td><td>2017</td><td>558</td></tr><tr><td>1998</td><td>284</td><td>2008</td><td>301</td><td>2018</td><td>581</td></tr><tr><td>1999</td><td>275</td><td>2009</td><td>416</td><td>2019</td><td>567</td></tr><tr><td>2000</td><td>239</td><td>2010</td><td>501</td><td></td><td></td></tr><tr><td>2001</td><td>245</td><td>2011</td><td>643</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gdpPerCapitaTableWrap" role="region" aria-label="데이터 표" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>268</td><td>2002</td><td>227</td><td>2012</td><td>694</td></tr><tr><td>1993</td><td>167</td><td>2003</td><td>259</td><td>2013</td><td>597</td></tr><tr><td>1994</td><td>195</td><td>2004</td><td>316</td><td>2014</td><td>787</td></tr><tr><td>1995</td><td>219</td><td>2005</td><td>301</td><td>2015</td><td>603</td></tr><tr><td>1996</td><td>264</td><td>2006</td><td>321</td><td>2016</td><td>655</td></tr><tr><td>1997</td><td>271</td><td>2007</td><td>340</td><td>2017</td><td>558</td></tr><tr><td>1998</td><td>284</td><td>2008</td><td>301</td><td>2018</td><td>581</td></tr><tr><td>1999</td><td>275</td><td>2009</td><td>416</td><td>2019</td><td>567</td></tr><tr><td>2000</td><td>239</td><td>2010</td><td>501</td><td></td><td></td></tr><tr><td>2001</td><td>245</td><td>2011</td><td>643</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="gdpNationalPerCapita-title">
+          <section class="indicator-block" aria-label="1인당 GDP (자국 통화) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gdpNationalPerCapita-title"><span class="indicator-label-cell"><span class="indicator-label-text">1인당 GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(자국 통화)</span><button class="indicator-info-button" type="button" aria-label="1인당 GDP 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpNationalPerCapita">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gdpNationalPerCapita"><span class="indicator-label-cell"><span class="indicator-label-text">1인당 GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(자국 통화)</span><button class="indicator-info-button" type="button" aria-label="1인당 GDP 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpNationalPerCapita">i</button></span></span></h2>
               </div>
             </header>
 
@@ -152,14 +154,16 @@
 
             <details class="data-table-toggle" id="gdpNationalPerCapitaTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="gdpNationalPerCapitaTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>751</td><td>2002</td><td>3,175</td><td>2012</td><td>1.07만</td></tr><tr><td>1993</td><td>874</td><td>2003</td><td>3,593</td><td>2013</td><td>9,175</td></tr><tr><td>1994</td><td>1,204</td><td>2004</td><td>4,351</td><td>2014</td><td>1.21만</td></tr><tr><td>1995</td><td>1,385</td><td>2005</td><td>4,621</td><td>2015</td><td>9,259</td></tr><tr><td>1996</td><td>1,677</td><td>2006</td><td>4,939</td><td>2016</td><td>9,881</td></tr><tr><td>1997</td><td>1,885</td><td>2007</td><td>5,233</td><td>2017</td><td>8,410</td></tr><tr><td>1998</td><td>2,090</td><td>2008</td><td>4,632</td><td>2018</td><td>8,756</td></tr><tr><td>1999</td><td>2,239</td><td>2009</td><td>6,390</td><td>2019</td><td>8,543</td></tr><tr><td>2000</td><td>2,296</td><td>2010</td><td>7,709</td><td></td><td></td></tr><tr><td>2001</td><td>2,773</td><td>2011</td><td>9,878</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gdpNationalPerCapitaTableWrap" role="region" aria-label="데이터 표" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>751</td><td>2002</td><td>3,175</td><td>2012</td><td>1.07만</td></tr><tr><td>1993</td><td>874</td><td>2003</td><td>3,593</td><td>2013</td><td>9,175</td></tr><tr><td>1994</td><td>1,204</td><td>2004</td><td>4,351</td><td>2014</td><td>1.21만</td></tr><tr><td>1995</td><td>1,385</td><td>2005</td><td>4,621</td><td>2015</td><td>9,259</td></tr><tr><td>1996</td><td>1,677</td><td>2006</td><td>4,939</td><td>2016</td><td>9,881</td></tr><tr><td>1997</td><td>1,885</td><td>2007</td><td>5,233</td><td>2017</td><td>8,410</td></tr><tr><td>1998</td><td>2,090</td><td>2008</td><td>4,632</td><td>2018</td><td>8,756</td></tr><tr><td>1999</td><td>2,239</td><td>2009</td><td>6,390</td><td>2019</td><td>8,543</td></tr><tr><td>2000</td><td>2,296</td><td>2010</td><td>7,709</td><td></td><td></td></tr><tr><td>2001</td><td>2,773</td><td>2011</td><td>9,878</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="realGdpPerCapita-title">
+          <section class="indicator-block" aria-label="1인당 실질 GDP (자국 통화) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="realGdpPerCapita-title"><span class="indicator-label-cell"><span class="indicator-label-text">1인당 실질 GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(자국 통화)</span><button class="indicator-info-button" type="button" aria-label="1인당 실질 GDP 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="realGdpPerCapita">i</button></span></span></h2>
+                <h2 data-country-indicator-title="realGdpPerCapita"><span class="indicator-label-cell"><span class="indicator-label-text">1인당 실질 GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(자국 통화)</span><button class="indicator-info-button" type="button" aria-label="1인당 실질 GDP 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="realGdpPerCapita">i</button></span></span></h2>
               </div>
             </header>
 
@@ -170,7 +174,9 @@
 
             <details class="data-table-toggle" id="realGdpPerCapitaTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="realGdpPerCapitaTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>6,652</td><td>2002</td><td>9,986</td><td>2012</td><td>9,953</td></tr><tr><td>1993</td><td>7,572</td><td>2003</td><td>9,273</td><td>2013</td><td>8,828</td></tr><tr><td>1994</td><td>9,243</td><td>2004</td><td>8,996</td><td>2014</td><td>1.15만</td></tr><tr><td>1995</td><td>9,518</td><td>2005</td><td>8,878</td><td>2015</td><td>9,005</td></tr><tr><td>1996</td><td>1.04만</td><td>2006</td><td>8,518</td><td>2016</td><td>9,574</td></tr><tr><td>1997</td><td>1.13만</td><td>2007</td><td>8,412</td><td>2017</td><td>8,524</td></tr><tr><td>1998</td><td>1.14만</td><td>2008</td><td>6,631</td><td>2018</td><td>9,523</td></tr><tr><td>1999</td><td>1.13만</td><td>2009</td><td>7,302</td><td>2019</td><td>9,764</td></tr><tr><td>2000</td><td>9,650</td><td>2010</td><td>7,967</td><td></td><td></td></tr><tr><td>2001</td><td>1.01만</td><td>2011</td><td>9,878</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="realGdpPerCapitaTableWrap" role="region" aria-label="데이터 표" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>6,652</td><td>2002</td><td>9,986</td><td>2012</td><td>9,953</td></tr><tr><td>1993</td><td>7,572</td><td>2003</td><td>9,273</td><td>2013</td><td>8,828</td></tr><tr><td>1994</td><td>9,243</td><td>2004</td><td>8,996</td><td>2014</td><td>1.15만</td></tr><tr><td>1995</td><td>9,518</td><td>2005</td><td>8,878</td><td>2015</td><td>9,005</td></tr><tr><td>1996</td><td>1.04만</td><td>2006</td><td>8,518</td><td>2016</td><td>9,574</td></tr><tr><td>1997</td><td>1.13만</td><td>2007</td><td>8,412</td><td>2017</td><td>8,524</td></tr><tr><td>1998</td><td>1.14만</td><td>2008</td><td>6,631</td><td>2018</td><td>9,523</td></tr><tr><td>1999</td><td>1.13만</td><td>2009</td><td>7,302</td><td>2019</td><td>9,764</td></tr><tr><td>2000</td><td>9,650</td><td>2010</td><td>7,967</td><td></td><td></td></tr><tr><td>2001</td><td>1.01만</td><td>2011</td><td>9,878</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -188,10 +194,11 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/eritrea/population/">인구</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/eritrea/population-growth/">인구증가율</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/eritrea/fertility-rate/">합계출산율</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/eritrea/trade/">무역수지</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/eritrea/trade/">수출, 수입 및 무역수지</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/eritrea/government-debt/">정부 부채</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/eritrea/fiscal-balance/">재정수지</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/eritrea/hdi/">인간개발지수(HDI)</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/eritrea/co2-emissions/">온실가스 배출량</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../ko/countries/eritrea/"><img class="flag-image flag-image-er country-flag" src="../../../../public/flags/er.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">국가 프로필 보기</span></a>
       </section>

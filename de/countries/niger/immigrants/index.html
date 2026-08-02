@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Seitennavigation Bevölkerung"><a class="navigation-control" href="../population/">Bevölkerung</a><a class="navigation-control" href="../population-growth/">Bevölkerungswachstum</a><a class="navigation-control" href="../population-density/">Bevölkerungsdichte</a><a class="navigation-control" href="../life-expectancy/">Lebenserwartung</a><a class="navigation-control" href="../fertility-rate/">Fertilitätsrate</a><a class="navigation-control is-current" href="../immigrants/" aria-current="page">Einwanderer</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="immigrants-title">
+          <section class="indicator-block" aria-label="Liniendiagramm: Einwanderer">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="immigrants-title"><span class="indicator-label-cell"><span class="indicator-label-text">Einwanderer</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="Informationen zu Einwanderer" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="immigrants">i</button></span></span></h2>
+                <h2 data-country-indicator-title="immigrants"><span class="indicator-label-cell"><span class="indicator-label-text">Einwanderer</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="Informationen zu Einwanderer" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="immigrants">i</button></span></span></h2>
                 <p class="indicator-rank"><a data-ui-text-action href="../../../../de/rankings/countries/immigrants/">Weltrang: #87 / 230</a></p>
               </div>
               <div class="compare-control" data-series-id="immigrants">
@@ -135,14 +135,16 @@
 
             <details class="data-table-toggle" id="immigrantsTableToggle">
               <summary data-ui-text-action>Datentabelle</summary>
-              <div class="data-table-wrap" id="immigrantsTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1990</td><td>115.464</td><td>2005</td><td>124.509</td><td>2020</td><td>348.056</td></tr><tr><td>1995</td><td>145.999</td><td>2010</td><td>126.482</td><td>2024</td><td>449.236</td></tr><tr><td>2000</td><td>122.260</td><td>2015</td><td>252.998</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="immigrantsTableWrap" role="region" aria-label="Datentabelle" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1990</td><td>115.464</td><td>2005</td><td>124.509</td><td>2020</td><td>348.056</td></tr><tr><td>1995</td><td>145.999</td><td>2010</td><td>126.482</td><td>2024</td><td>449.236</td></tr><tr><td>2000</td><td>122.260</td><td>2015</td><td>252.998</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="immigrantsPercentPopulation-title">
+          <section class="indicator-block" aria-label="Liniendiagramm: Einwanderer (% der Bevölkerung)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="immigrantsPercentPopulation-title"><span class="indicator-label-cell"><span class="indicator-label-text">Einwanderer</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(% der Bevölkerung)</span><button class="indicator-info-button" type="button" aria-label="Informationen zu Einwanderer" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="immigrantsPercentPopulation">i</button></span></span></h2>
+                <h2 data-country-indicator-title="immigrantsPercentPopulation"><span class="indicator-label-cell"><span class="indicator-label-text">Einwanderer</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(% der Bevölkerung)</span><button class="indicator-info-button" type="button" aria-label="Informationen zu Einwanderer" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="immigrantsPercentPopulation">i</button></span></span></h2>
                 <p class="indicator-rank"><a data-ui-text-action href="../../../../de/rankings/countries/immigrants-percent-population/">Weltrang: #175 / 230</a></p>
               </div>
               <div class="compare-control" data-series-id="immigrantsPercentPopulation">
@@ -171,12 +173,14 @@
 
             <details class="data-table-toggle" id="immigrantsPercentPopulationTableToggle">
               <summary data-ui-text-action>Datentabelle</summary>
-              <div class="data-table-wrap" id="immigrantsPercentPopulationTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1990</td><td>1,4%</td><td>2005</td><td>0,9%</td><td>2020</td><td>1,5%</td></tr><tr><td>1995</td><td>1,5%</td><td>2010</td><td>0,8%</td><td>2024</td><td>1,7%</td></tr><tr><td>2000</td><td>1,1%</td><td>2015</td><td>1,3%</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="immigrantsPercentPopulationTableWrap" role="region" aria-label="Datentabelle" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1990</td><td>1,4%</td><td>2005</td><td>0,9%</td><td>2020</td><td>1,5%</td></tr><tr><td>1995</td><td>1,5%</td><td>2010</td><td>0,8%</td><td>2024</td><td>1,7%</td></tr><tr><td>2000</td><td>1,1%</td><td>2015</td><td>1,3%</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
           <footer class="shared-notes" aria-label="Diagrammhinweise">
-            <p>Quelle: UN DESA Population Division International Migrant Stock.</p>
+            <p>Quelle: UN DESA International Migrant Stock.</p>
           </footer>
         </div>
       </section>
@@ -189,10 +193,11 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../de/countries/niger/population/">Bevölkerung</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../de/countries/niger/population-growth/">Bevölkerungswachstum</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../de/countries/niger/fertility-rate/">Fertilitätsrate</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../de/countries/niger/trade/">Handelsbilanz</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../de/countries/niger/trade/">Exporte, Importe und Handelsbilanz</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../de/countries/niger/government-debt/">Staatsverschuldung</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../de/countries/niger/fiscal-balance/">Finanzierungssaldo</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../de/countries/niger/hdi/">HDI</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../de/countries/niger/co2-emissions/">Treibhausgasemissionen</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../de/countries/niger/"><img class="flag-image flag-image-ne country-flag" src="../../../../public/flags/ne.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">Länderprofil anzeigen</span></a>
       </section>

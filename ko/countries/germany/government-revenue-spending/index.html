@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="정부 재정 페이지 탐색"><a class="navigation-control" href="../government-debt/">정부 부채</a><a class="navigation-control" href="../fiscal-balance/">재정수지</a><a class="navigation-control is-current" href="../government-revenue-spending/" aria-current="page">정부 수입 및 지출</a><a class="navigation-control" href="../total-reserves/">총외환보유액</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="governmentRevenue-title">
+          <section class="indicator-block" aria-label="정부 수입 (GDP 대비 %) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="governmentRevenue-title"><span class="indicator-label-cell"><span class="indicator-label-text">정부 수입</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GDP 대비 %)</span><button class="indicator-info-button" type="button" aria-label="정부 수입 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentRevenue">i</button></span></span></h2>
+                <h2 data-country-indicator-title="governmentRevenue"><span class="indicator-label-cell"><span class="indicator-label-text">정부 수입</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GDP 대비 %)</span><button class="indicator-info-button" type="button" aria-label="정부 수입 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentRevenue">i</button></span></span></h2>
                 <p class="indicator-rank"><a data-ui-text-action href="../../../../ko/rankings/countries/government-revenue/">세계 순위: #17 / 189</a></p>
               </div>
               <div class="compare-control" data-series-id="governmentRevenue">
@@ -135,14 +135,16 @@
 
             <details class="data-table-toggle" id="governmentRevenueTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="governmentRevenueTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1991</td><td>43.3%</td><td>2003</td><td>44.7%</td><td>2015</td><td>45.4%</td></tr><tr><td>1992</td><td>44.7%</td><td>2004</td><td>43.6%</td><td>2016</td><td>45.9%</td></tr><tr><td>1993</td><td>45.2%</td><td>2005</td><td>43.5%</td><td>2017</td><td>45.9%</td></tr><tr><td>1994</td><td>45.8%</td><td>2006</td><td>43.6%</td><td>2018</td><td>46.5%</td></tr><tr><td>1995</td><td>45.8%</td><td>2007</td><td>43.7%</td><td>2019</td><td>46.9%</td></tr><tr><td>1996</td><td>45.9%</td><td>2008</td><td>44.2%</td><td>2020</td><td>46.7%</td></tr><tr><td>1997</td><td>45.7%</td><td>2009</td><td>45.1%</td><td>2021</td><td>47.5%</td></tr><tr><td>1998</td><td>45.6%</td><td>2010</td><td>43.7%</td><td>2022</td><td>46.7%</td></tr><tr><td>1999</td><td>46.6%</td><td>2011</td><td>44.5%</td><td>2023</td><td>45.7%</td></tr><tr><td>2000</td><td>46.3%</td><td>2012</td><td>45%</td><td>2024</td><td>46.8%</td></tr><tr><td>2001</td><td>44.5%</td><td>2013</td><td>45.3%</td><td>2025</td><td>47.9%</td></tr><tr><td>2002</td><td>44.2%</td><td>2014</td><td>45.2%</td><td>2026</td><td class="data-table-observation-estimated">47.9%</td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="governmentRevenueTableWrap" role="region" aria-label="데이터 표" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1991</td><td>43.3%</td><td>2003</td><td>44.7%</td><td>2015</td><td>45.4%</td></tr><tr><td>1992</td><td>44.7%</td><td>2004</td><td>43.6%</td><td>2016</td><td>45.9%</td></tr><tr><td>1993</td><td>45.2%</td><td>2005</td><td>43.5%</td><td>2017</td><td>45.9%</td></tr><tr><td>1994</td><td>45.8%</td><td>2006</td><td>43.6%</td><td>2018</td><td>46.5%</td></tr><tr><td>1995</td><td>45.8%</td><td>2007</td><td>43.7%</td><td>2019</td><td>46.9%</td></tr><tr><td>1996</td><td>45.9%</td><td>2008</td><td>44.2%</td><td>2020</td><td>46.7%</td></tr><tr><td>1997</td><td>45.7%</td><td>2009</td><td>45.1%</td><td>2021</td><td>47.5%</td></tr><tr><td>1998</td><td>45.6%</td><td>2010</td><td>43.7%</td><td>2022</td><td>46.7%</td></tr><tr><td>1999</td><td>46.6%</td><td>2011</td><td>44.5%</td><td>2023</td><td>45.7%</td></tr><tr><td>2000</td><td>46.3%</td><td>2012</td><td>45%</td><td>2024</td><td>46.8%</td></tr><tr><td>2001</td><td>44.5%</td><td>2013</td><td>45.3%</td><td>2025</td><td>47.9%</td></tr><tr><td>2002</td><td>44.2%</td><td>2014</td><td>45.2%</td><td>2026</td><td class="data-table-observation-estimated">47.9%</td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="governmentRevenueNational-title">
+          <section class="indicator-block" aria-label="정부 수입 (자국 통화) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="governmentRevenueNational-title"><span class="indicator-label-cell"><span class="indicator-label-text">정부 수입</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(자국 통화)</span><button class="indicator-info-button" type="button" aria-label="정부 수입 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentRevenueNational">i</button></span></span></h2>
+                <h2 data-country-indicator-title="governmentRevenueNational"><span class="indicator-label-cell"><span class="indicator-label-text">정부 수입</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(자국 통화)</span><button class="indicator-info-button" type="button" aria-label="정부 수입 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentRevenueNational">i</button></span></span></h2>
               </div>
             </header>
 
@@ -153,14 +155,16 @@
 
             <details class="data-table-toggle" id="governmentRevenueNationalTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="governmentRevenueNationalTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1991</td><td>6,896.2억</td><td>2003</td><td>1조</td><td>2015</td><td>1.4조</td></tr><tr><td>1992</td><td>7,646.8억</td><td>2004</td><td>9,986.4억</td><td>2016</td><td>1.47조</td></tr><tr><td>1993</td><td>7,945.2억</td><td>2005</td><td>1.01조</td><td>2017</td><td>1.53조</td></tr><tr><td>1994</td><td>8,412.9억</td><td>2006</td><td>1.06조</td><td>2018</td><td>1.6조</td></tr><tr><td>1995</td><td>8,702.4억</td><td>2007</td><td>1.11조</td><td>2019</td><td>1.66조</td></tr><tr><td>1996</td><td>8,855.6억</td><td>2008</td><td>1.14조</td><td>2020</td><td>1.61조</td></tr><tr><td>1997</td><td>8,995.1억</td><td>2009</td><td>1.13조</td><td>2021</td><td>1.75조</td></tr><tr><td>1998</td><td>9,230.1억</td><td>2010</td><td>1.14조</td><td>2022</td><td>1.86조</td></tr><tr><td>1999</td><td>9,684.2억</td><td>2011</td><td>1.22조</td><td>2023</td><td>1.93조</td></tr><tr><td>2000</td><td>9,869.4억</td><td>2012</td><td>1.26조</td><td>2024</td><td>2.02조</td></tr><tr><td>2001</td><td>9,776.3억</td><td>2013</td><td>1.3조</td><td>2025</td><td>2.14조</td></tr><tr><td>2002</td><td>9,817.9억</td><td>2014</td><td>1.35조</td><td>2026</td><td class="data-table-observation-estimated">2.21조</td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="governmentRevenueNationalTableWrap" role="region" aria-label="데이터 표" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1991</td><td>6,896억</td><td>2003</td><td>1조</td><td>2015</td><td>1.4조</td></tr><tr><td>1992</td><td>7,647억</td><td>2004</td><td>9,986억</td><td>2016</td><td>1.47조</td></tr><tr><td>1993</td><td>7,945억</td><td>2005</td><td>1.01조</td><td>2017</td><td>1.53조</td></tr><tr><td>1994</td><td>8,413억</td><td>2006</td><td>1.06조</td><td>2018</td><td>1.6조</td></tr><tr><td>1995</td><td>8,702억</td><td>2007</td><td>1.11조</td><td>2019</td><td>1.66조</td></tr><tr><td>1996</td><td>8,856억</td><td>2008</td><td>1.14조</td><td>2020</td><td>1.61조</td></tr><tr><td>1997</td><td>8,995억</td><td>2009</td><td>1.13조</td><td>2021</td><td>1.75조</td></tr><tr><td>1998</td><td>9,230억</td><td>2010</td><td>1.14조</td><td>2022</td><td>1.86조</td></tr><tr><td>1999</td><td>9,684억</td><td>2011</td><td>1.22조</td><td>2023</td><td>1.93조</td></tr><tr><td>2000</td><td>9,869억</td><td>2012</td><td>1.26조</td><td>2024</td><td>2.02조</td></tr><tr><td>2001</td><td>9,776억</td><td>2013</td><td>1.3조</td><td>2025</td><td>2.14조</td></tr><tr><td>2002</td><td>9,818억</td><td>2014</td><td>1.35조</td><td>2026</td><td class="data-table-observation-estimated">2.21조</td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="governmentSpending-title">
+          <section class="indicator-block" aria-label="정부 지출 (GDP 대비 %) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="governmentSpending-title"><span class="indicator-label-cell"><span class="indicator-label-text">정부 지출</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GDP 대비 %)</span><button class="indicator-info-button" type="button" aria-label="정부 지출 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentSpending">i</button></span></span></h2>
+                <h2 data-country-indicator-title="governmentSpending"><span class="indicator-label-cell"><span class="indicator-label-text">정부 지출</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GDP 대비 %)</span><button class="indicator-info-button" type="button" aria-label="정부 지출 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentSpending">i</button></span></span></h2>
                 <p class="indicator-rank"><a data-ui-text-action href="../../../../ko/rankings/countries/government-spending/">세계 순위: #14 / 189</a></p>
               </div>
               <div class="compare-control" data-series-id="governmentSpending">
@@ -189,14 +193,16 @@
 
             <details class="data-table-toggle" id="governmentSpendingTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="governmentSpendingTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1991</td><td>46.5%</td><td>2003</td><td>48.5%</td><td>2015</td><td>44.5%</td></tr><tr><td>1992</td><td>47.4%</td><td>2004</td><td>47%</td><td>2016</td><td>44.7%</td></tr><tr><td>1993</td><td>48.3%</td><td>2005</td><td>46.9%</td><td>2017</td><td>44.5%</td></tr><tr><td>1994</td><td>48.3%</td><td>2006</td><td>45.3%</td><td>2018</td><td>44.7%</td></tr><tr><td>1995</td><td>55.2%</td><td>2007</td><td>43.5%</td><td>2019</td><td>45.5%</td></tr><tr><td>1996</td><td>49.6%</td><td>2008</td><td>44.4%</td><td>2020</td><td>51.1%</td></tr><tr><td>1997</td><td>48.8%</td><td>2009</td><td>48.3%</td><td>2021</td><td>50.7%</td></tr><tr><td>1998</td><td>48.3%</td><td>2010</td><td>48.1%</td><td>2022</td><td>48.6%</td></tr><tr><td>1999</td><td>48.5%</td><td>2011</td><td>45.3%</td><td>2023</td><td>48.1%</td></tr><tr><td>2000</td><td>48.1%</td><td>2012</td><td>45.1%</td><td>2024</td><td>49.4%</td></tr><tr><td>2001</td><td>47.7%</td><td>2013</td><td>45.2%</td><td>2025</td><td>50.5%</td></tr><tr><td>2002</td><td>48.2%</td><td>2014</td><td>44.5%</td><td>2026</td><td class="data-table-observation-estimated">51.7%</td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="governmentSpendingTableWrap" role="region" aria-label="데이터 표" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1991</td><td>46.5%</td><td>2003</td><td>48.5%</td><td>2015</td><td>44.5%</td></tr><tr><td>1992</td><td>47.4%</td><td>2004</td><td>47%</td><td>2016</td><td>44.7%</td></tr><tr><td>1993</td><td>48.3%</td><td>2005</td><td>46.9%</td><td>2017</td><td>44.5%</td></tr><tr><td>1994</td><td>48.3%</td><td>2006</td><td>45.3%</td><td>2018</td><td>44.7%</td></tr><tr><td>1995</td><td>55.2%</td><td>2007</td><td>43.5%</td><td>2019</td><td>45.5%</td></tr><tr><td>1996</td><td>49.6%</td><td>2008</td><td>44.4%</td><td>2020</td><td>51.1%</td></tr><tr><td>1997</td><td>48.8%</td><td>2009</td><td>48.3%</td><td>2021</td><td>50.7%</td></tr><tr><td>1998</td><td>48.3%</td><td>2010</td><td>48.1%</td><td>2022</td><td>48.6%</td></tr><tr><td>1999</td><td>48.5%</td><td>2011</td><td>45.3%</td><td>2023</td><td>48.1%</td></tr><tr><td>2000</td><td>48.1%</td><td>2012</td><td>45.1%</td><td>2024</td><td>49.4%</td></tr><tr><td>2001</td><td>47.7%</td><td>2013</td><td>45.2%</td><td>2025</td><td>50.5%</td></tr><tr><td>2002</td><td>48.2%</td><td>2014</td><td>44.5%</td><td>2026</td><td class="data-table-observation-estimated">51.7%</td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="governmentSpendingNational-title">
+          <section class="indicator-block" aria-label="정부 지출 (자국 통화) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="governmentSpendingNational-title"><span class="indicator-label-cell"><span class="indicator-label-text">정부 지출</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(자국 통화)</span><button class="indicator-info-button" type="button" aria-label="정부 지출 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentSpendingNational">i</button></span></span></h2>
+                <h2 data-country-indicator-title="governmentSpendingNational"><span class="indicator-label-cell"><span class="indicator-label-text">정부 지출</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(자국 통화)</span><button class="indicator-info-button" type="button" aria-label="정부 지출 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentSpendingNational">i</button></span></span></h2>
               </div>
             </header>
 
@@ -207,7 +213,9 @@
 
             <details class="data-table-toggle" id="governmentSpendingNationalTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="governmentSpendingNationalTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1991</td><td>7,407억</td><td>2003</td><td>1.09조</td><td>2015</td><td>1.37조</td></tr><tr><td>1992</td><td>8,096.8억</td><td>2004</td><td>1.08조</td><td>2016</td><td>1.43조</td></tr><tr><td>1993</td><td>8,491.7억</td><td>2005</td><td>1.09조</td><td>2017</td><td>1.48조</td></tr><tr><td>1994</td><td>8,880.2억</td><td>2006</td><td>1.1조</td><td>2018</td><td>1.53조</td></tr><tr><td>1995</td><td>1.05조</td><td>2007</td><td>1.11조</td><td>2019</td><td>1.61조</td></tr><tr><td>1996</td><td>9,557.3억</td><td>2008</td><td>1.15조</td><td>2020</td><td>1.76조</td></tr><tr><td>1997</td><td>9,590.6억</td><td>2009</td><td>1.2조</td><td>2021</td><td>1.87조</td></tr><tr><td>1998</td><td>9,765.9억</td><td>2010</td><td>1.26조</td><td>2022</td><td>1.94조</td></tr><tr><td>1999</td><td>1.01조</td><td>2011</td><td>1.24조</td><td>2023</td><td>2.03조</td></tr><tr><td>2000</td><td>1.02조</td><td>2012</td><td>1.26조</td><td>2024</td><td>2.14조</td></tr><tr><td>2001</td><td>1.05조</td><td>2013</td><td>1.29조</td><td>2025</td><td>2.26조</td></tr><tr><td>2002</td><td>1.07조</td><td>2014</td><td>1.33조</td><td>2026</td><td class="data-table-observation-estimated">2.39조</td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="governmentSpendingNationalTableWrap" role="region" aria-label="데이터 표" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1991</td><td>7,407억</td><td>2003</td><td>1.09조</td><td>2015</td><td>1.37조</td></tr><tr><td>1992</td><td>8,097억</td><td>2004</td><td>1.08조</td><td>2016</td><td>1.43조</td></tr><tr><td>1993</td><td>8,492억</td><td>2005</td><td>1.09조</td><td>2017</td><td>1.48조</td></tr><tr><td>1994</td><td>8,880억</td><td>2006</td><td>1.1조</td><td>2018</td><td>1.53조</td></tr><tr><td>1995</td><td>1.05조</td><td>2007</td><td>1.11조</td><td>2019</td><td>1.61조</td></tr><tr><td>1996</td><td>9,557억</td><td>2008</td><td>1.15조</td><td>2020</td><td>1.76조</td></tr><tr><td>1997</td><td>9,591억</td><td>2009</td><td>1.2조</td><td>2021</td><td>1.87조</td></tr><tr><td>1998</td><td>9,766억</td><td>2010</td><td>1.26조</td><td>2022</td><td>1.94조</td></tr><tr><td>1999</td><td>1.01조</td><td>2011</td><td>1.24조</td><td>2023</td><td>2.03조</td></tr><tr><td>2000</td><td>1.02조</td><td>2012</td><td>1.26조</td><td>2024</td><td>2.14조</td></tr><tr><td>2001</td><td>1.05조</td><td>2013</td><td>1.29조</td><td>2025</td><td>2.26조</td></tr><tr><td>2002</td><td>1.07조</td><td>2014</td><td>1.33조</td><td>2026</td><td class="data-table-observation-estimated">2.39조</td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -227,10 +235,11 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/germany/population/">인구</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/germany/population-growth/">인구증가율</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/germany/fertility-rate/">합계출산율</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/germany/trade/">무역수지</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/germany/trade/">수출, 수입 및 무역수지</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/germany/government-debt/">정부 부채</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/germany/fiscal-balance/">재정수지</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/germany/hdi/">인간개발지수(HDI)</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/germany/co2-emissions/">온실가스 배출량</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../ko/countries/germany/"><img class="flag-image flag-image-de country-flag" src="../../../../public/flags/de.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">국가 프로필 보기</span></a>
       </section>

@@ -26,11 +26,10 @@ export const countryNameSearchLabels = {
     "China",
     "中国",
     "Chine",
-    "China, Festland",
-    "Cina continentale",
-    "중국 본토",
-    "Çin ana karası",
-    "Tiongkok daratan"
+    "Cina",
+    "중국",
+    "Çin",
+    "Tiongkok"
   ],
   "TWN": [
     "Taiwan",
@@ -110,7 +109,7 @@ export const countryNameSearchLabels = {
     "Australie",
     "Austrália",
     "Australien",
-    "오스트레일리아",
+    "호주",
     "Avustralya"
   ],
   "NZL": [
@@ -1036,7 +1035,7 @@ export const countryNameSearchLabels = {
     "África do Sul",
     "Südafrika",
     "Sudafrica",
-    "남아프리카",
+    "남아프리카공화국",
     "Güney Afrika",
     "Afrika Selatan"
   ],
@@ -1539,6 +1538,7 @@ export const countryNameSearchLabels = {
   "MMR": [
     "Myanmar",
     "ミャンマー",
+    "Birmanie",
     "Mianmar",
     "미얀마"
   ],
@@ -1712,8 +1712,11 @@ export const countryNameSearchLabels = {
     "Côte d’Ivoire",
     "コートジボワール",
     "Costa de Marfil",
+    "Costa do Marfim",
     "Costa d’Avorio",
-    "코트디부아르"
+    "코트디부아르",
+    "Fildişi Sahili",
+    "Pantai Gading"
   ],
   "DJI": [
     "Djibouti",

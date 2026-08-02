@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Navigation de la page Économie"><a class="navigation-control is-current" href="../gdp/" aria-current="page">PIB</a><a class="navigation-control" href="../gdp-per-capita/">PIB par habitant</a><a class="navigation-control" href="../ppp-gdp/">PIB en PPA</a><a class="navigation-control" href="../ppp-gdp-per-capita/">PIB par habitant en PPA</a><a class="navigation-control" href="../gni/">RNB</a><a class="navigation-control" href="../gni-per-capita/">RNB par habitant</a><a class="navigation-control" href="../gdp-growth/">Croissance du PIB</a><a class="navigation-control" href="../inflation-rate/">Taux d’inflation</a><a class="navigation-control" href="../unemployment-rate/">Taux de chômage</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="gdp-title">
+          <section class="indicator-block" aria-label="Graphique linéaire de PIB (USD)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gdp-title"><span class="indicator-label-cell"><span class="indicator-label-text">PIB</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Informations sur PIB" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gdp"><span class="indicator-label-cell"><span class="indicator-label-text">PIB</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="Informations sur PIB" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdp">i</button></span></span></h2>
                 <p class="indicator-rank"><a data-ui-text-action href="../../../../fr/rankings/countries/gdp/">Rang mondial : #79 / 190</a></p>
               </div>
               <div class="compare-control" data-series-id="gdp">
@@ -135,14 +135,16 @@
 
             <details class="data-table-toggle" id="gdpTableToggle">
               <summary data-ui-text-action>Tableau de données</summary>
-              <div class="data-table-wrap" id="gdpTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1995</td><td>6,74 Md</td><td>2006</td><td>30,14 Md</td><td>2017</td><td>47,75 Md</td></tr><tr><td>1996</td><td>8,44 Md</td><td>2007</td><td>39,77 Md</td><td>2018</td><td>54,3 Md</td></tr><tr><td>1997</td><td>10,16 Md</td><td>2008</td><td>48 Md</td><td>2019</td><td>55,13 Md</td></tr><tr><td>1998</td><td>11,28 Md</td><td>2009</td><td>37,59 Md</td><td>2020</td><td>57,35 Md</td></tr><tr><td>1999</td><td>11,02 Md</td><td>2010</td><td>36,69 Md</td><td>2021</td><td>67,1 Md</td></tr><tr><td>2000</td><td>11,54 Md</td><td>2011</td><td>43,2 Md</td><td>2022</td><td>70,69 Md</td></tr><tr><td>2001</td><td>12,26 Md</td><td>2012</td><td>42,74 Md</td><td>2023</td><td>80,39 Md</td></tr><tr><td>2002</td><td>14,28 Md</td><td>2013</td><td>46,32 Md</td><td>2024</td><td>85,48 Md</td></tr><tr><td>2003</td><td>18,8 Md</td><td>2014</td><td>48,39 Md</td><td>2025</td><td>94,93 Md</td></tr><tr><td>2004</td><td>22,71 Md</td><td>2015</td><td>41,55 Md</td><td>2026</td><td class="data-table-observation-estimated">105,91 Md</td></tr><tr><td>2005</td><td>26,12 Md</td><td>2016</td><td>42,95 Md</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gdpTableWrap" role="region" aria-label="Tableau de données" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1995</td><td>6,74 Md</td><td>2006</td><td>30,14 Md</td><td>2017</td><td>47,75 Md</td></tr><tr><td>1996</td><td>8,44 Md</td><td>2007</td><td>39,77 Md</td><td>2018</td><td>54,3 Md</td></tr><tr><td>1997</td><td>10,16 Md</td><td>2008</td><td>48 Md</td><td>2019</td><td>55,13 Md</td></tr><tr><td>1998</td><td>11,28 Md</td><td>2009</td><td>37,59 Md</td><td>2020</td><td>57,35 Md</td></tr><tr><td>1999</td><td>11,02 Md</td><td>2010</td><td>36,69 Md</td><td>2021</td><td>67,1 Md</td></tr><tr><td>2000</td><td>11,54 Md</td><td>2011</td><td>43,2 Md</td><td>2022</td><td>70,69 Md</td></tr><tr><td>2001</td><td>12,26 Md</td><td>2012</td><td>42,74 Md</td><td>2023</td><td>80,39 Md</td></tr><tr><td>2002</td><td>14,28 Md</td><td>2013</td><td>46,32 Md</td><td>2024</td><td>85,48 Md</td></tr><tr><td>2003</td><td>18,8 Md</td><td>2014</td><td>48,39 Md</td><td>2025</td><td>94,93 Md</td></tr><tr><td>2004</td><td>22,71 Md</td><td>2015</td><td>41,55 Md</td><td>2026</td><td class="data-table-observation-estimated">105,9 Md</td></tr><tr><td>2005</td><td>26,12 Md</td><td>2016</td><td>42,95 Md</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="gdpNational-title">
+          <section class="indicator-block" aria-label="Graphique linéaire de PIB (Monnaie locale)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gdpNational-title"><span class="indicator-label-cell"><span class="indicator-label-text">PIB</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Monnaie locale)</span><button class="indicator-info-button" type="button" aria-label="Informations sur PIB" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpNational">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gdpNational"><span class="indicator-label-cell"><span class="indicator-label-text">PIB</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Monnaie locale)</span><button class="indicator-info-button" type="button" aria-label="Informations sur PIB" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpNational">i</button></span></span></h2>
               </div>
             </header>
 
@@ -153,14 +155,16 @@
 
             <details class="data-table-toggle" id="gdpNationalTableToggle">
               <summary data-ui-text-action>Tableau de données</summary>
-              <div class="data-table-wrap" id="gdpNationalTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1995</td><td>7,81 Md</td><td>2006</td><td>24 Md</td><td>2017</td><td>42,28 Md</td></tr><tr><td>1996</td><td>9,78 Md</td><td>2007</td><td>29,01 Md</td><td>2018</td><td>45,95 Md</td></tr><tr><td>1997</td><td>11,77 Md</td><td>2008</td><td>32,64 Md</td><td>2019</td><td>49,24 Md</td></tr><tr><td>1998</td><td>13,07 Md</td><td>2009</td><td>26,98 Md</td><td>2020</td><td>50,25 Md</td></tr><tr><td>1999</td><td>12,76 Md</td><td>2010</td><td>27,66 Md</td><td>2021</td><td>56,7 Md</td></tr><tr><td>2000</td><td>13,37 Md</td><td>2011</td><td>31,04 Md</td><td>2022</td><td>67,07 Md</td></tr><tr><td>2001</td><td>14,2 Md</td><td>2012</td><td>33,24 Md</td><td>2023</td><td>74,33 Md</td></tr><tr><td>2002</td><td>15,21 Md</td><td>2013</td><td>34,88 Md</td><td>2024</td><td>79 Md</td></tr><tr><td>2003</td><td>16,67 Md</td><td>2014</td><td>36,41 Md</td><td>2025</td><td>84,06 Md</td></tr><tr><td>2004</td><td>18,29 Md</td><td>2015</td><td>37,44 Md</td><td>2026</td><td class="data-table-observation-estimated">89,81 Md</td></tr><tr><td>2005</td><td>20,98 Md</td><td>2016</td><td>38,82 Md</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gdpNationalTableWrap" role="region" aria-label="Tableau de données" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1995</td><td>7,81 Md</td><td>2006</td><td>24 Md</td><td>2017</td><td>42,28 Md</td></tr><tr><td>1996</td><td>9,78 Md</td><td>2007</td><td>29,01 Md</td><td>2018</td><td>45,95 Md</td></tr><tr><td>1997</td><td>11,77 Md</td><td>2008</td><td>32,64 Md</td><td>2019</td><td>49,24 Md</td></tr><tr><td>1998</td><td>13,07 Md</td><td>2009</td><td>26,98 Md</td><td>2020</td><td>50,25 Md</td></tr><tr><td>1999</td><td>12,76 Md</td><td>2010</td><td>27,66 Md</td><td>2021</td><td>56,7 Md</td></tr><tr><td>2000</td><td>13,37 Md</td><td>2011</td><td>31,04 Md</td><td>2022</td><td>67,07 Md</td></tr><tr><td>2001</td><td>14,2 Md</td><td>2012</td><td>33,24 Md</td><td>2023</td><td>74,33 Md</td></tr><tr><td>2002</td><td>15,21 Md</td><td>2013</td><td>34,88 Md</td><td>2024</td><td>79 Md</td></tr><tr><td>2003</td><td>16,67 Md</td><td>2014</td><td>36,41 Md</td><td>2025</td><td>84,06 Md</td></tr><tr><td>2004</td><td>18,29 Md</td><td>2015</td><td>37,44 Md</td><td>2026</td><td class="data-table-observation-estimated">89,81 Md</td></tr><tr><td>2005</td><td>20,98 Md</td><td>2016</td><td>38,82 Md</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="realGdp-title">
+          <section class="indicator-block" aria-label="Graphique linéaire de PIB réel (Monnaie locale)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="realGdp-title"><span class="indicator-label-cell"><span class="indicator-label-text">PIB réel</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Monnaie locale)</span><button class="indicator-info-button" type="button" aria-label="Informations sur PIB réel" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="realGdp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="realGdp"><span class="indicator-label-cell"><span class="indicator-label-text">PIB réel</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Monnaie locale)</span><button class="indicator-info-button" type="button" aria-label="Informations sur PIB réel" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="realGdp">i</button></span></span></h2>
               </div>
             </header>
 
@@ -171,7 +175,9 @@
 
             <details class="data-table-toggle" id="realGdpTableToggle">
               <summary data-ui-text-action>Tableau de données</summary>
-              <div class="data-table-wrap" id="realGdpTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1995</td><td>19,35 Md</td><td>2006</td><td>37,65 Md</td><td>2017</td><td>48,53 Md</td></tr><tr><td>1996</td><td>20,37 Md</td><td>2007</td><td>41,82 Md</td><td>2018</td><td>50,88 Md</td></tr><tr><td>1997</td><td>22,07 Md</td><td>2008</td><td>42,74 Md</td><td>2019</td><td>53,28 Md</td></tr><tr><td>1998</td><td>23,76 Md</td><td>2009</td><td>36,54 Md</td><td>2020</td><td>53,31 Md</td></tr><tr><td>1999</td><td>23,5 Md</td><td>2010</td><td>36,64 Md</td><td>2021</td><td>56,7 Md</td></tr><tr><td>2000</td><td>24,29 Md</td><td>2011</td><td>38,96 Md</td><td>2022</td><td>58,09 Md</td></tr><tr><td>2001</td><td>25,9 Md</td><td>2012</td><td>40,67 Md</td><td>2023</td><td>58,57 Md</td></tr><tr><td>2002</td><td>27,6 Md</td><td>2013</td><td>42,33 Md</td><td>2024</td><td>60,32 Md</td></tr><tr><td>2003</td><td>30,51 Md</td><td>2014</td><td>43,92 Md</td><td>2025</td><td>62,04 Md</td></tr><tr><td>2004</td><td>32,43 Md</td><td>2015</td><td>45,17 Md</td><td>2026</td><td class="data-table-observation-estimated">63,85 Md</td></tr><tr><td>2005</td><td>35,08 Md</td><td>2016</td><td>46,35 Md</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="realGdpTableWrap" role="region" aria-label="Tableau de données" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1995</td><td>19,35 Md</td><td>2006</td><td>37,65 Md</td><td>2017</td><td>48,53 Md</td></tr><tr><td>1996</td><td>20,37 Md</td><td>2007</td><td>41,82 Md</td><td>2018</td><td>50,88 Md</td></tr><tr><td>1997</td><td>22,07 Md</td><td>2008</td><td>42,74 Md</td><td>2019</td><td>53,28 Md</td></tr><tr><td>1998</td><td>23,76 Md</td><td>2009</td><td>36,54 Md</td><td>2020</td><td>53,31 Md</td></tr><tr><td>1999</td><td>23,5 Md</td><td>2010</td><td>36,64 Md</td><td>2021</td><td>56,7 Md</td></tr><tr><td>2000</td><td>24,29 Md</td><td>2011</td><td>38,96 Md</td><td>2022</td><td>58,09 Md</td></tr><tr><td>2001</td><td>25,9 Md</td><td>2012</td><td>40,67 Md</td><td>2023</td><td>58,57 Md</td></tr><tr><td>2002</td><td>27,6 Md</td><td>2013</td><td>42,33 Md</td><td>2024</td><td>60,32 Md</td></tr><tr><td>2003</td><td>30,51 Md</td><td>2014</td><td>43,92 Md</td><td>2025</td><td>62,04 Md</td></tr><tr><td>2004</td><td>32,43 Md</td><td>2015</td><td>45,17 Md</td><td>2026</td><td class="data-table-observation-estimated">63,85 Md</td></tr><tr><td>2005</td><td>35,08 Md</td><td>2016</td><td>46,35 Md</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -190,10 +196,11 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/lithuania/population/">Population</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/lithuania/population-growth/">Croissance démographique</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/lithuania/fertility-rate/">Indice de fécondité</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/lithuania/trade/">Balance commerciale</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/lithuania/trade/">Exportations, importations et balance commerciale</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/lithuania/government-debt/">Dette publique</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/lithuania/fiscal-balance/">Solde budgétaire</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/lithuania/hdi/">IDH</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../fr/countries/lithuania/co2-emissions/">Émissions de CO₂</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../fr/countries/lithuania/"><img class="flag-image flag-image-lt country-flag" src="../../../../public/flags/lt.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">Voir le profil du pays</span></a>
       </section>

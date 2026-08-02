@@ -2,6 +2,7 @@ import { countries } from "./countries.js";
 import { filterCountriesByScope } from "./countryFilters.js";
 import { isTerritory, markTerritoryElement } from "./countryTypes.js";
 import { formatCompactDisplayValue, getSingleValueDisplayScale } from "./displayFormat.js";
+import { valueFormats } from "./valueFormats.js";
 import { createFlagImage } from "./flags.js";
 import { initializeRankingFilters } from "./rankingFilters.js";
 import { showRankingCount, showRankingLoading, showRankingLoadError } from "./rankingStatus.js";
@@ -594,7 +595,6 @@ function formatRankingPercent(value) {
     return "—";
   }
 
-  return `${new Intl.NumberFormat(localeConfigs[getPageLocale()]?.numberLocale ?? "en-US", {
-    maximumFractionDigits: 1,
-  }).format(value)}%`;
+  const displayScale = getSingleValueDisplayScale(value, valueFormats.percentOneDecimal);
+  return formatCompactDisplayValue(value, displayScale);
 }

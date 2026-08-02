@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="정부 재정 페이지 탐색"><a class="navigation-control is-current" href="../government-debt/" aria-current="page">정부 부채</a><a class="navigation-control" href="../fiscal-balance/">재정수지</a><a class="navigation-control" href="../government-revenue-spending/">정부 수입 및 지출</a><a class="navigation-control" href="../total-reserves/">총외환보유액</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="governmentGrossDebt-title">
+          <section class="indicator-block" aria-label="정부 총부채 (GDP 대비 %) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="governmentGrossDebt-title"><span class="indicator-label-cell"><span class="indicator-label-text">정부 총부채</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GDP 대비 %)</span><button class="indicator-info-button" type="button" aria-label="정부 총부채 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentGrossDebt">i</button></span></span></h2>
+                <h2 data-country-indicator-title="governmentGrossDebt"><span class="indicator-label-cell"><span class="indicator-label-text">정부 총부채</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GDP 대비 %)</span><button class="indicator-info-button" type="button" aria-label="정부 총부채 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentGrossDebt">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="governmentGrossDebt">
                 <div class="compare-input-wrap">
@@ -134,14 +134,16 @@
 
             <details class="data-table-toggle" id="governmentGrossDebtTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="governmentGrossDebtTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>2000</td><td>261%</td><td>2009</td><td>20.5%</td><td>2018</td><td>81.2%</td></tr><tr><td>2001</td><td>210.2%</td><td>2010</td><td>18.9%</td><td>2019</td><td>103.3%</td></tr><tr><td>2002</td><td>180.2%</td><td>2011</td><td>20.8%</td><td>2020</td><td>140%</td></tr><tr><td>2003</td><td>159.5%</td><td>2012</td><td>24.9%</td><td>2021</td><td>111%</td></tr><tr><td>2004</td><td>129.9%</td><td>2013</td><td>25.9%</td><td>2022</td><td>99.5%</td></tr><tr><td>2005</td><td>75.7%</td><td>2014</td><td>33.9%</td><td>2023</td><td>129.1%</td></tr><tr><td>2006</td><td>25%</td><td>2015</td><td>61.9%</td><td>2024</td><td>125.2%</td></tr><tr><td>2007</td><td>21.9%</td><td>2016</td><td>61.2%</td><td>2025</td><td>86%</td></tr><tr><td>2008</td><td>19.2%</td><td>2017</td><td>66.6%</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="governmentGrossDebtTableWrap" role="region" aria-label="데이터 표" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>2000</td><td>261%</td><td>2009</td><td>20.5%</td><td>2018</td><td>81.2%</td></tr><tr><td>2001</td><td>210.2%</td><td>2010</td><td>18.9%</td><td>2019</td><td>103.3%</td></tr><tr><td>2002</td><td>180.2%</td><td>2011</td><td>20.8%</td><td>2020</td><td>140%</td></tr><tr><td>2003</td><td>159.5%</td><td>2012</td><td>24.9%</td><td>2021</td><td>111%</td></tr><tr><td>2004</td><td>129.9%</td><td>2013</td><td>25.9%</td><td>2022</td><td>99.5%</td></tr><tr><td>2005</td><td>75.7%</td><td>2014</td><td>33.9%</td><td>2023</td><td>129.1%</td></tr><tr><td>2006</td><td>25%</td><td>2015</td><td>61.9%</td><td>2024</td><td>125.2%</td></tr><tr><td>2007</td><td>21.9%</td><td>2016</td><td>61.2%</td><td>2025</td><td>86%</td></tr><tr><td>2008</td><td>19.2%</td><td>2017</td><td>66.6%</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="governmentGrossDebtNational-title">
+          <section class="indicator-block" aria-label="정부 총부채 (자국 통화) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="governmentGrossDebtNational-title"><span class="indicator-label-cell"><span class="indicator-label-text">정부 총부채</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(자국 통화)</span><button class="indicator-info-button" type="button" aria-label="정부 총부채 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentGrossDebtNational">i</button></span></span></h2>
+                <h2 data-country-indicator-title="governmentGrossDebtNational"><span class="indicator-label-cell"><span class="indicator-label-text">정부 총부채</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(자국 통화)</span><button class="indicator-info-button" type="button" aria-label="정부 총부채 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentGrossDebtNational">i</button></span></span></h2>
               </div>
             </header>
 
@@ -152,14 +154,16 @@
 
             <details class="data-table-toggle" id="governmentGrossDebtNationalTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="governmentGrossDebtNationalTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>2000</td><td>292.31억</td><td>2009</td><td>158.73억</td><td>2018</td><td>2,233.5억</td></tr><tr><td>2001</td><td>310.84억</td><td>2010</td><td>183.72억</td><td>2019</td><td>3,104.6억</td></tr><tr><td>2002</td><td>332.5억</td><td>2011</td><td>237.27억</td><td>2020</td><td>4,658.1억</td></tr><tr><td>2003</td><td>369.97억</td><td>2012</td><td>327.12억</td><td>2021</td><td>4,912억</td></tr><tr><td>2004</td><td>386.23억</td><td>2013</td><td>392.08억</td><td>2022</td><td>4,913.8억</td></tr><tr><td>2005</td><td>281.7억</td><td>2014</td><td>565.59억</td><td>2023</td><td>7,193.8억</td></tr><tr><td>2006</td><td>114.94억</td><td>2015</td><td>1,134.6억</td><td>2024</td><td>8,289.6억</td></tr><tr><td>2007</td><td>123.34억</td><td>2016</td><td>1,321.5억</td><td>2025</td><td>6,240.8억</td></tr><tr><td>2008</td><td>128.76억</td><td>2017</td><td>1,640.2억</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="governmentGrossDebtNationalTableWrap" role="region" aria-label="데이터 표" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>2000</td><td>292.3억</td><td>2009</td><td>158.7억</td><td>2018</td><td>2,233억</td></tr><tr><td>2001</td><td>310.8억</td><td>2010</td><td>183.7억</td><td>2019</td><td>3,105억</td></tr><tr><td>2002</td><td>332.5억</td><td>2011</td><td>237.3억</td><td>2020</td><td>4,658억</td></tr><tr><td>2003</td><td>370억</td><td>2012</td><td>327.1억</td><td>2021</td><td>4,912억</td></tr><tr><td>2004</td><td>386.2억</td><td>2013</td><td>392.1억</td><td>2022</td><td>4,914억</td></tr><tr><td>2005</td><td>281.7억</td><td>2014</td><td>565.6억</td><td>2023</td><td>7,194억</td></tr><tr><td>2006</td><td>114.9억</td><td>2015</td><td>1,135억</td><td>2024</td><td>8,290억</td></tr><tr><td>2007</td><td>123.3억</td><td>2016</td><td>1,322억</td><td>2025</td><td>6,241억</td></tr><tr><td>2008</td><td>128.8억</td><td>2017</td><td>1,640억</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="governmentNetDebt-title">
+          <section class="indicator-block" aria-label="정부 순부채 (GDP 대비 %) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="governmentNetDebt-title"><span class="indicator-label-cell"><span class="indicator-label-text">정부 순부채</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GDP 대비 %)</span><button class="indicator-info-button" type="button" aria-label="정부 순부채 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentNetDebt">i</button></span></span></h2>
+                <h2 data-country-indicator-title="governmentNetDebt"><span class="indicator-label-cell"><span class="indicator-label-text">정부 순부채</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GDP 대비 %)</span><button class="indicator-info-button" type="button" aria-label="정부 순부채 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentNetDebt">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="governmentNetDebt">
                 <div class="compare-input-wrap">
@@ -187,14 +191,16 @@
 
             <details class="data-table-toggle" id="governmentNetDebtTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="governmentNetDebtTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>2000</td><td>28.9%</td><td>2009</td><td>16.5%</td><td>2018</td><td>78.6%</td></tr><tr><td>2001</td><td>21.9%</td><td>2010</td><td>16%</td><td>2019</td><td>101%</td></tr><tr><td>2002</td><td>21.7%</td><td>2011</td><td>16.4%</td><td>2020</td><td>137.9%</td></tr><tr><td>2003</td><td>23.9%</td><td>2012</td><td>19.6%</td><td>2021</td><td>109.5%</td></tr><tr><td>2004</td><td>19.3%</td><td>2013</td><td>21.3%</td><td>2022</td><td>98.1%</td></tr><tr><td>2005</td><td>13.1%</td><td>2014</td><td>29.6%</td><td>2023</td><td>122.5%</td></tr><tr><td>2006</td><td>21.6%</td><td>2015</td><td>58%</td><td>2024</td><td>119.7%</td></tr><tr><td>2007</td><td>17.6%</td><td>2016</td><td>57.9%</td><td>2025</td><td>81%</td></tr><tr><td>2008</td><td>16.3%</td><td>2017</td><td>63.7%</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="governmentNetDebtTableWrap" role="region" aria-label="데이터 표" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>2000</td><td>28.9%</td><td>2009</td><td>16.5%</td><td>2018</td><td>78.6%</td></tr><tr><td>2001</td><td>21.9%</td><td>2010</td><td>16%</td><td>2019</td><td>101%</td></tr><tr><td>2002</td><td>21.7%</td><td>2011</td><td>16.4%</td><td>2020</td><td>137.9%</td></tr><tr><td>2003</td><td>23.9%</td><td>2012</td><td>19.6%</td><td>2021</td><td>109.5%</td></tr><tr><td>2004</td><td>19.3%</td><td>2013</td><td>21.3%</td><td>2022</td><td>98.1%</td></tr><tr><td>2005</td><td>13.1%</td><td>2014</td><td>29.6%</td><td>2023</td><td>122.5%</td></tr><tr><td>2006</td><td>21.6%</td><td>2015</td><td>58%</td><td>2024</td><td>119.7%</td></tr><tr><td>2007</td><td>17.6%</td><td>2016</td><td>57.9%</td><td>2025</td><td>81%</td></tr><tr><td>2008</td><td>16.3%</td><td>2017</td><td>63.7%</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="governmentNetDebtNational-title">
+          <section class="indicator-block" aria-label="정부 순부채 (자국 통화) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="governmentNetDebtNational-title"><span class="indicator-label-cell"><span class="indicator-label-text">정부 순부채</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(자국 통화)</span><button class="indicator-info-button" type="button" aria-label="정부 순부채 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentNetDebtNational">i</button></span></span></h2>
+                <h2 data-country-indicator-title="governmentNetDebtNational"><span class="indicator-label-cell"><span class="indicator-label-text">정부 순부채</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(자국 통화)</span><button class="indicator-info-button" type="button" aria-label="정부 순부채 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentNetDebtNational">i</button></span></span></h2>
               </div>
             </header>
 
@@ -205,7 +211,9 @@
 
             <details class="data-table-toggle" id="governmentNetDebtNationalTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="governmentNetDebtNationalTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>2000</td><td>32.36억</td><td>2009</td><td>127.36억</td><td>2018</td><td>2,163억</td></tr><tr><td>2001</td><td>32.37억</td><td>2010</td><td>155.06억</td><td>2019</td><td>3,034.2억</td></tr><tr><td>2002</td><td>40.1억</td><td>2011</td><td>187.26억</td><td>2020</td><td>4,587.7억</td></tr><tr><td>2003</td><td>55.5억</td><td>2012</td><td>256.71억</td><td>2021</td><td>4,841.6억</td></tr><tr><td>2004</td><td>57.27억</td><td>2013</td><td>321.66억</td><td>2022</td><td>4,843.4억</td></tr><tr><td>2005</td><td>48.69억</td><td>2014</td><td>495.17억</td><td>2023</td><td>6,830.5억</td></tr><tr><td>2006</td><td>99.33억</td><td>2015</td><td>1,064.1억</td><td>2024</td><td>7,926.4억</td></tr><tr><td>2007</td><td>98.97억</td><td>2016</td><td>1,251.1억</td><td>2025</td><td>5,877.6억</td></tr><tr><td>2008</td><td>109.22억</td><td>2017</td><td>1,569.8억</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="governmentNetDebtNationalTableWrap" role="region" aria-label="데이터 표" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>2000</td><td>32.36억</td><td>2009</td><td>127.4억</td><td>2018</td><td>2,163억</td></tr><tr><td>2001</td><td>32.37억</td><td>2010</td><td>155.1억</td><td>2019</td><td>3,034억</td></tr><tr><td>2002</td><td>40.1억</td><td>2011</td><td>187.3억</td><td>2020</td><td>4,588억</td></tr><tr><td>2003</td><td>55.5억</td><td>2012</td><td>256.7억</td><td>2021</td><td>4,842억</td></tr><tr><td>2004</td><td>57.27억</td><td>2013</td><td>321.7억</td><td>2022</td><td>4,843억</td></tr><tr><td>2005</td><td>48.69억</td><td>2014</td><td>495.2억</td><td>2023</td><td>6,831억</td></tr><tr><td>2006</td><td>99.33억</td><td>2015</td><td>1,064억</td><td>2024</td><td>7,926억</td></tr><tr><td>2007</td><td>98.97억</td><td>2016</td><td>1,251억</td><td>2025</td><td>5,878억</td></tr><tr><td>2008</td><td>109.2억</td><td>2017</td><td>1,570억</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -224,9 +232,10 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/zambia/population/">인구</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/zambia/population-growth/">인구증가율</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/zambia/fertility-rate/">합계출산율</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/zambia/trade/">무역수지</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/zambia/trade/">수출, 수입 및 무역수지</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/zambia/fiscal-balance/">재정수지</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/zambia/hdi/">인간개발지수(HDI)</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/zambia/co2-emissions/">온실가스 배출량</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../ko/countries/zambia/"><img class="flag-image flag-image-zm country-flag" src="../../../../public/flags/zm.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">국가 프로필 보기</span></a>
       </section>

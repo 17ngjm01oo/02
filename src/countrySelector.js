@@ -1,13 +1,12 @@
-import { countrySearchAliases } from "./countrySearchAliases.js";
 import { countries } from "./countries.js";
+import { filterCountryList } from "./countrySearch.js";
 import {
   translate,
   translateCountryName,
   translateRegionLabel,
 } from "./localization.js";
-import {
-  getCountryNameSearchLabels,
-} from "./localizedSearchLabels.js";
+
+export { filterCountries, filterCountryList } from "./countrySearch.js";
 
 export function initializeCountrySelector({
   selectedCountry = null,
@@ -310,86 +309,6 @@ export function initializeSearchResultKeyboard({
 
 function isComposingSearchText(event) {
   return event.isComposing || event.keyCode === 229;
-}
-
-export function filterCountries(query) {
-  return filterCountryList(countries, query);
-}
-
-export function filterCountryList(countryList, query) {
-  const normalizedQuery = normalizeSearchText(query);
-
-  if (!normalizedQuery) {
-    return [];
-  }
-
-  const queryVariants = getSearchVariants(normalizedQuery);
-
-  return countryList.filter((country) => {
-    return getCountrySearchTerms(country).some((term) => {
-      return queryVariants.some((queryVariant) => matchesSearchTerm(term, queryVariant));
-    });
-  });
-}
-
-function getCountrySearchTerms(country) {
-  const terms = [
-    ...getCountryNameSearchLabels(country),
-    ...getCountrySearchAliases(country.code),
-    country.slug,
-    country.code,
-  ];
-
-  return [...new Set(terms.flatMap(getSearchVariants).filter(Boolean))];
-}
-
-function getCountrySearchAliases(countryCode) {
-  const aliases = countrySearchAliases[countryCode] ?? {};
-  return Object.values(aliases).flatMap((values) => (Array.isArray(values) ? values : []));
-}
-
-function normalizeSearchText(value) {
-  return String(value ?? "")
-    .normalize("NFKD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .replace(/[^\p{Letter}\p{Number}]+/gu, " ")
-    .trim()
-    .replace(/\s+/g, " ");
-}
-
-function stripLeadingThe(value) {
-  return value.replace(/^the\s+/, "").trim();
-}
-
-function matchesSearchTerm(term, query) {
-  const comparisons = [
-    [term, query],
-    [term, stripLeadingThe(query)],
-    [stripLeadingThe(term), query],
-    [stripLeadingThe(term), stripLeadingThe(query)],
-  ];
-
-  return comparisons.some(([searchTerm, searchQuery]) => {
-    if (!searchTerm || !searchQuery) {
-      return false;
-    }
-
-    const compactTerm = compactSearchText(searchTerm);
-    const compactQuery = compactSearchText(searchQuery);
-    return searchTerm.includes(searchQuery) || compactTerm.includes(compactQuery);
-  });
-}
-
-function getSearchVariants(value) {
-  const normalizedValue = normalizeSearchText(value);
-  const compactValue = compactSearchText(normalizedValue);
-
-  return normalizedValue === compactValue ? [normalizedValue] : [normalizedValue, compactValue];
-}
-
-function compactSearchText(value) {
-  return value.replace(/\s+/g, "");
 }
 
 export function sortCountriesByName(countryList) {

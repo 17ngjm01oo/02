@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="環境ページナビゲーション"><a class="navigation-control" href="../co2-emissions/">CO2排出量</a><a class="navigation-control is-current" href="../forest-area/" aria-current="page">森林面積</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="forestAreaPercentOfLandArea-title">
+          <section class="indicator-block" aria-label="森林面積 (陸地面積比)折れ線グラフ">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="forestAreaPercentOfLandArea-title"><span class="indicator-label-cell"><span class="indicator-label-text">森林面積</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(陸地面積比)</span><button class="indicator-info-button" type="button" aria-label="森林面積の情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="forestAreaPercentOfLandArea">i</button></span></span></h2>
+                <h2 data-country-indicator-title="forestAreaPercentOfLandArea"><span class="indicator-label-cell"><span class="indicator-label-text">森林面積</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(陸地面積比)</span><button class="indicator-info-button" type="button" aria-label="森林面積の情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="forestAreaPercentOfLandArea">i</button></span></span></h2>
                 <p class="indicator-rank"><a data-ui-text-action href="../../../../ja/rankings/countries/forest-area/">世界ランク: #89 / 213</a></p>
               </div>
               <div class="compare-control" data-series-id="forestAreaPercentOfLandArea">
@@ -135,7 +135,9 @@
 
             <details class="data-table-toggle" id="forestAreaPercentOfLandAreaTableToggle">
               <summary data-ui-text-action>データ表</summary>
-              <div class="data-table-wrap" id="forestAreaPercentOfLandAreaTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>33.2%</td><td>2003</td><td>33.9%</td><td>2014</td><td>34.3%</td></tr><tr><td>1993</td><td>33.3%</td><td>2004</td><td>33.9%</td><td>2015</td><td>34.3%</td></tr><tr><td>1994</td><td>33.3%</td><td>2005</td><td>34%</td><td>2016</td><td>34.4%</td></tr><tr><td>1995</td><td>33.4%</td><td>2006</td><td>34.1%</td><td>2017</td><td>34.5%</td></tr><tr><td>1996</td><td>33.4%</td><td>2007</td><td>34.1%</td><td>2018</td><td>34.6%</td></tr><tr><td>1997</td><td>33.5%</td><td>2008</td><td>34.2%</td><td>2019</td><td>34.6%</td></tr><tr><td>1998</td><td>33.6%</td><td>2009</td><td>34.2%</td><td>2020</td><td>34.7%</td></tr><tr><td>1999</td><td>33.7%</td><td>2010</td><td>34.3%</td><td>2021</td><td>34.7%</td></tr><tr><td>2000</td><td>33.7%</td><td>2011</td><td>34.3%</td><td>2022</td><td>34.7%</td></tr><tr><td>2001</td><td>33.8%</td><td>2012</td><td>34.3%</td><td>2023</td><td>34.8%</td></tr><tr><td>2002</td><td>33.8%</td><td>2013</td><td>34.3%</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="forestAreaPercentOfLandAreaTableWrap" role="region" aria-label="データ表" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1992</td><td>33.2%</td><td>2003</td><td>33.9%</td><td>2014</td><td>34.3%</td></tr><tr><td>1993</td><td>33.3%</td><td>2004</td><td>33.9%</td><td>2015</td><td>34.3%</td></tr><tr><td>1994</td><td>33.3%</td><td>2005</td><td>34%</td><td>2016</td><td>34.4%</td></tr><tr><td>1995</td><td>33.4%</td><td>2006</td><td>34.1%</td><td>2017</td><td>34.5%</td></tr><tr><td>1996</td><td>33.4%</td><td>2007</td><td>34.1%</td><td>2018</td><td>34.6%</td></tr><tr><td>1997</td><td>33.5%</td><td>2008</td><td>34.2%</td><td>2019</td><td>34.6%</td></tr><tr><td>1998</td><td>33.6%</td><td>2009</td><td>34.2%</td><td>2020</td><td>34.7%</td></tr><tr><td>1999</td><td>33.7%</td><td>2010</td><td>34.3%</td><td>2021</td><td>34.7%</td></tr><tr><td>2000</td><td>33.7%</td><td>2011</td><td>34.3%</td><td>2022</td><td>34.7%</td></tr><tr><td>2001</td><td>33.8%</td><td>2012</td><td>34.3%</td><td>2023</td><td>34.8%</td></tr><tr><td>2002</td><td>33.8%</td><td>2013</td><td>34.3%</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -154,10 +156,11 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/croatia/population/">人口</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/croatia/population-growth/">人口増加率</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/croatia/fertility-rate/">合計特殊出生率</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/croatia/trade/">貿易収支</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/croatia/trade/">貿易収支・輸出額・輸入額</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/croatia/government-debt/">政府債務残高</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/croatia/fiscal-balance/">財政収支</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/croatia/hdi/">HDI</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/croatia/co2-emissions/">CO2排出量</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../ja/countries/croatia/"><img class="flag-image flag-image-hr country-flag" src="../../../../public/flags/hr.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">国の概要ページを見る</span></a>
       </section>

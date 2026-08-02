@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="財政ページナビゲーション"><a class="navigation-control" href="../government-debt/">政府債務残高</a><a class="navigation-control" href="../fiscal-balance/">財政収支</a><a class="navigation-control" href="../government-revenue-spending/">政府歳入・歳出</a><a class="navigation-control is-current" href="../total-reserves/" aria-current="page">外貨準備高</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="totalReservesIncludingGold-title">
+          <section class="indicator-block" aria-label="外貨準備高折れ線グラフ">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="totalReservesIncludingGold-title"><span class="indicator-label-cell"><span class="indicator-label-text">外貨準備高</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="外貨準備高の情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="totalReservesIncludingGold">i</button></span></span></h2>
+                <h2 data-country-indicator-title="totalReservesIncludingGold"><span class="indicator-label-cell"><span class="indicator-label-text">外貨準備高</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="外貨準備高の情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="totalReservesIncludingGold">i</button></span></span></h2>
                 <p class="indicator-rank"><a data-ui-text-action href="../../../../ja/rankings/countries/total-reserves/">世界ランク: #43 / 163</a></p>
               </div>
               <div class="compare-control" data-series-id="totalReservesIncludingGold">
@@ -135,7 +135,9 @@
 
             <details class="data-table-toggle" id="totalReservesIncludingGoldTableToggle">
               <summary data-ui-text-action>データ表</summary>
-              <div class="data-table-wrap" id="totalReservesIncludingGoldTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1993</td><td>7.11億</td><td>2004</td><td>92.77億</td><td>2015</td><td>278.55億</td></tr><tr><td>1994</td><td>12.16億</td><td>2005</td><td>70.7億</td><td>2016</td><td>296.03億</td></tr><tr><td>1995</td><td>16.6億</td><td>2006</td><td>191.27億</td><td>2017</td><td>307.47億</td></tr><tr><td>1996</td><td>19.6億</td><td>2007</td><td>176.41億</td><td>2018</td><td>309.77億</td></tr><tr><td>1997</td><td>22.23億</td><td>2008</td><td>198.83億</td><td>2019</td><td>289.58億</td></tr><tr><td>1998</td><td>19.65億</td><td>2009</td><td>231.83億</td><td>2020</td><td>356.38億</td></tr><tr><td>1999</td><td>20.01億</td><td>2010</td><td>282.65億</td><td>2021</td><td>343.78億</td></tr><tr><td>2000</td><td>20.99億</td><td>2011</td><td>292.15億</td><td>2022</td><td>350.76億</td></tr><tr><td>2001</td><td>25.06億</td><td>2012</td><td>282.99億</td><td>2023</td><td>359.65億</td></tr><tr><td>2002</td><td>31.41億</td><td>2013</td><td>246.92億</td><td>2024</td><td>458.08億</td></tr><tr><td>2003</td><td>49.62億</td><td>2014</td><td>292.5億</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="totalReservesIncludingGoldTableWrap" role="region" aria-label="データ表" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1993</td><td>7.11億</td><td>2004</td><td>92.77億</td><td>2015</td><td>278.5億</td></tr><tr><td>1994</td><td>12.16億</td><td>2005</td><td>70.7億</td><td>2016</td><td>296億</td></tr><tr><td>1995</td><td>16.6億</td><td>2006</td><td>191.3億</td><td>2017</td><td>307.5億</td></tr><tr><td>1996</td><td>19.6億</td><td>2007</td><td>176.4億</td><td>2018</td><td>309.8億</td></tr><tr><td>1997</td><td>22.23億</td><td>2008</td><td>198.8億</td><td>2019</td><td>289.6億</td></tr><tr><td>1998</td><td>19.65億</td><td>2009</td><td>231.8億</td><td>2020</td><td>356.4億</td></tr><tr><td>1999</td><td>20.01億</td><td>2010</td><td>282.6億</td><td>2021</td><td>343.8億</td></tr><tr><td>2000</td><td>20.99億</td><td>2011</td><td>292.2億</td><td>2022</td><td>350.8億</td></tr><tr><td>2001</td><td>25.06億</td><td>2012</td><td>283億</td><td>2023</td><td>359.6億</td></tr><tr><td>2002</td><td>31.41億</td><td>2013</td><td>246.9億</td><td>2024</td><td>458.1億</td></tr><tr><td>2003</td><td>49.62億</td><td>2014</td><td>292.5億</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -154,10 +156,11 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/kazakhstan/population/">人口</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/kazakhstan/population-growth/">人口増加率</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/kazakhstan/fertility-rate/">合計特殊出生率</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/kazakhstan/trade/">貿易収支</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/kazakhstan/trade/">貿易収支・輸出額・輸入額</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/kazakhstan/government-debt/">政府債務残高</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/kazakhstan/fiscal-balance/">財政収支</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/kazakhstan/hdi/">HDI</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/kazakhstan/co2-emissions/">CO2排出量</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../ja/countries/kazakhstan/"><img class="flag-image flag-image-kz country-flag" src="../../../../public/flags/kz.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">国の概要ページを見る</span></a>
       </section>

@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="財政ページナビゲーション"><a class="navigation-control is-current" href="../government-debt/" aria-current="page">政府債務残高</a><a class="navigation-control" href="../fiscal-balance/">財政収支</a><a class="navigation-control" href="../government-revenue-spending/">政府歳入・歳出</a><a class="navigation-control" href="../total-reserves/">外貨準備高</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="governmentGrossDebt-title">
+          <section class="indicator-block" aria-label="政府総債務残高 (GDP比)折れ線グラフ">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="governmentGrossDebt-title"><span class="indicator-label-cell"><span class="indicator-label-text">政府総債務残高</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GDP比)</span><button class="indicator-info-button" type="button" aria-label="政府総債務残高の情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentGrossDebt">i</button></span></span></h2>
+                <h2 data-country-indicator-title="governmentGrossDebt"><span class="indicator-label-cell"><span class="indicator-label-text">政府総債務残高</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GDP比)</span><button class="indicator-info-button" type="button" aria-label="政府総債務残高の情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentGrossDebt">i</button></span></span></h2>
                 <p class="indicator-rank"><a data-ui-text-action href="../../../../ja/rankings/countries/government-gross-debt/">世界ランク: #118 / 184</a></p>
               </div>
               <div class="compare-control" data-series-id="governmentGrossDebt">
@@ -135,14 +135,16 @@
 
             <details class="data-table-toggle" id="governmentGrossDebtTableToggle">
               <summary data-ui-text-action>データ表</summary>
-              <div class="data-table-wrap" id="governmentGrossDebtTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1990</td><td>12.6%</td><td>2003</td><td>38.8%</td><td>2016</td><td>46.7%</td></tr><tr><td>1991</td><td>21.8%</td><td>2004</td><td>30.1%</td><td>2017</td><td>51.6%</td></tr><tr><td>1992</td><td>19.9%</td><td>2005</td><td>19.1%</td><td>2018</td><td>52.2%</td></tr><tr><td>1993</td><td>46.3%</td><td>2006</td><td>13.9%</td><td>2019</td><td>62.1%</td></tr><tr><td>1994</td><td>54.8%</td><td>2007</td><td>9.4%</td><td>2020</td><td>72.6%</td></tr><tr><td>1995</td><td>50.2%</td><td>2008</td><td>11.4%</td><td>2021</td><td>58.4%</td></tr><tr><td>1996</td><td>57.8%</td><td>2009</td><td>36%</td><td>2022</td><td>42.6%</td></tr><tr><td>1997</td><td>54.4%</td><td>2010</td><td>30.4%</td><td>2023</td><td>42.8%</td></tr><tr><td>1998</td><td>76.6%</td><td>2011</td><td>33.5%</td><td>2024</td><td class="data-table-observation-estimated">41.3%</td></tr><tr><td>1999</td><td>81.8%</td><td>2012</td><td>32.1%</td><td>2025</td><td class="data-table-observation-estimated">41.4%</td></tr><tr><td>2000</td><td>51.6%</td><td>2013</td><td>30.9%</td><td>2026</td><td class="data-table-observation-estimated">43.3%</td></tr><tr><td>2001</td><td>59.2%</td><td>2014</td><td>24.9%</td><td></td><td></td></tr><tr><td>2002</td><td>47.7%</td><td>2015</td><td>35.5%</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="governmentGrossDebtTableWrap" role="region" aria-label="データ表" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1990</td><td>12.6%</td><td>2003</td><td>38.8%</td><td>2016</td><td>46.7%</td></tr><tr><td>1991</td><td>21.8%</td><td>2004</td><td>30.1%</td><td>2017</td><td>51.6%</td></tr><tr><td>1992</td><td>19.9%</td><td>2005</td><td>19.1%</td><td>2018</td><td>52.2%</td></tr><tr><td>1993</td><td>46.3%</td><td>2006</td><td>13.9%</td><td>2019</td><td>62.1%</td></tr><tr><td>1994</td><td>54.8%</td><td>2007</td><td>9.4%</td><td>2020</td><td>72.6%</td></tr><tr><td>1995</td><td>50.2%</td><td>2008</td><td>11.4%</td><td>2021</td><td>58.4%</td></tr><tr><td>1996</td><td>57.8%</td><td>2009</td><td>36%</td><td>2022</td><td>42.6%</td></tr><tr><td>1997</td><td>54.4%</td><td>2010</td><td>30.4%</td><td>2023</td><td>42.8%</td></tr><tr><td>1998</td><td>76.6%</td><td>2011</td><td>33.5%</td><td>2024</td><td class="data-table-observation-estimated">41.3%</td></tr><tr><td>1999</td><td>81.8%</td><td>2012</td><td>32.1%</td><td>2025</td><td class="data-table-observation-estimated">41.4%</td></tr><tr><td>2000</td><td>51.6%</td><td>2013</td><td>30.9%</td><td>2026</td><td class="data-table-observation-estimated">43.3%</td></tr><tr><td>2001</td><td>59.2%</td><td>2014</td><td>24.9%</td><td></td><td></td></tr><tr><td>2002</td><td>47.7%</td><td>2015</td><td>35.5%</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="governmentGrossDebtNational-title">
+          <section class="indicator-block" aria-label="政府総債務残高 (自国通貨)折れ線グラフ">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="governmentGrossDebtNational-title"><span class="indicator-label-cell"><span class="indicator-label-text">政府総債務残高</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(自国通貨)</span><button class="indicator-info-button" type="button" aria-label="政府総債務残高の情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentGrossDebtNational">i</button></span></span></h2>
+                <h2 data-country-indicator-title="governmentGrossDebtNational"><span class="indicator-label-cell"><span class="indicator-label-text">政府総債務残高</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(自国通貨)</span><button class="indicator-info-button" type="button" aria-label="政府総債務残高の情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentGrossDebtNational">i</button></span></span></h2>
               </div>
             </header>
 
@@ -153,14 +155,16 @@
 
             <details class="data-table-toggle" id="governmentGrossDebtNationalTableToggle">
               <summary data-ui-text-action>データ表</summary>
-              <div class="data-table-wrap" id="governmentGrossDebtNationalTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1990</td><td>28.72億</td><td>2003</td><td>334.84億</td><td>2016</td><td>2,579.6億</td></tr><tr><td>1991</td><td>44.21億</td><td>2004</td><td>335.39億</td><td>2017</td><td>3,024億</td></tr><tr><td>1992</td><td>46.27億</td><td>2005</td><td>310.75億</td><td>2018</td><td>3,482億</td></tr><tr><td>1993</td><td>97.77億</td><td>2006</td><td>297.64億</td><td>2019</td><td>3,986億</td></tr><tr><td>1994</td><td>118.55億</td><td>2007</td><td>259.03億</td><td>2020</td><td>3,817億</td></tr><tr><td>1995</td><td>125.37億</td><td>2008</td><td>465.56億</td><td>2021</td><td>3,820.4億</td></tr><tr><td>1996</td><td>163.38億</td><td>2009</td><td>1,155.1億</td><td>2022</td><td>3,652億</td></tr><tr><td>1997</td><td>197.49億</td><td>2010</td><td>1,325.7億</td><td>2023</td><td>3,386億</td></tr><tr><td>1998</td><td>236.55億</td><td>2011</td><td>2,044.3億</td><td>2024</td><td class="data-table-observation-estimated">3,292億</td></tr><tr><td>1999</td><td>335.62億</td><td>2012</td><td>2,184.3億</td><td>2025</td><td class="data-table-observation-estimated">3,332億</td></tr><tr><td>2000</td><td>339.67億</td><td>2013</td><td>2,234億</td><td>2026</td><td class="data-table-observation-estimated">3,429億</td></tr><tr><td>2001</td><td>377.21億</td><td>2014</td><td>1,870億</td><td></td><td></td></tr><tr><td>2002</td><td>335.45億</td><td>2015</td><td>2,092.8億</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="governmentGrossDebtNationalTableWrap" role="region" aria-label="データ表" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1990</td><td>28.72億</td><td>2003</td><td>334.8億</td><td>2016</td><td>2,580億</td></tr><tr><td>1991</td><td>44.21億</td><td>2004</td><td>335.4億</td><td>2017</td><td>3,024億</td></tr><tr><td>1992</td><td>46.27億</td><td>2005</td><td>310.8億</td><td>2018</td><td>3,482億</td></tr><tr><td>1993</td><td>97.77億</td><td>2006</td><td>297.6億</td><td>2019</td><td>3,986億</td></tr><tr><td>1994</td><td>118.6億</td><td>2007</td><td>259億</td><td>2020</td><td>3,817億</td></tr><tr><td>1995</td><td>125.4億</td><td>2008</td><td>465.6億</td><td>2021</td><td>3,820億</td></tr><tr><td>1996</td><td>163.4億</td><td>2009</td><td>1,155億</td><td>2022</td><td>3,652億</td></tr><tr><td>1997</td><td>197.5億</td><td>2010</td><td>1,326億</td><td>2023</td><td>3,386億</td></tr><tr><td>1998</td><td>236.6億</td><td>2011</td><td>2,044億</td><td>2024</td><td class="data-table-observation-estimated">3,292億</td></tr><tr><td>1999</td><td>335.6億</td><td>2012</td><td>2,184億</td><td>2025</td><td class="data-table-observation-estimated">3,332億</td></tr><tr><td>2000</td><td>339.7億</td><td>2013</td><td>2,234億</td><td>2026</td><td class="data-table-observation-estimated">3,429億</td></tr><tr><td>2001</td><td>377.2億</td><td>2014</td><td>1,870億</td><td></td><td></td></tr><tr><td>2002</td><td>335.5億</td><td>2015</td><td>2,093億</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="governmentNetDebt-title">
+          <section class="indicator-block" aria-label="政府純債務残高 (GDP比)折れ線グラフ">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="governmentNetDebt-title"><span class="indicator-label-cell"><span class="indicator-label-text">政府純債務残高</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GDP比)</span><button class="indicator-info-button" type="button" aria-label="政府純債務残高の情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentNetDebt">i</button></span></span></h2>
+                <h2 data-country-indicator-title="governmentNetDebt"><span class="indicator-label-cell"><span class="indicator-label-text">政府純債務残高</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(GDP比)</span><button class="indicator-info-button" type="button" aria-label="政府純債務残高の情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentNetDebt">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="governmentNetDebt">
                 <div class="compare-input-wrap">
@@ -188,14 +192,16 @@
 
             <details class="data-table-toggle" id="governmentNetDebtTableToggle">
               <summary data-ui-text-action>データ表</summary>
-              <div class="data-table-wrap" id="governmentNetDebtTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="governmentNetDebtTableWrap" role="region" aria-label="データ表" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="governmentNetDebtNational-title">
+          <section class="indicator-block" aria-label="政府純債務残高 (自国通貨)折れ線グラフ">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="governmentNetDebtNational-title"><span class="indicator-label-cell"><span class="indicator-label-text">政府純債務残高</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(自国通貨)</span><button class="indicator-info-button" type="button" aria-label="政府純債務残高の情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentNetDebtNational">i</button></span></span></h2>
+                <h2 data-country-indicator-title="governmentNetDebtNational"><span class="indicator-label-cell"><span class="indicator-label-text">政府純債務残高</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(自国通貨)</span><button class="indicator-info-button" type="button" aria-label="政府純債務残高の情報" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="governmentNetDebtNational">i</button></span></span></h2>
               </div>
             </header>
 
@@ -206,7 +212,9 @@
 
             <details class="data-table-toggle" id="governmentNetDebtNationalTableToggle">
               <summary data-ui-text-action>データ表</summary>
-              <div class="data-table-wrap" id="governmentNetDebtNationalTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="governmentNetDebtNationalTableWrap" role="region" aria-label="データ表" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
@@ -225,9 +233,10 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/qatar/population/">人口</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/qatar/population-growth/">人口増加率</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/qatar/fertility-rate/">合計特殊出生率</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/qatar/trade/">貿易収支</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/qatar/trade/">貿易収支・輸出額・輸入額</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/qatar/fiscal-balance/">財政収支</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/qatar/hdi/">HDI</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ja/countries/qatar/co2-emissions/">CO2排出量</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../ja/countries/qatar/"><img class="flag-image flag-image-qa country-flag" src="../../../../public/flags/qa.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">国の概要ページを見る</span></a>
       </section>

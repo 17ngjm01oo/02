@@ -10,7 +10,7 @@ const {
   unMigrantStock,
   worldBankEnvironment,
   unNationalAccountsGni,
-  ciaWorldFactbook,
+  unsdDemographicYearbookArea,
   worldBankMilitarySpending,
   undpHdi,
 } = dataSources;
@@ -27,7 +27,7 @@ export const seriesConfigs = [
     titleTemplate: "GDP",
     displayUnit: "USD",
     currencyCode: "USD",
-    ...valueFormats.gdpMagnitude,
+    ...valueFormats.billionsMagnitude,
   },
   {
     id: "gdpPerCapita",
@@ -40,7 +40,7 @@ export const seriesConfigs = [
     titleTemplate: "GDP per Capita",
     displayUnit: "USD",
     currencyCode: "USD",
-    ...valueFormats.currencyUnitsWhole,
+    ...valueFormats.unitsMagnitude,
   },
   {
     id: "gdpNational",
@@ -53,7 +53,7 @@ export const seriesConfigs = [
     titleTemplate: "GDP",
     displayUnit: "Local currency",
     usesCountryCurrency: true,
-    ...valueFormats.nationalCurrencyMagnitude,
+    ...valueFormats.billionsMagnitude,
   },
   {
     id: "realGdp",
@@ -66,7 +66,7 @@ export const seriesConfigs = [
     titleTemplate: "Real GDP",
     displayUnit: "Local currency",
     usesCountryCurrency: true,
-    ...valueFormats.nationalCurrencyMagnitude,
+    ...valueFormats.billionsMagnitude,
   },
   {
     id: "gdpGrowth",
@@ -99,7 +99,7 @@ export const seriesConfigs = [
     ...unWppPopulation,
     indicatorCode: "POPULATION",
     titleTemplate: "Population",
-    ...valueFormats.populationUnitsMagnitude,
+    ...valueFormats.peopleCountMagnitude,
   },
   {
     id: "populationGrowth",
@@ -122,7 +122,7 @@ export const seriesConfigs = [
     indicatorCode: "POPULATION_DENSITY",
     titleTemplate: "Population Density",
     displayUnit: "/km²",
-    ...valueFormats.decimalOne,
+    ...valueFormats.populationDensity,
   },
   {
     id: "unemploymentRate",
@@ -166,7 +166,7 @@ export const seriesConfigs = [
     ...unMigrantStock,
     indicatorCode: "IMMIGRANTS",
     titleTemplate: "Immigrants",
-    ...valueFormats.populationUnitsMagnitude,
+    ...valueFormats.peopleCountMagnitude,
   },
   {
     id: "immigrantsPercentPopulation",
@@ -191,7 +191,7 @@ export const seriesConfigs = [
     titleTemplate: "GNI",
     displayUnit: "USD",
     currencyCode: "USD",
-    ...valueFormats.usdMagnitude,
+    ...valueFormats.unitsMagnitude,
   },
   {
     id: "gniPerCapita",
@@ -204,7 +204,7 @@ export const seriesConfigs = [
     titleTemplate: "GNI per Capita",
     displayUnit: "USD",
     currencyCode: "USD",
-    ...valueFormats.currencyUnitsWhole,
+    ...valueFormats.unitsMagnitude,
   },
   {
     id: "gdpNationalPerCapita",
@@ -217,7 +217,7 @@ export const seriesConfigs = [
     titleTemplate: "GDP per Capita",
     displayUnit: "Local currency",
     usesCountryCurrency: true,
-    ...valueFormats.currencyUnitsWhole,
+    ...valueFormats.unitsMagnitude,
   },
   {
     id: "realGdpPerCapita",
@@ -230,7 +230,7 @@ export const seriesConfigs = [
     titleTemplate: "Real GDP per Capita",
     displayUnit: "Local currency",
     usesCountryCurrency: true,
-    ...valueFormats.currencyUnitsWhole,
+    ...valueFormats.unitsMagnitude,
   },
   {
     id: "ppp",
@@ -243,7 +243,7 @@ export const seriesConfigs = [
     titleTemplate: "PPP GDP",
     displayUnit: "Int$",
     currencyCode: "Int$",
-    ...valueFormats.internationalDollarMagnitude,
+    ...valueFormats.billionsMagnitude,
   },
   {
     id: "pppPerCapita",
@@ -256,7 +256,7 @@ export const seriesConfigs = [
     titleTemplate: "PPP GDP per Capita",
     displayUnit: "Int$",
     currencyCode: "Int$",
-    ...valueFormats.currencyUnitsWhole,
+    ...valueFormats.unitsMagnitude,
   },
   {
     id: "currentAccountBalance",
@@ -269,7 +269,7 @@ export const seriesConfigs = [
     titleTemplate: "Current Account Balance",
     displayUnit: "USD",
     currencyCode: "USD",
-    ...valueFormats.gdpMagnitude,
+    ...valueFormats.billionsMagnitude,
   },
   {
     id: "currentAccountBalancePercentGdp",
@@ -294,7 +294,7 @@ export const seriesConfigs = [
     titleTemplate: "Exports",
     displayUnit: "USD",
     currencyCode: "USD",
-    ...valueFormats.usdMillionsMagnitude,
+    ...valueFormats.millionsMagnitude,
   },
   {
     id: "imports",
@@ -307,7 +307,7 @@ export const seriesConfigs = [
     titleTemplate: "Imports",
     displayUnit: "USD",
     currencyCode: "USD",
-    ...valueFormats.usdMillionsMagnitude,
+    ...valueFormats.millionsMagnitude,
   },
   {
     id: "tradeBalance",
@@ -320,7 +320,7 @@ export const seriesConfigs = [
     titleTemplate: "Trade Balance",
     displayUnit: "USD",
     currencyCode: "USD",
-    ...valueFormats.usdMillionsMagnitude,
+    ...valueFormats.millionsMagnitude,
   },
   {
     id: "servicesExports",
@@ -333,7 +333,7 @@ export const seriesConfigs = [
     titleTemplate: "Services Exports",
     displayUnit: "USD",
     currencyCode: "USD",
-    ...valueFormats.usdMillionsMagnitude,
+    ...valueFormats.millionsMagnitude,
   },
   {
     id: "servicesImports",
@@ -346,7 +346,7 @@ export const seriesConfigs = [
     titleTemplate: "Services Imports",
     displayUnit: "USD",
     currencyCode: "USD",
-    ...valueFormats.usdMillionsMagnitude,
+    ...valueFormats.millionsMagnitude,
   },
   {
     id: "servicesTradeBalance",
@@ -359,7 +359,7 @@ export const seriesConfigs = [
     titleTemplate: "Services Trade Balance",
     displayUnit: "USD",
     currencyCode: "USD",
-    ...valueFormats.usdMillionsMagnitude,
+    ...valueFormats.millionsMagnitude,
   },
   {
     id: "governmentGrossDebtNational",
@@ -372,7 +372,7 @@ export const seriesConfigs = [
     titleTemplate: "Government Gross Debt",
     displayUnit: "Local currency",
     usesCountryCurrency: true,
-    ...valueFormats.nationalCurrencyMagnitude,
+    ...valueFormats.billionsMagnitude,
   },
   {
     id: "governmentGrossDebt",
@@ -397,7 +397,7 @@ export const seriesConfigs = [
     titleTemplate: "Government Net Debt",
     displayUnit: "Local currency",
     usesCountryCurrency: true,
-    ...valueFormats.nationalCurrencyMagnitude,
+    ...valueFormats.billionsMagnitude,
   },
   {
     id: "governmentNetDebt",
@@ -446,7 +446,7 @@ export const seriesConfigs = [
     titleTemplate: "Fiscal Balance",
     displayUnit: "Local currency",
     usesCountryCurrency: true,
-    ...valueFormats.nationalCurrencyMagnitude,
+    ...valueFormats.billionsMagnitude,
   },
   {
     id: "primaryFiscalBalanceNational",
@@ -459,7 +459,7 @@ export const seriesConfigs = [
     titleTemplate: "Primary Fiscal Balance",
     displayUnit: "Local currency",
     usesCountryCurrency: true,
-    ...valueFormats.nationalCurrencyMagnitude,
+    ...valueFormats.billionsMagnitude,
   },
   {
     id: "governmentRevenue",
@@ -496,7 +496,7 @@ export const seriesConfigs = [
     titleTemplate: "Government Revenue",
     displayUnit: "Local currency",
     usesCountryCurrency: true,
-    ...valueFormats.nationalCurrencyMagnitude,
+    ...valueFormats.billionsMagnitude,
   },
   {
     id: "governmentSpendingNational",
@@ -509,7 +509,7 @@ export const seriesConfigs = [
     titleTemplate: "Government Spending",
     displayUnit: "Local currency",
     usesCountryCurrency: true,
-    ...valueFormats.nationalCurrencyMagnitude,
+    ...valueFormats.billionsMagnitude,
   },
   {
     id: "totalReservesIncludingGold",
@@ -522,7 +522,7 @@ export const seriesConfigs = [
     titleTemplate: "Total Reserves",
     displayUnit: "USD",
     currencyCode: "USD",
-    ...valueFormats.usdMagnitude,
+    ...valueFormats.unitsMagnitude,
   },
   {
     id: "militarySpending",
@@ -535,7 +535,7 @@ export const seriesConfigs = [
     titleTemplate: "Military Spending",
     displayUnit: "USD",
     currencyCode: "USD",
-    ...valueFormats.usdMagnitude,
+    ...valueFormats.unitsMagnitude,
   },
   {
     id: "militarySpendingPercentGdp",
@@ -562,8 +562,8 @@ export const seriesConfigs = [
   },
   {
     id: "area",
-    ...ciaWorldFactbook,
-    indicatorCode: "CIA.AREA.K2",
+    ...unsdDemographicYearbookArea,
+    indicatorCode: "UNSD.DYB.AREA.K2",
     titleTemplate: "Area",
     displayUnit: "km²",
     ...valueFormats.areaMagnitude,

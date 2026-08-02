@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="경제 페이지 탐색"><a class="navigation-control is-current" href="../gdp/" aria-current="page">GDP</a><a class="navigation-control" href="../gdp-per-capita/">1인당 GDP</a><a class="navigation-control" href="../ppp-gdp/">구매력평가 GDP</a><a class="navigation-control" href="../ppp-gdp-per-capita/">1인당 구매력평가 GDP</a><a class="navigation-control" href="../gni/">국민총소득(GNI)</a><a class="navigation-control" href="../gni-per-capita/">1인당 국민총소득(GNI)</a><a class="navigation-control" href="../gdp-growth/">경제성장률</a><a class="navigation-control" href="../inflation-rate/">물가상승률</a><a class="navigation-control" href="../unemployment-rate/">실업률</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="gdp-title">
+          <section class="indicator-block" aria-label="GDP (USD) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gdp-title"><span class="indicator-label-cell"><span class="indicator-label-text">GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="GDP 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gdp"><span class="indicator-label-cell"><span class="indicator-label-text">GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(USD)</span><button class="indicator-info-button" type="button" aria-label="GDP 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdp">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="gdp">
                 <div class="compare-input-wrap">
@@ -134,14 +134,16 @@
 
             <details class="data-table-toggle" id="gdpTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="gdpTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1980</td><td>129.8억</td><td>1991</td><td>127.38억</td><td>2002</td><td>227.58억</td></tr><tr><td>1981</td><td>166.52억</td><td>1992</td><td>132.63억</td><td>2003</td><td>217.02억</td></tr><tr><td>1982</td><td>174.15억</td><td>1993</td><td>137.96억</td><td>2004</td><td>252.04억</td></tr><tr><td>1983</td><td>186.49억</td><td>1994</td><td>151.05억</td><td>2005</td><td>288.81억</td></tr><tr><td>1984</td><td>191.71억</td><td>1995</td><td>165.56억</td><td>2006</td><td>338.24억</td></tr><tr><td>1985</td><td>211.77억</td><td>1996</td><td>177.61억</td><td>2007</td><td>404.88억</td></tr><tr><td>1986</td><td>254.28억</td><td>1997</td><td>165.73억</td><td>2008</td><td>526.31억</td></tr><tr><td>1987</td><td>324.97억</td><td>1998</td><td>161.44억</td><td>2009</td><td>539.39억</td></tr><tr><td>1988</td><td>165.38억</td><td>1999</td><td>167.85억</td><td>2010</td><td>600.43억</td></tr><tr><td>1989</td><td>98.49억</td><td>2000</td><td>198.61억</td><td></td><td></td></tr><tr><td>1990</td><td>123.03억</td><td>2001</td><td>209.79억</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gdpTableWrap" role="region" aria-label="데이터 표" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1980</td><td>129.8억</td><td>1991</td><td>127.4억</td><td>2002</td><td>227.6억</td></tr><tr><td>1981</td><td>166.5억</td><td>1992</td><td>132.6억</td><td>2003</td><td>217억</td></tr><tr><td>1982</td><td>174.2억</td><td>1993</td><td>138억</td><td>2004</td><td>252억</td></tr><tr><td>1983</td><td>186.5억</td><td>1994</td><td>151.1억</td><td>2005</td><td>288.8억</td></tr><tr><td>1984</td><td>191.7억</td><td>1995</td><td>165.6억</td><td>2006</td><td>338.2억</td></tr><tr><td>1985</td><td>211.8억</td><td>1996</td><td>177.6억</td><td>2007</td><td>404.9억</td></tr><tr><td>1986</td><td>254.3억</td><td>1997</td><td>165.7억</td><td>2008</td><td>526.3억</td></tr><tr><td>1987</td><td>325억</td><td>1998</td><td>161.4억</td><td>2009</td><td>539.4억</td></tr><tr><td>1988</td><td>165.4억</td><td>1999</td><td>167.9억</td><td>2010</td><td>600.4억</td></tr><tr><td>1989</td><td>98.49억</td><td>2000</td><td>198.6억</td><td></td><td></td></tr><tr><td>1990</td><td>123억</td><td>2001</td><td>209.8억</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="gdpNational-title">
+          <section class="indicator-block" aria-label="GDP (자국 통화) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="gdpNational-title"><span class="indicator-label-cell"><span class="indicator-label-text">GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(자국 통화)</span><button class="indicator-info-button" type="button" aria-label="GDP 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpNational">i</button></span></span></h2>
+                <h2 data-country-indicator-title="gdpNational"><span class="indicator-label-cell"><span class="indicator-label-text">GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(자국 통화)</span><button class="indicator-info-button" type="button" aria-label="GDP 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="gdpNational">i</button></span></span></h2>
               </div>
             </header>
 
@@ -152,14 +154,16 @@
 
             <details class="data-table-toggle" id="gdpNationalTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="gdpNationalTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1980</td><td>512.7억</td><td>1991</td><td>3,115.6억</td><td>2002</td><td>1.12조</td></tr><tr><td>1981</td><td>657.77억</td><td>1992</td><td>3,716.3억</td><td>2003</td><td>1.07조</td></tr><tr><td>1982</td><td>687.88억</td><td>1993</td><td>4,137.6억</td><td>2004</td><td>1.27조</td></tr><tr><td>1983</td><td>732.91억</td><td>1994</td><td>5,061억</td><td>2005</td><td>1.51조</td></tr><tr><td>1984</td><td>753.42억</td><td>1995</td><td>5,709.8억</td><td>2006</td><td>1.73조</td></tr><tr><td>1985</td><td>832.25억</td><td>1996</td><td>6,908.6억</td><td>2007</td><td>2.02조</td></tr><tr><td>1986</td><td>999.33억</td><td>1997</td><td>7,455.7억</td><td>2008</td><td>2.45조</td></tr><tr><td>1987</td><td>1,277.1억</td><td>1998</td><td>7,904.4억</td><td>2009</td><td>2.52조</td></tr><tr><td>1988</td><td>1,860.5억</td><td>1999</td><td>8,190.9억</td><td>2010</td><td>2.79조</td></tr><tr><td>1989</td><td>2,088.9억</td><td>2000</td><td>9,471.3억</td><td></td><td></td></tr><tr><td>1990</td><td>2,683.3억</td><td>2001</td><td>1.01조</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="gdpNationalTableWrap" role="region" aria-label="데이터 표" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1980</td><td>512.7억</td><td>1991</td><td>3,116억</td><td>2002</td><td>1.12조</td></tr><tr><td>1981</td><td>657.8억</td><td>1992</td><td>3,716억</td><td>2003</td><td>1.07조</td></tr><tr><td>1982</td><td>687.9억</td><td>1993</td><td>4,138억</td><td>2004</td><td>1.27조</td></tr><tr><td>1983</td><td>732.9억</td><td>1994</td><td>5,061억</td><td>2005</td><td>1.51조</td></tr><tr><td>1984</td><td>753.4억</td><td>1995</td><td>5,710억</td><td>2006</td><td>1.73조</td></tr><tr><td>1985</td><td>832.3억</td><td>1996</td><td>6,909억</td><td>2007</td><td>2.02조</td></tr><tr><td>1986</td><td>999.3억</td><td>1997</td><td>7,456억</td><td>2008</td><td>2.45조</td></tr><tr><td>1987</td><td>1,277억</td><td>1998</td><td>7,904억</td><td>2009</td><td>2.52조</td></tr><tr><td>1988</td><td>1,860억</td><td>1999</td><td>8,191억</td><td>2010</td><td>2.79조</td></tr><tr><td>1989</td><td>2,089억</td><td>2000</td><td>9,471억</td><td></td><td></td></tr><tr><td>1990</td><td>2,683억</td><td>2001</td><td>1.01조</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="realGdp-title">
+          <section class="indicator-block" aria-label="실질 GDP (자국 통화) 선형 차트">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="realGdp-title"><span class="indicator-label-cell"><span class="indicator-label-text">실질 GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(자국 통화)</span><button class="indicator-info-button" type="button" aria-label="실질 GDP 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="realGdp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="realGdp"><span class="indicator-label-cell"><span class="indicator-label-text">실질 GDP</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(자국 통화)</span><button class="indicator-info-button" type="button" aria-label="실질 GDP 정보" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="realGdp">i</button></span></span></h2>
               </div>
             </header>
 
@@ -170,7 +174,9 @@
 
             <details class="data-table-toggle" id="realGdpTableToggle">
               <summary data-ui-text-action>데이터 표</summary>
-              <div class="data-table-wrap" id="realGdpTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1980</td><td>4,642.4억</td><td>1991</td><td>6,569.5억</td><td>2002</td><td>1.04조</td></tr><tr><td>1981</td><td>5,035.3억</td><td>1992</td><td>7,439.7억</td><td>2003</td><td>1.02조</td></tr><tr><td>1982</td><td>5,165.3억</td><td>1993</td><td>7,990.9억</td><td>2004</td><td>1.09조</td></tr><tr><td>1983</td><td>5,248.2억</td><td>1994</td><td>8,433.1억</td><td>2005</td><td>1.16조</td></tr><tr><td>1984</td><td>4,907.2억</td><td>1995</td><td>8,890.4억</td><td>2006</td><td>1.22조</td></tr><tr><td>1985</td><td>5,265.2억</td><td>1996</td><td>9,154.1억</td><td>2007</td><td>1.28조</td></tr><tr><td>1986</td><td>5,014.8억</td><td>1997</td><td>9,054.3억</td><td>2008</td><td>1.34조</td></tr><tr><td>1987</td><td>5,077.5억</td><td>1998</td><td>9,557.1억</td><td>2009</td><td>1.42조</td></tr><tr><td>1988</td><td>5,723.4억</td><td>1999</td><td>9,258.8억</td><td>2010</td><td>1.47조</td></tr><tr><td>1989</td><td>5,376.2억</td><td>2000</td><td>9,471.3억</td><td></td><td></td></tr><tr><td>1990</td><td>5,933억</td><td>2001</td><td>9,819.8억</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="realGdpTableWrap" role="region" aria-label="데이터 표" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1980</td><td>4,642억</td><td>1991</td><td>6,569억</td><td>2002</td><td>1.04조</td></tr><tr><td>1981</td><td>5,035억</td><td>1992</td><td>7,440억</td><td>2003</td><td>1.02조</td></tr><tr><td>1982</td><td>5,165억</td><td>1993</td><td>7,991억</td><td>2004</td><td>1.09조</td></tr><tr><td>1983</td><td>5,248억</td><td>1994</td><td>8,433억</td><td>2005</td><td>1.16조</td></tr><tr><td>1984</td><td>4,907억</td><td>1995</td><td>8,890억</td><td>2006</td><td>1.22조</td></tr><tr><td>1985</td><td>5,265억</td><td>1996</td><td>9,154억</td><td>2007</td><td>1.28조</td></tr><tr><td>1986</td><td>5,015억</td><td>1997</td><td>9,054억</td><td>2008</td><td>1.34조</td></tr><tr><td>1987</td><td>5,078억</td><td>1998</td><td>9,557억</td><td>2009</td><td>1.42조</td></tr><tr><td>1988</td><td>5,723억</td><td>1999</td><td>9,259억</td><td>2010</td><td>1.47조</td></tr><tr><td>1989</td><td>5,376억</td><td>2000</td><td>9,471억</td><td></td><td></td></tr><tr><td>1990</td><td>5,933억</td><td>2001</td><td>9,820억</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -189,10 +195,11 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/syria/population/">인구</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/syria/population-growth/">인구증가율</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/syria/fertility-rate/">합계출산율</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/syria/trade/">무역수지</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/syria/trade/">수출, 수입 및 무역수지</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/syria/government-debt/">정부 부채</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/syria/fiscal-balance/">재정수지</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/syria/hdi/">인간개발지수(HDI)</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../ko/countries/syria/co2-emissions/">온실가스 배출량</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../ko/countries/syria/"><img class="flag-image flag-image-sy country-flag" src="../../../../public/flags/sy.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">국가 프로필 보기</span></a>
       </section>

@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Seitennavigation Gesellschaft"><a class="navigation-control is-current" href="../hdi/" aria-current="page">HDI</a><a class="navigation-control" href="../military-spending/">Militärausgaben</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="hdi-title">
+          <section class="indicator-block" aria-label="Liniendiagramm: HDI">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="hdi-title"><span class="indicator-label-cell"><span class="indicator-label-text">HDI</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="Informationen zu HDI" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="hdi">i</button></span></span></h2>
+                <h2 data-country-indicator-title="hdi"><span class="indicator-label-cell"><span class="indicator-label-text">HDI</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="Informationen zu HDI" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="hdi">i</button></span></span></h2>
                 <p class="indicator-rank"><a data-ui-text-action href="../../../../de/rankings/countries/hdi/">Weltrang: #188 / 193</a></p>
               </div>
               <div class="compare-control" data-series-id="hdi">
@@ -135,7 +135,9 @@
 
             <details class="data-table-toggle" id="hdiTableToggle">
               <summary data-ui-text-action>Datentabelle</summary>
-              <div class="data-table-wrap" id="hdiTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1990</td><td>0,24</td><td>2002</td><td>0,34</td><td>2014</td><td>0,414</td></tr><tr><td>1991</td><td>0,247</td><td>2003</td><td>0,352</td><td>2015</td><td>0,413</td></tr><tr><td>1992</td><td>0,251</td><td>2004</td><td>0,359</td><td>2016</td><td>0,411</td></tr><tr><td>1993</td><td>0,259</td><td>2005</td><td>0,368</td><td>2017</td><td>0,416</td></tr><tr><td>1994</td><td>0,266</td><td>2006</td><td>0,377</td><td>2018</td><td>0,421</td></tr><tr><td>1995</td><td>0,273</td><td>2007</td><td>0,386</td><td>2019</td><td>0,425</td></tr><tr><td>1996</td><td>0,282</td><td>2008</td><td>0,395</td><td>2020</td><td>0,414</td></tr><tr><td>1997</td><td>0,293</td><td>2009</td><td>0,403</td><td>2021</td><td>0,414</td></tr><tr><td>1998</td><td>0,303</td><td>2010</td><td>0,41</td><td>2022</td><td>0,417</td></tr><tr><td>1999</td><td>0,314</td><td>2011</td><td>0,415</td><td>2023</td><td>0,419</td></tr><tr><td>2000</td><td>0,32</td><td>2012</td><td>0,411</td><td></td><td></td></tr><tr><td>2001</td><td>0,332</td><td>2013</td><td>0,409</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="hdiTableWrap" role="region" aria-label="Datentabelle" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1990</td><td>0,24</td><td>2002</td><td>0,34</td><td>2014</td><td>0,414</td></tr><tr><td>1991</td><td>0,247</td><td>2003</td><td>0,352</td><td>2015</td><td>0,413</td></tr><tr><td>1992</td><td>0,251</td><td>2004</td><td>0,359</td><td>2016</td><td>0,411</td></tr><tr><td>1993</td><td>0,259</td><td>2005</td><td>0,368</td><td>2017</td><td>0,416</td></tr><tr><td>1994</td><td>0,266</td><td>2006</td><td>0,377</td><td>2018</td><td>0,421</td></tr><tr><td>1995</td><td>0,273</td><td>2007</td><td>0,386</td><td>2019</td><td>0,425</td></tr><tr><td>1996</td><td>0,282</td><td>2008</td><td>0,395</td><td>2020</td><td>0,414</td></tr><tr><td>1997</td><td>0,293</td><td>2009</td><td>0,403</td><td>2021</td><td>0,414</td></tr><tr><td>1998</td><td>0,303</td><td>2010</td><td>0,41</td><td>2022</td><td>0,417</td></tr><tr><td>1999</td><td>0,314</td><td>2011</td><td>0,415</td><td>2023</td><td>0,419</td></tr><tr><td>2000</td><td>0,32</td><td>2012</td><td>0,411</td><td></td><td></td></tr><tr><td>2001</td><td>0,332</td><td>2013</td><td>0,409</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -153,9 +155,10 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../de/countries/mali/population/">Bevölkerung</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../de/countries/mali/population-growth/">Bevölkerungswachstum</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../de/countries/mali/fertility-rate/">Fertilitätsrate</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../de/countries/mali/trade/">Handelsbilanz</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../de/countries/mali/trade/">Exporte, Importe und Handelsbilanz</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../de/countries/mali/government-debt/">Staatsverschuldung</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../de/countries/mali/fiscal-balance/">Finanzierungssaldo</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../de/countries/mali/co2-emissions/">Treibhausgasemissionen</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../de/countries/mali/"><img class="flag-image flag-image-ml country-flag" src="../../../../public/flags/ml.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">Länderprofil anzeigen</span></a>
       </section>

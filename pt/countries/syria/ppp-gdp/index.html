@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Navegação da página de economia"><a class="navigation-control" href="../gdp/">PIB</a><a class="navigation-control" href="../gdp-per-capita/">PIB per capita</a><a class="navigation-control is-current" href="../ppp-gdp/" aria-current="page">PIB por PPC</a><a class="navigation-control" href="../ppp-gdp-per-capita/">PIB per capita por PPC</a><a class="navigation-control" href="../gni/">RNB</a><a class="navigation-control" href="../gni-per-capita/">RNB per capita</a><a class="navigation-control" href="../gdp-growth/">Crescimento do PIB</a><a class="navigation-control" href="../inflation-rate/">Taxa de inflação</a><a class="navigation-control" href="../unemployment-rate/">Taxa de desemprego</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="ppp-title">
+          <section class="indicator-block" aria-label="Gráfico de linhas de PIB por PPC (Int$)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="ppp-title"><span class="indicator-label-cell"><span class="indicator-label-text">PIB por PPC</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Int$)</span><button class="indicator-info-button" type="button" aria-label="Informações sobre PIB por PPC" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="ppp">i</button></span></span></h2>
+                <h2 data-country-indicator-title="ppp"><span class="indicator-label-cell"><span class="indicator-label-text">PIB por PPC</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(Int$)</span><button class="indicator-info-button" type="button" aria-label="Informações sobre PIB por PPC" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="ppp">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="ppp">
                 <div class="compare-input-wrap">
@@ -134,7 +134,9 @@
 
             <details class="data-table-toggle" id="pppTableToggle">
               <summary data-ui-text-action>Tabela de dados</summary>
-              <div class="data-table-wrap" id="pppTableWrap"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1980</td><td>18,92 bi</td><td>1991</td><td>41,7 bi</td><td>2002</td><td>81,3 bi</td></tr><tr><td>1981</td><td>22,47 bi</td><td>1992</td><td>48,3 bi</td><td>2003</td><td>81,21 bi</td></tr><tr><td>1982</td><td>24,47 bi</td><td>1993</td><td>53,11 bi</td><td>2004</td><td>89,15 bi</td></tr><tr><td>1983</td><td>25,84 bi</td><td>1994</td><td>57,24 bi</td><td>2005</td><td>97,67 bi</td></tr><tr><td>1984</td><td>25,03 bi</td><td>1995</td><td>61,61 bi</td><td>2006</td><td>105,76 bi</td></tr><tr><td>1985</td><td>27,71 bi</td><td>1996</td><td>64,6 bi</td><td>2007</td><td>114,79 bi</td></tr><tr><td>1986</td><td>26,92 bi</td><td>1997</td><td>65 bi</td><td>2008</td><td>122,24 bi</td></tr><tr><td>1987</td><td>27,93 bi</td><td>1998</td><td>69,38 bi</td><td>2009</td><td>130,26 bi</td></tr><tr><td>1988</td><td>32,59 bi</td><td>1999</td><td>68,16 bi</td><td>2010</td><td>136,38 bi</td></tr><tr><td>1989</td><td>31,82 bi</td><td>2000</td><td>71,31 bi</td><td></td><td></td></tr><tr><td>1990</td><td>36,43 bi</td><td>2001</td><td>75,6 bi</td><td></td><td></td></tr></tbody></table></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="pppTableWrap" role="region" aria-label="Tabela de dados" tabindex="0"><table class="data-table" data-static-data-table="true"><tbody><tr><td>1980</td><td>18,92 bi</td><td>1991</td><td>41,7 bi</td><td>2002</td><td>81,3 bi</td></tr><tr><td>1981</td><td>22,47 bi</td><td>1992</td><td>48,3 bi</td><td>2003</td><td>81,21 bi</td></tr><tr><td>1982</td><td>24,47 bi</td><td>1993</td><td>53,11 bi</td><td>2004</td><td>89,15 bi</td></tr><tr><td>1983</td><td>25,84 bi</td><td>1994</td><td>57,24 bi</td><td>2005</td><td>97,67 bi</td></tr><tr><td>1984</td><td>25,03 bi</td><td>1995</td><td>61,61 bi</td><td>2006</td><td>105,8 bi</td></tr><tr><td>1985</td><td>27,71 bi</td><td>1996</td><td>64,6 bi</td><td>2007</td><td>114,8 bi</td></tr><tr><td>1986</td><td>26,92 bi</td><td>1997</td><td>65 bi</td><td>2008</td><td>122,2 bi</td></tr><tr><td>1987</td><td>27,93 bi</td><td>1998</td><td>69,38 bi</td><td>2009</td><td>130,3 bi</td></tr><tr><td>1988</td><td>32,59 bi</td><td>1999</td><td>68,16 bi</td><td>2010</td><td>136,4 bi</td></tr><tr><td>1989</td><td>31,82 bi</td><td>2000</td><td>71,31 bi</td><td></td><td></td></tr><tr><td>1990</td><td>36,43 bi</td><td>2001</td><td>75,6 bi</td><td></td><td></td></tr></tbody></table></div>
+              </div>
             </details>
           </section>
 
@@ -153,10 +155,11 @@
           <a class="related-content-card-link" data-ui-text-action href="../../../../pt/countries/syria/population/">População</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../pt/countries/syria/population-growth/">Crescimento populacional</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../pt/countries/syria/fertility-rate/">Taxa de fecundidade</a>
-          <a class="related-content-card-link" data-ui-text-action href="../../../../pt/countries/syria/trade/">Balança comercial</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../pt/countries/syria/trade/">Exportações, importações e balança comercial</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../pt/countries/syria/government-debt/">Dívida pública</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../pt/countries/syria/fiscal-balance/">Resultado fiscal</a>
           <a class="related-content-card-link" data-ui-text-action href="../../../../pt/countries/syria/hdi/">IDH</a>
+          <a class="related-content-card-link" data-ui-text-action href="../../../../pt/countries/syria/co2-emissions/">Emissões de CO₂</a>
         </div>
         <a class="related-content-card-footer-link" data-ui-text-action href="../../../../pt/countries/syria/"><img class="flag-image flag-image-sy country-flag" src="../../../../public/flags/sy.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" /><span class="related-content-card-footer-label">Ver perfil do país</span></a>
       </section>

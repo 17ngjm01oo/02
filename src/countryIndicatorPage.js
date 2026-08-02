@@ -1,5 +1,4 @@
 import { seriesConfigs } from "./config.js";
-import { scrollToCountryIndicatorHash } from "./countryIndicatorAnchors.js";
 import { countries } from "./countries.js";
 import {
   getCountriesWithCountryPageData,
@@ -18,13 +17,16 @@ import { initializeIndicatorInfoTooltips } from "./indicatorInfoUi.js";
 import { buildStaticDataRequestUrls, fetchStaticData } from "./staticData.js";
 import { transformSeriesData } from "./transform.js";
 import { clearLineChart, loadChartJs, renderLineChart } from "./chart.js";
-import { formatCompactDisplayValue, getDisplayScale } from "./displayFormat.js";
+import {
+  formatCompactDisplayValue,
+  getDisplayScale,
+  getSingleValueDisplayScale,
+} from "./displayFormat.js";
 import { comparisonTableTwoColumnQuery } from "./responsive.js";
+import { valueFormats } from "./valueFormats.js";
 import {
   getLocalizedRootHref,
-  getPageLocale,
   hasFullTranslation,
-  localeConfigs,
   formatCountryDisplayName,
   translate,
   translateCountryName,
@@ -76,6 +78,7 @@ async function initializePage() {
 
   updateSeriesVisibility(countrySeriesConfigs);
   updateSeriesHeadings(visibleSeriesConfigs);
+  initializeDataTableScrollCues();
   initializeIndicatorInfoTooltips();
   initializeCompareSearches(visibleSeriesConfigs);
   initializeCompareCountryAvailability(visibleSeriesConfigs);
@@ -95,7 +98,6 @@ async function initializePage() {
   });
 
   await Promise.all(visibleSeriesConfigs.map((seriesConfig) => loadAndRenderSeries(seriesConfig, chartJsPromise)));
-  scrollToCountryIndicatorHash();
 }
 
 function navigateToCountry(country) {
@@ -128,7 +130,7 @@ function getCountryPageStaticDataPath(seriesConfig, targetCountryCode) {
 
 function getSeriesChartTitle(seriesConfig, currencyCode) {
   if (!hasFullTranslation()) {
-    const titleElement = document.querySelector(`#${seriesConfig.id}-title`);
+    const titleElement = getSeriesTitleElement(seriesConfig.id);
     const label = titleElement?.querySelector(".indicator-label-text")?.textContent?.trim();
     const unit = titleElement?.querySelector(".indicator-display-unit")?.textContent?.trim();
     if (label) {
@@ -145,7 +147,7 @@ function updateSeriesHeadings(countrySeriesConfigs) {
   }
 
   countrySeriesConfigs.forEach((seriesConfig) => {
-    const titleElement = document.querySelector(`#${seriesConfig.id}-title`);
+    const titleElement = getSeriesTitleElement(seriesConfig.id);
     const canvas = document.querySelector(`#${seriesConfig.canvasId}`);
 
     if (titleElement) {
@@ -165,7 +167,7 @@ function updateSeriesHeadings(countrySeriesConfigs) {
 
 function updateSeriesVisibility(countrySeriesConfigs) {
   countrySeriesConfigs.forEach((seriesConfig) => {
-    const titleElement = document.querySelector(`#${seriesConfig.id}-title`);
+    const titleElement = getSeriesTitleElement(seriesConfig.id);
     const indicatorBlock = titleElement?.closest(".indicator-block");
 
     if (indicatorBlock) {
@@ -176,6 +178,10 @@ function updateSeriesVisibility(countrySeriesConfigs) {
 
 function shouldShowSeriesConfig(seriesConfig) {
   return !(isNominalLocalCurrencySeries(seriesConfig) && seriesConfig.currencyCode === "USD");
+}
+
+function getSeriesTitleElement(seriesId) {
+  return document.querySelector(`[data-country-indicator-title="${seriesId}"]`);
 }
 
 function isNominalLocalCurrencySeries(seriesConfig) {
@@ -726,6 +732,7 @@ function renderDataTable(points, seriesConfig, { comparisonPoints = [], comparis
 
   if (!hasComparison) {
     tableWrap.append(renderStandardDataTable(sortedPoints, displayScale));
+    scheduleDataTableScrollCueUpdate(tableWrap);
     return;
   }
 
@@ -739,6 +746,42 @@ function renderDataTable(points, seriesConfig, { comparisonPoints = [], comparis
       comparisonCountry,
     }),
   );
+  scheduleDataTableScrollCueUpdate(tableWrap);
+}
+
+function initializeDataTableScrollCues() {
+  const tableWraps = [...document.querySelectorAll(".data-table-wrap")];
+
+  tableWraps.forEach((tableWrap) => {
+    const tableToggle = tableWrap.closest(".data-table-toggle");
+    const scrollFrame = tableWrap.closest(".data-table-scroll-frame");
+    tableWrap.addEventListener("scroll", () => updateDataTableScrollCue(tableWrap), { passive: true });
+    tableToggle?.addEventListener("toggle", () => {
+      if (tableToggle.open) {
+        scheduleDataTableScrollCueUpdate(tableWrap);
+      } else {
+        scrollFrame?.classList.remove("can-scroll-right");
+      }
+    });
+  });
+
+  let resizeFrame = 0;
+  window.addEventListener("resize", () => {
+    window.cancelAnimationFrame(resizeFrame);
+    resizeFrame = window.requestAnimationFrame(() => {
+      tableWraps.forEach(updateDataTableScrollCue);
+    });
+  }, { passive: true });
+}
+
+function scheduleDataTableScrollCueUpdate(tableWrap) {
+  window.requestAnimationFrame(() => updateDataTableScrollCue(tableWrap));
+}
+
+function updateDataTableScrollCue(tableWrap) {
+  const scrollFrame = tableWrap.closest(".data-table-scroll-frame");
+  const remainingScroll = tableWrap.scrollWidth - tableWrap.clientWidth - tableWrap.scrollLeft;
+  scrollFrame?.classList.toggle("can-scroll-right", remainingScroll > 1);
 }
 
 function renderStandardDataTable(points, displayScale) {
@@ -1016,7 +1059,9 @@ function getComparisonPercentageClass({ comparisonPercentage, comparisonValue, m
 }
 
 function isPercentSeriesConfig(seriesConfig) {
-  return seriesConfig?.suffix === "%" || String(seriesConfig?.displayUnit ?? "").includes("%");
+  return seriesConfig?.valueScaleMode === "percentOneDecimal"
+    || seriesConfig?.suffix === "%"
+    || String(seriesConfig?.displayUnit ?? "").includes("%");
 }
 
 function formatComparisonPercentage(percentage) {
@@ -1024,11 +1069,8 @@ function formatComparisonPercentage(percentage) {
     return "-";
   }
 
-  const formatter = new Intl.NumberFormat(localeConfigs[getPageLocale()]?.numberLocale ?? "en-US", {
-    maximumFractionDigits: Math.abs(percentage) >= 10_000_000 ? 0 : 1,
-  });
-
-  return `${formatter.format(percentage)}%`;
+  const displayScale = getSingleValueDisplayScale(percentage, valueFormats.percentOneDecimal);
+  return formatCompactDisplayValue(percentage, displayScale);
 }
 
 function updateSeriesSourceOverrideNotes(data, seriesConfig) {

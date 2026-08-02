@@ -103,10 +103,10 @@
             <nav class="site-nav" id="countryRelatedPageNav" aria-label="Navegação da página de população"><a class="navigation-control is-current" href="../immigrants/" aria-current="page">Número de imigrantes</a></nav>
           </header>
 
-          <section class="indicator-block" aria-labelledby="immigrants-title">
+          <section class="indicator-block" aria-label="Gráfico de linhas de Número de imigrantes">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="immigrants-title"><span class="indicator-label-cell"><span class="indicator-label-text">Número de imigrantes</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="Informações sobre Número de imigrantes" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="immigrants">i</button></span></span></h2>
+                <h2 data-country-indicator-title="immigrants"><span class="indicator-label-cell"><span class="indicator-label-text">Número de imigrantes</span> <span class="indicator-label-meta"><button class="indicator-info-button" type="button" aria-label="Informações sobre Número de imigrantes" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="immigrants">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="immigrants">
                 <div class="compare-input-wrap">
@@ -134,14 +134,16 @@
 
             <details class="data-table-toggle" id="immigrantsTableToggle">
               <summary data-ui-text-action>Tabela de dados</summary>
-              <div class="data-table-wrap" id="immigrantsTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="immigrantsTableWrap" role="region" aria-label="Tabela de dados" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
-          <section class="indicator-block" aria-labelledby="immigrantsPercentPopulation-title">
+          <section class="indicator-block" aria-label="Gráfico de linhas de Número de imigrantes (% da população)">
             <header class="indicator-header">
               <div class="indicator-title-group">
-                <h2 id="immigrantsPercentPopulation-title"><span class="indicator-label-cell"><span class="indicator-label-text">Número de imigrantes</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(% da população)</span><button class="indicator-info-button" type="button" aria-label="Informações sobre Número de imigrantes" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="immigrantsPercentPopulation">i</button></span></span></h2>
+                <h2 data-country-indicator-title="immigrantsPercentPopulation"><span class="indicator-label-cell"><span class="indicator-label-text">Número de imigrantes</span> <span class="indicator-label-meta"><span class="indicator-display-unit">(% da população)</span><button class="indicator-info-button" type="button" aria-label="Informações sobre Número de imigrantes" data-indicator-info-tooltip-placement="country-indicator" data-indicator-info-series-id="immigrantsPercentPopulation">i</button></span></span></h2>
               </div>
               <div class="compare-control" data-series-id="immigrantsPercentPopulation">
                 <div class="compare-input-wrap">
@@ -169,12 +171,14 @@
 
             <details class="data-table-toggle" id="immigrantsPercentPopulationTableToggle">
               <summary data-ui-text-action>Tabela de dados</summary>
-              <div class="data-table-wrap" id="immigrantsPercentPopulationTableWrap"></div>
+              <div class="data-table-scroll-frame">
+                <div class="data-table-wrap" id="immigrantsPercentPopulationTableWrap" role="region" aria-label="Tabela de dados" tabindex="0"></div>
+              </div>
             </details>
           </section>
 
           <footer class="shared-notes" aria-label="Notas do gráfico">
-            <p>Fonte: UN DESA Population Division International Migrant Stock.</p>
+            <p>Fonte: UN DESA International Migrant Stock.</p>
           </footer>
         </div>
       </section>
