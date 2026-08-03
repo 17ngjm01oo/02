@@ -105,7 +105,20 @@
               <details class="category-panel" aria-labelledby="category-heading">
                 <summary class="category-heading" id="category-heading">Kategori</summary>
               </details>
-              <div class="country-hub-controls" id="countryHubControls"></div>
+              <div class="country-hub-controls" id="countryHubControls">
+                <button
+                  class="territory-toggle"
+                  type="button"
+                  data-ranking-control="territories"
+                  data-territories-label="Teritori"
+                  data-show-territories-label="Tampilkan"
+                  data-hide-territories-label="Sembunyikan"
+                  data-toggle-territories-aria="{action} teritori dalam {context}"
+                  data-territory-context="Negara"
+                  aria-pressed="true"
+                  aria-label="Sembunyikan teritori dalam Negara"
+                >Teritori</button>
+              </div>
             </div>
           </div>
           <div class="category-list filter-option-list" id="regionList" hidden></div>

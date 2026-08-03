@@ -16,6 +16,7 @@ import {
   getPageLocale,
   localeConfigs,
   formatCountryDisplayName,
+  hasIndicatorTranslation,
   translate,
   translateCountryName,
   translateIndicatorLabel,
@@ -42,6 +43,7 @@ function getRankingConfigFromPage() {
       staticDataPath: dataset.rankingStaticDataPath,
       rankingIndicatorLabel: dataset.rankingIndicatorLabel ?? "",
       countryPageKind: dataset.rankingCountryPageKind ?? "",
+      countryPageFragment: dataset.rankingCountryPageFragment ?? "",
       hasCountryIndicatorPage: dataset.rankingHasCountryIndicatorPage !== "false",
       showWorldShare: dataset.rankingShowWorldShare === "true",
       displayScaleConfig: JSON.parse(dataset.rankingDisplayScaleConfig ?? "{}"),
@@ -74,8 +76,6 @@ export function initializeRankingPage(config) {
       worldShareValue: null,
     },
   };
-  state.rankingIndicatorLabel = getRankingIndicatorLabel(config);
-
   state.sortOrder = initializeRankingSort({
     initialValue: state.sortOrder,
     onChange(sortOrder) {
@@ -108,19 +108,33 @@ function initializeLazyRankingCountrySearch(config) {
 }
 
 async function initializeRankingCountrySearch(config) {
-  const { initializeCountrySelector } = await import("./countrySelector.js");
+  const [
+    { initializeCountrySelector },
+    { getCountriesWithCountryPageData },
+  ] = await Promise.all([
+    import("./countrySelector.js"),
+    import("./countryPageSearchAvailability.js"),
+  ]);
   const rootHref = document.body.dataset.rootHref ?? "../../";
   const localizedRootHref = getLocalizedRootHref(rootHref);
   const pagePathSegment = getCountryPagePathSegment(config);
   const searchInput = document.querySelector("#rankingCountrySearchInput");
+  const fullCountryPool = countries.filter((country) => country.slug);
+  const countryPool = await getCountriesWithCountryPageData({
+    rootHref,
+    pageKind: config.countryPageKind,
+    countryPool: fullCountryPool,
+  }).catch((error) => {
+    console.warn(`[Ranking] Falling back to the full ${config.logName} country search list.`, error);
+    return fullCountryPool;
+  });
 
   initializeCountrySelector({
-    countryPool: countries.filter((country) => country.slug),
+    countryPool,
     placeholderKey: "ui.countrySearchPlaceholder",
     placeholder: "Search countries or territories",
     getCountryHref(country) {
-      const indicatorPath = pagePathSegment ? `${pagePathSegment}/` : "";
-      return `${localizedRootHref}countries/${country.slug}/${indicatorPath}`;
+      return `${localizedRootHref}countries/${country.slug}/${pagePathSegment}/`;
     },
     searchInputSelector: "#rankingCountrySearchInput",
     resultsSelector: "#rankingCountrySearchResults",
@@ -177,14 +191,12 @@ async function initializeRanking(config, state) {
     throw new Error(`Static ${config.logName} ranking manifest has no years for ${config.indicatorCode}.`);
   }
 
-  updateRankingPageTitle(state, state.activeScope);
-
   initializeRankingYear({
     years: availableYears,
     initialValue: state.selectedYear,
     onChange(year) {
       state.selectedYear = year;
-      updateRankingPageTitle(state, state.activeScope);
+      updateRankingPageTitle(config, state, state.activeScope);
       showRankingLoading({
         countElement: state.elements.count,
       });
@@ -324,7 +336,6 @@ function renderScopedRanking(config, state, { preservePrerenderedTable = false }
     filterRankingRows(state.allRankingRows, state.activeScope, state.showTerritories),
     state.sortOrder,
   );
-  updateRankingPageTitle(state, state.activeScope);
   if (!preservePrerenderedTable) {
     renderRankingTable(config, state, rankingRows);
   }
@@ -339,12 +350,13 @@ function sortRankingRows(rankingRows, sortOrder) {
   return [...rankingRows].sort((countryA, countryB) => direction * (countryA.value - countryB.value));
 }
 
-function updateRankingPageTitle(state, scope) {
-  if (!state.rankingIndicatorLabel) {
+function updateRankingPageTitle(config, state, scope) {
+  const rankingIndicatorLabel = getRankingIndicatorLabel(config);
+  if (!rankingIndicatorLabel) {
     return;
   }
 
-  const title = getRankingPageTitle(state, scope);
+  const title = getRankingPageTitle(state, scope, rankingIndicatorLabel);
 
   if (state.elements.pageTitle) {
     state.elements.pageTitle.textContent = title;
@@ -359,7 +371,7 @@ function getDocumentTitleSuffix(documentTitle, pageTitle) {
   return title.startsWith(pageTitleText) ? title.slice(pageTitleText.length) : "";
 }
 
-function getRankingPageTitle(state, scope) {
+function getRankingPageTitle(state, scope, rankingIndicatorLabel) {
   const localeConfig = localeConfigs[getPageLocale()] ?? {};
   const scopeLabel = scope?.type === "region"
     ? localeConfig.rankingTitleRegionForms?.[scope.label] ?? translateScopeLabel(scope)
@@ -372,7 +384,7 @@ function getRankingPageTitle(state, scope) {
       ? "{indicator} by Country ({year})"
       : "{indicator} by Country — {scope} ({year})");
   return formatRankingTitleTemplate(template, {
-    indicator: state.rankingIndicatorLabel,
+    indicator: rankingIndicatorLabel,
     scope: scopeLabel,
     year: state.selectedYear ?? "",
   });
@@ -446,7 +458,9 @@ function renderRankingTable(config, state, rankingRows) {
     countryCell.append(countryLink);
 
     appendRankingValueCells(valueCell, barCell, {
-      href: pagePathSegment ? `${localizedRootHref}countries/${country.slug}/${pagePathSegment}/` : "",
+      href: pagePathSegment
+        ? `${localizedRootHref}countries/${country.slug}/${pagePathSegment}/${config.countryPageFragment ? `#${config.countryPageFragment}` : ""}`
+        : "",
       text: formatCompactDisplayValue(country.value, displayScale),
       ariaLabel: translate("ui.openCountryIndicatorPageAria", "Open {country} {indicator} page", {
         country: accessibleCountryName,
@@ -515,7 +529,8 @@ function showRankingSummaryLoading(state) {
 }
 
 function getRankingIndicatorLabel(config) {
-  return translateIndicatorLabel(config.rankingIndicatorLabel ?? "");
+  const sourceLabel = config.rankingIndicatorLabel ?? "";
+  return hasIndicatorTranslation(sourceLabel) ? translateIndicatorLabel(sourceLabel) : "";
 }
 
 function getValueBarScale(rankingRows) {

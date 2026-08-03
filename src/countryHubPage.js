@@ -115,7 +115,7 @@ function initializeMapInstruction() {
 
   instruction.textContent = translate(
     "ui.mapInstruction",
-    "Select a country or territory on the map.",
+    instruction.textContent.trim() || "Select a country or territory on the map.",
   );
 }
 

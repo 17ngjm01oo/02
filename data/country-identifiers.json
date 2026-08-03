@@ -12,8 +12,7 @@
         "unctadTrade": "840",
         "unctadServicesTrade": "840",
         "worldMapTopojson": "840",
-        "unNationalAccounts": "United States",
-        "unsdArea": "United States of America"
+        "unNationalAccounts": "United States"
       }
     },
     "JPN": {
@@ -64,8 +63,7 @@
         "unctadTrade": "344",
         "unctadServicesTrade": "344",
         "worldMapTopojson": "344",
-        "unNationalAccounts": "China, Hong Kong SAR",
-        "unsdArea": "China, Hong Kong SAR"
+        "unNationalAccounts": "China, Hong Kong SAR"
       }
     },
     "MAC": {
@@ -78,8 +76,7 @@
         "unctadTrade": "446",
         "unctadServicesTrade": "446",
         "worldMapTopojson": "446",
-        "unNationalAccounts": "China, Macao Special Administrative Region",
-        "unsdArea": "China, Macao SAR"
+        "unNationalAccounts": "China, Macao Special Administrative Region"
       }
     },
     "DEU": {
@@ -118,8 +115,7 @@
         "unctadTrade": "826",
         "unctadServicesTrade": "826",
         "worldMapTopojson": "826",
-        "unNationalAccounts": "United Kingdom of Great Britain and Northern Ireland",
-        "unsdArea": "United Kingdom of Great Britain and Northern Ireland"
+        "unNationalAccounts": "United Kingdom of Great Britain and Northern Ireland"
       }
     },
     "ITA": {
@@ -345,8 +341,7 @@
         "unctadTrade": "583",
         "unctadServicesTrade": "583",
         "worldMapTopojson": "583",
-        "unNationalAccounts": "Micronesia (Federated States of)",
-        "unsdArea": "Micronesia (Federated States of)"
+        "unNationalAccounts": "Micronesia (Federated States of)"
       }
     },
     "KIR": {
@@ -449,8 +444,7 @@
         "unctadTrade": "876",
         "unctadServicesTrade": "876",
         "worldMapTopojson": "876",
-        "unNationalAccounts": "Wallis and Futuna",
-        "unsdArea": "Wallis and Futuna Islands"
+        "unNationalAccounts": "Wallis and Futuna"
       }
     },
     "KOR": {
@@ -463,8 +457,7 @@
         "unctadTrade": "410",
         "unctadServicesTrade": "410",
         "worldMapTopojson": "410",
-        "unNationalAccounts": "Republic of Korea",
-        "unsdArea": "Republic of Korea"
+        "unNationalAccounts": "Republic of Korea"
       }
     },
     "PRK": {
@@ -477,8 +470,7 @@
         "unctadTrade": "408",
         "unctadServicesTrade": "408",
         "worldMapTopojson": "408",
-        "unNationalAccounts": "Democratic People's Republic of Korea",
-        "unsdArea": "Democratic People's Republic of Korea"
+        "unNationalAccounts": "Democratic People's Republic of Korea"
       }
     },
     "IDN": {
@@ -751,8 +743,7 @@
         "unctadTrade": "364",
         "unctadServicesTrade": "364",
         "worldMapTopojson": "364",
-        "unNationalAccounts": "Iran, Islamic Republic of",
-        "unsdArea": "Iran (Islamic Republic of)"
+        "unNationalAccounts": "Iran, Islamic Republic of"
       }
     },
     "IRQ": {
@@ -778,8 +769,7 @@
         "unctadTrade": "760",
         "unctadServicesTrade": "760",
         "worldMapTopojson": "760",
-        "unNationalAccounts": "Syrian Arab Republic",
-        "unsdArea": "Syrian Arab Republic"
+        "unNationalAccounts": "Syrian Arab Republic"
       }
     },
     "LBN": {
@@ -1327,8 +1317,7 @@
         "unctadTrade": "534",
         "unctadServicesTrade": "534",
         "worldMapTopojson": "534",
-        "unNationalAccounts": "Sint Maarten (Dutch part)",
-        "unsdArea": "Sint Maarten (Dutch part)"
+        "unNationalAccounts": "Sint Maarten (Dutch part)"
       }
     },
     "TCA": {
@@ -1364,8 +1353,7 @@
       "sourceIds": {
         "unMigrantStock": "850",
         "worldBankWdi": "VIR",
-        "unNationalAccounts": "U.S. Virgin Islands",
-        "unsdArea": "United States Virgin Islands"
+        "unNationalAccounts": "U.S. Virgin Islands"
       }
     },
     "VEN": {
@@ -1378,8 +1366,7 @@
         "unctadTrade": "862",
         "unctadServicesTrade": "862",
         "worldMapTopojson": "862",
-        "unNationalAccounts": "Venezuela (Bolivarian Republic of)",
-        "unsdArea": "Venezuela (Bolivarian Republic of)"
+        "unNationalAccounts": "Venezuela (Bolivarian Republic of)"
       }
     },
     "FLK": {
@@ -1391,8 +1378,7 @@
         "unctadTrade": "238",
         "unctadServicesTrade": "238",
         "worldMapTopojson": "238",
-        "unNationalAccounts": "Falkland Islands",
-        "unsdArea": "Falkland Islands (Malvinas)"
+        "unNationalAccounts": "Falkland Islands"
       }
     },
     "GUF": {
@@ -1456,8 +1442,7 @@
         "unctadTrade": "068",
         "unctadServicesTrade": "068",
         "worldMapTopojson": "068",
-        "unNationalAccounts": "Bolivia (Plurinational State of)",
-        "unsdArea": "Bolivia (Plurinational State of)"
+        "unNationalAccounts": "Bolivia (Plurinational State of)"
       }
     },
     "PRY": {
@@ -1509,8 +1494,7 @@
         "unctadTrade": "643",
         "unctadServicesTrade": "643",
         "worldMapTopojson": "643",
-        "unNationalAccounts": "Russian Federation",
-        "unsdArea": "Russian Federation"
+        "unNationalAccounts": "Russian Federation"
       }
     },
     "ZAF": {
@@ -1669,8 +1653,8 @@
       "m49": "336",
       "sourceIds": {
         "unMigrantStock": "336",
-        "unNationalAccounts": "Vatican City",
-        "unsdArea": "Holy See"
+        "worldMapTopojson": "336",
+        "unNationalAccounts": "Vatican City"
       }
     },
     "SMR": {
@@ -1804,8 +1788,7 @@
         "unctadTrade": "498",
         "unctadServicesTrade": "498",
         "worldMapTopojson": "498",
-        "unNationalAccounts": "Republic of Moldova",
-        "unsdArea": "Republic of Moldova"
+        "unNationalAccounts": "Republic of Moldova"
       }
     },
     "UKR": {
@@ -2039,8 +2022,7 @@
         "unctadTrade": "528",
         "unctadServicesTrade": "528",
         "worldMapTopojson": "528",
-        "unNationalAccounts": "Netherlands",
-        "unsdArea": "Netherlands (Kingdom of the)"
+        "unNationalAccounts": "Netherlands"
       }
     },
     "POL": {
@@ -2144,8 +2126,7 @@
         "unctadTrade": "096",
         "unctadServicesTrade": "096",
         "worldMapTopojson": "096",
-        "unNationalAccounts": "Brunei Darussalam",
-        "unsdArea": "Brunei Darussalam"
+        "unNationalAccounts": "Brunei Darussalam"
       }
     },
     "KHM": {
@@ -2171,8 +2152,7 @@
         "unctadTrade": "418",
         "unctadServicesTrade": "418",
         "worldMapTopojson": "418",
-        "unNationalAccounts": "Lao People's Democratic Republic",
-        "unsdArea": "Lao People's Democratic Republic"
+        "unNationalAccounts": "Lao People's Democratic Republic"
       }
     },
     "MYS": {
@@ -2263,8 +2243,7 @@
         "unctadTrade": "704",
         "unctadServicesTrade": "704",
         "worldMapTopojson": "704",
-        "unNationalAccounts": "Viet Nam",
-        "unsdArea": "Viet Nam"
+        "unNationalAccounts": "Viet Nam"
       }
     },
     "WBG": {
@@ -2279,8 +2258,8 @@
         "unctadServicesTrade": "275",
         "worldMapTopojson": "275",
         "unNationalAccounts": "State of Palestine",
-        "unsdArea": "State of Palestine",
-        "undpHdi": "PSE"
+        "undpHdi": "PSE",
+        "undataCountryProfile": "PSE"
       }
     },
     "DZA": {
@@ -2436,8 +2415,7 @@
         "unctadTrade": "178",
         "unctadServicesTrade": "178",
         "worldMapTopojson": "178",
-        "unNationalAccounts": "Congo",
-        "unsdArea": "Congo"
+        "unNationalAccounts": "Congo"
       }
     },
     "COD": {
@@ -2450,8 +2428,7 @@
         "unctadTrade": "180",
         "unctadServicesTrade": "180",
         "worldMapTopojson": "180",
-        "unNationalAccounts": "Democratic Republic of the Congo",
-        "unsdArea": "Democratic Republic of the Congo"
+        "unNationalAccounts": "Democratic Republic of the Congo"
       }
     },
     "CIV": {
@@ -2913,8 +2890,7 @@
         "unctadTrade": "728",
         "unctadServicesTrade": "728",
         "worldMapTopojson": "728",
-        "unNationalAccounts": "South Sudan",
-        "unsdArea": "Republic of South Sudan"
+        "unNationalAccounts": "South Sudan"
       }
     },
     "SDN": {
@@ -2940,8 +2916,7 @@
         "unctadTrade": "834",
         "unctadServicesTrade": "834",
         "worldMapTopojson": "834",
-        "unNationalAccounts": "Tanzania",
-        "unsdArea": "United Republic of Tanzania"
+        "unNationalAccounts": "Tanzania"
       }
     },
     "TGO": {

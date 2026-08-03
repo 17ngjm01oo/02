@@ -10,7 +10,7 @@ const {
   unMigrantStock,
   worldBankEnvironment,
   unNationalAccountsGni,
-  unsdDemographicYearbookArea,
+  undataArea,
   worldBankMilitarySpending,
   undpHdi,
 } = dataSources;
@@ -562,8 +562,8 @@ export const seriesConfigs = [
   },
   {
     id: "area",
-    ...unsdDemographicYearbookArea,
-    indicatorCode: "UNSD.DYB.AREA.K2",
+    ...undataArea,
+    indicatorCode: "UNDATA.PROFILE.AREA.K2",
     titleTemplate: "Area",
     displayUnit: "km²",
     ...valueFormats.areaMagnitude,

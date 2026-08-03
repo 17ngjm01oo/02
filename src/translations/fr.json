@@ -1,5 +1,4 @@
-// Generated from src/translations.json by scripts/generate-translations-module.py.
-export const translation = {
+{
   "ui": {
     "home": "Accueil",
     "countries": "Pays",
@@ -809,4 +808,4 @@ export const translation = {
       "forest-area": "Superficie forestière en pourcentage de la superficie terrestre totale."
     }
   }
-};
+}

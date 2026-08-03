@@ -4,6 +4,7 @@ import {
   localeConfigs,
   supportedLocales,
   translate,
+  waitForFullTranslation,
 } from "./localization.js";
 import {
   isReducedMotionPreferred,
@@ -11,6 +12,8 @@ import {
   touchOverlayScrollCloseThreshold,
 } from "./responsive.js";
 import { getThemePreference, setThemePreference } from "./theme.js";
+
+await waitForFullTranslation();
 
 const navigationConfigUrl = new URL("./siteNavigation.json", import.meta.url);
 const menus = Array.from(document.querySelectorAll(".site-menu"));

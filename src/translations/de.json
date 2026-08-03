@@ -1,5 +1,4 @@
-// Generated from src/translations.json by scripts/generate-translations-module.py.
-export const translation = {
+{
   "ui": {
     "home": "Startseite",
     "countries": "Länder",
@@ -809,4 +808,4 @@ export const translation = {
       "forest-area": "Waldfläche als Anteil an der gesamten Landfläche."
     }
   }
-};
+}

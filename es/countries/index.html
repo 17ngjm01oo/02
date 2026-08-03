@@ -105,7 +105,20 @@
               <details class="category-panel" aria-labelledby="category-heading">
                 <summary class="category-heading" id="category-heading">Categorías</summary>
               </details>
-              <div class="country-hub-controls" id="countryHubControls"></div>
+              <div class="country-hub-controls" id="countryHubControls">
+                <button
+                  class="territory-toggle"
+                  type="button"
+                  data-ranking-control="territories"
+                  data-territories-label="Territorios"
+                  data-show-territories-label="Mostrar"
+                  data-hide-territories-label="Ocultar"
+                  data-toggle-territories-aria="{action} territorios del {context}"
+                  data-territory-context="Países"
+                  aria-pressed="true"
+                  aria-label="Ocultar territorios del Países"
+                >Territorios</button>
+              </div>
             </div>
           </div>
           <div class="category-list filter-option-list" id="regionList" hidden></div>

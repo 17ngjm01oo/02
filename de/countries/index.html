@@ -105,7 +105,20 @@
               <details class="category-panel" aria-labelledby="category-heading">
                 <summary class="category-heading" id="category-heading">Kategorien</summary>
               </details>
-              <div class="country-hub-controls" id="countryHubControls"></div>
+              <div class="country-hub-controls" id="countryHubControls">
+                <button
+                  class="territory-toggle"
+                  type="button"
+                  data-ranking-control="territories"
+                  data-territories-label="Gebiete"
+                  data-show-territories-label="Anzeigen"
+                  data-hide-territories-label="Ausblenden"
+                  data-toggle-territories-aria="Gebiete in {context} {action}"
+                  data-territory-context="Länder"
+                  aria-pressed="true"
+                  aria-label="Gebiete in Länder Ausblenden"
+                >Gebiete</button>
+              </div>
             </div>
           </div>
           <div class="category-list filter-option-list" id="regionList" hidden></div>

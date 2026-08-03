@@ -105,7 +105,20 @@
               <details class="category-panel" aria-labelledby="category-heading">
                 <summary class="category-heading" id="category-heading">Kategoriler</summary>
               </details>
-              <div class="country-hub-controls" id="countryHubControls"></div>
+              <div class="country-hub-controls" id="countryHubControls">
+                <button
+                  class="territory-toggle"
+                  type="button"
+                  data-ranking-control="territories"
+                  data-territories-label="Bağımlı bölgeler"
+                  data-show-territories-label="Göster"
+                  data-hide-territories-label="Gizle"
+                  data-toggle-territories-aria="{context} içinde bölgeleri {action}"
+                  data-territory-context="Ülkeler"
+                  aria-pressed="true"
+                  aria-label="Ülkeler içinde bölgeleri Gizle"
+                >Bağımlı bölgeler</button>
+              </div>
             </div>
           </div>
           <div class="category-list filter-option-list" id="regionList" hidden></div>

@@ -1,37 +1,51 @@
-import { getCriticalTranslation, loadTranslation } from "./translations.js";
+import { loadTranslation } from "./translations.js";
 export { defaultLocale, localeConfigs, supportedLocales } from "./locales.js";
 import { defaultLocale, localeConfigs } from "./locales.js";
 
-const translationLoadTimeoutMs = 2_500;
+const translationLoadAttemptTimeouts = [4_000, 8_000];
 const pageLocale = getPageLocale();
-let localeDictionary = getCriticalTranslation(pageLocale);
+const isCountryIndicatorPage = Boolean(document.body.dataset.countryPageSeriesIds);
+let localeDictionary = {};
 let fullTranslationLoaded = pageLocale === defaultLocale;
+const fullTranslationPromise = initializeLocaleDictionary(pageLocale);
 
-await initializeLocaleDictionary(pageLocale);
+if (!isCountryIndicatorPage) {
+  await fullTranslationPromise;
+}
 
 async function initializeLocaleDictionary(locale) {
-  let timeoutId;
-  const fullTranslationPromise = loadTranslation(locale)
-    .then((dictionary) => {
-      localeDictionary = dictionary;
-      fullTranslationLoaded = true;
-      return "loaded";
-    })
-    .catch((error) => {
-      console.error(`[Localization] Failed to load the ${locale} translation; using critical UI text.`, error);
-      return "failed";
-    });
-  const timeoutPromise = new Promise((resolve) => {
-    timeoutId = window.setTimeout(() => {
-      console.warn(
-        `[Localization] The ${locale} translation did not load within ${translationLoadTimeoutMs} ms; continuing with critical UI text.`,
-      );
-      resolve("timed-out");
-    }, translationLoadTimeoutMs);
-  });
+  if (locale === defaultLocale) {
+    return true;
+  }
 
-  await Promise.race([fullTranslationPromise, timeoutPromise]);
-  window.clearTimeout(timeoutId);
+  for (let attempt = 0; attempt < translationLoadAttemptTimeouts.length; attempt += 1) {
+    const timeoutMs = translationLoadAttemptTimeouts[attempt];
+    const controller = new AbortController();
+    const timeoutId = window.setTimeout(() => controller.abort(), timeoutMs);
+
+    try {
+      localeDictionary = await loadTranslation(locale, { signal: controller.signal });
+      fullTranslationLoaded = true;
+      return true;
+    } catch (error) {
+      const hasNextAttempt = attempt + 1 < translationLoadAttemptTimeouts.length;
+      if (hasNextAttempt) {
+        console.warn(
+          `[Localization] Failed to load the ${locale} translation on attempt ${attempt + 1}; retrying.`,
+          error,
+        );
+      } else {
+        console.error(
+          `[Localization] Failed to load the ${locale} translation after ${attempt + 1} attempts.`,
+          error,
+        );
+      }
+    } finally {
+      window.clearTimeout(timeoutId);
+    }
+  }
+
+  return false;
 }
 
 export function getPageLocale() {
@@ -40,6 +54,10 @@ export function getPageLocale() {
 
 export function hasFullTranslation() {
   return fullTranslationLoaded;
+}
+
+export function waitForFullTranslation() {
+  return fullTranslationPromise;
 }
 
 export function getLocalizedRootHref(rootHref = document.body.dataset.rootHref ?? "./") {
@@ -85,6 +103,18 @@ export function translateRegionLabel(label) {
 
 export function translateIndicatorLabel(label) {
   return getLocaleDictionary().indicators?.[label] ?? label;
+}
+
+export function hasIndicatorTranslation(label) {
+  if (!label) {
+    return false;
+  }
+
+  if (getPageLocale() === defaultLocale) {
+    return true;
+  }
+
+  return Object.prototype.hasOwnProperty.call(getLocaleDictionary().indicators ?? {}, label);
 }
 
 export function translateIndicatorInfo(kind, key, fallback = "") {

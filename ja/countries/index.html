@@ -105,7 +105,20 @@
               <details class="category-panel" aria-labelledby="category-heading">
                 <summary class="category-heading" id="category-heading">カテゴリ</summary>
               </details>
-              <div class="country-hub-controls" id="countryHubControls"></div>
+              <div class="country-hub-controls" id="countryHubControls">
+                <button
+                  class="territory-toggle"
+                  type="button"
+                  data-ranking-control="territories"
+                  data-territories-label="地域等"
+                  data-show-territories-label="表示する"
+                  data-hide-territories-label="非表示にする"
+                  data-toggle-territories-aria="{context}の地域等を{action}"
+                  data-territory-context="国一覧"
+                  aria-pressed="true"
+                  aria-label="国一覧の地域等を非表示にする"
+                >地域等</button>
+              </div>
             </div>
           </div>
           <div class="category-list filter-option-list" id="regionList" hidden></div>

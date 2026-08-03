@@ -1,5 +1,4 @@
-// Generated from src/translations.json by scripts/generate-translations-module.py.
-export const translation = {
+{
   "ui": {
     "home": "ホーム",
     "countries": "国一覧",
@@ -809,4 +808,4 @@ export const translation = {
       "forest-area": "陸地面積に占める森林の割合。"
     }
   }
-};
+}

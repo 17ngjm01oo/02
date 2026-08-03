@@ -1,5 +1,4 @@
-// Generated from src/translations.json by scripts/generate-translations-module.py.
-export const translation = {
+{
   "ui": {
     "home": "홈",
     "countries": "국가",
@@ -809,4 +808,4 @@ export const translation = {
       "forest-area": "전체 육지 면적에서 산림이 차지하는 비율."
     }
   }
-};
+}

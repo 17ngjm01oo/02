@@ -10,6 +10,7 @@ const MAP_PADDING = -18;
 const MAP_DATA_PATH = "data/geo/countries-50m.json";
 const COUNTRY_IDENTIFIERS_PATH = "data/country-identifiers.json";
 const INACTIVE_COUNTRY_COLOR = "var(--world-map-inactive-country)";
+const OCEANIA_FOCUS_BOUNDS = [112, -45, 180, -2];
 const hoverTooltipMedia = window.matchMedia(hoverPreferredQuery);
 const REGION_COLORS = {
   Asia: "#D3B25A",
@@ -28,7 +29,7 @@ const MAP_FOCUS_BOUNDS = {
   Africa: [-17, -34, 53, 35],
   "North America": [-172, 7, -52, 72],
   "South America": [-79, -53, -37, 9],
-  Oceania: [112, -45, 180, -2],
+  Oceania: OCEANIA_FOCUS_BOUNDS,
 };
 const COUNTRY_FOCUS_BOUNDS = {
   USA: [-164, 19, -60, 71],
@@ -37,13 +38,15 @@ const COUNTRY_FOCUS_BOUNDS = {
   PRT: [-10, 36, -6, 43],
   NLD: [3.6, 50.8, 7, 53.4],
   CYP: [32.3, 34.45, 34.6, 35.65],
+  VAT: [12.407, 41.88045, 12.462, 41.92295],
   JPN: [127, 29.5, 145, 45],
   RUS: [20, 37, 120, 75],
   ZAF: [18, -34.5, 32, -22.5],
   AUS: [113, -44, 154, -10],
   FJI: [175, -22, 180, -12],
   KIR: [170, 0, 177, 5],
-  TUV: [176, -11, 180, -5],
+  TKL: OCEANIA_FOCUS_BOUNDS,
+  TUV: OCEANIA_FOCUS_BOUNDS,
   GUF: [-55, 2, -51, 6],
   GLP: [-62.2, 15.6, -60.8, 16.9],
   MTQ: [-61.5, 14.2, -60.5, 15.1],
@@ -52,7 +55,7 @@ const COUNTRY_FOCUS_BOUNDS = {
   MYT: [44.7, -13.25, 45.65, -12.45],
   REU: [54.7, -21.5, 56, -20.4],
   GIB: [-5.4, 36.02, -5.3, 36.16],
-  PCN: [-130.5, -25.45, -129.7, -24.75],
+  PCN: OCEANIA_FOCUS_BOUNDS,
   NZL: [165, -48, 180, -33],
 };
 

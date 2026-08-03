@@ -78,6 +78,7 @@ async function initializePage() {
 
   updateSeriesVisibility(countrySeriesConfigs);
   updateSeriesHeadings(visibleSeriesConfigs);
+  centerLinkedIndicator();
   initializeDataTableScrollCues();
   initializeIndicatorInfoTooltips();
   initializeCompareSearches(visibleSeriesConfigs);
@@ -98,6 +99,33 @@ async function initializePage() {
   });
 
   await Promise.all(visibleSeriesConfigs.map((seriesConfig) => loadAndRenderSeries(seriesConfig, chartJsPromise)));
+}
+
+window.addEventListener("hashchange", centerLinkedIndicator);
+
+function centerLinkedIndicator() {
+  let fragment = "";
+  try {
+    fragment = decodeURIComponent(window.location.hash.slice(1));
+  } catch {
+    return;
+  }
+  if (!fragment.startsWith("indicator-")) {
+    return;
+  }
+
+  const target = document.getElementById(fragment);
+  const indicatorBlock = target?.closest(".indicator-block");
+  if (!target?.matches("[data-country-indicator-title]") || indicatorBlock?.hidden) {
+    return;
+  }
+
+  requestAnimationFrame(() => {
+    const targetRect = target.getBoundingClientRect();
+    const targetCenter = window.scrollY + targetRect.top + targetRect.height / 2;
+    const viewportFocusPoint = window.innerHeight * 0.2;
+    window.scrollTo({ top: Math.max(0, targetCenter - viewportFocusPoint), behavior: "auto" });
+  });
 }
 
 function navigateToCountry(country) {

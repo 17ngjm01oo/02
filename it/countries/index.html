@@ -105,7 +105,20 @@
               <details class="category-panel" aria-labelledby="category-heading">
                 <summary class="category-heading" id="category-heading">Categorie</summary>
               </details>
-              <div class="country-hub-controls" id="countryHubControls"></div>
+              <div class="country-hub-controls" id="countryHubControls">
+                <button
+                  class="territory-toggle"
+                  type="button"
+                  data-ranking-control="territories"
+                  data-territories-label="Territori"
+                  data-show-territories-label="Mostra"
+                  data-hide-territories-label="Nascondi"
+                  data-toggle-territories-aria="{action} i territori in {context}"
+                  data-territory-context="Paesi"
+                  aria-pressed="true"
+                  aria-label="Nascondi i territori in Paesi"
+                >Territori</button>
+              </div>
             </div>
           </div>
           <div class="category-list filter-option-list" id="regionList" hidden></div>

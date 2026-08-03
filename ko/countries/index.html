@@ -105,7 +105,20 @@
               <details class="category-panel" aria-labelledby="category-heading">
                 <summary class="category-heading" id="category-heading">범주</summary>
               </details>
-              <div class="country-hub-controls" id="countryHubControls"></div>
+              <div class="country-hub-controls" id="countryHubControls">
+                <button
+                  class="territory-toggle"
+                  type="button"
+                  data-ranking-control="territories"
+                  data-territories-label="속령"
+                  data-show-territories-label="표시"
+                  data-hide-territories-label="숨기기"
+                  data-toggle-territories-aria="{context}의 속령 {action}"
+                  data-territory-context="국가"
+                  aria-pressed="true"
+                  aria-label="국가의 속령 숨기기"
+                >속령</button>
+              </div>
             </div>
           </div>
           <div class="category-list filter-option-list" id="regionList" hidden></div>

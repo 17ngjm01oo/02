@@ -33,12 +33,20 @@ export function initializeTerritoryToggle({
 
 function updateButton(button, isEnabled, ariaContext) {
   button.setAttribute("aria-pressed", String(isEnabled));
+  const resolvedAriaContext = button.dataset.territoryContext || ariaContext;
   const action = isEnabled
-    ? translate("ui.hideTerritories", "Hide")
-    : translate("ui.showTerritories", "Show");
-  button.setAttribute("aria-label", translate("ui.toggleTerritoriesAria", "{action} territories in {context}", {
-    action,
-    context: ariaContext,
-  }));
-  button.textContent = translate("ui.territories", "Territories");
+    ? translate("ui.hideTerritories", button.dataset.hideTerritoriesLabel || "Hide")
+    : translate("ui.showTerritories", button.dataset.showTerritoriesLabel || "Show");
+  button.setAttribute("aria-label", translate(
+    "ui.toggleTerritoriesAria",
+    button.dataset.toggleTerritoriesAria || "{action} territories in {context}",
+    {
+      action,
+      context: resolvedAriaContext,
+    },
+  ));
+  button.textContent = translate(
+    "ui.territories",
+    button.dataset.territoriesLabel || button.textContent.trim() || "Territories",
+  );
 }

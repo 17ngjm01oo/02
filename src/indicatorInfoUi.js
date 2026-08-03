@@ -4,7 +4,9 @@ import {
   getIndicatorInfoData,
 } from "./indicatorInfo.js";
 import { isTouchPreferred, touchOverlayScrollCloseThreshold } from "./responsive.js";
+const countryIndicatorTooltipViewportPadding = 8;
 let touchTooltipScrollStartY = null;
+let tooltipResizeFrame = null;
 
 export function createIndicatorInfoButton({
   seriesId = "",
@@ -41,6 +43,11 @@ export function initializeIndicatorInfoTooltips(root = document) {
   });
 
   buttons.forEach((button) => {
+    if (isCountryIndicatorInfoButton(button)) {
+      button.addEventListener("pointerenter", () => updateCountryIndicatorTooltipPlacement(button));
+      button.addEventListener("focus", () => updateCountryIndicatorTooltipPlacement(button));
+    }
+
     button.addEventListener("click", (event) => {
       if (!isTouchTooltipPreferred()) {
         return;
@@ -48,6 +55,7 @@ export function initializeIndicatorInfoTooltips(root = document) {
 
       event.preventDefault();
       event.stopPropagation();
+      updateCountryIndicatorTooltipPlacement(button);
       closeOpenInfoButtons(button);
       button.classList.toggle("is-open");
       touchTooltipScrollStartY = button.classList.contains("is-open") ? window.scrollY : null;
@@ -68,6 +76,7 @@ export function initializeIndicatorInfoTooltips(root = document) {
         tooltip.setAttribute("role", "tooltip");
         tooltip.textContent = infoText;
         button.append(tooltip);
+        updateCountryIndicatorTooltipPlacement(button);
       });
     });
   }
@@ -95,6 +104,48 @@ export function initializeIndicatorInfoTooltips(root = document) {
     if (event.key === "Escape") {
       closeOpenInfoButtons();
     }
+  });
+  window.addEventListener("resize", scheduleCountryIndicatorTooltipPlacementUpdate, { passive: true });
+  window.visualViewport?.addEventListener("resize", scheduleCountryIndicatorTooltipPlacementUpdate, { passive: true });
+}
+
+function isCountryIndicatorInfoButton(button) {
+  return button.dataset.indicatorInfoTooltipPlacement === "country-indicator";
+}
+
+function updateCountryIndicatorTooltipPlacement(button) {
+  if (!isCountryIndicatorInfoButton(button)) {
+    return;
+  }
+
+  const buttonRect = button.getBoundingClientRect();
+  const visualViewport = window.visualViewport;
+  const viewportLeft = visualViewport?.offsetLeft ?? 0;
+  const viewportWidth = visualViewport?.width ?? document.documentElement.clientWidth;
+  const viewportRight = viewportLeft + viewportWidth;
+  const buttonCenter = buttonRect.left + buttonRect.width / 2;
+  const side = buttonCenter > viewportLeft + viewportWidth / 2 ? "left" : "right";
+  const availableWidth = side === "left"
+    ? buttonRect.right - viewportLeft - countryIndicatorTooltipViewportPadding
+    : viewportRight - buttonRect.left - countryIndicatorTooltipViewportPadding;
+
+  button.dataset.indicatorInfoTooltipSide = side;
+  button.style.setProperty(
+    "--indicator-info-tooltip-available-width",
+    `${Math.max(0, Math.floor(availableWidth))}px`,
+  );
+}
+
+function scheduleCountryIndicatorTooltipPlacementUpdate() {
+  if (tooltipResizeFrame !== null) {
+    return;
+  }
+
+  tooltipResizeFrame = window.requestAnimationFrame(() => {
+    tooltipResizeFrame = null;
+    document
+      .querySelectorAll('.indicator-info-button[data-indicator-info-tooltip-placement="country-indicator"]')
+      .forEach(updateCountryIndicatorTooltipPlacement);
   });
 }
 
