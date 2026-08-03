@@ -41,7 +41,7 @@
     <script type="module" src="../../../../../src/siteMenu.js"></script>
     <script type="module" src="../../../../../src/countryOverviewPage.js"></script>
   </head>
-  <body data-locale="ko" data-country-code="GRC" data-root-href="../../../../../" data-country-root-href="../../" data-country-overview-category="population">
+  <body data-locale="ko" data-country-code="GRC" data-root-href="../../../../../" data-country-overview-category="population">
     <main class="page-shell">
       <header class="site-brand">
         <a class="site-brand-link" href="../../../../../ko/">
@@ -76,7 +76,7 @@
       <section class="indicators-section country-overview-layout" aria-labelledby="country-overview-title">
         <div class="indicators-card country-overview-card">
           <header class="page-header country-data-header">
-        <h1 id="country-overview-title">그리스의 인구</h1>
+        <h1 id="country-overview-title"><img class="flag-image flag-image-gr country-flag" src="../../../../../public/flags/gr.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" />그리스의 인구</h1>
           </header>
 
           <div class="world-map country-overview-map" id="countryOverviewMap" aria-label="그리스 지도" aria-live="polite">
@@ -96,43 +96,8 @@
                 <a class="country-overview-category-button" href="../../categories/environment/" data-country-overview-category="environment">환경</a>
               </div>
             </div>
-            <div class="country-overview-groups" id="countryOverviewGroups" aria-live="polite" data-static-country-overview="true">
+            <div class="country-overview-groups" data-static-country-overview="true">
               <section class="country-overview-section">
-                <div class="country-age-composition" data-static-category-block="true">
-                  <h3 class="country-age-composition-heading">연령대별 인구 구성</h3>
-                  <div class="country-gva-industry-chart country-age-composition-chart">
-                    <svg class="country-gva-industry-pie" viewBox="0 0 100 100" role="img" aria-label="연령대별 인구 구성, 2024">
-                      <path d="M 50 50 L 81.01 21.67 A 42 42 0 0 0 50.00 8.00 Z" fill="#7aa7d9"></path>
-                      <text class="country-pie-share-label" x="62.51" y="21.64">13.2%</text>
-                      <path d="M 50 50 L 91.83 46.22 A 42 42 0 0 0 81.01 21.67 Z" fill="#80c7a6"></path>
-                      <text class="country-pie-share-label" x="78.37" y="37.50">10.3%</text>
-                      <path d="M 50 50 L 8.09 47.20 A 42 42 0 1 0 91.83 46.22 Z" fill="#e4b36a"></path>
-                      <text class="country-pie-share-label" x="50.36" y="81.00">52.5%</text>
-                      <path d="M 50 50 L 50.00 8.00 A 42 42 0 0 0 8.09 47.20 Z" fill="#df8b8b"></path>
-                      <text class="country-pie-share-label" x="28.82" y="27.36">23.9%</text>
-                    </svg>
-                    <ul class="country-gva-industry-legend">
-                      <li><span class="country-gva-industry-legend-marker" style="background-color: #7aa7d9"></span><span>0~14세: 13.2%</span></li>
-                      <li><span class="country-gva-industry-legend-marker" style="background-color: #80c7a6"></span><span>15~24세: 10.3%</span></li>
-                      <li><span class="country-gva-industry-legend-marker" style="background-color: #e4b36a"></span><span>25~64세: 52.5%</span></li>
-                      <li><span class="country-gva-industry-legend-marker" style="background-color: #df8b8b"></span><span>65세 이상: 23.9%</span></li>
-                    </ul>
-                  </div>
-                  <details class="country-profile-table-toggle">
-                    <summary data-ui-text-action>표 보기</summary>
-                    <dl class="country-basic-information-grid country-age-composition-grid" aria-label="연령대별 인구 구성, 2024">
-                      <dt>0~14세</dt>
-                      <dd>13.2%</dd>
-                      <dt>15~24세</dt>
-                      <dd>10.3%</dd>
-                      <dt>25~64세</dt>
-                      <dd>52.5%</dd>
-                      <dt>65세 이상</dt>
-                      <dd>23.9%</dd>
-                    </dl>
-                  </details>
-                  <p class="country-age-composition-note">출처: World Bank World Development Indicators, UN World Population Prospects 2024 기반.</p>
-                </div>
                 <div class="country-profile-indicator-section">
                   <h3 class="country-profile-indicator-heading">인구통계</h3>
                 <div class="country-overview-table-wrap">

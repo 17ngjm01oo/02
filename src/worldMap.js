@@ -61,6 +61,7 @@ export async function renderWorldMap({
   countryList = [],
   rootHref = "../",
   linkRootHref = rootHref,
+  countryPathSuffix = "",
   dataUrl = `${rootHref}${MAP_DATA_PATH}`,
   identifiersUrl = `${rootHref}${COUNTRY_IDENTIFIERS_PATH}`,
   focusCountryCode = "",
@@ -78,7 +79,7 @@ export async function renderWorldMap({
       fetchJson(identifiersUrl, "Country identifiers"),
     ]);
     const mapCountries = feature(topology, topology.objects.countries);
-    const countryLookup = buildCountryLookup(countryList, linkRootHref, countryIdentifiers);
+    const countryLookup = buildCountryLookup(countryList, linkRootHref, countryIdentifiers, countryPathSuffix);
     const svg = createSvg();
     const tooltip = createMapTooltip();
 
@@ -228,7 +229,7 @@ function appendPath(svg, pathData, className) {
   return path;
 }
 
-function buildCountryLookup(countryList, rootHref, countryIdentifiers) {
+function buildCountryLookup(countryList, rootHref, countryIdentifiers, countryPathSuffix) {
   const identifiersByCountry = countryIdentifiers?.countries ?? {};
 
   return countryList.reduce((lookup, country) => {
@@ -238,7 +239,7 @@ function buildCountryLookup(countryList, rootHref, countryIdentifiers) {
       return lookup;
     }
 
-    const href = `${rootHref}countries/${country.slug}/`;
+    const href = `${rootHref}countries/${country.slug}/${countryPathSuffix}`;
     const record = { country, href };
 
     if (mapId) {

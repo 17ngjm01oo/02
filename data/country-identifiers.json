@@ -9,13 +9,9 @@
       "sourceIds": {
         "unMigrantStock": "840",
         "worldBankWdi": "USA",
-        "worldBankAgeComposition": "USA",
         "unctadTrade": "840",
         "unctadServicesTrade": "840",
-        "unComtradeReporter": "840",
-        "unComtradeIsoFallback": "USA",
         "worldMapTopojson": "840",
-        "oecdRevenue": "USA",
         "unNationalAccounts": "United States",
         "unsdArea": "United States of America"
       }
@@ -27,13 +23,9 @@
       "sourceIds": {
         "unMigrantStock": "392",
         "worldBankWdi": "JPN",
-        "worldBankAgeComposition": "JPN",
         "unctadTrade": "392",
         "unctadServicesTrade": "392",
-        "unComtradeReporter": "392",
-        "unComtradeIsoFallback": "JPN",
         "worldMapTopojson": "392",
-        "oecdRevenue": "JPN",
         "unNationalAccounts": "Japan"
       }
     },
@@ -44,13 +36,9 @@
       "sourceIds": {
         "unMigrantStock": "156",
         "worldBankWdi": "CHN",
-        "worldBankAgeComposition": "CHN",
         "unctadTrade": "156",
         "unctadServicesTrade": "156",
-        "unComtradeReporter": "156",
-        "unComtradeIsoFallback": "CHN",
         "worldMapTopojson": "156",
-        "oecdRevenue": "CHN",
         "unNationalAccounts": "China (mainland)"
       }
     },
@@ -62,9 +50,7 @@
         "unMigrantStock": "158",
         "unctadTrade": "158",
         "unctadServicesTrade": "158",
-        "unComtradeReporter": "158",
         "worldMapTopojson": "158",
-        "oecdRevenue": "TWN",
         "unNationalAccounts": "Taiwan"
       }
     },
@@ -75,13 +61,9 @@
       "sourceIds": {
         "unMigrantStock": "344",
         "worldBankWdi": "HKG",
-        "worldBankAgeComposition": "HKG",
         "unctadTrade": "344",
         "unctadServicesTrade": "344",
-        "unComtradeReporter": "344",
-        "unComtradeIsoFallback": "HKG",
         "worldMapTopojson": "344",
-        "oecdRevenue": "HKG",
         "unNationalAccounts": "China, Hong Kong SAR",
         "unsdArea": "China, Hong Kong SAR"
       }
@@ -93,13 +75,9 @@
       "sourceIds": {
         "unMigrantStock": "446",
         "worldBankWdi": "MAC",
-        "worldBankAgeComposition": "MAC",
         "unctadTrade": "446",
         "unctadServicesTrade": "446",
-        "unComtradeReporter": "446",
-        "unComtradeIsoFallback": "MAC",
         "worldMapTopojson": "446",
-        "oecdRevenue": "MAC",
         "unNationalAccounts": "China, Macao Special Administrative Region",
         "unsdArea": "China, Macao SAR"
       }
@@ -111,13 +89,9 @@
       "sourceIds": {
         "unMigrantStock": "276",
         "worldBankWdi": "DEU",
-        "worldBankAgeComposition": "DEU",
         "unctadTrade": "276",
         "unctadServicesTrade": "276",
-        "unComtradeReporter": "276",
-        "unComtradeIsoFallback": "DEU",
         "worldMapTopojson": "276",
-        "oecdRevenue": "DEU",
         "unNationalAccounts": "Germany"
       }
     },
@@ -128,13 +102,9 @@
       "sourceIds": {
         "unMigrantStock": "250",
         "worldBankWdi": "FRA",
-        "worldBankAgeComposition": "FRA",
         "unctadTrade": "250",
         "unctadServicesTrade": "250",
-        "unComtradeReporter": "250",
-        "unComtradeIsoFallback": "FRA",
         "worldMapTopojson": "250",
-        "oecdRevenue": "FRA",
         "unNationalAccounts": "France"
       }
     },
@@ -145,13 +115,9 @@
       "sourceIds": {
         "unMigrantStock": "826",
         "worldBankWdi": "GBR",
-        "worldBankAgeComposition": "GBR",
         "unctadTrade": "826",
         "unctadServicesTrade": "826",
-        "unComtradeReporter": "826",
-        "unComtradeIsoFallback": "GBR",
         "worldMapTopojson": "826",
-        "oecdRevenue": "GBR",
         "unNationalAccounts": "United Kingdom of Great Britain and Northern Ireland",
         "unsdArea": "United Kingdom of Great Britain and Northern Ireland"
       }
@@ -163,13 +129,9 @@
       "sourceIds": {
         "unMigrantStock": "380",
         "worldBankWdi": "ITA",
-        "worldBankAgeComposition": "ITA",
         "unctadTrade": "380",
         "unctadServicesTrade": "380",
-        "unComtradeReporter": "380",
-        "unComtradeIsoFallback": "ITA",
         "worldMapTopojson": "380",
-        "oecdRevenue": "ITA",
         "unNationalAccounts": "Italy"
       }
     },
@@ -180,13 +142,9 @@
       "sourceIds": {
         "unMigrantStock": "124",
         "worldBankWdi": "CAN",
-        "worldBankAgeComposition": "CAN",
         "unctadTrade": "124",
         "unctadServicesTrade": "124",
-        "unComtradeReporter": "124",
-        "unComtradeIsoFallback": "CAN",
         "worldMapTopojson": "124",
-        "oecdRevenue": "CAN",
         "unNationalAccounts": "Canada"
       }
     },
@@ -197,13 +155,9 @@
       "sourceIds": {
         "unMigrantStock": "36",
         "worldBankWdi": "AUS",
-        "worldBankAgeComposition": "AUS",
         "unctadTrade": "036",
         "unctadServicesTrade": "036",
-        "unComtradeReporter": "036",
-        "unComtradeIsoFallback": "AUS",
         "worldMapTopojson": "036",
-        "oecdRevenue": "AUS",
         "unNationalAccounts": "Australia"
       }
     },
@@ -214,13 +168,9 @@
       "sourceIds": {
         "unMigrantStock": "554",
         "worldBankWdi": "NZL",
-        "worldBankAgeComposition": "NZL",
         "unctadTrade": "554",
         "unctadServicesTrade": "554",
-        "unComtradeReporter": "554",
-        "unComtradeIsoFallback": "NZL",
         "worldMapTopojson": "554",
-        "oecdRevenue": "NZL",
         "unNationalAccounts": "New Zealand"
       }
     },
@@ -231,13 +181,9 @@
       "sourceIds": {
         "unMigrantStock": "16",
         "worldBankWdi": "ASM",
-        "worldBankAgeComposition": "ASM",
         "unctadTrade": "016",
         "unctadServicesTrade": "016",
-        "unComtradeReporter": "016",
-        "unComtradeIsoFallback": "ASM",
         "worldMapTopojson": "016",
-        "oecdRevenue": "ASM",
         "unNationalAccounts": "American Samoa"
       }
     },
@@ -249,9 +195,7 @@
         "unMigrantStock": "184",
         "unctadTrade": "184",
         "unctadServicesTrade": "184",
-        "unComtradeReporter": "184",
         "worldMapTopojson": "184",
-        "oecdRevenue": "COK",
         "unNationalAccounts": "Cook Islands"
       }
     },
@@ -262,13 +206,9 @@
       "sourceIds": {
         "unMigrantStock": "242",
         "worldBankWdi": "FJI",
-        "worldBankAgeComposition": "FJI",
         "unctadTrade": "242",
         "unctadServicesTrade": "242",
-        "unComtradeReporter": "242",
-        "unComtradeIsoFallback": "FJI",
         "worldMapTopojson": "242",
-        "oecdRevenue": "FJI",
         "unNationalAccounts": "Fiji"
       }
     },
@@ -279,13 +219,9 @@
       "sourceIds": {
         "unMigrantStock": "316",
         "worldBankWdi": "GUM",
-        "worldBankAgeComposition": "GUM",
         "unctadTrade": "316",
         "unctadServicesTrade": "316",
-        "unComtradeReporter": "316",
-        "unComtradeIsoFallback": "GUM",
         "worldMapTopojson": "316",
-        "oecdRevenue": "GUM",
         "unNationalAccounts": "Guam"
       }
     },
@@ -296,13 +232,9 @@
       "sourceIds": {
         "unMigrantStock": "580",
         "worldBankWdi": "MNP",
-        "worldBankAgeComposition": "MNP",
         "unctadTrade": "580",
         "unctadServicesTrade": "580",
-        "unComtradeReporter": "580",
-        "unComtradeIsoFallback": "MNP",
         "worldMapTopojson": "580",
-        "oecdRevenue": "MNP",
         "unNationalAccounts": "Northern Mariana Islands"
       }
     },
@@ -313,13 +245,9 @@
       "sourceIds": {
         "unMigrantStock": "540",
         "worldBankWdi": "NCL",
-        "worldBankAgeComposition": "NCL",
         "unctadTrade": "540",
         "unctadServicesTrade": "540",
-        "unComtradeReporter": "540",
-        "unComtradeIsoFallback": "NCL",
         "worldMapTopojson": "540",
-        "oecdRevenue": "NCL",
         "unNationalAccounts": "New Caledonia"
       }
     },
@@ -331,9 +259,7 @@
         "unMigrantStock": "570",
         "unctadTrade": "570",
         "unctadServicesTrade": "570",
-        "unComtradeReporter": "570",
         "worldMapTopojson": "570",
-        "oecdRevenue": "NIU",
         "unNationalAccounts": "Niue"
       }
     },
@@ -342,7 +268,6 @@
       "iso2": "PN",
       "m49": null,
       "sourceIds": {
-        "oecdRevenue": "PCN",
         "unNationalAccounts": "Pitcairn"
       }
     },
@@ -353,13 +278,9 @@
       "sourceIds": {
         "unMigrantStock": "598",
         "worldBankWdi": "PNG",
-        "worldBankAgeComposition": "PNG",
         "unctadTrade": "598",
         "unctadServicesTrade": "598",
-        "unComtradeReporter": "598",
-        "unComtradeIsoFallback": "PNG",
         "worldMapTopojson": "598",
-        "oecdRevenue": "PNG",
         "unNationalAccounts": "Papua New Guinea"
       }
     },
@@ -370,13 +291,9 @@
       "sourceIds": {
         "unMigrantStock": "258",
         "worldBankWdi": "PYF",
-        "worldBankAgeComposition": "PYF",
         "unctadTrade": "258",
         "unctadServicesTrade": "258",
-        "unComtradeReporter": "258",
-        "unComtradeIsoFallback": "PYF",
         "worldMapTopojson": "258",
-        "oecdRevenue": "PYF",
         "unNationalAccounts": "French Polynesia"
       }
     },
@@ -387,13 +304,9 @@
       "sourceIds": {
         "unMigrantStock": "90",
         "worldBankWdi": "SLB",
-        "worldBankAgeComposition": "SLB",
         "unctadTrade": "090",
         "unctadServicesTrade": "090",
-        "unComtradeReporter": "090",
-        "unComtradeIsoFallback": "SLB",
         "worldMapTopojson": "090",
-        "oecdRevenue": "SLB",
         "unNationalAccounts": "Solomon Islands"
       }
     },
@@ -405,9 +318,7 @@
         "unMigrantStock": "772",
         "unctadTrade": "772",
         "unctadServicesTrade": "772",
-        "unComtradeReporter": "772",
         "worldMapTopojson": "772",
-        "oecdRevenue": "TKL",
         "unNationalAccounts": "Tokelau"
       }
     },
@@ -418,13 +329,9 @@
       "sourceIds": {
         "unMigrantStock": "548",
         "worldBankWdi": "VUT",
-        "worldBankAgeComposition": "VUT",
         "unctadTrade": "548",
         "unctadServicesTrade": "548",
-        "unComtradeReporter": "548",
-        "unComtradeIsoFallback": "VUT",
         "worldMapTopojson": "548",
-        "oecdRevenue": "VUT",
         "unNationalAccounts": "Vanuatu"
       }
     },
@@ -435,13 +342,9 @@
       "sourceIds": {
         "unMigrantStock": "583",
         "worldBankWdi": "FSM",
-        "worldBankAgeComposition": "FSM",
         "unctadTrade": "583",
         "unctadServicesTrade": "583",
-        "unComtradeReporter": "583",
-        "unComtradeIsoFallback": "FSM",
         "worldMapTopojson": "583",
-        "oecdRevenue": "FSM",
         "unNationalAccounts": "Micronesia (Federated States of)",
         "unsdArea": "Micronesia (Federated States of)"
       }
@@ -453,13 +356,9 @@
       "sourceIds": {
         "unMigrantStock": "296",
         "worldBankWdi": "KIR",
-        "worldBankAgeComposition": "KIR",
         "unctadTrade": "296",
         "unctadServicesTrade": "296",
-        "unComtradeReporter": "296",
-        "unComtradeIsoFallback": "KIR",
         "worldMapTopojson": "296",
-        "oecdRevenue": "KIR",
         "unNationalAccounts": "Kiribati"
       }
     },
@@ -470,13 +369,9 @@
       "sourceIds": {
         "unMigrantStock": "584",
         "worldBankWdi": "MHL",
-        "worldBankAgeComposition": "MHL",
         "unctadTrade": "584",
         "unctadServicesTrade": "584",
-        "unComtradeReporter": "584",
-        "unComtradeIsoFallback": "MHL",
         "worldMapTopojson": "584",
-        "oecdRevenue": "MHL",
         "unNationalAccounts": "Marshall Islands"
       }
     },
@@ -487,13 +382,9 @@
       "sourceIds": {
         "unMigrantStock": "520",
         "worldBankWdi": "NRU",
-        "worldBankAgeComposition": "NRU",
         "unctadTrade": "520",
         "unctadServicesTrade": "520",
-        "unComtradeReporter": "520",
-        "unComtradeIsoFallback": "NRU",
         "worldMapTopojson": "520",
-        "oecdRevenue": "NRU",
         "unNationalAccounts": "Nauru"
       }
     },
@@ -504,13 +395,9 @@
       "sourceIds": {
         "unMigrantStock": "585",
         "worldBankWdi": "PLW",
-        "worldBankAgeComposition": "PLW",
         "unctadTrade": "585",
         "unctadServicesTrade": "585",
-        "unComtradeReporter": "585",
-        "unComtradeIsoFallback": "PLW",
         "worldMapTopojson": "585",
-        "oecdRevenue": "PLW",
         "unNationalAccounts": "Palau"
       }
     },
@@ -521,13 +408,9 @@
       "sourceIds": {
         "unMigrantStock": "882",
         "worldBankWdi": "WSM",
-        "worldBankAgeComposition": "WSM",
         "unctadTrade": "882",
         "unctadServicesTrade": "882",
-        "unComtradeReporter": "882",
-        "unComtradeIsoFallback": "WSM",
         "worldMapTopojson": "882",
-        "oecdRevenue": "WSM",
         "unNationalAccounts": "Samoa"
       }
     },
@@ -538,13 +421,9 @@
       "sourceIds": {
         "unMigrantStock": "776",
         "worldBankWdi": "TON",
-        "worldBankAgeComposition": "TON",
         "unctadTrade": "776",
         "unctadServicesTrade": "776",
-        "unComtradeReporter": "776",
-        "unComtradeIsoFallback": "TON",
         "worldMapTopojson": "776",
-        "oecdRevenue": "TON",
         "unNationalAccounts": "Tonga"
       }
     },
@@ -555,13 +434,9 @@
       "sourceIds": {
         "unMigrantStock": "798",
         "worldBankWdi": "TUV",
-        "worldBankAgeComposition": "TUV",
         "unctadTrade": "798",
         "unctadServicesTrade": "798",
-        "unComtradeReporter": "798",
-        "unComtradeIsoFallback": "TUV",
         "worldMapTopojson": "798",
-        "oecdRevenue": "TUV",
         "unNationalAccounts": "Tuvalu"
       }
     },
@@ -573,9 +448,7 @@
         "unMigrantStock": "876",
         "unctadTrade": "876",
         "unctadServicesTrade": "876",
-        "unComtradeReporter": "876",
         "worldMapTopojson": "876",
-        "oecdRevenue": "WLF",
         "unNationalAccounts": "Wallis and Futuna",
         "unsdArea": "Wallis and Futuna Islands"
       }
@@ -587,13 +460,9 @@
       "sourceIds": {
         "unMigrantStock": "410",
         "worldBankWdi": "KOR",
-        "worldBankAgeComposition": "KOR",
         "unctadTrade": "410",
         "unctadServicesTrade": "410",
-        "unComtradeReporter": "410",
-        "unComtradeIsoFallback": "KOR",
         "worldMapTopojson": "410",
-        "oecdRevenue": "KOR",
         "unNationalAccounts": "Republic of Korea",
         "unsdArea": "Republic of Korea"
       }
@@ -605,13 +474,9 @@
       "sourceIds": {
         "unMigrantStock": "408",
         "worldBankWdi": "PRK",
-        "worldBankAgeComposition": "PRK",
         "unctadTrade": "408",
         "unctadServicesTrade": "408",
-        "unComtradeReporter": "408",
-        "unComtradeIsoFallback": "PRK",
         "worldMapTopojson": "408",
-        "oecdRevenue": "PRK",
         "unNationalAccounts": "Democratic People's Republic of Korea",
         "unsdArea": "Democratic People's Republic of Korea"
       }
@@ -623,13 +488,9 @@
       "sourceIds": {
         "unMigrantStock": "360",
         "worldBankWdi": "IDN",
-        "worldBankAgeComposition": "IDN",
         "unctadTrade": "360",
         "unctadServicesTrade": "360",
-        "unComtradeReporter": "360",
-        "unComtradeIsoFallback": "IDN",
         "worldMapTopojson": "360",
-        "oecdRevenue": "IDN",
         "unNationalAccounts": "Indonesia"
       }
     },
@@ -640,13 +501,9 @@
       "sourceIds": {
         "unMigrantStock": "792",
         "worldBankWdi": "TUR",
-        "worldBankAgeComposition": "TUR",
         "unctadTrade": "792",
         "unctadServicesTrade": "792",
-        "unComtradeReporter": "792",
-        "unComtradeIsoFallback": "TUR",
         "worldMapTopojson": "792",
-        "oecdRevenue": "TUR",
         "unNationalAccounts": "Türkiye"
       }
     },
@@ -657,13 +514,9 @@
       "sourceIds": {
         "unMigrantStock": "356",
         "worldBankWdi": "IND",
-        "worldBankAgeComposition": "IND",
         "unctadTrade": "356",
         "unctadServicesTrade": "356",
-        "unComtradeReporter": "356",
-        "unComtradeIsoFallback": "IND",
         "worldMapTopojson": "356",
-        "oecdRevenue": "IND",
         "unNationalAccounts": "India"
       }
     },
@@ -674,13 +527,9 @@
       "sourceIds": {
         "unMigrantStock": "144",
         "worldBankWdi": "LKA",
-        "worldBankAgeComposition": "LKA",
         "unctadTrade": "144",
         "unctadServicesTrade": "144",
-        "unComtradeReporter": "144",
-        "unComtradeIsoFallback": "LKA",
         "worldMapTopojson": "144",
-        "oecdRevenue": "LKA",
         "unNationalAccounts": "Sri Lanka"
       }
     },
@@ -691,13 +540,9 @@
       "sourceIds": {
         "unMigrantStock": "462",
         "worldBankWdi": "MDV",
-        "worldBankAgeComposition": "MDV",
         "unctadTrade": "462",
         "unctadServicesTrade": "462",
-        "unComtradeReporter": "462",
-        "unComtradeIsoFallback": "MDV",
         "worldMapTopojson": "462",
-        "oecdRevenue": "MDV",
         "unNationalAccounts": "Maldives"
       }
     },
@@ -708,13 +553,9 @@
       "sourceIds": {
         "unMigrantStock": "50",
         "worldBankWdi": "BGD",
-        "worldBankAgeComposition": "BGD",
         "unctadTrade": "050",
         "unctadServicesTrade": "050",
-        "unComtradeReporter": "050",
-        "unComtradeIsoFallback": "BGD",
         "worldMapTopojson": "050",
-        "oecdRevenue": "BGD",
         "unNationalAccounts": "Bangladesh"
       }
     },
@@ -725,13 +566,9 @@
       "sourceIds": {
         "unMigrantStock": "64",
         "worldBankWdi": "BTN",
-        "worldBankAgeComposition": "BTN",
         "unctadTrade": "064",
         "unctadServicesTrade": "064",
-        "unComtradeReporter": "064",
-        "unComtradeIsoFallback": "BTN",
         "worldMapTopojson": "064",
-        "oecdRevenue": "BTN",
         "unNationalAccounts": "Bhutan"
       }
     },
@@ -742,13 +579,9 @@
       "sourceIds": {
         "unMigrantStock": "524",
         "worldBankWdi": "NPL",
-        "worldBankAgeComposition": "NPL",
         "unctadTrade": "524",
         "unctadServicesTrade": "524",
-        "unComtradeReporter": "524",
-        "unComtradeIsoFallback": "NPL",
         "worldMapTopojson": "524",
-        "oecdRevenue": "NPL",
         "unNationalAccounts": "Nepal"
       }
     },
@@ -759,13 +592,9 @@
       "sourceIds": {
         "unMigrantStock": "586",
         "worldBankWdi": "PAK",
-        "worldBankAgeComposition": "PAK",
         "unctadTrade": "586",
         "unctadServicesTrade": "586",
-        "unComtradeReporter": "586",
-        "unComtradeIsoFallback": "PAK",
         "worldMapTopojson": "586",
-        "oecdRevenue": "PAK",
         "unNationalAccounts": "Pakistan"
       }
     },
@@ -776,13 +605,9 @@
       "sourceIds": {
         "unMigrantStock": "4",
         "worldBankWdi": "AFG",
-        "worldBankAgeComposition": "AFG",
         "unctadTrade": "004",
         "unctadServicesTrade": "004",
-        "unComtradeReporter": "004",
-        "unComtradeIsoFallback": "AFG",
         "worldMapTopojson": "004",
-        "oecdRevenue": "AFG",
         "unNationalAccounts": "Afghanistan"
       }
     },
@@ -793,13 +618,9 @@
       "sourceIds": {
         "unMigrantStock": "762",
         "worldBankWdi": "TJK",
-        "worldBankAgeComposition": "TJK",
         "unctadTrade": "762",
         "unctadServicesTrade": "762",
-        "unComtradeReporter": "762",
-        "unComtradeIsoFallback": "TJK",
         "worldMapTopojson": "762",
-        "oecdRevenue": "TJK",
         "unNationalAccounts": "Tajikistan"
       }
     },
@@ -810,13 +631,9 @@
       "sourceIds": {
         "unMigrantStock": "417",
         "worldBankWdi": "KGZ",
-        "worldBankAgeComposition": "KGZ",
         "unctadTrade": "417",
         "unctadServicesTrade": "417",
-        "unComtradeReporter": "417",
-        "unComtradeIsoFallback": "KGZ",
         "worldMapTopojson": "417",
-        "oecdRevenue": "KGZ",
         "unNationalAccounts": "Kyrgyzstan"
       }
     },
@@ -827,13 +644,9 @@
       "sourceIds": {
         "unMigrantStock": "795",
         "worldBankWdi": "TKM",
-        "worldBankAgeComposition": "TKM",
         "unctadTrade": "795",
         "unctadServicesTrade": "795",
-        "unComtradeReporter": "795",
-        "unComtradeIsoFallback": "TKM",
         "worldMapTopojson": "795",
-        "oecdRevenue": "TKM",
         "unNationalAccounts": "Turkmenistan"
       }
     },
@@ -844,13 +657,9 @@
       "sourceIds": {
         "unMigrantStock": "860",
         "worldBankWdi": "UZB",
-        "worldBankAgeComposition": "UZB",
         "unctadTrade": "860",
         "unctadServicesTrade": "860",
-        "unComtradeReporter": "860",
-        "unComtradeIsoFallback": "UZB",
         "worldMapTopojson": "860",
-        "oecdRevenue": "UZB",
         "unNationalAccounts": "Uzbekistan"
       }
     },
@@ -861,13 +670,9 @@
       "sourceIds": {
         "unMigrantStock": "398",
         "worldBankWdi": "KAZ",
-        "worldBankAgeComposition": "KAZ",
         "unctadTrade": "398",
         "unctadServicesTrade": "398",
-        "unComtradeReporter": "398",
-        "unComtradeIsoFallback": "KAZ",
         "worldMapTopojson": "398",
-        "oecdRevenue": "KAZ",
         "unNationalAccounts": "Kazakhstan"
       }
     },
@@ -878,13 +683,9 @@
       "sourceIds": {
         "unMigrantStock": "496",
         "worldBankWdi": "MNG",
-        "worldBankAgeComposition": "MNG",
         "unctadTrade": "496",
         "unctadServicesTrade": "496",
-        "unComtradeReporter": "496",
-        "unComtradeIsoFallback": "MNG",
         "worldMapTopojson": "496",
-        "oecdRevenue": "MNG",
         "unNationalAccounts": "Mongolia"
       }
     },
@@ -895,13 +696,9 @@
       "sourceIds": {
         "unMigrantStock": "31",
         "worldBankWdi": "AZE",
-        "worldBankAgeComposition": "AZE",
         "unctadTrade": "031",
         "unctadServicesTrade": "031",
-        "unComtradeReporter": "031",
-        "unComtradeIsoFallback": "AZE",
         "worldMapTopojson": "031",
-        "oecdRevenue": "AZE",
         "unNationalAccounts": "Azerbaijan"
       }
     },
@@ -912,13 +709,9 @@
       "sourceIds": {
         "unMigrantStock": "268",
         "worldBankWdi": "GEO",
-        "worldBankAgeComposition": "GEO",
         "unctadTrade": "268",
         "unctadServicesTrade": "268",
-        "unComtradeReporter": "268",
-        "unComtradeIsoFallback": "GEO",
         "worldMapTopojson": "268",
-        "oecdRevenue": "GEO",
         "unNationalAccounts": "Georgia"
       }
     },
@@ -929,13 +722,9 @@
       "sourceIds": {
         "unMigrantStock": "51",
         "worldBankWdi": "ARM",
-        "worldBankAgeComposition": "ARM",
         "unctadTrade": "051",
         "unctadServicesTrade": "051",
-        "unComtradeReporter": "051",
-        "unComtradeIsoFallback": "ARM",
         "worldMapTopojson": "051",
-        "oecdRevenue": "ARM",
         "unNationalAccounts": "Armenia"
       }
     },
@@ -946,13 +735,9 @@
       "sourceIds": {
         "unMigrantStock": "682",
         "worldBankWdi": "SAU",
-        "worldBankAgeComposition": "SAU",
         "unctadTrade": "682",
         "unctadServicesTrade": "682",
-        "unComtradeReporter": "682",
-        "unComtradeIsoFallback": "SAU",
         "worldMapTopojson": "682",
-        "oecdRevenue": "SAU",
         "unNationalAccounts": "Saudi Arabia"
       }
     },
@@ -963,13 +748,9 @@
       "sourceIds": {
         "unMigrantStock": "364",
         "worldBankWdi": "IRN",
-        "worldBankAgeComposition": "IRN",
         "unctadTrade": "364",
         "unctadServicesTrade": "364",
-        "unComtradeReporter": "364",
-        "unComtradeIsoFallback": "IRN",
         "worldMapTopojson": "364",
-        "oecdRevenue": "IRN",
         "unNationalAccounts": "Iran, Islamic Republic of",
         "unsdArea": "Iran (Islamic Republic of)"
       }
@@ -981,13 +762,9 @@
       "sourceIds": {
         "unMigrantStock": "368",
         "worldBankWdi": "IRQ",
-        "worldBankAgeComposition": "IRQ",
         "unctadTrade": "368",
         "unctadServicesTrade": "368",
-        "unComtradeReporter": "368",
-        "unComtradeIsoFallback": "IRQ",
         "worldMapTopojson": "368",
-        "oecdRevenue": "IRQ",
         "unNationalAccounts": "Iraq"
       }
     },
@@ -998,13 +775,9 @@
       "sourceIds": {
         "unMigrantStock": "760",
         "worldBankWdi": "SYR",
-        "worldBankAgeComposition": "SYR",
         "unctadTrade": "760",
         "unctadServicesTrade": "760",
-        "unComtradeReporter": "760",
-        "unComtradeIsoFallback": "SYR",
         "worldMapTopojson": "760",
-        "oecdRevenue": "SYR",
         "unNationalAccounts": "Syrian Arab Republic",
         "unsdArea": "Syrian Arab Republic"
       }
@@ -1016,13 +789,9 @@
       "sourceIds": {
         "unMigrantStock": "422",
         "worldBankWdi": "LBN",
-        "worldBankAgeComposition": "LBN",
         "unctadTrade": "422",
         "unctadServicesTrade": "422",
-        "unComtradeReporter": "422",
-        "unComtradeIsoFallback": "LBN",
         "worldMapTopojson": "422",
-        "oecdRevenue": "LBN",
         "unNationalAccounts": "Lebanon"
       }
     },
@@ -1033,13 +802,9 @@
       "sourceIds": {
         "unMigrantStock": "400",
         "worldBankWdi": "JOR",
-        "worldBankAgeComposition": "JOR",
         "unctadTrade": "400",
         "unctadServicesTrade": "400",
-        "unComtradeReporter": "400",
-        "unComtradeIsoFallback": "JOR",
         "worldMapTopojson": "400",
-        "oecdRevenue": "JOR",
         "unNationalAccounts": "Jordan"
       }
     },
@@ -1050,13 +815,9 @@
       "sourceIds": {
         "unMigrantStock": "414",
         "worldBankWdi": "KWT",
-        "worldBankAgeComposition": "KWT",
         "unctadTrade": "414",
         "unctadServicesTrade": "414",
-        "unComtradeReporter": "414",
-        "unComtradeIsoFallback": "KWT",
         "worldMapTopojson": "414",
-        "oecdRevenue": "KWT",
         "unNationalAccounts": "Kuwait"
       }
     },
@@ -1067,13 +828,9 @@
       "sourceIds": {
         "unMigrantStock": "48",
         "worldBankWdi": "BHR",
-        "worldBankAgeComposition": "BHR",
         "unctadTrade": "048",
         "unctadServicesTrade": "048",
-        "unComtradeReporter": "048",
-        "unComtradeIsoFallback": "BHR",
         "worldMapTopojson": "048",
-        "oecdRevenue": "BHR",
         "unNationalAccounts": "Bahrain"
       }
     },
@@ -1084,13 +841,9 @@
       "sourceIds": {
         "unMigrantStock": "634",
         "worldBankWdi": "QAT",
-        "worldBankAgeComposition": "QAT",
         "unctadTrade": "634",
         "unctadServicesTrade": "634",
-        "unComtradeReporter": "634",
-        "unComtradeIsoFallback": "QAT",
         "worldMapTopojson": "634",
-        "oecdRevenue": "QAT",
         "unNationalAccounts": "Qatar"
       }
     },
@@ -1101,13 +854,9 @@
       "sourceIds": {
         "unMigrantStock": "784",
         "worldBankWdi": "ARE",
-        "worldBankAgeComposition": "ARE",
         "unctadTrade": "784",
         "unctadServicesTrade": "784",
-        "unComtradeReporter": "784",
-        "unComtradeIsoFallback": "ARE",
         "worldMapTopojson": "784",
-        "oecdRevenue": "ARE",
         "unNationalAccounts": "United Arab Emirates"
       }
     },
@@ -1118,13 +867,9 @@
       "sourceIds": {
         "unMigrantStock": "512",
         "worldBankWdi": "OMN",
-        "worldBankAgeComposition": "OMN",
         "unctadTrade": "512",
         "unctadServicesTrade": "512",
-        "unComtradeReporter": "512",
-        "unComtradeIsoFallback": "OMN",
         "worldMapTopojson": "512",
-        "oecdRevenue": "OMN",
         "unNationalAccounts": "Oman"
       }
     },
@@ -1135,13 +880,9 @@
       "sourceIds": {
         "unMigrantStock": "887",
         "worldBankWdi": "YEM",
-        "worldBankAgeComposition": "YEM",
         "unctadTrade": "887",
         "unctadServicesTrade": "887",
-        "unComtradeReporter": "887",
-        "unComtradeIsoFallback": "YEM",
         "worldMapTopojson": "887",
-        "oecdRevenue": "YEM",
         "unNationalAccounts": "Yemen"
       }
     },
@@ -1152,13 +893,9 @@
       "sourceIds": {
         "unMigrantStock": "32",
         "worldBankWdi": "ARG",
-        "worldBankAgeComposition": "ARG",
         "unctadTrade": "032",
         "unctadServicesTrade": "032",
-        "unComtradeReporter": "032",
-        "unComtradeIsoFallback": "ARG",
         "worldMapTopojson": "032",
-        "oecdRevenue": "ARG",
         "unNationalAccounts": "Argentina"
       }
     },
@@ -1169,13 +906,9 @@
       "sourceIds": {
         "unMigrantStock": "76",
         "worldBankWdi": "BRA",
-        "worldBankAgeComposition": "BRA",
         "unctadTrade": "076",
         "unctadServicesTrade": "076",
-        "unComtradeReporter": "076",
-        "unComtradeIsoFallback": "BRA",
         "worldMapTopojson": "076",
-        "oecdRevenue": "BRA",
         "unNationalAccounts": "Brazil"
       }
     },
@@ -1186,13 +919,9 @@
       "sourceIds": {
         "unMigrantStock": "484",
         "worldBankWdi": "MEX",
-        "worldBankAgeComposition": "MEX",
         "unctadTrade": "484",
         "unctadServicesTrade": "484",
-        "unComtradeReporter": "484",
-        "unComtradeIsoFallback": "MEX",
         "worldMapTopojson": "484",
-        "oecdRevenue": "MEX",
         "unNationalAccounts": "Mexico"
       }
     },
@@ -1203,13 +932,9 @@
       "sourceIds": {
         "unMigrantStock": "533",
         "worldBankWdi": "ABW",
-        "worldBankAgeComposition": "ABW",
         "unctadTrade": "533",
         "unctadServicesTrade": "533",
-        "unComtradeReporter": "533",
-        "unComtradeIsoFallback": "ABW",
         "worldMapTopojson": "533",
-        "oecdRevenue": "ABW",
         "unNationalAccounts": "Aruba"
       }
     },
@@ -1221,9 +946,7 @@
         "unMigrantStock": "660",
         "unctadTrade": "660",
         "unctadServicesTrade": "660",
-        "unComtradeReporter": "660",
         "worldMapTopojson": "660",
-        "oecdRevenue": "AIA",
         "unNationalAccounts": "Anguilla"
       }
     },
@@ -1234,13 +957,9 @@
       "sourceIds": {
         "unMigrantStock": "60",
         "worldBankWdi": "BMU",
-        "worldBankAgeComposition": "BMU",
         "unctadTrade": "060",
         "unctadServicesTrade": "060",
-        "unComtradeReporter": "060",
-        "unComtradeIsoFallback": "BMU",
         "worldMapTopojson": "060",
-        "oecdRevenue": "BMU",
         "unNationalAccounts": "Bermuda"
       }
     },
@@ -1251,13 +970,9 @@
       "sourceIds": {
         "unMigrantStock": "320",
         "worldBankWdi": "GTM",
-        "worldBankAgeComposition": "GTM",
         "unctadTrade": "320",
         "unctadServicesTrade": "320",
-        "unComtradeReporter": "320",
-        "unComtradeIsoFallback": "GTM",
         "worldMapTopojson": "320",
-        "oecdRevenue": "GTM",
         "unNationalAccounts": "Guatemala"
       }
     },
@@ -1268,13 +983,9 @@
       "sourceIds": {
         "unMigrantStock": "84",
         "worldBankWdi": "BLZ",
-        "worldBankAgeComposition": "BLZ",
         "unctadTrade": "084",
         "unctadServicesTrade": "084",
-        "unComtradeReporter": "084",
-        "unComtradeIsoFallback": "BLZ",
         "worldMapTopojson": "084",
-        "oecdRevenue": "BLZ",
         "unNationalAccounts": "Belize"
       }
     },
@@ -1285,13 +996,9 @@
       "sourceIds": {
         "unMigrantStock": "222",
         "worldBankWdi": "SLV",
-        "worldBankAgeComposition": "SLV",
         "unctadTrade": "222",
         "unctadServicesTrade": "222",
-        "unComtradeReporter": "222",
-        "unComtradeIsoFallback": "SLV",
         "worldMapTopojson": "222",
-        "oecdRevenue": "SLV",
         "unNationalAccounts": "El Salvador"
       }
     },
@@ -1302,13 +1009,9 @@
       "sourceIds": {
         "unMigrantStock": "340",
         "worldBankWdi": "HND",
-        "worldBankAgeComposition": "HND",
         "unctadTrade": "340",
         "unctadServicesTrade": "340",
-        "unComtradeReporter": "340",
-        "unComtradeIsoFallback": "HND",
         "worldMapTopojson": "340",
-        "oecdRevenue": "HND",
         "unNationalAccounts": "Honduras"
       }
     },
@@ -1319,13 +1022,9 @@
       "sourceIds": {
         "unMigrantStock": "558",
         "worldBankWdi": "NIC",
-        "worldBankAgeComposition": "NIC",
         "unctadTrade": "558",
         "unctadServicesTrade": "558",
-        "unComtradeReporter": "558",
-        "unComtradeIsoFallback": "NIC",
         "worldMapTopojson": "558",
-        "oecdRevenue": "NIC",
         "unNationalAccounts": "Nicaragua"
       }
     },
@@ -1336,13 +1035,9 @@
       "sourceIds": {
         "unMigrantStock": "591",
         "worldBankWdi": "PAN",
-        "worldBankAgeComposition": "PAN",
         "unctadTrade": "591",
         "unctadServicesTrade": "591",
-        "unComtradeReporter": "591",
-        "unComtradeIsoFallback": "PAN",
         "worldMapTopojson": "591",
-        "oecdRevenue": "PAN",
         "unNationalAccounts": "Panama"
       }
     },
@@ -1353,13 +1048,9 @@
       "sourceIds": {
         "unMigrantStock": "44",
         "worldBankWdi": "BHS",
-        "worldBankAgeComposition": "BHS",
         "unctadTrade": "044",
         "unctadServicesTrade": "044",
-        "unComtradeReporter": "044",
-        "unComtradeIsoFallback": "BHS",
         "worldMapTopojson": "044",
-        "oecdRevenue": "BHS",
         "unNationalAccounts": "Bahamas"
       }
     },
@@ -1370,13 +1061,9 @@
       "sourceIds": {
         "unMigrantStock": "192",
         "worldBankWdi": "CUB",
-        "worldBankAgeComposition": "CUB",
         "unctadTrade": "192",
         "unctadServicesTrade": "192",
-        "unComtradeReporter": "192",
-        "unComtradeIsoFallback": "CUB",
         "worldMapTopojson": "192",
-        "oecdRevenue": "CUB",
         "unNationalAccounts": "Cuba"
       }
     },
@@ -1387,13 +1074,9 @@
       "sourceIds": {
         "unMigrantStock": "388",
         "worldBankWdi": "JAM",
-        "worldBankAgeComposition": "JAM",
         "unctadTrade": "388",
         "unctadServicesTrade": "388",
-        "unComtradeReporter": "388",
-        "unComtradeIsoFallback": "JAM",
         "worldMapTopojson": "388",
-        "oecdRevenue": "JAM",
         "unNationalAccounts": "Jamaica"
       }
     },
@@ -1404,13 +1087,9 @@
       "sourceIds": {
         "unMigrantStock": "332",
         "worldBankWdi": "HTI",
-        "worldBankAgeComposition": "HTI",
         "unctadTrade": "332",
         "unctadServicesTrade": "332",
-        "unComtradeReporter": "332",
-        "unComtradeIsoFallback": "HTI",
         "worldMapTopojson": "332",
-        "oecdRevenue": "HTI",
         "unNationalAccounts": "Haiti"
       }
     },
@@ -1421,13 +1100,9 @@
       "sourceIds": {
         "unMigrantStock": "214",
         "worldBankWdi": "DOM",
-        "worldBankAgeComposition": "DOM",
         "unctadTrade": "214",
         "unctadServicesTrade": "214",
-        "unComtradeReporter": "214",
-        "unComtradeIsoFallback": "DOM",
         "worldMapTopojson": "214",
-        "oecdRevenue": "DOM",
         "unNationalAccounts": "Dominican Republic"
       }
     },
@@ -1438,13 +1113,9 @@
       "sourceIds": {
         "unMigrantStock": "28",
         "worldBankWdi": "ATG",
-        "worldBankAgeComposition": "ATG",
         "unctadTrade": "028",
         "unctadServicesTrade": "028",
-        "unComtradeReporter": "028",
-        "unComtradeIsoFallback": "ATG",
         "worldMapTopojson": "028",
-        "oecdRevenue": "ATG",
         "unNationalAccounts": "Antigua and Barbuda"
       }
     },
@@ -1455,13 +1126,9 @@
       "sourceIds": {
         "unMigrantStock": "659",
         "worldBankWdi": "KNA",
-        "worldBankAgeComposition": "KNA",
         "unctadTrade": "659",
         "unctadServicesTrade": "659",
-        "unComtradeReporter": "659",
-        "unComtradeIsoFallback": "KNA",
         "worldMapTopojson": "659",
-        "oecdRevenue": "KNA",
         "unNationalAccounts": "Saint Kitts and Nevis"
       }
     },
@@ -1472,13 +1139,9 @@
       "sourceIds": {
         "unMigrantStock": "212",
         "worldBankWdi": "DMA",
-        "worldBankAgeComposition": "DMA",
         "unctadTrade": "212",
         "unctadServicesTrade": "212",
-        "unComtradeReporter": "212",
-        "unComtradeIsoFallback": "DMA",
         "worldMapTopojson": "212",
-        "oecdRevenue": "DMA",
         "unNationalAccounts": "Dominica"
       }
     },
@@ -1489,13 +1152,9 @@
       "sourceIds": {
         "unMigrantStock": "662",
         "worldBankWdi": "LCA",
-        "worldBankAgeComposition": "LCA",
         "unctadTrade": "662",
         "unctadServicesTrade": "662",
-        "unComtradeReporter": "662",
-        "unComtradeIsoFallback": "LCA",
         "worldMapTopojson": "662",
-        "oecdRevenue": "LCA",
         "unNationalAccounts": "Saint Lucia"
       }
     },
@@ -1506,13 +1165,9 @@
       "sourceIds": {
         "unMigrantStock": "52",
         "worldBankWdi": "BRB",
-        "worldBankAgeComposition": "BRB",
         "unctadTrade": "052",
         "unctadServicesTrade": "052",
-        "unComtradeReporter": "052",
-        "unComtradeIsoFallback": "BRB",
         "worldMapTopojson": "052",
-        "oecdRevenue": "BRB",
         "unNationalAccounts": "Barbados"
       }
     },
@@ -1523,13 +1178,9 @@
       "sourceIds": {
         "unMigrantStock": "670",
         "worldBankWdi": "VCT",
-        "worldBankAgeComposition": "VCT",
         "unctadTrade": "670",
         "unctadServicesTrade": "670",
-        "unComtradeReporter": "670",
-        "unComtradeIsoFallback": "VCT",
         "worldMapTopojson": "670",
-        "oecdRevenue": "VCT",
         "unNationalAccounts": "Saint Vincent and the Grenadines"
       }
     },
@@ -1540,13 +1191,9 @@
       "sourceIds": {
         "unMigrantStock": "308",
         "worldBankWdi": "GRD",
-        "worldBankAgeComposition": "GRD",
         "unctadTrade": "308",
         "unctadServicesTrade": "308",
-        "unComtradeReporter": "308",
-        "unComtradeIsoFallback": "GRD",
         "worldMapTopojson": "308",
-        "oecdRevenue": "GRD",
         "unNationalAccounts": "Grenada"
       }
     },
@@ -1557,13 +1204,9 @@
       "sourceIds": {
         "unMigrantStock": "780",
         "worldBankWdi": "TTO",
-        "worldBankAgeComposition": "TTO",
         "unctadTrade": "780",
         "unctadServicesTrade": "780",
-        "unComtradeReporter": "780",
-        "unComtradeIsoFallback": "TTO",
         "worldMapTopojson": "780",
-        "oecdRevenue": "TTO",
         "unNationalAccounts": "Trinidad and Tobago"
       }
     },
@@ -1574,13 +1217,9 @@
       "sourceIds": {
         "unMigrantStock": "136",
         "worldBankWdi": "CYM",
-        "worldBankAgeComposition": "CYM",
         "unctadTrade": "136",
         "unctadServicesTrade": "136",
-        "unComtradeReporter": "136",
-        "unComtradeIsoFallback": "CYM",
         "worldMapTopojson": "136",
-        "oecdRevenue": "CYM",
         "unNationalAccounts": "Cayman Islands"
       }
     },
@@ -1591,13 +1230,9 @@
       "sourceIds": {
         "unMigrantStock": "531",
         "worldBankWdi": "CUW",
-        "worldBankAgeComposition": "CUW",
         "unctadTrade": "531",
         "unctadServicesTrade": "531",
-        "unComtradeReporter": "531",
-        "unComtradeIsoFallback": "CUW",
         "worldMapTopojson": "531",
-        "oecdRevenue": "CUW",
         "unNationalAccounts": "Curaçao"
       }
     },
@@ -1609,9 +1244,7 @@
         "unMigrantStock": "312",
         "unctadTrade": "312",
         "unctadServicesTrade": "312",
-        "unComtradeReporter": "312",
         "worldMapTopojson": "312",
-        "oecdRevenue": "GLP",
         "unNationalAccounts": "Guadeloupe"
       }
     },
@@ -1622,13 +1255,9 @@
       "sourceIds": {
         "unMigrantStock": "304",
         "worldBankWdi": "GRL",
-        "worldBankAgeComposition": "GRL",
         "unctadTrade": "304",
         "unctadServicesTrade": "304",
-        "unComtradeReporter": "304",
-        "unComtradeIsoFallback": "GRL",
         "worldMapTopojson": "304",
-        "oecdRevenue": "GRL",
         "unNationalAccounts": "Greenland"
       }
     },
@@ -1639,9 +1268,6 @@
       "sourceIds": {
         "unMigrantStock": "663",
         "worldBankWdi": "MAF",
-        "worldBankAgeComposition": "MAF",
-        "unComtradeIsoFallback": "MAF",
-        "oecdRevenue": "MAF",
         "unNationalAccounts": "Saint Martin"
       }
     },
@@ -1653,9 +1279,7 @@
         "unMigrantStock": "500",
         "unctadTrade": "500",
         "unctadServicesTrade": "500",
-        "unComtradeReporter": "500",
         "worldMapTopojson": "500",
-        "oecdRevenue": "MSR",
         "unNationalAccounts": "Montserrat"
       }
     },
@@ -1667,9 +1291,7 @@
         "unMigrantStock": "474",
         "unctadTrade": "474",
         "unctadServicesTrade": "474",
-        "unComtradeReporter": "474",
         "worldMapTopojson": "474",
-        "oecdRevenue": "MTQ",
         "unNationalAccounts": "Martinique"
       }
     },
@@ -1680,9 +1302,6 @@
       "sourceIds": {
         "unMigrantStock": "630",
         "worldBankWdi": "PRI",
-        "worldBankAgeComposition": "PRI",
-        "unComtradeIsoFallback": "PRI",
-        "oecdRevenue": "PRI",
         "unNationalAccounts": "Puerto Rico"
       }
     },
@@ -1694,9 +1313,7 @@
         "unMigrantStock": "666",
         "unctadTrade": "666",
         "unctadServicesTrade": "666",
-        "unComtradeReporter": "666",
         "worldMapTopojson": "666",
-        "oecdRevenue": "SPM",
         "unNationalAccounts": "Saint Pierre and Miquelon"
       }
     },
@@ -1707,13 +1324,9 @@
       "sourceIds": {
         "unMigrantStock": "534",
         "worldBankWdi": "SXM",
-        "worldBankAgeComposition": "SXM",
         "unctadTrade": "534",
         "unctadServicesTrade": "534",
-        "unComtradeReporter": "534",
-        "unComtradeIsoFallback": "SXM",
         "worldMapTopojson": "534",
-        "oecdRevenue": "SXM",
         "unNationalAccounts": "Sint Maarten (Dutch part)",
         "unsdArea": "Sint Maarten (Dutch part)"
       }
@@ -1725,13 +1338,9 @@
       "sourceIds": {
         "unMigrantStock": "796",
         "worldBankWdi": "TCA",
-        "worldBankAgeComposition": "TCA",
         "unctadTrade": "796",
         "unctadServicesTrade": "796",
-        "unComtradeReporter": "796",
-        "unComtradeIsoFallback": "TCA",
         "worldMapTopojson": "796",
-        "oecdRevenue": "TCA",
         "unNationalAccounts": "Turks and Caicos Islands"
       }
     },
@@ -1742,13 +1351,9 @@
       "sourceIds": {
         "unMigrantStock": "92",
         "worldBankWdi": "VGB",
-        "worldBankAgeComposition": "VGB",
         "unctadTrade": "092",
         "unctadServicesTrade": "092",
-        "unComtradeReporter": "092",
-        "unComtradeIsoFallback": "VGB",
         "worldMapTopojson": "092",
-        "oecdRevenue": "VGB",
         "unNationalAccounts": "British Virgin Islands"
       }
     },
@@ -1759,9 +1364,6 @@
       "sourceIds": {
         "unMigrantStock": "850",
         "worldBankWdi": "VIR",
-        "worldBankAgeComposition": "VIR",
-        "unComtradeIsoFallback": "VIR",
-        "oecdRevenue": "VIR",
         "unNationalAccounts": "U.S. Virgin Islands",
         "unsdArea": "United States Virgin Islands"
       }
@@ -1773,13 +1375,9 @@
       "sourceIds": {
         "unMigrantStock": "862",
         "worldBankWdi": "VEN",
-        "worldBankAgeComposition": "VEN",
         "unctadTrade": "862",
         "unctadServicesTrade": "862",
-        "unComtradeReporter": "862",
-        "unComtradeIsoFallback": "VEN",
         "worldMapTopojson": "862",
-        "oecdRevenue": "VEN",
         "unNationalAccounts": "Venezuela (Bolivarian Republic of)",
         "unsdArea": "Venezuela (Bolivarian Republic of)"
       }
@@ -1792,9 +1390,7 @@
         "unMigrantStock": "238",
         "unctadTrade": "238",
         "unctadServicesTrade": "238",
-        "unComtradeReporter": "238",
         "worldMapTopojson": "238",
-        "oecdRevenue": "FLK",
         "unNationalAccounts": "Falkland Islands",
         "unsdArea": "Falkland Islands (Malvinas)"
       }
@@ -1807,9 +1403,7 @@
         "unMigrantStock": "254",
         "unctadTrade": "254",
         "unctadServicesTrade": "254",
-        "unComtradeReporter": "254",
         "worldMapTopojson": "254",
-        "oecdRevenue": "GUF",
         "unNationalAccounts": "French Guiana"
       }
     },
@@ -1820,13 +1414,9 @@
       "sourceIds": {
         "unMigrantStock": "328",
         "worldBankWdi": "GUY",
-        "worldBankAgeComposition": "GUY",
         "unctadTrade": "328",
         "unctadServicesTrade": "328",
-        "unComtradeReporter": "328",
-        "unComtradeIsoFallback": "GUY",
         "worldMapTopojson": "328",
-        "oecdRevenue": "GUY",
         "unNationalAccounts": "Guyana"
       }
     },
@@ -1837,13 +1427,9 @@
       "sourceIds": {
         "unMigrantStock": "740",
         "worldBankWdi": "SUR",
-        "worldBankAgeComposition": "SUR",
         "unctadTrade": "740",
         "unctadServicesTrade": "740",
-        "unComtradeReporter": "740",
-        "unComtradeIsoFallback": "SUR",
         "worldMapTopojson": "740",
-        "oecdRevenue": "SUR",
         "unNationalAccounts": "Suriname"
       }
     },
@@ -1854,13 +1440,9 @@
       "sourceIds": {
         "unMigrantStock": "218",
         "worldBankWdi": "ECU",
-        "worldBankAgeComposition": "ECU",
         "unctadTrade": "218",
         "unctadServicesTrade": "218",
-        "unComtradeReporter": "218",
-        "unComtradeIsoFallback": "ECU",
         "worldMapTopojson": "218",
-        "oecdRevenue": "ECU",
         "unNationalAccounts": "Ecuador"
       }
     },
@@ -1871,13 +1453,9 @@
       "sourceIds": {
         "unMigrantStock": "68",
         "worldBankWdi": "BOL",
-        "worldBankAgeComposition": "BOL",
         "unctadTrade": "068",
         "unctadServicesTrade": "068",
-        "unComtradeReporter": "068",
-        "unComtradeIsoFallback": "BOL",
         "worldMapTopojson": "068",
-        "oecdRevenue": "BOL",
         "unNationalAccounts": "Bolivia (Plurinational State of)",
         "unsdArea": "Bolivia (Plurinational State of)"
       }
@@ -1889,13 +1467,9 @@
       "sourceIds": {
         "unMigrantStock": "600",
         "worldBankWdi": "PRY",
-        "worldBankAgeComposition": "PRY",
         "unctadTrade": "600",
         "unctadServicesTrade": "600",
-        "unComtradeReporter": "600",
-        "unComtradeIsoFallback": "PRY",
         "worldMapTopojson": "600",
-        "oecdRevenue": "PRY",
         "unNationalAccounts": "Paraguay"
       }
     },
@@ -1906,13 +1480,9 @@
       "sourceIds": {
         "unMigrantStock": "858",
         "worldBankWdi": "URY",
-        "worldBankAgeComposition": "URY",
         "unctadTrade": "858",
         "unctadServicesTrade": "858",
-        "unComtradeReporter": "858",
-        "unComtradeIsoFallback": "URY",
         "worldMapTopojson": "858",
-        "oecdRevenue": "URY",
         "unNationalAccounts": "Uruguay"
       }
     },
@@ -1923,13 +1493,9 @@
       "sourceIds": {
         "unMigrantStock": "604",
         "worldBankWdi": "PER",
-        "worldBankAgeComposition": "PER",
         "unctadTrade": "604",
         "unctadServicesTrade": "604",
-        "unComtradeReporter": "604",
-        "unComtradeIsoFallback": "PER",
         "worldMapTopojson": "604",
-        "oecdRevenue": "PER",
         "unNationalAccounts": "Peru"
       }
     },
@@ -1940,13 +1506,9 @@
       "sourceIds": {
         "unMigrantStock": "643",
         "worldBankWdi": "RUS",
-        "worldBankAgeComposition": "RUS",
         "unctadTrade": "643",
         "unctadServicesTrade": "643",
-        "unComtradeReporter": "643",
-        "unComtradeIsoFallback": "RUS",
         "worldMapTopojson": "643",
-        "oecdRevenue": "RUS",
         "unNationalAccounts": "Russian Federation",
         "unsdArea": "Russian Federation"
       }
@@ -1958,13 +1520,9 @@
       "sourceIds": {
         "unMigrantStock": "710",
         "worldBankWdi": "ZAF",
-        "worldBankAgeComposition": "ZAF",
         "unctadTrade": "710",
         "unctadServicesTrade": "710",
-        "unComtradeReporter": "710",
-        "unComtradeIsoFallback": "ZAF",
         "worldMapTopojson": "710",
-        "oecdRevenue": "ZAF",
         "unNationalAccounts": "South Africa"
       }
     },
@@ -1975,13 +1533,9 @@
       "sourceIds": {
         "unMigrantStock": "152",
         "worldBankWdi": "CHL",
-        "worldBankAgeComposition": "CHL",
         "unctadTrade": "152",
         "unctadServicesTrade": "152",
-        "unComtradeReporter": "152",
-        "unComtradeIsoFallback": "CHL",
         "worldMapTopojson": "152",
-        "oecdRevenue": "CHL",
         "unNationalAccounts": "Chile"
       }
     },
@@ -1992,13 +1546,9 @@
       "sourceIds": {
         "unMigrantStock": "170",
         "worldBankWdi": "COL",
-        "worldBankAgeComposition": "COL",
         "unctadTrade": "170",
         "unctadServicesTrade": "170",
-        "unComtradeReporter": "170",
-        "unComtradeIsoFallback": "COL",
         "worldMapTopojson": "170",
-        "oecdRevenue": "COL",
         "unNationalAccounts": "Colombia"
       }
     },
@@ -2009,13 +1559,9 @@
       "sourceIds": {
         "unMigrantStock": "188",
         "worldBankWdi": "CRI",
-        "worldBankAgeComposition": "CRI",
         "unctadTrade": "188",
         "unctadServicesTrade": "188",
-        "unComtradeReporter": "188",
-        "unComtradeIsoFallback": "CRI",
         "worldMapTopojson": "188",
-        "oecdRevenue": "CRI",
         "unNationalAccounts": "Costa Rica"
       }
     },
@@ -2026,13 +1572,9 @@
       "sourceIds": {
         "unMigrantStock": "578",
         "worldBankWdi": "NOR",
-        "worldBankAgeComposition": "NOR",
         "unctadTrade": "578",
         "unctadServicesTrade": "578",
-        "unComtradeReporter": "578",
-        "unComtradeIsoFallback": "NOR",
         "worldMapTopojson": "578",
-        "oecdRevenue": "NOR",
         "unNationalAccounts": "Norway"
       }
     },
@@ -2043,13 +1585,9 @@
       "sourceIds": {
         "unMigrantStock": "352",
         "worldBankWdi": "ISL",
-        "worldBankAgeComposition": "ISL",
         "unctadTrade": "352",
         "unctadServicesTrade": "352",
-        "unComtradeReporter": "352",
-        "unComtradeIsoFallback": "ISL",
         "worldMapTopojson": "352",
-        "oecdRevenue": "ISL",
         "unNationalAccounts": "Iceland"
       }
     },
@@ -2060,13 +1598,9 @@
       "sourceIds": {
         "unMigrantStock": "756",
         "worldBankWdi": "CHE",
-        "worldBankAgeComposition": "CHE",
         "unctadTrade": "756",
         "unctadServicesTrade": "756",
-        "unComtradeReporter": "756",
-        "unComtradeIsoFallback": "CHE",
         "worldMapTopojson": "756",
-        "oecdRevenue": "CHE",
         "unNationalAccounts": "Switzerland"
       }
     },
@@ -2077,13 +1611,9 @@
       "sourceIds": {
         "unMigrantStock": "376",
         "worldBankWdi": "ISR",
-        "worldBankAgeComposition": "ISR",
         "unctadTrade": "376",
         "unctadServicesTrade": "376",
-        "unComtradeReporter": "376",
-        "unComtradeIsoFallback": "ISR",
         "worldMapTopojson": "376",
-        "oecdRevenue": "ISR",
         "unNationalAccounts": "Israel"
       }
     },
@@ -2094,13 +1624,9 @@
       "sourceIds": {
         "unMigrantStock": "234",
         "worldBankWdi": "FRO",
-        "worldBankAgeComposition": "FRO",
         "unctadTrade": "234",
         "unctadServicesTrade": "234",
-        "unComtradeReporter": "234",
-        "unComtradeIsoFallback": "FRO",
         "worldMapTopojson": "234",
-        "oecdRevenue": "FRO",
         "unNationalAccounts": "Faroe Islands"
       }
     },
@@ -2111,13 +1637,9 @@
       "sourceIds": {
         "unMigrantStock": "292",
         "worldBankWdi": "GIB",
-        "worldBankAgeComposition": "GIB",
         "unctadTrade": "292",
         "unctadServicesTrade": "292",
-        "unComtradeReporter": "292",
-        "unComtradeIsoFallback": "GIB",
         "worldMapTopojson": "292",
-        "oecdRevenue": "GIB",
         "unNationalAccounts": "Gibraltar"
       }
     },
@@ -2128,9 +1650,6 @@
       "sourceIds": {
         "unMigrantStock": "833",
         "worldBankWdi": "IMN",
-        "worldBankAgeComposition": "IMN",
-        "unComtradeIsoFallback": "IMN",
-        "oecdRevenue": "IMN",
         "unNationalAccounts": "Isle of Man"
       }
     },
@@ -2141,9 +1660,6 @@
       "sourceIds": {
         "unMigrantStock": "438",
         "worldBankWdi": "LIE",
-        "worldBankAgeComposition": "LIE",
-        "unComtradeIsoFallback": "LIE",
-        "oecdRevenue": "LIE",
         "unNationalAccounts": "Liechtenstein"
       }
     },
@@ -2153,7 +1669,6 @@
       "m49": "336",
       "sourceIds": {
         "unMigrantStock": "336",
-        "oecdRevenue": "VAT",
         "unNationalAccounts": "Vatican City",
         "unsdArea": "Holy See"
       }
@@ -2165,9 +1680,6 @@
       "sourceIds": {
         "unMigrantStock": "674",
         "worldBankWdi": "SMR",
-        "worldBankAgeComposition": "SMR",
-        "unComtradeIsoFallback": "SMR",
-        "oecdRevenue": "SMR",
         "unNationalAccounts": "San Marino"
       }
     },
@@ -2178,13 +1690,9 @@
       "sourceIds": {
         "unMigrantStock": "20",
         "worldBankWdi": "AND",
-        "worldBankAgeComposition": "AND",
         "unctadTrade": "020",
         "unctadServicesTrade": "020",
-        "unComtradeReporter": "020",
-        "unComtradeIsoFallback": "AND",
         "worldMapTopojson": "020",
-        "oecdRevenue": "AND",
         "unNationalAccounts": "Andorra"
       }
     },
@@ -2195,9 +1703,6 @@
       "sourceIds": {
         "unMigrantStock": "492",
         "worldBankWdi": "MCO",
-        "worldBankAgeComposition": "MCO",
-        "unComtradeIsoFallback": "MCO",
-        "oecdRevenue": "MCO",
         "unNationalAccounts": "Monaco"
       }
     },
@@ -2208,13 +1713,9 @@
       "sourceIds": {
         "unMigrantStock": "112",
         "worldBankWdi": "BLR",
-        "worldBankAgeComposition": "BLR",
         "unctadTrade": "112",
         "unctadServicesTrade": "112",
-        "unComtradeReporter": "112",
-        "unComtradeIsoFallback": "BLR",
         "worldMapTopojson": "112",
-        "oecdRevenue": "BLR",
         "unNationalAccounts": "Belarus"
       }
     },
@@ -2225,13 +1726,9 @@
       "sourceIds": {
         "unMigrantStock": "70",
         "worldBankWdi": "BIH",
-        "worldBankAgeComposition": "BIH",
         "unctadTrade": "070",
         "unctadServicesTrade": "070",
-        "unComtradeReporter": "070",
-        "unComtradeIsoFallback": "BIH",
         "worldMapTopojson": "070",
-        "oecdRevenue": "BIH",
         "unNationalAccounts": "Bosnia and Herzegovina"
       }
     },
@@ -2242,13 +1739,9 @@
       "sourceIds": {
         "unMigrantStock": "688",
         "worldBankWdi": "SRB",
-        "worldBankAgeComposition": "SRB",
         "unctadTrade": "688",
         "unctadServicesTrade": "688",
-        "unComtradeReporter": "688",
-        "unComtradeIsoFallback": "SRB",
         "worldMapTopojson": "688",
-        "oecdRevenue": "SRB",
         "unNationalAccounts": "Serbia"
       }
     },
@@ -2259,13 +1752,9 @@
       "sourceIds": {
         "unMigrantStock": "499",
         "worldBankWdi": "MNE",
-        "worldBankAgeComposition": "MNE",
         "unctadTrade": "499",
         "unctadServicesTrade": "499",
-        "unComtradeReporter": "499",
-        "unComtradeIsoFallback": "MNE",
         "worldMapTopojson": "499",
-        "oecdRevenue": "MNE",
         "unNationalAccounts": "Montenegro"
       }
     },
@@ -2276,9 +1765,6 @@
       "sourceIds": {
         "unWpp": "XKX",
         "worldBankWdi": "XKX",
-        "worldBankAgeComposition": "XKX",
-        "unComtradeIsoFallback": "XKX",
-        "oecdRevenue": "KOS",
         "unNationalAccounts": "Kosovo"
       }
     },
@@ -2289,13 +1775,9 @@
       "sourceIds": {
         "unMigrantStock": "807",
         "worldBankWdi": "MKD",
-        "worldBankAgeComposition": "MKD",
         "unctadTrade": "807",
         "unctadServicesTrade": "807",
-        "unComtradeReporter": "807",
-        "unComtradeIsoFallback": "MKD",
         "worldMapTopojson": "807",
-        "oecdRevenue": "MKD",
         "unNationalAccounts": "Republic of North Macedonia"
       }
     },
@@ -2306,13 +1788,9 @@
       "sourceIds": {
         "unMigrantStock": "8",
         "worldBankWdi": "ALB",
-        "worldBankAgeComposition": "ALB",
         "unctadTrade": "008",
         "unctadServicesTrade": "008",
-        "unComtradeReporter": "008",
-        "unComtradeIsoFallback": "ALB",
         "worldMapTopojson": "008",
-        "oecdRevenue": "ALB",
         "unNationalAccounts": "Albania"
       }
     },
@@ -2323,13 +1801,9 @@
       "sourceIds": {
         "unMigrantStock": "498",
         "worldBankWdi": "MDA",
-        "worldBankAgeComposition": "MDA",
         "unctadTrade": "498",
         "unctadServicesTrade": "498",
-        "unComtradeReporter": "498",
-        "unComtradeIsoFallback": "MDA",
         "worldMapTopojson": "498",
-        "oecdRevenue": "MDA",
         "unNationalAccounts": "Republic of Moldova",
         "unsdArea": "Republic of Moldova"
       }
@@ -2341,13 +1815,9 @@
       "sourceIds": {
         "unMigrantStock": "804",
         "worldBankWdi": "UKR",
-        "worldBankAgeComposition": "UKR",
         "unctadTrade": "804",
         "unctadServicesTrade": "804",
-        "unComtradeReporter": "804",
-        "unComtradeIsoFallback": "UKR",
         "worldMapTopojson": "804",
-        "oecdRevenue": "UKR",
         "unNationalAccounts": "Ukraine"
       }
     },
@@ -2358,13 +1828,9 @@
       "sourceIds": {
         "unMigrantStock": "40",
         "worldBankWdi": "AUT",
-        "worldBankAgeComposition": "AUT",
         "unctadTrade": "040",
         "unctadServicesTrade": "040",
-        "unComtradeReporter": "040",
-        "unComtradeIsoFallback": "AUT",
         "worldMapTopojson": "040",
-        "oecdRevenue": "AUT",
         "unNationalAccounts": "Austria"
       }
     },
@@ -2375,13 +1841,9 @@
       "sourceIds": {
         "unMigrantStock": "56",
         "worldBankWdi": "BEL",
-        "worldBankAgeComposition": "BEL",
         "unctadTrade": "056",
         "unctadServicesTrade": "056",
-        "unComtradeReporter": "056",
-        "unComtradeIsoFallback": "BEL",
         "worldMapTopojson": "056",
-        "oecdRevenue": "BEL",
         "unNationalAccounts": "Belgium"
       }
     },
@@ -2392,13 +1854,9 @@
       "sourceIds": {
         "unMigrantStock": "100",
         "worldBankWdi": "BGR",
-        "worldBankAgeComposition": "BGR",
         "unctadTrade": "100",
         "unctadServicesTrade": "100",
-        "unComtradeReporter": "100",
-        "unComtradeIsoFallback": "BGR",
         "worldMapTopojson": "100",
-        "oecdRevenue": "BGR",
         "unNationalAccounts": "Bulgaria"
       }
     },
@@ -2409,13 +1867,9 @@
       "sourceIds": {
         "unMigrantStock": "191",
         "worldBankWdi": "HRV",
-        "worldBankAgeComposition": "HRV",
         "unctadTrade": "191",
         "unctadServicesTrade": "191",
-        "unComtradeReporter": "191",
-        "unComtradeIsoFallback": "HRV",
         "worldMapTopojson": "191",
-        "oecdRevenue": "HRV",
         "unNationalAccounts": "Croatia"
       }
     },
@@ -2426,13 +1880,9 @@
       "sourceIds": {
         "unMigrantStock": "196",
         "worldBankWdi": "CYP",
-        "worldBankAgeComposition": "CYP",
         "unctadTrade": "196",
         "unctadServicesTrade": "196",
-        "unComtradeReporter": "196",
-        "unComtradeIsoFallback": "CYP",
         "worldMapTopojson": "196",
-        "oecdRevenue": "CYP",
         "unNationalAccounts": "Cyprus"
       }
     },
@@ -2443,13 +1893,9 @@
       "sourceIds": {
         "unMigrantStock": "203",
         "worldBankWdi": "CZE",
-        "worldBankAgeComposition": "CZE",
         "unctadTrade": "203",
         "unctadServicesTrade": "203",
-        "unComtradeReporter": "203",
-        "unComtradeIsoFallback": "CZE",
         "worldMapTopojson": "203",
-        "oecdRevenue": "CZE",
         "unNationalAccounts": "Czechia"
       }
     },
@@ -2460,13 +1906,9 @@
       "sourceIds": {
         "unMigrantStock": "208",
         "worldBankWdi": "DNK",
-        "worldBankAgeComposition": "DNK",
         "unctadTrade": "208",
         "unctadServicesTrade": "208",
-        "unComtradeReporter": "208",
-        "unComtradeIsoFallback": "DNK",
         "worldMapTopojson": "208",
-        "oecdRevenue": "DNK",
         "unNationalAccounts": "Denmark"
       }
     },
@@ -2477,13 +1919,9 @@
       "sourceIds": {
         "unMigrantStock": "233",
         "worldBankWdi": "EST",
-        "worldBankAgeComposition": "EST",
         "unctadTrade": "233",
         "unctadServicesTrade": "233",
-        "unComtradeReporter": "233",
-        "unComtradeIsoFallback": "EST",
         "worldMapTopojson": "233",
-        "oecdRevenue": "EST",
         "unNationalAccounts": "Estonia"
       }
     },
@@ -2494,13 +1932,9 @@
       "sourceIds": {
         "unMigrantStock": "246",
         "worldBankWdi": "FIN",
-        "worldBankAgeComposition": "FIN",
         "unctadTrade": "246",
         "unctadServicesTrade": "246",
-        "unComtradeReporter": "246",
-        "unComtradeIsoFallback": "FIN",
         "worldMapTopojson": "246",
-        "oecdRevenue": "FIN",
         "unNationalAccounts": "Finland"
       }
     },
@@ -2511,13 +1945,9 @@
       "sourceIds": {
         "unMigrantStock": "300",
         "worldBankWdi": "GRC",
-        "worldBankAgeComposition": "GRC",
         "unctadTrade": "300",
         "unctadServicesTrade": "300",
-        "unComtradeReporter": "300",
-        "unComtradeIsoFallback": "GRC",
         "worldMapTopojson": "300",
-        "oecdRevenue": "GRC",
         "unNationalAccounts": "Greece"
       }
     },
@@ -2528,13 +1958,9 @@
       "sourceIds": {
         "unMigrantStock": "348",
         "worldBankWdi": "HUN",
-        "worldBankAgeComposition": "HUN",
         "unctadTrade": "348",
         "unctadServicesTrade": "348",
-        "unComtradeReporter": "348",
-        "unComtradeIsoFallback": "HUN",
         "worldMapTopojson": "348",
-        "oecdRevenue": "HUN",
         "unNationalAccounts": "Hungary"
       }
     },
@@ -2545,13 +1971,9 @@
       "sourceIds": {
         "unMigrantStock": "372",
         "worldBankWdi": "IRL",
-        "worldBankAgeComposition": "IRL",
         "unctadTrade": "372",
         "unctadServicesTrade": "372",
-        "unComtradeReporter": "372",
-        "unComtradeIsoFallback": "IRL",
         "worldMapTopojson": "372",
-        "oecdRevenue": "IRL",
         "unNationalAccounts": "Ireland"
       }
     },
@@ -2562,13 +1984,9 @@
       "sourceIds": {
         "unMigrantStock": "428",
         "worldBankWdi": "LVA",
-        "worldBankAgeComposition": "LVA",
         "unctadTrade": "428",
         "unctadServicesTrade": "428",
-        "unComtradeReporter": "428",
-        "unComtradeIsoFallback": "LVA",
         "worldMapTopojson": "428",
-        "oecdRevenue": "LVA",
         "unNationalAccounts": "Latvia"
       }
     },
@@ -2579,13 +1997,9 @@
       "sourceIds": {
         "unMigrantStock": "440",
         "worldBankWdi": "LTU",
-        "worldBankAgeComposition": "LTU",
         "unctadTrade": "440",
         "unctadServicesTrade": "440",
-        "unComtradeReporter": "440",
-        "unComtradeIsoFallback": "LTU",
         "worldMapTopojson": "440",
-        "oecdRevenue": "LTU",
         "unNationalAccounts": "Lithuania"
       }
     },
@@ -2596,13 +2010,9 @@
       "sourceIds": {
         "unMigrantStock": "442",
         "worldBankWdi": "LUX",
-        "worldBankAgeComposition": "LUX",
         "unctadTrade": "442",
         "unctadServicesTrade": "442",
-        "unComtradeReporter": "442",
-        "unComtradeIsoFallback": "LUX",
         "worldMapTopojson": "442",
-        "oecdRevenue": "LUX",
         "unNationalAccounts": "Luxembourg"
       }
     },
@@ -2613,13 +2023,9 @@
       "sourceIds": {
         "unMigrantStock": "470",
         "worldBankWdi": "MLT",
-        "worldBankAgeComposition": "MLT",
         "unctadTrade": "470",
         "unctadServicesTrade": "470",
-        "unComtradeReporter": "470",
-        "unComtradeIsoFallback": "MLT",
         "worldMapTopojson": "470",
-        "oecdRevenue": "MLT",
         "unNationalAccounts": "Malta"
       }
     },
@@ -2630,13 +2036,9 @@
       "sourceIds": {
         "unMigrantStock": "528",
         "worldBankWdi": "NLD",
-        "worldBankAgeComposition": "NLD",
         "unctadTrade": "528",
         "unctadServicesTrade": "528",
-        "unComtradeReporter": "528",
-        "unComtradeIsoFallback": "NLD",
         "worldMapTopojson": "528",
-        "oecdRevenue": "NLD",
         "unNationalAccounts": "Netherlands",
         "unsdArea": "Netherlands (Kingdom of the)"
       }
@@ -2648,13 +2050,9 @@
       "sourceIds": {
         "unMigrantStock": "616",
         "worldBankWdi": "POL",
-        "worldBankAgeComposition": "POL",
         "unctadTrade": "616",
         "unctadServicesTrade": "616",
-        "unComtradeReporter": "616",
-        "unComtradeIsoFallback": "POL",
         "worldMapTopojson": "616",
-        "oecdRevenue": "POL",
         "unNationalAccounts": "Poland"
       }
     },
@@ -2665,13 +2063,9 @@
       "sourceIds": {
         "unMigrantStock": "620",
         "worldBankWdi": "PRT",
-        "worldBankAgeComposition": "PRT",
         "unctadTrade": "620",
         "unctadServicesTrade": "620",
-        "unComtradeReporter": "620",
-        "unComtradeIsoFallback": "PRT",
         "worldMapTopojson": "620",
-        "oecdRevenue": "PRT",
         "unNationalAccounts": "Portugal"
       }
     },
@@ -2682,13 +2076,9 @@
       "sourceIds": {
         "unMigrantStock": "642",
         "worldBankWdi": "ROU",
-        "worldBankAgeComposition": "ROU",
         "unctadTrade": "642",
         "unctadServicesTrade": "642",
-        "unComtradeReporter": "642",
-        "unComtradeIsoFallback": "ROU",
         "worldMapTopojson": "642",
-        "oecdRevenue": "ROU",
         "unNationalAccounts": "Romania"
       }
     },
@@ -2699,13 +2089,9 @@
       "sourceIds": {
         "unMigrantStock": "703",
         "worldBankWdi": "SVK",
-        "worldBankAgeComposition": "SVK",
         "unctadTrade": "703",
         "unctadServicesTrade": "703",
-        "unComtradeReporter": "703",
-        "unComtradeIsoFallback": "SVK",
         "worldMapTopojson": "703",
-        "oecdRevenue": "SVK",
         "unNationalAccounts": "Slovakia"
       }
     },
@@ -2716,13 +2102,9 @@
       "sourceIds": {
         "unMigrantStock": "705",
         "worldBankWdi": "SVN",
-        "worldBankAgeComposition": "SVN",
         "unctadTrade": "705",
         "unctadServicesTrade": "705",
-        "unComtradeReporter": "705",
-        "unComtradeIsoFallback": "SVN",
         "worldMapTopojson": "705",
-        "oecdRevenue": "SVN",
         "unNationalAccounts": "Slovenia"
       }
     },
@@ -2733,13 +2115,9 @@
       "sourceIds": {
         "unMigrantStock": "724",
         "worldBankWdi": "ESP",
-        "worldBankAgeComposition": "ESP",
         "unctadTrade": "724",
         "unctadServicesTrade": "724",
-        "unComtradeReporter": "724",
-        "unComtradeIsoFallback": "ESP",
         "worldMapTopojson": "724",
-        "oecdRevenue": "ESP",
         "unNationalAccounts": "Spain"
       }
     },
@@ -2750,13 +2128,9 @@
       "sourceIds": {
         "unMigrantStock": "752",
         "worldBankWdi": "SWE",
-        "worldBankAgeComposition": "SWE",
         "unctadTrade": "752",
         "unctadServicesTrade": "752",
-        "unComtradeReporter": "752",
-        "unComtradeIsoFallback": "SWE",
         "worldMapTopojson": "752",
-        "oecdRevenue": "SWE",
         "unNationalAccounts": "Sweden"
       }
     },
@@ -2767,13 +2141,9 @@
       "sourceIds": {
         "unMigrantStock": "96",
         "worldBankWdi": "BRN",
-        "worldBankAgeComposition": "BRN",
         "unctadTrade": "096",
         "unctadServicesTrade": "096",
-        "unComtradeReporter": "096",
-        "unComtradeIsoFallback": "BRN",
         "worldMapTopojson": "096",
-        "oecdRevenue": "BRN",
         "unNationalAccounts": "Brunei Darussalam",
         "unsdArea": "Brunei Darussalam"
       }
@@ -2785,13 +2155,9 @@
       "sourceIds": {
         "unMigrantStock": "116",
         "worldBankWdi": "KHM",
-        "worldBankAgeComposition": "KHM",
         "unctadTrade": "116",
         "unctadServicesTrade": "116",
-        "unComtradeReporter": "116",
-        "unComtradeIsoFallback": "KHM",
         "worldMapTopojson": "116",
-        "oecdRevenue": "KHM",
         "unNationalAccounts": "Cambodia"
       }
     },
@@ -2802,13 +2168,9 @@
       "sourceIds": {
         "unMigrantStock": "418",
         "worldBankWdi": "LAO",
-        "worldBankAgeComposition": "LAO",
         "unctadTrade": "418",
         "unctadServicesTrade": "418",
-        "unComtradeReporter": "418",
-        "unComtradeIsoFallback": "LAO",
         "worldMapTopojson": "418",
-        "oecdRevenue": "LAO",
         "unNationalAccounts": "Lao People's Democratic Republic",
         "unsdArea": "Lao People's Democratic Republic"
       }
@@ -2820,13 +2182,9 @@
       "sourceIds": {
         "unMigrantStock": "458",
         "worldBankWdi": "MYS",
-        "worldBankAgeComposition": "MYS",
         "unctadTrade": "458",
         "unctadServicesTrade": "458",
-        "unComtradeReporter": "458",
-        "unComtradeIsoFallback": "MYS",
         "worldMapTopojson": "458",
-        "oecdRevenue": "MYS",
         "unNationalAccounts": "Malaysia"
       }
     },
@@ -2837,13 +2195,9 @@
       "sourceIds": {
         "unMigrantStock": "104",
         "worldBankWdi": "MMR",
-        "worldBankAgeComposition": "MMR",
         "unctadTrade": "104",
         "unctadServicesTrade": "104",
-        "unComtradeReporter": "104",
-        "unComtradeIsoFallback": "MMR",
         "worldMapTopojson": "104",
-        "oecdRevenue": "MMR",
         "unNationalAccounts": "Myanmar"
       }
     },
@@ -2854,13 +2208,9 @@
       "sourceIds": {
         "unMigrantStock": "608",
         "worldBankWdi": "PHL",
-        "worldBankAgeComposition": "PHL",
         "unctadTrade": "608",
         "unctadServicesTrade": "608",
-        "unComtradeReporter": "608",
-        "unComtradeIsoFallback": "PHL",
         "worldMapTopojson": "608",
-        "oecdRevenue": "PHL",
         "unNationalAccounts": "Philippines"
       }
     },
@@ -2871,13 +2221,9 @@
       "sourceIds": {
         "unMigrantStock": "702",
         "worldBankWdi": "SGP",
-        "worldBankAgeComposition": "SGP",
         "unctadTrade": "702",
         "unctadServicesTrade": "702",
-        "unComtradeReporter": "702",
-        "unComtradeIsoFallback": "SGP",
         "worldMapTopojson": "702",
-        "oecdRevenue": "SGP",
         "unNationalAccounts": "Singapore"
       }
     },
@@ -2888,13 +2234,9 @@
       "sourceIds": {
         "unMigrantStock": "764",
         "worldBankWdi": "THA",
-        "worldBankAgeComposition": "THA",
         "unctadTrade": "764",
         "unctadServicesTrade": "764",
-        "unComtradeReporter": "764",
-        "unComtradeIsoFallback": "THA",
         "worldMapTopojson": "764",
-        "oecdRevenue": "THA",
         "unNationalAccounts": "Thailand"
       }
     },
@@ -2905,13 +2247,9 @@
       "sourceIds": {
         "unMigrantStock": "626",
         "worldBankWdi": "TLS",
-        "worldBankAgeComposition": "TLS",
         "unctadTrade": "626",
         "unctadServicesTrade": "626",
-        "unComtradeReporter": "626",
-        "unComtradeIsoFallback": "TLS",
         "worldMapTopojson": "626",
-        "oecdRevenue": "TLS",
         "unNationalAccounts": "Timor-Leste"
       }
     },
@@ -2922,13 +2260,9 @@
       "sourceIds": {
         "unMigrantStock": "704",
         "worldBankWdi": "VNM",
-        "worldBankAgeComposition": "VNM",
         "unctadTrade": "704",
         "unctadServicesTrade": "704",
-        "unComtradeReporter": "704",
-        "unComtradeIsoFallback": "VNM",
         "worldMapTopojson": "704",
-        "oecdRevenue": "VNM",
         "unNationalAccounts": "Viet Nam",
         "unsdArea": "Viet Nam"
       }
@@ -2941,13 +2275,9 @@
         "unWpp": "PSE",
         "unMigrantStock": "275",
         "worldBankWdi": "PSE",
-        "worldBankAgeComposition": "PSE",
         "unctadTrade": "275",
         "unctadServicesTrade": "275",
-        "unComtradeReporter": "275",
-        "unComtradeIsoFallback": "PSE",
         "worldMapTopojson": "275",
-        "oecdRevenue": "WBG",
         "unNationalAccounts": "State of Palestine",
         "unsdArea": "State of Palestine",
         "undpHdi": "PSE"
@@ -2960,13 +2290,9 @@
       "sourceIds": {
         "unMigrantStock": "12",
         "worldBankWdi": "DZA",
-        "worldBankAgeComposition": "DZA",
         "unctadTrade": "012",
         "unctadServicesTrade": "012",
-        "unComtradeReporter": "012",
-        "unComtradeIsoFallback": "DZA",
         "worldMapTopojson": "012",
-        "oecdRevenue": "DZA",
         "unNationalAccounts": "Algeria"
       }
     },
@@ -2977,13 +2303,9 @@
       "sourceIds": {
         "unMigrantStock": "24",
         "worldBankWdi": "AGO",
-        "worldBankAgeComposition": "AGO",
         "unctadTrade": "024",
         "unctadServicesTrade": "024",
-        "unComtradeReporter": "024",
-        "unComtradeIsoFallback": "AGO",
         "worldMapTopojson": "024",
-        "oecdRevenue": "AGO",
         "unNationalAccounts": "Angola"
       }
     },
@@ -2994,13 +2316,9 @@
       "sourceIds": {
         "unMigrantStock": "204",
         "worldBankWdi": "BEN",
-        "worldBankAgeComposition": "BEN",
         "unctadTrade": "204",
         "unctadServicesTrade": "204",
-        "unComtradeReporter": "204",
-        "unComtradeIsoFallback": "BEN",
         "worldMapTopojson": "204",
-        "oecdRevenue": "BEN",
         "unNationalAccounts": "Benin"
       }
     },
@@ -3011,13 +2329,9 @@
       "sourceIds": {
         "unMigrantStock": "72",
         "worldBankWdi": "BWA",
-        "worldBankAgeComposition": "BWA",
         "unctadTrade": "072",
         "unctadServicesTrade": "072",
-        "unComtradeReporter": "072",
-        "unComtradeIsoFallback": "BWA",
         "worldMapTopojson": "072",
-        "oecdRevenue": "BWA",
         "unNationalAccounts": "Botswana"
       }
     },
@@ -3028,13 +2342,9 @@
       "sourceIds": {
         "unMigrantStock": "854",
         "worldBankWdi": "BFA",
-        "worldBankAgeComposition": "BFA",
         "unctadTrade": "854",
         "unctadServicesTrade": "854",
-        "unComtradeReporter": "854",
-        "unComtradeIsoFallback": "BFA",
         "worldMapTopojson": "854",
-        "oecdRevenue": "BFA",
         "unNationalAccounts": "Burkina Faso"
       }
     },
@@ -3045,13 +2355,9 @@
       "sourceIds": {
         "unMigrantStock": "108",
         "worldBankWdi": "BDI",
-        "worldBankAgeComposition": "BDI",
         "unctadTrade": "108",
         "unctadServicesTrade": "108",
-        "unComtradeReporter": "108",
-        "unComtradeIsoFallback": "BDI",
         "worldMapTopojson": "108",
-        "oecdRevenue": "BDI",
         "unNationalAccounts": "Burundi"
       }
     },
@@ -3062,13 +2368,9 @@
       "sourceIds": {
         "unMigrantStock": "132",
         "worldBankWdi": "CPV",
-        "worldBankAgeComposition": "CPV",
         "unctadTrade": "132",
         "unctadServicesTrade": "132",
-        "unComtradeReporter": "132",
-        "unComtradeIsoFallback": "CPV",
         "worldMapTopojson": "132",
-        "oecdRevenue": "CPV",
         "unNationalAccounts": "Cabo Verde"
       }
     },
@@ -3079,13 +2381,9 @@
       "sourceIds": {
         "unMigrantStock": "120",
         "worldBankWdi": "CMR",
-        "worldBankAgeComposition": "CMR",
         "unctadTrade": "120",
         "unctadServicesTrade": "120",
-        "unComtradeReporter": "120",
-        "unComtradeIsoFallback": "CMR",
         "worldMapTopojson": "120",
-        "oecdRevenue": "CMR",
         "unNationalAccounts": "Cameroon"
       }
     },
@@ -3096,13 +2394,9 @@
       "sourceIds": {
         "unMigrantStock": "140",
         "worldBankWdi": "CAF",
-        "worldBankAgeComposition": "CAF",
         "unctadTrade": "140",
         "unctadServicesTrade": "140",
-        "unComtradeReporter": "140",
-        "unComtradeIsoFallback": "CAF",
         "worldMapTopojson": "140",
-        "oecdRevenue": "CAF",
         "unNationalAccounts": "Central African Republic"
       }
     },
@@ -3113,13 +2407,9 @@
       "sourceIds": {
         "unMigrantStock": "148",
         "worldBankWdi": "TCD",
-        "worldBankAgeComposition": "TCD",
         "unctadTrade": "148",
         "unctadServicesTrade": "148",
-        "unComtradeReporter": "148",
-        "unComtradeIsoFallback": "TCD",
         "worldMapTopojson": "148",
-        "oecdRevenue": "TCD",
         "unNationalAccounts": "Chad"
       }
     },
@@ -3130,13 +2420,9 @@
       "sourceIds": {
         "unMigrantStock": "174",
         "worldBankWdi": "COM",
-        "worldBankAgeComposition": "COM",
         "unctadTrade": "174",
         "unctadServicesTrade": "174",
-        "unComtradeReporter": "174",
-        "unComtradeIsoFallback": "COM",
         "worldMapTopojson": "174",
-        "oecdRevenue": "COM",
         "unNationalAccounts": "Comoros"
       }
     },
@@ -3147,13 +2433,9 @@
       "sourceIds": {
         "unMigrantStock": "178",
         "worldBankWdi": "COG",
-        "worldBankAgeComposition": "COG",
         "unctadTrade": "178",
         "unctadServicesTrade": "178",
-        "unComtradeReporter": "178",
-        "unComtradeIsoFallback": "COG",
         "worldMapTopojson": "178",
-        "oecdRevenue": "COG",
         "unNationalAccounts": "Congo",
         "unsdArea": "Congo"
       }
@@ -3165,13 +2447,9 @@
       "sourceIds": {
         "unMigrantStock": "180",
         "worldBankWdi": "COD",
-        "worldBankAgeComposition": "COD",
         "unctadTrade": "180",
         "unctadServicesTrade": "180",
-        "unComtradeReporter": "180",
-        "unComtradeIsoFallback": "COD",
         "worldMapTopojson": "180",
-        "oecdRevenue": "COD",
         "unNationalAccounts": "Democratic Republic of the Congo",
         "unsdArea": "Democratic Republic of the Congo"
       }
@@ -3183,13 +2461,9 @@
       "sourceIds": {
         "unMigrantStock": "384",
         "worldBankWdi": "CIV",
-        "worldBankAgeComposition": "CIV",
         "unctadTrade": "384",
         "unctadServicesTrade": "384",
-        "unComtradeReporter": "384",
-        "unComtradeIsoFallback": "CIV",
         "worldMapTopojson": "384",
-        "oecdRevenue": "CIV",
         "unNationalAccounts": "Côte d'Ivoire"
       }
     },
@@ -3200,13 +2474,9 @@
       "sourceIds": {
         "unMigrantStock": "262",
         "worldBankWdi": "DJI",
-        "worldBankAgeComposition": "DJI",
         "unctadTrade": "262",
         "unctadServicesTrade": "262",
-        "unComtradeReporter": "262",
-        "unComtradeIsoFallback": "DJI",
         "worldMapTopojson": "262",
-        "oecdRevenue": "DJI",
         "unNationalAccounts": "Djibouti"
       }
     },
@@ -3217,13 +2487,9 @@
       "sourceIds": {
         "unMigrantStock": "818",
         "worldBankWdi": "EGY",
-        "worldBankAgeComposition": "EGY",
         "unctadTrade": "818",
         "unctadServicesTrade": "818",
-        "unComtradeReporter": "818",
-        "unComtradeIsoFallback": "EGY",
         "worldMapTopojson": "818",
-        "oecdRevenue": "EGY",
         "unNationalAccounts": "Egypt"
       }
     },
@@ -3234,13 +2500,9 @@
       "sourceIds": {
         "unMigrantStock": "226",
         "worldBankWdi": "GNQ",
-        "worldBankAgeComposition": "GNQ",
         "unctadTrade": "226",
         "unctadServicesTrade": "226",
-        "unComtradeReporter": "226",
-        "unComtradeIsoFallback": "GNQ",
         "worldMapTopojson": "226",
-        "oecdRevenue": "GNQ",
         "unNationalAccounts": "Equatorial Guinea"
       }
     },
@@ -3251,13 +2513,9 @@
       "sourceIds": {
         "unMigrantStock": "232",
         "worldBankWdi": "ERI",
-        "worldBankAgeComposition": "ERI",
         "unctadTrade": "232",
         "unctadServicesTrade": "232",
-        "unComtradeReporter": "232",
-        "unComtradeIsoFallback": "ERI",
         "worldMapTopojson": "232",
-        "oecdRevenue": "ERI",
         "unNationalAccounts": "Eritrea"
       }
     },
@@ -3268,13 +2526,9 @@
       "sourceIds": {
         "unMigrantStock": "748",
         "worldBankWdi": "SWZ",
-        "worldBankAgeComposition": "SWZ",
         "unctadTrade": "748",
         "unctadServicesTrade": "748",
-        "unComtradeReporter": "748",
-        "unComtradeIsoFallback": "SWZ",
         "worldMapTopojson": "748",
-        "oecdRevenue": "SWZ",
         "unNationalAccounts": "Kingdom of Eswatini"
       }
     },
@@ -3285,13 +2539,9 @@
       "sourceIds": {
         "unMigrantStock": "231",
         "worldBankWdi": "ETH",
-        "worldBankAgeComposition": "ETH",
         "unctadTrade": "231",
         "unctadServicesTrade": "231",
-        "unComtradeReporter": "231",
-        "unComtradeIsoFallback": "ETH",
         "worldMapTopojson": "231",
-        "oecdRevenue": "ETH",
         "unNationalAccounts": "Ethiopia"
       }
     },
@@ -3302,13 +2552,9 @@
       "sourceIds": {
         "unMigrantStock": "266",
         "worldBankWdi": "GAB",
-        "worldBankAgeComposition": "GAB",
         "unctadTrade": "266",
         "unctadServicesTrade": "266",
-        "unComtradeReporter": "266",
-        "unComtradeIsoFallback": "GAB",
         "worldMapTopojson": "266",
-        "oecdRevenue": "GAB",
         "unNationalAccounts": "Gabon"
       }
     },
@@ -3319,13 +2565,9 @@
       "sourceIds": {
         "unMigrantStock": "270",
         "worldBankWdi": "GMB",
-        "worldBankAgeComposition": "GMB",
         "unctadTrade": "270",
         "unctadServicesTrade": "270",
-        "unComtradeReporter": "270",
-        "unComtradeIsoFallback": "GMB",
         "worldMapTopojson": "270",
-        "oecdRevenue": "GMB",
         "unNationalAccounts": "Gambia"
       }
     },
@@ -3336,13 +2578,9 @@
       "sourceIds": {
         "unMigrantStock": "288",
         "worldBankWdi": "GHA",
-        "worldBankAgeComposition": "GHA",
         "unctadTrade": "288",
         "unctadServicesTrade": "288",
-        "unComtradeReporter": "288",
-        "unComtradeIsoFallback": "GHA",
         "worldMapTopojson": "288",
-        "oecdRevenue": "GHA",
         "unNationalAccounts": "Ghana"
       }
     },
@@ -3353,13 +2591,9 @@
       "sourceIds": {
         "unMigrantStock": "324",
         "worldBankWdi": "GIN",
-        "worldBankAgeComposition": "GIN",
         "unctadTrade": "324",
         "unctadServicesTrade": "324",
-        "unComtradeReporter": "324",
-        "unComtradeIsoFallback": "GIN",
         "worldMapTopojson": "324",
-        "oecdRevenue": "GIN",
         "unNationalAccounts": "Guinea"
       }
     },
@@ -3370,13 +2604,9 @@
       "sourceIds": {
         "unMigrantStock": "624",
         "worldBankWdi": "GNB",
-        "worldBankAgeComposition": "GNB",
         "unctadTrade": "624",
         "unctadServicesTrade": "624",
-        "unComtradeReporter": "624",
-        "unComtradeIsoFallback": "GNB",
         "worldMapTopojson": "624",
-        "oecdRevenue": "GNB",
         "unNationalAccounts": "Guinea-Bissau"
       }
     },
@@ -3387,13 +2617,9 @@
       "sourceIds": {
         "unMigrantStock": "404",
         "worldBankWdi": "KEN",
-        "worldBankAgeComposition": "KEN",
         "unctadTrade": "404",
         "unctadServicesTrade": "404",
-        "unComtradeReporter": "404",
-        "unComtradeIsoFallback": "KEN",
         "worldMapTopojson": "404",
-        "oecdRevenue": "KEN",
         "unNationalAccounts": "Kenya"
       }
     },
@@ -3404,13 +2630,9 @@
       "sourceIds": {
         "unMigrantStock": "426",
         "worldBankWdi": "LSO",
-        "worldBankAgeComposition": "LSO",
         "unctadTrade": "426",
         "unctadServicesTrade": "426",
-        "unComtradeReporter": "426",
-        "unComtradeIsoFallback": "LSO",
         "worldMapTopojson": "426",
-        "oecdRevenue": "LSO",
         "unNationalAccounts": "Lesotho"
       }
     },
@@ -3421,13 +2643,9 @@
       "sourceIds": {
         "unMigrantStock": "430",
         "worldBankWdi": "LBR",
-        "worldBankAgeComposition": "LBR",
         "unctadTrade": "430",
         "unctadServicesTrade": "430",
-        "unComtradeReporter": "430",
-        "unComtradeIsoFallback": "LBR",
         "worldMapTopojson": "430",
-        "oecdRevenue": "LBR",
         "unNationalAccounts": "Liberia"
       }
     },
@@ -3438,13 +2656,9 @@
       "sourceIds": {
         "unMigrantStock": "434",
         "worldBankWdi": "LBY",
-        "worldBankAgeComposition": "LBY",
         "unctadTrade": "434",
         "unctadServicesTrade": "434",
-        "unComtradeReporter": "434",
-        "unComtradeIsoFallback": "LBY",
         "worldMapTopojson": "434",
-        "oecdRevenue": "LBY",
         "unNationalAccounts": "Libya"
       }
     },
@@ -3455,13 +2669,9 @@
       "sourceIds": {
         "unMigrantStock": "450",
         "worldBankWdi": "MDG",
-        "worldBankAgeComposition": "MDG",
         "unctadTrade": "450",
         "unctadServicesTrade": "450",
-        "unComtradeReporter": "450",
-        "unComtradeIsoFallback": "MDG",
         "worldMapTopojson": "450",
-        "oecdRevenue": "MDG",
         "unNationalAccounts": "Madagascar"
       }
     },
@@ -3472,13 +2682,9 @@
       "sourceIds": {
         "unMigrantStock": "454",
         "worldBankWdi": "MWI",
-        "worldBankAgeComposition": "MWI",
         "unctadTrade": "454",
         "unctadServicesTrade": "454",
-        "unComtradeReporter": "454",
-        "unComtradeIsoFallback": "MWI",
         "worldMapTopojson": "454",
-        "oecdRevenue": "MWI",
         "unNationalAccounts": "Malawi"
       }
     },
@@ -3488,7 +2694,6 @@
       "m49": "175",
       "sourceIds": {
         "unMigrantStock": "175",
-        "oecdRevenue": "MYT",
         "unNationalAccounts": "Mayotte"
       }
     },
@@ -3499,13 +2704,9 @@
       "sourceIds": {
         "unMigrantStock": "466",
         "worldBankWdi": "MLI",
-        "worldBankAgeComposition": "MLI",
         "unctadTrade": "466",
         "unctadServicesTrade": "466",
-        "unComtradeReporter": "466",
-        "unComtradeIsoFallback": "MLI",
         "worldMapTopojson": "466",
-        "oecdRevenue": "MLI",
         "unNationalAccounts": "Mali"
       }
     },
@@ -3516,13 +2717,9 @@
       "sourceIds": {
         "unMigrantStock": "478",
         "worldBankWdi": "MRT",
-        "worldBankAgeComposition": "MRT",
         "unctadTrade": "478",
         "unctadServicesTrade": "478",
-        "unComtradeReporter": "478",
-        "unComtradeIsoFallback": "MRT",
         "worldMapTopojson": "478",
-        "oecdRevenue": "MRT",
         "unNationalAccounts": "Mauritania"
       }
     },
@@ -3533,13 +2730,9 @@
       "sourceIds": {
         "unMigrantStock": "480",
         "worldBankWdi": "MUS",
-        "worldBankAgeComposition": "MUS",
         "unctadTrade": "480",
         "unctadServicesTrade": "480",
-        "unComtradeReporter": "480",
-        "unComtradeIsoFallback": "MUS",
         "worldMapTopojson": "480",
-        "oecdRevenue": "MUS",
         "unNationalAccounts": "Mauritius"
       }
     },
@@ -3550,13 +2743,9 @@
       "sourceIds": {
         "unMigrantStock": "504",
         "worldBankWdi": "MAR",
-        "worldBankAgeComposition": "MAR",
         "unctadTrade": "504",
         "unctadServicesTrade": "504",
-        "unComtradeReporter": "504",
-        "unComtradeIsoFallback": "MAR",
         "worldMapTopojson": "504",
-        "oecdRevenue": "MAR",
         "unNationalAccounts": "Morocco"
       }
     },
@@ -3567,13 +2756,9 @@
       "sourceIds": {
         "unMigrantStock": "508",
         "worldBankWdi": "MOZ",
-        "worldBankAgeComposition": "MOZ",
         "unctadTrade": "508",
         "unctadServicesTrade": "508",
-        "unComtradeReporter": "508",
-        "unComtradeIsoFallback": "MOZ",
         "worldMapTopojson": "508",
-        "oecdRevenue": "MOZ",
         "unNationalAccounts": "Mozambique"
       }
     },
@@ -3584,13 +2769,9 @@
       "sourceIds": {
         "unMigrantStock": "516",
         "worldBankWdi": "NAM",
-        "worldBankAgeComposition": "NAM",
         "unctadTrade": "516",
         "unctadServicesTrade": "516",
-        "unComtradeReporter": "516",
-        "unComtradeIsoFallback": "NAM",
         "worldMapTopojson": "516",
-        "oecdRevenue": "NAM",
         "unNationalAccounts": "Namibia"
       }
     },
@@ -3601,13 +2782,9 @@
       "sourceIds": {
         "unMigrantStock": "562",
         "worldBankWdi": "NER",
-        "worldBankAgeComposition": "NER",
         "unctadTrade": "562",
         "unctadServicesTrade": "562",
-        "unComtradeReporter": "562",
-        "unComtradeIsoFallback": "NER",
         "worldMapTopojson": "562",
-        "oecdRevenue": "NER",
         "unNationalAccounts": "Niger"
       }
     },
@@ -3618,13 +2795,9 @@
       "sourceIds": {
         "unMigrantStock": "566",
         "worldBankWdi": "NGA",
-        "worldBankAgeComposition": "NGA",
         "unctadTrade": "566",
         "unctadServicesTrade": "566",
-        "unComtradeReporter": "566",
-        "unComtradeIsoFallback": "NGA",
         "worldMapTopojson": "566",
-        "oecdRevenue": "NGA",
         "unNationalAccounts": "Nigeria"
       }
     },
@@ -3635,13 +2808,9 @@
       "sourceIds": {
         "unMigrantStock": "646",
         "worldBankWdi": "RWA",
-        "worldBankAgeComposition": "RWA",
         "unctadTrade": "646",
         "unctadServicesTrade": "646",
-        "unComtradeReporter": "646",
-        "unComtradeIsoFallback": "RWA",
         "worldMapTopojson": "646",
-        "oecdRevenue": "RWA",
         "unNationalAccounts": "Rwanda"
       }
     },
@@ -3653,9 +2822,7 @@
         "unMigrantStock": "638",
         "unctadTrade": "638",
         "unctadServicesTrade": "638",
-        "unComtradeReporter": "638",
         "worldMapTopojson": "638",
-        "oecdRevenue": "REU",
         "unNationalAccounts": "Réunion"
       }
     },
@@ -3667,9 +2834,7 @@
         "unMigrantStock": "654",
         "unctadTrade": "654",
         "unctadServicesTrade": "654",
-        "unComtradeReporter": "654",
         "worldMapTopojson": "654",
-        "oecdRevenue": "SHN",
         "unNationalAccounts": "Saint Helena"
       }
     },
@@ -3680,13 +2845,9 @@
       "sourceIds": {
         "unMigrantStock": "678",
         "worldBankWdi": "STP",
-        "worldBankAgeComposition": "STP",
         "unctadTrade": "678",
         "unctadServicesTrade": "678",
-        "unComtradeReporter": "678",
-        "unComtradeIsoFallback": "STP",
         "worldMapTopojson": "678",
-        "oecdRevenue": "STP",
         "unNationalAccounts": "Sao Tome and Principe"
       }
     },
@@ -3697,13 +2858,9 @@
       "sourceIds": {
         "unMigrantStock": "686",
         "worldBankWdi": "SEN",
-        "worldBankAgeComposition": "SEN",
         "unctadTrade": "686",
         "unctadServicesTrade": "686",
-        "unComtradeReporter": "686",
-        "unComtradeIsoFallback": "SEN",
         "worldMapTopojson": "686",
-        "oecdRevenue": "SEN",
         "unNationalAccounts": "Senegal"
       }
     },
@@ -3714,13 +2871,9 @@
       "sourceIds": {
         "unMigrantStock": "690",
         "worldBankWdi": "SYC",
-        "worldBankAgeComposition": "SYC",
         "unctadTrade": "690",
         "unctadServicesTrade": "690",
-        "unComtradeReporter": "690",
-        "unComtradeIsoFallback": "SYC",
         "worldMapTopojson": "690",
-        "oecdRevenue": "SYC",
         "unNationalAccounts": "Seychelles"
       }
     },
@@ -3731,13 +2884,9 @@
       "sourceIds": {
         "unMigrantStock": "694",
         "worldBankWdi": "SLE",
-        "worldBankAgeComposition": "SLE",
         "unctadTrade": "694",
         "unctadServicesTrade": "694",
-        "unComtradeReporter": "694",
-        "unComtradeIsoFallback": "SLE",
         "worldMapTopojson": "694",
-        "oecdRevenue": "SLE",
         "unNationalAccounts": "Sierra Leone"
       }
     },
@@ -3748,13 +2897,9 @@
       "sourceIds": {
         "unMigrantStock": "706",
         "worldBankWdi": "SOM",
-        "worldBankAgeComposition": "SOM",
         "unctadTrade": "706",
         "unctadServicesTrade": "706",
-        "unComtradeReporter": "706",
-        "unComtradeIsoFallback": "SOM",
         "worldMapTopojson": "706",
-        "oecdRevenue": "SOM",
         "unNationalAccounts": "Somalia"
       }
     },
@@ -3765,13 +2910,9 @@
       "sourceIds": {
         "unMigrantStock": "728",
         "worldBankWdi": "SSD",
-        "worldBankAgeComposition": "SSD",
         "unctadTrade": "728",
         "unctadServicesTrade": "728",
-        "unComtradeReporter": "728",
-        "unComtradeIsoFallback": "SSD",
         "worldMapTopojson": "728",
-        "oecdRevenue": "SSD",
         "unNationalAccounts": "South Sudan",
         "unsdArea": "Republic of South Sudan"
       }
@@ -3783,13 +2924,9 @@
       "sourceIds": {
         "unMigrantStock": "729",
         "worldBankWdi": "SDN",
-        "worldBankAgeComposition": "SDN",
         "unctadTrade": "729",
         "unctadServicesTrade": "729",
-        "unComtradeReporter": "729",
-        "unComtradeIsoFallback": "SDN",
         "worldMapTopojson": "729",
-        "oecdRevenue": "SDN",
         "unNationalAccounts": "Sudan"
       }
     },
@@ -3800,13 +2937,9 @@
       "sourceIds": {
         "unMigrantStock": "834",
         "worldBankWdi": "TZA",
-        "worldBankAgeComposition": "TZA",
         "unctadTrade": "834",
         "unctadServicesTrade": "834",
-        "unComtradeReporter": "834",
-        "unComtradeIsoFallback": "TZA",
         "worldMapTopojson": "834",
-        "oecdRevenue": "TZA",
         "unNationalAccounts": "Tanzania",
         "unsdArea": "United Republic of Tanzania"
       }
@@ -3818,13 +2951,9 @@
       "sourceIds": {
         "unMigrantStock": "768",
         "worldBankWdi": "TGO",
-        "worldBankAgeComposition": "TGO",
         "unctadTrade": "768",
         "unctadServicesTrade": "768",
-        "unComtradeReporter": "768",
-        "unComtradeIsoFallback": "TGO",
         "worldMapTopojson": "768",
-        "oecdRevenue": "TGO",
         "unNationalAccounts": "Togo"
       }
     },
@@ -3835,13 +2964,9 @@
       "sourceIds": {
         "unMigrantStock": "788",
         "worldBankWdi": "TUN",
-        "worldBankAgeComposition": "TUN",
         "unctadTrade": "788",
         "unctadServicesTrade": "788",
-        "unComtradeReporter": "788",
-        "unComtradeIsoFallback": "TUN",
         "worldMapTopojson": "788",
-        "oecdRevenue": "TUN",
         "unNationalAccounts": "Tunisia"
       }
     },
@@ -3852,13 +2977,9 @@
       "sourceIds": {
         "unMigrantStock": "800",
         "worldBankWdi": "UGA",
-        "worldBankAgeComposition": "UGA",
         "unctadTrade": "800",
         "unctadServicesTrade": "800",
-        "unComtradeReporter": "800",
-        "unComtradeIsoFallback": "UGA",
         "worldMapTopojson": "800",
-        "oecdRevenue": "UGA",
         "unNationalAccounts": "Uganda"
       }
     },
@@ -3869,13 +2990,9 @@
       "sourceIds": {
         "unMigrantStock": "894",
         "worldBankWdi": "ZMB",
-        "worldBankAgeComposition": "ZMB",
         "unctadTrade": "894",
         "unctadServicesTrade": "894",
-        "unComtradeReporter": "894",
-        "unComtradeIsoFallback": "ZMB",
         "worldMapTopojson": "894",
-        "oecdRevenue": "ZMB",
         "unNationalAccounts": "Zambia"
       }
     },
@@ -3886,13 +3003,9 @@
       "sourceIds": {
         "unMigrantStock": "716",
         "worldBankWdi": "ZWE",
-        "worldBankAgeComposition": "ZWE",
         "unctadTrade": "716",
         "unctadServicesTrade": "716",
-        "unComtradeReporter": "716",
-        "unComtradeIsoFallback": "ZWE",
         "worldMapTopojson": "716",
-        "oecdRevenue": "ZWE",
         "unNationalAccounts": "Zimbabwe"
       }
     }
@@ -3910,10 +3023,6 @@
       "default": "siteCodeThenName",
       "description": "World Bank WDI update scripts try sourceIds.worldBankWdi, then the site country code, then the display name."
     },
-    "worldBankAgeComposition": {
-      "default": "explicit",
-      "description": "World Bank age-composition script uses sourceIds.worldBankAgeComposition."
-    },
     "unctadTrade": {
       "default": "explicit",
       "description": "UNCTAD trade script uses sourceIds.unctadTrade."
@@ -3922,21 +3031,9 @@
       "default": "explicit",
       "description": "UNCTAD services trade script uses sourceIds.unctadServicesTrade."
     },
-    "unComtradeReporter": {
-      "default": "explicit",
-      "description": "UN Comtrade reporter IDs use sourceIds.unComtradeReporter."
-    },
-    "unComtradeIsoFallback": {
-      "default": "explicit",
-      "description": "UN Comtrade ISO fallback IDs use sourceIds.unComtradeIsoFallback."
-    },
     "worldMapTopojson": {
       "default": "nameFallback",
       "description": "The world map first uses sourceIds.worldMapTopojson, then falls back to normalized names."
-    },
-    "oecdRevenue": {
-      "default": "explicit",
-      "description": "OECD revenue composition script uses sourceIds.oecdRevenue."
     },
     "unNationalAccounts": {
       "default": "explicit",

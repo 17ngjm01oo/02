@@ -41,7 +41,7 @@
     <script type="module" src="../../../../src/siteMenu.js"></script>
     <script type="module" src="../../../../src/countryOverviewPage.js"></script>
   </head>
-  <body data-country-code="FRO" data-root-href="../../../../" data-country-root-href="../../" data-country-overview-category="population">
+  <body data-country-code="FRO" data-root-href="../../../../" data-country-overview-category="population">
     <main class="page-shell">
       <header class="site-brand">
         <a class="site-brand-link" href="../../../../">
@@ -76,7 +76,7 @@
       <section class="indicators-section country-overview-layout" aria-labelledby="country-overview-title">
         <div class="indicators-card country-overview-card">
           <header class="page-header country-data-header">
-        <h1 id="country-overview-title">Population of Faroe Islands</h1>
+        <h1 id="country-overview-title"><img class="flag-image flag-image-fo country-flag" src="../../../../public/flags/fo.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" />Population of Faroe Islands</h1>
           </header>
 
           <div class="world-map country-overview-map" id="countryOverviewMap" aria-label="Faroe Islands map" aria-live="polite">
@@ -96,43 +96,8 @@
                 <a class="country-overview-category-button" href="../../categories/environment/" data-country-overview-category="environment">Environment</a>
               </div>
             </div>
-            <div class="country-overview-groups" id="countryOverviewGroups" aria-live="polite" data-static-country-overview="true">
+            <div class="country-overview-groups" data-static-country-overview="true">
               <section class="country-overview-section">
-                <div class="country-age-composition" data-static-category-block="true">
-                  <h3 class="country-age-composition-heading">Population by Age Group</h3>
-                  <div class="country-gva-industry-chart country-age-composition-chart">
-                    <svg class="country-gva-industry-pie" viewBox="0 0 100 100" role="img" aria-label="Population by Age Group, 2024">
-                      <path d="M 50 50 L 89.92 36.94 A 42 42 0 0 0 50.00 8.00 Z" fill="#7aa7d9"></path>
-                      <text class="country-pie-share-label" x="68.19" y="24.90">20%</text>
-                      <path d="M 50 50 L 85.71 72.10 A 42 42 0 0 0 89.92 36.94 Z" fill="#80c7a6"></path>
-                      <text class="country-pie-share-label" x="80.78" y="53.68">13.9%</text>
-                      <path d="M 50 50 L 12.30 31.49 A 42 42 0 0 0 85.71 72.10 Z" fill="#e4b36a"></path>
-                      <text class="country-pie-share-label" x="34.99" y="77.13">48.4%</text>
-                      <path d="M 50 50 L 50.00 8.00 A 42 42 0 0 0 12.30 31.49 Z" fill="#df8b8b"></path>
-                      <text class="country-pie-share-label" x="33.61" y="23.69">17.7%</text>
-                    </svg>
-                    <ul class="country-gva-industry-legend">
-                      <li><span class="country-gva-industry-legend-marker" style="background-color: #7aa7d9"></span><span>0–14: 20%</span></li>
-                      <li><span class="country-gva-industry-legend-marker" style="background-color: #80c7a6"></span><span>15–24: 13.9%</span></li>
-                      <li><span class="country-gva-industry-legend-marker" style="background-color: #e4b36a"></span><span>25–64: 48.4%</span></li>
-                      <li><span class="country-gva-industry-legend-marker" style="background-color: #df8b8b"></span><span>65+: 17.7%</span></li>
-                    </ul>
-                  </div>
-                  <details class="country-profile-table-toggle">
-                    <summary data-ui-text-action>Show table</summary>
-                    <dl class="country-basic-information-grid country-age-composition-grid" aria-label="Population by Age Group, 2024">
-                      <dt>0–14</dt>
-                      <dd>20%</dd>
-                      <dt>15–24</dt>
-                      <dd>13.9%</dd>
-                      <dt>25–64</dt>
-                      <dd>48.4%</dd>
-                      <dt>65+</dt>
-                      <dd>17.7%</dd>
-                    </dl>
-                  </details>
-                  <p class="country-age-composition-note">Source: World Bank World Development Indicators, based on UN World Population Prospects 2024.</p>
-                </div>
                 <div class="country-profile-indicator-section">
                   <h3 class="country-profile-indicator-heading">Demographics</h3>
                 <div class="country-overview-table-wrap">

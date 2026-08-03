@@ -11,8 +11,7 @@
       ],
       "countryProfile": {
         "sourceFile": "economyRankings.js",
-        "export": "economyProfileRankings",
-        "staticBlock": "gvaByIndustry"
+        "export": "economyProfileRankings"
       },
       "subcategories": [
         {
@@ -93,8 +92,7 @@
       ],
       "countryProfile": {
         "sourceFile": "populationRankings.js",
-        "export": "populationRankings",
-        "staticBlock": "ageComposition"
+        "export": "populationRankings"
       },
       "subcategories": [
         {
@@ -149,8 +147,7 @@
       ],
       "countryProfile": {
         "sourceFile": "tradeRankings.js",
-        "export": "tradeRankings",
-        "staticBlock": "tradeCommodityComposition"
+        "export": "tradeRankings"
       },
       "subcategories": [
         {
@@ -214,8 +211,7 @@
       ],
       "countryProfile": {
         "sourceFile": "financeRankings.js",
-        "export": "financeProfileRankings",
-        "staticBlock": "taxRevenueComposition"
+        "export": "financeProfileRankings"
       },
       "subcategories": [
         {

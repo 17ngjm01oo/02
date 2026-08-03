@@ -1658,10 +1658,6 @@ body[data-country-overview-category] .country-data-header h1 {
   min-width: 0;
 }
 
-.country-overview-section + .country-overview-section {
-  margin-top: 0;
-}
-
 .country-overview-section h2 {
   margin: 0;
   color: var(--text);
@@ -1670,9 +1666,6 @@ body[data-country-overview-category] .country-data-header h1 {
   letter-spacing: 0;
 }
 
-.country-gva-industry,
-.country-age-composition,
-.country-trade-commodity-composition,
 .country-profile-indicator-section {
   display: grid;
   gap: 8px;
@@ -1680,115 +1673,11 @@ body[data-country-overview-category] .country-data-header h1 {
   min-width: 0;
 }
 
-.country-gva-industry-heading,
-.country-age-composition-heading,
-.country-trade-commodity-flow-heading,
 .country-profile-indicator-heading {
   margin: 0;
   color: var(--text);
   font-size: 1.08rem;
   line-height: 1.18;
-}
-
-.country-trade-commodity-composition {
-  gap: 14px;
-}
-
-.country-trade-commodity-flow {
-  display: grid;
-  gap: 8px;
-  min-width: 0;
-}
-
-.country-trade-commodity-flow-heading {
-  font-size: 0.98rem;
-}
-
-.country-gva-industry-chart {
-  position: relative;
-  display: grid;
-  grid-template-columns: minmax(10.5rem, 14rem) minmax(0, 1fr);
-  align-items: center;
-  gap: 16px;
-  min-width: 0;
-}
-
-.country-gva-industry-pie {
-  display: block;
-  width: 100%;
-  max-width: 14rem;
-  aspect-ratio: 1;
-}
-
-.country-gva-industry-pie path,
-.country-gva-industry-pie circle {
-  stroke: var(--surface);
-  stroke-width: 1;
-}
-
-.country-pie-share-label {
-  fill: #fff;
-  font-size: 5.8px;
-  font-weight: 400;
-  line-height: 1;
-  pointer-events: none;
-  text-anchor: middle;
-  dominant-baseline: central;
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .country-gva-industry-pie path:hover,
-  .country-gva-industry-pie circle:hover {
-    filter: brightness(0.94);
-  }
-}
-
-.country-gva-industry-legend {
-  display: grid;
-  gap: 7px;
-  min-width: 0;
-  margin: 0;
-  padding: 0;
-  color: var(--text);
-  font-size: 0.9rem;
-  font-weight: 400;
-  line-height: 1.25;
-  list-style: none;
-}
-
-.country-gva-industry-legend li {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  min-width: 0;
-}
-
-.country-gva-industry-legend-marker {
-  width: 0.68rem;
-  height: 0.68rem;
-  flex: 0 0 auto;
-  border-radius: 999px;
-}
-
-.country-profile-table-toggle {
-  display: grid;
-  gap: 6px;
-  min-width: 0;
-}
-
-.country-profile-table-toggle summary {
-  width: max-content;
-  max-width: 100%;
-  padding: 2px 0;
-  color: var(--accent);
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1.2;
-  cursor: pointer;
-}
-
-.country-profile-table-toggle summary::-webkit-details-marker {
-  color: var(--accent);
 }
 
 .country-basic-information-grid {
@@ -1822,33 +1711,9 @@ body[data-country-overview-category] .country-data-header h1 {
   font-weight: 700;
 }
 
-.country-trade-commodity-grid {
-  grid-template-columns: minmax(0, 1fr) max-content;
-}
-
-.country-trade-commodity-grid dt {
-  white-space: normal;
-}
-
-.country-trade-commodity-grid dd {
-  min-width: 4.5rem;
-  text-align: right;
-  white-space: nowrap;
-}
-
 .country-basic-information-grid dt:last-of-type,
 .country-basic-information-grid dd:last-of-type {
   border-bottom: 0;
-}
-
-.country-gva-industry-note,
-.country-age-composition-note,
-.country-tax-revenue-composition-note,
-.country-trade-commodity-composition-note {
-  margin: -4px 0 0;
-  color: var(--muted);
-  font-size: 0.78rem;
-  line-height: 1.35;
 }
 
 .country-overview-table-wrap {
@@ -1938,11 +1803,6 @@ body[data-country-overview-category] .country-data-header h1 {
   text-align: center;
   vertical-align: middle;
   white-space: nowrap;
-}
-
-.country-profile-indicator-section .country-overview-table .country-overview-rank {
-  padding-left: 5px;
-  padding-right: 11px;
 }
 
 .country-overview-table .country-overview-year {
@@ -3714,10 +3574,6 @@ body[data-page-kind="country-hub"] .country-hub-panel > .entity-count {
     gap: var(--country-overview-content-gap);
   }
 
-  .country-overview-section + .country-overview-section {
-    margin-top: 0;
-  }
-
   .related-content-card {
     gap: 8px;
     padding: var(--card-padding-mobile);
@@ -3727,40 +3583,6 @@ body[data-page-kind="country-hub"] .country-hub-panel > .entity-count {
     margin-top: 0;
     padding-top: 0;
     border-top: 0;
-  }
-
-  .country-gva-industry-grid {
-    grid-template-columns: minmax(0, 1fr) minmax(4.5rem, max-content);
-  }
-
-  .country-gva-industry-grid dt {
-    white-space: normal;
-  }
-
-  .country-gva-industry-grid dd {
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
-  }
-
-  .country-gva-industry-chart {
-    grid-template-columns: minmax(9.5rem, 12.5rem) minmax(0, 1fr);
-    gap: 14px;
-  }
-
-  .country-gva-industry-pie {
-    max-width: 12.5rem;
-  }
-
-  .country-gva-industry-legend {
-    gap: 6px;
-    font-size: 0.84rem;
-    line-height: 1.25;
-  }
-
-  .country-gva-industry-legend-marker {
-    width: 0.62rem;
-    height: 0.62rem;
   }
 
   .country-overview-table th,
@@ -3837,11 +3659,11 @@ body[data-page-kind="country-hub"] .country-hub-panel > .entity-count {
   .data-table-scroll-frame.can-scroll-right::after {
     content: "";
     position: absolute;
-    inset-block: 1px 7px;
+    inset-block: 1px;
     inset-inline-end: 1px;
     z-index: 1;
     width: 26px;
-    border-radius: 0 var(--radius-component) var(--radius-component) 0;
+    border-radius: 0 calc(var(--radius-component) - 1px) calc(var(--radius-component) - 1px) 0;
     background: linear-gradient(
       to left,
       color-mix(in srgb, var(--muted) 35%, transparent),
@@ -3878,11 +3700,11 @@ body[data-page-kind="country-hub"] .country-hub-panel > .entity-count {
   }
 
   .data-table:not(.data-table-comparison) td:nth-child(odd) {
-    padding-inline: 4px;
+    padding-inline: 2px;
   }
 
   .data-table:not(.data-table-comparison) td:nth-child(even) {
-    padding-inline: 8px;
+    padding-inline: 2px;
   }
 
   .ranking-table,
