@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="../styles.css" />
     <script type="module" src="../src/theme.js"></script>
     <script type="module" src="../src/siteMenu.js"></script>
-    <script type="module" src="../src/homePage.js"></script>
+    <script type="module" src="../src/homeCountrySearch.js"></script>
   </head>
   <body data-root-href="../" data-locale="pt" data-page-kind="home">
     <main class="page-shell">
@@ -78,8 +78,8 @@
             </span>
             <span class="home-entry-copy">
               <span class="home-entry-title">Países</span>
-              <span class="home-entry-description">Explore dados de países e territórios com indicadores e gráficos.</span>
-              <span class="home-entry-action">Explorar países <span aria-hidden="true">&rarr;</span></span>
+              <span class="home-entry-description">Perfis de países com indicadores, tendências e rankings</span>
+              <span class="home-entry-action">Explorar <span aria-hidden="true">&rarr;</span></span>
             </span>
           </a>
 
@@ -94,8 +94,8 @@
             </span>
             <span class="home-entry-copy">
               <span class="home-entry-title">Rankings</span>
-              <span class="home-entry-description">Compare países e territórios em tabelas pesquisáveis de rankings mundiais.</span>
-              <span class="home-entry-action">Ver rankings <span aria-hidden="true">&rarr;</span></span>
+              <span class="home-entry-description">Comparações entre países com base nos principais indicadores globais</span>
+              <span class="home-entry-action">Comparar <span aria-hidden="true">&rarr;</span></span>
             </span>
           </a>
 
@@ -110,8 +110,8 @@
             </span>
             <span class="home-entry-copy">
               <span class="home-entry-title">Dados</span>
-              <span class="home-entry-description">Encontre indicadores estatísticos por fonte, período de cobertura e disponibilidade.</span>
-              <span class="home-entry-action">Explorar dados <span aria-hidden="true">&rarr;</span></span>
+              <span class="home-entry-description">Indicadores por tema, fonte e período coberto</span>
+              <span class="home-entry-action">Explorar <span aria-hidden="true">&rarr;</span></span>
             </span>
           </a>
       </nav>
@@ -119,7 +119,7 @@
       <section class="home-country-finder" aria-labelledby="home-country-finder-title">
         <div class="home-country-search">
           <h2 id="home-country-finder-title">Encontre um país</h2>
-          <div class="search-input-wrap home-country-search-wrap">
+          <div class="search-input-wrap">
             <input
               id="homeCountrySearchInput"
               class="country-search-input"
@@ -196,81 +196,17 @@
                 <span class="home-country-name">Brasil</span>
               </a>
             </span>
-            <span class="home-country-entry" data-home-disclosure-item hidden>
-              <a class="home-country-link" data-ui-text-action href="./countries/canada/">
-                <span class="home-country-flag" aria-hidden="true"><img class="flag-image flag-image-ca" src="../public/flags/ca.svg" alt="" loading="lazy" decoding="async" /></span>
-                <span class="home-country-name">Canadá</span>
-              </a>
-            </span>
-            <span class="home-country-entry" data-home-disclosure-item hidden>
-              <a class="home-country-link" data-ui-text-action href="./countries/australia/">
-                <span class="home-country-flag" aria-hidden="true"><img class="flag-image flag-image-au" src="../public/flags/au.svg" alt="" loading="lazy" decoding="async" /></span>
-                <span class="home-country-name">Austrália</span>
-              </a>
-            </span>
-            <span class="home-country-entry" data-home-disclosure-item hidden>
-              <a class="home-country-link" data-ui-text-action href="./countries/mexico/">
-                <span class="home-country-flag" aria-hidden="true"><img class="flag-image flag-image-mx" src="../public/flags/mx.svg" alt="" loading="lazy" decoding="async" /></span>
-                <span class="home-country-name">México</span>
-              </a>
-            </span>
-            <span class="home-country-entry" data-home-disclosure-item hidden>
-              <a class="home-country-link" data-ui-text-action href="./countries/spain/">
-                <span class="home-country-flag" aria-hidden="true"><img class="flag-image flag-image-es" src="../public/flags/es.svg" alt="" loading="lazy" decoding="async" /></span>
-                <span class="home-country-name">Espanha</span>
-              </a>
-            </span>
-            <span class="home-country-entry" data-home-disclosure-item hidden>
-              <a class="home-country-link" data-ui-text-action href="./countries/south-korea/">
-                <span class="home-country-flag" aria-hidden="true"><img class="flag-image flag-image-kr" src="../public/flags/kr.svg" alt="" loading="lazy" decoding="async" /></span>
-                <span class="home-country-name">Coreia do Sul</span>
-              </a>
-            </span>
-            <span class="home-country-entry" data-home-disclosure-item hidden>
-              <a class="home-country-link" data-ui-text-action href="./countries/turkiye/">
-                <span class="home-country-flag" aria-hidden="true"><img class="flag-image flag-image-tr" src="../public/flags/tr.svg" alt="" loading="lazy" decoding="async" /></span>
-                <span class="home-country-name">Turquia</span>
-              </a>
-            </span>
-            <span class="home-country-entry" data-home-disclosure-item hidden>
-              <a class="home-country-link" data-ui-text-action href="./countries/indonesia/">
-                <span class="home-country-flag" aria-hidden="true"><img class="flag-image flag-image-id" src="../public/flags/id.svg" alt="" loading="lazy" decoding="async" /></span>
-                <span class="home-country-name">Indonésia</span>
-              </a>
-            </span>
-            <span class="home-country-entry" data-home-disclosure-item hidden>
-              <a class="home-country-link" data-ui-text-action href="./countries/netherlands/">
-                <span class="home-country-flag" aria-hidden="true"><img class="flag-image flag-image-nl" src="../public/flags/nl.svg" alt="" loading="lazy" decoding="async" /></span>
-                <span class="home-country-name">Países Baixos</span>
-              </a>
-            </span>
-            <span class="home-country-entry" data-home-disclosure-item hidden>
-              <a class="home-country-link" data-ui-text-action href="./countries/saudi-arabia/">
-                <span class="home-country-flag" aria-hidden="true"><img class="flag-image flag-image-sa" src="../public/flags/sa.svg" alt="" loading="lazy" decoding="async" /></span>
-                <span class="home-country-name">Arábia Saudita</span>
-              </a>
-            </span>
-            <span class="home-country-entry" data-home-disclosure-item hidden>
-              <a class="home-country-link" data-ui-text-action href="./countries/switzerland/">
-                <span class="home-country-flag" aria-hidden="true"><img class="flag-image flag-image-ch" src="../public/flags/ch.svg" alt="" loading="lazy" decoding="async" /></span>
-                <span class="home-country-name">Suíça</span>
-              </a>
-            </span>
           </nav>
           <div class="home-country-actions">
-          <button class="home-disclosure-toggle home-action-link home-country-action" type="button" data-ui-text-action data-home-disclosure-toggle data-home-disclosure-target="homeCountryList" data-expand-label="Mostrar mais" data-collapse-label="Mostrar menos" aria-expanded="false">Mostrar mais</button>
           <a class="home-action-link home-view-all-countries home-country-action" data-ui-text-action href="./countries/"><span class="home-action-label">Ver todos os países</span><span class="home-action-arrow" aria-hidden="true">&rarr;</span></a>
           </div>
         </div>
       </section>
 
       <section class="home-indicator-ranking-finder data-hub" aria-labelledby="home-indicator-ranking-title">
-        <h2 id="home-indicator-ranking-title">Principais indicadores e rankings</h2>
-        <div class="home-indicator-ranking-groups">
-        <section class="home-indicator-ranking-group" aria-labelledby="home-indicator-ranking-economy">
-          <h3 id="home-indicator-ranking-economy"><button class="home-disclosure-toggle home-indicator-ranking-toggle" type="button" data-ui-text-action data-home-disclosure-toggle data-home-disclosure-target="home-indicator-ranking-economy-list" aria-expanded="false">Economia</button></h3>
-          <ul class="data-hub-subcategory-items" id="home-indicator-ranking-economy-list">
-                  <li class="data-hub-link-row" data-home-disclosure-item hidden>
+        <h2 id="home-indicator-ranking-title">Indicadores e rankings populares</h2>
+        <ul class="data-hub-subcategory-items home-indicator-ranking-list">
+                  <li class="data-hub-link-row">
                 <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/gdp/"><span class="indicator-label-text">PIB</span> <span class="indicator-display-unit">(USD)</span></a>
                 <span class="data-hub-meta" aria-label="FMI WEO, 1980-2026">
                   <span class="data-hub-source">FMI WEO</span>
@@ -278,9 +214,8 @@
                     <span class="data-hub-year-start">1980</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end">2026</span>
                   </span>
                 </span>
-                <button class="indicator-info-button" type="button" aria-label="Informações sobre PIB" data-indicator-info-tooltip-placement="data-hub" data-indicator-info-ranking-directory="gdp">i</button>
                   </li>
-                  <li class="data-hub-link-row" data-home-disclosure-item hidden>
+                  <li class="data-hub-link-row">
                 <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/gdp-per-capita/"><span class="indicator-label-text">PIB per capita</span> <span class="indicator-display-unit">(USD)</span></a>
                 <span class="data-hub-meta" aria-label="FMI WEO, 1980-2026">
                   <span class="data-hub-source">FMI WEO</span>
@@ -288,9 +223,8 @@
                     <span class="data-hub-year-start">1980</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end">2026</span>
                   </span>
                 </span>
-                <button class="indicator-info-button" type="button" aria-label="Informações sobre PIB per capita" data-indicator-info-tooltip-placement="data-hub" data-indicator-info-ranking-directory="gdp-per-capita">i</button>
                   </li>
-                  <li class="data-hub-link-row" data-home-disclosure-item hidden>
+                  <li class="data-hub-link-row">
                 <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/gdp-growth/"><span class="indicator-label-text">Crescimento do PIB</span></a>
                 <span class="data-hub-meta" aria-label="FMI WEO, 1980-2026">
                   <span class="data-hub-source">FMI WEO</span>
@@ -298,9 +232,17 @@
                     <span class="data-hub-year-start">1980</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end">2026</span>
                   </span>
                 </span>
-                <button class="indicator-info-button" type="button" aria-label="Informações sobre Crescimento do PIB" data-indicator-info-tooltip-placement="data-hub" data-indicator-info-ranking-directory="gdp-growth">i</button>
                   </li>
-                  <li class="data-hub-link-row" data-home-disclosure-item hidden>
+                  <li class="data-hub-link-row">
+                <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/inflation-rate/"><span class="indicator-label-text">Taxa de inflação</span></a>
+                <span class="data-hub-meta" aria-label="FMI WEO, 1980-2026">
+                  <span class="data-hub-source">FMI WEO</span>
+                  <span class="data-hub-years">
+                    <span class="data-hub-year-start">1980</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end">2026</span>
+                  </span>
+                </span>
+                  </li>
+                  <li class="data-hub-link-row">
                 <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/unemployment-rate/"><span class="indicator-label-text">Taxa de desemprego</span></a>
                 <span class="data-hub-meta" aria-label="FMI WEO, 1980-2026">
                   <span class="data-hub-source">FMI WEO</span>
@@ -308,14 +250,8 @@
                     <span class="data-hub-year-start">1980</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end">2026</span>
                   </span>
                 </span>
-                <button class="indicator-info-button" type="button" aria-label="Informações sobre Taxa de desemprego" data-indicator-info-tooltip-placement="data-hub" data-indicator-info-ranking-directory="unemployment-rate">i</button>
                   </li>
-          </ul>
-        </section>
-        <section class="home-indicator-ranking-group" aria-labelledby="home-indicator-ranking-population">
-          <h3 id="home-indicator-ranking-population"><button class="home-disclosure-toggle home-indicator-ranking-toggle" type="button" data-ui-text-action data-home-disclosure-toggle data-home-disclosure-target="home-indicator-ranking-population-list" aria-expanded="false">População</button></h3>
-          <ul class="data-hub-subcategory-items" id="home-indicator-ranking-population-list">
-                  <li class="data-hub-link-row" data-home-disclosure-item hidden>
+                  <li class="data-hub-link-row">
                 <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/population/"><span class="indicator-label-text">População</span></a>
                 <span class="data-hub-meta" aria-label="ONU WPP, 1950-2026">
                   <span class="data-hub-source">ONU WPP</span>
@@ -323,9 +259,8 @@
                     <span class="data-hub-year-start">1950</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end">2026</span>
                   </span>
                 </span>
-                <button class="indicator-info-button" type="button" aria-label="Informações sobre População" data-indicator-info-tooltip-placement="data-hub" data-indicator-info-ranking-directory="population">i</button>
                   </li>
-                  <li class="data-hub-link-row" data-home-disclosure-item hidden>
+                  <li class="data-hub-link-row">
                 <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/population-growth/"><span class="indicator-label-text">Crescimento populacional</span></a>
                 <span class="data-hub-meta" aria-label="ONU WPP, 1950-2026">
                   <span class="data-hub-source">ONU WPP</span>
@@ -333,34 +268,17 @@
                     <span class="data-hub-year-start">1950</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end">2026</span>
                   </span>
                 </span>
-                <button class="indicator-info-button" type="button" aria-label="Informações sobre Crescimento populacional" data-indicator-info-tooltip-placement="data-hub" data-indicator-info-ranking-directory="population-growth">i</button>
                   </li>
-                  <li class="data-hub-link-row" data-home-disclosure-item hidden>
-                <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/fertility-rate/"><span class="indicator-label-text">Taxa de fecundidade</span></a>
+                  <li class="data-hub-link-row">
+                <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/life-expectancy/"><span class="indicator-label-text">Expectativa de vida</span></a>
                 <span class="data-hub-meta" aria-label="ONU WPP, 1950-2026">
                   <span class="data-hub-source">ONU WPP</span>
                   <span class="data-hub-years">
                     <span class="data-hub-year-start">1950</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end">2026</span>
                   </span>
                 </span>
-                <button class="indicator-info-button" type="button" aria-label="Informações sobre Taxa de fecundidade" data-indicator-info-tooltip-placement="data-hub" data-indicator-info-ranking-directory="fertility-rate">i</button>
                   </li>
-          </ul>
-        </section>
-        <section class="home-indicator-ranking-group" aria-labelledby="home-indicator-ranking-trade">
-          <h3 id="home-indicator-ranking-trade"><button class="home-disclosure-toggle home-indicator-ranking-toggle" type="button" data-ui-text-action data-home-disclosure-toggle data-home-disclosure-target="home-indicator-ranking-trade-list" aria-expanded="false">Comércio</button></h3>
-          <ul class="data-hub-subcategory-items" id="home-indicator-ranking-trade-list">
-                  <li class="data-hub-link-row" data-home-disclosure-item hidden>
-                <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/trade-balance/"><span class="indicator-label-text">Balança comercial</span> <span class="indicator-display-unit">(USD)</span></a>
-                <span class="data-hub-meta" aria-label="UNCTAD, 1948-2025">
-                  <span class="data-hub-source">UNCTAD</span>
-                  <span class="data-hub-years">
-                    <span class="data-hub-year-start">1948</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end">2025</span>
-                  </span>
-                </span>
-                <button class="indicator-info-button" type="button" aria-label="Informações sobre Balança comercial" data-indicator-info-tooltip-placement="data-hub" data-indicator-info-ranking-directory="trade-balance">i</button>
-                  </li>
-                  <li class="data-hub-link-row" data-home-disclosure-item hidden>
+                  <li class="data-hub-link-row">
                 <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/exports/"><span class="indicator-label-text">Exportações</span> <span class="indicator-display-unit">(USD)</span></a>
                 <span class="data-hub-meta" aria-label="UNCTAD, 1948-2025">
                   <span class="data-hub-source">UNCTAD</span>
@@ -368,49 +286,8 @@
                     <span class="data-hub-year-start">1948</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end">2025</span>
                   </span>
                 </span>
-                <button class="indicator-info-button" type="button" aria-label="Informações sobre Exportações" data-indicator-info-tooltip-placement="data-hub" data-indicator-info-ranking-directory="exports">i</button>
                   </li>
-                  <li class="data-hub-link-row" data-home-disclosure-item hidden>
-                <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/imports/"><span class="indicator-label-text">Importações</span> <span class="indicator-display-unit">(USD)</span></a>
-                <span class="data-hub-meta" aria-label="UNCTAD, 1948-2025">
-                  <span class="data-hub-source">UNCTAD</span>
-                  <span class="data-hub-years">
-                    <span class="data-hub-year-start">1948</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end">2025</span>
-                  </span>
-                </span>
-                <button class="indicator-info-button" type="button" aria-label="Informações sobre Importações" data-indicator-info-tooltip-placement="data-hub" data-indicator-info-ranking-directory="imports">i</button>
-                  </li>
-          </ul>
-        </section>
-        <section class="home-indicator-ranking-group" aria-labelledby="home-indicator-ranking-government-finance">
-          <h3 id="home-indicator-ranking-government-finance"><button class="home-disclosure-toggle home-indicator-ranking-toggle" type="button" data-ui-text-action data-home-disclosure-toggle data-home-disclosure-target="home-indicator-ranking-government-finance-list" aria-expanded="false">Finanças públicas</button></h3>
-          <ul class="data-hub-subcategory-items" id="home-indicator-ranking-government-finance-list">
-                  <li class="data-hub-link-row" data-home-disclosure-item hidden>
-                <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/government-gross-debt/"><span class="indicator-label-text">Dívida bruta do governo</span> <span class="indicator-display-unit">(% do PIB)</span></a>
-                <span class="data-hub-meta" aria-label="FMI WEO, 1980-2026">
-                  <span class="data-hub-source">FMI WEO</span>
-                  <span class="data-hub-years">
-                    <span class="data-hub-year-start">1980</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end">2026</span>
-                  </span>
-                </span>
-                <button class="indicator-info-button" type="button" aria-label="Informações sobre Dívida bruta do governo" data-indicator-info-tooltip-placement="data-hub" data-indicator-info-ranking-directory="government-gross-debt">i</button>
-                  </li>
-                  <li class="data-hub-link-row" data-home-disclosure-item hidden>
-                <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/fiscal-balance/"><span class="indicator-label-text">Resultado fiscal</span> <span class="indicator-display-unit">(% do PIB)</span></a>
-                <span class="data-hub-meta" aria-label="FMI WEO, 1980-2026">
-                  <span class="data-hub-source">FMI WEO</span>
-                  <span class="data-hub-years">
-                    <span class="data-hub-year-start">1980</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end">2026</span>
-                  </span>
-                </span>
-                <button class="indicator-info-button" type="button" aria-label="Informações sobre Resultado fiscal" data-indicator-info-tooltip-placement="data-hub" data-indicator-info-ranking-directory="fiscal-balance">i</button>
-                  </li>
-          </ul>
-        </section>
-        <section class="home-indicator-ranking-group" aria-labelledby="home-indicator-ranking-society">
-          <h3 id="home-indicator-ranking-society"><button class="home-disclosure-toggle home-indicator-ranking-toggle" type="button" data-ui-text-action data-home-disclosure-toggle data-home-disclosure-target="home-indicator-ranking-society-list" aria-expanded="false">Sociedade</button></h3>
-          <ul class="data-hub-subcategory-items" id="home-indicator-ranking-society-list">
-                  <li class="data-hub-link-row" data-home-disclosure-item hidden>
+                  <li class="data-hub-link-row">
                 <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/hdi/"><span class="indicator-label-text">IDH</span></a>
                 <span class="data-hub-meta" aria-label="PNUD, 1990-2023">
                   <span class="data-hub-source">PNUD</span>
@@ -418,36 +295,17 @@
                     <span class="data-hub-year-start">1990</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end">2023</span>
                   </span>
                 </span>
-                <button class="indicator-info-button" type="button" aria-label="Informações sobre IDH" data-indicator-info-tooltip-placement="data-hub" data-indicator-info-ranking-directory="hdi">i</button>
                   </li>
-          </ul>
-        </section>
-        <section class="home-indicator-ranking-group" aria-labelledby="home-indicator-ranking-environment">
-          <h3 id="home-indicator-ranking-environment"><button class="home-disclosure-toggle home-indicator-ranking-toggle" type="button" data-ui-text-action data-home-disclosure-toggle data-home-disclosure-target="home-indicator-ranking-environment-list" aria-expanded="false">Meio ambiente</button></h3>
-          <ul class="data-hub-subcategory-items" id="home-indicator-ranking-environment-list">
-                  <li class="data-hub-link-row" data-home-disclosure-item hidden>
-                <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/co2-emissions-per-capita/"><span class="indicator-label-text">Emissões de CO₂ per capita</span> <span class="indicator-display-unit">(CO₂e)</span></a>
-                <span class="data-hub-meta" aria-label="BM, 1970-2024">
-                  <span class="data-hub-source">BM</span>
+                  <li class="data-hub-link-row">
+                <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/government-gross-debt/"><span class="indicator-label-text">Dívida bruta do governo</span> <span class="indicator-display-unit">(% do PIB)</span></a>
+                <span class="data-hub-meta" aria-label="FMI WEO, 1980-2026">
+                  <span class="data-hub-source">FMI WEO</span>
                   <span class="data-hub-years">
-                    <span class="data-hub-year-start">1970</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end">2024</span>
+                    <span class="data-hub-year-start">1980</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end">2026</span>
                   </span>
                 </span>
-                <button class="indicator-info-button" type="button" aria-label="Informações sobre Emissões de CO₂ per capita" data-indicator-info-tooltip-placement="data-hub" data-indicator-info-ranking-directory="co2-emissions-per-capita">i</button>
                   </li>
-                  <li class="data-hub-link-row" data-home-disclosure-item hidden>
-                <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/area/"><span class="indicator-label-text">Área</span> <span class="indicator-display-unit">(km²)</span></a>
-                <span class="data-hub-meta" aria-label="UNdata, 2023">
-                  <span class="data-hub-source">UNdata</span>
-                  <span class="data-hub-years data-hub-years-single">
-                    <span class="data-hub-year-start">2023</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end" aria-hidden="true">2023</span>
-                  </span>
-                </span>
-                <button class="indicator-info-button" type="button" aria-label="Informações sobre Área" data-indicator-info-tooltip-placement="data-hub" data-indicator-info-ranking-directory="area">i</button>
-                  </li>
-          </ul>
-        </section>
-        </div>
+        </ul>
           <a class="home-action-link home-view-all-indicators" data-ui-text-action href="./data/countries/"><span class="home-action-label">Ver todos os indicadores e rankings</span><span class="home-action-arrow" aria-hidden="true">&rarr;</span></a>
       </section>
       <footer class="site-footer-card" aria-label="Informações do site">

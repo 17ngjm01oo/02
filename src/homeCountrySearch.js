@@ -1,13 +1,9 @@
-import { getLocalizedRootHref } from "./localization.js";
-
-export function initializeHomeCountrySearch() {
+function initializeHomeCountrySearch() {
   const searchInput = document.querySelector("#homeCountrySearchInput");
   if (!searchInput) {
     return;
   }
 
-  const rootHref = document.body.dataset.rootHref ?? "./";
-  const localizedRootHref = getLocalizedRootHref(rootHref);
   let initializationPromise = null;
 
   const initializeCountrySearch = () => {
@@ -23,7 +19,7 @@ export function initializeHomeCountrySearch() {
         searchInputSelector: "#homeCountrySearchInput",
         resultsSelector: "#homeCountrySearchResults",
         getCountryHref(country) {
-          return `${localizedRootHref}countries/${country.slug}/`;
+          return `./countries/${country.slug}/`;
         },
       });
 
@@ -38,3 +34,5 @@ export function initializeHomeCountrySearch() {
   searchInput.addEventListener("focus", initializeCountrySearch, { once: true });
   searchInput.addEventListener("input", initializeCountrySearch, { once: true });
 }
+
+initializeHomeCountrySearch();

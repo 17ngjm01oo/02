@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="../styles.css" />
     <script type="module" src="../src/theme.js"></script>
     <script type="module" src="../src/siteMenu.js"></script>
-    <script type="module" src="../src/homePage.js"></script>
+    <script type="module" src="../src/homeCountrySearch.js"></script>
   </head>
   <body data-root-href="../" data-locale="tr" data-page-kind="home">
     <main class="page-shell">
@@ -78,8 +78,8 @@
             </span>
             <span class="home-entry-copy">
               <span class="home-entry-title">Ülkeler</span>
-              <span class="home-entry-description">Ülke ve bölgelerin göstergelerini ve grafiklerini inceleyin.</span>
-              <span class="home-entry-action">Ülkeleri keşfedin <span aria-hidden="true">&rarr;</span></span>
+              <span class="home-entry-description">Göstergeler, eğilimler ve sıralamalar içeren ülke profilleri</span>
+              <span class="home-entry-action">İncele <span aria-hidden="true">&rarr;</span></span>
             </span>
           </a>
 
@@ -94,8 +94,8 @@
             </span>
             <span class="home-entry-copy">
               <span class="home-entry-title">Sıralamalar</span>
-              <span class="home-entry-description">Aranabilir dünya sıralamalarıyla ülke ve bölgeleri karşılaştırın.</span>
-              <span class="home-entry-action">Sıralamaları görüntüle <span aria-hidden="true">&rarr;</span></span>
+              <span class="home-entry-description">Temel küresel göstergelere göre ülke karşılaştırmaları</span>
+              <span class="home-entry-action">Karşılaştır <span aria-hidden="true">&rarr;</span></span>
             </span>
           </a>
 
@@ -110,8 +110,8 @@
             </span>
             <span class="home-entry-copy">
               <span class="home-entry-title">Veriler</span>
-              <span class="home-entry-description">İstatistiksel göstergeleri kaynak, kapsam dönemi ve erişime göre inceleyin.</span>
-              <span class="home-entry-action">Verilere göz at <span aria-hidden="true">&rarr;</span></span>
+              <span class="home-entry-description">Konu, kaynak ve kapsanan döneme göre göstergeler</span>
+              <span class="home-entry-action">Göz at <span aria-hidden="true">&rarr;</span></span>
             </span>
           </a>
       </nav>
@@ -119,7 +119,7 @@
       <section class="home-country-finder" aria-labelledby="home-country-finder-title">
         <div class="home-country-search">
           <h2 id="home-country-finder-title">Ülke bul</h2>
-          <div class="search-input-wrap home-country-search-wrap">
+          <div class="search-input-wrap">
             <input
               id="homeCountrySearchInput"
               class="country-search-input"
@@ -196,81 +196,17 @@
                 <span class="home-country-name">Brezilya</span>
               </a>
             </span>
-            <span class="home-country-entry" data-home-disclosure-item hidden>
-              <a class="home-country-link" data-ui-text-action href="./countries/canada/">
-                <span class="home-country-flag" aria-hidden="true"><img class="flag-image flag-image-ca" src="../public/flags/ca.svg" alt="" loading="lazy" decoding="async" /></span>
-                <span class="home-country-name">Kanada</span>
-              </a>
-            </span>
-            <span class="home-country-entry" data-home-disclosure-item hidden>
-              <a class="home-country-link" data-ui-text-action href="./countries/australia/">
-                <span class="home-country-flag" aria-hidden="true"><img class="flag-image flag-image-au" src="../public/flags/au.svg" alt="" loading="lazy" decoding="async" /></span>
-                <span class="home-country-name">Avustralya</span>
-              </a>
-            </span>
-            <span class="home-country-entry" data-home-disclosure-item hidden>
-              <a class="home-country-link" data-ui-text-action href="./countries/mexico/">
-                <span class="home-country-flag" aria-hidden="true"><img class="flag-image flag-image-mx" src="../public/flags/mx.svg" alt="" loading="lazy" decoding="async" /></span>
-                <span class="home-country-name">Meksika</span>
-              </a>
-            </span>
-            <span class="home-country-entry" data-home-disclosure-item hidden>
-              <a class="home-country-link" data-ui-text-action href="./countries/spain/">
-                <span class="home-country-flag" aria-hidden="true"><img class="flag-image flag-image-es" src="../public/flags/es.svg" alt="" loading="lazy" decoding="async" /></span>
-                <span class="home-country-name">İspanya</span>
-              </a>
-            </span>
-            <span class="home-country-entry" data-home-disclosure-item hidden>
-              <a class="home-country-link" data-ui-text-action href="./countries/south-korea/">
-                <span class="home-country-flag" aria-hidden="true"><img class="flag-image flag-image-kr" src="../public/flags/kr.svg" alt="" loading="lazy" decoding="async" /></span>
-                <span class="home-country-name">Güney Kore</span>
-              </a>
-            </span>
-            <span class="home-country-entry" data-home-disclosure-item hidden>
-              <a class="home-country-link" data-ui-text-action href="./countries/turkiye/">
-                <span class="home-country-flag" aria-hidden="true"><img class="flag-image flag-image-tr" src="../public/flags/tr.svg" alt="" loading="lazy" decoding="async" /></span>
-                <span class="home-country-name">Türkiye</span>
-              </a>
-            </span>
-            <span class="home-country-entry" data-home-disclosure-item hidden>
-              <a class="home-country-link" data-ui-text-action href="./countries/indonesia/">
-                <span class="home-country-flag" aria-hidden="true"><img class="flag-image flag-image-id" src="../public/flags/id.svg" alt="" loading="lazy" decoding="async" /></span>
-                <span class="home-country-name">Endonezya</span>
-              </a>
-            </span>
-            <span class="home-country-entry" data-home-disclosure-item hidden>
-              <a class="home-country-link" data-ui-text-action href="./countries/netherlands/">
-                <span class="home-country-flag" aria-hidden="true"><img class="flag-image flag-image-nl" src="../public/flags/nl.svg" alt="" loading="lazy" decoding="async" /></span>
-                <span class="home-country-name">Hollanda</span>
-              </a>
-            </span>
-            <span class="home-country-entry" data-home-disclosure-item hidden>
-              <a class="home-country-link" data-ui-text-action href="./countries/saudi-arabia/">
-                <span class="home-country-flag" aria-hidden="true"><img class="flag-image flag-image-sa" src="../public/flags/sa.svg" alt="" loading="lazy" decoding="async" /></span>
-                <span class="home-country-name">Suudi Arabistan</span>
-              </a>
-            </span>
-            <span class="home-country-entry" data-home-disclosure-item hidden>
-              <a class="home-country-link" data-ui-text-action href="./countries/switzerland/">
-                <span class="home-country-flag" aria-hidden="true"><img class="flag-image flag-image-ch" src="../public/flags/ch.svg" alt="" loading="lazy" decoding="async" /></span>
-                <span class="home-country-name">İsviçre</span>
-              </a>
-            </span>
           </nav>
           <div class="home-country-actions">
-          <button class="home-disclosure-toggle home-action-link home-country-action" type="button" data-ui-text-action data-home-disclosure-toggle data-home-disclosure-target="homeCountryList" data-expand-label="Daha fazla göster" data-collapse-label="Daha az göster" aria-expanded="false">Daha fazla göster</button>
           <a class="home-action-link home-view-all-countries home-country-action" data-ui-text-action href="./countries/"><span class="home-action-label">Tümünü görüntüle</span><span class="home-action-arrow" aria-hidden="true">&rarr;</span></a>
           </div>
         </div>
       </section>
 
       <section class="home-indicator-ranking-finder data-hub" aria-labelledby="home-indicator-ranking-title">
-        <h2 id="home-indicator-ranking-title">Gösterge veya sıralamaya göre bul</h2>
-        <div class="home-indicator-ranking-groups">
-        <section class="home-indicator-ranking-group" aria-labelledby="home-indicator-ranking-economy">
-          <h3 id="home-indicator-ranking-economy"><button class="home-disclosure-toggle home-indicator-ranking-toggle" type="button" data-ui-text-action data-home-disclosure-toggle data-home-disclosure-target="home-indicator-ranking-economy-list" aria-expanded="false">Ekonomi</button></h3>
-          <ul class="data-hub-subcategory-items" id="home-indicator-ranking-economy-list">
-                  <li class="data-hub-link-row" data-home-disclosure-item hidden>
+        <h2 id="home-indicator-ranking-title">Popüler göstergeler ve sıralamalar</h2>
+        <ul class="data-hub-subcategory-items home-indicator-ranking-list">
+                  <li class="data-hub-link-row">
                 <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/gdp/"><span class="indicator-label-text">GSYİH</span> <span class="indicator-display-unit">(USD)</span></a>
                 <span class="data-hub-meta" aria-label="IMF WEO, 1980-2026">
                   <span class="data-hub-source">IMF WEO</span>
@@ -278,9 +214,8 @@
                     <span class="data-hub-year-start">1980</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end">2026</span>
                   </span>
                 </span>
-                <button class="indicator-info-button" type="button" aria-label="GSYİH hakkında bilgi" data-indicator-info-tooltip-placement="data-hub" data-indicator-info-ranking-directory="gdp">i</button>
                   </li>
-                  <li class="data-hub-link-row" data-home-disclosure-item hidden>
+                  <li class="data-hub-link-row">
                 <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/gdp-per-capita/"><span class="indicator-label-text">Kişi Başına GSYİH</span> <span class="indicator-display-unit">(USD)</span></a>
                 <span class="data-hub-meta" aria-label="IMF WEO, 1980-2026">
                   <span class="data-hub-source">IMF WEO</span>
@@ -288,9 +223,8 @@
                     <span class="data-hub-year-start">1980</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end">2026</span>
                   </span>
                 </span>
-                <button class="indicator-info-button" type="button" aria-label="Kişi Başına GSYİH hakkında bilgi" data-indicator-info-tooltip-placement="data-hub" data-indicator-info-ranking-directory="gdp-per-capita">i</button>
                   </li>
-                  <li class="data-hub-link-row" data-home-disclosure-item hidden>
+                  <li class="data-hub-link-row">
                 <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/gdp-growth/"><span class="indicator-label-text">Ekonomik Büyüme</span></a>
                 <span class="data-hub-meta" aria-label="IMF WEO, 1980-2026">
                   <span class="data-hub-source">IMF WEO</span>
@@ -298,9 +232,17 @@
                     <span class="data-hub-year-start">1980</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end">2026</span>
                   </span>
                 </span>
-                <button class="indicator-info-button" type="button" aria-label="Ekonomik Büyüme hakkında bilgi" data-indicator-info-tooltip-placement="data-hub" data-indicator-info-ranking-directory="gdp-growth">i</button>
                   </li>
-                  <li class="data-hub-link-row" data-home-disclosure-item hidden>
+                  <li class="data-hub-link-row">
+                <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/inflation-rate/"><span class="indicator-label-text">Enflasyon Oranı</span></a>
+                <span class="data-hub-meta" aria-label="IMF WEO, 1980-2026">
+                  <span class="data-hub-source">IMF WEO</span>
+                  <span class="data-hub-years">
+                    <span class="data-hub-year-start">1980</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end">2026</span>
+                  </span>
+                </span>
+                  </li>
+                  <li class="data-hub-link-row">
                 <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/unemployment-rate/"><span class="indicator-label-text">İşsizlik Oranı</span></a>
                 <span class="data-hub-meta" aria-label="IMF WEO, 1980-2026">
                   <span class="data-hub-source">IMF WEO</span>
@@ -308,14 +250,8 @@
                     <span class="data-hub-year-start">1980</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end">2026</span>
                   </span>
                 </span>
-                <button class="indicator-info-button" type="button" aria-label="İşsizlik Oranı hakkında bilgi" data-indicator-info-tooltip-placement="data-hub" data-indicator-info-ranking-directory="unemployment-rate">i</button>
                   </li>
-          </ul>
-        </section>
-        <section class="home-indicator-ranking-group" aria-labelledby="home-indicator-ranking-population">
-          <h3 id="home-indicator-ranking-population"><button class="home-disclosure-toggle home-indicator-ranking-toggle" type="button" data-ui-text-action data-home-disclosure-toggle data-home-disclosure-target="home-indicator-ranking-population-list" aria-expanded="false">Nüfus</button></h3>
-          <ul class="data-hub-subcategory-items" id="home-indicator-ranking-population-list">
-                  <li class="data-hub-link-row" data-home-disclosure-item hidden>
+                  <li class="data-hub-link-row">
                 <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/population/"><span class="indicator-label-text">Nüfus</span></a>
                 <span class="data-hub-meta" aria-label="UN WPP, 1950-2026">
                   <span class="data-hub-source">UN WPP</span>
@@ -323,9 +259,8 @@
                     <span class="data-hub-year-start">1950</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end">2026</span>
                   </span>
                 </span>
-                <button class="indicator-info-button" type="button" aria-label="Nüfus hakkında bilgi" data-indicator-info-tooltip-placement="data-hub" data-indicator-info-ranking-directory="population">i</button>
                   </li>
-                  <li class="data-hub-link-row" data-home-disclosure-item hidden>
+                  <li class="data-hub-link-row">
                 <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/population-growth/"><span class="indicator-label-text">Nüfus Artışı</span></a>
                 <span class="data-hub-meta" aria-label="UN WPP, 1950-2026">
                   <span class="data-hub-source">UN WPP</span>
@@ -333,34 +268,17 @@
                     <span class="data-hub-year-start">1950</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end">2026</span>
                   </span>
                 </span>
-                <button class="indicator-info-button" type="button" aria-label="Nüfus Artışı hakkında bilgi" data-indicator-info-tooltip-placement="data-hub" data-indicator-info-ranking-directory="population-growth">i</button>
                   </li>
-                  <li class="data-hub-link-row" data-home-disclosure-item hidden>
-                <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/fertility-rate/"><span class="indicator-label-text">Toplam Doğurganlık Hızı</span></a>
+                  <li class="data-hub-link-row">
+                <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/life-expectancy/"><span class="indicator-label-text">Doğuşta Beklenen Yaşam Süresi</span></a>
                 <span class="data-hub-meta" aria-label="UN WPP, 1950-2026">
                   <span class="data-hub-source">UN WPP</span>
                   <span class="data-hub-years">
                     <span class="data-hub-year-start">1950</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end">2026</span>
                   </span>
                 </span>
-                <button class="indicator-info-button" type="button" aria-label="Toplam Doğurganlık Hızı hakkında bilgi" data-indicator-info-tooltip-placement="data-hub" data-indicator-info-ranking-directory="fertility-rate">i</button>
                   </li>
-          </ul>
-        </section>
-        <section class="home-indicator-ranking-group" aria-labelledby="home-indicator-ranking-trade">
-          <h3 id="home-indicator-ranking-trade"><button class="home-disclosure-toggle home-indicator-ranking-toggle" type="button" data-ui-text-action data-home-disclosure-toggle data-home-disclosure-target="home-indicator-ranking-trade-list" aria-expanded="false">Ticaret</button></h3>
-          <ul class="data-hub-subcategory-items" id="home-indicator-ranking-trade-list">
-                  <li class="data-hub-link-row" data-home-disclosure-item hidden>
-                <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/trade-balance/"><span class="indicator-label-text">Dış Ticaret Dengesi</span> <span class="indicator-display-unit">(USD)</span></a>
-                <span class="data-hub-meta" aria-label="UNCTAD, 1948-2025">
-                  <span class="data-hub-source">UNCTAD</span>
-                  <span class="data-hub-years">
-                    <span class="data-hub-year-start">1948</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end">2025</span>
-                  </span>
-                </span>
-                <button class="indicator-info-button" type="button" aria-label="Dış Ticaret Dengesi hakkında bilgi" data-indicator-info-tooltip-placement="data-hub" data-indicator-info-ranking-directory="trade-balance">i</button>
-                  </li>
-                  <li class="data-hub-link-row" data-home-disclosure-item hidden>
+                  <li class="data-hub-link-row">
                 <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/exports/"><span class="indicator-label-text">İhracat</span> <span class="indicator-display-unit">(USD)</span></a>
                 <span class="data-hub-meta" aria-label="UNCTAD, 1948-2025">
                   <span class="data-hub-source">UNCTAD</span>
@@ -368,49 +286,8 @@
                     <span class="data-hub-year-start">1948</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end">2025</span>
                   </span>
                 </span>
-                <button class="indicator-info-button" type="button" aria-label="İhracat hakkında bilgi" data-indicator-info-tooltip-placement="data-hub" data-indicator-info-ranking-directory="exports">i</button>
                   </li>
-                  <li class="data-hub-link-row" data-home-disclosure-item hidden>
-                <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/imports/"><span class="indicator-label-text">İthalat</span> <span class="indicator-display-unit">(USD)</span></a>
-                <span class="data-hub-meta" aria-label="UNCTAD, 1948-2025">
-                  <span class="data-hub-source">UNCTAD</span>
-                  <span class="data-hub-years">
-                    <span class="data-hub-year-start">1948</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end">2025</span>
-                  </span>
-                </span>
-                <button class="indicator-info-button" type="button" aria-label="İthalat hakkında bilgi" data-indicator-info-tooltip-placement="data-hub" data-indicator-info-ranking-directory="imports">i</button>
-                  </li>
-          </ul>
-        </section>
-        <section class="home-indicator-ranking-group" aria-labelledby="home-indicator-ranking-government-finance">
-          <h3 id="home-indicator-ranking-government-finance"><button class="home-disclosure-toggle home-indicator-ranking-toggle" type="button" data-ui-text-action data-home-disclosure-toggle data-home-disclosure-target="home-indicator-ranking-government-finance-list" aria-expanded="false">Kamu Maliyesi</button></h3>
-          <ul class="data-hub-subcategory-items" id="home-indicator-ranking-government-finance-list">
-                  <li class="data-hub-link-row" data-home-disclosure-item hidden>
-                <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/government-gross-debt/"><span class="indicator-label-text">Kamu Brüt Borcu</span> <span class="indicator-display-unit">(GSYİH&#x27;nin %&#x27;si)</span></a>
-                <span class="data-hub-meta" aria-label="IMF WEO, 1980-2026">
-                  <span class="data-hub-source">IMF WEO</span>
-                  <span class="data-hub-years">
-                    <span class="data-hub-year-start">1980</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end">2026</span>
-                  </span>
-                </span>
-                <button class="indicator-info-button" type="button" aria-label="Kamu Brüt Borcu hakkında bilgi" data-indicator-info-tooltip-placement="data-hub" data-indicator-info-ranking-directory="government-gross-debt">i</button>
-                  </li>
-                  <li class="data-hub-link-row" data-home-disclosure-item hidden>
-                <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/fiscal-balance/"><span class="indicator-label-text">Mali Denge</span> <span class="indicator-display-unit">(GSYİH&#x27;nin %&#x27;si)</span></a>
-                <span class="data-hub-meta" aria-label="IMF WEO, 1980-2026">
-                  <span class="data-hub-source">IMF WEO</span>
-                  <span class="data-hub-years">
-                    <span class="data-hub-year-start">1980</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end">2026</span>
-                  </span>
-                </span>
-                <button class="indicator-info-button" type="button" aria-label="Mali Denge hakkında bilgi" data-indicator-info-tooltip-placement="data-hub" data-indicator-info-ranking-directory="fiscal-balance">i</button>
-                  </li>
-          </ul>
-        </section>
-        <section class="home-indicator-ranking-group" aria-labelledby="home-indicator-ranking-society">
-          <h3 id="home-indicator-ranking-society"><button class="home-disclosure-toggle home-indicator-ranking-toggle" type="button" data-ui-text-action data-home-disclosure-toggle data-home-disclosure-target="home-indicator-ranking-society-list" aria-expanded="false">Toplum</button></h3>
-          <ul class="data-hub-subcategory-items" id="home-indicator-ranking-society-list">
-                  <li class="data-hub-link-row" data-home-disclosure-item hidden>
+                  <li class="data-hub-link-row">
                 <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/hdi/"><span class="indicator-label-text">İnsani Gelişme Endeksi</span></a>
                 <span class="data-hub-meta" aria-label="UNDP, 1990-2023">
                   <span class="data-hub-source">UNDP</span>
@@ -418,36 +295,17 @@
                     <span class="data-hub-year-start">1990</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end">2023</span>
                   </span>
                 </span>
-                <button class="indicator-info-button" type="button" aria-label="İnsani Gelişme Endeksi hakkında bilgi" data-indicator-info-tooltip-placement="data-hub" data-indicator-info-ranking-directory="hdi">i</button>
                   </li>
-          </ul>
-        </section>
-        <section class="home-indicator-ranking-group" aria-labelledby="home-indicator-ranking-environment">
-          <h3 id="home-indicator-ranking-environment"><button class="home-disclosure-toggle home-indicator-ranking-toggle" type="button" data-ui-text-action data-home-disclosure-toggle data-home-disclosure-target="home-indicator-ranking-environment-list" aria-expanded="false">Çevre</button></h3>
-          <ul class="data-hub-subcategory-items" id="home-indicator-ranking-environment-list">
-                  <li class="data-hub-link-row" data-home-disclosure-item hidden>
-                <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/co2-emissions-per-capita/"><span class="indicator-label-text">Kişi Başına Sera Gazı Emisyonları</span> <span class="indicator-display-unit">(CO2e)</span></a>
-                <span class="data-hub-meta" aria-label="Dünya Bankası, 1970-2024">
-                  <span class="data-hub-source">Dünya Bankası</span>
+                  <li class="data-hub-link-row">
+                <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/government-gross-debt/"><span class="indicator-label-text">Kamu Brüt Borcu</span> <span class="indicator-display-unit">(GSYİH&#x27;nin %&#x27;si)</span></a>
+                <span class="data-hub-meta" aria-label="IMF WEO, 1980-2026">
+                  <span class="data-hub-source">IMF WEO</span>
                   <span class="data-hub-years">
-                    <span class="data-hub-year-start">1970</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end">2024</span>
+                    <span class="data-hub-year-start">1980</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end">2026</span>
                   </span>
                 </span>
-                <button class="indicator-info-button" type="button" aria-label="Kişi Başına Sera Gazı Emisyonları hakkında bilgi" data-indicator-info-tooltip-placement="data-hub" data-indicator-info-ranking-directory="co2-emissions-per-capita">i</button>
                   </li>
-                  <li class="data-hub-link-row" data-home-disclosure-item hidden>
-                <a class="data-hub-indicator" data-ui-text-action href="./rankings/countries/area/"><span class="indicator-label-text">Yüzölçümü</span> <span class="indicator-display-unit">(km²)</span></a>
-                <span class="data-hub-meta" aria-label="UNdata, 2023">
-                  <span class="data-hub-source">UNdata</span>
-                  <span class="data-hub-years data-hub-years-single">
-                    <span class="data-hub-year-start">2023</span><span class="data-hub-year-separator" aria-hidden="true">-</span><span class="data-hub-year-end" aria-hidden="true">2023</span>
-                  </span>
-                </span>
-                <button class="indicator-info-button" type="button" aria-label="Yüzölçümü hakkında bilgi" data-indicator-info-tooltip-placement="data-hub" data-indicator-info-ranking-directory="area">i</button>
-                  </li>
-          </ul>
-        </section>
-        </div>
+        </ul>
           <a class="home-action-link home-view-all-indicators" data-ui-text-action href="./data/countries/"><span class="home-action-label">Tümünü görüntüle</span><span class="home-action-arrow" aria-hidden="true">&rarr;</span></a>
       </section>
       <footer class="site-footer-card" aria-label="Site bilgileri">
